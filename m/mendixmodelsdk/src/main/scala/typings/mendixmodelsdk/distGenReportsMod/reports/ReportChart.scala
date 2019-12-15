@@ -49,17 +49,29 @@ class ReportChart protected () extends ReportWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var aspectRatio: AspectRatio = js.native
-  val seriess: IList[ReportChartSeries] = js.native
-  var `type`: ChartType = js.native
-  var xAxisCaption: Text = js.native
-  var xAxisColumn: String = js.native
-  var xAxisFormat: ColumnFormat = js.native
-  var yAxisCaption: Text = js.native
-  var yAxisMaximum: Double = js.native
-  var yAxisMinimum: Double = js.native
-  var yAxisPrecision: Double = js.native
-  var yAxisUseMinMax: Boolean = js.native
+  @JSName("model")
+  var model_FReportChart: IModel = js.native
+  def aspectRatio(): AspectRatio = js.native
+  def aspectRatio(newValue: AspectRatio): js.Any = js.native
+  def seriess(): IList[ReportChartSeries] = js.native
+  def `type`(): ChartType = js.native
+  def `type`(newValue: ChartType): js.Any = js.native
+  def xAxisCaption(): Text = js.native
+  def xAxisCaption(newValue: Text): js.Any = js.native
+  def xAxisColumn(): String = js.native
+  def xAxisColumn(newValue: String): js.Any = js.native
+  def xAxisFormat(): ColumnFormat = js.native
+  def xAxisFormat(newValue: ColumnFormat): js.Any = js.native
+  def yAxisCaption(): Text = js.native
+  def yAxisCaption(newValue: Text): js.Any = js.native
+  def yAxisMaximum(): Double = js.native
+  def yAxisMaximum(newValue: Double): js.Any = js.native
+  def yAxisMinimum(): Double = js.native
+  def yAxisMinimum(newValue: Double): js.Any = js.native
+  def yAxisPrecision(): Double = js.native
+  def yAxisPrecision(newValue: Double): js.Any = js.native
+  def yAxisUseMinMax(): Boolean = js.native
+  def yAxisUseMinMax(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */
@@ -308,6 +320,15 @@ object ReportChart extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ReportChart = js.native
+  /**
+    * Creates and returns a new ReportChart instance in the SDK and on the server.
+    * The new ReportChart will be automatically stored in the 'sidebarWidgets' property
+    * of the parent pages.NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReportChart = js.native
   /**
     * Creates and returns a new ReportChart instance in the SDK and on the server.
     * The new ReportChart will be automatically stored in the 'widgets' property

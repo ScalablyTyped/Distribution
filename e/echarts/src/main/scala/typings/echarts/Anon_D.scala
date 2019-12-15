@@ -7,29 +7,29 @@ import scala.scalajs.js.annotation._
 trait Anon_D extends js.Object {
   /**
     * Alias of
-    * [pathData](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.pathData)
+    * [pathData](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.pathData)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.d
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.d
     */
   var d: js.UndefOr[String] = js.undefined
   /**
     * The height of the shape of the element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.height
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.height
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
     * If
-    * [width](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.width)
+    * [width](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.width)
     * ,
-    * [height](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.height)
+    * [height](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.height)
     * ,
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.x)
+    * [x](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.x)
     * and
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.y)
+    * [y](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.y)
     * specified, `pathData` will be transformed to fit
     * the defined rect.
     *
@@ -47,7 +47,7 @@ trait Anon_D extends js.Object {
     *
     * @default
     * "center"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.layout
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.layout
     */
   var layout: js.UndefOr[String] = js.undefined
   /**
@@ -58,29 +58,29 @@ trait Anon_D extends js.Object {
     * 50,-1 L70,-1 L70,0 Z'`。
     *
     * If
-    * [width](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.width)
+    * [width](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.width)
     * ,
-    * [height](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.height)
+    * [height](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.height)
     * ,
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.x)
+    * [x](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.x)
     * and
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.y)
+    * [y](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.y)
     * specified, `pathData` will be transformed to fit
     * the defined rect.
     * If they are not specified, do not do that.
     *
-    * [layout](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.layout)
+    * [layout](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.layout)
     * can be used to specify the transform strategy.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.pathData
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.pathData
     */
   var pathData: js.UndefOr[String] = js.undefined
   /**
     * The width of the shape of the element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.width
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.width
     */
   var width: js.UndefOr[Double] = js.undefined
   /**
@@ -88,7 +88,7 @@ trait Anon_D extends js.Object {
     * in the coordinate system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.x
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.x
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
@@ -96,7 +96,7 @@ trait Anon_D extends js.Object {
     * in the coordinate system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path.shape.y
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }

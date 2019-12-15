@@ -27,8 +27,14 @@ class CreateObjectClientAction protected () extends ClientAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var entityRef: EntityRef | Null = js.native
-  var pageSettings: PageSettings = js.native
+  @JSName("model")
+  var model_FCreateObjectClientAction: IModel = js.native
+  def entityRef(): EntityRef | Null = js.native
+  def entityRef(newValue: EntityRef): js.Any = js.native
+  @JSName("entityRef")
+  def entityRef_Any(): js.Any = js.native
+  def pageSettings(): PageSettings = js.native
+  def pageSettings(newValue: PageSettings): js.Any = js.native
 }
 
 /* static members */

@@ -22,9 +22,27 @@ class DataAttribute protected () extends DataMember {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var attribute: IAttribute | Null = js.native
-  var attributeByContract: MsdAttribute | Null = js.native
-  val attributeQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FDataAttribute: IModel = js.native
+  def attribute(): IAttribute | Null = js.native
+  def attribute(newValue: IAttribute): js.Any = js.native
+  def attributeByContract(): MsdAttribute | Null = js.native
+  def attributeByContract(newValue: MsdAttribute): js.Any = js.native
+  @JSName("attributeByContract")
+  def attributeByContract_Any(): js.Any = js.native
+  def attributeQualifiedName(): String | Null = js.native
+  @JSName("attribute")
+  def attribute_Any(): js.Any = js.native
+  /**
+    * In version 8.5.0: introduced
+    */
+  def description(): String = js.native
+  def description(newValue: String): js.Any = js.native
+  /**
+    * In version 8.5.0: introduced
+    */
+  def summary(): String = js.native
+  def summary(newValue: String): js.Any = js.native
 }
 
 /* static members */

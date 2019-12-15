@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlur extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur] = js.undefined
 }

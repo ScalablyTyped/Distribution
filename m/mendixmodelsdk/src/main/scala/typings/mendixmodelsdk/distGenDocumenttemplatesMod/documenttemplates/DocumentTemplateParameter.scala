@@ -30,14 +30,19 @@ class DocumentTemplateParameter protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsDocumentTemplate: DocumentTemplate | IDocumentTemplate = js.native
+  @JSName("containerAsDocumentTemplate")
+  val containerAsDocumentTemplate_FDocumentTemplateParameter: IDocumentTemplate = js.native
   @JSName("model")
-  var model_DocumentTemplateParameter: IModel = js.native
-  var name: String = js.native
+  var model_FDocumentTemplateParameter: IModel = js.native
+  @JSName("name")
+  val name_FDocumentTemplateParameter: String = js.native
   /**
+    * This property is required and cannot be set to null.
+    *
     * In version 7.9.0: introduced
     */
-  var parameterType: DataType | IDataType = js.native
+  @JSName("parameterType")
+  val parameterType_FDocumentTemplateParameter: IDataType = js.native
   /**
     * Returns the qualified name of this element, or
     * null if this element is not a part of the model,
@@ -51,7 +56,25 @@ class DocumentTemplateParameter protected ()
     *
     * In version 7.9.0: deleted
     */
-  var `type`: Null | String = js.native
+  @JSName("type")
+  val type_FDocumentTemplateParameter: String | Null = js.native
+  def containerAsDocumentTemplate(): DocumentTemplate = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  /**
+    * In version 7.9.0: introduced
+    */
+  def parameterType(): DataType = js.native
+  def parameterType(newValue: DataType): js.Any = js.native
+  @JSName("qualifiedName")
+  def qualifiedName_MDocumentTemplateParameter(): String | Null = js.native
+  /**
+    * The value of this property is conceptually of type dataTypes.LegacyDataType.
+    *
+    * In version 7.9.0: deleted
+    */
+  def `type`(): String = js.native
+  def `type`(newValue: String): js.Any = js.native
 }
 
 /* static members */

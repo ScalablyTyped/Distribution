@@ -20,7 +20,10 @@ class Sort protected () extends ListOperation {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var sortItemList: SortItemList = js.native
+  @JSName("model")
+  var model_FSort: IModel = js.native
+  def sortItemList(): SortItemList = js.native
+  def sortItemList(newValue: SortItemList): js.Any = js.native
 }
 
 /* static members */

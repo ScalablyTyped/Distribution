@@ -277,6 +277,15 @@ object Header extends js.Object {
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.distGenPagesMod.pages.Header = js.native
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
+    * The new Header will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pages.NativeLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pages.Header = js.native
+  /**
+    * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property
     * of the parent NativeLayoutContent element passed as argument.
     *

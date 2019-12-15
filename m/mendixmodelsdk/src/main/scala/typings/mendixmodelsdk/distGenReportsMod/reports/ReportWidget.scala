@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenReportsMod.reports
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenDatasetsMod.datasets.IDataSet
 import typings.mendixmodelsdk.distGenPagesMod.pages.Widget
 import typings.mendixmodelsdk.distGenReportsMod.StructureVersionInfo
@@ -27,12 +28,18 @@ abstract class ReportWidget protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var dataSet: IDataSet | Null = js.native
-  val dataSetQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FReportWidget: IModel = js.native
+  def dataSet(): IDataSet | Null = js.native
+  def dataSet(newValue: IDataSet): js.Any = js.native
+  def dataSetQualifiedName(): String | Null = js.native
+  @JSName("dataSet")
+  def dataSet_Any(): js.Any = js.native
   /**
     * In version 6.10.0: introduced
     */
-  var generateOnLoad: Boolean = js.native
+  def generateOnLoad(): Boolean = js.native
+  def generateOnLoad(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

@@ -24,14 +24,14 @@ import scala.scalajs.js.annotation._
   *
   * **Tree example：**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree)
+  * [see doc](https://echarts.apache.org/en/option.html#series-tree)
   *
   * **Multiple series are combined into forest：**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree)
+  * [see doc](https://echarts.apache.org/en/option.html#series-tree)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree
+  * @see https://echarts.apache.org/en/option.html#series-tree
   */
 @JSName("SeriesTree")
 trait SeriesTree_ extends js.Object {
@@ -44,21 +44,21 @@ trait SeriesTree_ extends js.Object {
     *
     * @default
     * 12%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.bottom
+    * @see https://echarts.apache.org/en/option.html#series-tree.bottom
     */
   var bottom: js.UndefOr[Double | String] = js.undefined
   /**
-    * [series-tree.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data)
+    * [series-tree.data](https://echarts.apache.org/en/option.html#series-tree.data)
     * the data format is a tree structure，for example：
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree)
+    * [see doc](https://echarts.apache.org/en/option.html#series-tree.tree)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data
+    * @see https://echarts.apache.org/en/option.html#series-tree.data
     */
   var data: js.UndefOr[js.Array[DataObject]] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-tree.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor] = js.undefined
   /**
@@ -83,14 +83,14 @@ trait SeriesTree_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.expandAndCollapse
+    * @see https://echarts.apache.org/en/option.html#series-tree.expandAndCollapse
     */
   var expandAndCollapse: js.UndefOr[Boolean] = js.undefined
   /**
     * Height of tree component.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.height
+    * @see https://echarts.apache.org/en/option.html#series-tree.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
@@ -99,7 +99,7 @@ trait SeriesTree_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.id
+    * @see https://echarts.apache.org/en/option.html#series-tree.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -118,7 +118,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.initialTreeDepth
+    * @see https://echarts.apache.org/en/option.html#series-tree.initialTreeDepth
     */
   var initialTreeDepth: js.UndefOr[Double] = js.undefined
   /**
@@ -128,7 +128,7 @@ trait SeriesTree_ extends js.Object {
     * of the subtree corresponding to `collapsing` or `expansion`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-tree.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
@@ -136,7 +136,7 @@ trait SeriesTree_ extends js.Object {
     * node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.label
+    * @see https://echarts.apache.org/en/option.html#series-tree.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
   /**
@@ -150,16 +150,16 @@ trait SeriesTree_ extends js.Object {
     *
     * **Orthogonal Example：**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree)
+    * [see doc](https://echarts.apache.org/en/option.html#series-tree.tree)
     *
     * **Radial Example：**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree)
+    * [see doc](https://echarts.apache.org/en/option.html#series-tree.tree)
     *
     *
     * @default
     * "orthogonal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.layout
+    * @see https://echarts.apache.org/en/option.html#series-tree.layout
     */
   var layout: js.UndefOr[String] = js.undefined
   /**
@@ -167,7 +167,7 @@ trait SeriesTree_ extends js.Object {
     * example, the leaf node and non-leaf node label location is different.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.leaves
+    * @see https://echarts.apache.org/en/option.html#series-tree.leaves
     */
   var leaves: js.UndefOr[Anon_EmphasisItemStyleLabel] = js.undefined
   /**
@@ -183,25 +183,25 @@ trait SeriesTree_ extends js.Object {
     *
     * @default
     * 12%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.left
+    * @see https://echarts.apache.org/en/option.html#series-tree.left
     */
   var left: js.UndefOr[Double | String] = js.undefined
   /**
     * Defines the style of the tree edge.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-tree.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessShadowBlur] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.name
+    * @see https://echarts.apache.org/en/option.html#series-tree.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -217,7 +217,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @default
     * "LR"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.orient
+    * @see https://echarts.apache.org/en/option.html#series-tree.orient
     */
   var orient: js.UndefOr[String] = js.undefined
   /**
@@ -229,7 +229,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @default
     * 12%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.right
+    * @see https://echarts.apache.org/en/option.html#series-tree.right
     */
   var right: js.UndefOr[Double | String] = js.undefined
   /**
@@ -240,7 +240,7 @@ trait SeriesTree_ extends js.Object {
     * Otherwise, set it to be `true` to enable both.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.roam
+    * @see https://echarts.apache.org/en/option.html#series-tree.roam
     */
   var roam: js.UndefOr[Boolean | String] = js.undefined
   /**
@@ -262,7 +262,7 @@ trait SeriesTree_ extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree)
+    * [see doc](https://echarts.apache.org/en/option.html#series-tree.tree)
     *
     * Icons can be set to arbitrary vector path via `'path://'` in
     * ECharts.
@@ -276,19 +276,19 @@ trait SeriesTree_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree)
+    * [see doc](https://echarts.apache.org/en/option.html#series-tree.tree)
     *
     *
     * @default
     * "emptyCircle"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.symbol
+    * @see https://echarts.apache.org/en/option.html#series-tree.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-tree.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -309,7 +309,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-tree.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -319,7 +319,7 @@ trait SeriesTree_ extends js.Object {
     * angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-tree.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -338,21 +338,21 @@ trait SeriesTree_ extends js.Object {
     * ```
     *
     * The first parameter `value` is the value in
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data)
+    * [data](https://echarts.apache.org/en/option.html#series-tree.data)
     * , and the second parameter `params` is the rest parameters of
     * data item.
     *
     *
     * @default
     * 7
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-tree.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-tree.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
@@ -368,20 +368,20 @@ trait SeriesTree_ extends js.Object {
     *
     * @default
     * 12%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.top
+    * @see https://echarts.apache.org/en/option.html#series-tree.top
     */
   var top: js.UndefOr[Double | String] = js.undefined
   /**
     * @default
     * "tree"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.type
+    * @see https://echarts.apache.org/en/option.html#series-tree.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * Width of tree component.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.width
+    * @see https://echarts.apache.org/en/option.html#series-tree.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
   /**
@@ -396,7 +396,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.z
+    * @see https://echarts.apache.org/en/option.html#series-tree.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -414,7 +414,7 @@ trait SeriesTree_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-tree.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

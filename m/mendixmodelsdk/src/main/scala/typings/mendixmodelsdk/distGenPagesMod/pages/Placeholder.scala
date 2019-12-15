@@ -27,6 +27,8 @@ class Placeholder protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FPlaceholder: IModel = js.native
 }
 
 /* static members */
@@ -284,6 +286,15 @@ object Placeholder extends js.Object {
     *  8.0.0 and higher
     */
   def createInNativeLayoutContentUnderRightHeaderPlaceholder(container: NativeLayoutContent): Placeholder = js.native
+  /**
+    * Creates and returns a new Placeholder instance in the SDK and on the server.
+    * The new Placeholder will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): Placeholder = js.native
   /**
     * Creates and returns a new Placeholder instance in the SDK and on the server.
     * The new Placeholder will be automatically stored in the 'widgets' property

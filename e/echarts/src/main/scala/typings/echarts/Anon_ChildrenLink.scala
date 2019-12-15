@@ -8,43 +8,43 @@ trait Anon_ChildrenLink extends js.Object {
   /**
     * child nodes, recursive definition, configurations are the
     * same as
-    * [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.silent.children
+    * @see https://echarts.apache.org/en/option.html#series-treemap.silent.children
     */
   var children: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Enable hyperlink jump when clicking on node.
     * It is avaliable when
-    * [series-treemap.nodeClick](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.nodeClick)
+    * [series-treemap.nodeClick](https://echarts.apache.org/en/option.html#series-treemap.nodeClick)
     * is `'link'`.
     *
     * See
-    * [series-treemap.data.target](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.target)
+    * [series-treemap.data.target](https://echarts.apache.org/en/option.html#series-treemap.data.target)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.silent.link
+    * @see https://echarts.apache.org/en/option.html#series-treemap.silent.link
     */
   var link: js.UndefOr[String] = js.undefined
   /**
     * The same meaning as `target` in `html` `<a>` label, See
-    * [series-treemap.data.link](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.link)
+    * [series-treemap.data.link](https://echarts.apache.org/en/option.html#series-treemap.data.link)
     * . Option values are: `'blank'` or `'self'`.
     *
     *
     * @default
     * "blank"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.silent.target
+    * @see https://echarts.apache.org/en/option.html#series-treemap.silent.target
     */
   var target: js.UndefOr[String] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.silent.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-treemap.silent.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
 }

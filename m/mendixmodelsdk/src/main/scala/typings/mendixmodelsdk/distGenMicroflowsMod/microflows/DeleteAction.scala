@@ -23,8 +23,12 @@ class DeleteAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var deleteVariableName: String = js.native
-  var refreshInClient: Boolean = js.native
+  @JSName("model")
+  var model_FDeleteAction: IModel = js.native
+  def deleteVariableName(): String = js.native
+  def deleteVariableName(newValue: String): js.Any = js.native
+  def refreshInClient(): Boolean = js.native
+  def refreshInClient(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

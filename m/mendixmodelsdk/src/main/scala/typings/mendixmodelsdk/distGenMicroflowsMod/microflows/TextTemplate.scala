@@ -21,7 +21,10 @@ class TextTemplate protected () extends Template {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var text: Text = js.native
+  @JSName("model")
+  var model_FTextTemplate: IModel = js.native
+  def text(): Text = js.native
+  def text(newValue: Text): js.Any = js.native
 }
 
 /* static members */

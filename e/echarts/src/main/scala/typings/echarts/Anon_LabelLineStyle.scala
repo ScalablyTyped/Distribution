@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait Anon_LabelLineStyle extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.emphasis.label
+    * @see https://echarts.apache.org/en/option.html#series-graph.links.emphasis.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.emphasis.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-graph.links.emphasis.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
 }

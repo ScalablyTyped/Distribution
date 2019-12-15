@@ -21,11 +21,13 @@ class DataSetConstraintAccess protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var constraintText: String = js.native
-  val containerAsDataSetParameterAccess: DataSetParameterAccess = js.native
-  var enabled: Boolean = js.native
   @JSName("model")
-  var model_DataSetConstraintAccess: IModel = js.native
+  var model_FDataSetConstraintAccess: IModel = js.native
+  def constraintText(): String = js.native
+  def constraintText(newValue: String): js.Any = js.native
+  def containerAsDataSetParameterAccess(): DataSetParameterAccess = js.native
+  def enabled(): Boolean = js.native
+  def enabled(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

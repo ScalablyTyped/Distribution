@@ -31,11 +31,12 @@ abstract class MessageDefinition protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsMessageDefinitionCollection: IMessageDefinitionCollection | MessageDefinitionCollection = js.native
-  var documentation: String = js.native
+  @JSName("containerAsMessageDefinitionCollection")
+  val containerAsMessageDefinitionCollection_FMessageDefinition: IMessageDefinitionCollection = js.native
   @JSName("model")
-  var model_MessageDefinition: IModel = js.native
-  var name: String = js.native
+  var model_FMessageDefinition: IModel = js.native
+  @JSName("name")
+  val name_FMessageDefinition: String = js.native
   /**
     * Returns the qualified name of this element, or
     * null if this element is not a part of the model,
@@ -44,6 +45,13 @@ abstract class MessageDefinition protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
+  def containerAsMessageDefinitionCollection(): MessageDefinitionCollection = js.native
+  def documentation(): String = js.native
+  def documentation(newValue: String): js.Any = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  @JSName("qualifiedName")
+  def qualifiedName_MMessageDefinition(): String | Null = js.native
 }
 
 /* static members */

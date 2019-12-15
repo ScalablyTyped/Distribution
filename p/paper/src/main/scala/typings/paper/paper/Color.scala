@@ -92,15 +92,15 @@ class Color protected () extends js.Object {
     * The color's alpha value as a number between `0` and `1`.
     * All colors of the different subclasses support alpha values.
     */
-  var alpha: Double | Null = js.native
+  var alpha: Double = js.native
   /** 
     * The amount of blue in the color as a value between `0` and `1`.
     */
-  var blue: Double | Null = js.native
+  var blue: Double = js.native
   /** 
     * The brightness of the color as a value between `0` and `1`.
     */
-  var brightness: Double | Null = js.native
+  var brightness: Double = js.native
   /** 
     * The color components that define the color, including the alpha value
     * if defined.
@@ -109,41 +109,41 @@ class Color protected () extends js.Object {
   /** 
     * The gradient object describing the type of gradient and the stops.
     */
-  var gradient: Gradient | Null = js.native
+  var gradient: Gradient = js.native
   /** 
     * The amount of gray in the color as a value between `0` and `1`.
     */
-  var gray: Double | Null = js.native
+  var gray: Double = js.native
   /** 
     * The amount of green in the color as a value between `0` and `1`.
     */
-  var green: Double | Null = js.native
+  var green: Double = js.native
   /** 
     * The highlight point of the gradient.
     */
-  var highlight: Point | Null = js.native
+  var highlight: Point = js.native
   /** 
     * The hue of the color as a value in degrees between `0` and `360`.
     */
-  var hue: Double | Null = js.native
+  var hue: Double = js.native
   /** 
     * The lightness of the color as a value between `0` and `1`.
     * 
     * Note that all other components are shared with HSB.
     */
-  var lightness: Double | Null = js.native
+  var lightness: Double = js.native
   /** 
     * The amount of red in the color as a value between `0` and `1`.
     */
-  var red: Double | Null = js.native
+  var red: Double = js.native
   /** 
     * The saturation of the color as a value between `0` and `1`.
     */
-  var saturation: Double | Null = js.native
+  var saturation: Double = js.native
   /** 
     * The type of the color as a string.
     */
-  var `type`: String | Null = js.native
+  var `type`: String = js.native
   /** 
     * Returns the addition of the supplied color to the color as a new
     * color.

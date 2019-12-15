@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenMicroflowsMod.microflows
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflowParameterBase because Already inherited
-- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflowParameter because var conflicts: id, isLoaded, model, name, parameterType, structureTypeName, `type`, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowParameter")
+- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflowParameter because var conflicts: containerAsMicroflow, containerAsRule, id, isLoaded, model, name, parameterType, qualifiedName, structureTypeName, `type`, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowParameter")
 @js.native
 class MicroflowParameter protected () extends MicroflowParameterBase {
   def this(
@@ -28,8 +29,10 @@ class MicroflowParameter protected () extends MicroflowParameterBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FMicroflowParameter: IModel = js.native
   @JSName("containerAsMicroflow")
-  val containerAsMicroflow_MicroflowParameter: Microflow = js.native
+  def containerAsMicroflow_MMicroflowParameter(): Microflow = js.native
 }
 
 /* static members */

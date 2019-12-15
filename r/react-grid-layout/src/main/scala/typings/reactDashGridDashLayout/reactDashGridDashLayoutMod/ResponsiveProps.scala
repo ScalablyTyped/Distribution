@@ -2,6 +2,8 @@ package typings.reactDashGridDashLayout.reactDashGridDashLayoutMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.CSSProperties
+import typings.reactDashGridDashLayout.Anon_E
+import typings.reactDashGridDashLayout.Anon_H
 import typings.reactDashGridDashLayout.reactDashGridDashLayoutStrings.horizontal
 import typings.reactDashGridDashLayout.reactDashGridDashLayoutStrings.vertical
 import typings.std.HTMLElement
@@ -22,11 +24,19 @@ trait ResponsiveProps extends CoreProps {
     */
   var cols: js.UndefOr[StringDictionary[Double]] = js.undefined
   /**
+    * Padding inside the container in px and formatt [x, y] or { breakpoint: [x, y] }.
+    */
+  var containerPadding: js.UndefOr[(js.Tuple2[Double, Double]) | (StringDictionary[js.Tuple2[Double, Double]])] = js.undefined
+  /**
     * layouts is an object mapping breakpoints to layouts.
     *
     * e.g. `{lg: Layout[], md: Layout[], ...}`
     */
   var layouts: js.UndefOr[Layouts] = js.undefined
+  /**
+    * Margin between items in px and formatt [x, y] or { breakpoint: [x, y] }.
+    */
+  var margin: js.UndefOr[(js.Tuple2[Double, Double]) | (StringDictionary[js.Tuple2[Double, Double]])] = js.undefined
   /**
     * Calls back with breakpoint and new number pf cols.
     */
@@ -59,19 +69,21 @@ object ResponsiveProps {
     className: String = null,
     cols: StringDictionary[Double] = null,
     compactType: vertical | horizontal = null,
-    containerPadding: js.Tuple2[Double, Double] = null,
+    containerPadding: (js.Tuple2[Double, Double]) | (StringDictionary[js.Tuple2[Double, Double]]) = null,
     draggableCancel: String = null,
     draggableHandle: String = null,
+    droppingItem: Anon_H = null,
     isDraggable: js.UndefOr[Boolean] = js.undefined,
-    isRearrangeable: js.UndefOr[Boolean] = js.undefined,
+    isDroppable: js.UndefOr[Boolean] = js.undefined,
     isResizable: js.UndefOr[Boolean] = js.undefined,
     layouts: Layouts = null,
-    margin: js.Tuple2[Double, Double] = null,
+    margin: (js.Tuple2[Double, Double]) | (StringDictionary[js.Tuple2[Double, Double]]) = null,
     maxRows: Int | Double = null,
     onBreakpointChange: (/* newBreakpoint */ String, /* newCols */ Double) => Unit = null,
     onDrag: (/* layout */ js.Array[Layout], /* oldItem */ Layout, /* newItem */ Layout, /* placeholder */ Layout, /* event */ MouseEvent, /* element */ HTMLElement) => Unit = null,
     onDragStart: (/* layout */ js.Array[Layout], /* oldItem */ Layout, /* newItem */ Layout, /* placeholder */ Layout, /* event */ MouseEvent, /* element */ HTMLElement) => Unit = null,
     onDragStop: (/* layout */ js.Array[Layout], /* oldItem */ Layout, /* newItem */ Layout, /* placeholder */ Layout, /* event */ MouseEvent, /* element */ HTMLElement) => Unit = null,
+    onDrop: /* elemParams */ Anon_E => Unit = null,
     onLayoutChange: (/* currentLayout */ js.Array[Layout], /* allLayouts */ Layouts) => Unit = null,
     onResize: (/* layout */ js.Array[Layout], /* oldItem */ Layout, /* newItem */ Layout, /* placeholder */ Layout, /* event */ MouseEvent, /* element */ HTMLElement) => Unit = null,
     onResizeStart: (/* layout */ js.Array[Layout], /* oldItem */ Layout, /* newItem */ Layout, /* placeholder */ Layout, /* event */ MouseEvent, /* element */ HTMLElement) => Unit = null,
@@ -80,6 +92,7 @@ object ResponsiveProps {
     preventCollision: js.UndefOr[Boolean] = js.undefined,
     rowHeight: Int | Double = null,
     style: CSSProperties = null,
+    transformScale: Int | Double = null,
     useCSSTransforms: js.UndefOr[Boolean] = js.undefined,
     verticalCompact: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null
@@ -93,8 +106,9 @@ object ResponsiveProps {
     if (containerPadding != null) __obj.updateDynamic("containerPadding")(containerPadding.asInstanceOf[js.Any])
     if (draggableCancel != null) __obj.updateDynamic("draggableCancel")(draggableCancel.asInstanceOf[js.Any])
     if (draggableHandle != null) __obj.updateDynamic("draggableHandle")(draggableHandle.asInstanceOf[js.Any])
+    if (droppingItem != null) __obj.updateDynamic("droppingItem")(droppingItem.asInstanceOf[js.Any])
     if (!js.isUndefined(isDraggable)) __obj.updateDynamic("isDraggable")(isDraggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRearrangeable)) __obj.updateDynamic("isRearrangeable")(isRearrangeable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDroppable)) __obj.updateDynamic("isDroppable")(isDroppable.asInstanceOf[js.Any])
     if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable.asInstanceOf[js.Any])
     if (layouts != null) __obj.updateDynamic("layouts")(layouts.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
@@ -103,6 +117,7 @@ object ResponsiveProps {
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction6(onDrag))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction6(onDragStart))
     if (onDragStop != null) __obj.updateDynamic("onDragStop")(js.Any.fromFunction6(onDragStop))
+    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
     if (onLayoutChange != null) __obj.updateDynamic("onLayoutChange")(js.Any.fromFunction2(onLayoutChange))
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction6(onResize))
     if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(js.Any.fromFunction6(onResizeStart))
@@ -111,6 +126,7 @@ object ResponsiveProps {
     if (!js.isUndefined(preventCollision)) __obj.updateDynamic("preventCollision")(preventCollision.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (transformScale != null) __obj.updateDynamic("transformScale")(transformScale.asInstanceOf[js.Any])
     if (!js.isUndefined(useCSSTransforms)) __obj.updateDynamic("useCSSTransforms")(useCSSTransforms.asInstanceOf[js.Any])
     if (!js.isUndefined(verticalCompact)) __obj.updateDynamic("verticalCompact")(verticalCompact.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

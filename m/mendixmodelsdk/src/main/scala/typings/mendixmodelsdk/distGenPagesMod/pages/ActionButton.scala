@@ -27,8 +27,12 @@ class ActionButton protected () extends Button {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var action: ClientAction = js.native
-  var disabledDuringAction: Boolean = js.native
+  @JSName("model")
+  var model_FActionButton: IModel = js.native
+  def action(): ClientAction = js.native
+  def action(newValue: ClientAction): js.Any = js.native
+  def disabledDuringAction(): Boolean = js.native
+  def disabledDuringAction(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */
@@ -277,6 +281,15 @@ object ActionButton extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ActionButton = js.native
+  /**
+    * Creates and returns a new ActionButton instance in the SDK and on the server.
+    * The new ActionButton will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ActionButton = js.native
   /**
     * Creates and returns a new ActionButton instance in the SDK and on the server.
     * The new ActionButton will be automatically stored in the 'widgets' property

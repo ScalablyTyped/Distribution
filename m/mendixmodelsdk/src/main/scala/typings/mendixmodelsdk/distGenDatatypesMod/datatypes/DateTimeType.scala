@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IDataType because Already inherited
-- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IDateTimeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType")
+- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IDateTimeType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType")
 @js.native
 class DateTimeType protected () extends DataType {
   def this(
@@ -44,22 +44,24 @@ class DateTimeType protected () extends DataType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDateTimeType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  val containerAsAppServiceActionParameter_DateTimeType: AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MDateTimeType(): AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  val containerAsAppServiceAction_DateTimeType: AppServiceAction = js.native
+  def containerAsAppServiceAction_MDateTimeType(): AppServiceAction = js.native
   @JSName("containerAsConstant")
-  val containerAsConstant_DateTimeType: Constant = js.native
+  def containerAsConstant_MDateTimeType(): Constant = js.native
   @JSName("containerAsDataSetParameter")
-  val containerAsDataSetParameter_DateTimeType: DataSetParameter = js.native
+  def containerAsDataSetParameter_MDateTimeType(): DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  val containerAsDocumentTemplateParameter_DateTimeType: DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MDateTimeType(): DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  val containerAsImportMapping_DateTimeType: ImportMapping = js.native
+  def containerAsImportMapping_MDateTimeType(): ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  val containerAsMicroflowBase_DateTimeType: MicroflowBase = js.native
+  def containerAsMicroflowBase_MDateTimeType(): MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  val containerAsMicroflowParameterBase_DateTimeType: MicroflowParameterBase = js.native
+  def containerAsMicroflowParameterBase_MDateTimeType(): MicroflowParameterBase = js.native
 }
 
 /* static members */

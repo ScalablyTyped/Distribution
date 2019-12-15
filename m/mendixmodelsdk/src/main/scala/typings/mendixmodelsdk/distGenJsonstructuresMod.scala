@@ -5,6 +5,7 @@ import typings.mendixmodelsdk.distGenJsonstructuresMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenJsonstructuresMod.jsonstructures.JsonElement
 import typings.mendixmodelsdk.distGenJsonstructuresMod.jsonstructures.JsonStructure
 import typings.mendixmodelsdk.distGenMappingsMod.mappings.Element
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenXmlschemasMod.xmlschemas.IMxSchema
 import typings.mendixmodelsdk.distGenXmlschemasMod.xmlschemas.MxSchema
@@ -54,7 +55,10 @@ object distGenJsonstructuresMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
-      var originalValue: String = js.native
+      @JSName("model")
+      var model_FJsonElement: IModel = js.native
+      def originalValue(): String = js.native
+      def originalValue(newValue: String): js.Any = js.native
     }
     
     /**
@@ -72,7 +76,7 @@ object distGenJsonstructuresMod extends js.Object {
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
     - typings.mendixmodelsdk.distGenXmlschemasMod.xmlschemas.IMxSchema because Already inherited
-    - typings.mendixmodelsdk.distGenJsonstructuresMod.jsonstructures.IJsonStructure because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.distGenJsonstructuresMod.jsonstructures.IJsonStructure because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
     class JsonStructure protected () extends MxSchema {
       def this(
         model: AbstractModel,
@@ -81,11 +85,16 @@ object distGenJsonstructuresMod extends js.Object {
         isPartial: Boolean,
         container: IFolderBase
       ) = this()
+      @JSName("model")
+      var model_FJsonStructure: IModel = js.native
+      @JSName("containerAsFolderBase")
+      def containerAsFolderBase_MJsonStructure(): FolderBase = js.native
       /**
         * In version 6.6.0: introduced
         */
-      val elements: IList[Element] = js.native
-      var jsonSnippet: String = js.native
+      def elements(): IList[Element] = js.native
+      def jsonSnippet(): String = js.native
+      def jsonSnippet(newValue: String): js.Any = js.native
     }
     
     /* static members */

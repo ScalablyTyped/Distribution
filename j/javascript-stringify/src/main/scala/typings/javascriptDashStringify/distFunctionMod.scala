@@ -1,10 +1,12 @@
 package typings.javascriptDashStringify
 
 import typings.javascriptDashStringify.distTypesMod.Next
+import typings.javascriptDashStringify.distTypesMod.ToString
 import typings.javascriptDashStringify.javascriptDashStringifyStrings.BACKTICK
 import typings.std.PropertyKey
 import typings.std.RegExp
 import typings.std.RegExpExecArray
+import typings.std.WeakSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,15 +18,13 @@ object distFunctionMod extends js.Object {
   class FunctionParser protected () extends js.Object {
     def this(fn: js.Function, indent: String, next: Next) = this()
     def this(fn: js.Function, indent: String, next: Next, key: String) = this()
-    def this(fn: js.Function, indent: String, next: Next, key: js.Symbol) = this()
-    def this(fn: js.Function, indent: String, next: Next, key: Double) = this()
     var fn: js.Function = js.native
     var fnString: String = js.native
     var fnType: String = js.native
     var hadKeyword: Boolean = js.native
     var indent: String = js.native
     var isMethodCandidate: Boolean = js.native
-    var key: js.UndefOr[String | Double | js.Symbol] = js.native
+    var key: js.UndefOr[String] = js.native
     var keyPrefix: String = js.native
     var keyQuote: js.UndefOr[String] = js.native
     @JSName("next")
@@ -83,7 +83,8 @@ object distFunctionMod extends js.Object {
     def tryStrippingName(): js.UndefOr[String] = js.native
   }
   
+  val USED_METHOD_KEY: WeakSet[js.Function] = js.native
+  val functionToString: ToString = js.native
   def dedentFunction(fnString: String): String = js.native
-  def functionToString(fn: js.Function, space: String, next: Next): String = js.native
 }
 

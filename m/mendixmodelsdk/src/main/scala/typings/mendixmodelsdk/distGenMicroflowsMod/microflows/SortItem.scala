@@ -22,20 +22,23 @@ class SortItem protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FSortItem: IModel = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
-  var attributePath: String = js.native
+  def attributePath(): String = js.native
+  def attributePath(newValue: String): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
-  var attributeRef: AttributeRef = js.native
-  val containerAsSortItemList: SortItemList = js.native
-  @JSName("model")
-  var model_SortItem: IModel = js.native
-  var sortOrder: SortOrderEnum = js.native
+  def attributeRef(): AttributeRef = js.native
+  def attributeRef(newValue: AttributeRef): js.Any = js.native
+  def containerAsSortItemList(): SortItemList = js.native
+  def sortOrder(): SortOrderEnum = js.native
+  def sortOrder(newValue: SortOrderEnum): js.Any = js.native
 }
 
 /* static members */

@@ -47,22 +47,22 @@ class Raster () extends Item {
     * image into it. Depending on security policies, this might fail, in which
     * case `null` is returned instead.
     */
-  var canvas: HTMLCanvasElement | Null = js.native
+  var canvas: HTMLCanvasElement = js.native
   /** 
     * The Canvas 2D drawing context of the raster.
     */
-  var context: CanvasRenderingContext2D | Null = js.native
+  var context: CanvasRenderingContext2D = js.native
   /** 
     * The crossOrigin value to be used when loading the image resource, in
     * order to support CORS. Note that this needs to be set before setting the
     * {@link #source} property in order to always work (e.g. when the image is
     * cached in the browser).
     */
-  var crossOrigin: String | Null = js.native
+  var crossOrigin: String = js.native
   /** 
     * The height of the raster in pixels.
     */
-  var height: Double | Null = js.native
+  var height: Double = js.native
   /** 
     * The HTMLImageElement or Canvas element of the raster, if one is
     * associated.
@@ -70,7 +70,7 @@ class Raster () extends Item {
     * the raster even if the image has already finished loading before, or if
     * we are setting the raster to a canvas.
     */
-  var image: HTMLImageElement | HTMLCanvasElement | Null = js.native
+  var image: HTMLImageElement | HTMLCanvasElement = js.native
   /** 
     * The loading state of the raster image.
     */
@@ -95,12 +95,12 @@ class Raster () extends Item {
   /** 
     * The size of the raster in pixels.
     */
-  var size: Size | Null = js.native
+  var size: Size = js.native
   /** 
     * Specifies if the raster should be smoothed when scaled up or if the
     * pixels should be scaled up by repeating the nearest neighboring pixels.
     */
-  var smoothing: Boolean | Null = js.native
+  var smoothing: Boolean = js.native
   /** 
     * The source of the raster, which can be set using a DOM Image, a Canvas,
     * a data url, a string describing the URL to load the image from, or the
@@ -110,11 +110,11 @@ class Raster () extends Item {
     * Note that for consistency, a {@link #onLoad} event will be triggered on
     * the raster even if the image has already finished loading before.
     */
-  var source: HTMLImageElement | HTMLCanvasElement | String | Null = js.native
+  var source: HTMLImageElement | HTMLCanvasElement | String = js.native
   /** 
     * The width of the raster in pixels.
     */
-  var width: Double | Null = js.native
+  var width: Double = js.native
   /** 
     * Clears the image, if it is backed by a canvas.
     */

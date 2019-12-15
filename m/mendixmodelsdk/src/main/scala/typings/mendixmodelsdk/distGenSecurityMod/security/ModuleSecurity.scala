@@ -29,10 +29,14 @@ class ModuleSecurity protected () extends ModelUnit {
     isPartial: Boolean,
     container: IModule
   ) = this()
-  val containerAsModule: IModule | Module = js.native
+  @JSName("containerAsModule")
+  val containerAsModule_FModuleSecurity: IModule = js.native
   @JSName("model")
-  var model_ModuleSecurity: IModel = js.native
-  val moduleRoles: IList[IModuleRole | ModuleRole] = js.native
+  var model_FModuleSecurity: IModel = js.native
+  @JSName("moduleRoles")
+  val moduleRoles_FModuleSecurity: IList[IModuleRole] = js.native
+  def containerAsModule(): Module = js.native
+  def moduleRoles(): IList[ModuleRole] = js.native
 }
 
 /* static members */

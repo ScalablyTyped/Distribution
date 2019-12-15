@@ -20,13 +20,13 @@ trait EChartOption_[TSeries] extends js.Object {
   /**
     * The angle axis in Polar Coordinate.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#angleAxis
+    * @see https://echarts.apache.org/en/option.html#angleAxis
     */
   var angleAxis: js.UndefOr[js.Object] = js.undefined
   /**
     * Whether to enable animation.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#animation
+    * @see https://echarts.apache.org/en/option.html#animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait EChartOption_[TSeries] extends js.Object {
     *     // delay for later data is larger
     *     return idx * 100;
     * }
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#animationDelay
+    * @see https://echarts.apache.org/en/option.html#animationDelay
     */
   var animationDelay: js.UndefOr[Double | js.Function] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait EChartOption_[TSeries] extends js.Object {
     *     // delay for later data is larger
     *     return idx * 100;
     * }
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[Double | js.Function] = js.undefined
   /**
@@ -63,7 +63,7 @@ trait EChartOption_[TSeries] extends js.Object {
     *     // delay for later data is larger
     *     return idx * 100;
     * }
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#animationDuration
+    * @see https://echarts.apache.org/en/option.html#animationDuration
     */
   var animationDuration: js.UndefOr[Double] = js.undefined
   /**
@@ -75,27 +75,27 @@ trait EChartOption_[TSeries] extends js.Object {
     *     // delay for later data is larger
     *     return idx * 100;
     * }
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[Double | js.Function] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at `easing effect example`.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#animationEasing
+    * @see https://echarts.apache.org/en/option.html#animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
     * Easing method used for animation.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than threshold.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#animationThreshold
+    * @see https://echarts.apache.org/en/option.html#animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -105,20 +105,20 @@ trait EChartOption_[TSeries] extends js.Object {
     * More importantly, is enables data encoding from data to visual,
     * which brings convenience in some scenarios.
     * More details about `dataset` can be checked in the tutorial.
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#aria
+    * @see https://echarts.apache.org/en/option.html#aria
     */
   var aria: js.UndefOr[js.Object] = js.undefined
   /**
     * `axisPointer` is a tool for displaying reference line and axis value
     * under mouse pointer.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#axisPointer
+    * @see https://echarts.apache.org/en/option.html#axisPointer
     */
   var axisPointer: js.UndefOr[AxisPointer] = js.undefined
   /**
     * Background color. Defaults to have no background.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#backgroundColor
+    * @see https://echarts.apache.org/en/option.html#backgroundColor
     */
   var backgroundColor: js.UndefOr[String] = js.undefined
   /**
@@ -133,7 +133,7 @@ trait EChartOption_[TSeries] extends js.Object {
     * part of data from a chart to display in detail, or doing calculations
     * with them.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#brush
+    * @see https://echarts.apache.org/en/option.html#brush
     */
   var brush: js.UndefOr[js.Object] = js.undefined
   /**
@@ -143,7 +143,7 @@ trait EChartOption_[TSeries] extends js.Object {
     * to achieve the calendar chart, as shown in the following example,
     * we can use calendar coordinates
     * in `heatmap`, `scatter`, `effectScatter`, and `graph`.
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#calendar
+    * @see https://echarts.apache.org/en/option.html#calendar
     */
   var calendar: js.UndefOr[Calendar | js.Array[Calendar]] = js.undefined
   /**
@@ -158,7 +158,7 @@ trait EChartOption_[TSeries] extends js.Object {
     *   '#c4ccd3'
     * ]
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#color
+    * @see https://echarts.apache.org/en/option.html#color
     */
   var color: js.UndefOr[js.Array[String]] = js.undefined
   /**
@@ -179,11 +179,11 @@ trait EChartOption_[TSeries] extends js.Object {
     *   That is `toolbox.feature.dataZoom`, which can only be configured
     *   in toolbox.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom
+    * @see https://echarts.apache.org/en/option.html#dataZoom
     */
   var dataZoom: js.UndefOr[js.Array[DataZoom]] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset
+    * @see https://echarts.apache.org/en/option.html#dataset
     */
   var dataset: js.UndefOr[Dataset | js.Array[Dataset]] = js.undefined
   /**
@@ -191,7 +191,7 @@ trait EChartOption_[TSeries] extends js.Object {
     * Geographic coorinate system component is used to draw maps,
     * which also supports `scatter series`, and `line series`.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#geo
+    * @see https://echarts.apache.org/en/option.html#geo
     */
   var geo: js.UndefOr[js.Object] = js.undefined
   /**
@@ -200,7 +200,7 @@ trait EChartOption_[TSeries] extends js.Object {
     * `image`, `text`, `circle`, `sector`, `ring`, `polygon`,
     * `polyline`, `rect`, `line`, `bezierCurve`, `arc`, `group`,
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#graphic
+    * @see https://echarts.apache.org/en/option.html#graphic
     */
   var graphic: js.UndefOr[js.Object | js.Array[js.Object]] = js.undefined
   /**
@@ -212,7 +212,7 @@ trait EChartOption_[TSeries] extends js.Object {
     * at most in a single echarts instance.
     * But in ECharts 3, there is no limitation.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#grid
+    * @see https://echarts.apache.org/en/option.html#grid
     */
   var grid: js.UndefOr[Grid | js.Array[Grid]] = js.undefined
   /**
@@ -236,7 +236,7 @@ trait EChartOption_[TSeries] extends js.Object {
     * or `horizontally scrollable` legend are options to paginate them.
     * Check `legend.type` please.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#legend
+    * @see https://echarts.apache.org/en/option.html#legend
     */
   var legend: js.UndefOr[Legend] = js.undefined
   /**
@@ -258,20 +258,20 @@ trait EChartOption_[TSeries] extends js.Object {
     *     ...
     * ]
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#parallel
+    * @see https://echarts.apache.org/en/option.html#parallel
     */
   var parallel: js.UndefOr[js.Object] = js.undefined
   /**
     * This component is the coordinate axis for parallel coordinate.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#parallelAxis
+    * @see https://echarts.apache.org/en/option.html#parallelAxis
     */
   var parallelAxis: js.UndefOr[js.Object] = js.undefined
   /**
     * Polar coordinate can be used in scatter and line chart.
     * Every polar coordinate has an `angleAxis` and a `radiusAxis`.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#polar
+    * @see https://echarts.apache.org/en/option.html#polar
     */
   var polar: js.UndefOr[js.Object] = js.undefined
   /**
@@ -300,37 +300,37 @@ trait EChartOption_[TSeries] extends js.Object {
     * including `name`, `axisLine`, `axisTick`, `axisLabel`,
     * `splitLine`, `splitArea`.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#radar
+    * @see https://echarts.apache.org/en/option.html#radar
     */
   var radar: js.UndefOr[js.Object] = js.undefined
   /**
     * Radial axis of polar coordinate.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#radiusAxis
+    * @see https://echarts.apache.org/en/option.html#radiusAxis
     */
   var radiusAxis: js.UndefOr[js.Object] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series
+    * @see https://echarts.apache.org/en/option.html#series
     */
   var series: js.UndefOr[js.Array[TSeries]] = js.undefined
   /**
     * An axis with a single dimension. It can be used to display data
     * in one dimension.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#singleAxis
+    * @see https://echarts.apache.org/en/option.html#singleAxis
     */
   var singleAxis: js.UndefOr[SingleAxis | js.Array[SingleAxis]] = js.undefined
   /**
     * Global font style.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#textStyle
+    * @see https://echarts.apache.org/en/option.html#textStyle
     */
   var textStyle: js.UndefOr[BaseTextStyle] = js.undefined
   /**
     * `timeline` component, which provides functions like switching and playing
     * between multiple ECharts `options`.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#timeline
+    * @see https://echarts.apache.org/en/option.html#timeline
     */
   var timeline: js.UndefOr[js.Object] = js.undefined
   /**
@@ -341,14 +341,14 @@ trait EChartOption_[TSeries] extends js.Object {
     * than one title components.
     * It is more useful when multiple diagrams in one instance all need titles.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#title
+    * @see https://echarts.apache.org/en/option.html#title
     */
   var title: js.UndefOr[EChartTitleOption | js.Array[EChartTitleOption]] = js.undefined
   /**
     * A group of utility tools, which includes `export`, `data view`,
     * `dynamic type switching`, `data area zooming`, and `reset`.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#toolbox
+    * @see https://echarts.apache.org/en/option.html#toolbox
     */
   var toolbox: js.UndefOr[js.Object] = js.undefined
   /**
@@ -360,7 +360,7 @@ trait EChartOption_[TSeries] extends js.Object {
     * + Configured in a series: `series.tooltip`
     * + Configured in each item of `series.data`: `series.data.tooltip`
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip
+    * @see https://echarts.apache.org/en/option.html#tooltip
     */
   var tooltip: js.UndefOr[Tooltip] = js.undefined
   /**
@@ -382,7 +382,7 @@ trait EChartOption_[TSeries] extends js.Object {
     * About how time value (like `1491339540396`, `'2013-01-04'`, ...)
     * is parsed in echarts, see `the time part in date`.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#useUTC
+    * @see https://echarts.apache.org/en/option.html#useUTC
     */
   var useUTC: js.UndefOr[Boolean] = js.undefined
   /**
@@ -418,7 +418,7 @@ trait EChartOption_[TSeries] extends js.Object {
     *   ...
     * };
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap
+    * @see https://echarts.apache.org/en/option.html#visualMap
     */
   var visualMap: js.UndefOr[js.Array[typings.echarts.echarts.EChartOption.VisualMap]] = js.undefined
   /**
@@ -428,7 +428,7 @@ trait EChartOption_[TSeries] extends js.Object {
     * offset can be used to avoid overlap when you need to put more
     * than two x axis.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis
+    * @see https://echarts.apache.org/en/option.html#xAxis
     */
   var xAxis: js.UndefOr[XAxis | js.Array[XAxis]] = js.undefined
   /**
@@ -437,7 +437,7 @@ trait EChartOption_[TSeries] extends js.Object {
     * one on the left and another on the right. offset can be used
     * to avoid overlap when you need to put more than two y axis.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis
+    * @see https://echarts.apache.org/en/option.html#yAxis
     */
   var yAxis: js.UndefOr[YAxis | js.Array[YAxis]] = js.undefined
 }

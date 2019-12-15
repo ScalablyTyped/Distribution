@@ -22,35 +22,44 @@ class ScrollContainerRegion protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FScrollContainerRegion: IModel = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var appearance: Appearance = js.native
+  def appearance(): Appearance = js.native
+  def appearance(newValue: Appearance): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var `class`: String = js.native
-  val containerAsScrollContainer: ScrollContainer = js.native
-  @JSName("model")
-  var model_ScrollContainerRegion: IModel = js.native
-  var size: Double = js.native
-  var sizeMode: SizeMode = js.native
+  def `class`(): String = js.native
+  def `class`(newValue: String): js.Any = js.native
+  def containerAsScrollContainer(): ScrollContainer = js.native
+  def size(): Double = js.native
+  def size(newValue: Double): js.Any = js.native
+  def sizeMode(): SizeMode = js.native
+  def sizeMode(newValue: SizeMode): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var style: String = js.native
+  def style(): String = js.native
+  def style(newValue: String): js.Any = js.native
   /**
     * In version 6.10.0: introduced
     */
-  var toggleMode: ToggleMode = js.native
+  def toggleMode(): ToggleMode = js.native
+  def toggleMode(newValue: ToggleMode): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var widget: Widget | Null = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val widgets: IList[Widget] = js.native
+  def widgets(): IList[Widget] = js.native
 }
 
 /* static members */

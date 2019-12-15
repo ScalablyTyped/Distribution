@@ -28,10 +28,12 @@ class LayoutParameter protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsLayout: ILayout | Layout = js.native
+  @JSName("containerAsLayout")
+  val containerAsLayout_FLayoutParameter: ILayout = js.native
   @JSName("model")
-  var model_LayoutParameter: IModel = js.native
-  var name: String = js.native
+  var model_FLayoutParameter: IModel = js.native
+  @JSName("name")
+  val name_FLayoutParameter: String = js.native
   /**
     * Returns the qualified name of this element, or
     * null if this element is not a part of the model,
@@ -40,6 +42,11 @@ class LayoutParameter protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
+  def containerAsLayout(): Layout = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  @JSName("qualifiedName")
+  def qualifiedName_MLayoutParameter(): String | Null = js.native
 }
 
 /* static members */

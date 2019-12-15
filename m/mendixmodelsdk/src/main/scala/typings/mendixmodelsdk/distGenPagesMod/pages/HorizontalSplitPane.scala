@@ -28,6 +28,8 @@ class HorizontalSplitPane protected () extends SplitPane {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FHorizontalSplitPane: IModel = js.native
 }
 
 /* static members */

@@ -26,6 +26,8 @@ class SignOutClientAction protected () extends ClientAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FSignOutClientAction: IModel = js.native
 }
 
 /* static members */

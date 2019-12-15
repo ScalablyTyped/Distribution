@@ -13,7 +13,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.themeRiver.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
@@ -24,7 +24,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   /**
@@ -36,21 +36,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
     * Border radius of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   /**
     * Border width of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -62,7 +62,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @default
     * '#000'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.color
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -70,13 +70,13 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * Works when position is string value (like `'top'`、`'insideRight'`).
     *
     * See:
-    * [label position](https://ecomfe.github.io/echarts-examples/public/editor.html?c=doc-example/label-position)
+    * [label position](https://echarts.apache.org/examples/en/editor.html?c=doc-example/label-position)
     * .
     *
     *
     * @default
     * 5
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.distance
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.distance
     */
   var distance: js.UndefOr[Double] = js.undefined
   /**
@@ -87,7 +87,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @default
     * "sans-serif"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   /**
@@ -96,7 +96,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @default
     * 11
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.fontSize
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   /**
@@ -111,7 +111,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   /**
@@ -128,7 +128,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontWeight
     */
   var fontWeight: js.UndefOr[String] = js.undefined
   /**
@@ -143,7 +143,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.height
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
@@ -152,10 +152,10 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * If `lineHeight` is not set in `rich`, `lineHeight` in
     * parent level will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.themeRiver.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   /**
@@ -164,7 +164,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * and move `40` vertically.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.offset
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.offset
     */
   var offset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -179,7 +179,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * height of the content, without `padding`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.padding
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.padding
     */
   var padding: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
@@ -193,7 +193,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * represent position of label relative to top-left corner
     * of bounding box. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.themeRiver.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
     *
     * + 'top'
     *
@@ -211,31 +211,31 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * + 'insideBottomRight'
     *
     * See:
-    * [label position](https://ecomfe.github.io/echarts-examples/public/view.html?c=doc-example/label-position)
+    * [label position](https://echarts.apache.org/examples/en/view.html?c=doc-example/label-position)
     * .
     *
     *
     * @default
     * "left"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.position
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.position
     */
   var position: js.UndefOr[js.Array[_] | String] = js.undefined
   /**
     * "Rich text styles" can be defined in this `rich` property.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.themeRiver.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
     *
     * For more details, see
-    * [Rich Text](https://ecomfe.github.io/echarts-doc/public/en/option.htmltutorial.html#Rich%20Text)
+    * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.rich
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align]
   ] = js.undefined
@@ -244,18 +244,18 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * rotate anti-clockwise.
     *
     * See:
-    * [label rotation](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-label-rotation)
+    * [label rotation](https://echarts.apache.org/examples/en/editor.html?c=bar-label-rotation)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.rotate
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rotate
     */
   var rotate: js.UndefOr[Double] = js.undefined
   /**
     * Show blur of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -264,28 +264,28 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
     * Whether to show label.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.show
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -297,21 +297,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   /**
     * Storke line width of the text.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   /**
     * Shadow blue of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -320,21 +320,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -358,7 +358,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.width
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -382,7 +382,7 @@ object Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFa
     padding: js.Array[_] | Double = null,
     position: js.Array[_] | String = null,
     rich: /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align] = null,
     rotate: Int | Double = null,

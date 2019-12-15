@@ -20,6 +20,8 @@ class Filter protected () extends InspectAttribute {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FFilter: IModel = js.native
 }
 
 /* static members */

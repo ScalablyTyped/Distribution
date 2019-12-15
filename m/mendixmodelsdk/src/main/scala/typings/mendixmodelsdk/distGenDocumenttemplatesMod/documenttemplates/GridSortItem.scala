@@ -23,20 +23,23 @@ class GridSortItem protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FGridSortItem: IModel = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
-  var attributePath: String = js.native
+  def attributePath(): String = js.native
+  def attributePath(newValue: String): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
-  var attributeRef: AttributeRef = js.native
-  val containerAsGridSortBar: GridSortBar = js.native
-  @JSName("model")
-  var model_GridSortItem: IModel = js.native
-  var sortOrder: SortDirection = js.native
+  def attributeRef(): AttributeRef = js.native
+  def attributeRef(newValue: AttributeRef): js.Any = js.native
+  def containerAsGridSortBar(): GridSortBar = js.native
+  def sortOrder(): SortDirection = js.native
+  def sortOrder(newValue: SortDirection): js.Any = js.native
 }
 
 /* static members */

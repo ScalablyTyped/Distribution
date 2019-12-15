@@ -26,13 +26,13 @@ object baseIteratorListIteratorMod extends js.Object {
       */
     var prev_ : js.Any = js.native
     /**
-      * @inheritDoc
-      */
-    val value: T = js.native
-    /**
       * @hidden
       */
     var value_ : T = js.native
+    /**
+      * @hidden
+      */
+    /* protected */ def _Try_value(): Unit = js.native
     /**
       * @inheritDoc
       */
@@ -49,6 +49,10 @@ object baseIteratorListIteratorMod extends js.Object {
       * @inheritDoc
       */
     def source(): SourceT = js.native
+    /**
+      * @inheritDoc
+      */
+    def value(): T = js.native
   }
   
 }

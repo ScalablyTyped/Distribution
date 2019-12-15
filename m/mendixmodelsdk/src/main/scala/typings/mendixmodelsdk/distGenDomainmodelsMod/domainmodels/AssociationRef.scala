@@ -23,8 +23,11 @@ class AssociationRef protected () extends MemberRef {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var association: IAssociationBase = js.native
-  val associationQualifiedName: String = js.native
+  @JSName("model")
+  var model_FAssociationRef: IModel = js.native
+  def association(): IAssociationBase = js.native
+  def association(newValue: IAssociationBase): js.Any = js.native
+  def associationQualifiedName(): String = js.native
 }
 
 /* static members */

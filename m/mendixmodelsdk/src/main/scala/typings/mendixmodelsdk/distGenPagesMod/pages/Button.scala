@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenTextsMod.texts.Text
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -23,11 +24,20 @@ abstract class Button protected () extends ConditionallyVisibleWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var buttonStyle: ButtonStyle = js.native
-  var caption: ClientTemplate = js.native
-  var icon: Icon | Null = js.native
-  var renderType: RenderType = js.native
-  var tooltip: Text = js.native
+  @JSName("model")
+  var model_FButton: IModel = js.native
+  def buttonStyle(): ButtonStyle = js.native
+  def buttonStyle(newValue: ButtonStyle): js.Any = js.native
+  def caption(): ClientTemplate = js.native
+  def caption(newValue: ClientTemplate): js.Any = js.native
+  def icon(): Icon | Null = js.native
+  def icon(newValue: Icon): js.Any = js.native
+  @JSName("icon")
+  def icon_Any(): js.Any = js.native
+  def renderType(): RenderType = js.native
+  def renderType(newValue: RenderType): js.Any = js.native
+  def tooltip(): Text = js.native
+  def tooltip(newValue: Text): js.Any = js.native
 }
 
 /* static members */

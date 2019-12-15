@@ -21,14 +21,19 @@ class Language protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var checkCompleteness: Boolean = js.native
-  var code: String = js.native
-  val containerAsLanguageSettings: LanguageSettings = js.native
-  var customDateFormat: String = js.native
-  var customDateTimeFormat: String = js.native
-  var customTimeFormat: String = js.native
   @JSName("model")
-  var model_Language: IModel = js.native
+  var model_FLanguage: IModel = js.native
+  def checkCompleteness(): Boolean = js.native
+  def checkCompleteness(newValue: Boolean): js.Any = js.native
+  def code(): String = js.native
+  def code(newValue: String): js.Any = js.native
+  def containerAsLanguageSettings(): LanguageSettings = js.native
+  def customDateFormat(): String = js.native
+  def customDateFormat(newValue: String): js.Any = js.native
+  def customDateTimeFormat(): String = js.native
+  def customDateTimeFormat(newValue: String): js.Any = js.native
+  def customTimeFormat(): String = js.native
+  def customTimeFormat(newValue: String): js.Any = js.native
 }
 
 /* static members */

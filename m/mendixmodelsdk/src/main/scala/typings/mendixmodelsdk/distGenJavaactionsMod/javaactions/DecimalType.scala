@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IType because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IPrimitiveType because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IDecimalType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.DecimalType")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IDecimalType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.DecimalType")
 @js.native
 class DecimalType protected () extends PrimitiveType {
   def this(
@@ -30,6 +30,14 @@ class DecimalType protected () extends PrimitiveType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDecimalType: IModel = js.native
+  @JSName("containerAsBasicParameterType")
+  def containerAsBasicParameterType_MDecimalType(): BasicParameterType = js.native
+  @JSName("containerAsJavaActionParameter")
+  def containerAsJavaActionParameter_MDecimalType(): JavaActionParameter = js.native
+  @JSName("containerAsJavaAction")
+  def containerAsJavaAction_MDecimalType(): JavaAction = js.native
 }
 
 /* static members */

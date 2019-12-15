@@ -22,12 +22,15 @@ class MicroflowCall protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsMicroflowCallAction: MicroflowCallAction = js.native
-  var microflow: IMicroflow | Null = js.native
-  val microflowQualifiedName: String | Null = js.native
   @JSName("model")
-  var model_MicroflowCall: IModel = js.native
-  val parameterMappings: IList[MicroflowCallParameterMapping] = js.native
+  var model_FMicroflowCall: IModel = js.native
+  def containerAsMicroflowCallAction(): MicroflowCallAction = js.native
+  def microflow(): IMicroflow | Null = js.native
+  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflowQualifiedName(): String | Null = js.native
+  @JSName("microflow")
+  def microflow_Any(): js.Any = js.native
+  def parameterMappings(): IList[MicroflowCallParameterMapping] = js.native
 }
 
 /* static members */

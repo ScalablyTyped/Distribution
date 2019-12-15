@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenTextsMod.texts.Text
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -20,7 +21,10 @@ abstract class AttributeWidgetWithPlaceholder protected () extends AttributeWidg
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var placeholder: Text = js.native
+  @JSName("model")
+  var model_FAttributeWidgetWithPlaceholder: IModel = js.native
+  def placeholder(): Text = js.native
+  def placeholder(newValue: Text): js.Any = js.native
 }
 
 /* static members */

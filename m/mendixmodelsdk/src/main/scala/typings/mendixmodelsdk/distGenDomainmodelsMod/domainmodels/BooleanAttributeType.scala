@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAttributeType because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IBooleanAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BooleanAttributeType")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IBooleanAttributeType because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BooleanAttributeType")
 @js.native
 class BooleanAttributeType protected () extends AttributeType {
   def this(
@@ -25,8 +25,10 @@ class BooleanAttributeType protected () extends AttributeType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FBooleanAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  val containerAsAttribute_BooleanAttributeType: Attribute = js.native
+  def containerAsAttribute_MBooleanAttributeType(): Attribute = js.native
 }
 
 /* static members */

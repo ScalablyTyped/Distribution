@@ -26,10 +26,13 @@ class CancelButton protected () extends Button {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FCancelButton: IModel = js.native
   /**
     * In version 6.7.0: introduced
     */
-  var closePage: Boolean = js.native
+  def closePage(): Boolean = js.native
+  def closePage(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

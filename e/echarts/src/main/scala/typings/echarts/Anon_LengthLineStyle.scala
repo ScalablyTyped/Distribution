@@ -12,11 +12,11 @@ trait Anon_LengthLineStyle extends js.Object {
     *
     * @default
     * 8
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisTick.length
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.length
     */
   var length: js.UndefOr[Double | String] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisTick.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
   /**
@@ -25,7 +25,7 @@ trait Anon_LengthLineStyle extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisTick.show
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -34,7 +34,7 @@ trait Anon_LengthLineStyle extends js.Object {
     *
     * @default
     * 5
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisTick.splitNumber
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.splitNumber
     */
   var splitNumber: js.UndefOr[Double] = js.undefined
 }

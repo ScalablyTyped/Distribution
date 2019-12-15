@@ -21,10 +21,11 @@ class OneTimeConversionMarker protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsProjectConversion: ProjectConversion = js.native
   @JSName("model")
-  var model_OneTimeConversionMarker: IModel = js.native
-  var name: String = js.native
+  var model_FOneTimeConversionMarker: IModel = js.native
+  def containerAsProjectConversion(): ProjectConversion = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
 }
 
 /* static members */

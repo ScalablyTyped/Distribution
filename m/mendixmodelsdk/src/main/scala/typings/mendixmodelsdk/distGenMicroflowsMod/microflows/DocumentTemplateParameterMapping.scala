@@ -22,20 +22,23 @@ class DocumentTemplateParameterMapping protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDocumentTemplateParameterMapping: IModel = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var argument: String = js.native
+  def argument(): String = js.native
+  def argument(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var argumentModel: Expression = js.native
-  val containerAsGenerateDocumentAction: GenerateDocumentAction = js.native
-  @JSName("model")
-  var model_DocumentTemplateParameterMapping: IModel = js.native
-  var widgetName: String = js.native
+  def argumentModel(): Expression = js.native
+  def argumentModel(newValue: Expression): js.Any = js.native
+  def containerAsGenerateDocumentAction(): GenerateDocumentAction = js.native
+  def widgetName(): String = js.native
+  def widgetName(newValue: String): js.Any = js.native
 }
 
 /* static members */

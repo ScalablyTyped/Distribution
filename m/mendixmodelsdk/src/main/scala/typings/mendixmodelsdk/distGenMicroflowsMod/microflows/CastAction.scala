@@ -23,7 +23,10 @@ class CastAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var outputVariableName: String = js.native
+  @JSName("model")
+  var model_FCastAction: IModel = js.native
+  def outputVariableName(): String = js.native
+  def outputVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

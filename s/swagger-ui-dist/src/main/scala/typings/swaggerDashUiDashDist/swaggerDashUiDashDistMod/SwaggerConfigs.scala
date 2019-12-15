@@ -2,7 +2,6 @@ package typings.swaggerDashUiDashDist.swaggerDashUiDashDistMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
-import typings.swaggerDashUiDashDist.swaggerDashUiDashDistStrings.BaseLayout
 import typings.swaggerDashUiDashDist.swaggerDashUiDashDistStrings.full
 import typings.swaggerDashUiDashDist.swaggerDashUiDashDistStrings.list
 import typings.swaggerDashUiDashDist.swaggerDashUiDashDistStrings.none
@@ -35,7 +34,7 @@ trait SwaggerConfigs
   /**
     * The name of a component available via the plugin system to use as the top-level layout for Swagger UI.
     */
-  var layout: js.UndefOr[BaseLayout] = js.undefined
+  var layout: js.UndefOr[String] = js.undefined
   /**
     * If set, limits the number of tagged operations displayed to at most this many. The default is to show all operations.
     */
@@ -89,7 +88,7 @@ object SwaggerConfigs {
     docExpansion: list | full | none = null,
     domNode: String | HTMLElement = null,
     dom_id: String = null,
-    layout: BaseLayout = null,
+    layout: String = null,
     maxDisplayedTags: Int | Double = null,
     operationsSorter: () => Unit = null,
     plugins: js.Any = null,

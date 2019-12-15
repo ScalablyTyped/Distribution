@@ -13,7 +13,7 @@ trait Layout extends js.Object {
     * A string corresponding to the component key.
     * Uses the index of components instead if not provided.
     */
-  var i: js.UndefOr[String] = js.undefined
+  var i: String
   /**
     * If false, will not be draggable. Overrides `static`.
     */
@@ -64,10 +64,10 @@ object Layout {
   @scala.inline
   def apply(
     h: Double,
+    i: String,
     w: Double,
     x: Double,
     y: Double,
-    i: String = null,
     isDraggable: js.UndefOr[Boolean] = js.undefined,
     isResizable: js.UndefOr[Boolean] = js.undefined,
     maxH: Int | Double = null,
@@ -77,8 +77,7 @@ object Layout {
     moved: js.UndefOr[Boolean] = js.undefined,
     static: js.UndefOr[Boolean] = js.undefined
   ): Layout = {
-    val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (i != null) __obj.updateDynamic("i")(i.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (!js.isUndefined(isDraggable)) __obj.updateDynamic("isDraggable")(isDraggable.asInstanceOf[js.Any])
     if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable.asInstanceOf[js.Any])
     if (maxH != null) __obj.updateDynamic("maxH")(maxH.asInstanceOf[js.Any])

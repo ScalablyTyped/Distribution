@@ -1,10 +1,13 @@
 package typings.mendixmodelsdk.distGenRestMod.rest
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenConstantsMod.constants.IConstant
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.RemoteEntitySourceDocument
+import typings.mendixmodelsdk.distGenExpressionsMod.expressions.Expression
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.HttpConfiguration
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflow
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.RequestProxyType
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenRestMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
@@ -29,7 +32,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IRemoteEntitySourceDocument because Already inherited
-- typings.mendixmodelsdk.distGenRestMod.rest.IConsumedODataService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService")
+- typings.mendixmodelsdk.distGenRestMod.rest.IConsumedODataService because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService")
 @js.native
 class ConsumedODataService protected () extends RemoteEntitySourceDocument {
   def this(
@@ -39,42 +42,82 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  @JSName("model")
+  var model_FConsumedODataService: IModel = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MConsumedODataService(): FolderBase = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  val entities: IList[ODataEntity] = js.native
+  def entities(): IList[ODataEntity] = js.native
   /**
     * In version 8.4.0: introduced
     */
-  var headersMicroflow: IMicroflow | Null = js.native
-  val headersMicroflowQualifiedName: String | Null = js.native
+  def headersMicroflow(): IMicroflow | Null = js.native
+  def headersMicroflow(newValue: IMicroflow): js.Any = js.native
+  def headersMicroflowQualifiedName(): String | Null = js.native
+  @JSName("headersMicroflow")
+  def headersMicroflow_Any(): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var httpConfiguration: HttpConfiguration = js.native
-  var metadata: String = js.native
-  var metadataUrl: String = js.native
-  var proxyHost: IConstant | Null = js.native
-  val proxyHostQualifiedName: String | Null = js.native
-  var proxyPassword: IConstant | Null = js.native
-  val proxyPasswordQualifiedName: String | Null = js.native
-  var proxyPort: IConstant | Null = js.native
-  val proxyPortQualifiedName: String | Null = js.native
-  var proxyType: RequestProxyType = js.native
-  var proxyUsername: IConstant | Null = js.native
-  val proxyUsernameQualifiedName: String | Null = js.native
+  def httpConfiguration(): HttpConfiguration = js.native
+  def httpConfiguration(newValue: HttpConfiguration): js.Any = js.native
+  def metadata(): String = js.native
+  def metadata(newValue: String): js.Any = js.native
+  def metadataUrl(): String = js.native
+  def metadataUrl(newValue: String): js.Any = js.native
+  def proxyHost(): IConstant | Null = js.native
+  def proxyHost(newValue: IConstant): js.Any = js.native
+  def proxyHostQualifiedName(): String | Null = js.native
+  @JSName("proxyHost")
+  def proxyHost_Any(): js.Any = js.native
+  def proxyPassword(): IConstant | Null = js.native
+  def proxyPassword(newValue: IConstant): js.Any = js.native
+  def proxyPasswordQualifiedName(): String | Null = js.native
+  @JSName("proxyPassword")
+  def proxyPassword_Any(): js.Any = js.native
+  def proxyPort(): IConstant | Null = js.native
+  def proxyPort(newValue: IConstant): js.Any = js.native
+  def proxyPortQualifiedName(): String | Null = js.native
+  @JSName("proxyPort")
+  def proxyPort_Any(): js.Any = js.native
+  def proxyType(): RequestProxyType = js.native
+  def proxyType(newValue: RequestProxyType): js.Any = js.native
+  def proxyUsername(): IConstant | Null = js.native
+  def proxyUsername(newValue: IConstant): js.Any = js.native
+  def proxyUsernameQualifiedName(): String | Null = js.native
+  @JSName("proxyUsername")
+  def proxyUsername_Any(): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var serviceId: String = js.native
+  def serviceId(): String = js.native
+  def serviceId(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var serviceName: String = js.native
+  def serviceName(): String = js.native
+  def serviceName(newValue: String): js.Any = js.native
+  /**
+    * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
+    *
+    * In version 8.5.0: introduced
+    */
+  def timeoutExpression(): String = js.native
+  def timeoutExpression(newValue: String): js.Any = js.native
+  /**
+    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 8.5.0: introduced
+    */
+  def timeoutModel(): Expression = js.native
+  def timeoutModel(newValue: Expression): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var version: String = js.native
+  def version(): String = js.native
+  def version(newValue: String): js.Any = js.native
 }
 
 /* static members */

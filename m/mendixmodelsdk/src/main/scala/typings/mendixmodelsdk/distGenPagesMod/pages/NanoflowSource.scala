@@ -26,12 +26,17 @@ class NanoflowSource protected () extends DataSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var nanoflow: INanoflow | Null = js.native
-  val nanoflowQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FNanoflowSource: IModel = js.native
+  def nanoflow(): INanoflow | Null = js.native
+  def nanoflow(newValue: INanoflow): js.Any = js.native
+  def nanoflowQualifiedName(): String | Null = js.native
+  @JSName("nanoflow")
+  def nanoflow_Any(): js.Any = js.native
   /**
     * In version 7.19.0: introduced
     */
-  val parameterMappings: IList[NanoflowParameterMapping] = js.native
+  def parameterMappings(): IList[NanoflowParameterMapping] = js.native
 }
 
 /* static members */

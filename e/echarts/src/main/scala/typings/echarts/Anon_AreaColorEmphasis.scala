@@ -11,14 +11,14 @@ trait Anon_AreaColorEmphasis extends js.Object {
     *
     * @default
     * "#eee"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.itemStyle.areaColor
+    * @see https://echarts.apache.org/en/option.html#series-map.itemStyle.areaColor
     */
   var areaColor: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * Map area style in highlighted state.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.itemStyle.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-map.itemStyle.emphasis
     */
   var emphasis: js.UndefOr[Anon_AreaColor] = js.undefined
 }

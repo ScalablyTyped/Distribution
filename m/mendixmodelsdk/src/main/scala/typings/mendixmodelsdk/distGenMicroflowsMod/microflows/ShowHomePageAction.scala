@@ -23,6 +23,8 @@ class ShowHomePageAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FShowHomePageAction: IModel = js.native
 }
 
 /* static members */

@@ -25,6 +25,8 @@ class DataViewCloseButton protected () extends DataViewControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDataViewCloseButton: IModel = js.native
 }
 
 /* static members */

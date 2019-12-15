@@ -1,7 +1,9 @@
 package typings.mendixmodelsdk.distGenRestMod.rest
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflow
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenRestMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenSecurityMod.security.IModuleRole
@@ -22,7 +24,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.distGenRestMod.rest.IPublishedODataService because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedODataService")
+- typings.mendixmodelsdk.distGenRestMod.rest.IPublishedODataService because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedODataService")
 @js.native
 class PublishedODataService protected () extends Document {
   def this(
@@ -32,40 +34,54 @@ class PublishedODataService protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  val allowedModuleRoles: IList[IModuleRole] = js.native
-  val allowedModuleRolesQualifiedNames: js.Array[String] = js.native
+  @JSName("model")
+  var model_FPublishedODataService: IModel = js.native
+  def allowedModuleRoles(): IList[IModuleRole] = js.native
+  def allowedModuleRolesQualifiedNames(): js.Array[String] = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var authenticationMicroflow: IMicroflow | Null = js.native
-  val authenticationMicroflowQualifiedName: String | Null = js.native
+  def authenticationMicroflow(): IMicroflow | Null = js.native
+  def authenticationMicroflow(newValue: IMicroflow): js.Any = js.native
+  def authenticationMicroflowQualifiedName(): String | Null = js.native
+  @JSName("authenticationMicroflow")
+  def authenticationMicroflow_Any(): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  val authenticationTypes: IList[RestAuthenticationType] = js.native
+  def authenticationTypes(): IList[RestAuthenticationType] = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MPublishedODataService(): FolderBase = js.native
   /**
     * In version 8.4.0: introduced
     */
-  var description: String = js.native
-  var namespace: String = js.native
-  var path: String = js.native
+  def description(): String = js.native
+  def description(newValue: String): js.Any = js.native
+  def namespace(): String = js.native
+  def namespace(newValue: String): js.Any = js.native
+  def path(): String = js.native
+  def path(newValue: String): js.Any = js.native
   /**
     * In version 7.19.0: introduced
     */
-  var publishAssociations: Boolean = js.native
-  val resources: IList[PublishedRestResource] = js.native
+  def publishAssociations(): Boolean = js.native
+  def publishAssociations(newValue: Boolean): js.Any = js.native
+  def resources(): IList[PublishedRestResource] = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var serviceName: String = js.native
+  def serviceName(): String = js.native
+  def serviceName(newValue: String): js.Any = js.native
   /**
     * In version 8.4.0: introduced
     */
-  var summary: String = js.native
+  def summary(): String = js.native
+  def summary(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var version: String = js.native
+  def version(): String = js.native
+  def version(newValue: String): js.Any = js.native
 }
 
 /* static members */

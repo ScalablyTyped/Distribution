@@ -31,16 +31,16 @@ abstract class EntityRef protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsCreateObjectClientAction: CreateObjectClientAction = js.native
-  val containerAsEntityPathSource: EntityPathSource = js.native
-  val containerAsEntityWidget: EntityWidget = js.native
-  val containerAsMemberRef: MemberRef = js.native
-  val containerAsNewButton: NewButton = js.native
-  val containerAsReferenceSetSelector: ReferenceSetSelector = js.native
-  val containerAsSelectorXPathSource: SelectorXPathSource = js.native
-  val containerAsWidgetValue: WidgetValue = js.native
   @JSName("model")
-  var model_EntityRef: IModel = js.native
+  var model_FEntityRef: IModel = js.native
+  def containerAsCreateObjectClientAction(): CreateObjectClientAction = js.native
+  def containerAsEntityPathSource(): EntityPathSource = js.native
+  def containerAsEntityWidget(): EntityWidget = js.native
+  def containerAsMemberRef(): MemberRef = js.native
+  def containerAsNewButton(): NewButton = js.native
+  def containerAsReferenceSetSelector(): ReferenceSetSelector = js.native
+  def containerAsSelectorXPathSource(): SelectorXPathSource = js.native
+  def containerAsWidgetValue(): WidgetValue = js.native
 }
 
 /* static members */

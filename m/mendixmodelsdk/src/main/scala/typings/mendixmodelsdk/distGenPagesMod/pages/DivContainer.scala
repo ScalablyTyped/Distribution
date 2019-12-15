@@ -28,22 +28,29 @@ class DivContainer protected () extends ConditionallyVisibleWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDivContainer: IModel = js.native
   /**
     * In version 8.3.0: introduced
     */
-  var onClickAction: ClientAction = js.native
+  def onClickAction(): ClientAction = js.native
+  def onClickAction(newValue: ClientAction): js.Any = js.native
   /**
     * In version 7.23.0: introduced
     */
-  var renderMode: ContainerRenderMode = js.native
+  def renderMode(): ContainerRenderMode = js.native
+  def renderMode(newValue: ContainerRenderMode): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var widget: Widget | Null = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val widgets: IList[Widget] = js.native
+  def widgets(): IList[Widget] = js.native
 }
 
 /* static members */
@@ -292,6 +299,15 @@ object DivContainer extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DivContainer = js.native
+  /**
+    * Creates and returns a new DivContainer instance in the SDK and on the server.
+    * The new DivContainer will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DivContainer = js.native
   /**
     * Creates and returns a new DivContainer instance in the SDK and on the server.
     * The new DivContainer will be automatically stored in the 'widgets' property

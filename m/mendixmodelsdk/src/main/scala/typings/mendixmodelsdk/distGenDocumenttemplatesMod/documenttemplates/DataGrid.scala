@@ -24,8 +24,10 @@ class DataGrid protected () extends Grid {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val columns: IList[DataGridColumn] = js.native
-  val weights: IList[Double] = js.native
+  @JSName("model")
+  var model_FDataGrid: IModel = js.native
+  def columns(): IList[DataGridColumn] = js.native
+  def weights(): IList[Double] = js.native
 }
 
 /* static members */

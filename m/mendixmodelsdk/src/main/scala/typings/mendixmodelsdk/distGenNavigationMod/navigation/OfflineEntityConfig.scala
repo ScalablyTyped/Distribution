@@ -27,16 +27,19 @@ class OfflineEntityConfig protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FOfflineEntityConfig: IModel = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
-  var constraint: String = js.native
-  val containerAsNavigationProfileBase: NavigationProfileBase = js.native
-  var entity: IEntity = js.native
-  val entityQualifiedName: String = js.native
-  @JSName("model")
-  var model_OfflineEntityConfig: IModel = js.native
-  var shouldDownload: Boolean = js.native
+  def constraint(): String = js.native
+  def constraint(newValue: String): js.Any = js.native
+  def containerAsNavigationProfileBase(): NavigationProfileBase = js.native
+  def entity(): IEntity = js.native
+  def entity(newValue: IEntity): js.Any = js.native
+  def entityQualifiedName(): String = js.native
+  def shouldDownload(): Boolean = js.native
+  def shouldDownload(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

@@ -9,7 +9,7 @@ trait Anon_RotateLabel extends js.Object {
     * Whether to rotate the label automatically.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.circular.rotateLabel
+    * @see https://echarts.apache.org/en/option.html#series-graph.circular.rotateLabel
     */
   var rotateLabel: js.UndefOr[Boolean] = js.undefined
 }

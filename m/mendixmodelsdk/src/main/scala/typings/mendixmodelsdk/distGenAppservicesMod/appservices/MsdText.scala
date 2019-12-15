@@ -21,11 +21,13 @@ class MsdText protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: String = js.native
-  val containerAsMsdEnumerationValue: MsdEnumerationValue = js.native
-  var languageCode: String = js.native
   @JSName("model")
-  var model_MsdText: IModel = js.native
+  var model_FMsdText: IModel = js.native
+  def caption(): String = js.native
+  def caption(newValue: String): js.Any = js.native
+  def containerAsMsdEnumerationValue(): MsdEnumerationValue = js.native
+  def languageCode(): String = js.native
+  def languageCode(newValue: String): js.Any = js.native
 }
 
 /* static members */

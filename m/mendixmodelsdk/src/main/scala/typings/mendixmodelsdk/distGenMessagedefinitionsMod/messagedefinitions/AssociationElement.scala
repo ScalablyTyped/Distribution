@@ -28,6 +28,8 @@ class AssociationElement protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FAssociationElement: IModel = js.native
 }
 
 /* static members */

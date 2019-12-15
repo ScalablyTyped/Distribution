@@ -22,15 +22,21 @@ class Msd protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsConsumedAppService: ConsumedAppService = js.native
-  var domainModel: MsdDomainModel = js.native
-  var enumerations: MsdEnumerationContainer = js.native
-  var metadata: MsdMetadata = js.native
   @JSName("model")
-  var model_Msd: IModel = js.native
-  var version: MsdVersion = js.native
-  var wsdl: String = js.native
-  var wsdlDescription: WsdlDescription = js.native
+  var model_FMsd: IModel = js.native
+  def containerAsConsumedAppService(): ConsumedAppService = js.native
+  def domainModel(): MsdDomainModel = js.native
+  def domainModel(newValue: MsdDomainModel): js.Any = js.native
+  def enumerations(): MsdEnumerationContainer = js.native
+  def enumerations(newValue: MsdEnumerationContainer): js.Any = js.native
+  def metadata(): MsdMetadata = js.native
+  def metadata(newValue: MsdMetadata): js.Any = js.native
+  def version(): MsdVersion = js.native
+  def version(newValue: MsdVersion): js.Any = js.native
+  def wsdl(): String = js.native
+  def wsdl(newValue: String): js.Any = js.native
+  def wsdlDescription(): WsdlDescription = js.native
+  def wsdlDescription(newValue: WsdlDescription): js.Any = js.native
 }
 
 /* static members */

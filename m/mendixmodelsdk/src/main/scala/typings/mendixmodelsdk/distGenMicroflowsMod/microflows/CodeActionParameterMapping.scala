@@ -21,10 +21,10 @@ abstract class CodeActionParameterMapping protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsJavaActionCallAction: JavaActionCallAction = js.native
-  val containerAsJavaScriptActionCallAction: JavaScriptActionCallAction = js.native
   @JSName("model")
-  var model_CodeActionParameterMapping: IModel = js.native
+  var model_FCodeActionParameterMapping: IModel = js.native
+  def containerAsJavaActionCallAction(): JavaActionCallAction = js.native
+  def containerAsJavaScriptActionCallAction(): JavaScriptActionCallAction = js.native
 }
 
 /* static members */

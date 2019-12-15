@@ -23,9 +23,16 @@ class TemplateGrid protected () extends Grid {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var evenRowsContents: TemplateGridContents | Null = js.native
-  var numberOfColumns: Double = js.native
-  var oddRowsContents: TemplateGridContents = js.native
+  @JSName("model")
+  var model_FTemplateGrid: IModel = js.native
+  def evenRowsContents(): TemplateGridContents | Null = js.native
+  def evenRowsContents(newValue: TemplateGridContents): js.Any = js.native
+  @JSName("evenRowsContents")
+  def evenRowsContents_Any(): js.Any = js.native
+  def numberOfColumns(): Double = js.native
+  def numberOfColumns(newValue: Double): js.Any = js.native
+  def oddRowsContents(): TemplateGridContents = js.native
+  def oddRowsContents(newValue: TemplateGridContents): js.Any = js.native
 }
 
 /* static members */

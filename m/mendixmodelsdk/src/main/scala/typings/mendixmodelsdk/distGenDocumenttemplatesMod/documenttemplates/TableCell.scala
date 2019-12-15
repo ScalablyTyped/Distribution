@@ -23,10 +23,16 @@ class TableCell protected () extends DropZone {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var colSpan: Double = js.native
-  var isPartOfSpan: Boolean = js.native
-  var rowSpan: Double = js.native
-  var style: Style = js.native
+  @JSName("model")
+  var model_FTableCell: IModel = js.native
+  def colSpan(): Double = js.native
+  def colSpan(newValue: Double): js.Any = js.native
+  def isPartOfSpan(): Boolean = js.native
+  def isPartOfSpan(newValue: Boolean): js.Any = js.native
+  def rowSpan(): Double = js.native
+  def rowSpan(newValue: Double): js.Any = js.native
+  def style(): Style = js.native
+  def style(newValue: Style): js.Any = js.native
 }
 
 /* static members */

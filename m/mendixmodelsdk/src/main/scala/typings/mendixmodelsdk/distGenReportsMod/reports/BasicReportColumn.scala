@@ -23,14 +23,19 @@ class BasicReportColumn protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var alignment: AlignmentEnum = js.native
-  var caption: Text = js.native
-  val containerAsBasicReport: BasicReport = js.native
-  var dataSetColumnName: String = js.native
-  var format: ColumnFormat = js.native
   @JSName("model")
-  var model_BasicReportColumn: IModel = js.native
-  var width: Double = js.native
+  var model_FBasicReportColumn: IModel = js.native
+  def alignment(): AlignmentEnum = js.native
+  def alignment(newValue: AlignmentEnum): js.Any = js.native
+  def caption(): Text = js.native
+  def caption(newValue: Text): js.Any = js.native
+  def containerAsBasicReport(): BasicReport = js.native
+  def dataSetColumnName(): String = js.native
+  def dataSetColumnName(newValue: String): js.Any = js.native
+  def format(): ColumnFormat = js.native
+  def format(newValue: ColumnFormat): js.Any = js.native
+  def width(): Double = js.native
+  def width(newValue: Double): js.Any = js.native
 }
 
 /* static members */

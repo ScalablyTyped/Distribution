@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait Anon_EmphasisItemStyleLabel extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.leaves.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-tree.leaves.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * The style of the leaf node in the tree.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.leaves.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-tree.leaves.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
@@ -21,7 +21,7 @@ trait Anon_EmphasisItemStyleLabel extends js.Object {
     * leaf node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.leaves.label
+    * @see https://echarts.apache.org/en/option.html#series-tree.leaves.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
 }

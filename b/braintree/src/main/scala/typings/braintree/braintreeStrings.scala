@@ -18,6 +18,7 @@ import typings.braintree.braintreeMod.SubscriptionStatus
 import typings.braintree.braintreeMod.TransactionProcessorResponseType
 import typings.braintree.braintreeMod.TransactionSource
 import typings.braintree.braintreeMod.TransactionStatus
+import typings.braintree.braintreeMod.WebhookNotificationKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -132,6 +133,9 @@ object braintreeStrings {
        with Prepaid
   
   @js.native
+  sealed trait account_updater_daily_report extends WebhookNotificationKind
+  
+  @js.native
   sealed trait android_pay_card extends PaymentInstrumentType
   
   @js.native
@@ -162,6 +166,15 @@ object braintreeStrings {
   sealed trait avs_and_cvv extends GatewayRejectionReason
   
   @js.native
+  sealed trait check extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait connected_merchant_paypal_status_changed extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait connected_merchant_status_transitioned extends WebhookNotificationKind
+  
+  @js.native
   sealed trait control_panel extends SubscriptionSource
   
   @js.native
@@ -169,6 +182,21 @@ object braintreeStrings {
   
   @js.native
   sealed trait cvv extends GatewayRejectionReason
+  
+  @js.native
+  sealed trait disbursement extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait disbursement_exception extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait dispute_lost extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait dispute_opened extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait dispute_won extends WebhookNotificationKind
   
   @js.native
   sealed trait duplicate extends GatewayRejectionReason
@@ -183,6 +211,12 @@ object braintreeStrings {
   sealed trait gateway_rejected extends TransactionStatus
   
   @js.native
+  sealed trait granted_payment_method_revoked extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait grantor_updated_granted_payment_method extends WebhookNotificationKind
+  
+  @js.native
   sealed trait hard_declined extends TransactionProcessorResponseType
   
   @js.native
@@ -192,13 +226,34 @@ object braintreeStrings {
   sealed trait hold_pending extends EscrowStatus
   
   @js.native
+  sealed trait local_payment_completed extends WebhookNotificationKind
+  
+  @js.native
   sealed trait masterpass_card extends PaymentInstrumentType
+  
+  @js.native
+  sealed trait oauth_access_revoked extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait partner_merchant_connected extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait partner_merchant_declined extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait partner_merchant_disconnected extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait payment_method_revoked_by_customer extends WebhookNotificationKind
   
   @js.native
   sealed trait paypal_account extends PaymentInstrumentType
   
   @js.native
   sealed trait processor_declined extends TransactionStatus
+  
+  @js.native
+  sealed trait recipient_updated_granted_payment_method extends WebhookNotificationKind
   
   @js.native
   sealed trait recurring_ extends SubscriptionSource
@@ -234,13 +289,49 @@ object braintreeStrings {
   sealed trait soft_declined extends TransactionProcessorResponseType
   
   @js.native
+  sealed trait sub_merchant_account_approved extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait sub_merchant_account_declined extends WebhookNotificationKind
+  
+  @js.native
   sealed trait submitted_for_settlement extends TransactionStatus
+  
+  @js.native
+  sealed trait subscription_canceled extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait subscription_charged_successfully extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait subscription_charged_unsuccessfully extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait subscription_expired extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait subscription_trial_ended extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait subscription_went_active extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait subscription_went_past_due extends WebhookNotificationKind
   
   @js.native
   sealed trait three_d_secure extends GatewayRejectionReason
   
   @js.native
   sealed trait token_issuance extends GatewayRejectionReason
+  
+  @js.native
+  sealed trait transaction_disbursed extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait transaction_settled extends WebhookNotificationKind
+  
+  @js.native
+  sealed trait transaction_settlement_declined extends WebhookNotificationKind
   
   @js.native
   sealed trait venmo_account extends PaymentInstrumentType
@@ -308,6 +399,8 @@ object braintreeStrings {
   @scala.inline
   def Yes: Yes = "Yes".asInstanceOf[Yes]
   @scala.inline
+  def account_updater_daily_report: account_updater_daily_report = "account_updater_daily_report".asInstanceOf[account_updater_daily_report]
+  @scala.inline
   def android_pay_card: android_pay_card = "android_pay_card".asInstanceOf[android_pay_card]
   @scala.inline
   def api_ : api_ = "api".asInstanceOf[api_]
@@ -328,11 +421,27 @@ object braintreeStrings {
   @scala.inline
   def avs_and_cvv: avs_and_cvv = "avs_and_cvv".asInstanceOf[avs_and_cvv]
   @scala.inline
+  def check: check = "check".asInstanceOf[check]
+  @scala.inline
+  def connected_merchant_paypal_status_changed: connected_merchant_paypal_status_changed = "connected_merchant_paypal_status_changed".asInstanceOf[connected_merchant_paypal_status_changed]
+  @scala.inline
+  def connected_merchant_status_transitioned: connected_merchant_status_transitioned = "connected_merchant_status_transitioned".asInstanceOf[connected_merchant_status_transitioned]
+  @scala.inline
   def control_panel: control_panel = "control_panel".asInstanceOf[control_panel]
   @scala.inline
   def credit_card: credit_card = "credit_card".asInstanceOf[credit_card]
   @scala.inline
   def cvv: cvv = "cvv".asInstanceOf[cvv]
+  @scala.inline
+  def disbursement: disbursement = "disbursement".asInstanceOf[disbursement]
+  @scala.inline
+  def disbursement_exception: disbursement_exception = "disbursement_exception".asInstanceOf[disbursement_exception]
+  @scala.inline
+  def dispute_lost: dispute_lost = "dispute_lost".asInstanceOf[dispute_lost]
+  @scala.inline
+  def dispute_opened: dispute_opened = "dispute_opened".asInstanceOf[dispute_opened]
+  @scala.inline
+  def dispute_won: dispute_won = "dispute_won".asInstanceOf[dispute_won]
   @scala.inline
   def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
   @scala.inline
@@ -342,17 +451,35 @@ object braintreeStrings {
   @scala.inline
   def gateway_rejected: gateway_rejected = "gateway_rejected".asInstanceOf[gateway_rejected]
   @scala.inline
+  def granted_payment_method_revoked: granted_payment_method_revoked = "granted_payment_method_revoked".asInstanceOf[granted_payment_method_revoked]
+  @scala.inline
+  def grantor_updated_granted_payment_method: grantor_updated_granted_payment_method = "grantor_updated_granted_payment_method".asInstanceOf[grantor_updated_granted_payment_method]
+  @scala.inline
   def hard_declined: hard_declined = "hard_declined".asInstanceOf[hard_declined]
   @scala.inline
   def held: held = "held".asInstanceOf[held]
   @scala.inline
   def hold_pending: hold_pending = "hold_pending".asInstanceOf[hold_pending]
   @scala.inline
+  def local_payment_completed: local_payment_completed = "local_payment_completed".asInstanceOf[local_payment_completed]
+  @scala.inline
   def masterpass_card: masterpass_card = "masterpass_card".asInstanceOf[masterpass_card]
+  @scala.inline
+  def oauth_access_revoked: oauth_access_revoked = "oauth_access_revoked".asInstanceOf[oauth_access_revoked]
+  @scala.inline
+  def partner_merchant_connected: partner_merchant_connected = "partner_merchant_connected".asInstanceOf[partner_merchant_connected]
+  @scala.inline
+  def partner_merchant_declined: partner_merchant_declined = "partner_merchant_declined".asInstanceOf[partner_merchant_declined]
+  @scala.inline
+  def partner_merchant_disconnected: partner_merchant_disconnected = "partner_merchant_disconnected".asInstanceOf[partner_merchant_disconnected]
+  @scala.inline
+  def payment_method_revoked_by_customer: payment_method_revoked_by_customer = "payment_method_revoked_by_customer".asInstanceOf[payment_method_revoked_by_customer]
   @scala.inline
   def paypal_account: paypal_account = "paypal_account".asInstanceOf[paypal_account]
   @scala.inline
   def processor_declined: processor_declined = "processor_declined".asInstanceOf[processor_declined]
+  @scala.inline
+  def recipient_updated_granted_payment_method: recipient_updated_granted_payment_method = "recipient_updated_granted_payment_method".asInstanceOf[recipient_updated_granted_payment_method]
   @scala.inline
   def recurring_ : recurring_ = "recurring".asInstanceOf[recurring_]
   @scala.inline
@@ -376,11 +503,35 @@ object braintreeStrings {
   @scala.inline
   def soft_declined: soft_declined = "soft_declined".asInstanceOf[soft_declined]
   @scala.inline
+  def sub_merchant_account_approved: sub_merchant_account_approved = "sub_merchant_account_approved".asInstanceOf[sub_merchant_account_approved]
+  @scala.inline
+  def sub_merchant_account_declined: sub_merchant_account_declined = "sub_merchant_account_declined".asInstanceOf[sub_merchant_account_declined]
+  @scala.inline
   def submitted_for_settlement: submitted_for_settlement = "submitted_for_settlement".asInstanceOf[submitted_for_settlement]
+  @scala.inline
+  def subscription_canceled: subscription_canceled = "subscription_canceled".asInstanceOf[subscription_canceled]
+  @scala.inline
+  def subscription_charged_successfully: subscription_charged_successfully = "subscription_charged_successfully".asInstanceOf[subscription_charged_successfully]
+  @scala.inline
+  def subscription_charged_unsuccessfully: subscription_charged_unsuccessfully = "subscription_charged_unsuccessfully".asInstanceOf[subscription_charged_unsuccessfully]
+  @scala.inline
+  def subscription_expired: subscription_expired = "subscription_expired".asInstanceOf[subscription_expired]
+  @scala.inline
+  def subscription_trial_ended: subscription_trial_ended = "subscription_trial_ended".asInstanceOf[subscription_trial_ended]
+  @scala.inline
+  def subscription_went_active: subscription_went_active = "subscription_went_active".asInstanceOf[subscription_went_active]
+  @scala.inline
+  def subscription_went_past_due: subscription_went_past_due = "subscription_went_past_due".asInstanceOf[subscription_went_past_due]
   @scala.inline
   def three_d_secure: three_d_secure = "three_d_secure".asInstanceOf[three_d_secure]
   @scala.inline
   def token_issuance: token_issuance = "token_issuance".asInstanceOf[token_issuance]
+  @scala.inline
+  def transaction_disbursed: transaction_disbursed = "transaction_disbursed".asInstanceOf[transaction_disbursed]
+  @scala.inline
+  def transaction_settled: transaction_settled = "transaction_settled".asInstanceOf[transaction_settled]
+  @scala.inline
+  def transaction_settlement_declined: transaction_settlement_declined = "transaction_settlement_declined".asInstanceOf[transaction_settlement_declined]
   @scala.inline
   def venmo_account: venmo_account = "venmo_account".asInstanceOf[venmo_account]
   @scala.inline

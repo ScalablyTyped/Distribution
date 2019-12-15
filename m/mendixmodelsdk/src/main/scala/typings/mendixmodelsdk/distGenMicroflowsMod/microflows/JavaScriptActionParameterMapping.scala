@@ -25,9 +25,13 @@ class JavaScriptActionParameterMapping protected () extends CodeActionParameterM
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var parameter: IJavaScriptActionParameter = js.native
-  val parameterQualifiedName: String = js.native
-  var parameterValue: CodeActionParameterValue = js.native
+  @JSName("model")
+  var model_FJavaScriptActionParameterMapping: IModel = js.native
+  def parameter(): IJavaScriptActionParameter = js.native
+  def parameter(newValue: IJavaScriptActionParameter): js.Any = js.native
+  def parameterQualifiedName(): String = js.native
+  def parameterValue(): CodeActionParameterValue = js.native
+  def parameterValue(newValue: CodeActionParameterValue): js.Any = js.native
 }
 
 /* static members */

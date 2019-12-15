@@ -14,28 +14,28 @@ import scala.scalajs.js.annotation._
 
 /**
   * Scatter (bubble) chart . The scatter chart in
-  * [rectangular coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+  * [rectangular coordinate](https://echarts.apache.org/en/option.html#grid)
   * could be used to present the relation between `x` and `y`.
   * If data have multiple dimensions, the values of the other dimensions
   * can be visualized through
-  * [symbol](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.symbol)
+  * [symbol](https://echarts.apache.org/en/option.html#series-scatter.symbol)
   * with various sizes and colors, which becomes a bubble chart.
   * These can be done by using with
-  * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+  * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
   * component.
   *
   * It could be used with
-  * [rectangular coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+  * [rectangular coordinate](https://echarts.apache.org/en/option.html#grid)
   * and
-  * [polar coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+  * [polar coordinate](https://echarts.apache.org/en/option.html#polar)
   * and
-  * [geographical coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+  * [geographical coordinate](https://echarts.apache.org/en/option.html#geo)
   * .
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter)
+  * [see doc](https://echarts.apache.org/en/option.html#series-scatter)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter
+  * @see https://echarts.apache.org/en/option.html#series-scatter
   */
 @JSName("SeriesScatter")
 trait SeriesScatter_ extends js.Object {
@@ -45,7 +45,7 @@ trait SeriesScatter_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.animation
+    * @see https://echarts.apache.org/en/option.html#series-scatter.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -54,14 +54,14 @@ trait SeriesScatter_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-scatter.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -70,50 +70,50 @@ trait SeriesScatter_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-scatter.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-scatter.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -122,7 +122,7 @@ trait SeriesScatter_ extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -133,17 +133,17 @@ trait SeriesScatter_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-scatter.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
     * Index of
-    * [calendar coordinates](https://ecomfe.github.io/echarts-doc/public/en/option.html#calendar)
+    * [calendar coordinates](https://echarts.apache.org/en/option.html#calendar)
     * to combine with, which is useful for multiple calendar coordinates
     * in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.calendarIndex
+    * @see https://echarts.apache.org/en/option.html#series-scatter.calendarIndex
     */
   var calendarIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -153,27 +153,27 @@ trait SeriesScatter_ extends js.Object {
     *
     * Use a two-dimensional rectangular coordinate (also known as Cartesian
     * coordinate), with
-    * [xAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.xAxisIndex)
+    * [xAxisIndex](https://echarts.apache.org/en/option.html#series-bar.xAxisIndex)
     * and
-    * [yAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.yAxisIndex)
+    * [yAxisIndex](https://echarts.apache.org/en/option.html#series-bar.yAxisIndex)
     * to assign the corresponding axis component.
     *
     * + `'polar'`
     *
     * Use polar coordinates, with
-    * [polarIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.polarIndex)
+    * [polarIndex](https://echarts.apache.org/en/option.html#series-bar.polarIndex)
     * to assign the corresponding polar coordinate component.
     *
     * + `'geo'`
     *
     * Use geographic coordinate, with
-    * [geoIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.geoIndex)
+    * [geoIndex](https://echarts.apache.org/en/option.html#series-bar.geoIndex)
     * to assign the corresponding geographic coordinate components.
     *
     *
     * @default
     * "cartesian2d"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.coordinateSystem
+    * @see https://echarts.apache.org/en/option.html#series-scatter.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.undefined
   /**
@@ -183,65 +183,65 @@ trait SeriesScatter_ extends js.Object {
     *
     * @default
     * "pointer"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.cursor
+    * @see https://echarts.apache.org/en/option.html#series-scatter.cursor
     */
   var cursor: js.UndefOr[String] = js.undefined
   /**
     * Data array of series, which can be in the following forms:
     *
     * Notice, if no `data` specified in series, and there is
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * in option, series will use the first
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * as its datasource. If `data` has been specified,
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * will not used.
     *
     * `series.datasetIndex` can be used to specify other
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * .
     *
     * Basically, data is represented by a two-dimension array, like
     * the example below, where each colum is named as a "dimension".
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     * + In
-    * [cartesian (grid)](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [cartesian (grid)](https://echarts.apache.org/en/option.html#grid)
     * , "dimX" and "dimY" correspond to
-    * [xAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [xAxis](https://echarts.apache.org/en/option.html#xAxis)
     * and
-    * [yAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [yAxis](https://echarts.apache.org/en/option.html#yAxis)
     * repectively.
     * + In
-    * [polar](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar](https://echarts.apache.org/en/option.html#polar)
     * "dimX" and "dimY" correspond to
-    * [radiusAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#radiusAxis)
+    * [radiusAxis](https://echarts.apache.org/en/option.html#radiusAxis)
     * 和
-    * [angleAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#anbleAxis)
+    * [angleAxis](https://echarts.apache.org/en/option.html#anbleAxis)
     * repectively.
     * + Other dimensions are optional, which can be used in other place.
     * For example:
-    * + [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * + [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * can map one or more dimensions to viusal (color, symbol size
     * ...).
-    * + [series.symbolSize](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.symbolSize)
+    * + [series.symbolSize](https://echarts.apache.org/en/option.html#series.symbolSize)
     * can be set as a callback function, where symbol size can be calculated
     * by values of a certain dimension.
     * + Values in other dimensions can be shown by
-    * [tooltip.formatter](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.formatter)
+    * [tooltip.formatter](https://echarts.apache.org/en/option.html#tooltip.formatter)
     * or
-    * [series.label.formatter](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.label.formatter)
+    * [series.label.formatter](https://echarts.apache.org/en/option.html#series.label.formatter)
     * .
     *
     * Especially, when there is one and only one category axis (axis.type
     * is `'category'`), data can be simply be represented by a one-dimension
     * array, like:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     * **Relationship between "value" and
-    * [axis.type](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis.type)
+    * [axis.type](https://echarts.apache.org/en/option.html#xAxis.type)
     * **
     *
     * + When a dimension corresponds to a value axis (axis.type
@@ -257,10 +257,10 @@ trait SeriesScatter_ extends js.Object {
     * (based on `0`), the string value of the axis.data.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     * There is an example of double category axes:
-    * [Github Punchcard](https://ecomfe.github.io/echarts-examples/public/editor.html?c=scatter-punchCard)
+    * [Github Punchcard](https://echarts.apache.org/examples/en/editor.html?c=scatter-punchCard)
     * .
     *
     * + When a dimension corresponds to a time axis (type is `'time'`),
@@ -304,7 +304,7 @@ trait SeriesScatter_ extends js.Object {
     * When needing to customize a data item, it can be set as an object,
     * where property `value` reprensent real value. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     * **Empty value:**
     *
@@ -316,7 +316,7 @@ trait SeriesScatter_ extends js.Object {
     * and scatter chart do not display graphic elements for empty values.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.data
+    * @see https://echarts.apache.org/en/option.html#series-scatter.data
     */
   var data: js.UndefOr[
     js.Array[
@@ -325,14 +325,14 @@ trait SeriesScatter_ extends js.Object {
   ] = js.undefined
   /**
     * If
-    * [series.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.data)
+    * [series.data](https://echarts.apache.org/en/option.html#series.data)
     * is not specified, and
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * exists, the series will use `dataset`.
     * `datasetIndex` specifies which dataset will be used.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.datasetIndex
+    * @see https://echarts.apache.org/en/option.html#series-scatter.datasetIndex
     */
   var datasetIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -340,10 +340,10 @@ trait SeriesScatter_ extends js.Object {
     * or `dataset.source`.
     *
     * Notice: if
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * is used, we can provide dimension names in the first column/row
     * of
-    * [dataset.source](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset.source)
+    * [dataset.source](https://echarts.apache.org/en/option.html#dataset.source)
     * , and not need to specify `dimensions` here.
     * But if `dimensions` is specified here, echarts will not retrieve
     * dimension names from the first row/column of `dataset.source`
@@ -351,8 +351,8 @@ trait SeriesScatter_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     * Each data item of `dimensions` can be:
     *
@@ -370,7 +370,7 @@ trait SeriesScatter_ extends js.Object {
     *
     * + `ordinal`, discrete value, which represents string generally.
     * + `time`, time value, see
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.data)
+    * [data](https://echarts.apache.org/en/option.html#series.data)
     * to check the format of time value.
     * + displayName: `string`, generally used in tooltip for dimension
     * display. If not specified, use `name` by default.
@@ -380,65 +380,65 @@ trait SeriesScatter_ extends js.Object {
     * Otherwise, `tooltip` will displayed only value horizontally.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.dimensions
+    * @see https://echarts.apache.org/en/option.html#series-scatter.dimensions
     */
   var dimensions: js.UndefOr[js.Array[_]] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-scatter.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     * Attributes of encode are different according to the type of coordinate
     * systtems. For
-    * [cartesian2d](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [cartesian2d](https://echarts.apache.org/en/option.html#grid)
     * , `x` and `y` can be defined. For
-    * [polar](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar](https://echarts.apache.org/en/option.html#polar)
     * , `radius` and `angle` can be defined. For
-    * [geo](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geo](https://echarts.apache.org/en/option.html#geo)
     * , `lng` and `lat` can be defined.
     * Attribute `tooltip` and `itemName` (data item name in tooltip)
     * are always able to be defined.
     *
     * When
-    * [dimensions](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.dimensions)
+    * [dimensions](https://echarts.apache.org/en/option.html#series.dimensions)
     * is used to defined name for a certain dimension, `encode` can
     * refer the name directly. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     * Specially, in \[custom series(~series-custom), some property
     * in `encode`, corresponding to axis, can be set as null to make
     * the series not controlled by the axis, that is, the series data
     * will not be count in the extent of the axis, and the
-    * [dataZoom](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom)
+    * [dataZoom](https://echarts.apache.org/en/option.html#dataZoom)
     * on the axis will not filter the series.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.encode
+    * @see https://echarts.apache.org/en/option.html#series-scatter.encode
     */
   var encode: js.UndefOr[js.Object] = js.undefined
   /**
     * Index of
-    * [geographic coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
     * to combine with, which is useful for multiple geographic axes
     * in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.geoIndex
+    * @see https://echarts.apache.org/en/option.html#series-scatter.geoIndex
     */
   var geoIndex: js.UndefOr[Double] = js.undefined
   /**
     * Whether to enable the animation effect when mouse is on the symbol.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.hoverAnimation
+    * @see https://echarts.apache.org/en/option.html#series-scatter.hoverAnimation
     */
   var hoverAnimation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -447,7 +447,7 @@ trait SeriesScatter_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.id
+    * @see https://echarts.apache.org/en/option.html#series-scatter.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -455,7 +455,7 @@ trait SeriesScatter_ extends js.Object {
     * like being hovered by mouse, or highlighted via legend connect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-scatter.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
@@ -467,7 +467,7 @@ trait SeriesScatter_ extends js.Object {
     * as `itemStyle` does.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.label
+    * @see https://echarts.apache.org/en/option.html#series-scatter.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
   /**
@@ -481,7 +481,7 @@ trait SeriesScatter_ extends js.Object {
     * can't be customized any more.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.large
+    * @see https://echarts.apache.org/en/option.html#series-scatter.large
     */
   var large: js.UndefOr[Boolean] = js.undefined
   /**
@@ -490,18 +490,18 @@ trait SeriesScatter_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.largeThreshold
+    * @see https://echarts.apache.org/en/option.html#series-scatter.largeThreshold
     */
   var largeThreshold: js.UndefOr[Double] = js.undefined
   /**
     * Whether to enable highlighting chart when
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * is being hovered.
     *
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.legendHoverLink
+    * @see https://echarts.apache.org/en/option.html#series-scatter.legendHoverLink
     */
   var legendHoverLink: js.UndefOr[Boolean] = js.undefined
   /**
@@ -509,42 +509,42 @@ trait SeriesScatter_ extends js.Object {
     * For example, mark a time interval.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea
     */
   var markArea: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine
     */
   var markLine: js.UndefOr[Anon_AnimationAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint
     */
   var markPoint: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.name
+    * @see https://echarts.apache.org/en/option.html#series-scatter.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * Index of
-    * [polar coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar coordinate](https://echarts.apache.org/en/option.html#polar)
     * to combine with, which is useful for multiple polar axes in one
     * chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.polarIndex
+    * @see https://echarts.apache.org/en/option.html#series-scatter.polarIndex
     */
   var polarIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -561,7 +561,7 @@ trait SeriesScatter_ extends js.Object {
     *
     * @default
     * 400
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.progressive
+    * @see https://echarts.apache.org/en/option.html#series-scatter.progressive
     */
   var progressive: js.UndefOr[Double] = js.undefined
   /**
@@ -571,12 +571,12 @@ trait SeriesScatter_ extends js.Object {
     *
     * @default
     * 3000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.progressiveThreshold
+    * @see https://echarts.apache.org/en/option.html#series-scatter.progressiveThreshold
     */
   var progressiveThreshold: js.UndefOr[Double] = js.undefined
   /**
     * When
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * is used, `seriesLayoutBy` specifies whether the column or the
     * row of `dataset` is mapped to the series, namely, the series
     * is "layout" on columns or rows. Optional values:
@@ -587,13 +587,13 @@ trait SeriesScatter_ extends js.Object {
     * In this case, each row represents a dimension.
     *
     * Check this
-    * [example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=dataset-series-layout-by)
+    * [example](https://echarts.apache.org/examples/en/editor.html?c=dataset-series-layout-by)
     * .
     *
     *
     * @default
     * "column"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.seriesLayoutBy
+    * @see https://echarts.apache.org/en/option.html#series-scatter.seriesLayoutBy
     */
   var seriesLayoutBy: js.UndefOr[String] = js.undefined
   /**
@@ -602,7 +602,7 @@ trait SeriesScatter_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.silent
+    * @see https://echarts.apache.org/en/option.html#series-scatter.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
@@ -624,7 +624,7 @@ trait SeriesScatter_ extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     * Icons can be set to arbitrary vector path via `'path://'` in
     * ECharts.
@@ -638,19 +638,19 @@ trait SeriesScatter_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter)
     *
     *
     * @default
     * "circle"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.symbol
+    * @see https://echarts.apache.org/en/option.html#series-scatter.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-scatter.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -671,7 +671,7 @@ trait SeriesScatter_ extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-scatter.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -681,7 +681,7 @@ trait SeriesScatter_ extends js.Object {
     * angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -700,45 +700,45 @@ trait SeriesScatter_ extends js.Object {
     * ```
     *
     * The first parameter `value` is the value in
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.data)
+    * [data](https://echarts.apache.org/en/option.html#series-scatter.data)
     * , and the second parameter `params` is the rest parameters of
     * data item.
     *
     *
     * @default
     * 10
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-scatter.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-scatter.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "scatter"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.type
+    * @see https://echarts.apache.org/en/option.html#series-scatter.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * Index of
-    * [x axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [x axis](https://echarts.apache.org/en/option.html#xAxis)
     * to combine with, which is useful for multiple x axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.xAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-scatter.xAxisIndex
     */
   var xAxisIndex: js.UndefOr[Double] = js.undefined
   /**
     * Index of
-    * [y axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [y axis](https://echarts.apache.org/en/option.html#yAxis)
     * to combine with, which is useful for multiple y axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.yAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-scatter.yAxisIndex
     */
   var yAxisIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -753,7 +753,7 @@ trait SeriesScatter_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.z
+    * @see https://echarts.apache.org/en/option.html#series-scatter.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -771,7 +771,7 @@ trait SeriesScatter_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-scatter.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

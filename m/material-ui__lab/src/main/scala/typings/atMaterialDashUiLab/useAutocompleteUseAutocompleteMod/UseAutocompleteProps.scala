@@ -1,5 +1,7 @@
 package typings.atMaterialDashUiLab.useAutocompleteUseAutocompleteMod
 
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.input
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.reset
 import typings.react.reactMod.ChangeEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -127,9 +129,17 @@ trait UseAutocompleteProps extends js.Object {
     * Callback fired when the input value changes.
     *
     * @param {object} event The event source of the callback.
-    * @param {string} value
+    * @param {string} value The new value of the text input
+    * @param {string} reason One of "input" (user input) or "reset" (programmatic change)
     */
-  var onInputChange: js.UndefOr[js.Function2[/* event */ ChangeEvent[js.Object], /* value */ js.Any, Unit]] = js.undefined
+  var onInputChange: js.UndefOr[
+    js.Function3[
+      /* event */ ChangeEvent[js.Object], 
+      /* value */ js.Any, 
+      /* reason */ input | reset, 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * Callback fired when the popup requests to be opened.
     * Use in controlled mode (see open).
@@ -180,7 +190,7 @@ object UseAutocompleteProps {
     multiple: js.UndefOr[Boolean] = js.undefined,
     onChange: (/* event */ ChangeEvent[js.Object], /* value */ js.Any) => Unit = null,
     onClose: /* event */ ChangeEvent[js.Object] => Unit = null,
-    onInputChange: (/* event */ ChangeEvent[js.Object], /* value */ js.Any) => Unit = null,
+    onInputChange: (/* event */ ChangeEvent[js.Object], /* value */ js.Any, /* reason */ input | reset) => Unit = null,
     onOpen: /* event */ ChangeEvent[js.Object] => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     options: js.Array[_] = null,
@@ -210,7 +220,7 @@ object UseAutocompleteProps {
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction2(onInputChange))
+    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction3(onInputChange))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

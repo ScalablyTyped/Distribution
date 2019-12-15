@@ -19,12 +19,12 @@ import scala.scalajs.js.annotation._
   * or currency.
   *
   * ECharts3 supports both `'candlestick'` and `'k'` in
-  * [series.type](https://ecomfe.github.io/echarts-doc/public/en/option.html#(series.type)
+  * [series.type](https://echarts.apache.org/en/option.html#(series.type)
   * (`'k'` would automatically turns into `'candlestick'`).
   *
   * **An example:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick)
+  * [see doc](https://echarts.apache.org/en/option.html#series-candlestick)
   *
   * **About color of increase and decrease**
   *
@@ -41,17 +41,17 @@ import scala.scalajs.js.annotation._
   * If you want to change the configuration, you may change the following
   * parameters.
   *
-  * + [series-candlestick.itemStyle.color](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.itemStyle.color)
+  * + [series-candlestick.itemStyle.color](https://echarts.apache.org/en/option.html#series-candlestick.itemStyle.color)
   * : fill color for bullish candle stick (namely, increase)
-  * + [series-candlestick.itemStyle.color0](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.itemStyle.color0)
+  * + [series-candlestick.itemStyle.color0](https://echarts.apache.org/en/option.html#series-candlestick.itemStyle.color0)
   * : fill color for bearish candle stick (namely, decrease)
-  * + [series-candlestick.itemStyle.borderColor](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.itemStyle.borderColor)
+  * + [series-candlestick.itemStyle.borderColor](https://echarts.apache.org/en/option.html#series-candlestick.itemStyle.borderColor)
   * : border color for bullish candle stick (namely, increase)
-  * + [series-candlestick.itemStyle.borderColor0](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-candlestick.itemStyle.borderColor0)
+  * + [series-candlestick.itemStyle.borderColor0](https://echarts.apache.org/en/option.htmlseries-candlestick.itemStyle.borderColor0)
   * : border color for bearish candle stick (namely, decrease)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick
+  * @see https://echarts.apache.org/en/option.html#series-candlestick
   */
 @JSName("SeriesCandlestick")
 trait SeriesCandlestick_ extends js.Object {
@@ -61,38 +61,38 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "linear"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -101,7 +101,7 @@ trait SeriesCandlestick_ extends js.Object {
     * to band width) can be used. Auto adapt by default.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.barMaxWidth
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.barMaxWidth
     */
   var barMaxWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -110,7 +110,7 @@ trait SeriesCandlestick_ extends js.Object {
     * to band width) can be used. Auto adapt by default.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.barMinWidth
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.barMinWidth
     */
   var barMinWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -119,7 +119,7 @@ trait SeriesCandlestick_ extends js.Object {
     * to band width) can be used. Auto adapt by default.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.barWidth
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.barWidth
     */
   var barWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -129,29 +129,29 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * Use a two-dimensional rectangular coordinate (also known as Cartesian
     * coordinate), with
-    * [xAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-cartesian2d.xAxisIndex)
+    * [xAxisIndex](https://echarts.apache.org/en/option.html#series-cartesian2d.xAxisIndex)
     * and
-    * [yAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-cartesian2d.yAxisIndex)
+    * [yAxisIndex](https://echarts.apache.org/en/option.html#series-cartesian2d.yAxisIndex)
     * to assign the corresponding axis component.
     *
     *
     * @default
     * "cartesian2d"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.coordinateSystem
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.undefined
   /**
     * Data should be the two-dimensional array shown as follow.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick)
     *
     * Every data item (each line in the example above) represents a
     * box, which contains 4 values. They are:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data
     */
   var data: js.UndefOr[js.Array[js.Array[Double | DataObject]]] = js.undefined
   /**
@@ -159,10 +159,10 @@ trait SeriesCandlestick_ extends js.Object {
     * or `dataset.source`.
     *
     * Notice: if
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * is used, we can provide dimension names in the first column/row
     * of
-    * [dataset.source](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset.source)
+    * [dataset.source](https://echarts.apache.org/en/option.html#dataset.source)
     * , and not need to specify `dimensions` here.
     * But if `dimensions` is specified here, echarts will not retrieve
     * dimension names from the first row/column of `dataset.source`
@@ -170,8 +170,8 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick)
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick)
     *
     * Each data item of `dimensions` can be:
     *
@@ -189,7 +189,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * + `ordinal`, discrete value, which represents string generally.
     * + `time`, time value, see
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.data)
+    * [data](https://echarts.apache.org/en/option.html#series.data)
     * to check the format of time value.
     * + displayName: `string`, generally used in tooltip for dimension
     * display. If not specified, use `name` by default.
@@ -199,51 +199,51 @@ trait SeriesCandlestick_ extends js.Object {
     * Otherwise, `tooltip` will displayed only value horizontally.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.dimensions
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.dimensions
     */
   var dimensions: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Emphasis style of candlestick.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColorBorderColor0] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick)
     *
     * Attributes of encode are different according to the type of coordinate
     * systtems. For
-    * [cartesian2d](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [cartesian2d](https://echarts.apache.org/en/option.html#grid)
     * , `x` and `y` can be defined. For
-    * [polar](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar](https://echarts.apache.org/en/option.html#polar)
     * , `radius` and `angle` can be defined. For
-    * [geo](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geo](https://echarts.apache.org/en/option.html#geo)
     * , `lng` and `lat` can be defined.
     * Attribute `tooltip` and `itemName` (data item name in tooltip)
     * are always able to be defined.
     *
     * When
-    * [dimensions](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.dimensions)
+    * [dimensions](https://echarts.apache.org/en/option.html#series.dimensions)
     * is used to defined name for a certain dimension, `encode` can
     * refer the name directly. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick)
     *
     * Specially, in \[custom series(~series-custom), some property
     * in `encode`, corresponding to axis, can be set as null to make
     * the series not controlled by the axis, that is, the series data
     * will not be count in the extent of the axis, and the
-    * [dataZoom](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom)
+    * [dataZoom](https://echarts.apache.org/en/option.html#dataZoom)
     * on the axis will not filter the series.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.encode
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.encode
     */
   var encode: js.UndefOr[js.Object] = js.undefined
   /**
@@ -252,7 +252,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.hoverAnimation
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.hoverAnimation
     */
   var hoverAnimation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -261,14 +261,14 @@ trait SeriesCandlestick_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.id
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     * Item style of candlestick.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderColor0] = js.undefined
   /**
@@ -284,7 +284,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.large
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.large
     */
   var large: js.UndefOr[Boolean] = js.undefined
   /**
@@ -293,7 +293,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @default
     * 600
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.largeThreshold
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.largeThreshold
     */
   var largeThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -311,18 +311,18 @@ trait SeriesCandlestick_ extends js.Object {
     * + otherwise use `'horizontal'`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.layout
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.layout
     */
   var layout: js.UndefOr[String] = js.undefined
   /**
     * Whether to enable highlighting chart when
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * is being hovered.
     *
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.legendHoverLink
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.legendHoverLink
     */
   var legendHoverLink: js.UndefOr[Boolean] = js.undefined
   /**
@@ -330,32 +330,32 @@ trait SeriesCandlestick_ extends js.Object {
     * For example, mark a time interval.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markArea
     */
   var markArea: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markLine
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine
     */
   var markLine: js.UndefOr[Anon_AnimationAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markPoint
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markPoint
     */
   var markPoint: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.name
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -372,7 +372,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @default
     * 5000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.progressive
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.progressive
     */
   var progressive: js.UndefOr[Double] = js.undefined
   /**
@@ -386,7 +386,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @default
     * "mod"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.progressiveChunkMode
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.progressiveChunkMode
     */
   var progressiveChunkMode: js.UndefOr[String] = js.undefined
   /**
@@ -396,7 +396,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @default
     * 10000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.progressiveThreshold
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.progressiveThreshold
     */
   var progressiveThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -405,38 +405,38 @@ trait SeriesCandlestick_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.silent
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "candlestick"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.type
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * Index of
-    * [x axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [x axis](https://echarts.apache.org/en/option.html#xAxis)
     * to combine with, which is useful for multiple x axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.xAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.xAxisIndex
     */
   var xAxisIndex: js.UndefOr[Double] = js.undefined
   /**
     * Index of
-    * [y axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [y axis](https://echarts.apache.org/en/option.html#yAxis)
     * to combine with, which is useful for multiple y axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.yAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.yAxisIndex
     */
   var yAxisIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -451,7 +451,7 @@ trait SeriesCandlestick_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.z
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -469,7 +469,7 @@ trait SeriesCandlestick_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

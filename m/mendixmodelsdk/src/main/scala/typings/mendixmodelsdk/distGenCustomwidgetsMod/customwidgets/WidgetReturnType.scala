@@ -21,12 +21,15 @@ class WidgetReturnType protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsWidgetValueType: WidgetValueType = js.native
-  var entityProperty: String = js.native
-  var isList: Boolean = js.native
   @JSName("model")
-  var model_WidgetReturnType: IModel = js.native
-  var `type`: WidgetReturnTypeEnum = js.native
+  var model_FWidgetReturnType: IModel = js.native
+  def containerAsWidgetValueType(): WidgetValueType = js.native
+  def entityProperty(): String = js.native
+  def entityProperty(newValue: String): js.Any = js.native
+  def isList(): Boolean = js.native
+  def isList(newValue: Boolean): js.Any = js.native
+  def `type`(): WidgetReturnTypeEnum = js.native
+  def `type`(newValue: WidgetReturnTypeEnum): js.Any = js.native
 }
 
 /* static members */

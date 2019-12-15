@@ -20,11 +20,15 @@ class DataSetObjectConstraint protected () extends DataSetParameterConstraint {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDataSetObjectConstraint: IModel = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
-  var constraint: String = js.native
-  var name: String = js.native
+  def constraint(): String = js.native
+  def constraint(newValue: String): js.Any = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
 }
 
 /* static members */

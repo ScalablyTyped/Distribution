@@ -46,6 +46,7 @@ trait AgentConfigOptions extends js.Object {
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
   var payloadLogFile: js.UndefOr[String] = js.undefined
   var secretToken: js.UndefOr[String] = js.undefined
+  var serverCaCertFile: js.UndefOr[String] = js.undefined
   var serverTimeout: js.UndefOr[String] = js.undefined
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
   var serverUrl: js.UndefOr[String] = js.undefined
@@ -100,6 +101,7 @@ object AgentConfigOptions {
     metricsInterval: String = null,
     payloadLogFile: String = null,
     secretToken: String = null,
+    serverCaCertFile: String = null,
     serverTimeout: String = null,
     serverUrl: String = null,
     serviceName: String = null,
@@ -150,6 +152,7 @@ object AgentConfigOptions {
     if (metricsInterval != null) __obj.updateDynamic("metricsInterval")(metricsInterval.asInstanceOf[js.Any])
     if (payloadLogFile != null) __obj.updateDynamic("payloadLogFile")(payloadLogFile.asInstanceOf[js.Any])
     if (secretToken != null) __obj.updateDynamic("secretToken")(secretToken.asInstanceOf[js.Any])
+    if (serverCaCertFile != null) __obj.updateDynamic("serverCaCertFile")(serverCaCertFile.asInstanceOf[js.Any])
     if (serverTimeout != null) __obj.updateDynamic("serverTimeout")(serverTimeout.asInstanceOf[js.Any])
     if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl.asInstanceOf[js.Any])
     if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])

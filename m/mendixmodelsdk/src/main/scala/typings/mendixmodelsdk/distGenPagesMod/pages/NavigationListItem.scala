@@ -21,27 +21,38 @@ class NavigationListItem protected () extends ActionItem {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FNavigationListItem: IModel = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var appearance: Appearance = js.native
+  def appearance(): Appearance = js.native
+  def appearance(newValue: Appearance): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var `class`: String = js.native
-  var conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
+  def `class`(): String = js.native
+  def `class`(newValue: String): js.Any = js.native
+  def conditionalVisibilitySettings(): ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
+  @JSName("conditionalVisibilitySettings")
+  def conditionalVisibilitySettings_Any(): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var style: String = js.native
+  def style(): String = js.native
+  def style(newValue: String): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var widget: Widget | Null = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val widgets: IList[Widget] = js.native
+  def widgets(): IList[Widget] = js.native
 }
 
 /* static members */

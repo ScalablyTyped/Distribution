@@ -22,25 +22,32 @@ class ResultHandling protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsImportXmlAction: ImportXmlAction = js.native
-  val containerAsRestCallAction: RestCallAction = js.native
-  val containerAsWebServiceCallAction: WebServiceCallAction = js.native
-  var importMappingCall: ImportMappingCall | Null = js.native
   @JSName("model")
-  var model_ResultHandling: IModel = js.native
-  var outputVariableName: String = js.native
-  var storeInVariable: Boolean = js.native
+  var model_FResultHandling: IModel = js.native
+  def containerAsImportXmlAction(): ImportXmlAction = js.native
+  def containerAsRestCallAction(): RestCallAction = js.native
+  def containerAsWebServiceCallAction(): WebServiceCallAction = js.native
+  def importMappingCall(): ImportMappingCall | Null = js.native
+  def importMappingCall(newValue: ImportMappingCall): js.Any = js.native
+  @JSName("importMappingCall")
+  def importMappingCall_Any(): js.Any = js.native
+  def outputVariableName(): String = js.native
+  def outputVariableName(newValue: String): js.Any = js.native
+  def storeInVariable(): Boolean = js.native
+  def storeInVariable(newValue: Boolean): js.Any = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 7.9.0: deleted
     * In version 6.10.0: introduced
     */
-  var variableDataType: String = js.native
+  def variableDataType(): String = js.native
+  def variableDataType(newValue: String): js.Any = js.native
   /**
     * In version 7.9.0: introduced
     */
-  var variableType: DataType = js.native
+  def variableType(): DataType = js.native
+  def variableType(newValue: DataType): js.Any = js.native
 }
 
 /* static members */

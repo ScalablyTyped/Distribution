@@ -27,24 +27,35 @@ class DataGridColumn protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDataGridColumn: IModel = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
-  var attributePath: String = js.native
+  def attributePath(): String = js.native
+  def attributePath(newValue: String): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
-  var attributeRef: AttributeRef | Null = js.native
-  var caption: Text = js.native
-  val containerAsDataGrid: DataGrid = js.native
-  var evenRowsCell: DataGridCell | Null = js.native
-  var formattingInfo: FormattingInfo = js.native
-  @JSName("model")
-  var model_DataGridColumn: IModel = js.native
-  var oddRowsCell: DataGridCell = js.native
-  var style: Style = js.native
+  def attributeRef(): AttributeRef | Null = js.native
+  def attributeRef(newValue: AttributeRef): js.Any = js.native
+  @JSName("attributeRef")
+  def attributeRef_Any(): js.Any = js.native
+  def caption(): Text = js.native
+  def caption(newValue: Text): js.Any = js.native
+  def containerAsDataGrid(): DataGrid = js.native
+  def evenRowsCell(): DataGridCell | Null = js.native
+  def evenRowsCell(newValue: DataGridCell): js.Any = js.native
+  @JSName("evenRowsCell")
+  def evenRowsCell_Any(): js.Any = js.native
+  def formattingInfo(): FormattingInfo = js.native
+  def formattingInfo(newValue: FormattingInfo): js.Any = js.native
+  def oddRowsCell(): DataGridCell = js.native
+  def oddRowsCell(newValue: DataGridCell): js.Any = js.native
+  def style(): Style = js.native
+  def style(newValue: Style): js.Any = js.native
 }
 
 /* static members */

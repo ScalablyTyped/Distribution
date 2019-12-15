@@ -116,7 +116,7 @@ trait Fancytree extends js.Object {
   def getNodesByRef(refKey: String): js.Array[FancytreeNode] = js.native
   def getNodesByRef(refKey: String, rootNode: FancytreeNode): js.Array[FancytreeNode] = js.native
   /** [ext-persist] Return persistence information from cookies Called like $("#tree").fancytree("getTree").getPersistData(); */
-  def getPersistData(): Unit = js.native
+  def getPersistData(): PersistData = js.native
   /** Return the invisible system root node.  */
   def getRootNode(): FancytreeNode = js.native
   /** Return an array of selected nodes.

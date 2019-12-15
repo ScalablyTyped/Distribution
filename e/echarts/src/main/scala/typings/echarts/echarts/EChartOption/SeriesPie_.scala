@@ -24,20 +24,20 @@ import scala.scalajs.js.annotation._
   * proportion.
   * If you just to present the numerical differences of various categories,
   * the
-  * [bar graph](https://ecomfe.github.io/echarts-doc/public/en/option.htmlbar)
+  * [bar graph](https://echarts.apache.org/en/option.htmlbar)
   * chart is more suggested.
   * Because compared to tiny length difference, people is less sensitive
   * to the minor radian difference.
   * Otherwise, it can also be shown as Nightingale chart by using the
-  * [roseType](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.roseType)
+  * [roseType](https://echarts.apache.org/en/option.html#series-pie.roseType)
   * to distinguish different data through radius.
   *
   * **The below example shows a customized Nightingale chart:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie)
+  * [see doc](https://echarts.apache.org/en/option.html#series-pie)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie
+  * @see https://echarts.apache.org/en/option.html#series-pie
   */
 @JSName("SeriesPie")
 trait SeriesPie_ extends js.Object {
@@ -47,7 +47,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.animation
+    * @see https://echarts.apache.org/en/option.html#series-pie.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -56,14 +56,14 @@ trait SeriesPie_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-pie.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -72,50 +72,50 @@ trait SeriesPie_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pie.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-pie.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pie.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-pie.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -124,7 +124,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pie.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -135,7 +135,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-pie.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -149,7 +149,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * "expansion"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.animationType
+    * @see https://echarts.apache.org/en/option.html#series-pie.animationType
     */
   var animationType: js.UndefOr[String] = js.undefined
   /**
@@ -160,7 +160,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.avoidLabelOverlap
+    * @see https://echarts.apache.org/en/option.html#series-pie.avoidLabelOverlap
     */
   var avoidLabelOverlap: js.UndefOr[Boolean] = js.undefined
   /**
@@ -173,12 +173,12 @@ trait SeriesPie_ extends js.Object {
     *
     * **Example:**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie)
     *
     *
     * @default
     * ['50%', '50%']
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.center
+    * @see https://echarts.apache.org/en/option.html#series-pie.center
     */
   var center: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -187,7 +187,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.clockwise
+    * @see https://echarts.apache.org/en/option.html#series-pie.clockwise
     */
   var clockwise: js.UndefOr[Boolean] = js.undefined
   /**
@@ -197,7 +197,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * "pointer"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.cursor
+    * @see https://echarts.apache.org/en/option.html#series-pie.cursor
     */
   var cursor: js.UndefOr[String] = js.undefined
   /**
@@ -209,7 +209,7 @@ trait SeriesPie_ extends js.Object {
     * ```
     *
     * Or, if need extra dimensions for components like
-    * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * to map to graphic attributes like color, it can also be in the
     * form of array. For example:
     *
@@ -220,36 +220,36 @@ trait SeriesPie_ extends js.Object {
     *
     * In this case, we can assgin the second value in each arrary item
     * to
-    * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * component.
     *
     * More likely, we need to assign name to each data item, in which
     * case each item should be an object:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie)
     *
     * Each data item can be further custerized:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data
+    * @see https://echarts.apache.org/en/option.html#series-pie.data
     */
   var data: js.UndefOr[js.Array[js.Array[Double] | DataObject | Double]] = js.undefined
   /**
     * If
-    * [series.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.data)
+    * [series.data](https://echarts.apache.org/en/option.html#series.data)
     * is not specified, and
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * exists, the series will use `dataset`.
     * `datasetIndex` specifies which dataset will be used.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.datasetIndex
+    * @see https://echarts.apache.org/en/option.html#series-pie.datasetIndex
     */
   var datasetIndex: js.UndefOr[Double] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize
@@ -260,7 +260,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.hoverAnimation
+    * @see https://echarts.apache.org/en/option.html#series-pie.hoverAnimation
     */
   var hoverAnimation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -269,7 +269,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * 10
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.hoverOffset
+    * @see https://echarts.apache.org/en/option.html#series-pie.hoverOffset
     */
   var hoverOffset: js.UndefOr[Double] = js.undefined
   /**
@@ -278,7 +278,7 @@ trait SeriesPie_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.id
+    * @see https://echarts.apache.org/en/option.html#series-pie.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -286,7 +286,7 @@ trait SeriesPie_ extends js.Object {
     * like being hovered by mouse, or highlighted via legend connect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacity] = js.undefined
   /**
@@ -298,31 +298,31 @@ trait SeriesPie_ extends js.Object {
     * as `itemStyle` does.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.label
+    * @see https://echarts.apache.org/en/option.html#series-pie.label
     */
   var label: js.UndefOr[
     Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter
   ] = js.undefined
   /**
     * The style of visual guide line. Will show when
-    * [label position](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.label.position)
+    * [label position](https://echarts.apache.org/en/option.html#series-pie.label.position)
     * is set as `'outside'`.
     *
     * The style of visual guide line.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine
+    * @see https://echarts.apache.org/en/option.html#series-pie.labelLine
     */
   var labelLine: js.UndefOr[Anon_EmphasisLengthLength2] = js.undefined
   /**
     * Whether to enable highlighting chart when
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * is being hovered.
     *
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.legendHoverLink
+    * @see https://echarts.apache.org/en/option.html#series-pie.legendHoverLink
     */
   var legendHoverLink: js.UndefOr[Boolean] = js.undefined
   /**
@@ -330,7 +330,7 @@ trait SeriesPie_ extends js.Object {
     * For example, mark a time interval.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea
     */
   var markArea: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
@@ -339,7 +339,7 @@ trait SeriesPie_ extends js.Object {
     * Use a line in the chart to illustrate.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine
     */
   var markLine: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
@@ -348,7 +348,7 @@ trait SeriesPie_ extends js.Object {
     * Mark point in a chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint
     */
   var markPoint: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
@@ -359,7 +359,7 @@ trait SeriesPie_ extends js.Object {
     * which will affect user interaction.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.minAngle
+    * @see https://echarts.apache.org/en/option.html#series-pie.minAngle
     */
   var minAngle: js.UndefOr[Double] = js.undefined
   /**
@@ -370,13 +370,13 @@ trait SeriesPie_ extends js.Object {
   var minShowLabelAngle: js.UndefOr[Double] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.name
+    * @see https://echarts.apache.org/en/option.html#series-pie.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -396,7 +396,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * [0, '75%']
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.radius
+    * @see https://echarts.apache.org/en/option.html#series-pie.radius
     */
   var radius: js.UndefOr[js.Array[_] | Double | String] = js.undefined
   /**
@@ -409,7 +409,7 @@ trait SeriesPie_ extends js.Object {
     * the data size is shown only through radiuses.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.roseType
+    * @see https://echarts.apache.org/en/option.html#series-pie.roseType
     */
   var roseType: js.UndefOr[Boolean | String] = js.undefined
   /**
@@ -421,7 +421,7 @@ trait SeriesPie_ extends js.Object {
     * selection and multiple selection.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.selectedMode
+    * @see https://echarts.apache.org/en/option.html#series-pie.selectedMode
     */
   var selectedMode: js.UndefOr[Boolean | String] = js.undefined
   /**
@@ -430,12 +430,12 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * 10
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.selectedOffset
+    * @see https://echarts.apache.org/en/option.html#series-pie.selectedOffset
     */
   var selectedOffset: js.UndefOr[Double] = js.undefined
   /**
     * When
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * is used, `seriesLayoutBy` specifies whether the column or the
     * row of `dataset` is mapped to the series, namely, the series
     * is "layout" on columns or rows. Optional values:
@@ -446,13 +446,13 @@ trait SeriesPie_ extends js.Object {
     * In this case, each row represents a dimension.
     *
     * Check this
-    * [example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=dataset-series-layout-by)
+    * [example](https://echarts.apache.org/examples/en/editor.html?c=dataset-series-layout-by)
     * .
     *
     *
     * @default
     * "column"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.seriesLayoutBy
+    * @see https://echarts.apache.org/en/option.html#series-pie.seriesLayoutBy
     */
   var seriesLayoutBy: js.UndefOr[String] = js.undefined
   /**
@@ -461,7 +461,7 @@ trait SeriesPie_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.silent
+    * @see https://echarts.apache.org/en/option.html#series-pie.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
@@ -470,7 +470,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * 90
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.startAngle
+    * @see https://echarts.apache.org/en/option.html#series-pie.startAngle
     */
   var startAngle: js.UndefOr[Double] = js.undefined
   /**
@@ -479,20 +479,20 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.stillShowZeroSum
+    * @see https://echarts.apache.org/en/option.html#series-pie.stillShowZeroSum
     */
   var stillShowZeroSum: js.UndefOr[Boolean] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-pie.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "pie"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.type
+    * @see https://echarts.apache.org/en/option.html#series-pie.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
@@ -507,7 +507,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.z
+    * @see https://echarts.apache.org/en/option.html#series-pie.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -525,7 +525,7 @@ trait SeriesPie_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-pie.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

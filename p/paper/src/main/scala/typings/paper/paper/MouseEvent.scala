@@ -21,22 +21,22 @@ class MouseEvent () extends Event {
     * opposed to {@link #target} which identifies the element on
     * which the event occurred.
     */
-  var currentTarget: Item | Null = js.native
-  var delta: Point | Null = js.native
+  var currentTarget: Item = js.native
+  var delta: Point = js.native
   /** 
     * The position of the mouse in project coordinates when the event was
     * fired.
     */
-  var point: Point | Null = js.native
+  var point: Point = js.native
   /** 
     * The item that dispatched the event. It is different from
     * {@link #currentTarget} when the event handler is called during
     * the bubbling phase of the event.
     */
-  var target: Item | Null = js.native
+  var target: Item = js.native
   /** 
     * The type of mouse event.
     */
-  var `type`: String | Null = js.native
+  var `type`: String = js.native
 }
 

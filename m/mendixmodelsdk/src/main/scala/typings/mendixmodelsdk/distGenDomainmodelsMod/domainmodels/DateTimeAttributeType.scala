@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAttributeType because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IDateTimeAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DateTimeAttributeType")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IDateTimeAttributeType because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DateTimeAttributeType")
 @js.native
 class DateTimeAttributeType protected () extends AttributeType {
   def this(
@@ -25,9 +25,12 @@ class DateTimeAttributeType protected () extends AttributeType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDateTimeAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  val containerAsAttribute_DateTimeAttributeType: Attribute = js.native
-  var localizeDate: Boolean = js.native
+  def containerAsAttribute_MDateTimeAttributeType(): Attribute = js.native
+  def localizeDate(): Boolean = js.native
+  def localizeDate(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

@@ -49,13 +49,21 @@ class ReportDateRangeSelector protected () extends ReportParameter {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val fields: IList[ReportDateRangeField] = js.native
-  var fieldsPerRow: Double = js.native
-  var fromCaption: Text = js.native
-  var maxYear: Double = js.native
-  var minYear: Double = js.native
-  var showFromToRange: Boolean = js.native
-  var toCaption: Text = js.native
+  @JSName("model")
+  var model_FReportDateRangeSelector: IModel = js.native
+  def fields(): IList[ReportDateRangeField] = js.native
+  def fieldsPerRow(): Double = js.native
+  def fieldsPerRow(newValue: Double): js.Any = js.native
+  def fromCaption(): Text = js.native
+  def fromCaption(newValue: Text): js.Any = js.native
+  def maxYear(): Double = js.native
+  def maxYear(newValue: Double): js.Any = js.native
+  def minYear(): Double = js.native
+  def minYear(newValue: Double): js.Any = js.native
+  def showFromToRange(): Boolean = js.native
+  def showFromToRange(newValue: Boolean): js.Any = js.native
+  def toCaption(): Text = js.native
+  def toCaption(newValue: Text): js.Any = js.native
 }
 
 /* static members */
@@ -304,6 +312,15 @@ object ReportDateRangeSelector extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ReportDateRangeSelector = js.native
+  /**
+    * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
+    * The new ReportDateRangeSelector will be automatically stored in the 'sidebarWidgets' property
+    * of the parent pages.NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReportDateRangeSelector = js.native
   /**
     * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
     * The new ReportDateRangeSelector will be automatically stored in the 'widgets' property

@@ -11,7 +11,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdate extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.animation
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -21,14 +21,14 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdate extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markArea)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markArea)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -37,50 +37,50 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdate extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markArea)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markArea)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markArea)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markArea)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markArea)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markArea)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -89,7 +89,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdate extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -100,7 +100,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdate extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -111,9 +111,9 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdate extends js.Object {
     *
     * 1.
     * Specify the coordinate in screen coordinate system using
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.0.x)
+    * [x](https://echarts.apache.org/en/option.html#series-scatter.markArea.data.0.x)
     * ,
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.0.y)
+    * [y](https://echarts.apache.org/en/option.html#series-scatter.markArea.data.0.y)
     * , where the unit is pixel (e.g.,
     * the value is `5`), or percent (e.g.,
     * the value is `'35%'`).
@@ -121,7 +121,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdate extends js.Object {
     * 2.
     * Specify the coordinate in data coordinate system (i.e.,
     * cartesian) using
-    * [coord](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.0.coord)
+    * [coord](https://echarts.apache.org/en/option.html#series-scatter.markArea.data.0.coord)
     * , which can be also set as `'min'`, `'max'`, `'average'`
     * (e.g,
     * `coord: [23, 'min']`, or `coord: ['average', 'max']`)。
@@ -129,39 +129,39 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdate extends js.Object {
     * 1.
     * Locate the point on the min value or max value of `series.data`
     * using
-    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.0.type)
+    * [type](https://echarts.apache.org/en/option.html#series-scatter.markArea.data.0.type)
     * , where
-    * [valueIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.0.valueIndex)
+    * [valueIndex](https://echarts.apache.org/en/option.html#series-scatter.markArea.data.0.valueIndex)
     * or
-    * [valueDim](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.0.valueDim)
+    * [valueDim](https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.0.valueDim)
     * can be used to specify the dimension on which the min, max
     * or average are calculated.
     * 2.
     * If in cartesian, you can only specify `xAxis` or `yAxis`
     * to define a mark area based on only X or Y axis, see sample
-    * [scatter-weight](https://ecomfe.github.io/echarts-examples/public/editor.html?c=scatter-weight)
+    * [scatter-weight](https://echarts.apache.org/examples/en/editor.html?c=scatter-weight)
     *
     * The priority follows as above if more than one above definition
     * used.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markArea)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markArea)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data
     */
   var data: js.UndefOr[Anon_01] = js.undefined
   /**
     * Style of the mark area.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * Label in mark area.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.label
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
   /**
@@ -170,7 +170,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdate extends js.Object {
     * mouse events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.silent
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
 }

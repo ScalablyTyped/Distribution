@@ -21,9 +21,9 @@ abstract class CaseValue protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsSequenceFlow: SequenceFlow = js.native
   @JSName("model")
-  var model_CaseValue: IModel = js.native
+  var model_FCaseValue: IModel = js.native
+  def containerAsSequenceFlow(): SequenceFlow = js.native
 }
 
 /* static members */

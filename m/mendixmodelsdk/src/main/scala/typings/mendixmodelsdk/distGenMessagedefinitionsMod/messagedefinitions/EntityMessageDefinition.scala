@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenMessagedefinitionsMod.messagedefinitions.IMessageDefinition because Already inherited
-- typings.mendixmodelsdk.distGenMessagedefinitionsMod.messagedefinitions.IEntityMessageDefinition because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.EntityMessageDefinition")
+- typings.mendixmodelsdk.distGenMessagedefinitionsMod.messagedefinitions.IEntityMessageDefinition because var conflicts: containerAsMessageDefinitionCollection, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.EntityMessageDefinition")
 @js.native
 class EntityMessageDefinition protected () extends MessageDefinition {
   def this(
@@ -31,9 +31,14 @@ class EntityMessageDefinition protected () extends MessageDefinition {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FEntityMessageDefinition: IModel = js.native
   @JSName("containerAsMessageDefinitionCollection")
-  val containerAsMessageDefinitionCollection_EntityMessageDefinition: MessageDefinitionCollection = js.native
-  var exposedEntity: ExposedEntity | Null = js.native
+  def containerAsMessageDefinitionCollection_MEntityMessageDefinition(): MessageDefinitionCollection = js.native
+  def exposedEntity(): ExposedEntity | Null = js.native
+  def exposedEntity(newValue: ExposedEntity): js.Any = js.native
+  @JSName("exposedEntity")
+  def exposedEntity_Any(): js.Any = js.native
 }
 
 /* static members */

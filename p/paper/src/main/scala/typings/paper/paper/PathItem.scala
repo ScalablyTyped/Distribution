@@ -21,7 +21,7 @@ class PathItem () extends Item {
     * @see Path#area
     * @see CompoundPath#area
     */
-  var clockwise: Boolean | Null = js.native
+  var clockwise: Boolean = js.native
   /** 
     * Returns a point that is guaranteed to be inside the path.
     */
@@ -29,7 +29,7 @@ class PathItem () extends Item {
   /** 
     * The path's geometry, formatted as SVG style path data.
     */
-  var pathData: String | Null = js.native
+  var pathData: String = js.native
   /** 
     * Adds an arc from the position of the last segment in the path, passing
     * through the specified `through` vector, to the specified `to` vector, all

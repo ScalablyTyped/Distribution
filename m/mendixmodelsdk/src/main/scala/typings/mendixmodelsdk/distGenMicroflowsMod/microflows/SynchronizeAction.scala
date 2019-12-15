@@ -25,6 +25,8 @@ class SynchronizeAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FSynchronizeAction: IModel = js.native
 }
 
 /* static members */

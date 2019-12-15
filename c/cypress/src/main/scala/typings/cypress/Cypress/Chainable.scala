@@ -8222,12 +8222,14 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/invoke
     */
   def invoke(functionName: String, args: js.Any*): Chainable[Subject] = js.native
+  // don't have a way to express return types yet
+  def invoke(options: Loggable, functionName: String, args: js.Any*): Chainable[Subject] = js.native
   /**
     * Invoke a function in an array of functions.
     * @see https://on.cypress.io/invoke
     */
   def invoke[T /* <: js.Function1[/* repeated */ js.Any, _] */, Subject /* <: js.Array[T] */](index: Double): Chainable[ReturnType[T]] = js.native
-  // don't have a way to express return types yet
+  def invoke[T /* <: js.Function1[/* repeated */ js.Any, _] */, Subject /* <: js.Array[T] */](options: Loggable, index: Double): Chainable[ReturnType[T]] = js.native
   /**
     * Get a property’s value on the previously yielded subject.
     *
@@ -8241,6 +8243,9 @@ trait Chainable[Subject] extends js.Object {
   def its[K /* <: String */](propertyName: K): Chainable[
     /* import warning: importer.ImportType#apply Failed type conversion: Subject[K] */ js.Any
   ] = js.native
+  def its[K /* <: String */](propertyName: K, options: Loggable): Chainable[
+    /* import warning: importer.ImportType#apply Failed type conversion: Subject[K] */ js.Any
+  ] = js.native
   /**
     * Get a value by index from an array yielded from the previous command.
     * @see https://on.cypress.io/its
@@ -8248,6 +8253,7 @@ trait Chainable[Subject] extends js.Object {
     *    cy.wrap(['a', 'b']).its(1).should('equal', 'b')
     */
   def its[T, Subject /* <: js.Array[T] */](index: Double): Chainable[T] = js.native
+  def its[T, Subject /* <: js.Array[T] */](index: Double, options: Loggable): Chainable[T] = js.native
   /**
     * Get the last DOM element within a set of DOM elements.
     *

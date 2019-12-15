@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IType because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IPrimitiveType because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IStringType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.StringType")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IStringType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.StringType")
 @js.native
 class StringType protected () extends PrimitiveType {
   def this(
@@ -30,6 +30,14 @@ class StringType protected () extends PrimitiveType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FStringType: IModel = js.native
+  @JSName("containerAsBasicParameterType")
+  def containerAsBasicParameterType_MStringType(): BasicParameterType = js.native
+  @JSName("containerAsJavaActionParameter")
+  def containerAsJavaActionParameter_MStringType(): JavaActionParameter = js.native
+  @JSName("containerAsJavaAction")
+  def containerAsJavaAction_MStringType(): JavaAction = js.native
 }
 
 /* static members */

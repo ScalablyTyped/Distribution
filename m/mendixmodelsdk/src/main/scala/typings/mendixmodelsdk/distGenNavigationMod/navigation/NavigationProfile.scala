@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenNavigationMod.navigation.INavigationProfileBase because Already inherited
-- typings.mendixmodelsdk.distGenNavigationMod.navigation.INavigationProfile because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/navigation", "navigation.NavigationProfile")
+- typings.mendixmodelsdk.distGenNavigationMod.navigation.INavigationProfile because var conflicts: containerAsNavigationDocument, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/navigation", "navigation.NavigationProfile")
 @js.native
 class NavigationProfile protected () extends NavigationProfileBase {
   def this(
@@ -32,34 +32,44 @@ class NavigationProfile protected () extends NavigationProfileBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var applicationTitle: String = js.native
+  @JSName("model")
+  var model_FNavigationProfile: IModel = js.native
+  def applicationTitle(): String = js.native
+  def applicationTitle(newValue: String): js.Any = js.native
   @JSName("containerAsNavigationDocument")
-  val containerAsNavigationDocument_NavigationProfile: NavigationDocument = js.native
+  def containerAsNavigationDocument_MNavigationProfile(): NavigationDocument = js.native
   /**
     * In version 7.2.0: deleted
     */
-  var enabled: Boolean = js.native
-  var homePage: HomePage = js.native
+  def enabled(): Boolean = js.native
+  def enabled(newValue: Boolean): js.Any = js.native
+  def homePage(): HomePage = js.native
+  def homePage(newValue: HomePage): js.Any = js.native
   /**
     * In version 7.2.0: introduced
     */
-  var kind: ProfileKind = js.native
+  def kind(): ProfileKind = js.native
+  def kind(newValue: ProfileKind): js.Any = js.native
   /**
     * In version 7.0.2: introduced
     */
-  var loginPageSettings: PageSettings = js.native
-  var menuItemCollection: MenuItemCollection = js.native
+  def loginPageSettings(): PageSettings = js.native
+  def loginPageSettings(newValue: PageSettings): js.Any = js.native
+  def menuItemCollection(): MenuItemCollection = js.native
+  def menuItemCollection(newValue: MenuItemCollection): js.Any = js.native
   /**
     * In version 7.2.0: deleted
     * In version 7.0.2: introduced
     */
-  var offlineEnabled: Boolean = js.native
+  def offlineEnabled(): Boolean = js.native
+  def offlineEnabled(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.0.0: deleted
     * In version 6.10.4: introduced
     */
-  var offlineEnabled6: Boolean = js.native
-  val roleBasedHomePages: IList[RoleBasedHomePage] = js.native
+  def offlineEnabled6(): Boolean = js.native
+  def offlineEnabled6(newValue: Boolean): js.Any = js.native
+  def roleBasedHomePages(): IList[RoleBasedHomePage] = js.native
 }
 
 /* static members */

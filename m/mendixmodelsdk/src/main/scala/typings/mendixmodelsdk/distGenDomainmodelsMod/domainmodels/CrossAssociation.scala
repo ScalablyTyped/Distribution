@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAssociationBase because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.ICrossAssociation because var conflicts: id, isLoaded, model, name, owner, parent, remoteSourceDocument, structureTypeName, `type`, unit. Inlined child, childQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CrossAssociation")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.ICrossAssociation because var conflicts: containerAsDomainModel, id, isLoaded, model, name, owner, parent, qualifiedName, remoteSourceDocument, remoteSourceDocumentQualifiedName, structureTypeName, `type`, unit. Inlined child, childQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CrossAssociation")
 @js.native
 class CrossAssociation protected () extends AssociationBase {
   def this(
@@ -26,10 +26,20 @@ class CrossAssociation protected () extends AssociationBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var child: IEntity = js.native
-  val childQualifiedName: String = js.native
+  @JSName("childQualifiedName")
+  val childQualifiedName_FCrossAssociation: String = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("child")
+  val child_FCrossAssociation: IEntity = js.native
+  @JSName("model")
+  var model_FCrossAssociation: IModel = js.native
+  def child(): IEntity = js.native
+  def child(newValue: IEntity): js.Any = js.native
+  def childQualifiedName(): String = js.native
   @JSName("containerAsDomainModel")
-  val containerAsDomainModel_CrossAssociation: DomainModel = js.native
+  def containerAsDomainModel_MCrossAssociation(): DomainModel = js.native
 }
 
 /* static members */

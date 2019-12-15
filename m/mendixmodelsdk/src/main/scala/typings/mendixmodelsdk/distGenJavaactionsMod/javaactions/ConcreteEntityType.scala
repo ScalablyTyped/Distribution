@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IType because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IEntityType because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IConcreteEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ConcreteEntityType")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IConcreteEntityType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, containerAsListType, id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ConcreteEntityType")
 @js.native
 class ConcreteEntityType protected () extends EntityType {
   def this(
@@ -31,8 +31,26 @@ class ConcreteEntityType protected () extends EntityType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var entity: IEntity = js.native
-  val entityQualifiedName: String = js.native
+  @JSName("entityQualifiedName")
+  val entityQualifiedName_FConcreteEntityType: String = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("entity")
+  val entity_FConcreteEntityType: IEntity = js.native
+  @JSName("model")
+  var model_FConcreteEntityType: IModel = js.native
+  @JSName("containerAsBasicParameterType")
+  def containerAsBasicParameterType_MConcreteEntityType(): BasicParameterType = js.native
+  @JSName("containerAsJavaActionParameter")
+  def containerAsJavaActionParameter_MConcreteEntityType(): JavaActionParameter = js.native
+  @JSName("containerAsJavaAction")
+  def containerAsJavaAction_MConcreteEntityType(): JavaAction = js.native
+  @JSName("containerAsListType")
+  def containerAsListType_MConcreteEntityType(): ListType = js.native
+  def entity(): IEntity = js.native
+  def entity(newValue: IEntity): js.Any = js.native
+  def entityQualifiedName(): String = js.native
 }
 
 /* static members */

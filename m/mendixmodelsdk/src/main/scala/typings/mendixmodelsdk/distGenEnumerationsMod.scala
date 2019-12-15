@@ -11,6 +11,7 @@ import typings.mendixmodelsdk.distGenEnumerationsMod.enumerations.IEnumerationVa
 import typings.mendixmodelsdk.distGenImagesMod.images.IImage
 import typings.mendixmodelsdk.distGenPagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenTextsMod.texts.Text
@@ -51,12 +52,14 @@ object distGenEnumerationsMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
-      var attributeValue: String = js.native
-      val containerAsConditionSettings: ConditionSettings = js.native
-      val containerAsConditionalSettings: ConditionalSettings = js.native
-      var editableVisible: Boolean = js.native
       @JSName("model")
-      var model_Condition: IModel = js.native
+      var model_FCondition: IModel = js.native
+      def attributeValue(): String = js.native
+      def attributeValue(newValue: String): js.Any = js.native
+      def containerAsConditionSettings(): ConditionSettings = js.native
+      def containerAsConditionalSettings(): ConditionalSettings = js.native
+      def editableVisible(): Boolean = js.native
+      def editableVisible(newValue: Boolean): js.Any = js.native
     }
     
     /**
@@ -70,7 +73,7 @@ object distGenEnumerationsMod extends js.Object {
     - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
-    - typings.mendixmodelsdk.distGenEnumerationsMod.enumerations.IEnumeration because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined values */ @js.native
+    - typings.mendixmodelsdk.distGenEnumerationsMod.enumerations.IEnumeration because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined values */ @js.native
     class Enumeration protected () extends Document {
       def this(
         model: AbstractModel,
@@ -79,7 +82,13 @@ object distGenEnumerationsMod extends js.Object {
         isPartial: Boolean,
         container: IFolderBase
       ) = this()
-      val values: IList[EnumerationValue | IEnumerationValue] = js.native
+      @JSName("model")
+      var model_FEnumeration: IModel = js.native
+      @JSName("values")
+      val values_FEnumeration: IList[IEnumerationValue] = js.native
+      @JSName("containerAsFolderBase")
+      def containerAsFolderBase_MEnumeration(): FolderBase = js.native
+      def values(): IList[EnumerationValue] = js.native
     }
     
     /**
@@ -101,13 +110,12 @@ object distGenEnumerationsMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
-      var caption: Text = js.native
-      val containerAsEnumeration: Enumeration | IEnumeration = js.native
-      var image: IImage | Null = js.native
-      val imageQualifiedName: String | Null = js.native
+      @JSName("containerAsEnumeration")
+      val containerAsEnumeration_FEnumerationValue: IEnumeration = js.native
       @JSName("model")
-      var model_EnumerationValue: IModel = js.native
-      var name: String = js.native
+      var model_FEnumerationValue: IModel = js.native
+      @JSName("name")
+      val name_FEnumerationValue: String = js.native
       /**
         * Returns the qualified name of this element, or
         * null if this element is not a part of the model,
@@ -116,6 +124,18 @@ object distGenEnumerationsMod extends js.Object {
         */
       /* CompleteClass */
       override val qualifiedName: String | Null = js.native
+      def caption(): Text = js.native
+      def caption(newValue: Text): js.Any = js.native
+      def containerAsEnumeration(): Enumeration = js.native
+      def image(): IImage | Null = js.native
+      def image(newValue: IImage): js.Any = js.native
+      def imageQualifiedName(): String | Null = js.native
+      @JSName("image")
+      def image_Any(): js.Any = js.native
+      def name(): String = js.native
+      def name(newValue: String): js.Any = js.native
+      @JSName("qualifiedName")
+      def qualifiedName_MEnumerationValue(): String | Null = js.native
     }
     
     /**

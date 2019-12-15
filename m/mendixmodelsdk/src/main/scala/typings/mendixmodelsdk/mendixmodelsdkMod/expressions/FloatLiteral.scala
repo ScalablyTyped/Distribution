@@ -29,6 +29,7 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceCallActi
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceOperationParameterMapping
 import typings.mendixmodelsdk.distGenPagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.distGenPagesMod.pages.WidgetValidation
+import typings.mendixmodelsdk.distGenRestMod.rest.ConsumedODataService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -145,6 +146,15 @@ object FloatLiteral extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): typings.mendixmodelsdk.distGenExpressionsMod.expressions.FloatLiteral = js.native
+  /**
+    * Creates and returns a new FloatLiteral instance in the SDK and on the server.
+    * The new FloatLiteral will be automatically stored in the 'timeoutModel' property
+    * of the parent rest.ConsumedODataService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): typings.mendixmodelsdk.distGenExpressionsMod.expressions.FloatLiteral = js.native
   /**
     * Creates and returns a new FloatLiteral instance in the SDK and on the server.
     * The new FloatLiteral will be automatically stored in the 'initialValueModel' property

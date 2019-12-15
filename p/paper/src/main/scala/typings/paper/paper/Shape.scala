@@ -11,15 +11,15 @@ class Shape () extends Item {
     * The radius of the shape, as a number if it is a circle, or a size object
     * for ellipses and rounded rectangles.
     */
-  var radius: Double | Size | Null = js.native
+  var radius: Double | Size = js.native
   /** 
     * The size of the shape.
     */
-  var size: Size | Null = js.native
+  var size: Size = js.native
   /** 
     * The type of shape of the item as a string.
     */
-  var `type`: String | Null = js.native
+  var `type`: String = js.native
   /** 
     * Creates a new path item with same geometry as this shape item, and
     * inherits all settings from it, similar to {@link Item#clone}.

@@ -26,12 +26,25 @@ class Project protected () extends StructuralUnit {
     isPartial: Boolean,
     container: IStructuralUnit
   ) = this()
-  var isSystemProject: Boolean = js.native
+  @JSName("isSystemProject")
+  var isSystemProject_FProject: Boolean = js.native
   @JSName("model")
-  var model_Project: IModel = js.native
-  val modules: IList[IModule] = js.native
-  var projectConversion: IProjectConversion = js.native
-  val projectDocuments: IList[IProjectDocument] = js.native
+  var model_FProject: IModel = js.native
+  @JSName("modules")
+  var modules_FProject: IList[IModule] = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("projectConversion")
+  var projectConversion_FProject: IProjectConversion = js.native
+  @JSName("projectDocuments")
+  var projectDocuments_FProject: IList[IProjectDocument] = js.native
+  def isSystemProject(): Boolean = js.native
+  def isSystemProject(newValue: Boolean): js.Any = js.native
+  def modules(): IList[IModule] = js.native
+  def projectConversion(): IProjectConversion = js.native
+  def projectConversion(newValue: IProjectConversion): js.Any = js.native
+  def projectDocuments(): IList[IProjectDocument] = js.native
 }
 
 /* static members */

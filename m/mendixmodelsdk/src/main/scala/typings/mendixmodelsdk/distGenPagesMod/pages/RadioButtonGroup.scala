@@ -27,7 +27,10 @@ class RadioButtonGroup protected () extends AttributeWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var renderHorizontal: Boolean = js.native
+  @JSName("model")
+  var model_FRadioButtonGroup: IModel = js.native
+  def renderHorizontal(): Boolean = js.native
+  def renderHorizontal(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */
@@ -276,6 +279,15 @@ object RadioButtonGroup extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): RadioButtonGroup = js.native
+  /**
+    * Creates and returns a new RadioButtonGroup instance in the SDK and on the server.
+    * The new RadioButtonGroup will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): RadioButtonGroup = js.native
   /**
     * Creates and returns a new RadioButtonGroup instance in the SDK and on the server.
     * The new RadioButtonGroup will be automatically stored in the 'widgets' property

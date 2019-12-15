@@ -21,6 +21,8 @@ class AssociationSource protected () extends EntityPathSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FAssociationSource: IModel = js.native
 }
 
 /* static members */

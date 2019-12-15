@@ -13,8 +13,8 @@ trait RowTransformerValidator extends js.Object {
   var _rowValidator: js.Any
   var callTransformer: js.Any
   var callValidator: js.Any
-  var rowTransform: RowTransformFunction
-  var rowValidator: RowValidate
+  def rowTransform(transformFunction: RowTransformFunction): js.Any
+  def rowValidator(validateFunction: RowValidate): js.Any
   def transformAndValidate(row: Row, cb: RowValidatorCallback): Unit
 }
 
@@ -25,11 +25,11 @@ object RowTransformerValidator {
     _rowValidator: js.Any,
     callTransformer: js.Any,
     callValidator: js.Any,
-    rowTransform: RowTransformFunction,
-    rowValidator: RowValidate,
+    rowTransform: RowTransformFunction => js.Any,
+    rowValidator: RowValidate => js.Any,
     transformAndValidate: (Row, RowValidatorCallback) => Unit
   ): RowTransformerValidator = {
-    val __obj = js.Dynamic.literal(_rowTransform = _rowTransform.asInstanceOf[js.Any], _rowValidator = _rowValidator.asInstanceOf[js.Any], callTransformer = callTransformer.asInstanceOf[js.Any], callValidator = callValidator.asInstanceOf[js.Any], rowTransform = rowTransform.asInstanceOf[js.Any], rowValidator = rowValidator.asInstanceOf[js.Any], transformAndValidate = js.Any.fromFunction2(transformAndValidate))
+    val __obj = js.Dynamic.literal(_rowTransform = _rowTransform.asInstanceOf[js.Any], _rowValidator = _rowValidator.asInstanceOf[js.Any], callTransformer = callTransformer.asInstanceOf[js.Any], callValidator = callValidator.asInstanceOf[js.Any], rowTransform = js.Any.fromFunction1(rowTransform), rowValidator = js.Any.fromFunction1(rowValidator), transformAndValidate = js.Any.fromFunction2(transformAndValidate))
   
     __obj.asInstanceOf[RowTransformerValidator]
   }

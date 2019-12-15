@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait DataObject extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-line.data.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBarBorderColorBarBorderWidth
@@ -19,21 +19,21 @@ trait DataObject extends js.Object {
     * The style of the symbol of single data point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-line.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BarBorderColorBarBorderWidth] = js.undefined
   /**
     * The style of the text of single data point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.label
+    * @see https://echarts.apache.org/en/option.html#series-line.data.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * The name of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.name
+    * @see https://echarts.apache.org/en/option.html#series-line.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -55,7 +55,7 @@ trait DataObject extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-line.line.data)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -70,19 +70,19 @@ trait DataObject extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-line.line.data)
     *
     *
     * @default
     * "circle"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.symbol
+    * @see https://echarts.apache.org/en/option.html#series-line.data.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-line.data.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -104,7 +104,7 @@ trait DataObject extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-line.data.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -114,7 +114,7 @@ trait DataObject extends js.Object {
     * tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-line.data.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -127,21 +127,21 @@ trait DataObject extends js.Object {
     *
     * @default
     * 4
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-line.data.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-line.data.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * The value of a single data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.value
+    * @see https://echarts.apache.org/en/option.html#series-line.data.value
     */
   var value: js.UndefOr[Double] = js.undefined
 }

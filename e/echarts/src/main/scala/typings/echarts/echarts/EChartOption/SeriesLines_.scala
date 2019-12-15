@@ -25,10 +25,10 @@ import scala.scalajs.js.annotation._
   *
   * **Migrating example:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines)
+  * [see doc](https://echarts.apache.org/en/option.html#series-lines)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines
+  * @see https://echarts.apache.org/en/option.html#series-lines
   */
 @JSName("SeriesLines")
 trait SeriesLines_ extends js.Object {
@@ -38,7 +38,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.animation
+    * @see https://echarts.apache.org/en/option.html#series-lines.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -47,14 +47,14 @@ trait SeriesLines_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.lines)
+    * [see doc](https://echarts.apache.org/en/option.html#series-lines.lines)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-lines.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -63,50 +63,50 @@ trait SeriesLines_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.lines)
+    * [see doc](https://echarts.apache.org/en/option.html#series-lines.lines)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-lines.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.lines)
+    * [see doc](https://echarts.apache.org/en/option.html#series-lines.lines)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-lines.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.lines)
+    * [see doc](https://echarts.apache.org/en/option.html#series-lines.lines)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-lines.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-lines.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -115,7 +115,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-lines.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -126,7 +126,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-lines.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -136,28 +136,28 @@ trait SeriesLines_ extends js.Object {
     *
     * Use a two-dimensional rectangular coordinate (also known as Cartesian
     * coordinate), with
-    * [xAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.xAxisIndex)
+    * [xAxisIndex](https://echarts.apache.org/en/option.html#series-lines.xAxisIndex)
     * and
-    * [yAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.yAxisIndex)
+    * [yAxisIndex](https://echarts.apache.org/en/option.html#series-lines.yAxisIndex)
     * to assign the corresponding axis component.
     *
     * + `'geo'`
     *
     * Use geographic coordinate, with
-    * [geoIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.geoIndex)
+    * [geoIndex](https://echarts.apache.org/en/option.html#series-lines.geoIndex)
     * to assign the corresponding geographic coordinate components.
     *
     *
     * @default
     * "geo"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.coordinateSystem
+    * @see https://echarts.apache.org/en/option.html#series-lines.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.undefined
   /**
     * The data set of lines.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data
+    * @see https://echarts.apache.org/en/option.html#series-lines.data
     */
   var data: js.UndefOr[js.Array[DataObject]] = js.undefined
   /**
@@ -165,35 +165,35 @@ trait SeriesLines_ extends js.Object {
     *
     * **Tips:** All the graphs with trail effect should be put on a
     * individual layer, which means that
-    * [zlevel](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.zlevel)
+    * [zlevel](https://echarts.apache.org/en/option.html#series-lines.zlevel)
     * need to be different with others. And the animation (
-    * [animation](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.animation)
+    * [animation](https://echarts.apache.org/en/option.html#series-lines.animation)
     * : false) of this layer is suggested to be turned off at the meanwhile.
     * Otherwise, other graphic elements in other series and the
-    * [label](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.label)
+    * [label](https://echarts.apache.org/en/option.html#series-lines.label)
     * of animation would produce unnecessary ghosts.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect
+    * @see https://echarts.apache.org/en/option.html#series-lines.effect
     */
   var effect: js.UndefOr[Anon_ColorConstantSpeed] = js.undefined
   /**
     * Emphasis style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-lines.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_LabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
   ] = js.undefined
   /**
     * Index of
-    * [geographic coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
     * to combine with, which is useful for multiple geographic axes
     * in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.geoIndex
+    * @see https://echarts.apache.org/en/option.html#series-lines.geoIndex
     */
   var geoIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -202,16 +202,16 @@ trait SeriesLines_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.id
+    * @see https://echarts.apache.org/en/option.html#series-lines.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     * Label settings. Does not work when
-    * [polyline](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.polyline)
+    * [polyline](https://echarts.apache.org/en/option.html#series-lines.polyline)
     * is `true`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.label
+    * @see https://echarts.apache.org/en/option.html#series-lines.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
@@ -220,7 +220,7 @@ trait SeriesLines_ extends js.Object {
     * of data(>=5k) .
     *
     * After being enabled,
-    * [largeThreshold](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.largeThreshold)
+    * [largeThreshold](https://echarts.apache.org/en/option.html#series-lines.largeThreshold)
     * can be used to indicate the minimum number for turning on the
     * optimization.
     *
@@ -229,7 +229,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.large
+    * @see https://echarts.apache.org/en/option.html#series-lines.large
     */
   var large: js.UndefOr[Boolean] = js.undefined
   /**
@@ -238,11 +238,11 @@ trait SeriesLines_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.largeThreshold
+    * @see https://echarts.apache.org/en/option.html#series-lines.largeThreshold
     */
   var largeThreshold: js.UndefOr[Double] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-lines.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacity] = js.undefined
   /**
@@ -250,7 +250,7 @@ trait SeriesLines_ extends js.Object {
     * For example, mark a time interval.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.markArea
+    * @see https://echarts.apache.org/en/option.html#series-lines.markArea
     */
   var markArea: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
@@ -259,7 +259,7 @@ trait SeriesLines_ extends js.Object {
     * Use a line in the chart to illustrate.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.markLine
+    * @see https://echarts.apache.org/en/option.html#series-lines.markLine
     */
   var markLine: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
@@ -268,20 +268,20 @@ trait SeriesLines_ extends js.Object {
     * Mark point in a chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.markPoint
+    * @see https://echarts.apache.org/en/option.html#series-lines.markPoint
     */
   var markPoint: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
   ] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.name
+    * @see https://echarts.apache.org/en/option.html#series-lines.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -290,14 +290,14 @@ trait SeriesLines_ extends js.Object {
     * Default to be `false`. Can only draw a two end straight line.
     *
     * If it is set true,
-    * [data.coords](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.coords)
+    * [data.coords](https://echarts.apache.org/en/option.html#series-lines.data.coords)
     * can have more than two coord to draw a polyline.
     * It is useful when visualizing GPS track data. See example
-    * [lines-bus](https://ecomfe.github.io/echarts-examples/public/editor.html?c=lines-bmap-bus)
+    * [lines-bus](https://echarts.apache.org/examples/en/editor.html?c=lines-bmap-bus)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.polyline
+    * @see https://echarts.apache.org/en/option.html#series-lines.polyline
     */
   var polyline: js.UndefOr[Boolean] = js.undefined
   /**
@@ -314,7 +314,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @default
     * 400
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.progressive
+    * @see https://echarts.apache.org/en/option.html#series-lines.progressive
     */
   var progressive: js.UndefOr[Double] = js.undefined
   /**
@@ -324,7 +324,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @default
     * 3000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.progressiveThreshold
+    * @see https://echarts.apache.org/en/option.html#series-lines.progressiveThreshold
     */
   var progressiveThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -333,19 +333,19 @@ trait SeriesLines_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.silent
+    * @see https://echarts.apache.org/en/option.html#series-lines.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
     * Symbol type at the two ends of the line.
     * It can be an array for two ends, or assigned seperately. See
-    * [data.symbol](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.0.symbol)
+    * [data.symbol](https://echarts.apache.org/en/option.html#series-line.markLine.data.0.symbol)
     * for more format information.
     *
     *
     * @default
     * "none"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.symbol
+    * @see https://echarts.apache.org/en/option.html#series-lines.symbol
     */
   var symbol: js.UndefOr[js.Array[_] | String] = js.undefined
   /**
@@ -358,31 +358,31 @@ trait SeriesLines_ extends js.Object {
     *
     * @default
     * 10
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-lines.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * @default
     * "lines"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.type
+    * @see https://echarts.apache.org/en/option.html#series-lines.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * Index of
-    * [x axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [x axis](https://echarts.apache.org/en/option.html#xAxis)
     * to combine with, which is useful for multiple x axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.xAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-lines.xAxisIndex
     */
   var xAxisIndex: js.UndefOr[Double] = js.undefined
   /**
     * Index of
-    * [y axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [y axis](https://echarts.apache.org/en/option.html#yAxis)
     * to combine with, which is useful for multiple y axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.yAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-lines.yAxisIndex
     */
   var yAxisIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -397,7 +397,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.z
+    * @see https://echarts.apache.org/en/option.html#series-lines.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -415,7 +415,7 @@ trait SeriesLines_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-lines.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

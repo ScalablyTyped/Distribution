@@ -33,8 +33,8 @@ import scala.scalajs.js.annotation._
 @JSImport("xstate/lib/utils", JSImport.Namespace)
 @js.native
 object libUtilsMod extends js.Object {
+  val symbolObservable: String | js.Symbol = js.native
   var warn: js.Function2[/* condition */ Boolean | Error, /* message */ String, Unit] = js.native
-  def createSymbolObservable(): js.Symbol | String = js.native
   def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = js.native
   def getActionType(action: Action[_, _]): ActionType = js.native
   def getEventType[TEvent /* <: EventObject */](event: Event[TEvent]): /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any = js.native

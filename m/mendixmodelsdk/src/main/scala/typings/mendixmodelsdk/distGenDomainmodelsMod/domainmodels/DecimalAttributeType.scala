@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAttributeType because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.INumericAttributeTypeBase because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IDecimalAttributeTypeBase because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IDecimalAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DecimalAttributeType")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IDecimalAttributeType because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DecimalAttributeType")
 @js.native
 class DecimalAttributeType protected () extends DecimalAttributeTypeBase {
   def this(
@@ -27,6 +27,10 @@ class DecimalAttributeType protected () extends DecimalAttributeTypeBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDecimalAttributeType: IModel = js.native
+  @JSName("containerAsAttribute")
+  def containerAsAttribute_MDecimalAttributeType(): Attribute = js.native
 }
 
 /* static members */

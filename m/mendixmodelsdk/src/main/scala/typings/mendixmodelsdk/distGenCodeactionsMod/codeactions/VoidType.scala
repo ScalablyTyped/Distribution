@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IType because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IPrimitiveType because Already inherited
-- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IVoidType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.VoidType")
+- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IVoidType because var conflicts: containerAsBasicParameterType, containerAsCodeAction, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.VoidType")
 @js.native
 class VoidType protected () extends PrimitiveType {
   def this(
@@ -29,6 +29,12 @@ class VoidType protected () extends PrimitiveType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FVoidType: IModel = js.native
+  @JSName("containerAsBasicParameterType")
+  def containerAsBasicParameterType_MVoidType(): BasicParameterType = js.native
+  @JSName("containerAsCodeAction")
+  def containerAsCodeAction_MVoidType(): CodeAction = js.native
 }
 
 /* static members */

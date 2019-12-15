@@ -22,16 +22,22 @@ class MsdAttribute protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var attributeType: String = js.native
-  val containerAsDataAttribute: DataAttribute = js.native
-  val containerAsMsdEntity: MsdEntity = js.native
-  var defaultValue: String = js.native
-  var enumerationName: String = js.native
-  var guid: String = js.native
-  var length: Double = js.native
   @JSName("model")
-  var model_MsdAttribute: IModel = js.native
-  var name: String = js.native
+  var model_FMsdAttribute: IModel = js.native
+  def attributeType(): String = js.native
+  def attributeType(newValue: String): js.Any = js.native
+  def containerAsDataAttribute(): DataAttribute = js.native
+  def containerAsMsdEntity(): MsdEntity = js.native
+  def defaultValue(): String = js.native
+  def defaultValue(newValue: String): js.Any = js.native
+  def enumerationName(): String = js.native
+  def enumerationName(newValue: String): js.Any = js.native
+  def guid(): String = js.native
+  def guid(newValue: String): js.Any = js.native
+  def length(): Double = js.native
+  def length(newValue: Double): js.Any = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
 }
 
 /* static members */

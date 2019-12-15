@@ -31,12 +31,12 @@ class Attribute protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsEntity: Entity | IEntity = js.native
-  var dataStorageGuid: String = js.native
-  var documentation: String = js.native
+  @JSName("containerAsEntity")
+  val containerAsEntity_FAttribute: IEntity = js.native
   @JSName("model")
-  var model_Attribute: IModel = js.native
-  var name: String = js.native
+  var model_FAttribute: IModel = js.native
+  @JSName("name")
+  val name_FAttribute: String = js.native
   /**
     * Returns the qualified name of this element, or
     * null if this element is not a part of the model,
@@ -45,11 +45,34 @@ class Attribute protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
-  var `type`: AttributeType | IAttributeType = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("type")
+  val type_FAttribute: IAttributeType = js.native
+  /**
+    * This property is required and cannot be set to null.
+    *
+    * In version 6.6.0: added public
+    */
+  @JSName("value")
+  val value_FAttribute: IValueType = js.native
+  def containerAsEntity(): Entity = js.native
+  def dataStorageGuid(): String = js.native
+  def dataStorageGuid(newValue: String): js.Any = js.native
+  def documentation(): String = js.native
+  def documentation(newValue: String): js.Any = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  @JSName("qualifiedName")
+  def qualifiedName_MAttribute(): String | Null = js.native
+  def `type`(): AttributeType = js.native
+  def `type`(newValue: AttributeType): js.Any = js.native
   /**
     * In version 6.6.0: added public
     */
-  var value: IValueType | ValueType = js.native
+  def value(): ValueType = js.native
+  def value(newValue: ValueType): js.Any = js.native
 }
 
 /* static members */

@@ -31,7 +31,9 @@ class IndirectEntityRef protected () extends EntityRef {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val steps: IList[EntityRefStep] = js.native
+  @JSName("model")
+  var model_FIndirectEntityRef: IModel = js.native
+  def steps(): IList[EntityRefStep] = js.native
 }
 
 /* static members */

@@ -20,9 +20,9 @@ class default () extends RowTransformerValidator {
   /* CompleteClass */
   override var callValidator: js.Any = js.native
   /* CompleteClass */
-  override var rowTransform: RowTransformFunction = js.native
+  override def rowTransform(transformFunction: RowTransformFunction): js.Any = js.native
   /* CompleteClass */
-  override var rowValidator: RowValidate = js.native
+  override def rowValidator(validateFunction: RowValidate): js.Any = js.native
   /* CompleteClass */
   override def transformAndValidate(row: Row, cb: RowValidatorCallback): Unit = js.native
 }

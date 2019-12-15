@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cucumber-html-reporter" : "5.0.2"
+      "cucumber-html-reporter" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cucumber-html-reporter" : "5.0.2"
+      "cucumber-html-reporter" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

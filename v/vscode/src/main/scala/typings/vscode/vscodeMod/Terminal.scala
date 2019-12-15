@@ -14,7 +14,7 @@ trait Terminal extends js.Object {
   /**
   		 * The process ID of the shell process.
   		 */
-  val processId: Thenable[Double] = js.native
+  val processId: Thenable[js.UndefOr[Double]] = js.native
   /**
   		 * Dispose and free associated resources.
   		 */

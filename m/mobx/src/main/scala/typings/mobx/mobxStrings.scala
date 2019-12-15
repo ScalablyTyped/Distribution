@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object mobxStrings {
   @js.native
-  sealed trait `An invariant failed, however the error is obfuscated because this is an production buildDOT` extends js.Object
+  sealed trait `An invariant failed, however the error is obfuscated because this is a production buildDOT` extends js.Object
   
   @js.native
   sealed trait IObservableFactories extends js.Object
@@ -54,7 +54,7 @@ object mobxStrings {
   sealed trait update extends js.Object
   
   @scala.inline
-  def `An invariant failed, however the error is obfuscated because this is an production buildDOT`: `An invariant failed, however the error is obfuscated because this is an production buildDOT` = "An invariant failed, however the error is obfuscated because this is an production build.".asInstanceOf[`An invariant failed, however the error is obfuscated because this is an production buildDOT`]
+  def `An invariant failed, however the error is obfuscated because this is a production buildDOT`: `An invariant failed, however the error is obfuscated because this is a production buildDOT` = "An invariant failed, however the error is obfuscated because this is a production build.".asInstanceOf[`An invariant failed, however the error is obfuscated because this is a production buildDOT`]
   @scala.inline
   def IObservableFactories: IObservableFactories = "IObservableFactories".asInstanceOf[IObservableFactories]
   @scala.inline

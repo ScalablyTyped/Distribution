@@ -11,7 +11,7 @@ trait Anon_BarBorderColorBarBorderWidth extends js.Object {
     *
     * @default
     * '#000'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis.itemStyle.barBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.itemStyle.barBorderColor
     */
   var barBorderColor: js.UndefOr[String] = js.undefined
   /**
@@ -19,7 +19,7 @@ trait Anon_BarBorderColorBarBorderWidth extends js.Object {
     * defaults to have no border.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis.itemStyle.barBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.itemStyle.barBorderWidth
     */
   var barBorderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -28,7 +28,7 @@ trait Anon_BarBorderColorBarBorderWidth extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis.itemStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.itemStyle.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -37,7 +37,7 @@ trait Anon_BarBorderColorBarBorderWidth extends js.Object {
     * not be drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis.itemStyle.opacity
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.itemStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -47,31 +47,31 @@ trait Anon_BarBorderColorBarBorderWidth extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar.data.emphasis.itemStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-radar.radar.data.emphasis.itemStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis.itemStyle.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.itemStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis.itemStyle.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.itemStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis.itemStyle.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.itemStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis.itemStyle.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.itemStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
 }

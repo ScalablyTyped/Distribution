@@ -13,10 +13,10 @@ class FirebaseFirestore protected () extends js.Object {
   var app: js.Any = js.native
   def batch(): WriteBatch = js.native
   def clearPersistence(): js.Promise[Unit] = js.native
-  def collection(collectionPath: String): CollectionReference = js.native
-  def collectionGroup(collectionId: String): Query = js.native
+  def collection(collectionPath: String): CollectionReference[DocumentData] = js.native
+  def collectionGroup(collectionId: String): Query[DocumentData] = js.native
   def disableNetwork(): js.Promise[Unit] = js.native
-  def doc(documentPath: String): DocumentReference = js.native
+  def doc(documentPath: String): DocumentReference[DocumentData] = js.native
   def enableNetwork(): js.Promise[Unit] = js.native
   def enablePersistence(): js.Promise[Unit] = js.native
   def enablePersistence(settings: PersistenceSettings): js.Promise[Unit] = js.native

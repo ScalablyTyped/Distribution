@@ -20,6 +20,8 @@ class IntegrationProjectSettingsPart protected () extends ProjectSettingsPart {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FIntegrationProjectSettingsPart: IModel = js.native
 }
 
 /* static members */

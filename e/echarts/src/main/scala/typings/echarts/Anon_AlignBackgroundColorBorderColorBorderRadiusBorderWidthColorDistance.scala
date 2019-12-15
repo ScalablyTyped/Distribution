@@ -12,12 +12,12 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * Note that `'left'` stands for inner side, and `'right'`
     * stands for outer side.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst.data.downplay.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst.data.downplay.label)
     *
     *
     * @default
     * "center"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.align
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.align
     */
   var align: js.UndefOr[String] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst.data.downplay.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst.data.downplay.label)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
@@ -38,7 +38,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   /**
@@ -50,21 +50,21 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
     * Border radius of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   /**
     * Border width of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -76,7 +76,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * @default
     * ""#fff""
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.color
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -84,13 +84,13 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * Works when position is string value (like `'top'`、`'insideRight'`).
     *
     * See:
-    * [label position](https://ecomfe.github.io/echarts-examples/public/editor.html?c=doc-example/label-position)
+    * [label position](https://echarts.apache.org/examples/en/editor.html?c=doc-example/label-position)
     * .
     *
     *
     * @default
     * 5
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.distance
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.distance
     */
   var distance: js.UndefOr[Double] = js.undefined
   /**
@@ -101,7 +101,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * @default
     * "sans-serif"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   /**
@@ -110,7 +110,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * @default
     * 12
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.fontSize
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   /**
@@ -125,7 +125,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   /**
@@ -142,7 +142,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.fontWeight
     */
   var fontWeight: js.UndefOr[String] = js.undefined
   /**
@@ -184,10 +184,10 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * where `params` is the single dataset needed by formatter,
     * which is formed as:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst.data.downplay.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst.data.downplay.label)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.formatter
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.formatter
     */
   var formatter: js.UndefOr[js.Function | String] = js.undefined
   /**
@@ -203,7 +203,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.height
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
@@ -212,10 +212,10 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * If `lineHeight` is not set in `rich`, `lineHeight`
     * in parent level will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst.data.downplay.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst.data.downplay.label)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   /**
@@ -224,7 +224,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * This is used for hiding text for small piece of data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.minAngle
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.minAngle
     */
   var minAngle: js.UndefOr[Double] = js.undefined
   /**
@@ -233,7 +233,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * and move `40` vertically.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.offset
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.offset
     */
   var offset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -249,7 +249,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * and height of the content, without `padding`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.padding
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.padding
     */
   var padding: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
@@ -263,7 +263,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * to represent position of label relative to top-left
     * corner of bounding box. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst.data.downplay.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst.data.downplay.label)
     *
     * + 'top'
     *
@@ -281,31 +281,31 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * + 'insideBottomRight'
     *
     * See:
-    * [label position](https://ecomfe.github.io/echarts-examples/public/view.html?c=doc-example/label-position)
+    * [label position](https://echarts.apache.org/examples/en/view.html?c=doc-example/label-position)
     * .
     *
     *
     * @default
     * "inside"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.position
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.position
     */
   var position: js.UndefOr[js.Array[_] | String] = js.undefined
   /**
     * "Rich text styles" can be defined in this `rich`
     * property. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst.data.downplay.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst.data.downplay.label)
     *
     * For more details, see
-    * [Rich Text](https://ecomfe.github.io/echarts-doc/public/en/option.htmltutorial.html#Rich%20Text)
+    * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.rich
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align]
   ] = js.undefined
@@ -323,19 +323,19 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * The following example shows different `rotate` settings:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst.data.downplay.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst.data.downplay.label)
     *
     *
     * @default
     * "radial"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.rotate
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.rotate
     */
   var rotate: js.UndefOr[Double | String] = js.undefined
   /**
     * Show blur of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -344,21 +344,21 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -367,7 +367,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.show
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -379,21 +379,21 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   /**
     * Storke line width of the text.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   /**
     * Shadow blue of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -402,21 +402,21 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -431,10 +431,10 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * If `verticalAlign` is not set in `rich`, `verticalAlign`
     * in parent level will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst.data.downplay.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst.data.downplay.label)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.verticalAlign
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.verticalAlign
     */
   var verticalAlign: js.UndefOr[String] = js.undefined
   /**
@@ -460,7 +460,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance e
     * specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.width
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -487,7 +487,7 @@ object Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance 
     padding: js.Array[_] | Double = null,
     position: js.Array[_] | String = null,
     rich: /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align] = null,
     rotate: Double | String = null,

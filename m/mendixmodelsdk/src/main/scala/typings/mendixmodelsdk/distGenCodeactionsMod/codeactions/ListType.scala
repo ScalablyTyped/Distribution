@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IType because Already inherited
-- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IListType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined parameter */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.ListType")
+- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IListType because var conflicts: containerAsBasicParameterType, containerAsCodeAction, containerAsListType, id, isLoaded, model, structureTypeName, unit. Inlined parameter */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.ListType")
 @js.native
 class ListType protected () extends Type {
   def this(
@@ -28,11 +28,19 @@ class ListType protected () extends Type {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FListType: IModel = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("parameter")
+  val parameter_FListType: IEntityType = js.native
   @JSName("containerAsBasicParameterType")
-  val containerAsBasicParameterType_ListType: BasicParameterType = js.native
+  def containerAsBasicParameterType_MListType(): BasicParameterType = js.native
   @JSName("containerAsCodeAction")
-  val containerAsCodeAction_ListType: CodeAction = js.native
-  var parameter: EntityType | IEntityType = js.native
+  def containerAsCodeAction_MListType(): CodeAction = js.native
+  def parameter(): EntityType = js.native
+  def parameter(newValue: EntityType): js.Any = js.native
 }
 
 /* static members */

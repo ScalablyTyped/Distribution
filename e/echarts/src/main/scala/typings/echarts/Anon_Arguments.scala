@@ -9,13 +9,13 @@ trait Anon_Arguments extends js.Object {
     * Parameters of `renderItem`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments
     */
   var arguments: js.UndefOr[Anon_Api] = js.undefined
   /**
     * `renderItem` should returns graphic element definitions.
     * Each graphic element is an object. See
-    * [graphic](https://ecomfe.github.io/echarts-doc/public/en/option.html#graphic.elements)
+    * [graphic](https://echarts.apache.org/en/option.html#graphic.elements)
     * for detailed info.
     * (But width\\height\\top\\bottom is not supported here)
     *
@@ -24,32 +24,32 @@ trait Anon_Arguments extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem)
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return
     */
   var `return`: js.UndefOr[js.Object] = js.undefined
   /**
     * Arc element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_arc
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc
     */
   var return_arc: js.UndefOr[Anon_IdIgnoreInfoInvisibleNameOriginPosition] = js.undefined
   /**
     * Quadratic bezier curve or cubic bezier curve.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_bezierCurve
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve
     */
   var return_bezierCurve: js.UndefOr[Anon_IdIgnoreInfoInvisibleNameOriginPositionRotationScaleShape] = js.undefined
   /**
     * Circle element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_circle
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle
     */
   var return_circle: js.UndefOr[Anon_IdIgnoreInfoInvisibleName] = js.undefined
   /**
@@ -57,18 +57,18 @@ trait Anon_Arguments extends js.Object {
     * a group of elements can be positioned and transformed together.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group
     */
   var return_group: js.UndefOr[Anon_Children] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_image
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image
     */
   var return_image: js.UndefOr[Anon_IdIgnore] = js.undefined
   /**
     * Line element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_line
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line
     */
   var return_line: js.UndefOr[Anon_IdIgnoreInfoInvisibleNameOriginPositionRotationScale] = js.undefined
   /**
@@ -79,55 +79,55 @@ trait Anon_Arguments extends js.Object {
     * specified size by auto transforming.
     *
     * See examples:
-    * [icons](https://ecomfe.github.io/echarts-examples/public/editor.html?c=custom-calendar-icon)
+    * [icons](https://echarts.apache.org/examples/en/editor.html?c=custom-calendar-icon)
     * and
-    * [shapes](https://ecomfe.github.io/echarts-examples/public/editor.html?c=custom-gantt-flight)
+    * [shapes](https://echarts.apache.org/examples/en/editor.html?c=custom-gantt-flight)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_path
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path
     */
   var return_path: js.UndefOr[Anon_Id] = js.undefined
   /**
     * Polygon element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon
     */
   var return_polygon: js.UndefOr[Anon_IdIgnoreInfoInvisibleNameOriginPositionRotation] = js.undefined
   /**
     * Polyline element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polyline
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline
     */
   var return_polyline: js.UndefOr[Anon_IdIgnoreInfoInvisibleNameOriginPositionRotation] = js.undefined
   /**
     * Rectangle element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect
     */
   var return_rect: js.UndefOr[Anon_IdIgnoreInfoInvisible] = js.undefined
   /**
     * Ring element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_ring
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring
     */
   var return_ring: js.UndefOr[Anon_IdIgnoreInfoInvisibleNameOrigin] = js.undefined
   /**
     * Sector element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_sector
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_sector
     */
   var return_sector: js.UndefOr[Anon_IdIgnoreInfoInvisibleNameOriginPosition] = js.undefined
   /**
     * Text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text
     */
   var return_text: js.UndefOr[Anon_IdIgnoreInfo] = js.undefined
 }

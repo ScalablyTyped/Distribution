@@ -25,16 +25,20 @@ class BasicJavaActionParameterValue protected () extends JavaActionParameterValu
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FBasicJavaActionParameterValue: IModel = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var argument: String = js.native
+  def argument(): String = js.native
+  def argument(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var argumentModel: Expression = js.native
+  def argumentModel(): Expression = js.native
+  def argumentModel(newValue: Expression): js.Any = js.native
 }
 
 /* static members */

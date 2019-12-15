@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBarBorderColorBarBorderWidth extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.emphasis.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-line.data.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BarBorderColorBarBorderWidth] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.emphasis.label
+    * @see https://echarts.apache.org/en/option.html#series-line.data.emphasis.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
 }

@@ -21,9 +21,9 @@ abstract class MenuSource protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsMenuWidget: MenuWidget = js.native
   @JSName("model")
-  var model_MenuSource: IModel = js.native
+  var model_FMenuSource: IModel = js.native
+  def containerAsMenuWidget(): MenuWidget = js.native
 }
 
 /* static members */

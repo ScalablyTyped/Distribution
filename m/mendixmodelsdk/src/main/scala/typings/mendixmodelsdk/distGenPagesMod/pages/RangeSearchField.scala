@@ -24,28 +24,40 @@ class RangeSearchField protected () extends SearchField {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var includeLower: Boolean = js.native
-  var includeUpper: Boolean = js.native
+  @JSName("model")
+  var model_FRangeSearchField: IModel = js.native
+  def includeLower(): Boolean = js.native
+  def includeLower(newValue: Boolean): js.Any = js.native
+  def includeUpper(): Boolean = js.native
+  def includeUpper(newValue: Boolean): js.Any = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
-  var lowerBound: String = js.native
+  def lowerBound(): String = js.native
+  def lowerBound(newValue: String): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
-  var lowerBoundRef: AttributeRef | Null = js.native
+  def lowerBoundRef(): AttributeRef | Null = js.native
+  def lowerBoundRef(newValue: AttributeRef): js.Any = js.native
+  @JSName("lowerBoundRef")
+  def lowerBoundRef_Any(): js.Any = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
-  var upperBound: String = js.native
+  def upperBound(): String = js.native
+  def upperBound(newValue: String): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
-  var upperBoundRef: AttributeRef | Null = js.native
+  def upperBoundRef(): AttributeRef | Null = js.native
+  def upperBoundRef(newValue: AttributeRef): js.Any = js.native
+  @JSName("upperBoundRef")
+  def upperBoundRef_Any(): js.Any = js.native
 }
 
 /* static members */

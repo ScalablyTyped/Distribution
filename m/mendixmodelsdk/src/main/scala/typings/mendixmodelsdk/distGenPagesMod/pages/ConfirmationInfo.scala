@@ -22,13 +22,16 @@ class ConfirmationInfo protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var cancelButtonCaption: Text = js.native
-  val containerAsCallNanoflowClientAction: CallNanoflowClientAction = js.native
-  val containerAsMicroflowSettings: MicroflowSettings = js.native
   @JSName("model")
-  var model_ConfirmationInfo: IModel = js.native
-  var proceedButtonCaption: Text = js.native
-  var question: Text = js.native
+  var model_FConfirmationInfo: IModel = js.native
+  def cancelButtonCaption(): Text = js.native
+  def cancelButtonCaption(newValue: Text): js.Any = js.native
+  def containerAsCallNanoflowClientAction(): CallNanoflowClientAction = js.native
+  def containerAsMicroflowSettings(): MicroflowSettings = js.native
+  def proceedButtonCaption(): Text = js.native
+  def proceedButtonCaption(newValue: Text): js.Any = js.native
+  def question(): Text = js.native
+  def question(newValue: Text): js.Any = js.native
 }
 
 /* static members */

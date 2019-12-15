@@ -25,7 +25,10 @@ class DataViewActionButton protected () extends DataViewControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var action: ClientAction = js.native
+  @JSName("model")
+  var model_FDataViewActionButton: IModel = js.native
+  def action(): ClientAction = js.native
+  def action(newValue: ClientAction): js.Any = js.native
 }
 
 /* static members */

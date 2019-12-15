@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ItemStyleAnonBorderColorBorderType extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.emphasis.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-gauge.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
 }

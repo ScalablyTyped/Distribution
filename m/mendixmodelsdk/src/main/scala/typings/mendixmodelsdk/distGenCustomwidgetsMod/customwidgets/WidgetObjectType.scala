@@ -22,11 +22,11 @@ class WidgetObjectType protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsCustomWidgetType: CustomWidgetType = js.native
-  val containerAsWidgetValueType: WidgetValueType = js.native
   @JSName("model")
-  var model_WidgetObjectType: IModel = js.native
-  val propertyTypes: IList[WidgetPropertyType] = js.native
+  var model_FWidgetObjectType: IModel = js.native
+  def containerAsCustomWidgetType(): CustomWidgetType = js.native
+  def containerAsWidgetValueType(): WidgetValueType = js.native
+  def propertyTypes(): IList[WidgetPropertyType] = js.native
 }
 
 /* static members */

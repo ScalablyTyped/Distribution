@@ -23,6 +23,8 @@ class NoClientAction protected () extends ClientAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FNoClientAction: IModel = js.native
 }
 
 /* static members */

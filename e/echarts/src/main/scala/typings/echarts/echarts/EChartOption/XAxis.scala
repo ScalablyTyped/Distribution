@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
   * offset can be used to avoid overlap when you need to put more
   * than two x axis.
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis
+  * @see https://echarts.apache.org/en/option.html#xAxis
   */
 trait XAxis extends CartesianAxis {
   /**
@@ -50,7 +50,7 @@ trait XAxis extends CartesianAxis {
     * + 'log' Log axis, suitable for log data.
     *
     * @default 'value'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis.type
+    * @see https://echarts.apache.org/en/option.html#xAxis.type
     */
   var `type`: js.UndefOr[Type] = js.undefined
 }

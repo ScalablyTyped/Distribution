@@ -22,34 +22,45 @@ class TableCell protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FTableCell: IModel = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var appearance: Appearance = js.native
+  def appearance(): Appearance = js.native
+  def appearance(newValue: Appearance): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var `class`: String = js.native
-  val containerAsTable: Table = js.native
-  var height: Double = js.native
-  var isHeader: Boolean = js.native
-  var leftColumnIndex: Double = js.native
-  @JSName("model")
-  var model_TableCell: IModel = js.native
+  def `class`(): String = js.native
+  def `class`(newValue: String): js.Any = js.native
+  def containerAsTable(): Table = js.native
+  def height(): Double = js.native
+  def height(newValue: Double): js.Any = js.native
+  def isHeader(): Boolean = js.native
+  def isHeader(newValue: Boolean): js.Any = js.native
+  def leftColumnIndex(): Double = js.native
+  def leftColumnIndex(newValue: Double): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var style: String = js.native
-  var topRowIndex: Double = js.native
+  def style(): String = js.native
+  def style(newValue: String): js.Any = js.native
+  def topRowIndex(): Double = js.native
+  def topRowIndex(newValue: Double): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var widget: Widget | Null = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val widgets: IList[Widget] = js.native
-  var width: Double = js.native
+  def widgets(): IList[Widget] = js.native
+  def width(): Double = js.native
+  def width(newValue: Double): js.Any = js.native
 }
 
 /* static members */

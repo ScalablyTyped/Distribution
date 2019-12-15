@@ -1,7 +1,7 @@
 
 # Scala.js typings for cbor
 
-Typings are for version 2.0.2
+Typings are for version 5.0
 
 ## Library description:
 Encode and parse data in the Concise Binary Object Representation (CBOR) data format (RFC7049).

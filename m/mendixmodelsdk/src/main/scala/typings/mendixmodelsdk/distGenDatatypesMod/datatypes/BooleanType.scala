@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IDataType because Already inherited
-- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IBooleanType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BooleanType")
+- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IBooleanType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BooleanType")
 @js.native
 class BooleanType protected () extends DataType {
   def this(
@@ -44,22 +44,24 @@ class BooleanType protected () extends DataType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FBooleanType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  val containerAsAppServiceActionParameter_BooleanType: AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MBooleanType(): AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  val containerAsAppServiceAction_BooleanType: AppServiceAction = js.native
+  def containerAsAppServiceAction_MBooleanType(): AppServiceAction = js.native
   @JSName("containerAsConstant")
-  val containerAsConstant_BooleanType: Constant = js.native
+  def containerAsConstant_MBooleanType(): Constant = js.native
   @JSName("containerAsDataSetParameter")
-  val containerAsDataSetParameter_BooleanType: DataSetParameter = js.native
+  def containerAsDataSetParameter_MBooleanType(): DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  val containerAsDocumentTemplateParameter_BooleanType: DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MBooleanType(): DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  val containerAsImportMapping_BooleanType: ImportMapping = js.native
+  def containerAsImportMapping_MBooleanType(): ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  val containerAsMicroflowBase_BooleanType: MicroflowBase = js.native
+  def containerAsMicroflowBase_MBooleanType(): MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  val containerAsMicroflowParameterBase_BooleanType: MicroflowParameterBase = js.native
+  def containerAsMicroflowParameterBase_MBooleanType(): MicroflowParameterBase = js.native
 }
 
 /* static members */

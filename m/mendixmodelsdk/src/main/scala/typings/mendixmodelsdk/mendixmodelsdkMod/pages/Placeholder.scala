@@ -283,6 +283,15 @@ object Placeholder extends js.Object {
   def createInNativeLayoutContentUnderRightHeaderPlaceholder(container: typings.mendixmodelsdk.distGenPagesMod.pages.NativeLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pages.Placeholder = js.native
   /**
     * Creates and returns a new Placeholder instance in the SDK and on the server.
+    * The new Placeholder will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: typings.mendixmodelsdk.distGenPagesMod.pages.NativeLayoutContent): typings.mendixmodelsdk.distGenPagesMod.pages.Placeholder = js.native
+  /**
+    * Creates and returns a new Placeholder instance in the SDK and on the server.
     * The new Placeholder will be automatically stored in the 'widgets' property
     * of the parent NativeLayoutContent element passed as argument.
     *

@@ -23,7 +23,10 @@ class ChangeObjectAction protected () extends ChangeMembersAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var changeVariableName: String = js.native
+  @JSName("model")
+  var model_FChangeObjectAction: IModel = js.native
+  def changeVariableName(): String = js.native
+  def changeVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

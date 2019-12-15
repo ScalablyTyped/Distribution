@@ -23,6 +23,8 @@ class GridDeleteButton protected () extends GridControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FGridDeleteButton: IModel = js.native
 }
 
 /* static members */

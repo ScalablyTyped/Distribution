@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
@@ -19,7 +21,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.distGenPagesMod.pages.IFormBase because Already inherited
-- typings.mendixmodelsdk.distGenPagesMod.pages.ITemplateFormBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined displayName, documentationUrl */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateFormBase")
+- typings.mendixmodelsdk.distGenPagesMod.pages.ITemplateFormBase because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined displayName, documentationUrl */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateFormBase")
 @js.native
 abstract class TemplateFormBase protected () extends FormBase {
   def this(
@@ -32,12 +34,31 @@ abstract class TemplateFormBase protected () extends FormBase {
   /**
     * In version 7.17.0: added public
     */
-  var displayName: String = js.native
+  @JSName("displayName")
+  val displayName_FTemplateFormBase: String = js.native
   /**
     * In version 7.17.0: introduced
     */
-  var documentationUrl: String = js.native
-  var imageData: String | Null = js.native
+  @JSName("documentationUrl")
+  val documentationUrl_FTemplateFormBase: String = js.native
+  @JSName("model")
+  var model_FTemplateFormBase: IModel = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MTemplateFormBase(): FolderBase = js.native
+  /**
+    * In version 7.17.0: added public
+    */
+  def displayName(): String = js.native
+  def displayName(newValue: String): js.Any = js.native
+  /**
+    * In version 7.17.0: introduced
+    */
+  def documentationUrl(): String = js.native
+  def documentationUrl(newValue: String): js.Any = js.native
+  def imageData(): String | Null = js.native
+  def imageData(newValue: String): js.Any = js.native
+  @JSName("imageData")
+  def imageData_Any(): js.Any = js.native
 }
 
 /* static members */

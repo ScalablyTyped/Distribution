@@ -20,6 +20,8 @@ class Tail protected () extends ListOperation {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FTail: IModel = js.native
 }
 
 /* static members */

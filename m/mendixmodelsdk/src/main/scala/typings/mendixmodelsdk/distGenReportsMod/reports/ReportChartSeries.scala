@@ -22,11 +22,13 @@ class ReportChartSeries protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: Text = js.native
-  val containerAsReportChart: ReportChart = js.native
-  var dataSetColumn: String = js.native
   @JSName("model")
-  var model_ReportChartSeries: IModel = js.native
+  var model_FReportChartSeries: IModel = js.native
+  def caption(): Text = js.native
+  def caption(newValue: Text): js.Any = js.native
+  def containerAsReportChart(): ReportChart = js.native
+  def dataSetColumn(): String = js.native
+  def dataSetColumn(newValue: String): js.Any = js.native
 }
 
 /* static members */

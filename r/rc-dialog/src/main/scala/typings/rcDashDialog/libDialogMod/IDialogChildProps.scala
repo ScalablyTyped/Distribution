@@ -14,6 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDialogChildProps extends IDialogPropTypes {
+  var switchScrollingEffect: js.UndefOr[js.Function0[Unit]] = js.undefined
   def getOpenCount(): Double
 }
 
@@ -46,6 +47,7 @@ object IDialogChildProps {
     onClose: /* e */ SyntheticEvent[HTMLDivElement, Event] => _ = null,
     prefixCls: String = null,
     style: CSSProperties = null,
+    switchScrollingEffect: () => Unit = null,
     title: ReactNode = null,
     transitionName: String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
@@ -81,6 +83,7 @@ object IDialogChildProps {
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (switchScrollingEffect != null) __obj.updateDynamic("switchScrollingEffect")(js.Any.fromFunction0(switchScrollingEffect))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])

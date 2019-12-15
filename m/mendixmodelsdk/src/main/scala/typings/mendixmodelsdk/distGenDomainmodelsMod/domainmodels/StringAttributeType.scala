@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAttributeType because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IStringAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.StringAttributeType")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IStringAttributeType because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.StringAttributeType")
 @js.native
 class StringAttributeType protected () extends AttributeType {
   def this(
@@ -25,9 +25,12 @@ class StringAttributeType protected () extends AttributeType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FStringAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  val containerAsAttribute_StringAttributeType: Attribute = js.native
-  var length: Double = js.native
+  def containerAsAttribute_MStringAttributeType(): Attribute = js.native
+  def length(): Double = js.native
+  def length(newValue: Double): js.Any = js.native
 }
 
 /* static members */

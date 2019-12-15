@@ -27,10 +27,13 @@ class DataGrid protected () extends ColumnGrid {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDataGrid: IModel = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var caption: ClientTemplate = js.native
+  def caption(): ClientTemplate = js.native
+  def caption(newValue: ClientTemplate): js.Any = js.native
 }
 
 /* static members */
@@ -279,6 +282,15 @@ object DataGrid extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DataGrid = js.native
+  /**
+    * Creates and returns a new DataGrid instance in the SDK and on the server.
+    * The new DataGrid will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DataGrid = js.native
   /**
     * Creates and returns a new DataGrid instance in the SDK and on the server.
     * The new DataGrid will be automatically stored in the 'widgets' property

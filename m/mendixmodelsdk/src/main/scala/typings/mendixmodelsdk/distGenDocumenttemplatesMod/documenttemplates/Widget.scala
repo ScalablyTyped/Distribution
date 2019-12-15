@@ -24,11 +24,12 @@ abstract class Widget protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsDocumentTemplate: DocumentTemplate = js.native
-  val containerAsDropZone: DropZone = js.native
   @JSName("model")
-  var model_Widget: IModel = js.native
-  var name: String = js.native
+  var model_FWidget: IModel = js.native
+  def containerAsDocumentTemplate(): DocumentTemplate = js.native
+  def containerAsDropZone(): DropZone = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
 }
 
 /* static members */

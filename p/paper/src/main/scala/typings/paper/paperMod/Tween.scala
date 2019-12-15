@@ -4,18 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** 
-  * Allows tweening `Object` properties between two states for a given
-  * duration. To tween properties on Paper.js {@link Item} instances,
-  * {@link Item#tween} can be used, which returns created
-  * tween instance.
-  * 
-  * @see Item#tween(from, to, options)
-  * @see Item#tween(to, options)
-  * @see Item#tween(options)
-  * @see Item#tweenTo(to, options)
-  * @see Item#tweenFrom(from, options)
-  */
 @JSImport("paper", "Tween")
 @js.native
 class Tween protected ()

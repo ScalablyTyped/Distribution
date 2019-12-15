@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAttributeType because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IBinaryAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BinaryAttributeType")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IBinaryAttributeType because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BinaryAttributeType")
 @js.native
 class BinaryAttributeType protected () extends AttributeType {
   def this(
@@ -25,8 +25,10 @@ class BinaryAttributeType protected () extends AttributeType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FBinaryAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  val containerAsAttribute_BinaryAttributeType: Attribute = js.native
+  def containerAsAttribute_MBinaryAttributeType(): Attribute = js.native
 }
 
 /* static members */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_fancytree"
-version := "2.28.2-0-dt-20191030Z-7dc14e"
+version := "2.28.2-0-dt-20191213Z-75bc69"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

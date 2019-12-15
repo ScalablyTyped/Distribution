@@ -9,41 +9,41 @@ import scala.scalajs.js.annotation._
 
 trait DataObject extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.data.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType
   ] = js.undefined
   /**
     * Style of a single data point. It is valid with
-    * [coordinateSystem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem)
+    * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
     * of 'cartesian2d' value.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * It is valid with
-    * [coordinateSystem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem)
+    * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
     * of 'cartesian2d' value.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.data.label
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.data.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * Name of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.data.name
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * Value of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.data.value
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.data.value
     */
   var value: js.UndefOr[js.Array[_]] = js.undefined
 }

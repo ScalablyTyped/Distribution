@@ -15,39 +15,39 @@ trait DataObject extends js.Object {
     * Area filling style of a single item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.areaStyle
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.areaStyle
     */
   var areaStyle: js.UndefOr[Anon_ColorOpacity] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis
     */
   var emphasis: js.UndefOr[Anon_AreaStyleItemStyle] = js.undefined
   /**
     * Style setting of the symbol on single inflection point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BarBorderColorBarBorderWidth] = js.undefined
   /**
     * Style setting of the text on single inflection point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.label
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * Line style of a single item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
   /**
     * Data item name
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.name
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -69,7 +69,7 @@ trait DataObject extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-radar.radar.data)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -84,19 +84,19 @@ trait DataObject extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-radar.radar.data)
     *
     *
     * @default
     * "circle"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.symbol
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -118,7 +118,7 @@ trait DataObject extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -128,7 +128,7 @@ trait DataObject extends js.Object {
     * tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -141,21 +141,21 @@ trait DataObject extends js.Object {
     *
     * @default
     * 4
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * Numerical value of a single data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.value
+    * @see https://echarts.apache.org/en/option.html#series-radar.data.value
     */
   var value: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }

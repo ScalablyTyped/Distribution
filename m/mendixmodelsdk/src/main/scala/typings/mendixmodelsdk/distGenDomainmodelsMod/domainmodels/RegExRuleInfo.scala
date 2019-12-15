@@ -21,8 +21,13 @@ class RegExRuleInfo protected () extends RuleInfo {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var regularExpression: IRegularExpression | Null = js.native
-  val regularExpressionQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FRegExRuleInfo: IModel = js.native
+  def regularExpression(): IRegularExpression | Null = js.native
+  def regularExpression(newValue: IRegularExpression): js.Any = js.native
+  def regularExpressionQualifiedName(): String | Null = js.native
+  @JSName("regularExpression")
+  def regularExpression_Any(): js.Any = js.native
 }
 
 /* static members */

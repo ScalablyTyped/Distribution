@@ -22,7 +22,7 @@ trait Config
   var optimization: Optimization = js.native
   var output: Output = js.native
   var performance: Performance = js.native
-  var plugins: Plugins[this.type] = js.native
+  var plugins: Plugins[this.type, typings.webpack.webpackMod.Plugin] = js.native
   var resolve: Resolve = js.native
   var resolveLoader: ResolveLoader = js.native
   def amd(value: StringDictionary[Boolean]): this.type = js.native
@@ -43,7 +43,7 @@ trait Config
   def mode_production(value: production): this.type = js.native
   def name(value: String): this.type = js.native
   def parallelism(value: Double): this.type = js.native
-  def plugin(name: String): Plugin[this.type] = js.native
+  def plugin(name: String): Plugin[this.type, typings.webpack.webpackMod.Plugin] = js.native
   def profile(value: Boolean): this.type = js.native
   def recordsInputPath(value: String): this.type = js.native
   def recordsOutputPath(value: String): this.type = js.native

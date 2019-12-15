@@ -17,22 +17,22 @@ import scala.scalajs.js.annotation._
   *
   * Map is maily used in the visulization of geographic area data, which
   * can be used with
-  * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+  * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
   * component to visualize the datas such as population distribution
   * density in diffrent areas.
   *
   * Series of same
-  * [map type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map)
+  * [map type](https://echarts.apache.org/en/option.html#series-map.map)
   * will show in one map.
   * At this point, the configuration of the first series will be used
   * for the map configuration.
   *
   * **Example:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map)
+  * [see doc](https://echarts.apache.org/en/option.html#series-map)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map
+  * @see https://echarts.apache.org/en/option.html#series-map
   */
 @JSName("SeriesMap")
 trait SeriesMap_ extends js.Object {
@@ -45,7 +45,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @default
     * 0.75
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.aspectScale
+    * @see https://echarts.apache.org/en/option.html#series-map.aspectScale
     */
   var aspectScale: js.UndefOr[Double] = js.undefined
   /**
@@ -59,17 +59,17 @@ trait SeriesMap_ extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.bottom
+    * @see https://echarts.apache.org/en/option.html#series-map.bottom
     */
   var bottom: js.UndefOr[Double | String] = js.undefined
   /**
     * Two dimension array.
     * Define coord of left-top, right-bottom in layout box.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.boundingCoords
+    * @see https://echarts.apache.org/en/option.html#series-map.boundingCoords
     */
   var boundingCoords: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -83,7 +83,7 @@ trait SeriesMap_ extends js.Object {
     * ```
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.center
+    * @see https://echarts.apache.org/en/option.html#series-map.center
     */
   var center: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -95,7 +95,7 @@ trait SeriesMap_ extends js.Object {
     * ```
     *
     * Or, if need extra dimensions for components like
-    * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * to map to graphic attributes like color, it can also be in the
     * form of array. For example:
     *
@@ -106,61 +106,61 @@ trait SeriesMap_ extends js.Object {
     *
     * In this case, we can assgin the second value in each arrary item
     * to
-    * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * component.
     *
     * More likely, we need to assign name to each data item, in which
     * case each item should be an object:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map)
     *
     * Each data item can be further custerized:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data
+    * @see https://echarts.apache.org/en/option.html#series-map.data
     */
   var data: js.UndefOr[js.Array[Double | DataObject]] = js.undefined
   /**
     * If
-    * [series.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.data)
+    * [series.data](https://echarts.apache.org/en/option.html#series.data)
     * is not specified, and
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * exists, the series will use `dataset`.
     * `datasetIndex` specifies which dataset will be used.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.datasetIndex
+    * @see https://echarts.apache.org/en/option.html#series-map.datasetIndex
     */
   var datasetIndex: js.UndefOr[Double] = js.undefined
   /**
     * In default case, map series create exclusive `geo` component
     * for themselves.
     * But `geoIndex` can be used to specify an outer
-    * [geo component](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geo component](https://echarts.apache.org/en/option.html#geo)
     * , which can be shared with other series like
-    * [pie](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie)
+    * [pie](https://echarts.apache.org/en/option.html#series-pie)
     * . Moreover, the region color of the outer
-    * [geo component](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geo component](https://echarts.apache.org/en/option.html#geo)
     * can be controlled by the map series (via
-    * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * ).
     *
     * When `geoIndex` specified,
-    * [series-map.map](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map)
+    * [series-map.map](https://echarts.apache.org/en/option.html#series-map.map)
     * other style configurations like
-    * [series-map.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.itemStyle)
+    * [series-map.itemStyle](https://echarts.apache.org/en/option.html#series-map.itemStyle)
     * will not work, but cooresponding configurations in
-    * [geo component](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geo component](https://echarts.apache.org/en/option.html#geo)
     * will be used.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.geoIndex
+    * @see https://echarts.apache.org/en/option.html#series-map.geoIndex
     */
   var geoIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -169,7 +169,7 @@ trait SeriesMap_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.id
+    * @see https://echarts.apache.org/en/option.html#series-map.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -178,7 +178,7 @@ trait SeriesMap_ extends js.Object {
     * via legend connect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-map.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_AreaColorEmphasis] = js.undefined
   /**
@@ -190,7 +190,7 @@ trait SeriesMap_ extends js.Object {
     * as `itemStyle` does.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.label
+    * @see https://echarts.apache.org/en/option.html#series-map.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadius] = js.undefined
   /**
@@ -203,13 +203,13 @@ trait SeriesMap_ extends js.Object {
     * the center position of map, and `layoutSize` can be used to define
     * the size of map. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map)
     *
     * After setting these two values, `left/right/top/bottom/width/height`
     * becomes invalid.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.layoutCenter
+    * @see https://echarts.apache.org/en/option.html#series-map.layoutCenter
     */
   var layoutCenter: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -218,7 +218,7 @@ trait SeriesMap_ extends js.Object {
     * are supported.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.layoutSize
+    * @see https://echarts.apache.org/en/option.html#series-map.layoutSize
     */
   var layoutSize: js.UndefOr[Double | String] = js.undefined
   /**
@@ -234,7 +234,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.left
+    * @see https://echarts.apache.org/en/option.html#series-map.left
     */
   var left: js.UndefOr[Double | String] = js.undefined
   /**
@@ -258,11 +258,11 @@ trait SeriesMap_ extends js.Object {
     *
     * **JavaScript importing example**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map)
     *
     * **JSON importing example**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map)
     *
     * ECharts uses
     * [geoJSON](http://geojson.org/)
@@ -271,18 +271,18 @@ trait SeriesMap_ extends js.Object {
     * [geoJSON](http://geojson.org/)
     * data through in other methods if you like and register it in
     * ECharts. Reference to
-    * [USA Population Estimates](https://ecomfe.github.io/echarts-examples/public/editor.html?c=map-usa)
+    * [USA Population Estimates](https://echarts.apache.org/examples/en/editor.html?c=map-usa)
     * for more information.
     *
     *
     * @default
     * ''
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map
+    * @see https://echarts.apache.org/en/option.html#series-map.map
     */
   var map: js.UndefOr[String] = js.undefined
   /**
     * Value of multiple series with the same
-    * [map type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map)
+    * [map type](https://echarts.apache.org/en/option.html#series-map.map)
     * can use this option to get a statistical value.
     *
     * Supported statistical methods:
@@ -295,7 +295,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @default
     * "sum"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.mapValueCalculation
+    * @see https://echarts.apache.org/en/option.html#series-map.mapValueCalculation
     */
   var mapValueCalculation: js.UndefOr[String] = js.undefined
   /**
@@ -303,7 +303,7 @@ trait SeriesMap_ extends js.Object {
     * For example, mark a time interval.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markArea
+    * @see https://echarts.apache.org/en/option.html#series-map.markArea
     */
   var markArea: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataItemStyle
@@ -312,7 +312,7 @@ trait SeriesMap_ extends js.Object {
     * Use a line in the chart to illustrate.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine
     */
   var markLine: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataLabel
@@ -321,20 +321,20 @@ trait SeriesMap_ extends js.Object {
     * Mark point in a chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint
     */
   var markPoint: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdData
   ] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.name
+    * @see https://echarts.apache.org/en/option.html#series-map.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -348,7 +348,7 @@ trait SeriesMap_ extends js.Object {
     * ```
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.nameMap
+    * @see https://echarts.apache.org/en/option.html#series-map.nameMap
     */
   var nameMap: js.UndefOr[js.Object] = js.undefined
   /**
@@ -362,7 +362,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.right
+    * @see https://echarts.apache.org/en/option.html#series-map.right
     */
   var right: js.UndefOr[Double | String] = js.undefined
   /**
@@ -373,14 +373,14 @@ trait SeriesMap_ extends js.Object {
     * Otherwise, set it to be `true` to enable both.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.roam
+    * @see https://echarts.apache.org/en/option.html#series-map.roam
     */
   var roam: js.UndefOr[Boolean | String] = js.undefined
   /**
     * Limit of scaling, with `min` and `max`. `1` by default.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.scaleLimit
+    * @see https://echarts.apache.org/en/option.html#series-map.scaleLimit
     */
   var scaleLimit: js.UndefOr[Anon_MaxMin] = js.undefined
   /**
@@ -390,12 +390,12 @@ trait SeriesMap_ extends js.Object {
     * `'multiple'` for selecting multiple areas.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.selectedMode
+    * @see https://echarts.apache.org/en/option.html#series-map.selectedMode
     */
   var selectedMode: js.UndefOr[Boolean | String] = js.undefined
   /**
     * When
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * is used, `seriesLayoutBy` specifies whether the column or the
     * row of `dataset` is mapped to the series, namely, the series
     * is "layout" on columns or rows. Optional values:
@@ -406,23 +406,23 @@ trait SeriesMap_ extends js.Object {
     * In this case, each row represents a dimension.
     *
     * Check this
-    * [example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=dataset-series-layout-by)
+    * [example](https://echarts.apache.org/examples/en/editor.html?c=dataset-series-layout-by)
     * .
     *
     *
     * @default
     * "column"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.seriesLayoutBy
+    * @see https://echarts.apache.org/en/option.html#series-map.seriesLayoutBy
     */
   var seriesLayoutBy: js.UndefOr[String] = js.undefined
   /**
     * Show the symbol in related area (dot of series symbol).
     * Available when
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * component exists.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.showLegendSymbol
+    * @see https://echarts.apache.org/en/option.html#series-map.showLegendSymbol
     */
   var showLegendSymbol: js.UndefOr[Boolean] = js.undefined
   /**
@@ -431,14 +431,14 @@ trait SeriesMap_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.silent
+    * @see https://echarts.apache.org/en/option.html#series-map.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-map.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
@@ -454,13 +454,13 @@ trait SeriesMap_ extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.top
+    * @see https://echarts.apache.org/en/option.html#series-map.top
     */
   var top: js.UndefOr[Double | String] = js.undefined
   /**
     * @default
     * "map"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.type
+    * @see https://echarts.apache.org/en/option.html#series-map.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
@@ -475,7 +475,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.z
+    * @see https://echarts.apache.org/en/option.html#series-map.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -493,7 +493,7 @@ trait SeriesMap_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-map.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
   /**
@@ -502,7 +502,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @default
     * 1
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.zoom
+    * @see https://echarts.apache.org/en/option.html#series-map.zoom
     */
   var zoom: js.UndefOr[Double] = js.undefined
 }

@@ -27,7 +27,10 @@ class SimpleMenuBar protected () extends MenuWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var orientation: SimpleMenuBarOrientation = js.native
+  @JSName("model")
+  var model_FSimpleMenuBar: IModel = js.native
+  def orientation(): SimpleMenuBarOrientation = js.native
+  def orientation(newValue: SimpleMenuBarOrientation): js.Any = js.native
 }
 
 /* static members */
@@ -276,6 +279,15 @@ object SimpleMenuBar extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): SimpleMenuBar = js.native
+  /**
+    * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
+    * The new SimpleMenuBar will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): SimpleMenuBar = js.native
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
     * The new SimpleMenuBar will be automatically stored in the 'widgets' property

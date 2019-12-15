@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenNavigationMod.navigation.INavigationProfileBase because Already inherited
-- typings.mendixmodelsdk.distGenNavigationMod.navigation.INativeNavigationProfile because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/navigation", "navigation.NativeNavigationProfile")
+- typings.mendixmodelsdk.distGenNavigationMod.navigation.INativeNavigationProfile because var conflicts: containerAsNavigationDocument, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/navigation", "navigation.NativeNavigationProfile")
 @js.native
 class NativeNavigationProfile protected () extends NavigationProfileBase {
   def this(
@@ -32,20 +32,25 @@ class NativeNavigationProfile protected () extends NavigationProfileBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FNativeNavigationProfile: IModel = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 8.0.0: introduced
     */
-  val bottomBarItems: IList[BottomBarItem] = js.native
+  def bottomBarItems(): IList[BottomBarItem] = js.native
   @JSName("containerAsNavigationDocument")
-  val containerAsNavigationDocument_NativeNavigationProfile: NavigationDocument = js.native
-  var homePage: IPage | Null = js.native
-  val homePageQualifiedName: String | Null = js.native
+  def containerAsNavigationDocument_MNativeNavigationProfile(): NavigationDocument = js.native
+  def homePage(): IPage | Null = js.native
+  def homePage(newValue: IPage): js.Any = js.native
+  def homePageQualifiedName(): String | Null = js.native
+  @JSName("homePage")
+  def homePage_Any(): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  val roleBasedNativeHomePages: IList[RoleBasedNativeHomePage] = js.native
+  def roleBasedNativeHomePages(): IList[RoleBasedNativeHomePage] = js.native
 }
 
 /* static members */

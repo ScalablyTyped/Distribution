@@ -21,6 +21,8 @@ class ConditionalEditabilitySettings protected () extends ConditionalSettings {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FConditionalEditabilitySettings: IModel = js.native
 }
 
 /* static members */

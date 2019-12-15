@@ -109,9 +109,6 @@ object grommetStrings {
   sealed trait abbr extends _PolymorphicType
   
   @js.native
-  sealed trait `accent-1` extends js.Object
-  
-  @js.native
   sealed trait address extends _PolymorphicType
   
   @js.native
@@ -749,6 +746,9 @@ object grommetStrings {
   sealed trait plain extends js.Object
   
   @js.native
+  sealed trait point extends js.Object
+  
+  @js.native
   sealed trait polite extends AnnounceMode
   
   @js.native
@@ -1130,8 +1130,6 @@ object grommetStrings {
   def a: a = "a".asInstanceOf[a]
   @scala.inline
   def abbr: abbr = "abbr".asInstanceOf[abbr]
-  @scala.inline
-  def `accent-1`: `accent-1` = "accent-1".asInstanceOf[`accent-1`]
   @scala.inline
   def address: address = "address".asInstanceOf[address]
   @scala.inline
@@ -1528,6 +1526,8 @@ object grommetStrings {
   def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
   @scala.inline
   def plain: plain = "plain".asInstanceOf[plain]
+  @scala.inline
+  def point: point = "point".asInstanceOf[point]
   @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
   @scala.inline

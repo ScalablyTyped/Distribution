@@ -24,24 +24,33 @@ class MemberChange protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var association: IAssociationBase | Null = js.native
-  val associationQualifiedName: String | Null = js.native
-  var attribute: IAttribute | Null = js.native
-  val attributeQualifiedName: String | Null = js.native
-  val containerAsChangeMembersAction: ChangeMembersAction = js.native
   @JSName("model")
-  var model_MemberChange: IModel = js.native
-  var `type`: ChangeActionItemType = js.native
+  var model_FMemberChange: IModel = js.native
+  def association(): IAssociationBase | Null = js.native
+  def association(newValue: IAssociationBase): js.Any = js.native
+  def associationQualifiedName(): String | Null = js.native
+  @JSName("association")
+  def association_Any(): js.Any = js.native
+  def attribute(): IAttribute | Null = js.native
+  def attribute(newValue: IAttribute): js.Any = js.native
+  def attributeQualifiedName(): String | Null = js.native
+  @JSName("attribute")
+  def attribute_Any(): js.Any = js.native
+  def containerAsChangeMembersAction(): ChangeMembersAction = js.native
+  def `type`(): ChangeActionItemType = js.native
+  def `type`(newValue: ChangeActionItemType): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var value: String = js.native
+  def value(): String = js.native
+  def value(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var valueModel: Expression = js.native
+  def valueModel(): Expression = js.native
+  def valueModel(newValue: Expression): js.Any = js.native
 }
 
 /* static members */

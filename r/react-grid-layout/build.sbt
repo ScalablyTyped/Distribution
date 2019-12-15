@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-grid-layout"
-version := "0.16-dt-20190205Z-2fc161"
+version := "0.17-dt-20191213Z-63c600"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.INumericAttributeTypeBase because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IDecimalAttributeTypeBase because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IFloatAttributeTypeBase because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IFloatAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.FloatAttributeType")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IFloatAttributeType because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.FloatAttributeType")
 @js.native
 class FloatAttributeType protected () extends FloatAttributeTypeBase {
   def this(
@@ -31,6 +31,10 @@ class FloatAttributeType protected () extends FloatAttributeTypeBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FFloatAttributeType: IModel = js.native
+  @JSName("containerAsAttribute")
+  def containerAsAttribute_MFloatAttributeType(): Attribute = js.native
 }
 
 /* static members */

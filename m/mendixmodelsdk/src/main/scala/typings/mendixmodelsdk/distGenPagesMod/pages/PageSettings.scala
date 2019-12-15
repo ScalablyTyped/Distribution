@@ -27,26 +27,33 @@ class PageSettings protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsAssociationWidget: AssociationWidget = js.native
-  val containerAsCreateObjectClientAction: CreateObjectClientAction = js.native
-  val containerAsDataGridAddButton: DataGridAddButton = js.native
-  val containerAsGridEditButton: GridEditButton = js.native
-  val containerAsGridNewButton: GridNewButton = js.native
-  val containerAsNavigationProfile: NavigationProfile = js.native
-  val containerAsNewButton: NewButton = js.native
-  val containerAsPageClientAction: PageClientAction = js.native
-  val containerAsPageForSpecialization: PageForSpecialization = js.native
-  val containerAsReferenceSelector: ReferenceSelector = js.native
-  val containerAsShowPageAction: ShowPageAction = js.native
-  var formTitle: Text | Null = js.native
+  @JSName("model")
+  var model_FPageSettings: IModel = js.native
+  def containerAsAssociationWidget(): AssociationWidget = js.native
+  def containerAsCreateObjectClientAction(): CreateObjectClientAction = js.native
+  def containerAsDataGridAddButton(): DataGridAddButton = js.native
+  def containerAsGridEditButton(): GridEditButton = js.native
+  def containerAsGridNewButton(): GridNewButton = js.native
+  def containerAsNavigationProfile(): NavigationProfile = js.native
+  def containerAsNewButton(): NewButton = js.native
+  def containerAsPageClientAction(): PageClientAction = js.native
+  def containerAsPageForSpecialization(): PageForSpecialization = js.native
+  def containerAsReferenceSelector(): ReferenceSelector = js.native
+  def containerAsShowPageAction(): ShowPageAction = js.native
+  def formTitle(): Text | Null = js.native
+  def formTitle(newValue: Text): js.Any = js.native
+  @JSName("formTitle")
+  def formTitle_Any(): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var location: FormLocation = js.native
-  @JSName("model")
-  var model_PageSettings: IModel = js.native
-  var page: IPage | Null = js.native
-  val pageQualifiedName: String | Null = js.native
+  def location(): FormLocation = js.native
+  def location(newValue: FormLocation): js.Any = js.native
+  def page(): IPage | Null = js.native
+  def page(newValue: IPage): js.Any = js.native
+  def pageQualifiedName(): String | Null = js.native
+  @JSName("page")
+  def page_Any(): js.Any = js.native
 }
 
 /* static members */

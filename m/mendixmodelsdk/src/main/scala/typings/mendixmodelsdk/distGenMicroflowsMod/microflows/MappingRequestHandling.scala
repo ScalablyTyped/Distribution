@@ -21,13 +21,20 @@ class MappingRequestHandling protected () extends RequestHandling {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FMappingRequestHandling: IModel = js.native
   /**
     * In version 7.6.0: introduced
     */
-  var contentType: ContentType = js.native
-  var mapping: IExportMapping | Null = js.native
-  var mappingArgumentVariableName: String = js.native
-  val mappingQualifiedName: String | Null = js.native
+  def contentType(): ContentType = js.native
+  def contentType(newValue: ContentType): js.Any = js.native
+  def mapping(): IExportMapping | Null = js.native
+  def mapping(newValue: IExportMapping): js.Any = js.native
+  def mappingArgumentVariableName(): String = js.native
+  def mappingArgumentVariableName(newValue: String): js.Any = js.native
+  def mappingQualifiedName(): String | Null = js.native
+  @JSName("mapping")
+  def mapping_Any(): js.Any = js.native
 }
 
 /* static members */

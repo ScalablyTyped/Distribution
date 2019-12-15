@@ -21,6 +21,8 @@ class ImageViewerSource protected () extends EntityPathSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FImageViewerSource: IModel = js.native
 }
 
 /* static members */

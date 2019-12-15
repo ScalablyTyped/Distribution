@@ -32,19 +32,12 @@ class UserRole protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var checkSecurity: Boolean = js.native
-  val containerAsProjectSecurity: IProjectSecurity | ProjectSecurity = js.native
-  var description: String = js.native
-  var guid: String = js.native
-  var manageAllRoles: Boolean = js.native
-  var manageUsersWithoutRoles: Boolean = js.native
-  val manageableRoles: IList[IUserRole] = js.native
-  val manageableRolesQualifiedNames: js.Array[String] = js.native
+  @JSName("containerAsProjectSecurity")
+  val containerAsProjectSecurity_FUserRole: IProjectSecurity = js.native
   @JSName("model")
-  var model_UserRole: IModel = js.native
-  val moduleRoles: IList[IModuleRole] = js.native
-  val moduleRolesQualifiedNames: js.Array[String] = js.native
-  var name: String = js.native
+  var model_FUserRole: IModel = js.native
+  @JSName("name")
+  val name_FUserRole: String = js.native
   /**
     * Returns the qualified name of this element, or
     * null if this element is not a part of the model,
@@ -53,6 +46,25 @@ class UserRole protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
+  def checkSecurity(): Boolean = js.native
+  def checkSecurity(newValue: Boolean): js.Any = js.native
+  def containerAsProjectSecurity(): ProjectSecurity = js.native
+  def description(): String = js.native
+  def description(newValue: String): js.Any = js.native
+  def guid(): String = js.native
+  def guid(newValue: String): js.Any = js.native
+  def manageAllRoles(): Boolean = js.native
+  def manageAllRoles(newValue: Boolean): js.Any = js.native
+  def manageUsersWithoutRoles(): Boolean = js.native
+  def manageUsersWithoutRoles(newValue: Boolean): js.Any = js.native
+  def manageableRoles(): IList[IUserRole] = js.native
+  def manageableRolesQualifiedNames(): js.Array[String] = js.native
+  def moduleRoles(): IList[IModuleRole] = js.native
+  def moduleRolesQualifiedNames(): js.Array[String] = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  @JSName("qualifiedName")
+  def qualifiedName_MUserRole(): String | Null = js.native
 }
 
 /* static members */

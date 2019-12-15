@@ -22,6 +22,7 @@ object WidgetValueTypeEnum extends js.Object {
   var EntityConstraint: WidgetValueTypeEnum = js.native
   var Enumeration: WidgetValueTypeEnum = js.native
   var Expression: WidgetValueTypeEnum = js.native
+  var File: WidgetValueTypeEnum = js.native
   var Form: WidgetValueTypeEnum = js.native
   var Icon: WidgetValueTypeEnum = js.native
   var Image: WidgetValueTypeEnum = js.native

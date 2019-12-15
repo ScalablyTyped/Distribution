@@ -24,18 +24,18 @@ class Item () extends js.Object {
     * on to the segments in {@link Path} items, the children of {@link Group}
     * items, etc.).
     */
-  var applyMatrix: Boolean | Null = js.native
+  var applyMatrix: Boolean = js.native
   /** 
     * The blend mode with which the item is composited onto the canvas. Both
     * the standard canvas compositing modes, as well as the new CSS blend modes
     * are supported. If blend-modes cannot be rendered natively, they are
     * emulated. Be aware that emulation can have an impact on performance.
     */
-  var blendMode: String | Null = js.native
+  var blendMode: String = js.native
   /** 
     * The bounding rectangle of the item excluding stroke width.
     */
-  var bounds: Rectangle | Null = js.native
+  var bounds: Rectangle = js.native
   /** 
     * The children items contained within this item. Items that define a
     * {@link #name} can also be accessed by name.
@@ -46,25 +46,25 @@ class Item () extends js.Object {
     * {@link Item#removeChildren}. To add items to the children list, use
     * {@link Item#addChild} or {@link Item#insertChild}.
     */
-  var children: js.Array[Item] | Null = js.native
+  var children: js.Array[Item] = js.native
   /** 
     * The class name of the item as a string.
     */
-  var className: String | Null = js.native
+  var className: String = js.native
   /** 
     * Specifies whether the item defines a clip mask. This can only be set on
     * paths and compound paths, and only if the item is already contained
     * within a clipping group.
     */
-  var clipMask: Boolean | Null = js.native
+  var clipMask: Boolean = js.native
   /** 
     * Specifies an array containing the dash and gap lengths of the stroke.
     */
-  var dashArray: js.Array[Double] | Null = js.native
+  var dashArray: js.Array[Double] = js.native
   /** 
     * The dash offset of the stroke.
     */
-  var dashOffset: Double | Null = js.native
+  var dashOffset: Double = js.native
   /** 
     * A plain javascript object which can be used to store
     * arbitrary data on the item.
@@ -78,7 +78,7 @@ class Item () extends js.Object {
     * The fill-rule with which the shape gets filled. Please note that only
     * modern browsers support fill-rules other than `'nonzero'`.
     */
-  var fillRule: String | Null = js.native
+  var fillRule: String = js.native
   /** 
     * The first item contained within this item. This is a shortcut for
     * accessing `item.children[0]`.
@@ -93,7 +93,7 @@ class Item () extends js.Object {
   /** 
     * The bounding rectangle of the item including handles.
     */
-  var handleBounds: Rectangle | Null = js.native
+  var handleBounds: Rectangle = js.native
   /** 
     * The unique id of the item.
     */
@@ -109,7 +109,7 @@ class Item () extends js.Object {
     * want to draw something of the same size, position, rotation, and scaling,
     * like a selection frame.
     */
-  var internalBounds: Rectangle | Null = js.native
+  var internalBounds: Rectangle = js.native
   /** 
     * The last item contained within this item.This is a shortcut for
     * accessing `item.children[item.children.length - 1]`.
@@ -123,12 +123,12 @@ class Item () extends js.Object {
     * Specifies whether the item is locked. When set to `true`, item
     * interactions with the mouse are disabled.
     */
-  var locked: Boolean | Null = js.native
+  var locked: Boolean = js.native
   /** 
     * The item's transformation matrix, defining position and dimensions in
     * relation to its parent item in which it is contained.
     */
-  var matrix: Matrix | Null = js.native
+  var matrix: Matrix = js.native
   /** 
     * The miter limit of the stroke.
     * When two line segments meet at a sharp angle and miter joins have been
@@ -137,12 +137,12 @@ class Item () extends js.Object {
     * miterLimit imposes a limit on the ratio of the miter length to the
     * {@link Item#strokeWidth}.
     */
-  var miterLimit: Double | Null = js.native
+  var miterLimit: Double = js.native
   /** 
     * The name of the item. If the item has a name, it can be accessed by name
     * through its parent's children list.
     */
-  var name: String | Null = js.native
+  var name: String = js.native
   /** 
     * The next item on the same level as this item.
     */
@@ -254,11 +254,11 @@ class Item () extends js.Object {
   /** 
     * The opacity of the item as a value between `0` and `1`.
     */
-  var opacity: Double | Null = js.native
+  var opacity: Double = js.native
   /** 
     * The item that this item is contained within.
     */
-  var parent: Item | Null = js.native
+  var parent: Item = js.native
   /** 
     * The item's pivot point specified in the item coordinate system, defining
     * the point around which all transformations are hinging. This is also the
@@ -266,13 +266,13 @@ class Item () extends js.Object {
     * meaning the {@link Rectangle#center} of the item's {@link #bounds}
     * rectangle is used as pivot.
     */
-  var pivot: Point | Null = js.native
+  var pivot: Point = js.native
   /** 
     * The item's position within the parent item's coordinate system. By
     * default, this is the {@link Rectangle#center} of the item's
     * {@link #bounds} rectangle.
     */
-  var position: Point | Null = js.native
+  var position: Point = js.native
   /** 
     * The previous item on the same level as this item.
     */
@@ -288,7 +288,7 @@ class Item () extends js.Object {
     * {@link #applyMatrix} set to `false`, meaning they do not directly bake
     * transformations into their content.
     */
-  var rotation: Double | Null = js.native
+  var rotation: Double = js.native
   /** 
     * The current scale factor of the item, as described by its
     * {@link #matrix}.
@@ -296,7 +296,7 @@ class Item () extends js.Object {
     * {@link #applyMatrix} set to `false`, meaning they do not directly bake
     * transformations into their content.
     */
-  var scaling: Point | Null = js.native
+  var scaling: Point = js.native
   /** 
     * Specifies whether the item is selected. This will also return `true` for
     * {@link Group} items if they are partially selected, e.g. groups
@@ -312,7 +312,7 @@ class Item () extends js.Object {
     * @see Curve#selected
     * @see Point#selected
     */
-  var selected: Boolean | Null = js.native
+  var selected: Boolean = js.native
   /** 
     * The color the item is highlighted with when selected. If the item does
     * not specify its own color, the color defined by its layer is used instead.
@@ -321,7 +321,7 @@ class Item () extends js.Object {
   /** 
     * The shadow's blur radius.
     */
-  var shadowBlur: Double | Null = js.native
+  var shadowBlur: Double = js.native
   /** 
     * The shadow color.
     */
@@ -329,16 +329,16 @@ class Item () extends js.Object {
   /** 
     * The shadow's offset.
     */
-  var shadowOffset: Point | Null = js.native
+  var shadowOffset: Point = js.native
   /** 
     * The bounding rectangle of the item including stroke width.
     */
-  var strokeBounds: Rectangle | Null = js.native
+  var strokeBounds: Rectangle = js.native
   /** 
     * The shape to be used at the beginning and end of open {@link Path} items,
     * when they have a stroke.
     */
-  var strokeCap: String | Null = js.native
+  var strokeCap: String = js.native
   /** 
     * The color of the stroke.
     */
@@ -347,21 +347,21 @@ class Item () extends js.Object {
     * The shape to be used at the segments and corners of {@link Path} items
     * when they have a stroke.
     */
-  var strokeJoin: String | Null = js.native
+  var strokeJoin: String = js.native
   /** 
     * Specifies whether the stroke is to be drawn taking the current affine
     * transformation into account (the default behavior), or whether it should
     * appear as a non-scaling stroke.
     */
-  var strokeScaling: Boolean | Null = js.native
+  var strokeScaling: Boolean = js.native
   /** 
     * The width of the stroke.
     */
-  var strokeWidth: Double | Null = js.native
+  var strokeWidth: Double = js.native
   /** 
     * The path style of the item.
     */
-  var style: Style | Null = js.native
+  var style: Style = js.native
   /** 
     * The view that this item belongs to.
     */
@@ -376,7 +376,7 @@ class Item () extends js.Object {
     * Specifies whether the item is visible. When set to `false`, the item
     * won't be drawn.
     */
-  var visible: Boolean | Null = js.native
+  var visible: Boolean = js.native
   /** 
     * Adds the specified item as a child of this item at the end of the its
     * {@link #children}  list. You can use this function for groups, compound
@@ -816,11 +816,9 @@ class Item () extends js.Object {
     * 
     * @param recursively - whether an item with children should be
     * considered empty if all its descendants are empty
-    * 
-    * @return Boolean
     */
-  def isEmpty(): Unit = js.native
-  def isEmpty(recursively: Boolean): Unit = js.native
+  def isEmpty(): Boolean = js.native
+  def isEmpty(recursively: Boolean): Boolean = js.native
   /** 
     * Checks whether the item is grouped with the specified item.
     * 

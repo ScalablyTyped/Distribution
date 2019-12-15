@@ -26,6 +26,8 @@ class LogoutButton protected () extends Button {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FLogoutButton: IModel = js.native
 }
 
 /* static members */

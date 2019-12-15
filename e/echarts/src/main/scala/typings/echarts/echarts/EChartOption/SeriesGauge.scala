@@ -22,10 +22,10 @@ import scala.scalajs.js.annotation._
   *
   * **Example:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge)
+  * [see doc](https://echarts.apache.org/en/option.html#series-gauge)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge
+  * @see https://echarts.apache.org/en/option.html#series-gauge
   */
 trait SeriesGauge extends js.Object {
   /**
@@ -34,7 +34,7 @@ trait SeriesGauge extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.animation
+    * @see https://echarts.apache.org/en/option.html#series-gauge.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -43,14 +43,14 @@ trait SeriesGauge extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.gauge)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-gauge.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -59,50 +59,50 @@ trait SeriesGauge extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.gauge)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-gauge.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.gauge)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-gauge.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.gauge)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-gauge.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-gauge.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -111,7 +111,7 @@ trait SeriesGauge extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-gauge.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -122,28 +122,28 @@ trait SeriesGauge extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-gauge.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
     * Axis tick label.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLabel
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel
     */
   var axisLabel: js.UndefOr[Anon_BackgroundColorBorderColorBorderRadius] = js.undefined
   /**
     * The related configuration about the axis line of gauge chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine
     */
   var axisLine: js.UndefOr[Anon_LineStyleShowAnonColorOpacityShadowBlurShadowColor] = js.undefined
   /**
     * The tick line style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisTick
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick
     */
   var axisTick: js.UndefOr[Anon_LengthLineStyle] = js.undefined
   /**
@@ -152,18 +152,18 @@ trait SeriesGauge extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.clockwise
+    * @see https://echarts.apache.org/en/option.html#series-gauge.clockwise
     */
   var clockwise: js.UndefOr[Boolean] = js.undefined
   /**
     * The detail about gauge chart which is used to show data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail
     */
   var detail: js.UndefOr[Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-gauge.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColorBorderType] = js.undefined
   /**
@@ -172,7 +172,7 @@ trait SeriesGauge extends js.Object {
     *
     * @default
     * -45
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.endAngle
+    * @see https://echarts.apache.org/en/option.html#series-gauge.endAngle
     */
   var endAngle: js.UndefOr[Double] = js.undefined
   /**
@@ -181,14 +181,14 @@ trait SeriesGauge extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.id
+    * @see https://echarts.apache.org/en/option.html#series-gauge.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     * The style of gauge chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-gauge.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
@@ -196,7 +196,7 @@ trait SeriesGauge extends js.Object {
     * For example, mark a time interval.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.markArea
+    * @see https://echarts.apache.org/en/option.html#series-gauge.markArea
     */
   var markArea: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
@@ -205,7 +205,7 @@ trait SeriesGauge extends js.Object {
     * Use a line in the chart to illustrate.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.markLine
+    * @see https://echarts.apache.org/en/option.html#series-gauge.markLine
     */
   var markLine: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
@@ -214,47 +214,47 @@ trait SeriesGauge extends js.Object {
     * Mark point in a chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.markPoint
+    * @see https://echarts.apache.org/en/option.html#series-gauge.markPoint
     */
   var markPoint: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
   ] = js.undefined
   /**
     * The maximum data value which map to
-    * [maxAngle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.maxAngle)
+    * [maxAngle](https://echarts.apache.org/en/option.html#series-gauge.maxAngle)
     * .
     *
     *
     * @default
     * 100
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.max
+    * @see https://echarts.apache.org/en/option.html#series-gauge.max
     */
   var max: js.UndefOr[Double] = js.undefined
   /**
     * The minimum data value which map to
-    * [minAngle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.minAngle)
+    * [minAngle](https://echarts.apache.org/en/option.html#series-gauge.minAngle)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.min
+    * @see https://echarts.apache.org/en/option.html#series-gauge.min
     */
   var min: js.UndefOr[Double] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.name
+    * @see https://echarts.apache.org/en/option.html#series-gauge.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * Gauge chart pointer.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.pointer
+    * @see https://echarts.apache.org/en/option.html#series-gauge.pointer
     */
   var pointer: js.UndefOr[Anon_LengthShow] = js.undefined
   /**
@@ -267,14 +267,14 @@ trait SeriesGauge extends js.Object {
     *
     * @default
     * '75%'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.radius
+    * @see https://echarts.apache.org/en/option.html#series-gauge.radius
     */
   var radius: js.UndefOr[Double | String] = js.undefined
   /**
     * The style of split line.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.splitLine
+    * @see https://echarts.apache.org/en/option.html#series-gauge.splitLine
     */
   var splitLine: js.UndefOr[Anon_Length] = js.undefined
   /**
@@ -283,39 +283,39 @@ trait SeriesGauge extends js.Object {
     *
     * @default
     * 10
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.splitNumber
+    * @see https://echarts.apache.org/en/option.html#series-gauge.splitNumber
     */
   var splitNumber: js.UndefOr[Double] = js.undefined
   /**
     * The start angle of gauge chart. The direct right side of
-    * [circle center](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.center)
+    * [circle center](https://echarts.apache.org/en/option.html#series-gauge.center)
     * is `0` degree, the right above it is `90` degree, the direct
     * left side of it is `180` degree.
     *
     *
     * @default
     * 225
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.startAngle
+    * @see https://echarts.apache.org/en/option.html#series-gauge.startAngle
     */
   var startAngle: js.UndefOr[Double] = js.undefined
   /**
     * The title of gauge chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.title
+    * @see https://echarts.apache.org/en/option.html#series-gauge.title
     */
   var title: js.UndefOr[Anon_BackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-gauge.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "gauge"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.type
+    * @see https://echarts.apache.org/en/option.html#series-gauge.type
     */
   var `type`: js.UndefOr[String] = js.undefined
 }

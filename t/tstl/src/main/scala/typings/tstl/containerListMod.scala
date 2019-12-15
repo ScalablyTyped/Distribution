@@ -202,6 +202,10 @@ object containerListMod extends js.Object {
         * @hidden
         */
       var source_ptr_ : js.Any = js.native
+      /**
+        * @inheritDoc
+        */
+      def value(`val`: T): js.Any = js.native
     }
     
     /**
@@ -211,7 +215,12 @@ object containerListMod extends js.Object {
       */
     @js.native
     class ReverseIterator[T] ()
-      extends typings.tstl.baseIteratorReverseIteratorMod.ReverseIterator[T, List[T], Iterator[T], ReverseIterator[T], T]
+      extends typings.tstl.baseIteratorReverseIteratorMod.ReverseIterator[T, List[T], Iterator[T], ReverseIterator[T], T] {
+      /**
+        * @inheritDoc
+        */
+      def value(`val`: T): js.Any = js.native
+    }
     
   }
   

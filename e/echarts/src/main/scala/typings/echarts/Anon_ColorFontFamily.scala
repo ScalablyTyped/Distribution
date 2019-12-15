@@ -11,7 +11,7 @@ trait Anon_ColorFontFamily extends js.Object {
     *
     * @default
     * "#fff"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -22,7 +22,7 @@ trait Anon_ColorFontFamily extends js.Object {
     *
     * @default
     * "sans-serif"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait Anon_ColorFontFamily extends js.Object {
     *
     * @default
     * 14
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.fontSize
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   /**
@@ -46,7 +46,7 @@ trait Anon_ColorFontFamily extends js.Object {
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   /**
@@ -63,7 +63,7 @@ trait Anon_ColorFontFamily extends js.Object {
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.fontWeight
     */
   var fontWeight: js.UndefOr[String] = js.undefined
   /**
@@ -78,7 +78,7 @@ trait Anon_ColorFontFamily extends js.Object {
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.height
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
@@ -87,10 +87,10 @@ trait Anon_ColorFontFamily extends js.Object {
     * If `lineHeight` is not set in `rich`, `lineHeight` in
     * parent level will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.tooltip.textStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.tooltip.textStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   /**
@@ -99,21 +99,21 @@ trait Anon_ColorFontFamily extends js.Object {
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   /**
     * Storke line width of the text.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   /**
     * Shadow blue of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -122,21 +122,21 @@ trait Anon_ColorFontFamily extends js.Object {
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -160,7 +160,7 @@ trait Anon_ColorFontFamily extends js.Object {
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle.width
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }

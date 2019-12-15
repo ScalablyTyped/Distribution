@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IGeneralizationBase because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.INoGeneralization because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined hasChangedDate, hasCreatedDate, hasOwner, hasChangedBy, persistable */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.NoGeneralization")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.INoGeneralization because var conflicts: containerAsEntity, id, isLoaded, model, structureTypeName, unit. Inlined hasChangedDate, hasCreatedDate, hasOwner, hasChangedBy, persistable */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.NoGeneralization")
 @js.native
 class NoGeneralization protected () extends GeneralizationBase {
   def this(
@@ -25,25 +25,54 @@ class NoGeneralization protected () extends GeneralizationBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  /**
+    * In version 8.2.0: added public
+    */
+  @JSName("hasChangedBy")
+  val hasChangedBy_FNoGeneralization: Boolean = js.native
+  /**
+    * In version 8.2.0: added public
+    */
+  @JSName("hasChangedDate")
+  val hasChangedDate_FNoGeneralization: Boolean = js.native
+  /**
+    * In version 8.2.0: added public
+    */
+  @JSName("hasCreatedDate")
+  val hasCreatedDate_FNoGeneralization: Boolean = js.native
+  /**
+    * In version 8.2.0: added public
+    */
+  @JSName("hasOwner")
+  val hasOwner_FNoGeneralization: Boolean = js.native
+  @JSName("model")
+  var model_FNoGeneralization: IModel = js.native
+  @JSName("persistable")
+  val persistable_FNoGeneralization: Boolean = js.native
   @JSName("containerAsEntity")
-  val containerAsEntity_NoGeneralization: Entity = js.native
+  def containerAsEntity_MNoGeneralization(): Entity = js.native
   /**
     * In version 8.2.0: added public
     */
-  var hasChangedBy: Boolean = js.native
+  def hasChangedBy(): Boolean = js.native
+  def hasChangedBy(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.2.0: added public
     */
-  var hasChangedDate: Boolean = js.native
+  def hasChangedDate(): Boolean = js.native
+  def hasChangedDate(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.2.0: added public
     */
-  var hasCreatedDate: Boolean = js.native
+  def hasCreatedDate(): Boolean = js.native
+  def hasCreatedDate(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.2.0: added public
     */
-  var hasOwner: Boolean = js.native
-  var persistable: Boolean = js.native
+  def hasOwner(): Boolean = js.native
+  def hasOwner(newValue: Boolean): js.Any = js.native
+  def persistable(): Boolean = js.native
+  def persistable(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

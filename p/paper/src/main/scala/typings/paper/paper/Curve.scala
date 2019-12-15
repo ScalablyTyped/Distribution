@@ -34,19 +34,19 @@ class Curve protected () extends js.Object {
   /** 
     * The bounding rectangle of the curve excluding stroke width.
     */
-  var bounds: Rectangle | Null = js.native
+  var bounds: Rectangle = js.native
   /** 
     * The handle point that describes the tangent in the first anchor point.
     */
-  var handle1: Point | Null = js.native
+  var handle1: Point = js.native
   /** 
     * The handle point that describes the tangent in the second anchor point.
     */
-  var handle2: Point | Null = js.native
+  var handle2: Point = js.native
   /** 
     * The bounding rectangle of the curve including handles.
     */
-  var handleBounds: Rectangle | Null = js.native
+  var handleBounds: Rectangle = js.native
   /** 
     * The index of the curve in the {@link Path#curves} array.
     */
@@ -67,11 +67,11 @@ class Curve protected () extends js.Object {
   /** 
     * The first anchor point of the curve.
     */
-  var point1: Point | Null = js.native
+  var point1: Point = js.native
   /** 
     * The second anchor point of the curve.
     */
-  var point2: Point | Null = js.native
+  var point2: Point = js.native
   /** 
     * An array of 4 point objects, describing this curve's geometry in absolute
     * coordinates (point1, handle1, handle2, point2).
@@ -95,11 +95,11 @@ class Curve protected () extends js.Object {
   /** 
     * Specifies whether the points and handles of the curve are selected.
     */
-  var selected: Boolean | Null = js.native
+  var selected: Boolean = js.native
   /** 
     * The bounding rectangle of the curve including stroke width.
     */
-  var strokeBounds: Rectangle | Null = js.native
+  var strokeBounds: Rectangle = js.native
   /** 
     * An array of 8 float values, describing this curve's geometry in four
     * absolute x/y pairs (point1, handle1, handle2, point2). This format is

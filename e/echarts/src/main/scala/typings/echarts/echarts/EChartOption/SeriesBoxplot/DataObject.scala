@@ -9,25 +9,25 @@ import scala.scalajs.js.annotation._
 
 trait DataObject extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-boxplot.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-boxplot.data.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColorBorderType] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-boxplot.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-boxplot.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * Name of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-boxplot.data.name
+    * @see https://echarts.apache.org/en/option.html#series-boxplot.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-boxplot.data.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-boxplot.data.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait DataObject extends js.Object {
     * ```
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-boxplot.data.value
+    * @see https://echarts.apache.org/en/option.html#series-boxplot.data.value
     */
   var value: js.UndefOr[js.Array[_]] = js.undefined
 }

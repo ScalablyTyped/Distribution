@@ -181,18 +181,6 @@ object containerDequeMod extends js.Object {
           ]
         ]
       ] = js.native
-    /**
-      * @hidden
-      */
-    val MAGNIFIER: js.Any = js.native
-    /**
-      * @hidden
-      */
-    val MIN_CAPACITY: js.Any = js.native
-    /**
-      * @hidden
-      */
-    val ROW_SIZE: js.Any = js.native
     val ReverseIterator: Instantiable0[
         ArrayReverseIterator[
           js.Object, 
@@ -250,6 +238,18 @@ object containerDequeMod extends js.Object {
           ]
         ]
       ] = js.native
+    /**
+      * @hidden
+      */
+    /* private */ def MAGNIFIER(): js.Any = js.native
+    /**
+      * @hidden
+      */
+    /* private */ def MIN_CAPACITY(): js.Any = js.native
+    /**
+      * @hidden
+      */
+    /* private */ def ROW_SIZE(): js.Any = js.native
     type Iterator[T] = ArrayIterator[T, Deque[T]]
     type ReverseIterator[T] = ArrayReverseIterator[T, Deque[T]]
     type iterator[T] = typings.tstl.containerDequeMod.Deque.Iterator[T]
@@ -278,18 +278,6 @@ object containerDequeMod extends js.Object {
           ]
         ]
       ] = js.native
-    /**
-      * @hidden
-      */
-    val MAGNIFIER: js.Any = js.native
-    /**
-      * @hidden
-      */
-    val MIN_CAPACITY: js.Any = js.native
-    /**
-      * @hidden
-      */
-    val ROW_SIZE: js.Any = js.native
     val ReverseIterator: Instantiable0[
         ArrayReverseIterator[
           js.Object, 
@@ -347,6 +335,18 @@ object containerDequeMod extends js.Object {
           ]
         ]
       ] = js.native
+    /**
+      * @hidden
+      */
+    /* private */ def MAGNIFIER(): js.Any = js.native
+    /**
+      * @hidden
+      */
+    /* private */ def MIN_CAPACITY(): js.Any = js.native
+    /**
+      * @hidden
+      */
+    /* private */ def ROW_SIZE(): js.Any = js.native
   }
   
 }

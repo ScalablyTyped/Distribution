@@ -22,11 +22,12 @@ class DataSetParameterAccess protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val constraintAccessList: IList[DataSetConstraintAccess] = js.native
-  val containerAsDataSetModuleRoleAccess: DataSetModuleRoleAccess = js.native
   @JSName("model")
-  var model_DataSetParameterAccess: IModel = js.native
-  var parameterName: String = js.native
+  var model_FDataSetParameterAccess: IModel = js.native
+  def constraintAccessList(): IList[DataSetConstraintAccess] = js.native
+  def containerAsDataSetModuleRoleAccess(): DataSetModuleRoleAccess = js.native
+  def parameterName(): String = js.native
+  def parameterName(newValue: String): js.Any = js.native
 }
 
 /* static members */

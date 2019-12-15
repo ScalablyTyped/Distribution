@@ -20,10 +20,17 @@ class EqualsToRuleInfo protected () extends RuleInfo {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var equalsToAttribute: IAttribute | Null = js.native
-  val equalsToAttributeQualifiedName: String | Null = js.native
-  var equalsToValue: String = js.native
-  var useValue: Boolean = js.native
+  @JSName("model")
+  var model_FEqualsToRuleInfo: IModel = js.native
+  def equalsToAttribute(): IAttribute | Null = js.native
+  def equalsToAttribute(newValue: IAttribute): js.Any = js.native
+  def equalsToAttributeQualifiedName(): String | Null = js.native
+  @JSName("equalsToAttribute")
+  def equalsToAttribute_Any(): js.Any = js.native
+  def equalsToValue(): String = js.native
+  def equalsToValue(newValue: String): js.Any = js.native
+  def useValue(): Boolean = js.native
+  def useValue(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

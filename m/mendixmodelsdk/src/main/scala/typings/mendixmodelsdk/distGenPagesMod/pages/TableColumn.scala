@@ -21,10 +21,11 @@ class TableColumn protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsTable: Table = js.native
   @JSName("model")
-  var model_TableColumn: IModel = js.native
-  var width: Double = js.native
+  var model_FTableColumn: IModel = js.native
+  def containerAsTable(): Table = js.native
+  def width(): Double = js.native
+  def width(newValue: Double): js.Any = js.native
 }
 
 /* static members */

@@ -20,7 +20,10 @@ class ModelerSettings protected () extends ProjectSettingsPart {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var lowerCaseMicroflowVariables: Boolean = js.native
+  @JSName("model")
+  var model_FModelerSettings: IModel = js.native
+  def lowerCaseMicroflowVariables(): Boolean = js.native
+  def lowerCaseMicroflowVariables(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

@@ -22,13 +22,15 @@ class PageForSpecialization protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsGridEditButton: GridEditButton = js.native
-  val containerAsPageClientAction: PageClientAction = js.native
-  var entity: IEntity = js.native
-  val entityQualifiedName: String = js.native
   @JSName("model")
-  var model_PageForSpecialization: IModel = js.native
-  var pageSettings: PageSettings = js.native
+  var model_FPageForSpecialization: IModel = js.native
+  def containerAsGridEditButton(): GridEditButton = js.native
+  def containerAsPageClientAction(): PageClientAction = js.native
+  def entity(): IEntity = js.native
+  def entity(newValue: IEntity): js.Any = js.native
+  def entityQualifiedName(): String = js.native
+  def pageSettings(): PageSettings = js.native
+  def pageSettings(newValue: PageSettings): js.Any = js.native
 }
 
 /* static members */

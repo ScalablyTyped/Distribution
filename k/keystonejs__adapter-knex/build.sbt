@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keystonejs__adapter-knex"
-version := "5.1-dt-20191115Z-cec3a4"
+version := "5.1-dt-20191115Z-ef2c5f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-051e33",
   "org.scalablytyped" %%% "graphql" % "14.5.8-92eff2",
   "org.scalablytyped" %%% "keystonejs__fields" % "5.1-dt-20191115Z-7ad2af",
-  "org.scalablytyped" %%% "keystonejs__keystone" % "5.2-dt-20191115Z-a09dc2",
+  "org.scalablytyped" %%% "keystonejs__keystone" % "5.2-dt-20191213Z-63b8ab",
   "org.scalablytyped" %%% "knex" % "0.19.5-3a1cad",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-e84c0f",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",

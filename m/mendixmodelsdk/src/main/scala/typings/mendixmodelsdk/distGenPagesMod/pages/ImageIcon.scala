@@ -24,8 +24,11 @@ class ImageIcon protected () extends Icon {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var image: IImage = js.native
-  val imageQualifiedName: String = js.native
+  @JSName("model")
+  var model_FImageIcon: IModel = js.native
+  def image(): IImage = js.native
+  def image(newValue: IImage): js.Any = js.native
+  def imageQualifiedName(): String = js.native
 }
 
 /* static members */

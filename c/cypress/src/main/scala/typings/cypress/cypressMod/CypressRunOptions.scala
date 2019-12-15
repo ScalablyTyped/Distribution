@@ -40,9 +40,13 @@ trait CypressRunOptions extends CypressCommonOptions {
     */
   var group: String
   /**
-    * Display the Electron browser instead of running headlessly
+    * Display the browser instead of running headlessly
     */
   var headed: Boolean
+  /**
+    * Hide the browser instead of running headed
+    */
+  var headless: Boolean
   /**
     * Specify your secret record key
     */
@@ -87,6 +91,7 @@ object CypressRunOptions {
     env: js.Object,
     group: String,
     headed: Boolean,
+    headless: Boolean,
     key: String,
     noExit: Boolean,
     parallel: Boolean,
@@ -97,7 +102,7 @@ object CypressRunOptions {
     reporterOptions: js.Any,
     spec: String
   ): CypressRunOptions = {
-    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], ciBuildId = ciBuildId.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], headed = headed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], noExit = noExit.asInstanceOf[js.Any], parallel = parallel.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterOptions = reporterOptions.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], ciBuildId = ciBuildId.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], headed = headed.asInstanceOf[js.Any], headless = headless.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], noExit = noExit.asInstanceOf[js.Any], parallel = parallel.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterOptions = reporterOptions.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CypressRunOptions]
   }

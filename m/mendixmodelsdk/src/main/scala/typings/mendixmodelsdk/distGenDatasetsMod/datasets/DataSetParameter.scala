@@ -30,19 +30,12 @@ class DataSetParameter protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val constraints: IList[DataSetParameterConstraint] = js.native
-  val containerAsDataSet: DataSet | IDataSet = js.native
+  @JSName("containerAsDataSet")
+  val containerAsDataSet_FDataSetParameter: IDataSet = js.native
   @JSName("model")
-  var model_DataSetParameter: IModel = js.native
-  var name: String = js.native
-  /**
-    * In version 7.9.0: introduced
-    */
-  var parameterType: DataType = js.native
-  /**
-    * In version 7.9.0: introduced
-    */
-  var parameterTypeIsRange: Boolean = js.native
+  var model_FDataSetParameter: IModel = js.native
+  @JSName("name")
+  val name_FDataSetParameter: String = js.native
   /**
     * Returns the qualified name of this element, or
     * null if this element is not a part of the model,
@@ -51,12 +44,29 @@ class DataSetParameter protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
+  def constraints(): IList[DataSetParameterConstraint] = js.native
+  def containerAsDataSet(): DataSet = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  /**
+    * In version 7.9.0: introduced
+    */
+  def parameterType(): DataType = js.native
+  def parameterType(newValue: DataType): js.Any = js.native
+  /**
+    * In version 7.9.0: introduced
+    */
+  def parameterTypeIsRange(): Boolean = js.native
+  def parameterTypeIsRange(newValue: Boolean): js.Any = js.native
+  @JSName("qualifiedName")
+  def qualifiedName_MDataSetParameter(): String | Null = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 7.9.0: deleted
     */
-  var `type`: String = js.native
+  def `type`(): String = js.native
+  def `type`(newValue: String): js.Any = js.native
 }
 
 /* static members */

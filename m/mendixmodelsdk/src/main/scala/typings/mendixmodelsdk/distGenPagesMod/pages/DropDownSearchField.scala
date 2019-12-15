@@ -23,12 +23,17 @@ class DropDownSearchField protected () extends SingleSearchField {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var allowMultipleSelect: Boolean = js.native
-  var sortBar: GridSortBar = js.native
+  @JSName("model")
+  var model_FDropDownSearchField: IModel = js.native
+  def allowMultipleSelect(): Boolean = js.native
+  def allowMultipleSelect(newValue: Boolean): js.Any = js.native
+  def sortBar(): GridSortBar = js.native
+  def sortBar(newValue: GridSortBar): js.Any = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
-  var xPathConstraint: String = js.native
+  def xPathConstraint(): String = js.native
+  def xPathConstraint(newValue: String): js.Any = js.native
 }
 
 /* static members */

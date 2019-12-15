@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IDataType because Already inherited
-- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IEnumerationType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType")
+- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IEnumerationType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType")
 @js.native
 class EnumerationType protected () extends DataType {
   def this(
@@ -45,24 +45,34 @@ class EnumerationType protected () extends DataType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("enumerationQualifiedName")
+  val enumerationQualifiedName_FEnumerationType: String = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("enumeration")
+  val enumeration_FEnumerationType: IEnumeration = js.native
+  @JSName("model")
+  var model_FEnumerationType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  val containerAsAppServiceActionParameter_EnumerationType: AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MEnumerationType(): AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  val containerAsAppServiceAction_EnumerationType: AppServiceAction = js.native
+  def containerAsAppServiceAction_MEnumerationType(): AppServiceAction = js.native
   @JSName("containerAsConstant")
-  val containerAsConstant_EnumerationType: Constant = js.native
+  def containerAsConstant_MEnumerationType(): Constant = js.native
   @JSName("containerAsDataSetParameter")
-  val containerAsDataSetParameter_EnumerationType: DataSetParameter = js.native
+  def containerAsDataSetParameter_MEnumerationType(): DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  val containerAsDocumentTemplateParameter_EnumerationType: DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MEnumerationType(): DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  val containerAsImportMapping_EnumerationType: ImportMapping = js.native
+  def containerAsImportMapping_MEnumerationType(): ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  val containerAsMicroflowBase_EnumerationType: MicroflowBase = js.native
+  def containerAsMicroflowBase_MEnumerationType(): MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  val containerAsMicroflowParameterBase_EnumerationType: MicroflowParameterBase = js.native
-  var enumeration: IEnumeration = js.native
-  val enumerationQualifiedName: String = js.native
+  def containerAsMicroflowParameterBase_MEnumerationType(): MicroflowParameterBase = js.native
+  def enumeration(): IEnumeration = js.native
+  def enumeration(newValue: IEnumeration): js.Any = js.native
+  def enumerationQualifiedName(): String = js.native
 }
 
 /* static members */

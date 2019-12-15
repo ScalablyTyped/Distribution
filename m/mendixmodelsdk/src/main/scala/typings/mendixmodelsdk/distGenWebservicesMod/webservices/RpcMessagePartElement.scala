@@ -21,12 +21,15 @@ class RpcMessagePartElement protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsRpcOperationElement: RpcOperationElement = js.native
-  var elementName: String = js.native
   @JSName("model")
-  var model_RpcMessagePartElement: IModel = js.native
-  var partName: String = js.native
-  var typeName: String = js.native
+  var model_FRpcMessagePartElement: IModel = js.native
+  def containerAsRpcOperationElement(): RpcOperationElement = js.native
+  def elementName(): String = js.native
+  def elementName(newValue: String): js.Any = js.native
+  def partName(): String = js.native
+  def partName(newValue: String): js.Any = js.native
+  def typeName(): String = js.native
+  def typeName(newValue: String): js.Any = js.native
 }
 
 /* static members */

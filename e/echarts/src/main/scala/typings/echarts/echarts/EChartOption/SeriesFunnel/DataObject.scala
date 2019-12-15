@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait DataObject extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
@@ -21,41 +21,41 @@ trait DataObject extends js.Object {
     * like being hovered by mouse, or highlighted via legend connect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * The label configuration of a single data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.label
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data.label
     */
   var label: js.UndefOr[
     Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
   ] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.labelLine
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data.labelLine
     */
   var labelLine: js.UndefOr[Anon_EmphasisLength] = js.undefined
   /**
     * the name of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.name
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * data value.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.value
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data.value
     */
   var value: js.UndefOr[Double] = js.undefined
 }

@@ -87,6 +87,9 @@ trait Pseudoterminal extends js.Object {
   		 * [Terminal.sendText](#Terminal.sendText) which sends text to the underlying _process_
   		 * (the pty "slave"), this will write the text to the terminal itself (the pty "master").
   		 *
+  		 * Note writing `\n` will just move the cursor down 1 row, you need to write `\r` as well
+  		 * to move the cursor to the left-most cell.
+  		 *
   		 * **Example:** Write red text to the terminal
   		 * ```typescript
   		 * const writeEmitter = new vscode.EventEmitter<string>();
@@ -127,6 +130,9 @@ trait Pseudoterminal extends js.Object {
   		 * An event that when fired will write data to the terminal. Unlike
   		 * [Terminal.sendText](#Terminal.sendText) which sends text to the underlying _process_
   		 * (the pty "slave"), this will write the text to the terminal itself (the pty "master").
+  		 *
+  		 * Note writing `\n` will just move the cursor down 1 row, you need to write `\r` as well
+  		 * to move the cursor to the left-most cell.
   		 *
   		 * **Example:** Write red text to the terminal
   		 * ```typescript

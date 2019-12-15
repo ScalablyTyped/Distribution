@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
   *
   * **Example:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey)
+  * [see doc](https://echarts.apache.org/en/option.html#series-sankey)
   *
   * **Visual Encoding:**
   *
@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation._
   * The width of edge is shown proportionally to the `value` of `link`.
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey
+  * @see https://echarts.apache.org/en/option.html#series-sankey
   */
 @JSName("SeriesSankey")
 trait SeriesSankey_ extends js.Object {
@@ -51,7 +51,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.animation
+    * @see https://echarts.apache.org/en/option.html#series-sankey.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -60,14 +60,14 @@ trait SeriesSankey_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.sankey)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sankey.sankey)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-sankey.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -76,50 +76,50 @@ trait SeriesSankey_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.sankey)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sankey.sankey)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-sankey.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.sankey)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sankey.sankey)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-sankey.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.sankey)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sankey.sankey)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-sankey.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "linear"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-sankey.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -128,7 +128,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-sankey.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -139,7 +139,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-sankey.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -152,7 +152,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * 5%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.bottom
+    * @see https://echarts.apache.org/en/option.html#series-sankey.bottom
     */
   var bottom: js.UndefOr[Double | String] = js.undefined
   /**
@@ -164,7 +164,7 @@ trait SeriesSankey_ extends js.Object {
     * ```
     *
     * Or, if need extra dimensions for components like
-    * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * to map to graphic attributes like color, it can also be in the
     * form of array. For example:
     *
@@ -175,20 +175,20 @@ trait SeriesSankey_ extends js.Object {
     *
     * In this case, we can assgin the second value in each arrary item
     * to
-    * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * component.
     *
     * More likely, we need to assign name to each data item, in which
     * case each item should be an object:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.sankey)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sankey.sankey)
     *
     * Each data item can be further custerized:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.sankey)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sankey.sankey)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.data
+    * @see https://echarts.apache.org/en/option.html#series-sankey.data
     */
   var data: js.UndefOr[js.Array[(js.Array[Double | DataObject]) | DataObject | Double]] = js.undefined
   /**
@@ -201,19 +201,19 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.draggable
+    * @see https://echarts.apache.org/en/option.html#series-sankey.draggable
     */
   var draggable: js.UndefOr[Boolean] = js.undefined
   /**
     * Equals to
-    * [links](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links)
+    * [links](https://echarts.apache.org/en/option.html#series-sankey.links)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.edges
+    * @see https://echarts.apache.org/en/option.html#series-sankey.edges
     */
   var edges: js.UndefOr[js.Array[_]] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-sankey.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleLabelLineStyle] = js.undefined
   /**
@@ -237,14 +237,14 @@ trait SeriesSankey_ extends js.Object {
     * When hovering over an edge, the adjacent nodes are highlighted.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.focusNodeAdjacency
+    * @see https://echarts.apache.org/en/option.html#series-sankey.focusNodeAdjacency
     */
   var focusNodeAdjacency: js.UndefOr[Boolean | String] = js.undefined
   /**
     * Height of sankey component.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.height
+    * @see https://echarts.apache.org/en/option.html#series-sankey.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
@@ -253,21 +253,21 @@ trait SeriesSankey_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.id
+    * @see https://echarts.apache.org/en/option.html#series-sankey.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     * The style of node rectangle in sankey graphs.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-sankey.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * `label` describes the text label style in each rectangular node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.label
+    * @see https://echarts.apache.org/en/option.html#series-sankey.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
   /**
@@ -283,7 +283,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * 32
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.layoutIterations
+    * @see https://echarts.apache.org/en/option.html#series-sankey.layoutIterations
     */
   var layoutIterations: js.UndefOr[Double] = js.undefined
   /**
@@ -299,18 +299,18 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * 5%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.left
+    * @see https://echarts.apache.org/en/option.html#series-sankey.left
     */
   var left: js.UndefOr[Double | String] = js.undefined
   /**
     * The line style of sankey graph, in which
-    * [lineStyle.color](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.lineStyle.color)
+    * [lineStyle.color](https://echarts.apache.org/en/option.html#series-sankey.lineStyle.color)
     * can be assigned to the value of `'source'` of `'target'`, then
     * the edge will automatically take the source node or target node
     * color as its own color.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-sankey.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacityShadowBlur] = js.undefined
   /**
@@ -319,10 +319,10 @@ trait SeriesSankey_ extends js.Object {
     * Acyclic Graph(DAG), so please make sure that there is no cycle
     * in the links.** For instance:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.sankey)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sankey.sankey)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links
+    * @see https://echarts.apache.org/en/option.html#series-sankey.links
     */
   var links: js.UndefOr[Anon_EmphasisLineStyle] = js.undefined
   /**
@@ -331,7 +331,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * 8
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.nodeGap
+    * @see https://echarts.apache.org/en/option.html#series-sankey.nodeGap
     */
   var nodeGap: js.UndefOr[Double] = js.undefined
   /**
@@ -340,15 +340,15 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * 20
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.nodeWidth
+    * @see https://echarts.apache.org/en/option.html#series-sankey.nodeWidth
     */
   var nodeWidth: js.UndefOr[Double] = js.undefined
   /**
     * Equals to
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.data)
+    * [data](https://echarts.apache.org/en/option.html#series-sankey.data)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.nodes
+    * @see https://echarts.apache.org/en/option.html#series-sankey.nodes
     */
   var nodes: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -360,7 +360,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * "horizontal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.orient
+    * @see https://echarts.apache.org/en/option.html#series-sankey.orient
     */
   var orient: js.UndefOr[String] = js.undefined
   /**
@@ -372,7 +372,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * 20%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.right
+    * @see https://echarts.apache.org/en/option.html#series-sankey.right
     */
   var right: js.UndefOr[Double | String] = js.undefined
   /**
@@ -381,14 +381,14 @@ trait SeriesSankey_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.silent
+    * @see https://echarts.apache.org/en/option.html#series-sankey.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-sankey.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
@@ -404,20 +404,20 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * 5%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.top
+    * @see https://echarts.apache.org/en/option.html#series-sankey.top
     */
   var top: js.UndefOr[Double | String] = js.undefined
   /**
     * @default
     * "sankey"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.type
+    * @see https://echarts.apache.org/en/option.html#series-sankey.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * Width of sankey component.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.width
+    * @see https://echarts.apache.org/en/option.html#series-sankey.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
   /**
@@ -432,7 +432,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.z
+    * @see https://echarts.apache.org/en/option.html#series-sankey.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -450,7 +450,7 @@ trait SeriesSankey_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-sankey.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

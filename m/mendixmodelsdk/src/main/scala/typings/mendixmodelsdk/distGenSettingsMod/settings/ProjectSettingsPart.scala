@@ -21,9 +21,9 @@ abstract class ProjectSettingsPart protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsProjectSettings: ProjectSettings = js.native
   @JSName("model")
-  var model_ProjectSettingsPart: IModel = js.native
+  var model_FProjectSettingsPart: IModel = js.native
+  def containerAsProjectSettings(): ProjectSettings = js.native
 }
 
 /* static members */

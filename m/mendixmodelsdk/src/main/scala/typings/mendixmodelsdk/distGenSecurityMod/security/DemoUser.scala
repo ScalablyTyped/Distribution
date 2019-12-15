@@ -26,15 +26,20 @@ class DemoUser protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsProjectSecurity: ProjectSecurity = js.native
-  var entity: IEntity | Null = js.native
-  val entityQualifiedName: String | Null = js.native
   @JSName("model")
-  var model_DemoUser: IModel = js.native
-  var password: String = js.native
-  var userName: String = js.native
-  val userRoles: IList[IUserRole] = js.native
-  val userRolesQualifiedNames: js.Array[String] = js.native
+  var model_FDemoUser: IModel = js.native
+  def containerAsProjectSecurity(): ProjectSecurity = js.native
+  def entity(): IEntity | Null = js.native
+  def entity(newValue: IEntity): js.Any = js.native
+  def entityQualifiedName(): String | Null = js.native
+  @JSName("entity")
+  def entity_Any(): js.Any = js.native
+  def password(): String = js.native
+  def password(newValue: String): js.Any = js.native
+  def userName(): String = js.native
+  def userName(newValue: String): js.Any = js.native
+  def userRoles(): IList[IUserRole] = js.native
+  def userRolesQualifiedNames(): js.Array[String] = js.native
 }
 
 /* static members */

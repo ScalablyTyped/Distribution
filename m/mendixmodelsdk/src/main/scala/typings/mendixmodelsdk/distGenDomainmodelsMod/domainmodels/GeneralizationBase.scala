@@ -25,9 +25,11 @@ abstract class GeneralizationBase protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsEntity: Entity | IEntity = js.native
+  @JSName("containerAsEntity")
+  val containerAsEntity_FGeneralizationBase: IEntity = js.native
   @JSName("model")
-  var model_GeneralizationBase: IModel = js.native
+  var model_FGeneralizationBase: IModel = js.native
+  def containerAsEntity(): Entity = js.native
 }
 
 /* static members */

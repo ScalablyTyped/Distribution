@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   * Mobile: when touches and moved with two fingers in coordinates
   * on touch screens.
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom-inside
+  * @see https://echarts.apache.org/en/option.html#dataZoom-inside
   */
 trait Inside extends js.Object {
   var angleAxisIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined

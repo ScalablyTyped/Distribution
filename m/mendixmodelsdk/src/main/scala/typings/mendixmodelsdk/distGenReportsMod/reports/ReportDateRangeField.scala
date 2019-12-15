@@ -25,11 +25,13 @@ class ReportDateRangeField protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: Text = js.native
-  val containerAsReportDateRangeSelector: ReportDateRangeSelector = js.native
   @JSName("model")
-  var model_ReportDateRangeField: IModel = js.native
-  var `type`: DateRangeFieldEnum = js.native
+  var model_FReportDateRangeField: IModel = js.native
+  def caption(): Text = js.native
+  def caption(newValue: Text): js.Any = js.native
+  def containerAsReportDateRangeSelector(): ReportDateRangeSelector = js.native
+  def `type`(): DateRangeFieldEnum = js.native
+  def `type`(newValue: DateRangeFieldEnum): js.Any = js.native
 }
 
 /* static members */

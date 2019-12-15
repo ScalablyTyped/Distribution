@@ -24,12 +24,15 @@ class ConditionSettings protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var attribute: IAttribute | Null = js.native
-  val attributeQualifiedName: String | Null = js.native
-  val conditions: IList[Condition] = js.native
-  val containerAsTableRow: TableRow = js.native
   @JSName("model")
-  var model_ConditionSettings: IModel = js.native
+  var model_FConditionSettings: IModel = js.native
+  def attribute(): IAttribute | Null = js.native
+  def attribute(newValue: IAttribute): js.Any = js.native
+  def attributeQualifiedName(): String | Null = js.native
+  @JSName("attribute")
+  def attribute_Any(): js.Any = js.native
+  def conditions(): IList[Condition] = js.native
+  def containerAsTableRow(): TableRow = js.native
 }
 
 /* static members */

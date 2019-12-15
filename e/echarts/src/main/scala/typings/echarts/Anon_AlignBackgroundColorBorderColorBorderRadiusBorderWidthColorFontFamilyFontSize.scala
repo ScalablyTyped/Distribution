@@ -18,10 +18,10 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     * If `align` is not set in `rich`, `align` in parent level
     * will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.emphasis.label)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.align
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.align
     */
   var align: js.UndefOr[String] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.emphasis.label)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
@@ -39,7 +39,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   /**
@@ -48,21 +48,21 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
     * Border radius of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   /**
     * Border width of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -71,7 +71,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     *
     * @default
     * ""#fff""
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.color
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -82,7 +82,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     *
     * @default
     * "sans-serif"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   /**
@@ -91,7 +91,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     *
     * @default
     * 12
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.fontSize
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   /**
@@ -106,7 +106,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   /**
@@ -123,7 +123,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.fontWeight
     */
   var fontWeight: js.UndefOr[String] = js.undefined
   /**
@@ -164,10 +164,10 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     * where `params` is the single dataset needed by formatter,
     * which is formed as:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.emphasis.label)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.formatter
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.formatter
     */
   var formatter: js.UndefOr[js.Function | String] = js.undefined
   /**
@@ -182,7 +182,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.height
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
@@ -191,10 +191,10 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     * If `lineHeight` is not set in `rich`, `lineHeight` in
     * parent level will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.emphasis.label)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   /**
@@ -209,25 +209,25 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     * height of the content, without `padding`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.padding
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.padding
     */
   var padding: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * "Rich text styles" can be defined in this `rich` property.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.emphasis.label)
     *
     * For more details, see
-    * [Rich Text](https://ecomfe.github.io/echarts-doc/public/en/option.htmltutorial.html#Rich%20Text)
+    * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.rich
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align]
   ] = js.undefined
@@ -235,7 +235,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     * Show blur of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -244,25 +244,25 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.show
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -271,21 +271,21 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   /**
     * Storke line width of the text.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   /**
     * Shadow blue of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -294,21 +294,21 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -323,10 +323,10 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     * If `verticalAlign` is not set in `rich`, `verticalAlign`
     * in parent level will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.emphasis.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.emphasis.label)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.verticalAlign
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.verticalAlign
     */
   var verticalAlign: js.UndefOr[String] = js.undefined
   /**
@@ -350,7 +350,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.width
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -373,7 +373,7 @@ object Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamil
     lineHeight: Int | Double = null,
     padding: js.Array[_] | Double = null,
     rich: /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align] = null,
     shadowBlur: Int | Double = null,

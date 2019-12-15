@@ -11,22 +11,22 @@ trait Anon_BarLayout extends js.Object {
     * can be used to obtain bar layout info.
     *
     * See a
-    * [sample](https://ecomfe.github.io/echarts-examples/public/editor.html?c=custom-bar-trend)
+    * [sample](https://echarts.apache.org/examples/en/editor.html?c=custom-bar-trend)
     * .
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem.arguments.api)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.arguments.api)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.barLayout
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.barLayout
     */
   var barLayout: js.UndefOr[js.Function] = js.undefined
   /**
     * Convert data to coordinate.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem.arguments.api)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.arguments.api)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.coord
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.coord
     */
   var coord: js.UndefOr[js.Function] = js.undefined
   /**
@@ -41,17 +41,17 @@ trait Anon_BarLayout extends js.Object {
     * ```
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.currentSeriesIndices
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.currentSeriesIndices
     */
   var currentSeriesIndices: js.UndefOr[js.Function] = js.undefined
   /**
     * Obtain font string, which can be used on style setting
     * directly.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem.arguments.api)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.arguments.api)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.font
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.font
     */
   var font: js.UndefOr[js.Function] = js.undefined
   /**
@@ -61,7 +61,7 @@ trait Anon_BarLayout extends js.Object {
     * ```
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.getDevicePixelRatio
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.getDevicePixelRatio
     */
   var getDevicePixelRatio: js.UndefOr[js.Function] = js.undefined
   /**
@@ -71,7 +71,7 @@ trait Anon_BarLayout extends js.Object {
     * ```
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.getHeight
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.getHeight
     */
   var getHeight: js.UndefOr[js.Function] = js.undefined
   /**
@@ -81,7 +81,7 @@ trait Anon_BarLayout extends js.Object {
     * ```
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.getWidth
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.getWidth
     */
   var getWidth: js.UndefOr[js.Function] = js.undefined
   /**
@@ -91,7 +91,7 @@ trait Anon_BarLayout extends js.Object {
     * ```
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.getZr
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.getZr
     */
   var getZr: js.UndefOr[js.Function] = js.undefined
   /**
@@ -111,15 +111,15 @@ trait Anon_BarLayout extends js.Object {
     * So the second parameter is necessary to calculate
     * size on the given point.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem.arguments.api)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.arguments.api)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.size
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.size
     */
   var size: js.UndefOr[js.Function] = js.undefined
   /**
     * The method obtains style info defined in
-    * [series.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.itemStyle)
+    * [series.itemStyle](https://echarts.apache.org/en/option.html#series-custom.itemStyle)
     * , and visual info obtained by visual mapping, and
     * return them.
     * Those returned info can be assigned to `style` attribute
@@ -128,15 +128,15 @@ trait Anon_BarLayout extends js.Object {
     * this method like this: `api.style({fill:
     * 'green', stroke: 'yellow'})`.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem.arguments.api)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.arguments.api)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.style
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.style
     */
   var style: js.UndefOr[js.Function] = js.undefined
   /**
     * The method obtains style info defined in
-    * [series.itemStyle.emphasis](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.itemStyle.emphasis)
+    * [series.itemStyle.emphasis](https://echarts.apache.org/en/option.html#series-custom.itemStyle.emphasis)
     * , and visual info obtained by visual mapping, and
     * return them.
     * Those returned info can be assigned to `style` attribute
@@ -145,28 +145,28 @@ trait Anon_BarLayout extends js.Object {
     * this method like this: `api.style({fill:
     * 'green', stroke: 'yellow'})`.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem.arguments.api)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.arguments.api)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.styleEmphasis
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.styleEmphasis
     */
   var styleEmphasis: js.UndefOr[js.Function] = js.undefined
   /**
     * Get value on the given dimension.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem.arguments.api)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.arguments.api)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.value
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.value
     */
   var value: js.UndefOr[js.Function] = js.undefined
   /**
     * Get the visual info. It is rarely be used.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem.arguments.api)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.arguments.api)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.visual
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.visual
     */
   var visual: js.UndefOr[js.Function] = js.undefined
 }

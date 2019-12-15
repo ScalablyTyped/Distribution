@@ -23,20 +23,25 @@ class FormattingInfo protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsClientTemplateParameter: ClientTemplateParameter = js.native
-  val containerAsDataGridColumn: DataGridColumn = js.native
-  val containerAsDatePicker: DatePicker = js.native
-  val containerAsDynamicLabel: DynamicLabel = js.native
-  val containerAsGridColumn: GridColumn = js.native
-  val containerAsReferenceSelector: ReferenceSelector = js.native
-  val containerAsTextBox: TextBox = js.native
-  var customDateFormat: String = js.native
-  var dateFormat: DateFormat = js.native
-  var decimalPrecision: Double = js.native
-  var enumFormat: EnumFormat = js.native
-  var groupDigits: Boolean = js.native
   @JSName("model")
-  var model_FormattingInfo: IModel = js.native
+  var model_FFormattingInfo: IModel = js.native
+  def containerAsClientTemplateParameter(): ClientTemplateParameter = js.native
+  def containerAsDataGridColumn(): DataGridColumn = js.native
+  def containerAsDatePicker(): DatePicker = js.native
+  def containerAsDynamicLabel(): DynamicLabel = js.native
+  def containerAsGridColumn(): GridColumn = js.native
+  def containerAsReferenceSelector(): ReferenceSelector = js.native
+  def containerAsTextBox(): TextBox = js.native
+  def customDateFormat(): String = js.native
+  def customDateFormat(newValue: String): js.Any = js.native
+  def dateFormat(): DateFormat = js.native
+  def dateFormat(newValue: DateFormat): js.Any = js.native
+  def decimalPrecision(): Double = js.native
+  def decimalPrecision(newValue: Double): js.Any = js.native
+  def enumFormat(): EnumFormat = js.native
+  def enumFormat(newValue: EnumFormat): js.Any = js.native
+  def groupDigits(): Boolean = js.native
+  def groupDigits(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

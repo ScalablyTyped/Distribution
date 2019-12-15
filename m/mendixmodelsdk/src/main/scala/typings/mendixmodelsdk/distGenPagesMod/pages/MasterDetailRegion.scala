@@ -27,12 +27,17 @@ abstract class MasterDetailRegion protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var `class`: String = js.native
-  val containerAsMasterDetail: MasterDetail = js.native
   @JSName("model")
-  var model_MasterDetailRegion: IModel = js.native
-  var style: String = js.native
-  var widget: Widget | Null = js.native
+  var model_FMasterDetailRegion: IModel = js.native
+  def `class`(): String = js.native
+  def `class`(newValue: String): js.Any = js.native
+  def containerAsMasterDetail(): MasterDetail = js.native
+  def style(): String = js.native
+  def style(newValue: String): js.Any = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
 }
 
 /* static members */

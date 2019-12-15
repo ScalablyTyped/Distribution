@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenMicroflowsMod.microflows
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -19,7 +20,10 @@ abstract class BinaryListOperation protected () extends ListOperation {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var secondListOrObjectVariableName: String = js.native
+  @JSName("model")
+  var model_FBinaryListOperation: IModel = js.native
+  def secondListOrObjectVariableName(): String = js.native
+  def secondListOrObjectVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

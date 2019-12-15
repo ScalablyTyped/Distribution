@@ -21,11 +21,13 @@ class WidgetEnumerationValue protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: String = js.native
-  val containerAsWidgetValueType: WidgetValueType = js.native
-  var key: String = js.native
   @JSName("model")
-  var model_WidgetEnumerationValue: IModel = js.native
+  var model_FWidgetEnumerationValue: IModel = js.native
+  def caption(): String = js.native
+  def caption(newValue: String): js.Any = js.native
+  def containerAsWidgetValueType(): WidgetValueType = js.native
+  def key(): String = js.native
+  def key(newValue: String): js.Any = js.native
 }
 
 /* static members */

@@ -9,13 +9,13 @@ trait DataObject extends js.Object {
     * the time attribute of time and theme.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.data.date
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.data.date
     */
   var date: js.UndefOr[String] = js.undefined
   /**
     * the name of an event or theme.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.themeRiver.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.data)
     *
     * **data specification:**
     *
@@ -41,14 +41,14 @@ trait DataObject extends js.Object {
     * position of a complete time period.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.data.name
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * the value of an event or theme at a time point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.data.value
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.data.value
     */
   var value: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }

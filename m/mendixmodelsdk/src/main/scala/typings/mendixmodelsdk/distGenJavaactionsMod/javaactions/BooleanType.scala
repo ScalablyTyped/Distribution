@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IType because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IPrimitiveType because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IBooleanType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IBooleanType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType")
 @js.native
 class BooleanType protected () extends PrimitiveType {
   def this(
@@ -30,6 +30,14 @@ class BooleanType protected () extends PrimitiveType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FBooleanType: IModel = js.native
+  @JSName("containerAsBasicParameterType")
+  def containerAsBasicParameterType_MBooleanType(): BasicParameterType = js.native
+  @JSName("containerAsJavaActionParameter")
+  def containerAsJavaActionParameter_MBooleanType(): JavaActionParameter = js.native
+  @JSName("containerAsJavaAction")
+  def containerAsJavaAction_MBooleanType(): JavaAction = js.native
 }
 
 /* static members */

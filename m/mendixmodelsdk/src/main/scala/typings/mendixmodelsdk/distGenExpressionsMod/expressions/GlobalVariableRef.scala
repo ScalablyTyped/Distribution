@@ -25,7 +25,10 @@ class GlobalVariableRef protected () extends VariableRef {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var referredName: String = js.native
+  @JSName("model")
+  var model_FGlobalVariableRef: IModel = js.native
+  def referredName(): String = js.native
+  def referredName(newValue: String): js.Any = js.native
 }
 
 /* static members */

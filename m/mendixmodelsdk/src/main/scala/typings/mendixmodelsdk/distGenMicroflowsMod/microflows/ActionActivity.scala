@@ -23,11 +23,20 @@ class ActionActivity protected () extends Activity {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var action: MicroflowAction | Null = js.native
-  var autoGenerateCaption: Boolean = js.native
-  var backgroundColor: ActionActivityColor = js.native
-  var caption: String = js.native
-  var documentation: String = js.native
+  @JSName("model")
+  var model_FActionActivity: IModel = js.native
+  def action(): MicroflowAction | Null = js.native
+  def action(newValue: MicroflowAction): js.Any = js.native
+  @JSName("action")
+  def action_Any(): js.Any = js.native
+  def autoGenerateCaption(): Boolean = js.native
+  def autoGenerateCaption(newValue: Boolean): js.Any = js.native
+  def backgroundColor(): ActionActivityColor = js.native
+  def backgroundColor(newValue: ActionActivityColor): js.Any = js.native
+  def caption(): String = js.native
+  def caption(newValue: String): js.Any = js.native
+  def documentation(): String = js.native
+  def documentation(newValue: String): js.Any = js.native
 }
 
 /* static members */

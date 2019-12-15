@@ -11,7 +11,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animation
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -21,14 +21,14 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -37,52 +37,52 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     * prefix
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -91,7 +91,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -102,7 +102,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -110,9 +110,9 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * Here are some ways to assign mark point position.
     *
     * 1. Assign coordinate according to container with
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.x)
+    * [x](https://echarts.apache.org/en/option.html#series-pie.markPoint.data.x)
     * ,
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.y)
+    * [y](https://echarts.apache.org/en/option.html#series-pie.markPoint.data.y)
     * attribute, in which pixel values and percentage are supported.
     *
     * When multiple attributes exist, priority is as the above
@@ -120,24 +120,24 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * **For example:**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data
     */
   var data: js.UndefOr[Anon_ItemStyleLabelName] = js.undefined
   /**
     * Mark point style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * Label of mark point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.label
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadius] = js.undefined
   /**
@@ -146,7 +146,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * mouse events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.silent
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
@@ -168,7 +168,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -183,19 +183,19 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     *
     * @default
     * "pin"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.symbol
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -217,7 +217,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -227,7 +227,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -246,14 +246,14 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * ```
     *
     * The first parameter `value` is the value in
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-.data)
+    * [data](https://echarts.apache.org/en/option.html#series-.data)
     * , and the second parameter `params` is the rest parameters
     * of data item.
     *
     *
     * @default
     * 50
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.undefined
 }

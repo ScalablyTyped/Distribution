@@ -521,7 +521,7 @@ object officeDashUiDashFabricDashReactStrings {
   sealed trait hover_a1e11561 extends js.Object
   
   @js.native
-  sealed trait iconContainer_c8ddd097 extends js.Object
+  sealed trait iconContainer_9cea25a6 extends js.Object
   
   @js.native
   sealed trait incrementButtonIcon extends js.Object
@@ -680,10 +680,10 @@ object officeDashUiDashFabricDashReactStrings {
   sealed trait loadingText extends js.Object
   
   @js.native
-  sealed trait logoFillIcon_c8ddd097 extends js.Object
+  sealed trait logoFillIcon_9cea25a6 extends js.Object
   
   @js.native
-  sealed trait logoIcon_c8ddd097 extends js.Object
+  sealed trait logoIcon_9cea25a6 extends js.Object
   
   @js.native
   sealed trait ltr extends js.Object
@@ -1705,7 +1705,7 @@ object officeDashUiDashFabricDashReactStrings {
   @scala.inline
   def hover_a1e11561: hover_a1e11561 = "hover_a1e11561".asInstanceOf[hover_a1e11561]
   @scala.inline
-  def iconContainer_c8ddd097: iconContainer_c8ddd097 = "iconContainer_c8ddd097".asInstanceOf[iconContainer_c8ddd097]
+  def iconContainer_9cea25a6: iconContainer_9cea25a6 = "iconContainer_9cea25a6".asInstanceOf[iconContainer_9cea25a6]
   @scala.inline
   def incrementButtonIcon: incrementButtonIcon = "incrementButtonIcon".asInstanceOf[incrementButtonIcon]
   @scala.inline
@@ -1811,9 +1811,9 @@ object officeDashUiDashFabricDashReactStrings {
   @scala.inline
   def loadingText: loadingText = "loadingText".asInstanceOf[loadingText]
   @scala.inline
-  def logoFillIcon_c8ddd097: logoFillIcon_c8ddd097 = "logoFillIcon_c8ddd097".asInstanceOf[logoFillIcon_c8ddd097]
+  def logoFillIcon_9cea25a6: logoFillIcon_9cea25a6 = "logoFillIcon_9cea25a6".asInstanceOf[logoFillIcon_9cea25a6]
   @scala.inline
-  def logoIcon_c8ddd097: logoIcon_c8ddd097 = "logoIcon_c8ddd097".asInstanceOf[logoIcon_c8ddd097]
+  def logoIcon_9cea25a6: logoIcon_9cea25a6 = "logoIcon_9cea25a6".asInstanceOf[logoIcon_9cea25a6]
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   @scala.inline

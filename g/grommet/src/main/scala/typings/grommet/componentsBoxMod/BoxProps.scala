@@ -78,6 +78,7 @@ trait BoxProps extends js.Object {
   var elevation: js.UndefOr[ElevationType] = js.undefined
   var fill: js.UndefOr[FillType] = js.undefined
   var flex: js.UndefOr[grow | shrink | Boolean | Anon_Grow] = js.undefined
+  var focusIndicator: js.UndefOr[Boolean] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var height: js.UndefOr[
@@ -116,6 +117,7 @@ object BoxProps {
     elevation: ElevationType = null,
     fill: FillType = null,
     flex: grow | shrink | Boolean | Anon_Grow = null,
+    focusIndicator: js.UndefOr[Boolean] = js.undefined,
     gap: GapType = null,
     gridArea: GridAreaType = null,
     height: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Anon_Large = null,
@@ -145,6 +147,7 @@ object BoxProps {
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusIndicator)) __obj.updateDynamic("focusIndicator")(focusIndicator.asInstanceOf[js.Any])
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

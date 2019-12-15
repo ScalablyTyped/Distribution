@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IParameterType because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IMicroflowJavaActionParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.MicroflowJavaActionParameterType")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IMicroflowJavaActionParameterType because var conflicts: containerAsCodeActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.MicroflowJavaActionParameterType")
 @js.native
 class MicroflowJavaActionParameterType protected ()
   extends typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.ParameterType {
@@ -30,8 +30,10 @@ class MicroflowJavaActionParameterType protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FMicroflowJavaActionParameterType: IModel = js.native
   @JSName("containerAsCodeActionParameter")
-  val containerAsCodeActionParameter_MicroflowJavaActionParameterType: CodeActionParameter = js.native
+  def containerAsCodeActionParameter_MMicroflowJavaActionParameterType(): CodeActionParameter = js.native
 }
 
 /* static members */

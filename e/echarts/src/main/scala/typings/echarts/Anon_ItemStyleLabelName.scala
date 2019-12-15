@@ -9,11 +9,11 @@ trait Anon_ItemStyleLabelName extends js.Object {
     * Mark point style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.label
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
   /**
@@ -22,7 +22,7 @@ trait Anon_ItemStyleLabelName extends js.Object {
     *
     * @default
     * ''
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.name
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -44,7 +44,7 @@ trait Anon_ItemStyleLabelName extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint.data)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -59,17 +59,17 @@ trait Anon_ItemStyleLabelName extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint.data)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.symbol
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -91,7 +91,7 @@ trait Anon_ItemStyleLabelName extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -101,7 +101,7 @@ trait Anon_ItemStyleLabelName extends js.Object {
     * use tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -112,28 +112,28 @@ trait Anon_ItemStyleLabelName extends js.Object {
     * height is`10`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * Label value, which can be ignored.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.value
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.value
     */
   var value: js.UndefOr[Double] = js.undefined
   /**
     * X position according to container, in pixel.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.x
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.x
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
     * Y position according to container, in pixel.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.y
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }

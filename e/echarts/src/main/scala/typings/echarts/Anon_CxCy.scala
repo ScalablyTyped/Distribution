@@ -10,7 +10,7 @@ trait Anon_CxCy extends js.Object {
     * system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_ring.shape.cx
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring.shape.cx
     */
   var cx: js.UndefOr[Double] = js.undefined
   /**
@@ -18,21 +18,21 @@ trait Anon_CxCy extends js.Object {
     * system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_ring.shape.cy
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring.shape.cy
     */
   var cy: js.UndefOr[Double] = js.undefined
   /**
     * Outside radius.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_ring.shape.r
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring.shape.r
     */
   var r: js.UndefOr[Double] = js.undefined
   /**
     * Inside radius.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_ring.shape.r0
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring.shape.r0
     */
   var r0: js.UndefOr[Double] = js.undefined
 }

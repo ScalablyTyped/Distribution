@@ -23,8 +23,12 @@ class GridActionButton protected () extends GridControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var action: ClientAction = js.native
-  var maintainSelectionAfterMicroflow: Boolean = js.native
+  @JSName("model")
+  var model_FGridActionButton: IModel = js.native
+  def action(): ClientAction = js.native
+  def action(newValue: ClientAction): js.Any = js.native
+  def maintainSelectionAfterMicroflow(): Boolean = js.native
+  def maintainSelectionAfterMicroflow(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

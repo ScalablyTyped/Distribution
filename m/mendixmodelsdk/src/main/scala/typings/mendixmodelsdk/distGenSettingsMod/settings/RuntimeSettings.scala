@@ -21,36 +21,57 @@ class RuntimeSettings protected () extends ProjectSettingsPart {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var afterStartupMicroflow: IMicroflow | Null = js.native
-  val afterStartupMicroflowQualifiedName: String | Null = js.native
-  var allowUserMultipleSessions: Boolean = js.native
-  var beforeShutdownMicroflow: IMicroflow | Null = js.native
-  val beforeShutdownMicroflowQualifiedName: String | Null = js.native
-  var defaultTimeZoneCode: String = js.native
+  @JSName("model")
+  var model_FRuntimeSettings: IModel = js.native
+  def afterStartupMicroflow(): IMicroflow | Null = js.native
+  def afterStartupMicroflow(newValue: IMicroflow): js.Any = js.native
+  def afterStartupMicroflowQualifiedName(): String | Null = js.native
+  @JSName("afterStartupMicroflow")
+  def afterStartupMicroflow_Any(): js.Any = js.native
+  def allowUserMultipleSessions(): Boolean = js.native
+  def allowUserMultipleSessions(newValue: Boolean): js.Any = js.native
+  def beforeShutdownMicroflow(): IMicroflow | Null = js.native
+  def beforeShutdownMicroflow(newValue: IMicroflow): js.Any = js.native
+  def beforeShutdownMicroflowQualifiedName(): String | Null = js.native
+  @JSName("beforeShutdownMicroflow")
+  def beforeShutdownMicroflow_Any(): js.Any = js.native
+  def defaultTimeZoneCode(): String = js.native
+  def defaultTimeZoneCode(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     * In version 7.10.0: introduced
     */
-  var enableDataStorageNewQueryHandling: Boolean = js.native
+  def enableDataStorageNewQueryHandling(): Boolean = js.native
+  def enableDataStorageNewQueryHandling(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.5.0: introduced
     */
-  var enableDataStorageOptimisticLocking: Boolean = js.native
+  def enableDataStorageOptimisticLocking(): Boolean = js.native
+  def enableDataStorageOptimisticLocking(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.1.0: introduced
     */
-  var enforceDataStorageUniqueness: Boolean = js.native
-  var firstDayOfWeek: FirstDayOfWeekEnum = js.native
-  var hashAlgorithm: HashAlgorithmType = js.native
-  var healthCheckMicroflow: IMicroflow | Null = js.native
-  val healthCheckMicroflowQualifiedName: String | Null = js.native
-  var roundingMode: RoundingMode = js.native
-  var scheduledEventTimeZoneCode: String = js.native
+  def enforceDataStorageUniqueness(): Boolean = js.native
+  def enforceDataStorageUniqueness(newValue: Boolean): js.Any = js.native
+  def firstDayOfWeek(): FirstDayOfWeekEnum = js.native
+  def firstDayOfWeek(newValue: FirstDayOfWeekEnum): js.Any = js.native
+  def hashAlgorithm(): HashAlgorithmType = js.native
+  def hashAlgorithm(newValue: HashAlgorithmType): js.Any = js.native
+  def healthCheckMicroflow(): IMicroflow | Null = js.native
+  def healthCheckMicroflow(newValue: IMicroflow): js.Any = js.native
+  def healthCheckMicroflowQualifiedName(): String | Null = js.native
+  @JSName("healthCheckMicroflow")
+  def healthCheckMicroflow_Any(): js.Any = js.native
+  def roundingMode(): RoundingMode = js.native
+  def roundingMode(newValue: RoundingMode): js.Any = js.native
+  def scheduledEventTimeZoneCode(): String = js.native
+  def scheduledEventTimeZoneCode(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     * In version 7.15.0: introduced
     */
-  var useDeprecatedClientForWebServiceCalls: Boolean = js.native
+  def useDeprecatedClientForWebServiceCalls(): Boolean = js.native
+  def useDeprecatedClientForWebServiceCalls(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

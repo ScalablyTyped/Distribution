@@ -232,6 +232,8 @@ object grommetComponents extends grommetProps {
     typings.grommet.grommetStrings.color
   ])]]
   @scala.inline
+  def Footer: ComponentType[FooterProps] = typings.grommet.grommetMod.Footer.asInstanceOf[typings.react.reactMod.ComponentType[FooterProps]]
+  @scala.inline
   def Form: ComponentType[
     FormProps with (DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement])
   ] = js.constructorOf[typings.grommet.grommetMod.Form].asInstanceOf[typings.react.reactMod.ComponentType[
@@ -269,6 +271,8 @@ object grommetComponents extends grommetProps {
     typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
+  @scala.inline
+  def Header: ComponentType[HeaderProps] = typings.grommet.grommetMod.Header.asInstanceOf[typings.react.reactMod.ComponentType[HeaderProps]]
   @scala.inline
   def Heading: ComponentType[
     HeadingProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], color])
@@ -308,6 +312,8 @@ object grommetComponents extends grommetProps {
     typings.react.reactMod.HTMLAttributes[typings.std.HTMLUListElement], 
     typings.std.HTMLUListElement
   ])]]
+  @scala.inline
+  def Main: ComponentType[MainProps] = typings.grommet.grommetMod.Main.asInstanceOf[typings.react.reactMod.ComponentType[MainProps]]
   @scala.inline
   def Markdown: ComponentType[
     MarkdownProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])

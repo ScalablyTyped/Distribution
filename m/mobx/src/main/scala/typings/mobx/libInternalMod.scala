@@ -57,7 +57,7 @@ import typings.mobx.libUtilsDecoratorsMod.PropertyCreator
 import typings.mobx.libUtilsUtilsMod.Lambda
 import typings.mobx.mobxNumbers.`false`
 import typings.mobx.mobxNumbers.`true`
-import typings.mobx.mobxStrings.`An invariant failed, however the error is obfuscated because this is an production buildDOT`
+import typings.mobx.mobxStrings.`An invariant failed, however the error is obfuscated because this is a production buildDOT`
 import typings.std.AsyncGenerator
 import typings.std.Error
 import typings.std.Generator
@@ -107,10 +107,6 @@ object libInternalMod extends js.Object {
       */
     def this(options: IComputedValueOptions[T]) = this()
   }
-  
-  @js.native
-  class FlowCancellationError ()
-    extends typings.mobx.libApiFlowMod.FlowCancellationError
   
   @js.native
   class MobXGlobals ()
@@ -178,7 +174,7 @@ object libInternalMod extends js.Object {
   @JSName("$mobx")
   val $mobx: js.Symbol = js.native
   val EMPTY_ARRAY: js.Array[scala.Nothing] = js.native
-  val OBFUSCATED_ERROR: `An invariant failed, however the error is obfuscated because this is an production buildDOT` = js.native
+  val OBFUSCATED_ERROR: `An invariant failed, however the error is obfuscated because this is a production buildDOT` = js.native
   val action: IActionFactory = js.native
   val computed: IComputed = js.native
   val computedDecorator: js.Function = js.native
@@ -551,6 +547,12 @@ object libInternalMod extends js.Object {
   def when(predicate: js.Function0[Boolean], effect: Lambda): IReactionDisposer = js.native
   def when(predicate: js.Function0[Boolean], effect: Lambda, opts: IWhenOptions): IReactionDisposer = js.native
   def when(predicate: js.Function0[Boolean], opts: IWhenOptions): js.Promise[Unit] with Anon_Cancel = js.native
+  @js.native
+  object FlowCancellationError extends js.Object {
+    var prototype: js.Any = js.native
+    def apply(): Unit = js.native
+  }
+  
   @js.native
   object IDerivationState extends js.Object {
     /* -1 */ val NOT_TRACKING: typings.mobx.libCoreDerivationMod.IDerivationState.NOT_TRACKING with Double = js.native

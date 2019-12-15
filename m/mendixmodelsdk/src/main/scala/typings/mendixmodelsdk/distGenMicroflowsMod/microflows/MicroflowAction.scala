@@ -21,10 +21,11 @@ abstract class MicroflowAction protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsActionActivity: ActionActivity = js.native
-  var errorHandlingType: ErrorHandlingType = js.native
   @JSName("model")
-  var model_MicroflowAction: IModel = js.native
+  var model_FMicroflowAction: IModel = js.native
+  def containerAsActionActivity(): ActionActivity = js.native
+  def errorHandlingType(): ErrorHandlingType = js.native
+  def errorHandlingType(newValue: ErrorHandlingType): js.Any = js.native
 }
 
 /* static members */

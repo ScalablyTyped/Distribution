@@ -17,30 +17,30 @@ trait DataObject extends js.Object {
     * Gradient color and texture are also supported besides single
     * colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.parallel.data)
+    * > [see doc](https://echarts.apache.org/en/option.html#series-parallel.parallel.data)
     *
     *
     * @default
     * "#000"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.color
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.emphasis
     */
   var emphasis: js.UndefOr[Anon_LineStyleAnonColorOpacityShadowBlur] = js.undefined
   /**
     * Line style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.lineStyle
     */
   var lineStyle: js.UndefOr[js.Object] = js.undefined
   /**
     * The name of a data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.name
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait DataObject extends js.Object {
     *
     * @default
     * 0.45
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.opacity
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -61,31 +61,31 @@ trait DataObject extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.parallel.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-parallel.parallel.data)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -100,14 +100,14 @@ trait DataObject extends js.Object {
     *
     * @default
     * "solid"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.type
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * The value of a data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.value
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.value
     */
   var value: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -116,7 +116,7 @@ trait DataObject extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.width
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.width
     */
   var width: js.UndefOr[Double] = js.undefined
 }

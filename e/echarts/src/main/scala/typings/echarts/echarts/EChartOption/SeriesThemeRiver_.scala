@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   *
   * **Sample:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver)
+  * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver)
   *
   * **visual encoding:**
   *
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
   * to a single time axis.
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver
+  * @see https://echarts.apache.org/en/option.html#series-themeRiver
   */
 @JSName("SeriesThemeRiver")
 trait SeriesThemeRiver_ extends js.Object {
@@ -43,7 +43,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @default
     * 5%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.bottom
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.bottom
     */
   var bottom: js.UndefOr[Double | String] = js.undefined
   /**
@@ -55,7 +55,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @default
     * ["10%", "10%"]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.boundaryGap
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.boundaryGap
     */
   var boundaryGap: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -64,65 +64,65 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @default
     * ""single""
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.coordinateSystem
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.undefined
   /**
     * Data array of series, which can be in the following forms:
     *
     * Notice, if no `data` specified in series, and there is
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * in option, series will use the first
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * as its datasource. If `data` has been specified,
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * will not used.
     *
     * `series.datasetIndex` can be used to specify other
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * .
     *
     * Basically, data is represented by a two-dimension array, like
     * the example below, where each colum is named as a "dimension".
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.themeRiver)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver)
     *
     * + In
-    * [cartesian (grid)](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [cartesian (grid)](https://echarts.apache.org/en/option.html#grid)
     * , "dimX" and "dimY" correspond to
-    * [xAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [xAxis](https://echarts.apache.org/en/option.html#xAxis)
     * and
-    * [yAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [yAxis](https://echarts.apache.org/en/option.html#yAxis)
     * repectively.
     * + In
-    * [polar](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar](https://echarts.apache.org/en/option.html#polar)
     * "dimX" and "dimY" correspond to
-    * [radiusAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#radiusAxis)
+    * [radiusAxis](https://echarts.apache.org/en/option.html#radiusAxis)
     * 和
-    * [angleAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#anbleAxis)
+    * [angleAxis](https://echarts.apache.org/en/option.html#anbleAxis)
     * repectively.
     * + Other dimensions are optional, which can be used in other place.
     * For example:
-    * + [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * + [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * can map one or more dimensions to viusal (color, symbol size
     * ...).
-    * + [series.symbolSize](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.symbolSize)
+    * + [series.symbolSize](https://echarts.apache.org/en/option.html#series.symbolSize)
     * can be set as a callback function, where symbol size can be calculated
     * by values of a certain dimension.
     * + Values in other dimensions can be shown by
-    * [tooltip.formatter](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.formatter)
+    * [tooltip.formatter](https://echarts.apache.org/en/option.html#tooltip.formatter)
     * or
-    * [series.label.formatter](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.label.formatter)
+    * [series.label.formatter](https://echarts.apache.org/en/option.html#series.label.formatter)
     * .
     *
     * Especially, when there is one and only one category axis (axis.type
     * is `'category'`), data can be simply be represented by a one-dimension
     * array, like:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.themeRiver)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver)
     *
     * **Relationship between "value" and
-    * [axis.type](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis.type)
+    * [axis.type](https://echarts.apache.org/en/option.html#xAxis.type)
     * **
     *
     * + When a dimension corresponds to a value axis (axis.type
@@ -138,10 +138,10 @@ trait SeriesThemeRiver_ extends js.Object {
     * (based on `0`), the string value of the axis.data.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.themeRiver)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver)
     *
     * There is an example of double category axes:
-    * [Github Punchcard](https://ecomfe.github.io/echarts-examples/public/editor.html?c=scatter-punchCard)
+    * [Github Punchcard](https://echarts.apache.org/examples/en/editor.html?c=scatter-punchCard)
     * .
     *
     * + When a dimension corresponds to a time axis (type is `'time'`),
@@ -185,7 +185,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * When needing to customize a data item, it can be set as an object,
     * where property `value` reprensent real value. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.themeRiver)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver)
     *
     * **Empty value:**
     *
@@ -197,7 +197,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * and scatter chart do not display graphic elements for empty values.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.data
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.data
     */
   var data: js.UndefOr[
     js.Array[
@@ -205,7 +205,7 @@ trait SeriesThemeRiver_ extends js.Object {
     ]
   ] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
@@ -218,7 +218,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * which are left, top, right and bottom.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.height
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
@@ -227,14 +227,14 @@ trait SeriesThemeRiver_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.id
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     * style of each ribbon-shape river branch in theme river.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
@@ -242,7 +242,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * river branch corresponds in theme river.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.label
     */
   var label: js.UndefOr[Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily] = js.undefined
   /**
@@ -259,7 +259,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @default
     * 5%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.left
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.left
     */
   var left: js.UndefOr[Double | String] = js.undefined
   /**
@@ -272,7 +272,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @default
     * 5%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.right
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.right
     */
   var right: js.UndefOr[Double | String] = js.undefined
   /**
@@ -280,14 +280,14 @@ trait SeriesThemeRiver_ extends js.Object {
     * it contains only one axis.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.singleAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.singleAxisIndex
     */
   var singleAxisIndex: js.UndefOr[Double] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
@@ -304,20 +304,20 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @default
     * 5%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.top
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.top
     */
   var top: js.UndefOr[Double | String] = js.undefined
   /**
     * @default
     * "themeRiver"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.type
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * Width of thmemRiver component.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.width
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
   /**
@@ -332,7 +332,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.z
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -350,7 +350,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

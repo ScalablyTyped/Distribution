@@ -22,24 +22,24 @@ import scala.scalajs.js.annotation._
   * **relation graph**
   *
   * Graph is a diagram to represent
-  * [nodes](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.nodes)
+  * [nodes](https://echarts.apache.org/en/option.html#series-graph.nodes)
   * and the
-  * [links](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links)
+  * [links](https://echarts.apache.org/en/option.html#series-graph.links)
   * connecting nodes.
   *
   * **Tips:** In ECharts 2.x
   * , the diagram of `force` type will not be available in ECharts 3
   * any more, which has been changed to use `graph` to show graph data.
   * If you want to use force to lead the layout, you can set the
-  * [layout](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.layout)
+  * [layout](https://echarts.apache.org/en/option.html#series-graph.layout)
   * configuration as `'force'`.
   *
   * **Example:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph)
+  * [see doc](https://echarts.apache.org/en/option.html#series-graph)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph
+  * @see https://echarts.apache.org/en/option.html#series-graph
   */
 @JSName("SeriesGraph")
 trait SeriesGraph_ extends js.Object {
@@ -49,7 +49,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.animation
+    * @see https://echarts.apache.org/en/option.html#series-graph.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -58,14 +58,14 @@ trait SeriesGraph_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-graph.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -74,50 +74,50 @@ trait SeriesGraph_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-graph.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-graph.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-graph.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-graph.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -126,7 +126,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-graph.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -137,7 +137,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-graph.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -151,39 +151,39 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.bottom
+    * @see https://echarts.apache.org/en/option.html#series-graph.bottom
     */
   var bottom: js.UndefOr[Double | String] = js.undefined
   /**
     * Index of
-    * [calendar coordinates](https://ecomfe.github.io/echarts-doc/public/en/option.html#calendar)
+    * [calendar coordinates](https://echarts.apache.org/en/option.html#calendar)
     * to combine with, which is useful for multiple calendar coordinates
     * in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.calendarIndex
+    * @see https://echarts.apache.org/en/option.html#series-graph.calendarIndex
     */
   var calendarIndex: js.UndefOr[Double] = js.undefined
   /**
     * The categories of node, which is optional.
     * If there is a classification of nodes, the category of each node
     * can be assigned through
-    * [data\[i\].category](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.category)
+    * [data\[i\].category](https://echarts.apache.org/en/option.html#series-graph.data.category)
     *
     * And the style of category will also be applied to the style of
     * nodes. `categories` can also be used in
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories
+    * @see https://echarts.apache.org/en/option.html#series-graph.categories
     */
   var categories: js.UndefOr[Anon_EmphasisItemStyle] = js.undefined
   /**
     * Configuration about circular layout.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.circular
+    * @see https://echarts.apache.org/en/option.html#series-graph.circular
     */
   var circular: js.UndefOr[Anon_RotateLabel] = js.undefined
   /**
@@ -197,21 +197,21 @@ trait SeriesGraph_ extends js.Object {
     *
     * Use a two-dimensional rectangular coordinate (also known as Cartesian
     * coordinate), with
-    * [xAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.xAxisIndex)
+    * [xAxisIndex](https://echarts.apache.org/en/option.html#series-graph.xAxisIndex)
     * and
-    * [yAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.yAxisIndex)
+    * [yAxisIndex](https://echarts.apache.org/en/option.html#series-graph.yAxisIndex)
     * to assign the corresponding axis component.
     *
     * + `'polar'`
     *
     * Use polar coordinates, with
-    * [polarIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.polarIndex)
+    * [polarIndex](https://echarts.apache.org/en/option.html#series-graph.polarIndex)
     * to assign the corresponding polar coordinate component.
     *
     * + `'geo'`
     *
     * Use geographic coordinate, with
-    * [geoIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.geoIndex)
+    * [geoIndex](https://echarts.apache.org/en/option.html#series-graph.geoIndex)
     * to assign the corresponding geographic coordinate components.
     *
     * + `'none'`
@@ -219,7 +219,7 @@ trait SeriesGraph_ extends js.Object {
     * Do not use coordinate system.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.coordinateSystem
+    * @see https://echarts.apache.org/en/option.html#series-graph.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.undefined
   /**
@@ -229,16 +229,16 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * "pointer"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.cursor
+    * @see https://echarts.apache.org/en/option.html#series-graph.cursor
     */
   var cursor: js.UndefOr[String] = js.undefined
   /**
     * Nodes list of graph.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data
+    * @see https://echarts.apache.org/en/option.html#series-graph.data
     */
   var data: js.UndefOr[js.Array[DataObject]] = js.undefined
   /**
@@ -246,11 +246,11 @@ trait SeriesGraph_ extends js.Object {
     * Only available when using force-directed layout.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.draggable
+    * @see https://echarts.apache.org/en/option.html#series-graph.draggable
     */
   var draggable: js.UndefOr[Boolean] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.edgeLabel
+    * @see https://echarts.apache.org/en/option.html#series-graph.edgeLabel
     */
   var edgeLabel: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
@@ -266,7 +266,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * "[none', 'none']"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.edgeSymbol
+    * @see https://echarts.apache.org/en/option.html#series-graph.edgeSymbol
     */
   var edgeSymbol: js.UndefOr[js.Array[_] | String] = js.undefined
   /**
@@ -275,31 +275,31 @@ trait SeriesGraph_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph)
     *
     *
     * @default
     * 10
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.edgeSymbolSize
+    * @see https://echarts.apache.org/en/option.html#series-graph.edgeSymbolSize
     */
   var edgeSymbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * Alias of
-    * [links](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links)
+    * [links](https://echarts.apache.org/en/option.html#series-graph.links)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.edges
+    * @see https://echarts.apache.org/en/option.html#series-graph.edges
     */
   var edges: js.UndefOr[js.Array[_]] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-graph.emphasis
     */
   var emphasis: js.UndefOr[Anon_EdgeLabel] = js.undefined
   /**
     * Whether to focus/highlight the hover node and it's adjacencies.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.focusNodeAdjacency
+    * @see https://echarts.apache.org/en/option.html#series-graph.focusNodeAdjacency
     */
   var focusNodeAdjacency: js.UndefOr[Boolean] = js.undefined
   /**
@@ -318,17 +318,17 @@ trait SeriesGraph_ extends js.Object {
     * clustering, which is also aesthetically pleasing.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force
+    * @see https://echarts.apache.org/en/option.html#series-graph.force
     */
   var force: js.UndefOr[Anon_EdgeLength] = js.undefined
   /**
     * Index of
-    * [geographic coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
     * to combine with, which is useful for multiple geographic axes
     * in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.geoIndex
+    * @see https://echarts.apache.org/en/option.html#series-graph.geoIndex
     */
   var geoIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -337,7 +337,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.height
+    * @see https://echarts.apache.org/en/option.html#series-graph.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
@@ -345,7 +345,7 @@ trait SeriesGraph_ extends js.Object {
     * node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.hoverAnimation
+    * @see https://echarts.apache.org/en/option.html#series-graph.hoverAnimation
     */
   var hoverAnimation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -354,7 +354,7 @@ trait SeriesGraph_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.id
+    * @see https://echarts.apache.org/en/option.html#series-graph.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -362,7 +362,7 @@ trait SeriesGraph_ extends js.Object {
     * like being hovered by mouse, or highlighted via legend connect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-graph.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
@@ -374,7 +374,7 @@ trait SeriesGraph_ extends js.Object {
     * as `itemStyle` does.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.label
+    * @see https://echarts.apache.org/en/option.html#series-graph.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
   /**
@@ -383,26 +383,26 @@ trait SeriesGraph_ extends js.Object {
     * **Options:**
     *
     * + `'none'` No any layout, use
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.x)
+    * [x](https://echarts.apache.org/en/option.html#series-graph.data.x)
     * ,
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.y)
+    * [y](https://echarts.apache.org/en/option.html#series-graph.data.y)
     * provided in
-    * [node](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data)
+    * [node](https://echarts.apache.org/en/option.html#series-graph.data)
     * as the position of node.
     *
     * + `'circular'` Adopt circular layout, see the example
-    * [Les Miserables](https://ecomfe.github.io/echarts-examples/public/editor.html?c=graph-circular-layout)
+    * [Les Miserables](https://echarts.apache.org/examples/en/editor.html?c=graph-circular-layout)
     * .
     *
     * + `'force'` Adopt force-directed layout, see the example
-    * [Force](https://ecomfe.github.io/echarts-examples/public/editor.html?c=graph-force)
+    * [Force](https://echarts.apache.org/examples/en/editor.html?c=graph-force)
     * , the detail about configrations of layout are in
-    * [graph.force](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force)
+    * [graph.force](https://echarts.apache.org/en/option.html#series-graph.force)
     *
     *
     * @default
     * "none"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.layout
+    * @see https://echarts.apache.org/en/option.html#series-graph.layout
     */
   var layout: js.UndefOr[String] = js.undefined
   /**
@@ -418,37 +418,37 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * "center"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.left
+    * @see https://echarts.apache.org/en/option.html#series-graph.left
     */
   var left: js.UndefOr[Double | String] = js.undefined
   /**
     * Whether to enable highlighting chart when
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * is being hovered.
     *
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.legendHoverLink
+    * @see https://echarts.apache.org/en/option.html#series-graph.legendHoverLink
     */
   var legendHoverLink: js.UndefOr[Boolean] = js.undefined
   /**
     * The style of edge line.
-    * [lineStyle.color](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.lineStyle.color)
+    * [lineStyle.color](https://echarts.apache.org/en/option.html#series-graph.lineStyle.color)
     * can be `'source'` or `'target'`, which will use the color of
     * source node or target node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-graph.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacity] = js.undefined
   /**
     * Relational data between nodes. Example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links
+    * @see https://echarts.apache.org/en/option.html#series-graph.links
     */
   var links: js.UndefOr[Anon_EmphasisLabel] = js.undefined
   /**
@@ -456,32 +456,32 @@ trait SeriesGraph_ extends js.Object {
     * For example, mark a time interval.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.markArea
+    * @see https://echarts.apache.org/en/option.html#series-graph.markArea
     */
   var markArea: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.markLine
+    * @see https://echarts.apache.org/en/option.html#series-graph.markLine
     */
   var markLine: js.UndefOr[Anon_AnimationAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.markPoint
+    * @see https://echarts.apache.org/en/option.html#series-graph.markPoint
     */
   var markPoint: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.name
+    * @see https://echarts.apache.org/en/option.html#series-graph.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -491,25 +491,25 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * 0.6
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.nodeScaleRatio
+    * @see https://echarts.apache.org/en/option.html#series-graph.nodeScaleRatio
     */
   var nodeScaleRatio: js.UndefOr[Double] = js.undefined
   /**
     * Alias of
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data)
+    * [data](https://echarts.apache.org/en/option.html#series-graph.data)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.nodes
+    * @see https://echarts.apache.org/en/option.html#series-graph.nodes
     */
   var nodes: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Index of
-    * [polar coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar coordinate](https://echarts.apache.org/en/option.html#polar)
     * to combine with, which is useful for multiple polar axes in one
     * chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.polarIndex
+    * @see https://echarts.apache.org/en/option.html#series-graph.polarIndex
     */
   var polarIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -523,7 +523,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.right
+    * @see https://echarts.apache.org/en/option.html#series-graph.right
     */
   var right: js.UndefOr[Double | String] = js.undefined
   /**
@@ -534,7 +534,7 @@ trait SeriesGraph_ extends js.Object {
     * Otherwise, set it to be `true` to enable both.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.roam
+    * @see https://echarts.apache.org/en/option.html#series-graph.roam
     */
   var roam: js.UndefOr[Boolean | String] = js.undefined
   /**
@@ -543,7 +543,7 @@ trait SeriesGraph_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.silent
+    * @see https://echarts.apache.org/en/option.html#series-graph.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
@@ -565,7 +565,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph)
     *
     * Icons can be set to arbitrary vector path via `'path://'` in
     * ECharts.
@@ -579,19 +579,19 @@ trait SeriesGraph_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph)
     *
     *
     * @default
     * "circle"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.symbol
+    * @see https://echarts.apache.org/en/option.html#series-graph.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-graph.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -613,7 +613,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-graph.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -623,7 +623,7 @@ trait SeriesGraph_ extends js.Object {
     * angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-graph.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -642,21 +642,21 @@ trait SeriesGraph_ extends js.Object {
     * ```
     *
     * The first parameter `value` is the value in
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-.data)
+    * [data](https://echarts.apache.org/en/option.html#series-.data)
     * , and the second parameter `params` is the rest parameters of
     * data item.
     *
     *
     * @default
     * 10
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-graph.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-graph.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
@@ -672,13 +672,13 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * "middle"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.top
+    * @see https://echarts.apache.org/en/option.html#series-graph.top
     */
   var top: js.UndefOr[Double | String] = js.undefined
   /**
     * @default
     * "graph"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.type
+    * @see https://echarts.apache.org/en/option.html#series-graph.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
@@ -687,25 +687,25 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.width
+    * @see https://echarts.apache.org/en/option.html#series-graph.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
   /**
     * Index of
-    * [x axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [x axis](https://echarts.apache.org/en/option.html#xAxis)
     * to combine with, which is useful for multiple x axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.xAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-graph.xAxisIndex
     */
   var xAxisIndex: js.UndefOr[Double] = js.undefined
   /**
     * Index of
-    * [y axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [y axis](https://echarts.apache.org/en/option.html#yAxis)
     * to combine with, which is useful for multiple y axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.yAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-graph.yAxisIndex
     */
   var yAxisIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -720,7 +720,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.z
+    * @see https://echarts.apache.org/en/option.html#series-graph.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -738,7 +738,7 @@ trait SeriesGraph_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-graph.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

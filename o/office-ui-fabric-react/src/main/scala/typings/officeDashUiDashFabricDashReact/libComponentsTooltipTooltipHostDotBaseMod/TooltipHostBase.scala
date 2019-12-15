@@ -18,6 +18,7 @@ class TooltipHostBase protected ()
   var _classNames: js.Any = js.native
   var _clearDismissTimer: js.Any = js.native
   var _clearOpenTimer: js.Any = js.native
+  var _defaultTooltipId: js.Any = js.native
   var _dismissTimerId: js.Any = js.native
   var _getDelayTime: js.Any = js.native
   var _getTargetElement: js.Any = js.native

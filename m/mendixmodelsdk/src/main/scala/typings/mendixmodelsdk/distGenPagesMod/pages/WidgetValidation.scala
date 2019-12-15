@@ -26,21 +26,24 @@ class WidgetValidation protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsAttributeWidget: AttributeWidget = js.native
-  val containerAsReferenceSelector: ReferenceSelector = js.native
+  @JSName("model")
+  var model_FWidgetValidation: IModel = js.native
+  def containerAsAttributeWidget(): AttributeWidget = js.native
+  def containerAsReferenceSelector(): ReferenceSelector = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var expression: String = js.native
+  def expression(): String = js.native
+  def expression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var expressionModel: Expression = js.native
-  var message: Text = js.native
-  @JSName("model")
-  var model_WidgetValidation: IModel = js.native
+  def expressionModel(): Expression = js.native
+  def expressionModel(newValue: Expression): js.Any = js.native
+  def message(): Text = js.native
+  def message(newValue: Text): js.Any = js.native
 }
 
 /* static members */

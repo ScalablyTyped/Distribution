@@ -20,6 +20,8 @@ class DataEntity protected () extends DataEntityBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDataEntity: IModel = js.native
 }
 
 /* static members */

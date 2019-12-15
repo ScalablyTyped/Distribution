@@ -25,15 +25,22 @@ class EventHandler protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsEntity: Entity = js.native
-  var event: EventType = js.native
-  var microflow: IMicroflow | Null = js.native
-  val microflowQualifiedName: String | Null = js.native
   @JSName("model")
-  var model_EventHandler: IModel = js.native
-  var moment: ActionMoment = js.native
-  var passEventObject: Boolean = js.native
-  var raiseErrorOnFalse: Boolean = js.native
+  var model_FEventHandler: IModel = js.native
+  def containerAsEntity(): Entity = js.native
+  def event(): EventType = js.native
+  def event(newValue: EventType): js.Any = js.native
+  def microflow(): IMicroflow | Null = js.native
+  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflowQualifiedName(): String | Null = js.native
+  @JSName("microflow")
+  def microflow_Any(): js.Any = js.native
+  def moment(): ActionMoment = js.native
+  def moment(newValue: ActionMoment): js.Any = js.native
+  def passEventObject(): Boolean = js.native
+  def passEventObject(newValue: Boolean): js.Any = js.native
+  def raiseErrorOnFalse(): Boolean = js.native
+  def raiseErrorOnFalse(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

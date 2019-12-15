@@ -20,7 +20,10 @@ class VariableExport protected () extends OutputMethod {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var outputVariableName: String = js.native
+  @JSName("model")
+  var model_FVariableExport: IModel = js.native
+  def outputVariableName(): String = js.native
+  def outputVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

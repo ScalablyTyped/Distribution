@@ -39,7 +39,7 @@ trait Tooltip_ extends js.Object {
     * Notice: configurations of `tooltip.axisPointer` has
     * lower priority than that of `someAxis.axisPointer`.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.axisPointer
+    * @see https://echarts.apache.org/en/option.html#tooltip.axisPointer
     */
   var axisPointer: js.UndefOr[typings.echarts.echarts.EChartOption.Tooltip.AxisPointer] = js.undefined
   /**
@@ -220,7 +220,7 @@ trait Tooltip_ extends js.Object {
     *   + Return:
     *     position as `String`, `Array` or `Object` described above
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.position
+    * @see https://echarts.apache.org/en/option.html#tooltip.position
     */
   var position: js.UndefOr[Type] = js.undefined
   /**

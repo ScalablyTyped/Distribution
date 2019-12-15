@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAttributeType because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IHashedStringAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.HashedStringAttributeType")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IHashedStringAttributeType because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.HashedStringAttributeType")
 @js.native
 class HashedStringAttributeType protected () extends AttributeType {
   def this(
@@ -25,8 +25,10 @@ class HashedStringAttributeType protected () extends AttributeType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FHashedStringAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  val containerAsAttribute_HashedStringAttributeType: Attribute = js.native
+  def containerAsAttribute_MHashedStringAttributeType(): Attribute = js.native
 }
 
 /* static members */

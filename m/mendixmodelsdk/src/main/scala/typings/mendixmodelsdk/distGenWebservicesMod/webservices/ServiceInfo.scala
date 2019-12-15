@@ -23,17 +23,25 @@ class ServiceInfo protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsWsdlDescription: WsdlDescription = js.native
-  var documentation: String = js.native
-  var location: String = js.native
-  var locationConstant: IConstant | Null = js.native
-  val locationConstantQualifiedName: String | Null = js.native
   @JSName("model")
-  var model_ServiceInfo: IModel = js.native
-  var name: String = js.native
-  val operations: IList[OperationInfo] = js.native
-  var portName: String = js.native
-  var soapVersion: SoapVersion = js.native
+  var model_FServiceInfo: IModel = js.native
+  def containerAsWsdlDescription(): WsdlDescription = js.native
+  def documentation(): String = js.native
+  def documentation(newValue: String): js.Any = js.native
+  def location(): String = js.native
+  def location(newValue: String): js.Any = js.native
+  def locationConstant(): IConstant | Null = js.native
+  def locationConstant(newValue: IConstant): js.Any = js.native
+  def locationConstantQualifiedName(): String | Null = js.native
+  @JSName("locationConstant")
+  def locationConstant_Any(): js.Any = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  def operations(): IList[OperationInfo] = js.native
+  def portName(): String = js.native
+  def portName(newValue: String): js.Any = js.native
+  def soapVersion(): SoapVersion = js.native
+  def soapVersion(newValue: SoapVersion): js.Any = js.native
 }
 
 /* static members */

@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IDataType because Already inherited
-- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IUnknownType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.UnknownType")
+- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IUnknownType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.UnknownType")
 @js.native
 class UnknownType protected () extends DataType {
   def this(
@@ -44,22 +44,24 @@ class UnknownType protected () extends DataType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FUnknownType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  val containerAsAppServiceActionParameter_UnknownType: AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MUnknownType(): AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  val containerAsAppServiceAction_UnknownType: AppServiceAction = js.native
+  def containerAsAppServiceAction_MUnknownType(): AppServiceAction = js.native
   @JSName("containerAsConstant")
-  val containerAsConstant_UnknownType: Constant = js.native
+  def containerAsConstant_MUnknownType(): Constant = js.native
   @JSName("containerAsDataSetParameter")
-  val containerAsDataSetParameter_UnknownType: DataSetParameter = js.native
+  def containerAsDataSetParameter_MUnknownType(): DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  val containerAsDocumentTemplateParameter_UnknownType: DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MUnknownType(): DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  val containerAsImportMapping_UnknownType: ImportMapping = js.native
+  def containerAsImportMapping_MUnknownType(): ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  val containerAsMicroflowBase_UnknownType: MicroflowBase = js.native
+  def containerAsMicroflowBase_MUnknownType(): MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  val containerAsMicroflowParameterBase_UnknownType: MicroflowParameterBase = js.native
+  def containerAsMicroflowParameterBase_MUnknownType(): MicroflowParameterBase = js.native
 }
 
 /* static members */

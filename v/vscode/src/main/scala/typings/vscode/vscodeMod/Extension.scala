@@ -15,7 +15,7 @@ trait Extension[T] extends js.Object {
   		 * The extension kind describes if an extension runs where the UI runs
   		 * or if an extension runs where the remote extension host runs. The extension kind
   		 * is defined in the `package.json`-file of extensions but can also be refined
-  		 * via the the `remote.extensionKind`-setting. When no remote extension host exists,
+  		 * via the `remote.extensionKind`-setting. When no remote extension host exists,
   		 * the value is [`ExtensionKind.UI`](#ExtensionKind.UI).
   		 */
   var extensionKind: ExtensionKind

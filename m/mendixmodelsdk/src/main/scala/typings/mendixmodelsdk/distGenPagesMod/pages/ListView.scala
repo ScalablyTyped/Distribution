@@ -28,30 +28,41 @@ class ListView protected () extends ListenTargetWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var clickAction: ClientAction = js.native
-  var editable: Boolean = js.native
+  @JSName("model")
+  var model_FListView: IModel = js.native
+  def clickAction(): ClientAction = js.native
+  def clickAction(newValue: ClientAction): js.Any = js.native
+  def editable(): Boolean = js.native
+  def editable(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var numberOfColumns: Double = js.native
-  var pageSize: Double = js.native
+  def numberOfColumns(): Double = js.native
+  def numberOfColumns(newValue: Double): js.Any = js.native
+  def pageSize(): Double = js.native
+  def pageSize(newValue: Double): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var pullDownAction: ClientAction = js.native
+  def pullDownAction(): ClientAction = js.native
+  def pullDownAction(newValue: ClientAction): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var scrollDirection: ScrollDirection = js.native
-  val templates: IList[ListViewTemplate] = js.native
+  def scrollDirection(): ScrollDirection = js.native
+  def scrollDirection(newValue: ScrollDirection): js.Any = js.native
+  def templates(): IList[ListViewTemplate] = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var widget: Widget | Null = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val widgets: IList[Widget] = js.native
+  def widgets(): IList[Widget] = js.native
 }
 
 /* static members */
@@ -300,6 +311,15 @@ object ListView extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ListView = js.native
+  /**
+    * Creates and returns a new ListView instance in the SDK and on the server.
+    * The new ListView will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ListView = js.native
   /**
     * Creates and returns a new ListView instance in the SDK and on the server.
     * The new ListView will be automatically stored in the 'widgets' property

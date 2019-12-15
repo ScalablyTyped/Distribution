@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_LineStyleAnonColorCurvenessOpacityShadowBlur extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.emphasis.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-sankey.links.emphasis.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacityShadowBlur] = js.undefined
 }

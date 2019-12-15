@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait DataObject extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-sankey.data.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType
@@ -19,35 +19,35 @@ trait DataObject extends js.Object {
     * The style of this node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-sankey.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * The lable style of this node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.data.label
+    * @see https://echarts.apache.org/en/option.html#series-sankey.data.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * The name of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.data.name
+    * @see https://echarts.apache.org/en/option.html#series-sankey.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.data.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-sankey.data.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * The value of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.data.value
+    * @see https://echarts.apache.org/en/option.html#series-sankey.data.value
     */
   var value: js.UndefOr[js.Array[_] | Double] = js.undefined
 }

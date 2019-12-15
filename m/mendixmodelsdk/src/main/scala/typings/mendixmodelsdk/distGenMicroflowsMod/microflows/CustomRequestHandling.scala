@@ -20,7 +20,10 @@ class CustomRequestHandling protected () extends RequestHandling {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var template: StringTemplate = js.native
+  @JSName("model")
+  var model_FCustomRequestHandling: IModel = js.native
+  def template(): StringTemplate = js.native
+  def template(newValue: StringTemplate): js.Any = js.native
 }
 
 /* static members */

@@ -21,7 +21,10 @@ class ListenTargetSource protected () extends DataSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var listenTarget: String = js.native
+  @JSName("model")
+  var model_FListenTargetSource: IModel = js.native
+  def listenTarget(): String = js.native
+  def listenTarget(newValue: String): js.Any = js.native
 }
 
 /* static members */

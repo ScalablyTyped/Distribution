@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "javascript-stringify"
-version := "2.0.0-79dbc2"
+version := "2.0.1-c0d52b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -16,5 +16,6 @@ class Module ()
   def noParse(noParse: js.Function1[/* contentPath */ String, Boolean]): this.type = js.native
   def noParse(noParse: RegExp): this.type = js.native
   def rule(name: String): Rule = js.native
+  def strictExportPresence(value: Boolean): this.type = js.native
 }
 

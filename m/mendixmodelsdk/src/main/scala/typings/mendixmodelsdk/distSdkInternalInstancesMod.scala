@@ -27,10 +27,10 @@ object distSdkInternalInstancesMod extends js.Object {
   @js.native
   abstract class AbstractEnum protected () extends js.Object {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
-    val name: String = js.native
     var qualifiedTsTypeName: String = js.native
     var versionInfo: LifeCycle = js.native
     def checkEnumVersion(metaModelVersion: Version, includeWarnings: Boolean): Unit = js.native
+    def name(): String = js.native
     def qualifiedTsLiteralName(): String = js.native
   }
   

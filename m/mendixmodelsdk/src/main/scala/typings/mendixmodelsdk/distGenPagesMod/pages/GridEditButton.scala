@@ -26,8 +26,11 @@ class GridEditButton protected () extends GridControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var pageSettings: PageSettings = js.native
-  val pagesForSpecializations: IList[PageForSpecialization] = js.native
+  @JSName("model")
+  var model_FGridEditButton: IModel = js.native
+  def pageSettings(): PageSettings = js.native
+  def pageSettings(newValue: PageSettings): js.Any = js.native
+  def pagesForSpecializations(): IList[PageForSpecialization] = js.native
 }
 
 /* static members */

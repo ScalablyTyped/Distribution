@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.distGenMicroflowsMod.microflows
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenSecurityMod.security.IModuleRole
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
@@ -24,7 +26,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflowBase because Already inherited
-- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.INanoflow because var conflicts: id, isLoaded, microflowReturnType, model, returnType, structureTypeName, unit. Inlined allowedModuleRoles, allowedModuleRolesQualifiedNames */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Nanoflow")
+- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.INanoflow because var conflicts: containerAsFolderBase, id, isLoaded, microflowReturnType, model, returnType, structureTypeName, unit. Inlined allowedModuleRoles, allowedModuleRolesQualifiedNames */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Nanoflow")
 @js.native
 class Nanoflow protected () extends MicroflowBase {
   def this(
@@ -34,11 +36,22 @@ class Nanoflow protected () extends MicroflowBase {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  @JSName("allowedModuleRolesQualifiedNames")
+  val allowedModuleRolesQualifiedNames_FNanoflow: js.Array[String] = js.native
   /**
     * In version 7.23.0: added public
     */
-  val allowedModuleRoles: IList[IModuleRole] = js.native
-  val allowedModuleRolesQualifiedNames: js.Array[String] = js.native
+  @JSName("allowedModuleRoles")
+  val allowedModuleRoles_FNanoflow: IList[IModuleRole] = js.native
+  @JSName("model")
+  var model_FNanoflow: IModel = js.native
+  /**
+    * In version 7.23.0: added public
+    */
+  def allowedModuleRoles(): IList[IModuleRole] = js.native
+  def allowedModuleRolesQualifiedNames(): js.Array[String] = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MNanoflow(): FolderBase = js.native
 }
 
 /* static members */

@@ -9,35 +9,35 @@ import scala.scalajs.js.annotation._
 
 trait DataObject extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-bar.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BarBorderColorBarBorderRadius] = js.undefined
   /**
     * The style setting of the text label in a single bar.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.data.label
+    * @see https://echarts.apache.org/en/option.html#series-bar.data.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
   /**
     * The name of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.data.name
+    * @see https://echarts.apache.org/en/option.html#series-bar.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.data.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-bar.data.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * The value of a single data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.data.value
+    * @see https://echarts.apache.org/en/option.html#series-bar.data.value
     */
   var value: js.UndefOr[Double] = js.undefined
 }

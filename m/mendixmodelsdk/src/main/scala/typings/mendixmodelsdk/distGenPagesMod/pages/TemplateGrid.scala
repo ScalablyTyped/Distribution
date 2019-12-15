@@ -27,9 +27,14 @@ class TemplateGrid protected () extends Grid {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var contents: TemplateGridContents = js.native
-  var numberOfColumns: Double = js.native
-  var numberOfRows: Double = js.native
+  @JSName("model")
+  var model_FTemplateGrid: IModel = js.native
+  def contents(): TemplateGridContents = js.native
+  def contents(newValue: TemplateGridContents): js.Any = js.native
+  def numberOfColumns(): Double = js.native
+  def numberOfColumns(newValue: Double): js.Any = js.native
+  def numberOfRows(): Double = js.native
+  def numberOfRows(newValue: Double): js.Any = js.native
 }
 
 /* static members */
@@ -278,6 +283,15 @@ object TemplateGrid extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): TemplateGrid = js.native
+  /**
+    * Creates and returns a new TemplateGrid instance in the SDK and on the server.
+    * The new TemplateGrid will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TemplateGrid = js.native
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
     * The new TemplateGrid will be automatically stored in the 'widgets' property

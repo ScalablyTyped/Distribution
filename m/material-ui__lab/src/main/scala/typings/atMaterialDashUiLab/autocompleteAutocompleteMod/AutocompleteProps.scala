@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiLab.autocompleteAutocompleteMod
 
+import typings.atMaterialDashUiCore.popperPopperMod.PopperProps
 import typings.atMaterialDashUiLab.PartialClassNameMapAutocompleteClassKey
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`additions text`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`inline`
@@ -19,6 +20,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.grammar
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.grid
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.horizontal
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.inherit
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.input
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.link
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.list
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.listbox
@@ -37,6 +39,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.page
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.polite
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.popup
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.removals
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.reset
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.search
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.small
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.spelling
@@ -377,9 +380,17 @@ trait AutocompleteProps extends js.Object {
     * Callback fired when the input value changes.
     *
     * @param {object} event The event source of the callback.
-    * @param {string} value
+    * @param {string} value The new value of the text input
+    * @param {string} reason One of "input" (user input) or "reset" (programmatic change)
     */
-  var onInputChange: js.UndefOr[js.Function2[/* event */ ChangeEvent[js.Object], /* value */ js.Any, Unit]] = js.undefined
+  var onInputChange: js.UndefOr[
+    js.Function3[
+      /* event */ ChangeEvent[js.Object], 
+      /* value */ js.Any, 
+      /* reason */ input | reset, 
+      Unit
+    ]
+  ] = js.undefined
   var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
@@ -657,7 +668,7 @@ object AutocompleteProps {
     onError: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onFocus: FocusEvent[HTMLDivElement] => Unit = null,
     onInput: FormEvent[HTMLDivElement] => Unit = null,
-    onInputChange: (/* event */ ChangeEvent[js.Object], /* value */ js.Any) => Unit = null,
+    onInputChange: (/* event */ ChangeEvent[js.Object], /* value */ js.Any, /* reason */ input | reset) => Unit = null,
     onInvalid: FormEvent[HTMLDivElement] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLDivElement] => Unit = null,
     onKeyPress: KeyboardEvent[HTMLDivElement] => Unit = null,
@@ -875,7 +886,7 @@ object AutocompleteProps {
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction2(onInputChange))
+    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction3(onInputChange))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))

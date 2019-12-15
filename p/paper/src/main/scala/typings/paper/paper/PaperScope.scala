@@ -7,6 +7,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable6
 import typings.paper.TypeofClassColor
 import typings.paper.TypeofClassKey
+import typings.paper.TypeofClassPaperScope
 import typings.paper.TypeofClassPaperScript
 import typings.paper.TypeofClassPathItem
 import typings.paper.TypeofClassPoint
@@ -69,6 +70,7 @@ class PaperScope () extends js.Object {
   var Layer: Instantiable1[js.UndefOr[/* children */ js.Array[Item]], typings.paper.paper.Layer] = js.native
   var Matrix: Instantiable0[typings.paper.paper.Matrix] = js.native
   var MouseEvent: Instantiable0[typings.paper.paper.MouseEvent] = js.native
+  var PaperScope: TypeofClassPaperScope = js.native
   var PaperScript: TypeofClassPaperScript = js.native
   var Path: TypeofPath with (Instantiable1[js.UndefOr[/* segments */ js.Array[Segment]], typings.paper.paper.Path]) = js.native
   var PathItem: TypeofClassPathItem = js.native
@@ -116,11 +118,11 @@ class PaperScope () extends js.Object {
   /** 
     * The currently active project.
     */
-  var project: Project | Null = js.native
+  var project: Project = js.native
   /** 
     * The list of all open projects within the current Paper.js context.
     */
-  var projects: js.Array[Project] | Null = js.native
+  var projects: js.Array[Project] = js.native
   /** 
     * Gives access to paper's configurable settings.
     * 
@@ -139,11 +141,11 @@ class PaperScope () extends js.Object {
   /** 
     * The reference to the active tool.
     */
-  var tool: Tool | Null = js.native
+  var tool: Tool = js.native
   /** 
     * The list of available tools.
     */
-  var tools: js.Array[Tool] | Null = js.native
+  var tools: js.Array[Tool] = js.native
   /** 
     * The version of Paper.js, as a string.
     */
@@ -207,6 +209,6 @@ object PaperScope extends js.Object {
   /** 
     * Retrieves a PaperScope object with the given scope id.
     */
-  def get(id: js.Any): Unit = js.native
+  def get(id: js.Any): PaperScope = js.native
 }
 

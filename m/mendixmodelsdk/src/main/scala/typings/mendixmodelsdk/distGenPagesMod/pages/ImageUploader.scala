@@ -28,9 +28,14 @@ class ImageUploader protected () extends InputWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var allowedExtensions: String = js.native
-  var maxFileSize: Double = js.native
-  var thumbnailSize: ISize = js.native
+  @JSName("model")
+  var model_FImageUploader: IModel = js.native
+  def allowedExtensions(): String = js.native
+  def allowedExtensions(newValue: String): js.Any = js.native
+  def maxFileSize(): Double = js.native
+  def maxFileSize(newValue: Double): js.Any = js.native
+  def thumbnailSize(): ISize = js.native
+  def thumbnailSize(newValue: ISize): js.Any = js.native
 }
 
 /* static members */
@@ -279,6 +284,15 @@ object ImageUploader extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ImageUploader = js.native
+  /**
+    * Creates and returns a new ImageUploader instance in the SDK and on the server.
+    * The new ImageUploader will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ImageUploader = js.native
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
     * The new ImageUploader will be automatically stored in the 'widgets' property

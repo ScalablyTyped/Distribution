@@ -23,6 +23,8 @@ class PageBreak protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FPageBreak: IModel = js.native
 }
 
 /* static members */

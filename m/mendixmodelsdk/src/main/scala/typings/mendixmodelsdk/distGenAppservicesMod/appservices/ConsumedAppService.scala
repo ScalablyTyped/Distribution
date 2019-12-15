@@ -1,8 +1,10 @@
 package typings.mendixmodelsdk.distGenAppservicesMod.appservices
 
 import typings.mendixmodelsdk.distGenAppservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenConstantsMod.constants.IConstant
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -21,7 +23,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.distGenAppservicesMod.appservices.IConsumedAppService because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined actions */ @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.ConsumedAppService")
+- typings.mendixmodelsdk.distGenAppservicesMod.appservices.IConsumedAppService because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined actions */ @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.ConsumedAppService")
 @js.native
 class ConsumedAppService protected () extends Document {
   def this(
@@ -31,17 +33,34 @@ class ConsumedAppService protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  val actions: IList[AppServiceAction | IAppServiceAction] = js.native
-  var appServiceLocation: AppServiceLocationEnum = js.native
-  var appStoreGuid: String = js.native
-  var appStoreVersion: String = js.native
-  var appStoreVersionGuid: String = js.native
-  var fromAppStore: Boolean = js.native
-  var locationConstant: IConstant | Null = js.native
-  val locationConstantQualifiedName: String | Null = js.native
-  var msd: Msd = js.native
-  var timeOut: Double = js.native
-  var useTimeOut: Boolean = js.native
+  @JSName("actions")
+  val actions_FConsumedAppService: IList[IAppServiceAction] = js.native
+  @JSName("model")
+  var model_FConsumedAppService: IModel = js.native
+  def actions(): IList[AppServiceAction] = js.native
+  def appServiceLocation(): AppServiceLocationEnum = js.native
+  def appServiceLocation(newValue: AppServiceLocationEnum): js.Any = js.native
+  def appStoreGuid(): String = js.native
+  def appStoreGuid(newValue: String): js.Any = js.native
+  def appStoreVersion(): String = js.native
+  def appStoreVersion(newValue: String): js.Any = js.native
+  def appStoreVersionGuid(): String = js.native
+  def appStoreVersionGuid(newValue: String): js.Any = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MConsumedAppService(): FolderBase = js.native
+  def fromAppStore(): Boolean = js.native
+  def fromAppStore(newValue: Boolean): js.Any = js.native
+  def locationConstant(): IConstant | Null = js.native
+  def locationConstant(newValue: IConstant): js.Any = js.native
+  def locationConstantQualifiedName(): String | Null = js.native
+  @JSName("locationConstant")
+  def locationConstant_Any(): js.Any = js.native
+  def msd(): Msd = js.native
+  def msd(newValue: Msd): js.Any = js.native
+  def timeOut(): Double = js.native
+  def timeOut(newValue: Double): js.Any = js.native
+  def useTimeOut(): Boolean = js.native
+  def useTimeOut(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

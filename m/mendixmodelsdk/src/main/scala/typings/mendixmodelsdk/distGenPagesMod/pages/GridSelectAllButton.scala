@@ -23,7 +23,10 @@ class GridSelectAllButton protected () extends GridControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var selectionType: SelectionType = js.native
+  @JSName("model")
+  var model_FGridSelectAllButton: IModel = js.native
+  def selectionType(): SelectionType = js.native
+  def selectionType(newValue: SelectionType): js.Any = js.native
 }
 
 /* static members */

@@ -275,6 +275,10 @@ object containerForwardListMod extends js.Object {
       /**
         * @hidden
         */
+      var _Try_value: js.Any = js.native
+      /**
+        * @hidden
+        */
       var next_ : js.Any = js.native
       /**
         * @hidden
@@ -302,6 +306,16 @@ object containerForwardListMod extends js.Object {
         * @return The source container.
         */
       def source(): ForwardList[T] = js.native
+      /**
+        * @inheritDoc
+        */
+      @JSName("value")
+      def value_MIterator(): T = js.native
+      /**
+        * @inheritDoc
+        */
+      @JSName("value")
+      def value_MIterator(`val`: T): js.Any = js.native
     }
     
   }

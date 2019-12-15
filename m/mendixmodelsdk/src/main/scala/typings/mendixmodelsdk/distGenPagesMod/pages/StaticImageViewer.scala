@@ -28,14 +28,25 @@ class StaticImageViewer protected () extends ConditionallyVisibleWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var clickAction: ClientAction = js.native
-  var height: Double = js.native
-  var heightUnit: ImageSizeUnit = js.native
-  var image: IImage | Null = js.native
-  val imageQualifiedName: String | Null = js.native
-  var responsive: Boolean = js.native
-  var width: Double = js.native
-  var widthUnit: ImageSizeUnit = js.native
+  @JSName("model")
+  var model_FStaticImageViewer: IModel = js.native
+  def clickAction(): ClientAction = js.native
+  def clickAction(newValue: ClientAction): js.Any = js.native
+  def height(): Double = js.native
+  def height(newValue: Double): js.Any = js.native
+  def heightUnit(): ImageSizeUnit = js.native
+  def heightUnit(newValue: ImageSizeUnit): js.Any = js.native
+  def image(): IImage | Null = js.native
+  def image(newValue: IImage): js.Any = js.native
+  def imageQualifiedName(): String | Null = js.native
+  @JSName("image")
+  def image_Any(): js.Any = js.native
+  def responsive(): Boolean = js.native
+  def responsive(newValue: Boolean): js.Any = js.native
+  def width(): Double = js.native
+  def width(newValue: Double): js.Any = js.native
+  def widthUnit(): ImageSizeUnit = js.native
+  def widthUnit(newValue: ImageSizeUnit): js.Any = js.native
 }
 
 /* static members */
@@ -284,6 +295,15 @@ object StaticImageViewer extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): StaticImageViewer = js.native
+  /**
+    * Creates and returns a new StaticImageViewer instance in the SDK and on the server.
+    * The new StaticImageViewer will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): StaticImageViewer = js.native
   /**
     * Creates and returns a new StaticImageViewer instance in the SDK and on the server.
     * The new StaticImageViewer will be automatically stored in the 'widgets' property

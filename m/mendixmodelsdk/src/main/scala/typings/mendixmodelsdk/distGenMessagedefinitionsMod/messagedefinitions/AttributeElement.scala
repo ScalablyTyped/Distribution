@@ -25,6 +25,8 @@ class AttributeElement protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FAttributeElement: IModel = js.native
 }
 
 /* static members */

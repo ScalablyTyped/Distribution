@@ -23,12 +23,14 @@ class BasicReportAggregate protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var aggregateFunction: AggregateFunctionEnum = js.native
-  val applicablePerColumn: IList[Boolean] = js.native
-  var caption: Text = js.native
-  val containerAsBasicReport: BasicReport = js.native
   @JSName("model")
-  var model_BasicReportAggregate: IModel = js.native
+  var model_FBasicReportAggregate: IModel = js.native
+  def aggregateFunction(): AggregateFunctionEnum = js.native
+  def aggregateFunction(newValue: AggregateFunctionEnum): js.Any = js.native
+  def applicablePerColumn(): IList[Boolean] = js.native
+  def caption(): Text = js.native
+  def caption(newValue: Text): js.Any = js.native
+  def containerAsBasicReport(): BasicReport = js.native
 }
 
 /* static members */

@@ -11,37 +11,37 @@ trait DataObject extends js.Object {
   /**
     * An array includes two ore more than two coordinates.
     * Each coordinate could be `[x, y]` in
-    * [rectangular coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [rectangular coordinate](https://echarts.apache.org/en/option.html#grid)
     * and `[lng, lat]` in
-    * [geographic coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.coords
+    * @see https://echarts.apache.org/en/option.html#series-lines.data.coords
     */
   var coords: js.UndefOr[js.Array[_]] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_LabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyAnonColorCurvenessOpacity
   ] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.label
+    * @see https://echarts.apache.org/en/option.html#series-lines.data.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
     * The line style of this data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-lines.data.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacity] = js.undefined
   /**
     * the name of data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.name
+    * @see https://echarts.apache.org/en/option.html#series-lines.data.name
     */
   var name: js.UndefOr[String] = js.undefined
 }

@@ -21,10 +21,11 @@ abstract class ListOperation protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsListOperationAction: ListOperationAction = js.native
-  var listVariableName: String = js.native
   @JSName("model")
-  var model_ListOperation: IModel = js.native
+  var model_FListOperation: IModel = js.native
+  def containerAsListOperationAction(): ListOperationAction = js.native
+  def listVariableName(): String = js.native
+  def listVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

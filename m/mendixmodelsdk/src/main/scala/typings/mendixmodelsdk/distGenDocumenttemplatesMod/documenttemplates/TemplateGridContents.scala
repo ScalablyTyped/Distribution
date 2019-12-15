@@ -20,6 +20,8 @@ class TemplateGridContents protected () extends DropZone {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FTemplateGridContents: IModel = js.native
 }
 
 /* static members */

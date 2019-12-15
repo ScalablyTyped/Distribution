@@ -297,6 +297,15 @@ object ReportButton extends js.Object {
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.distGenReportsMod.reports.ReportButton = js.native
   /**
     * Creates and returns a new ReportButton instance in the SDK and on the server.
+    * The new ReportButton will be automatically stored in the 'sidebarWidgets' property
+    * of the parent pages.NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.distGenReportsMod.reports.ReportButton = js.native
+  /**
+    * Creates and returns a new ReportButton instance in the SDK and on the server.
     * The new ReportButton will be automatically stored in the 'widgets' property
     * of the parent pages.NativeLayoutContent element passed as argument.
     *

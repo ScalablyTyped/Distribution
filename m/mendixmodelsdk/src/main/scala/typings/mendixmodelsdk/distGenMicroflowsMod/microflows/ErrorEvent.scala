@@ -23,6 +23,8 @@ class ErrorEvent protected () extends MicroflowObject {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FErrorEvent: IModel = js.native
 }
 
 /* static members */

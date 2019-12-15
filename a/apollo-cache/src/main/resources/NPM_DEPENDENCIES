@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-cache" : "1.3.2"
+      "apollo-cache" : "1.3.4"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-cache" : "1.3.2"
+      "apollo-cache" : "1.3.4"
     }
   ],
   "compile-devDependencies" : [

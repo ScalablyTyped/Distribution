@@ -22,9 +22,15 @@ class DropDownButtonItem protected () extends ActionItem {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: Text = js.native
-  var image: IImage | Null = js.native
-  val imageQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FDropDownButtonItem: IModel = js.native
+  def caption(): Text = js.native
+  def caption(newValue: Text): js.Any = js.native
+  def image(): IImage | Null = js.native
+  def image(newValue: IImage): js.Any = js.native
+  def imageQualifiedName(): String | Null = js.native
+  @JSName("image")
+  def image_Any(): js.Any = js.native
 }
 
 /* static members */

@@ -25,50 +25,70 @@ class ProxyConfiguration protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsRestCallAction: RestCallAction = js.native
-  val containerAsWebServiceCallAction: WebServiceCallAction = js.native
-  /**
-    * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
-    */
-  var hostExpression: String = js.native
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    */
-  var hostExpressionModel: Expression | Null = js.native
   @JSName("model")
-  var model_ProxyConfiguration: IModel = js.native
+  var model_FProxyConfiguration: IModel = js.native
+  def containerAsRestCallAction(): RestCallAction = js.native
+  def containerAsWebServiceCallAction(): WebServiceCallAction = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var passwordExpression: String = js.native
+  def hostExpression(): String = js.native
+  def hostExpression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var passwordExpressionModel: Expression | Null = js.native
+  def hostExpressionModel(): Expression | Null = js.native
+  def hostExpressionModel(newValue: Expression): js.Any = js.native
+  @JSName("hostExpressionModel")
+  def hostExpressionModel_Any(): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var portExpression: String = js.native
+  def passwordExpression(): String = js.native
+  def passwordExpression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var portExpressionModel: Expression | Null = js.native
+  def passwordExpressionModel(): Expression | Null = js.native
+  def passwordExpressionModel(newValue: Expression): js.Any = js.native
+  @JSName("passwordExpressionModel")
+  def passwordExpressionModel_Any(): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var useConfigurationExpression: String = js.native
+  def portExpression(): String = js.native
+  def portExpression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var useConfigurationExpressionModel: Expression | Null = js.native
+  def portExpressionModel(): Expression | Null = js.native
+  def portExpressionModel(newValue: Expression): js.Any = js.native
+  @JSName("portExpressionModel")
+  def portExpressionModel_Any(): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var usernameExpression: String = js.native
+  def useConfigurationExpression(): String = js.native
+  def useConfigurationExpression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var usernameExpressionModel: Expression | Null = js.native
+  def useConfigurationExpressionModel(): Expression | Null = js.native
+  def useConfigurationExpressionModel(newValue: Expression): js.Any = js.native
+  @JSName("useConfigurationExpressionModel")
+  def useConfigurationExpressionModel_Any(): js.Any = js.native
+  /**
+    * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
+    */
+  def usernameExpression(): String = js.native
+  def usernameExpression(newValue: String): js.Any = js.native
+  /**
+    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    */
+  def usernameExpressionModel(): Expression | Null = js.native
+  def usernameExpressionModel(newValue: Expression): js.Any = js.native
+  @JSName("usernameExpressionModel")
+  def usernameExpressionModel_Any(): js.Any = js.native
 }
 
 /* static members */

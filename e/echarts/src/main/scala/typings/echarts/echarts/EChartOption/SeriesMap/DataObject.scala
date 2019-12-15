@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 
 trait DataObject extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleLabelAnonAreaColor] = js.undefined
   /**
     * Style of item polygon
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-map.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_AreaColorAnonBorderColorBorderType] = js.undefined
   /**
@@ -29,7 +29,7 @@ trait DataObject extends js.Object {
     * and has `emphasis` as `itemStyle` does.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label
+    * @see https://echarts.apache.org/en/option.html#series-map.data.label
     */
   var label: js.UndefOr[Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
   /**
@@ -37,28 +37,28 @@ trait DataObject extends js.Object {
     * as `'China'` or `'United Kingdom'` .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.name
+    * @see https://echarts.apache.org/en/option.html#series-map.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * Whether the are selected.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.selected
+    * @see https://echarts.apache.org/en/option.html#series-map.data.selected
     */
   var selected: js.UndefOr[Boolean] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-map.data.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * The numerical value of this area.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.value
+    * @see https://echarts.apache.org/en/option.html#series-map.data.value
     */
   var value: js.UndefOr[Double] = js.undefined
 }

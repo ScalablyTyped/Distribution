@@ -6,26 +6,26 @@ import scala.scalajs.js.annotation._
 
 trait Anon_EmphasisLabel extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-graph.links.emphasis
     */
   var emphasis: js.UndefOr[Anon_LabelLineStyle] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.label
+    * @see https://echarts.apache.org/en/option.html#series-graph.links.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
     * Line style of edges.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-graph.links.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacity] = js.undefined
   /**
-    * [name of source node](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.name)
+    * [name of source node](https://echarts.apache.org/en/option.html#series-graph.data.name)
     * on edge
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.source
+    * @see https://echarts.apache.org/en/option.html#series-graph.links.source
     */
   var source: js.UndefOr[String] = js.undefined
   /**
@@ -34,7 +34,7 @@ trait Anon_EmphasisLabel extends js.Object {
     * specifies both ends.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.symbol
+    * @see https://echarts.apache.org/en/option.html#series-graph.links.symbol
     */
   var symbol: js.UndefOr[js.Array[_] | String] = js.undefined
   /**
@@ -43,22 +43,22 @@ trait Anon_EmphasisLabel extends js.Object {
     * specifies both ends.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-graph.links.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | String] = js.undefined
   /**
-    * [name of target node](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.name)
+    * [name of target node](https://echarts.apache.org/en/option.html#series-graph.data.name)
     * on edge
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.target
+    * @see https://echarts.apache.org/en/option.html#series-graph.links.target
     */
   var target: js.UndefOr[String] = js.undefined
   /**
     * value of edge, can be mapped to edge length in force graph.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links.value
+    * @see https://echarts.apache.org/en/option.html#series-graph.links.value
     */
   var value: js.UndefOr[Double] = js.undefined
 }

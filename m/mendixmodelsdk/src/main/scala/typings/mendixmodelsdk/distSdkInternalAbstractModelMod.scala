@@ -26,10 +26,11 @@ object distSdkInternalAbstractModelMod extends js.Object {
   @js.native
   abstract class AbstractModel protected () extends IAbstractModel {
     def this(_client: IModelServerClient, _errorHandler: IErrorCallback) = this()
-    val root: IStructuralUnit = js.native
     def getFile(filePath: String, outFilePath: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
     def handleError(message: String): Unit = js.native
     def handleError(message: String, errorCallback: IErrorCallback): Unit = js.native
+    @JSName("id")
+    def id_MAbstractModel(): String = js.native
     def loadUnitById[T /* <: IAbstractUnit */](id: String): js.Promise[T] = js.native
     def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: js.UndefOr[scala.Nothing], callback: ICallback[T]): Unit = js.native
     def loadUnitById[T /* <: IAbstractUnit */](
@@ -38,6 +39,7 @@ object distSdkInternalAbstractModelMod extends js.Object {
       callback: ICallback[T],
       errorCallback: IErrorCallback
     ): Unit = js.native
+    def root(): IStructuralUnit = js.native
   }
   
   @js.native

@@ -23,6 +23,8 @@ class AnnotationFlow protected () extends Flow {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FAnnotationFlow: IModel = js.native
 }
 
 /* static members */

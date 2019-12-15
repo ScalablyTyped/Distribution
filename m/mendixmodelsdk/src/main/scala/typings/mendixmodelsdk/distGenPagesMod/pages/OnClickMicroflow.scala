@@ -23,7 +23,10 @@ class OnClickMicroflow protected () extends OnClickBehavior {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var microflowSettings: MicroflowSettings = js.native
+  @JSName("model")
+  var model_FOnClickMicroflow: IModel = js.native
+  def microflowSettings(): MicroflowSettings = js.native
+  def microflowSettings(newValue: MicroflowSettings): js.Any = js.native
 }
 
 /* static members */

@@ -22,11 +22,12 @@ abstract class PublishedResource protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsPublishedODataService: PublishedODataService = js.native
-  val containerAsVersionedService: VersionedService = js.native
-  var dataEntity: DataEntity = js.native
   @JSName("model")
-  var model_PublishedResource: IModel = js.native
+  var model_FPublishedResource: IModel = js.native
+  def containerAsPublishedODataService(): PublishedODataService = js.native
+  def containerAsVersionedService(): VersionedService = js.native
+  def dataEntity(): DataEntity = js.native
+  def dataEntity(newValue: DataEntity): js.Any = js.native
 }
 
 /* static members */

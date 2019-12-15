@@ -17,12 +17,12 @@ trait Anon_ColorCurvenessEmphasis extends js.Object {
     * Gradient color and texture are also supported
     * besides single colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine.data.1.lineStyle)
+    * > [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markLine.data.1.lineStyle)
     *
     *
     * @default
     * "#000"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.lineStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.lineStyle.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -31,11 +31,11 @@ trait Anon_ColorCurvenessEmphasis extends js.Object {
     * The larger the value, the greater the curvature.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.lineStyle.curveness
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.lineStyle.curveness
     */
   var curveness: js.UndefOr[Double] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.lineStyle.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.lineStyle.emphasis
     */
   var emphasis: js.UndefOr[Anon_ColorCurvenessOpacity] = js.undefined
   /**
@@ -44,7 +44,7 @@ trait Anon_ColorCurvenessEmphasis extends js.Object {
     * will not be drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.lineStyle.opacity
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.lineStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -54,17 +54,17 @@ trait Anon_ColorCurvenessEmphasis extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine.data.1.lineStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markLine.data.1.lineStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.lineStyle.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.lineStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.lineStyle.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.lineStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
@@ -72,7 +72,7 @@ trait Anon_ColorCurvenessEmphasis extends js.Object {
     * shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.lineStyle.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.lineStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
@@ -80,7 +80,7 @@ trait Anon_ColorCurvenessEmphasis extends js.Object {
     * shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.lineStyle.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.lineStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -95,14 +95,14 @@ trait Anon_ColorCurvenessEmphasis extends js.Object {
     *
     * @default
     * "solid"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.lineStyle.type
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.lineStyle.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * line width.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.lineStyle.width
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.lineStyle.width
     */
   var width: js.UndefOr[Double] = js.undefined
 }

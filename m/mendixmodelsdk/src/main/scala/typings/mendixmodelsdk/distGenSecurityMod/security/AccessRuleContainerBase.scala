@@ -26,10 +26,10 @@ abstract class AccessRuleContainerBase protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val accessRules: IList[AccessRule] = js.native
-  val containerAsProjectSecurity: ProjectSecurity = js.native
   @JSName("model")
-  var model_AccessRuleContainerBase: IModel = js.native
+  var model_FAccessRuleContainerBase: IModel = js.native
+  def accessRules(): IList[AccessRule] = js.native
+  def containerAsProjectSecurity(): ProjectSecurity = js.native
 }
 
 /* static members */

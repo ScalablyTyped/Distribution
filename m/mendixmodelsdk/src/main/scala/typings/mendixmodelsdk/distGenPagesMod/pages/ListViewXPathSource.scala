@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewXPathSource")
 @js.native
-class ListViewXPathSource protected () extends SortableEntityPathSource {
+class ListViewXPathSource protected () extends XPathSourceBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -21,11 +21,10 @@ class ListViewXPathSource protected () extends SortableEntityPathSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var search: ListViewSearch = js.native
-  /**
-    * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
-    */
-  var xPathConstraint: String = js.native
+  @JSName("model")
+  var model_FListViewXPathSource: IModel = js.native
+  def search(): ListViewSearch = js.native
+  def search(newValue: ListViewSearch): js.Any = js.native
 }
 
 /* static members */

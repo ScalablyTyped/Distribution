@@ -23,6 +23,8 @@ class OnClickNothing protected () extends OnClickBehavior {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FOnClickNothing: IModel = js.native
 }
 
 /* static members */

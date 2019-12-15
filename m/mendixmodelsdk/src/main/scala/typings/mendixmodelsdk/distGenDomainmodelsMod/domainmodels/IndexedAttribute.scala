@@ -21,15 +21,20 @@ class IndexedAttribute protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FIndexedAttribute: IModel = js.native
   /**
     * In version 7.14.0: introduced
     */
-  var ascending: Boolean = js.native
-  var attribute: Attribute | Null = js.native
-  val containerAsIndex: Index = js.native
-  @JSName("model")
-  var model_IndexedAttribute: IModel = js.native
-  var `type`: IndexedAttributeType = js.native
+  def ascending(): Boolean = js.native
+  def ascending(newValue: Boolean): js.Any = js.native
+  def attribute(): Attribute | Null = js.native
+  def attribute(newValue: Attribute): js.Any = js.native
+  @JSName("attribute")
+  def attribute_Any(): js.Any = js.native
+  def containerAsIndex(): Index = js.native
+  def `type`(): IndexedAttributeType = js.native
+  def `type`(newValue: IndexedAttributeType): js.Any = js.native
 }
 
 /* static members */

@@ -27,10 +27,16 @@ class FileManager protected () extends InputWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var allowedExtensions: String = js.native
-  var maxFileSize: Double = js.native
-  var showFileInBrowser: Boolean = js.native
-  var `type`: FileManagerType = js.native
+  @JSName("model")
+  var model_FFileManager: IModel = js.native
+  def allowedExtensions(): String = js.native
+  def allowedExtensions(newValue: String): js.Any = js.native
+  def maxFileSize(): Double = js.native
+  def maxFileSize(newValue: Double): js.Any = js.native
+  def showFileInBrowser(): Boolean = js.native
+  def showFileInBrowser(newValue: Boolean): js.Any = js.native
+  def `type`(): FileManagerType = js.native
+  def `type`(newValue: FileManagerType): js.Any = js.native
 }
 
 /* static members */
@@ -279,6 +285,15 @@ object FileManager extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): FileManager = js.native
+  /**
+    * Creates and returns a new FileManager instance in the SDK and on the server.
+    * The new FileManager will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): FileManager = js.native
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
     * The new FileManager will be automatically stored in the 'widgets' property

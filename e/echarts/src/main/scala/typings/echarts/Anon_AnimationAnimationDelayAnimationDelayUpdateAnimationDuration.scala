@@ -11,7 +11,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animation
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -21,14 +21,14 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markPoint)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -37,52 +37,52 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markPoint)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     * prefix
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markPoint)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markPoint)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -91,7 +91,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -102,7 +102,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -110,23 +110,23 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     * Here are some ways to assign mark point position.
     *
     * 1. Assign coordinate according to container with
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.x)
+    * [x](https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.x)
     * ,
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.y)
+    * [y](https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.y)
     * attribute, in which pixel values and percentage are supported.
     *
     * 2. Assign coordinate position with
-    * [coord](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.coord)
+    * [coord](https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.coord)
     * attribute, in which `'min'`, `'max'`, `'average'` are supported
     * for each dimension.
     *
     * 3. Use
-    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.type)
+    * [type](https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.type)
     * attribute to mark the maximum and minimum values in the series,
     * in which
-    * [valueIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.valueIndex)
+    * [valueIndex](https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.valueIndex)
     * or
-    * [valueDim](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.valueDim)
+    * [valueDim](https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.valueDim)
     * can be used to assign the dimension.
     *
     * When multiple attributes exist, priority is as the above
@@ -134,24 +134,24 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * **For example:**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markPoint)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.data
     */
   var data: js.UndefOr[Anon_Coord] = js.undefined
   /**
     * Mark point style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * Label of mark point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.label
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadius] = js.undefined
   /**
@@ -160,7 +160,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     * mouse events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.silent
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
@@ -182,7 +182,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markPoint)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -197,19 +197,19 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markPoint)
     *
     *
     * @default
     * "pin"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.symbol
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -231,7 +231,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -241,7 +241,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     * tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -260,14 +260,14 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     * ```
     *
     * The first parameter `value` is the value in
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-.data)
+    * [data](https://echarts.apache.org/en/option.html#series-.data)
     * , and the second parameter `params` is the rest parameters
     * of data item.
     *
     *
     * @default
     * 50
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.undefined
 }

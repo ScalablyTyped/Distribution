@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAttributeType because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IEnumerationAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EnumerationAttributeType")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IEnumerationAttributeType because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EnumerationAttributeType")
 @js.native
 class EnumerationAttributeType protected () extends AttributeType {
   def this(
@@ -26,10 +26,20 @@ class EnumerationAttributeType protected () extends AttributeType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("enumerationQualifiedName")
+  val enumerationQualifiedName_FEnumerationAttributeType: String = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("enumeration")
+  val enumeration_FEnumerationAttributeType: IEnumeration = js.native
+  @JSName("model")
+  var model_FEnumerationAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  val containerAsAttribute_EnumerationAttributeType: Attribute = js.native
-  var enumeration: IEnumeration = js.native
-  val enumerationQualifiedName: String = js.native
+  def containerAsAttribute_MEnumerationAttributeType(): Attribute = js.native
+  def enumeration(): IEnumeration = js.native
+  def enumeration(newValue: IEnumeration): js.Any = js.native
+  def enumerationQualifiedName(): String = js.native
 }
 
 /* static members */

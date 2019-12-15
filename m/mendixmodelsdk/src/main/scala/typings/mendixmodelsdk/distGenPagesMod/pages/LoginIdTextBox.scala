@@ -28,6 +28,8 @@ class LoginIdTextBox protected () extends LoginTextBox {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FLoginIdTextBox: IModel = js.native
 }
 
 /* static members */
@@ -276,6 +278,15 @@ object LoginIdTextBox extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): LoginIdTextBox = js.native
+  /**
+    * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
+    * The new LoginIdTextBox will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): LoginIdTextBox = js.native
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
     * The new LoginIdTextBox will be automatically stored in the 'widgets' property

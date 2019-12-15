@@ -26,24 +26,26 @@ class RetrievalSchema protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FRetrievalSchema: IModel = js.native
   /**
     * In version 7.4.0: deleted
     */
-  var entity: String = js.native
-  @JSName("model")
-  var model_RetrievalSchema: IModel = js.native
+  def entity(): String = js.native
+  def entity(newValue: String): js.Any = js.native
   /**
     * In version 7.2.0: introduced
     */
-  val usedAssociations: IList[String] = js.native
+  def usedAssociations(): IList[String] = js.native
   /**
     * In version 7.2.0: deleted
     */
-  val usedAttributes: IList[String] = js.native
+  def usedAttributes(): IList[String] = js.native
   /**
     * In version 7.14.0: introduced
     */
-  var widgetName: String = js.native
+  def widgetName(): String = js.native
+  def widgetName(newValue: String): js.Any = js.native
 }
 
 /* static members */

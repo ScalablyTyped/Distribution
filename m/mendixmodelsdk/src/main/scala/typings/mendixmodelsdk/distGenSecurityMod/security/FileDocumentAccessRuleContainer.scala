@@ -20,6 +20,8 @@ class FileDocumentAccessRuleContainer protected () extends AccessRuleContainerBa
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FFileDocumentAccessRuleContainer: IModel = js.native
 }
 
 /* static members */

@@ -54,24 +54,40 @@ abstract class DataType protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsAppServiceAction: AppServiceAction | IAppServiceAction = js.native
-  val containerAsAppServiceActionParameter: AppServiceActionParameter | IAppServiceActionParameter = js.native
-  val containerAsConstant: Constant | IConstant = js.native
-  val containerAsCreateVariableAction: CreateVariableAction = js.native
-  val containerAsDataSetColumn: DataSetColumn = js.native
-  val containerAsDataSetParameter: DataSetParameter | IDataSetParameter = js.native
-  val containerAsDocumentTemplateParameter: DocumentTemplateParameter | IDocumentTemplateParameter = js.native
-  val containerAsImportMapping: IImportMapping | ImportMapping = js.native
-  val containerAsMicroflowBase: IMicroflowBase | MicroflowBase = js.native
-  val containerAsMicroflowParameterBase: IMicroflowParameterBase | MicroflowParameterBase = js.native
-  val containerAsMicroflowParameterObject: MicroflowParameterObject = js.native
-  val containerAsPublishedOperation: PublishedOperation = js.native
-  val containerAsPublishedParameter: PublishedParameter = js.native
-  val containerAsRestOperationParameter: RestOperationParameter = js.native
-  val containerAsResultHandling: ResultHandling = js.native
-  val containerAsValueMappingElement: ValueMappingElement = js.native
+  @JSName("containerAsAppServiceActionParameter")
+  val containerAsAppServiceActionParameter_FDataType: IAppServiceActionParameter = js.native
+  @JSName("containerAsAppServiceAction")
+  val containerAsAppServiceAction_FDataType: IAppServiceAction = js.native
+  @JSName("containerAsConstant")
+  val containerAsConstant_FDataType: IConstant = js.native
+  @JSName("containerAsDataSetParameter")
+  val containerAsDataSetParameter_FDataType: IDataSetParameter = js.native
+  @JSName("containerAsDocumentTemplateParameter")
+  val containerAsDocumentTemplateParameter_FDataType: IDocumentTemplateParameter = js.native
+  @JSName("containerAsImportMapping")
+  val containerAsImportMapping_FDataType: IImportMapping = js.native
+  @JSName("containerAsMicroflowBase")
+  val containerAsMicroflowBase_FDataType: IMicroflowBase = js.native
+  @JSName("containerAsMicroflowParameterBase")
+  val containerAsMicroflowParameterBase_FDataType: IMicroflowParameterBase = js.native
   @JSName("model")
-  var model_DataType: IModel = js.native
+  var model_FDataType: IModel = js.native
+  def containerAsAppServiceAction(): AppServiceAction = js.native
+  def containerAsAppServiceActionParameter(): AppServiceActionParameter = js.native
+  def containerAsConstant(): Constant = js.native
+  def containerAsCreateVariableAction(): CreateVariableAction = js.native
+  def containerAsDataSetColumn(): DataSetColumn = js.native
+  def containerAsDataSetParameter(): DataSetParameter = js.native
+  def containerAsDocumentTemplateParameter(): DocumentTemplateParameter = js.native
+  def containerAsImportMapping(): ImportMapping = js.native
+  def containerAsMicroflowBase(): MicroflowBase = js.native
+  def containerAsMicroflowParameterBase(): MicroflowParameterBase = js.native
+  def containerAsMicroflowParameterObject(): MicroflowParameterObject = js.native
+  def containerAsPublishedOperation(): PublishedOperation = js.native
+  def containerAsPublishedParameter(): PublishedParameter = js.native
+  def containerAsRestOperationParameter(): RestOperationParameter = js.native
+  def containerAsResultHandling(): ResultHandling = js.native
+  def containerAsValueMappingElement(): ValueMappingElement = js.native
 }
 
 /* static members */

@@ -25,18 +25,28 @@ class ValidationFeedbackAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FValidationFeedbackAction: IModel = js.native
   /**
     * See: {@link https://docs.mendix.com/refguide7/validation-feedback See 'Member' section in reference guide}
     */
-  var association: IAssociationBase | Null = js.native
-  val associationQualifiedName: String | Null = js.native
+  def association(): IAssociationBase | Null = js.native
+  def association(newValue: IAssociationBase): js.Any = js.native
+  def associationQualifiedName(): String | Null = js.native
+  @JSName("association")
+  def association_Any(): js.Any = js.native
   /**
     * See: {@link https://docs.mendix.com/refguide7/validation-feedback See 'Member' section in reference guide}
     */
-  var attribute: IAttribute | Null = js.native
-  val attributeQualifiedName: String | Null = js.native
-  var feedbackTemplate: TextTemplate = js.native
-  var objectVariableName: String = js.native
+  def attribute(): IAttribute | Null = js.native
+  def attribute(newValue: IAttribute): js.Any = js.native
+  def attributeQualifiedName(): String | Null = js.native
+  @JSName("attribute")
+  def attribute_Any(): js.Any = js.native
+  def feedbackTemplate(): TextTemplate = js.native
+  def feedbackTemplate(newValue: TextTemplate): js.Any = js.native
+  def objectVariableName(): String = js.native
+  def objectVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

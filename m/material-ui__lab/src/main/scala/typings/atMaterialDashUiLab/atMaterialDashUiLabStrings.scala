@@ -1,6 +1,7 @@
 package typings.atMaterialDashUiLab
 
 import typings.atMaterialDashUiLab.autocompleteAutocompleteMod.AutocompleteClassKey
+import typings.atMaterialDashUiLab.avatarGroupAvatarGroupMod.AvatarGroupClassKey
 import typings.atMaterialDashUiLab.ratingRatingMod.RatingClassKey
 import typings.atMaterialDashUiLab.skeletonSkeletonMod.SkeletonClassKey
 import typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
@@ -42,6 +43,9 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait assertive extends js.Object
+  
+  @js.native
+  sealed trait avatar extends AvatarGroupClassKey
   
   @js.native
   sealed trait blur extends CloseReason
@@ -349,6 +353,7 @@ object atMaterialDashUiLabStrings {
   @js.native
   sealed trait root
     extends AutocompleteClassKey
+       with AvatarGroupClassKey
        with RatingClassKey
        with SkeletonClassKey
        with SpeedDialClassKey
@@ -468,6 +473,8 @@ object atMaterialDashUiLabStrings {
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
   def assertive: assertive = "assertive".asInstanceOf[assertive]
+  @scala.inline
+  def avatar: avatar = "avatar".asInstanceOf[avatar]
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   @scala.inline

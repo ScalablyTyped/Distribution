@@ -1,7 +1,9 @@
 package typings.mendixmodelsdk
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflow
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenScheduledeventsMod.StructureVersionInfo
@@ -50,7 +52,7 @@ object distGenScheduledeventsMod extends js.Object {
     - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
-    - typings.mendixmodelsdk.distGenScheduledeventsMod.scheduledevents.IScheduledEvent because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.distGenScheduledeventsMod.scheduledevents.IScheduledEvent because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @js.native
     class ScheduledEvent protected () extends Document {
       def this(
         model: AbstractModel,
@@ -59,13 +61,25 @@ object distGenScheduledeventsMod extends js.Object {
         isPartial: Boolean,
         container: IFolderBase
       ) = this()
-      var enabled: Boolean = js.native
-      var interval: Double = js.native
-      var intervalType: IntervalType = js.native
-      var microflow: IMicroflow | Null = js.native
-      val microflowQualifiedName: String | Null = js.native
-      var startDateTime: String = js.native
-      var timeZone: TimeZoneEnum = js.native
+      @JSName("model")
+      var model_FScheduledEvent: IModel = js.native
+      @JSName("containerAsFolderBase")
+      def containerAsFolderBase_MScheduledEvent(): FolderBase = js.native
+      def enabled(): Boolean = js.native
+      def enabled(newValue: Boolean): js.Any = js.native
+      def interval(): Double = js.native
+      def interval(newValue: Double): js.Any = js.native
+      def intervalType(): IntervalType = js.native
+      def intervalType(newValue: IntervalType): js.Any = js.native
+      def microflow(): IMicroflow | Null = js.native
+      def microflow(newValue: IMicroflow): js.Any = js.native
+      def microflowQualifiedName(): String | Null = js.native
+      @JSName("microflow")
+      def microflow_Any(): js.Any = js.native
+      def startDateTime(): String = js.native
+      def startDateTime(newValue: String): js.Any = js.native
+      def timeZone(): TimeZoneEnum = js.native
+      def timeZone(newValue: TimeZoneEnum): js.Any = js.native
     }
     
     @js.native

@@ -22,11 +22,12 @@ class RpcOperationElement protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsOperationInfo: OperationInfo = js.native
-  val messagePartElements: IList[RpcMessagePartElement] = js.native
   @JSName("model")
-  var model_RpcOperationElement: IModel = js.native
-  var name: String = js.native
+  var model_FRpcOperationElement: IModel = js.native
+  def containerAsOperationInfo(): OperationInfo = js.native
+  def messagePartElements(): IList[RpcMessagePartElement] = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
 }
 
 /* static members */

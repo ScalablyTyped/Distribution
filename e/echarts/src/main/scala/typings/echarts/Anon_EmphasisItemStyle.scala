@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_EmphasisItemStyle extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-graph.categories.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType
@@ -15,25 +15,25 @@ trait Anon_EmphasisItemStyle extends js.Object {
     * The style of node in this category.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-graph.categories.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * The label style of node in this category.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.label
+    * @see https://echarts.apache.org/en/option.html#series-graph.categories.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
   /**
     * Name of category, which is used to correspond with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * and the content of
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.name
+    * @see https://echarts.apache.org/en/option.html#series-graph.categories.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -55,7 +55,7 @@ trait Anon_EmphasisItemStyle extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph.categories)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph.categories)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -70,17 +70,17 @@ trait Anon_EmphasisItemStyle extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph.categories)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph.categories)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.symbol
+    * @see https://echarts.apache.org/en/option.html#series-graph.categories.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-graph.categories.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -103,7 +103,7 @@ trait Anon_EmphasisItemStyle extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-graph.categories.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -113,7 +113,7 @@ trait Anon_EmphasisItemStyle extends js.Object {
     * tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-graph.categories.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -124,7 +124,7 @@ trait Anon_EmphasisItemStyle extends js.Object {
     * is`10`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-graph.categories.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
 }

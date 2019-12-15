@@ -25,27 +25,34 @@ class CreateVariableAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FCreateVariableAction: IModel = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var initialValue: String = js.native
+  def initialValue(): String = js.native
+  def initialValue(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var initialValueModel: Expression = js.native
+  def initialValueModel(): Expression = js.native
+  def initialValueModel(newValue: Expression): js.Any = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 7.9.0: deleted
     */
-  var variableDataType: String = js.native
-  var variableName: String = js.native
+  def variableDataType(): String = js.native
+  def variableDataType(newValue: String): js.Any = js.native
+  def variableName(): String = js.native
+  def variableName(newValue: String): js.Any = js.native
   /**
     * In version 7.9.0: introduced
     */
-  var variableType: DataType = js.native
+  def variableType(): DataType = js.native
+  def variableType(newValue: DataType): js.Any = js.native
 }
 
 /* static members */

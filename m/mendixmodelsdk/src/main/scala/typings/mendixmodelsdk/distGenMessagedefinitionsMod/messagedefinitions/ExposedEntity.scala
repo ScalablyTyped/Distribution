@@ -25,6 +25,8 @@ class ExposedEntity protected () extends ExposedEntityBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FExposedEntity: IModel = js.native
 }
 
 /* static members */

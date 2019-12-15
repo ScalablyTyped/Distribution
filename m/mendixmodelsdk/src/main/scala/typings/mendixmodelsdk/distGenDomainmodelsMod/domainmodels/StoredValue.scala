@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IValueType because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IStoredValue because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.StoredValue")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IStoredValue because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.StoredValue")
 @js.native
 class StoredValue protected () extends ValueType {
   def this(
@@ -28,9 +28,12 @@ class StoredValue protected () extends ValueType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FStoredValue: IModel = js.native
   @JSName("containerAsAttribute")
-  val containerAsAttribute_StoredValue: Attribute = js.native
-  var defaultValue: String = js.native
+  def containerAsAttribute_MStoredValue(): Attribute = js.native
+  def defaultValue(): String = js.native
+  def defaultValue(newValue: String): js.Any = js.native
 }
 
 /* static members */

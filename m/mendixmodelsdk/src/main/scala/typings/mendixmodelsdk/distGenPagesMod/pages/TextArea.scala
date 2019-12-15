@@ -28,9 +28,14 @@ class TextArea protected () extends TextWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var counterMessage: Text = js.native
-  var numberOfLines: Double = js.native
-  var textTooLongMessage: Text = js.native
+  @JSName("model")
+  var model_FTextArea: IModel = js.native
+  def counterMessage(): Text = js.native
+  def counterMessage(newValue: Text): js.Any = js.native
+  def numberOfLines(): Double = js.native
+  def numberOfLines(newValue: Double): js.Any = js.native
+  def textTooLongMessage(): Text = js.native
+  def textTooLongMessage(newValue: Text): js.Any = js.native
 }
 
 /* static members */
@@ -279,6 +284,15 @@ object TextArea extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): TextArea = js.native
+  /**
+    * Creates and returns a new TextArea instance in the SDK and on the server.
+    * The new TextArea will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TextArea = js.native
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
     * The new TextArea will be automatically stored in the 'widgets' property

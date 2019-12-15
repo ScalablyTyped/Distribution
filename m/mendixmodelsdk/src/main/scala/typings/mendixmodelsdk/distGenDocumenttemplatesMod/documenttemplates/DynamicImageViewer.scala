@@ -24,11 +24,19 @@ class DynamicImageViewer protected () extends EntityWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var defaultImage: IImage | Null = js.native
-  val defaultImageQualifiedName: String | Null = js.native
-  var height: Double = js.native
-  var useThumbnail: Boolean = js.native
-  var width: Double = js.native
+  @JSName("model")
+  var model_FDynamicImageViewer: IModel = js.native
+  def defaultImage(): IImage | Null = js.native
+  def defaultImage(newValue: IImage): js.Any = js.native
+  def defaultImageQualifiedName(): String | Null = js.native
+  @JSName("defaultImage")
+  def defaultImage_Any(): js.Any = js.native
+  def height(): Double = js.native
+  def height(newValue: Double): js.Any = js.native
+  def useThumbnail(): Boolean = js.native
+  def useThumbnail(newValue: Boolean): js.Any = js.native
+  def width(): Double = js.native
+  def width(newValue: Double): js.Any = js.native
 }
 
 /* static members */

@@ -21,11 +21,12 @@ abstract class ControlBarItem protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsControlBar: ControlBar = js.native
-  val containerAsGridControlBar: GridControlBar = js.native
   @JSName("model")
-  var model_ControlBarItem: IModel = js.native
-  var name: String = js.native
+  var model_FControlBarItem: IModel = js.native
+  def containerAsControlBar(): ControlBar = js.native
+  def containerAsGridControlBar(): GridControlBar = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
 }
 
 /* static members */

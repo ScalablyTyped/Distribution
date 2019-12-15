@@ -21,9 +21,9 @@ abstract class DataSetSource protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsDataSet: DataSet = js.native
   @JSName("model")
-  var model_DataSetSource: IModel = js.native
+  var model_FDataSetSource: IModel = js.native
+  def containerAsDataSet(): DataSet = js.native
 }
 
 /* static members */

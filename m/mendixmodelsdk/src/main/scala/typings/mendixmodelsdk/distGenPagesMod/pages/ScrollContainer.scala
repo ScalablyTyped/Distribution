@@ -27,16 +27,36 @@ class ScrollContainer protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var alignment: AlignmentEnum = js.native
-  var bottom: ScrollContainerRegion | Null = js.native
-  var center: ScrollContainerRegion = js.native
-  var layoutMode: LayoutModeType = js.native
-  var left: ScrollContainerRegion | Null = js.native
-  var right: ScrollContainerRegion | Null = js.native
-  var scrollBehavior: ScrollBehavior = js.native
-  var top: ScrollContainerRegion | Null = js.native
-  var width: Double = js.native
-  var widthMode: SizeMode = js.native
+  @JSName("model")
+  var model_FScrollContainer: IModel = js.native
+  def alignment(): AlignmentEnum = js.native
+  def alignment(newValue: AlignmentEnum): js.Any = js.native
+  def bottom(): ScrollContainerRegion | Null = js.native
+  def bottom(newValue: ScrollContainerRegion): js.Any = js.native
+  @JSName("bottom")
+  def bottom_Any(): js.Any = js.native
+  def center(): ScrollContainerRegion = js.native
+  def center(newValue: ScrollContainerRegion): js.Any = js.native
+  def layoutMode(): LayoutModeType = js.native
+  def layoutMode(newValue: LayoutModeType): js.Any = js.native
+  def left(): ScrollContainerRegion | Null = js.native
+  def left(newValue: ScrollContainerRegion): js.Any = js.native
+  @JSName("left")
+  def left_Any(): js.Any = js.native
+  def right(): ScrollContainerRegion | Null = js.native
+  def right(newValue: ScrollContainerRegion): js.Any = js.native
+  @JSName("right")
+  def right_Any(): js.Any = js.native
+  def scrollBehavior(): ScrollBehavior = js.native
+  def scrollBehavior(newValue: ScrollBehavior): js.Any = js.native
+  def top(): ScrollContainerRegion | Null = js.native
+  def top(newValue: ScrollContainerRegion): js.Any = js.native
+  @JSName("top")
+  def top_Any(): js.Any = js.native
+  def width(): Double = js.native
+  def width(newValue: Double): js.Any = js.native
+  def widthMode(): SizeMode = js.native
+  def widthMode(newValue: SizeMode): js.Any = js.native
 }
 
 /* static members */
@@ -285,6 +305,15 @@ object ScrollContainer extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ScrollContainer = js.native
+  /**
+    * Creates and returns a new ScrollContainer instance in the SDK and on the server.
+    * The new ScrollContainer will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ScrollContainer = js.native
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
     * The new ScrollContainer will be automatically stored in the 'widgets' property

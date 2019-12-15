@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -19,6 +20,8 @@ abstract class ListenTargetWidget protected () extends EntityWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FListenTargetWidget: IModel = js.native
 }
 
 /* static members */

@@ -21,6 +21,8 @@ class DataViewSource protected () extends EntityPathSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDataViewSource: IModel = js.native
 }
 
 /* static members */

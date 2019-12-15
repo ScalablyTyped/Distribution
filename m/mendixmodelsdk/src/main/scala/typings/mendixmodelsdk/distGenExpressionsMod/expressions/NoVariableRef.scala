@@ -25,6 +25,8 @@ class NoVariableRef protected () extends VariableRef {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FNoVariableRef: IModel = js.native
 }
 
 /* static members */

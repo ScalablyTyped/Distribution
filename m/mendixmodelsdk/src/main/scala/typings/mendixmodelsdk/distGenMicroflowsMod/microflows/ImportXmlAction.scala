@@ -23,9 +23,14 @@ class ImportXmlAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var isValidationRequired: Boolean = js.native
-  var resultHandling: ResultHandling = js.native
-  var xmlDocumentVariableName: String = js.native
+  @JSName("model")
+  var model_FImportXmlAction: IModel = js.native
+  def isValidationRequired(): Boolean = js.native
+  def isValidationRequired(newValue: Boolean): js.Any = js.native
+  def resultHandling(): ResultHandling = js.native
+  def resultHandling(newValue: ResultHandling): js.Any = js.native
+  def xmlDocumentVariableName(): String = js.native
+  def xmlDocumentVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 trait Elements extends js.Object {
   def create(`type`: elementsType): Element = js.native
   def create(`type`: elementsType, options: ElementsOptions): Element = js.native
+  def getElement(`type`: elementsType): Element | Null = js.native
 }
 

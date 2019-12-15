@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenNavigationMod.navigation
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenNavigationMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IProject
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Project
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalUnitsMod.IAbstractUnit because Already inherited
 - typings.mendixmodelsdk.distSdkInternalUnitsMod.IModelUnit because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IProjectDocument because Already inherited
-- typings.mendixmodelsdk.distGenNavigationMod.navigation.INavigationDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined profiles */ @JSImport("mendixmodelsdk/dist/gen/navigation", "navigation.NavigationDocument")
+- typings.mendixmodelsdk.distGenNavigationMod.navigation.INavigationDocument because var conflicts: containerAsProject, id, isLoaded, model, structureTypeName, unit. Inlined profiles */ @JSImport("mendixmodelsdk/dist/gen/navigation", "navigation.NavigationDocument")
 @js.native
 class NavigationDocument protected () extends ProjectDocument {
   def this(
@@ -29,48 +30,63 @@ class NavigationDocument protected () extends ProjectDocument {
     isPartial: Boolean,
     container: IProject
   ) = this()
-  @JSName("containerAsProject")
-  val containerAsProject_NavigationDocument: Project = js.native
-  /**
-    * In version 7.2.0: deleted
-    */
-  var desktopProfile: NavigationProfile = js.native
-  /**
-    * In version 7.2.0: deleted
-    * In version 7.0.2: introduced
-    */
-  var hybridPhoneProfile: NavigationProfile = js.native
-  /**
-    * In version 7.0.0: deleted
-    * In version 6.10.4: introduced
-    */
-  var hybridPhoneProfile6: NavigationProfile = js.native
-  /**
-    * In version 7.2.0: deleted
-    * In version 7.0.2: introduced
-    */
-  var hybridTabletProfile: NavigationProfile = js.native
-  /**
-    * In version 7.0.0: deleted
-    * In version 6.10.4: introduced
-    */
-  var hybridTabletProfile6: NavigationProfile = js.native
-  /**
-    * In version 7.0.2: deleted
-    */
-  var offlinePhoneProfile: NavigationProfile = js.native
-  /**
-    * In version 7.2.0: deleted
-    */
-  var phoneProfile: NavigationProfile = js.native
+  @JSName("model")
+  var model_FNavigationDocument: IModel = js.native
   /**
     * In version 7.2.0: introduced
     */
-  val profiles: IList[INavigationProfileBase | NavigationProfileBase] = js.native
+  @JSName("profiles")
+  val profiles_FNavigationDocument: IList[INavigationProfileBase] = js.native
+  @JSName("containerAsProject")
+  def containerAsProject_MNavigationDocument(): Project = js.native
   /**
     * In version 7.2.0: deleted
     */
-  var tabletProfile: NavigationProfile = js.native
+  def desktopProfile(): NavigationProfile = js.native
+  def desktopProfile(newValue: NavigationProfile): js.Any = js.native
+  /**
+    * In version 7.2.0: deleted
+    * In version 7.0.2: introduced
+    */
+  def hybridPhoneProfile(): NavigationProfile = js.native
+  def hybridPhoneProfile(newValue: NavigationProfile): js.Any = js.native
+  /**
+    * In version 7.0.0: deleted
+    * In version 6.10.4: introduced
+    */
+  def hybridPhoneProfile6(): NavigationProfile = js.native
+  def hybridPhoneProfile6(newValue: NavigationProfile): js.Any = js.native
+  /**
+    * In version 7.2.0: deleted
+    * In version 7.0.2: introduced
+    */
+  def hybridTabletProfile(): NavigationProfile = js.native
+  def hybridTabletProfile(newValue: NavigationProfile): js.Any = js.native
+  /**
+    * In version 7.0.0: deleted
+    * In version 6.10.4: introduced
+    */
+  def hybridTabletProfile6(): NavigationProfile = js.native
+  def hybridTabletProfile6(newValue: NavigationProfile): js.Any = js.native
+  /**
+    * In version 7.0.2: deleted
+    */
+  def offlinePhoneProfile(): NavigationProfile = js.native
+  def offlinePhoneProfile(newValue: NavigationProfile): js.Any = js.native
+  /**
+    * In version 7.2.0: deleted
+    */
+  def phoneProfile(): NavigationProfile = js.native
+  def phoneProfile(newValue: NavigationProfile): js.Any = js.native
+  /**
+    * In version 7.2.0: introduced
+    */
+  def profiles(): IList[NavigationProfileBase] = js.native
+  /**
+    * In version 7.2.0: deleted
+    */
+  def tabletProfile(): NavigationProfile = js.native
+  def tabletProfile(newValue: NavigationProfile): js.Any = js.native
 }
 
 /* static members */

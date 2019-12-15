@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "poi"
-version := "12.5-dt-20190414Z-2af4bd"
+version := "12.5-dt-20190414Z-9ebefc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -27,7 +27,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-7c63f1",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-40c681",
   "org.scalablytyped" %%% "webpack" % "4.41-dt-20191116Z-19b194",
-  "org.scalablytyped" %%% "webpack-chain" % "6.0.0-b4d80f",
+  "org.scalablytyped" %%% "webpack-chain" % "6.2.0-8ca682",
   "org.scalablytyped" %%% "webpack-dev-server" % "3.9-dt-20191127Z-b3fdaf",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-155881")
 publishArtifact in packageDoc := false

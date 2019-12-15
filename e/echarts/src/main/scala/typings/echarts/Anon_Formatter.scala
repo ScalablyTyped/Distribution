@@ -45,10 +45,10 @@ trait Anon_Formatter extends js.Object {
     * where `params` is the single dataset needed
     * by formatter, which is formed as:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine.data.1.label.emphasis)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markLine.data.1.label.emphasis)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.label.emphasis.formatter
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.label.emphasis.formatter
     */
   var formatter: js.UndefOr[js.Function | String] = js.undefined
   /**
@@ -61,7 +61,7 @@ trait Anon_Formatter extends js.Object {
     *
     * @default
     * "end"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.label.emphasis.position
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.label.emphasis.position
     */
   var position: js.UndefOr[String] = js.undefined
   /**
@@ -70,7 +70,7 @@ trait Anon_Formatter extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.label.emphasis.show
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.label.emphasis.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
 }

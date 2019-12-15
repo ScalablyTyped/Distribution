@@ -31,6 +31,6 @@ class Group () extends Item {
     * `true`, the first child in the group is automatically defined as the
     * clipping mask.
     */
-  var clipped: Boolean | Null = js.native
+  var clipped: Boolean = js.native
 }
 

@@ -23,29 +23,38 @@ class ImportMappingCall protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FImportMappingCall: IModel = js.native
   /**
     * In version 7.18.0: introduced
     */
-  var commit: CommitEnum = js.native
-  val containerAsResultHandling: ResultHandling = js.native
+  def commit(): CommitEnum = js.native
+  def commit(newValue: CommitEnum): js.Any = js.native
+  def containerAsResultHandling(): ResultHandling = js.native
   /**
     * In version 7.6.0: introduced
     */
-  var contentType: ContentType = js.native
+  def contentType(): ContentType = js.native
+  def contentType(newValue: ContentType): js.Any = js.native
   /**
     * In version 7.8.0: introduced
     */
-  var forceSingleOccurrence: Boolean = js.native
-  var mapping: IImportMapping | Null = js.native
-  var mappingArgumentVariableName: String = js.native
-  val mappingQualifiedName: String | Null = js.native
-  @JSName("model")
-  var model_ImportMappingCall: IModel = js.native
+  def forceSingleOccurrence(): Boolean = js.native
+  def forceSingleOccurrence(newValue: Boolean): js.Any = js.native
+  def mapping(): IImportMapping | Null = js.native
+  def mapping(newValue: IImportMapping): js.Any = js.native
+  def mappingArgumentVariableName(): String = js.native
+  def mappingArgumentVariableName(newValue: String): js.Any = js.native
+  def mappingQualifiedName(): String | Null = js.native
+  @JSName("mapping")
+  def mapping_Any(): js.Any = js.native
   /**
     * In version 7.17.0: introduced
     */
-  var objectHandlingBackup: ObjectHandlingBackupEnum = js.native
-  var range: Range = js.native
+  def objectHandlingBackup(): ObjectHandlingBackupEnum = js.native
+  def objectHandlingBackup(newValue: ObjectHandlingBackupEnum): js.Any = js.native
+  def range(): Range = js.native
+  def range(newValue: Range): js.Any = js.native
 }
 
 /* static members */

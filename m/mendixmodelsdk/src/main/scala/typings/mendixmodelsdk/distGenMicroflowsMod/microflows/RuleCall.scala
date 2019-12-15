@@ -22,12 +22,15 @@ class RuleCall protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsRuleSplitCondition: RuleSplitCondition = js.native
   @JSName("model")
-  var model_RuleCall: IModel = js.native
-  val parameterMappings: IList[RuleCallParameterMapping] = js.native
-  var rule: IRule | Null = js.native
-  val ruleQualifiedName: String | Null = js.native
+  var model_FRuleCall: IModel = js.native
+  def containerAsRuleSplitCondition(): RuleSplitCondition = js.native
+  def parameterMappings(): IList[RuleCallParameterMapping] = js.native
+  def rule(): IRule | Null = js.native
+  def rule(newValue: IRule): js.Any = js.native
+  def ruleQualifiedName(): String | Null = js.native
+  @JSName("rule")
+  def rule_Any(): js.Any = js.native
 }
 
 /* static members */

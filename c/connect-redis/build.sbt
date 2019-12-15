@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "connect-redis"
-version := "0.0-unknown-dt-20191114Z-cd50d8"
+version := "0.0-unknown-dt-20191114Z-f4ba8c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-7b0398",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-051e33",
   "org.scalablytyped" %%% "express-session" % "1.15-dt-20191118Z-c3ba7c",
-  "org.scalablytyped" %%% "ioredis" % "4.14-dt-20191206Z-d23259",
+  "org.scalablytyped" %%% "ioredis" % "4.14-dt-20191213Z-599f66",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-e84c0f",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",

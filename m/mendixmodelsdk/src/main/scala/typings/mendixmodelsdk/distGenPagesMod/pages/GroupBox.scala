@@ -28,16 +28,25 @@ class GroupBox protected () extends ConditionallyVisibleWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: ClientTemplate | Null = js.native
-  var collapsible: GroupBoxCollapsible = js.native
+  @JSName("model")
+  var model_FGroupBox: IModel = js.native
+  def caption(): ClientTemplate | Null = js.native
+  def caption(newValue: ClientTemplate): js.Any = js.native
+  @JSName("caption")
+  def caption_Any(): js.Any = js.native
+  def collapsible(): GroupBoxCollapsible = js.native
+  def collapsible(newValue: GroupBoxCollapsible): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var widget: Widget | Null = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val widgets: IList[Widget] = js.native
+  def widgets(): IList[Widget] = js.native
 }
 
 /* static members */
@@ -286,6 +295,15 @@ object GroupBox extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): GroupBox = js.native
+  /**
+    * Creates and returns a new GroupBox instance in the SDK and on the server.
+    * The new GroupBox will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): GroupBox = js.native
   /**
     * Creates and returns a new GroupBox instance in the SDK and on the server.
     * The new GroupBox will be automatically stored in the 'widgets' property

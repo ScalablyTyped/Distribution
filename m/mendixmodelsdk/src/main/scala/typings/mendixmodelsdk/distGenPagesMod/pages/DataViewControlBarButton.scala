@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -22,7 +23,10 @@ abstract class DataViewControlBarButton protected () extends ControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var tabIndex: Double = js.native
+  @JSName("model")
+  var model_FDataViewControlBarButton: IModel = js.native
+  def tabIndex(): Double = js.native
+  def tabIndex(newValue: Double): js.Any = js.native
 }
 
 /* static members */

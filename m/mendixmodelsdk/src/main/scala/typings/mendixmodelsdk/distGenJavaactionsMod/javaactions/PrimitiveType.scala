@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenJavaactionsMod.javaactions
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenJavaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IType because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IPrimitiveType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.PrimitiveType")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IPrimitiveType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, containerAsListType, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.PrimitiveType")
 @js.native
 abstract class PrimitiveType protected () extends Type {
   def this(
@@ -28,12 +29,14 @@ abstract class PrimitiveType protected () extends Type {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FPrimitiveType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  val containerAsBasicParameterType_PrimitiveType: BasicParameterType = js.native
+  def containerAsBasicParameterType_MPrimitiveType(): BasicParameterType = js.native
   @JSName("containerAsJavaActionParameter")
-  val containerAsJavaActionParameter_PrimitiveType: JavaActionParameter = js.native
+  def containerAsJavaActionParameter_MPrimitiveType(): JavaActionParameter = js.native
   @JSName("containerAsJavaAction")
-  val containerAsJavaAction_PrimitiveType: JavaAction = js.native
+  def containerAsJavaAction_MPrimitiveType(): JavaAction = js.native
 }
 
 /* static members */

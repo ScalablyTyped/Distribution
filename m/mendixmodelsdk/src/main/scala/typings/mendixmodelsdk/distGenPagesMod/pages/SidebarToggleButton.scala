@@ -27,18 +27,23 @@ class SidebarToggleButton protected () extends Button {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FSidebarToggleButton: IModel = js.native
   /**
     * In version 6.10.0: deleted
     */
-  var initiallyOpen: Boolean = js.native
+  def initiallyOpen(): Boolean = js.native
+  def initiallyOpen(newValue: Boolean): js.Any = js.native
   /**
     * In version 6.10.0: deleted
     */
-  var mode: SidebarToggleMode = js.native
+  def mode(): SidebarToggleMode = js.native
+  def mode(newValue: SidebarToggleMode): js.Any = js.native
   /**
     * In version 6.10.0: deleted
     */
-  var region: SidebarToggleRegion = js.native
+  def region(): SidebarToggleRegion = js.native
+  def region(newValue: SidebarToggleRegion): js.Any = js.native
 }
 
 /* static members */
@@ -287,6 +292,15 @@ object SidebarToggleButton extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): SidebarToggleButton = js.native
+  /**
+    * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
+    * The new SidebarToggleButton will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): SidebarToggleButton = js.native
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
     * The new SidebarToggleButton will be automatically stored in the 'widgets' property

@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.distGenMicroflowsMod.microflows
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
@@ -16,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflowBase because Already inherited
-- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IServerSideMicroflow because var conflicts: id, isLoaded, microflowReturnType, model, returnType, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ServerSideMicroflow")
+- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IServerSideMicroflow because var conflicts: containerAsFolderBase, id, isLoaded, microflowReturnType, model, returnType, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ServerSideMicroflow")
 @js.native
 abstract class ServerSideMicroflow protected () extends MicroflowBase {
   def this(
@@ -26,7 +28,12 @@ abstract class ServerSideMicroflow protected () extends MicroflowBase {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  var applyEntityAccess: Boolean = js.native
+  @JSName("model")
+  var model_FServerSideMicroflow: IModel = js.native
+  def applyEntityAccess(): Boolean = js.native
+  def applyEntityAccess(newValue: Boolean): js.Any = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MServerSideMicroflow(): FolderBase = js.native
 }
 
 /* static members */

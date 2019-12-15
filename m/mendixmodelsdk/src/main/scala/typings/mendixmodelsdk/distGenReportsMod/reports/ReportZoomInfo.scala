@@ -23,12 +23,15 @@ class ReportZoomInfo protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsBasicReport: BasicReport = js.native
-  val mappings: IList[ReportZoomMapping] = js.native
   @JSName("model")
-  var model_ReportZoomInfo: IModel = js.native
-  var targetPage: IPage | Null = js.native
-  val targetPageQualifiedName: String | Null = js.native
+  var model_FReportZoomInfo: IModel = js.native
+  def containerAsBasicReport(): BasicReport = js.native
+  def mappings(): IList[ReportZoomMapping] = js.native
+  def targetPage(): IPage | Null = js.native
+  def targetPage(newValue: IPage): js.Any = js.native
+  def targetPageQualifiedName(): String | Null = js.native
+  @JSName("targetPage")
+  def targetPage_Any(): js.Any = js.native
 }
 
 /* static members */

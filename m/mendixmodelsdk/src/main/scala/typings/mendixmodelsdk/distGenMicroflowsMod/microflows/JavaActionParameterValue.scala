@@ -25,9 +25,9 @@ abstract class JavaActionParameterValue protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsJavaActionParameterMapping: JavaActionParameterMapping = js.native
   @JSName("model")
-  var model_JavaActionParameterValue: IModel = js.native
+  var model_FJavaActionParameterValue: IModel = js.native
+  def containerAsJavaActionParameterMapping(): JavaActionParameterMapping = js.native
 }
 
 /* static members */

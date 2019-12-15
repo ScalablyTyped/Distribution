@@ -22,15 +22,19 @@ class NavigationSource protected () extends MenuSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FNavigationSource: IModel = js.native
   /**
     * In version 7.2.0: introduced
     */
-  var navigationProfile: INavigationProfile = js.native
-  val navigationProfileQualifiedName: String = js.native
+  def navigationProfile(): INavigationProfile = js.native
+  def navigationProfile(newValue: INavigationProfile): js.Any = js.native
+  def navigationProfileQualifiedName(): String = js.native
   /**
     * In version 7.2.0: deleted
     */
-  var profileType: ProfileType = js.native
+  def profileType(): ProfileType = js.native
+  def profileType(newValue: ProfileType): js.Any = js.native
 }
 
 /* static members */

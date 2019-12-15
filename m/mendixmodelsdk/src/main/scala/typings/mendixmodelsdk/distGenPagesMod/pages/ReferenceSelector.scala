@@ -28,25 +28,34 @@ class ReferenceSelector protected () extends AssociationWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FReferenceSelector: IModel = js.native
   /**
     * In version 7.2.0: introduced
     */
-  var emptyOptionCaption: Text = js.native
-  var formattingInfo: FormattingInfo = js.native
-  var gotoPageSettings: PageSettings = js.native
-  var renderMode: ReferenceSelectorRenderModeType = js.native
+  def emptyOptionCaption(): Text = js.native
+  def emptyOptionCaption(newValue: Text): js.Any = js.native
+  def formattingInfo(): FormattingInfo = js.native
+  def formattingInfo(newValue: FormattingInfo): js.Any = js.native
+  def gotoPageSettings(): PageSettings = js.native
+  def gotoPageSettings(newValue: PageSettings): js.Any = js.native
+  def renderMode(): ReferenceSelectorRenderModeType = js.native
+  def renderMode(newValue: ReferenceSelectorRenderModeType): js.Any = js.native
   /**
     * In version 7.6.0: deleted
     */
-  var required: Boolean = js.native
+  def required(): Boolean = js.native
+  def required(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.6.0: deleted
     */
-  var requiredMessage: Text = js.native
+  def requiredMessage(): Text = js.native
+  def requiredMessage(newValue: Text): js.Any = js.native
   /**
     * In version 7.6.0: introduced
     */
-  var validation: WidgetValidation = js.native
+  def validation(): WidgetValidation = js.native
+  def validation(newValue: WidgetValidation): js.Any = js.native
 }
 
 /* static members */
@@ -295,6 +304,15 @@ object ReferenceSelector extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ReferenceSelector = js.native
+  /**
+    * Creates and returns a new ReferenceSelector instance in the SDK and on the server.
+    * The new ReferenceSelector will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReferenceSelector = js.native
   /**
     * Creates and returns a new ReferenceSelector instance in the SDK and on the server.
     * The new ReferenceSelector will be automatically stored in the 'widgets' property

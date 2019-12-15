@@ -29,51 +29,70 @@ class DataView protected () extends EntityWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDataView: IModel = js.native
   /**
     * In version 6.7.0: deleted
     */
-  var closeOnSaveOrCancel: Boolean = js.native
+  def closeOnSaveOrCancel(): Boolean = js.native
+  def closeOnSaveOrCancel(newValue: Boolean): js.Any = js.native
   /**
     * In version 6.7.0: deleted
     * In version 6.5.0: added optional
     */
-  var controlBar: DataViewControlBar | Null = js.native
-  var editable: Boolean = js.native
+  def controlBar(): DataViewControlBar | Null = js.native
+  def controlBar(newValue: DataViewControlBar): js.Any = js.native
+  @JSName("controlBar")
+  def controlBar_Any(): js.Any = js.native
+  def editable(): Boolean = js.native
+  def editable(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     * In version 6.7.0: introduced
     */
-  var footerWidget: Widget | Null = js.native
+  def footerWidget(): Widget | Null = js.native
+  def footerWidget(newValue: Widget): js.Any = js.native
+  @JSName("footerWidget")
+  def footerWidget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val footerWidgets: IList[Widget] = js.native
-  var labelWidth: Double = js.native
-  var noEntityMessage: Text = js.native
+  def footerWidgets(): IList[Widget] = js.native
+  def labelWidth(): Double = js.native
+  def labelWidth(newValue: Double): js.Any = js.native
+  def noEntityMessage(): Text = js.native
+  def noEntityMessage(newValue: Text): js.Any = js.native
   /**
     * In version 6.9.0: introduced
     */
-  var readOnlyStyle: DataViewReadOnlyStyle = js.native
+  def readOnlyStyle(): DataViewReadOnlyStyle = js.native
+  def readOnlyStyle(newValue: DataViewReadOnlyStyle): js.Any = js.native
   /**
     * In version 6.7.0: deleted
     */
-  var showControlBar: Boolean = js.native
+  def showControlBar(): Boolean = js.native
+  def showControlBar(newValue: Boolean): js.Any = js.native
   /**
     * In version 6.7.0: introduced
     */
-  var showFooter: Boolean = js.native
+  def showFooter(): Boolean = js.native
+  def showFooter(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var useSchema: Boolean = js.native
+  def useSchema(): Boolean = js.native
+  def useSchema(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var widget: Widget | Null = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val widgets: IList[Widget] = js.native
+  def widgets(): IList[Widget] = js.native
 }
 
 /* static members */
@@ -322,6 +341,15 @@ object DataView extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DataView = js.native
+  /**
+    * Creates and returns a new DataView instance in the SDK and on the server.
+    * The new DataView will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DataView = js.native
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
     * The new DataView will be automatically stored in the 'widgets' property

@@ -23,11 +23,17 @@ class GridControlBar protected () extends ControlBar {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var defaultButton: ControlBarItem | Null = js.native
+  @JSName("model")
+  var model_FGridControlBar: IModel = js.native
+  def defaultButton(): ControlBarItem | Null = js.native
+  def defaultButton(newValue: ControlBarItem): js.Any = js.native
+  @JSName("defaultButton")
+  def defaultButton_Any(): js.Any = js.native
   /**
     * In version 7.13.0: deleted
     */
-  var searchButton: GridSearchButton = js.native
+  def searchButton(): GridSearchButton = js.native
+  def searchButton(newValue: GridSearchButton): js.Any = js.native
 }
 
 /* static members */

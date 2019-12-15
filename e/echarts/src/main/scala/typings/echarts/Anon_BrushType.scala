@@ -12,7 +12,7 @@ trait Anon_BrushType extends js.Object {
     *
     * @default
     * "fill"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-effectScatter.rippleEffect.brushType
+    * @see https://echarts.apache.org/en/option.html#series-effectScatter.rippleEffect.brushType
     */
   var brushType: js.UndefOr[String] = js.undefined
   /**
@@ -21,7 +21,7 @@ trait Anon_BrushType extends js.Object {
     *
     * @default
     * 4
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-effectScatter.rippleEffect.period
+    * @see https://echarts.apache.org/en/option.html#series-effectScatter.rippleEffect.period
     */
   var period: js.UndefOr[Double] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait Anon_BrushType extends js.Object {
     *
     * @default
     * 2.5
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-effectScatter.rippleEffect.scale
+    * @see https://echarts.apache.org/en/option.html#series-effectScatter.rippleEffect.scale
     */
   var scale: js.UndefOr[Double] = js.undefined
 }

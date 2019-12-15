@@ -92,11 +92,13 @@ object distGenTextsMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
-      val containerAsSystemTextCollection: SystemTextCollection = js.native
-      var key: String = js.native
       @JSName("model")
-      var model_SystemText: IModel = js.native
-      var text: Text = js.native
+      var model_FSystemText: IModel = js.native
+      def containerAsSystemTextCollection(): SystemTextCollection = js.native
+      def key(): String = js.native
+      def key(newValue: String): js.Any = js.native
+      def text(): Text = js.native
+      def text(newValue: Text): js.Any = js.native
     }
     
     /**
@@ -108,7 +110,7 @@ object distGenTextsMod extends js.Object {
     - typings.mendixmodelsdk.distSdkInternalUnitsMod.IAbstractUnit because Already inherited
     - typings.mendixmodelsdk.distSdkInternalUnitsMod.IModelUnit because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IProjectDocument because Already inherited
-    - typings.mendixmodelsdk.distGenTextsMod.texts.ISystemTextCollection because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.distGenTextsMod.texts.ISystemTextCollection because var conflicts: containerAsProject, id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
     class SystemTextCollection protected () extends ProjectDocument {
       def this(
         model: AbstractModel,
@@ -117,9 +119,11 @@ object distGenTextsMod extends js.Object {
         isPartial: Boolean,
         container: IProject
       ) = this()
+      @JSName("model")
+      var model_FSystemTextCollection: IModel = js.native
       @JSName("containerAsProject")
-      val containerAsProject_SystemTextCollection: Project = js.native
-      val systemTexts: IList[SystemText] = js.native
+      def containerAsProject_MSystemTextCollection(): Project = js.native
+      def systemTexts(): IList[SystemText] = js.native
     }
     
     /**
@@ -135,51 +139,51 @@ object distGenTextsMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
-      val containerAsAssociationDeleteBehavior: AssociationDeleteBehavior = js.native
-      val containerAsAttributeWidget: AttributeWidget = js.native
-      val containerAsAttributeWidgetWithPlaceholder: AttributeWidgetWithPlaceholder = js.native
-      val containerAsBasicReportAggregate: BasicReportAggregate = js.native
-      val containerAsBasicReportColumn: BasicReportColumn = js.native
-      val containerAsBottomBarItem: BottomBarItem = js.native
-      val containerAsButton: Button = js.native
-      val containerAsCallNanoflowClientAction: CallNanoflowClientAction = js.native
-      val containerAsClientTemplate: ClientTemplate = js.native
-      val containerAsConfirmationInfo: ConfirmationInfo = js.native
-      val containerAsControlBarButton: ControlBarButton = js.native
-      val containerAsDataGridColumn: DataGridColumn = js.native
-      val containerAsDataView: DataView = js.native
-      val containerAsDropDown: DropDown = js.native
-      val containerAsDropDownButtonItem: DropDownButtonItem = js.native
-      val containerAsEnumerationValue: EnumerationValue = js.native
-      val containerAsGridColumn: GridColumn = js.native
-      val containerAsInputWidget: InputWidget = js.native
-      val containerAsLabel: Label = js.native
-      val containerAsLoginTextBox: LoginTextBox = js.native
-      val containerAsMasterDetailDetailRegion: MasterDetailDetailRegion = js.native
-      val containerAsMenuItem: MenuItem = js.native
-      val containerAsMicroflow: Microflow = js.native
-      val containerAsMicroflowSettings: MicroflowSettings = js.native
-      val containerAsPage: Page = js.native
-      val containerAsPageSettings: PageSettings = js.native
-      val containerAsReferenceSelector: ReferenceSelector = js.native
-      val containerAsReportButton: ReportButton = js.native
-      val containerAsReportChart: ReportChart = js.native
-      val containerAsReportChartSeries: ReportChartSeries = js.native
-      val containerAsReportDateRangeField: ReportDateRangeField = js.native
-      val containerAsReportDateRangeSelector: ReportDateRangeSelector = js.native
-      val containerAsSearchField: SearchField = js.native
-      val containerAsStaticLabel: StaticLabel = js.native
-      val containerAsSystemText: SystemText = js.native
-      val containerAsTabPage: TabPage = js.native
-      val containerAsTextArea: TextArea = js.native
-      val containerAsTextTemplate: TextTemplate = js.native
-      val containerAsTitle: Title = js.native
-      val containerAsValidationRule: ValidationRule = js.native
-      val containerAsWidgetValidation: WidgetValidation = js.native
-      val containerAsWidgetValue: WidgetValue = js.native
       @JSName("model")
-      var model_Text: IModel = js.native
-      val translations: IList[Translation] = js.native
+      var model_FText: IModel = js.native
+      def containerAsAssociationDeleteBehavior(): AssociationDeleteBehavior = js.native
+      def containerAsAttributeWidget(): AttributeWidget = js.native
+      def containerAsAttributeWidgetWithPlaceholder(): AttributeWidgetWithPlaceholder = js.native
+      def containerAsBasicReportAggregate(): BasicReportAggregate = js.native
+      def containerAsBasicReportColumn(): BasicReportColumn = js.native
+      def containerAsBottomBarItem(): BottomBarItem = js.native
+      def containerAsButton(): Button = js.native
+      def containerAsCallNanoflowClientAction(): CallNanoflowClientAction = js.native
+      def containerAsClientTemplate(): ClientTemplate = js.native
+      def containerAsConfirmationInfo(): ConfirmationInfo = js.native
+      def containerAsControlBarButton(): ControlBarButton = js.native
+      def containerAsDataGridColumn(): DataGridColumn = js.native
+      def containerAsDataView(): DataView = js.native
+      def containerAsDropDown(): DropDown = js.native
+      def containerAsDropDownButtonItem(): DropDownButtonItem = js.native
+      def containerAsEnumerationValue(): EnumerationValue = js.native
+      def containerAsGridColumn(): GridColumn = js.native
+      def containerAsInputWidget(): InputWidget = js.native
+      def containerAsLabel(): Label = js.native
+      def containerAsLoginTextBox(): LoginTextBox = js.native
+      def containerAsMasterDetailDetailRegion(): MasterDetailDetailRegion = js.native
+      def containerAsMenuItem(): MenuItem = js.native
+      def containerAsMicroflow(): Microflow = js.native
+      def containerAsMicroflowSettings(): MicroflowSettings = js.native
+      def containerAsPage(): Page = js.native
+      def containerAsPageSettings(): PageSettings = js.native
+      def containerAsReferenceSelector(): ReferenceSelector = js.native
+      def containerAsReportButton(): ReportButton = js.native
+      def containerAsReportChart(): ReportChart = js.native
+      def containerAsReportChartSeries(): ReportChartSeries = js.native
+      def containerAsReportDateRangeField(): ReportDateRangeField = js.native
+      def containerAsReportDateRangeSelector(): ReportDateRangeSelector = js.native
+      def containerAsSearchField(): SearchField = js.native
+      def containerAsStaticLabel(): StaticLabel = js.native
+      def containerAsSystemText(): SystemText = js.native
+      def containerAsTabPage(): TabPage = js.native
+      def containerAsTextArea(): TextArea = js.native
+      def containerAsTextTemplate(): TextTemplate = js.native
+      def containerAsTitle(): Title = js.native
+      def containerAsValidationRule(): ValidationRule = js.native
+      def containerAsWidgetValidation(): WidgetValidation = js.native
+      def containerAsWidgetValue(): WidgetValue = js.native
+      def translations(): IList[Translation] = js.native
     }
     
     @js.native
@@ -192,11 +196,13 @@ object distGenTextsMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
-      val containerAsText: Text = js.native
-      var languageCode: String = js.native
       @JSName("model")
-      var model_Translation: IModel = js.native
-      var text: String = js.native
+      var model_FTranslation: IModel = js.native
+      def containerAsText(): Text = js.native
+      def languageCode(): String = js.native
+      def languageCode(newValue: String): js.Any = js.native
+      def text(): String = js.native
+      def text(newValue: String): js.Any = js.native
     }
     
     /* static members */

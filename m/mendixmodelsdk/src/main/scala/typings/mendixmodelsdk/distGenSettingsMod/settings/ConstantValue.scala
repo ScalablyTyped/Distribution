@@ -22,12 +22,14 @@ class ConstantValue protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var constant: IConstant = js.native
-  val constantQualifiedName: String = js.native
-  val containerAsConfiguration: Configuration = js.native
   @JSName("model")
-  var model_ConstantValue: IModel = js.native
-  var value: String = js.native
+  var model_FConstantValue: IModel = js.native
+  def constant(): IConstant = js.native
+  def constant(newValue: IConstant): js.Any = js.native
+  def constantQualifiedName(): String = js.native
+  def containerAsConfiguration(): Configuration = js.native
+  def value(): String = js.native
+  def value(newValue: String): js.Any = js.native
 }
 
 /* static members */

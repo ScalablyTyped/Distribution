@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenTextsMod.texts.Text
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -20,14 +21,22 @@ abstract class InputWidget protected () extends ConditionallyEditableWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FInputWidget: IModel = js.native
   /**
     * In version 7.18.0: deleted
     */
-  var label: Text | Null = js.native
+  def label(): Text | Null = js.native
+  def label(newValue: Text): js.Any = js.native
   /**
     * In version 7.18.0: introduced
     */
-  var labelTemplate: ClientTemplate | Null = js.native
+  def labelTemplate(): ClientTemplate | Null = js.native
+  def labelTemplate(newValue: ClientTemplate): js.Any = js.native
+  @JSName("labelTemplate")
+  def labelTemplate_Any(): js.Any = js.native
+  @JSName("label")
+  def label_Any(): js.Any = js.native
 }
 
 /* static members */

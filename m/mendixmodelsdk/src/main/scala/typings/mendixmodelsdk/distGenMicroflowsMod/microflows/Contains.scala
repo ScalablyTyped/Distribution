@@ -20,6 +20,8 @@ class Contains protected () extends BinaryListOperation {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FContains: IModel = js.native
 }
 
 /* static members */

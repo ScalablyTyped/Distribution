@@ -1,6 +1,6 @@
 package typings.grommet.componentsDistributionMod
 
-import typings.grommet.Anon_ColorValue
+import typings.grommet.Anon_ColorValueAnonDark
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.BasisType
@@ -20,13 +20,13 @@ trait DistributionProps extends js.Object {
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
-  var values: js.Array[Anon_ColorValue]
+  var values: js.Array[Anon_ColorValueAnonDark]
 }
 
 object DistributionProps {
   @scala.inline
   def apply(
-    values: js.Array[Anon_ColorValue],
+    values: js.Array[Anon_ColorValueAnonDark],
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     basis: BasisType = null,

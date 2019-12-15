@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IType because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IPrimitiveType because Already inherited
-- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IDateTimeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.DateTimeType")
+- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IDateTimeType because var conflicts: containerAsBasicParameterType, containerAsCodeAction, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.DateTimeType")
 @js.native
 class DateTimeType protected () extends PrimitiveType {
   def this(
@@ -29,6 +29,12 @@ class DateTimeType protected () extends PrimitiveType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDateTimeType: IModel = js.native
+  @JSName("containerAsBasicParameterType")
+  def containerAsBasicParameterType_MDateTimeType(): BasicParameterType = js.native
+  @JSName("containerAsCodeAction")
+  def containerAsCodeAction_MDateTimeType(): CodeAction = js.native
 }
 
 /* static members */

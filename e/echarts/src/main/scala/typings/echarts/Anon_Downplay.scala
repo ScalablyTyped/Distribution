@@ -7,33 +7,33 @@ import scala.scalajs.js.annotation._
 trait Anon_Downplay extends js.Object {
   /**
     * Item style when mouse is hovering unrelated items. See
-    * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
+    * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.downplay
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.downplay
     */
   var downplay: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Item style when mouse is hovering. See
-    * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
+    * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
-    * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
+    * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.highlight
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.highlight
     */
   var highlight: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
@@ -42,47 +42,47 @@ trait Anon_Downplay extends js.Object {
     * Style of Sunburst sectors.
     *
     * Style can be set in
-    * [series.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.itemStyle)
+    * [series.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.itemStyle)
     * for sectors of this series, or
-    * [series.levels.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.itemStyle)
+    * [series.levels.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.levels.itemStyle)
     * for the whole level, or
-    * [series.data.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.itemStyle)
+    * [series.data.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.data.itemStyle)
     * for single sector. If
-    * [series.data.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.itemStyle)
+    * [series.data.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.data.itemStyle)
     * is defined, it will cover the setting of
-    * [series.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.itemStyle)
+    * [series.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.itemStyle)
     * and
-    * [series.levels.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.itemStyle)
+    * [series.levels.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.levels.itemStyle)
     * .
     *
     * **Priority:
-    * [series.data.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.itemStyle)
+    * [series.data.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.data.itemStyle)
     * >
-    * [series.levels.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.itemStyle)
+    * [series.levels.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.levels.itemStyle)
     * >
-    * [series.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.itemStyle)
+    * [series.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.itemStyle)
     * .**
     *
     * In ECharts, _emphasis_ is for styles when mouse hovers.
     * For Sunburst charts, there are two extra states: _highlight_
     * for highlighting items that relates to the emphasized one,
     * and _downplay_ for others when emphasizing an item. See
-    * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
+    * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
     * **Priority:
-    * [series.data.label](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.label)
+    * [series.data.label](https://echarts.apache.org/en/option.html#series-sunburst.data.label)
     * >
-    * [series.levels.label](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.label)
+    * [series.levels.label](https://echarts.apache.org/en/option.html#series-sunburst.levels.label)
     * >
-    * [series.label](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.label)
+    * [series.label](https://echarts.apache.org/en/option.html#series-sunburst.label)
     * .**
     *
     * Text label of , to explain some data information about graphic
@@ -93,7 +93,7 @@ trait Anon_Downplay extends js.Object {
     * and has `emphasis` as `itemStyle` does.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.label
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
 }

@@ -25,10 +25,10 @@ abstract class DataSource protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsEntityWidget: EntityWidget = js.native
-  val containerAsWidgetValue: WidgetValue = js.native
   @JSName("model")
-  var model_DataSource: IModel = js.native
+  var model_FDataSource: IModel = js.native
+  def containerAsEntityWidget(): EntityWidget = js.native
+  def containerAsWidgetValue(): WidgetValue = js.native
 }
 
 /* static members */

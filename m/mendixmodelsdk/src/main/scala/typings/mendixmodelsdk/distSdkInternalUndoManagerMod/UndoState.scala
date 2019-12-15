@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class UndoState protected () extends js.Object {
   def this(deltaManager: IDeltaManager) = this()
-  val canRedo: Boolean = js.native
-  val canUndo: Boolean = js.native
   var deltaManager: js.Any = js.native
+  def canRedo(): Boolean = js.native
+  def canUndo(): Boolean = js.native
   def clear(): Unit = js.native
   def redo(): Unit = js.native
   def undo(): Unit = js.native

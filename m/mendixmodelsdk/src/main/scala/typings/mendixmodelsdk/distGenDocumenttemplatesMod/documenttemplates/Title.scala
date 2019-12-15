@@ -24,8 +24,12 @@ class Title protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: Text = js.native
-  var style: Style = js.native
+  @JSName("model")
+  var model_FTitle: IModel = js.native
+  def caption(): Text = js.native
+  def caption(newValue: Text): js.Any = js.native
+  def style(): Style = js.native
+  def style(newValue: Style): js.Any = js.native
 }
 
 /* static members */

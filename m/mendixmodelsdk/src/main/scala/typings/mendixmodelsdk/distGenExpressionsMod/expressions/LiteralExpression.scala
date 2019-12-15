@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenExpressionsMod.expressions
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenExpressionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -24,6 +25,8 @@ abstract class LiteralExpression protected () extends Expression {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FLiteralExpression: IModel = js.native
 }
 
 /* static members */

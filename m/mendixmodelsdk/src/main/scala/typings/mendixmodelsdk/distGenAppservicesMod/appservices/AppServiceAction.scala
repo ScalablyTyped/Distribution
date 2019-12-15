@@ -31,20 +31,14 @@ class AppServiceAction protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  /**
-    * In version 7.9.0: introduced
-    */
-  var actionReturnType: DataType = js.native
-  var caption: String = js.native
-  val containerAsConsumedAppService: ConsumedAppService | IConsumedAppService = js.native
-  var description: String = js.native
-  var image: String = js.native
-  var microflow: IMicroflow | Null = js.native
-  val microflowQualifiedName: String | Null = js.native
+  @JSName("containerAsConsumedAppService")
+  val containerAsConsumedAppService_FAppServiceAction: IConsumedAppService = js.native
   @JSName("model")
-  var model_AppServiceAction: IModel = js.native
-  var name: String = js.native
-  val parameters: IList[AppServiceActionParameter | IAppServiceActionParameter] = js.native
+  var model_FAppServiceAction: IModel = js.native
+  @JSName("name")
+  val name_FAppServiceAction: String = js.native
+  @JSName("parameters")
+  val parameters_FAppServiceAction: IList[IAppServiceActionParameter] = js.native
   /**
     * Returns the qualified name of this element, or
     * null if this element is not a part of the model,
@@ -54,12 +48,36 @@ class AppServiceAction protected ()
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
   /**
+    * In version 7.9.0: introduced
+    */
+  def actionReturnType(): DataType = js.native
+  def actionReturnType(newValue: DataType): js.Any = js.native
+  def caption(): String = js.native
+  def caption(newValue: String): js.Any = js.native
+  def containerAsConsumedAppService(): ConsumedAppService = js.native
+  def description(): String = js.native
+  def description(newValue: String): js.Any = js.native
+  def image(): String = js.native
+  def image(newValue: String): js.Any = js.native
+  def microflow(): IMicroflow | Null = js.native
+  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflowQualifiedName(): String | Null = js.native
+  @JSName("microflow")
+  def microflow_Any(): js.Any = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  def parameters(): IList[AppServiceActionParameter] = js.native
+  @JSName("qualifiedName")
+  def qualifiedName_MAppServiceAction(): String | Null = js.native
+  /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 7.9.0: deleted
     */
-  var returnType: String = js.native
-  var returnTypeCanBeEmpty: Boolean = js.native
+  def returnType(): String = js.native
+  def returnType(newValue: String): js.Any = js.native
+  def returnTypeCanBeEmpty(): Boolean = js.native
+  def returnTypeCanBeEmpty(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

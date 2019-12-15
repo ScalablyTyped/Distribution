@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object coreTypesMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.apolloDashClient.Anon_MutationResult
+  import typings.apolloDashClient.coreLocalStateMod.Resolver
   import typings.apolloDashClient.dataQueriesMod.QueryStoreValue
   import typings.std.Record
 
@@ -23,15 +24,5 @@ package object coreTypesMod {
     /* forceResolvers */ js.UndefOr[Boolean], 
     Unit
   ]
-  type Resolvers = StringDictionary[
-    StringDictionary[
-      js.Function4[
-        /* rootValue */ js.UndefOr[js.Any], 
-        /* args */ js.UndefOr[js.Any], 
-        /* context */ js.UndefOr[js.Any], 
-        /* info */ js.UndefOr[js.Any], 
-        js.Any
-      ]
-    ]
-  ]
+  type Resolvers = StringDictionary[StringDictionary[Resolver]]
 }

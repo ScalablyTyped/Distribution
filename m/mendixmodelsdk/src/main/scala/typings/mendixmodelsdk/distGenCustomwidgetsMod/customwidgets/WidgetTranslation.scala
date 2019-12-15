@@ -21,11 +21,13 @@ class WidgetTranslation protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsWidgetValueType: WidgetValueType = js.native
-  var languageCode: String = js.native
   @JSName("model")
-  var model_WidgetTranslation: IModel = js.native
-  var text: String = js.native
+  var model_FWidgetTranslation: IModel = js.native
+  def containerAsWidgetValueType(): WidgetValueType = js.native
+  def languageCode(): String = js.native
+  def languageCode(newValue: String): js.Any = js.native
+  def text(): String = js.native
+  def text(newValue: String): js.Any = js.native
 }
 
 /* static members */

@@ -1,7 +1,9 @@
 package typings.mendixmodelsdk.distGenMessagedefinitionsMod.messagedefinitions
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMessagedefinitionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -22,7 +24,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.distGenMessagedefinitionsMod.messagedefinitions.IMessageDefinitionCollection because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined messageDefinitions */ @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.MessageDefinitionCollection")
+- typings.mendixmodelsdk.distGenMessagedefinitionsMod.messagedefinitions.IMessageDefinitionCollection because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined messageDefinitions */ @JSImport("mendixmodelsdk/dist/gen/messagedefinitions", "messagedefinitions.MessageDefinitionCollection")
 @js.native
 class MessageDefinitionCollection protected () extends Document {
   def this(
@@ -32,7 +34,13 @@ class MessageDefinitionCollection protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  val messageDefinitions: IList[IMessageDefinition | MessageDefinition] = js.native
+  @JSName("messageDefinitions")
+  val messageDefinitions_FMessageDefinitionCollection: IList[IMessageDefinition] = js.native
+  @JSName("model")
+  var model_FMessageDefinitionCollection: IModel = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MMessageDefinitionCollection(): FolderBase = js.native
+  def messageDefinitions(): IList[MessageDefinition] = js.native
 }
 
 /* static members */

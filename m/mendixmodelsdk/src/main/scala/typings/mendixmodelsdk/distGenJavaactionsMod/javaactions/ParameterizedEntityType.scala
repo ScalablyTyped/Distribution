@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IType because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IEntityType because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IParameterizedEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined typeParameter */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ParameterizedEntityType")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IParameterizedEntityType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, containerAsListType, id, isLoaded, model, structureTypeName, unit. Inlined typeParameter */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ParameterizedEntityType")
 @js.native
 class ParameterizedEntityType protected () extends EntityType {
   def this(
@@ -30,7 +30,23 @@ class ParameterizedEntityType protected () extends EntityType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var typeParameter: ITypeParameter | TypeParameter = js.native
+  @JSName("model")
+  var model_FParameterizedEntityType: IModel = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("typeParameter")
+  val typeParameter_FParameterizedEntityType: ITypeParameter = js.native
+  @JSName("containerAsBasicParameterType")
+  def containerAsBasicParameterType_MParameterizedEntityType(): BasicParameterType = js.native
+  @JSName("containerAsJavaActionParameter")
+  def containerAsJavaActionParameter_MParameterizedEntityType(): JavaActionParameter = js.native
+  @JSName("containerAsJavaAction")
+  def containerAsJavaAction_MParameterizedEntityType(): JavaAction = js.native
+  @JSName("containerAsListType")
+  def containerAsListType_MParameterizedEntityType(): ListType = js.native
+  def typeParameter(): TypeParameter = js.native
+  def typeParameter(newValue: TypeParameter): js.Any = js.native
 }
 
 /* static members */

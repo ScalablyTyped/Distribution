@@ -24,21 +24,30 @@ class ExportXmlAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var isValidationRequired: Boolean = js.native
+  @JSName("model")
+  var model_FExportXmlAction: IModel = js.native
+  def isValidationRequired(): Boolean = js.native
+  def isValidationRequired(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.6.0: deleted
     */
-  var mapping: IExportMapping | Null = js.native
+  def mapping(): IExportMapping | Null = js.native
+  def mapping(newValue: IExportMapping): js.Any = js.native
   /**
     * In version 7.6.0: deleted
     */
-  var mappingArgumentVariableName: String = js.native
-  val mappingQualifiedName: String | Null = js.native
-  var outputMethod: OutputMethod = js.native
+  def mappingArgumentVariableName(): String = js.native
+  def mappingArgumentVariableName(newValue: String): js.Any = js.native
+  def mappingQualifiedName(): String | Null = js.native
+  @JSName("mapping")
+  def mapping_Any(): js.Any = js.native
+  def outputMethod(): OutputMethod = js.native
+  def outputMethod(newValue: OutputMethod): js.Any = js.native
   /**
     * In version 7.6.0: introduced
     */
-  var resultHandling: MappingRequestHandling = js.native
+  def resultHandling(): MappingRequestHandling = js.native
+  def resultHandling(newValue: MappingRequestHandling): js.Any = js.native
 }
 
 /* static members */

@@ -17,6 +17,7 @@ import typings.grommet.Anon_BorderContent
 import typings.grommet.Anon_BorderDisabled
 import typings.grommet.Anon_BorderHeading
 import typings.grommet.Anon_Captions
+import typings.grommet.Anon_ColorColors
 import typings.grommet.Anon_ColorContinent
 import typings.grommet.Anon_ColorExtend
 import typings.grommet.Anon_ColorExtendColorType
@@ -44,7 +45,7 @@ trait ThemeType extends js.Object {
   var button: js.UndefOr[Anon_BorderDisabled] = js.undefined
   var calendar: js.UndefOr[Anon_Heading] = js.undefined
   var carousel: js.UndefOr[Anon_Animation] = js.undefined
-  var chart: js.UndefOr[Anon_ExtendExtendType] = js.undefined
+  var chart: js.UndefOr[Anon_ColorExtendColorType] = js.undefined
   var checkBox: js.UndefOr[Anon_BorderCheck] = js.undefined
   var clock: js.UndefOr[Anon_Analog] = js.undefined
   var collapsible: js.UndefOr[Anon_Baseline] = js.undefined
@@ -60,7 +61,7 @@ trait ThemeType extends js.Object {
   var list: js.UndefOr[Anon_ExtendItem] = js.undefined
   var maskedInput: js.UndefOr[Anon_ExtendExtendType] = js.undefined
   var menu: js.UndefOr[Anon_BackgroundExtend] = js.undefined
-  var meter: js.UndefOr[Anon_ColorExtendColorType] = js.undefined
+  var meter: js.UndefOr[Anon_ColorColors] = js.undefined
   var paragraph: js.UndefOr[Anon_ExtendLarge] = js.undefined
   var radioButton: js.UndefOr[Anon_BorderCheckGap] = js.undefined
   var rangeInput: js.UndefOr[Anon_Thumb] = js.undefined
@@ -85,7 +86,7 @@ object ThemeType {
     button: Anon_BorderDisabled = null,
     calendar: Anon_Heading = null,
     carousel: Anon_Animation = null,
-    chart: Anon_ExtendExtendType = null,
+    chart: Anon_ColorExtendColorType = null,
     checkBox: Anon_BorderCheck = null,
     clock: Anon_Analog = null,
     collapsible: Anon_Baseline = null,
@@ -101,7 +102,7 @@ object ThemeType {
     list: Anon_ExtendItem = null,
     maskedInput: Anon_ExtendExtendType = null,
     menu: Anon_BackgroundExtend = null,
-    meter: Anon_ColorExtendColorType = null,
+    meter: Anon_ColorColors = null,
     paragraph: Anon_ExtendLarge = null,
     radioButton: Anon_BorderCheckGap = null,
     rangeInput: Anon_Thumb = null,

@@ -12,37 +12,37 @@ trait DataObject extends js.Object {
     * Emphasis style of a candle box.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColorBorderColor0] = js.undefined
   /**
     * Style of a candle box.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderColor0] = js.undefined
   /**
     * Name of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.name
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * Value of data item.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick.data)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.value
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.value
     */
   var value: js.UndefOr[js.Array[_]] = js.undefined
 }

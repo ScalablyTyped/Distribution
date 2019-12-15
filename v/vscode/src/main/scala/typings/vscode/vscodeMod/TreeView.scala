@@ -18,6 +18,11 @@ trait TreeView[T] extends Disposable {
   		 */
   val selection: js.Array[T] = js.native
   /**
+  		 * The tree view title is initially taken from the extension package.json
+  		 * Changes to the title property will be properly reflected in the UI in the title of the view.
+  		 */
+  var title: js.UndefOr[String] = js.native
+  /**
   		 * `true` if the [tree view](#TreeView) is visible otherwise `false`.
   		 */
   val visible: Boolean = js.native

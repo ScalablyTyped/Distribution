@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class WriteBatch protected () extends js.Object {
   def commit(): js.Promise[Unit] = js.native
-  def delete(documentRef: DocumentReference): WriteBatch = js.native
-  def set(documentRef: DocumentReference, data: DocumentData): WriteBatch = js.native
-  def set(documentRef: DocumentReference, data: DocumentData, options: SetOptions): WriteBatch = js.native
-  def update(documentRef: DocumentReference, data: UpdateData): WriteBatch = js.native
-  def update(documentRef: DocumentReference, field: String, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
-  def update(documentRef: DocumentReference, field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
+  def delete(documentRef: DocumentReference[_]): WriteBatch = js.native
+  def set[T](documentRef: DocumentReference[T], data: T): WriteBatch = js.native
+  def set[T](documentRef: DocumentReference[T], data: T, options: SetOptions): WriteBatch = js.native
+  def update(documentRef: DocumentReference[_], data: UpdateData): WriteBatch = js.native
+  def update(documentRef: DocumentReference[_], field: String, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
+  def update(documentRef: DocumentReference[_], field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
 }
 

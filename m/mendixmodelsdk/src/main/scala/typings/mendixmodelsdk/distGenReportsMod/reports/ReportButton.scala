@@ -49,7 +49,10 @@ class ReportButton protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: Text = js.native
+  @JSName("model")
+  var model_FReportButton: IModel = js.native
+  def caption(): Text = js.native
+  def caption(newValue: Text): js.Any = js.native
 }
 
 /* static members */
@@ -298,6 +301,15 @@ object ReportButton extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ReportButton = js.native
+  /**
+    * Creates and returns a new ReportButton instance in the SDK and on the server.
+    * The new ReportButton will be automatically stored in the 'sidebarWidgets' property
+    * of the parent pages.NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReportButton = js.native
   /**
     * Creates and returns a new ReportButton instance in the SDK and on the server.
     * The new ReportButton will be automatically stored in the 'widgets' property

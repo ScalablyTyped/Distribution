@@ -7,6 +7,7 @@ import typings.grommet.Anon_ArgsExpand
 import typings.grommet.Anon_Background
 import typings.grommet.Anon_Body
 import typings.grommet.Anon_BodyBottom
+import typings.grommet.Anon_Datum
 import typings.grommet.grommetStrings.all
 import typings.grommet.grommetStrings.bottom
 import typings.grommet.grommetStrings.horizontal
@@ -25,6 +26,9 @@ import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
+import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,6 +45,12 @@ trait DataTableProps extends js.Object {
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var groupBy: js.UndefOr[String | Anon_ArgsExpand] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
+  var onClickRow: js.UndefOr[
+    js.Function1[
+      (/* event */ Anon_Datum) | (/* event */ MouseEvent[Element, NativeMouseEvent]), 
+      Unit
+    ]
+  ] = js.undefined
   var onMore: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onSearch: js.UndefOr[js.Function1[/* search */ String, Unit]] = js.undefined
   var pad: js.UndefOr[
@@ -67,6 +77,7 @@ object DataTableProps {
     gridArea: GridAreaType = null,
     groupBy: String | Anon_ArgsExpand = null,
     margin: MarginType = null,
+    onClickRow: (/* event */ Anon_Datum) | (/* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
     onMore: /* repeated */ js.Any => _ = null,
     onSearch: /* search */ String => Unit = null,
     pad: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_BodyBottom | String = null,
@@ -88,6 +99,7 @@ object DataTableProps {
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (onClickRow != null) __obj.updateDynamic("onClickRow")(js.Any.fromFunction1(onClickRow))
     if (onMore != null) __obj.updateDynamic("onMore")(js.Any.fromFunction1(onMore))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
     if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])

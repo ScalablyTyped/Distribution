@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 object apolloDashClientStrings {
   @js.native
-  sealed trait `2DOT6DOT4` extends js.Object
+  sealed trait `2DOT6DOT8` extends js.Object
   
   @js.native
   sealed trait all extends ErrorPolicy
@@ -49,7 +49,7 @@ object apolloDashClientStrings {
        with WatchQueryFetchPolicy
   
   @scala.inline
-  def `2DOT6DOT4`: `2DOT6DOT4` = "2.6.4".asInstanceOf[`2DOT6DOT4`]
+  def `2DOT6DOT8`: `2DOT6DOT8` = "2.6.8".asInstanceOf[`2DOT6DOT8`]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline

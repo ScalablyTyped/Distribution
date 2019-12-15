@@ -2,6 +2,7 @@ package typings.grommet.componentsChartMod
 
 import typings.grommet.Anon_Args
 import typings.grommet.Anon_Color
+import typings.grommet.Anon_ColorValue
 import typings.grommet.Anon_Full
 import typings.grommet.grommetStrings.area
 import typings.grommet.grommetStrings.bar
@@ -11,6 +12,7 @@ import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.line
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.none
+import typings.grommet.grommetStrings.point
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
@@ -28,7 +30,7 @@ trait ChartProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var bounds: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
-  var color: js.UndefOr[String | Anon_Color] = js.undefined
+  var color: js.UndefOr[String | Anon_Color | js.Array[Anon_ColorValue]] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
@@ -38,7 +40,7 @@ trait ChartProps extends js.Object {
   var round: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | full | Anon_Full | String] = js.undefined
   var thickness: js.UndefOr[hair | xsmall | small | medium | large | xlarge | none | String] = js.undefined
-  var `type`: js.UndefOr[bar | line | area] = js.undefined
+  var `type`: js.UndefOr[bar | line | area | point] = js.undefined
   var values: js.Array[Double | js.Array[Double] | Anon_Args]
 }
 
@@ -49,7 +51,7 @@ object ChartProps {
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     bounds: js.Array[js.Array[Double]] = null,
-    color: String | Anon_Color = null,
+    color: String | Anon_Color | js.Array[Anon_ColorValue] = null,
     gap: GapType = null,
     gridArea: GridAreaType = null,
     margin: MarginType = null,
@@ -59,7 +61,7 @@ object ChartProps {
     round: js.UndefOr[Boolean] = js.undefined,
     size: xxsmall | xsmall | small | medium | large | xlarge | full | Anon_Full | String = null,
     thickness: hair | xsmall | small | medium | large | xlarge | none | String = null,
-    `type`: bar | line | area = null
+    `type`: bar | line | area | point = null
   ): ChartProps = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])

@@ -1,7 +1,9 @@
 package typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -20,7 +22,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates.IDocumentTemplate because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DocumentTemplate")
+- typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates.IDocumentTemplate because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DocumentTemplate")
 @js.native
 class DocumentTemplate protected () extends Document {
   def this(
@@ -30,19 +32,39 @@ class DocumentTemplate protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  var canvasWidth: Double = js.native
-  var footer: Footer | Null = js.native
-  var header: Header | Null = js.native
-  var marginBottomInInch: Double = js.native
-  var marginLeftInInch: Double = js.native
-  var marginRightInInch: Double = js.native
-  var marginTopInInch: Double = js.native
-  var pageHeight: String = js.native
-  var pageWidth: String = js.native
-  var ppi: Double = js.native
-  var showHeaderAndFooterOnFirstPage: Boolean = js.native
-  var style: Style = js.native
-  val toplevels: IList[Widget] = js.native
+  @JSName("model")
+  var model_FDocumentTemplate: IModel = js.native
+  def canvasWidth(): Double = js.native
+  def canvasWidth(newValue: Double): js.Any = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MDocumentTemplate(): FolderBase = js.native
+  def footer(): Footer | Null = js.native
+  def footer(newValue: Footer): js.Any = js.native
+  @JSName("footer")
+  def footer_Any(): js.Any = js.native
+  def header(): Header | Null = js.native
+  def header(newValue: Header): js.Any = js.native
+  @JSName("header")
+  def header_Any(): js.Any = js.native
+  def marginBottomInInch(): Double = js.native
+  def marginBottomInInch(newValue: Double): js.Any = js.native
+  def marginLeftInInch(): Double = js.native
+  def marginLeftInInch(newValue: Double): js.Any = js.native
+  def marginRightInInch(): Double = js.native
+  def marginRightInInch(newValue: Double): js.Any = js.native
+  def marginTopInInch(): Double = js.native
+  def marginTopInInch(newValue: Double): js.Any = js.native
+  def pageHeight(): String = js.native
+  def pageHeight(newValue: String): js.Any = js.native
+  def pageWidth(): String = js.native
+  def pageWidth(newValue: String): js.Any = js.native
+  def ppi(): Double = js.native
+  def ppi(newValue: Double): js.Any = js.native
+  def showHeaderAndFooterOnFirstPage(): Boolean = js.native
+  def showHeaderAndFooterOnFirstPage(newValue: Boolean): js.Any = js.native
+  def style(): Style = js.native
+  def style(newValue: Style): js.Any = js.native
+  def toplevels(): IList[Widget] = js.native
 }
 
 /* static members */

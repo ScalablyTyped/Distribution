@@ -10,6 +10,7 @@ import typings.mendixmodelsdk.distGenMappingsMod.mappings.MappingDocument
 import typings.mendixmodelsdk.distGenMappingsMod.mappings.ObjectMappingElement
 import typings.mendixmodelsdk.distGenMappingsMod.mappings.ValueMappingElement
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.NullValueOption
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -43,7 +44,7 @@ object distGenExportmappingsMod extends js.Object {
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
     - typings.mendixmodelsdk.distGenMappingsMod.mappings.IMappingDocument because Already inherited
-    - typings.mendixmodelsdk.distGenExportmappingsMod.exportmappings.IExportMapping because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.distGenExportmappingsMod.exportmappings.IExportMapping because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
     class ExportMapping protected () extends MappingDocument {
       def this(
         model: AbstractModel,
@@ -52,16 +53,24 @@ object distGenExportmappingsMod extends js.Object {
         isPartial: Boolean,
         container: IFolderBase
       ) = this()
-      var isHeader: Boolean = js.native
+      @JSName("model")
+      var model_FExportMapping: IModel = js.native
+      @JSName("containerAsFolderBase")
+      def containerAsFolderBase_MExportMapping(): FolderBase = js.native
+      def isHeader(): Boolean = js.native
+      def isHeader(newValue: Boolean): js.Any = js.native
       /**
         * In version 6.7.0: introduced
         */
-      var nullValueOption: NullValueOption = js.native
-      var parameterName: String = js.native
+      def nullValueOption(): NullValueOption = js.native
+      def nullValueOption(newValue: NullValueOption): js.Any = js.native
+      def parameterName(): String = js.native
+      def parameterName(newValue: String): js.Any = js.native
       /**
         * In version 6.1.0: deleted
         */
-      var parameterTypeName: String = js.native
+      def parameterTypeName(): String = js.native
+      def parameterTypeName(newValue: String): js.Any = js.native
     }
     
     /**
@@ -77,6 +86,8 @@ object distGenExportmappingsMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
+      @JSName("model")
+      var model_FExportObjectMappingElement: IModel = js.native
     }
     
     /**
@@ -92,6 +103,8 @@ object distGenExportmappingsMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
+      @JSName("model")
+      var model_FExportValueMappingElement: IModel = js.native
     }
     
     /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__rest
 
-Typings are for version 16.35.0
+Typings are for version 16.35.2
 
 ## Library description:
 GitHub REST API client for Node.js

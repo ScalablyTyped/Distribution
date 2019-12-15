@@ -21,9 +21,9 @@ abstract class DataSetParameterConstraint protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsDataSetParameter: DataSetParameter = js.native
   @JSName("model")
-  var model_DataSetParameterConstraint: IModel = js.native
+  var model_FDataSetParameterConstraint: IModel = js.native
+  def containerAsDataSetParameter(): DataSetParameter = js.native
 }
 
 /* static members */

@@ -43,8 +43,13 @@ object distGenNanoflowsMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
-      var nanoflow: INanoflow | Null = js.native
-      val nanoflowQualifiedName: String | Null = js.native
+      @JSName("model")
+      var model_FNanoflowParameterValue: IModel = js.native
+      def nanoflow(): INanoflow | Null = js.native
+      def nanoflow(newValue: INanoflow): js.Any = js.native
+      def nanoflowQualifiedName(): String | Null = js.native
+      @JSName("nanoflow")
+      def nanoflow_Any(): js.Any = js.native
     }
     
     /* static members */

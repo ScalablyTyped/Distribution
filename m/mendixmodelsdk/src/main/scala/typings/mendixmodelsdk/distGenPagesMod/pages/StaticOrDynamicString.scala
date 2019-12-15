@@ -22,22 +22,28 @@ class StaticOrDynamicString protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FStaticOrDynamicString: IModel = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
-  var attribute: String = js.native
+  def attribute(): String = js.native
+  def attribute(newValue: String): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
-  var attributeRef: AttributeRef | Null = js.native
-  val containerAsLinkButton: LinkButton = js.native
-  val containerAsOpenLinkClientAction: OpenLinkClientAction = js.native
-  var isDynamic: Boolean = js.native
-  @JSName("model")
-  var model_StaticOrDynamicString: IModel = js.native
-  var value: String = js.native
+  def attributeRef(): AttributeRef | Null = js.native
+  def attributeRef(newValue: AttributeRef): js.Any = js.native
+  @JSName("attributeRef")
+  def attributeRef_Any(): js.Any = js.native
+  def containerAsLinkButton(): LinkButton = js.native
+  def containerAsOpenLinkClientAction(): OpenLinkClientAction = js.native
+  def isDynamic(): Boolean = js.native
+  def isDynamic(newValue: Boolean): js.Any = js.native
+  def value(): String = js.native
+  def value(newValue: String): js.Any = js.native
 }
 
 /* static members */

@@ -20,6 +20,8 @@ class DataViewContents protected () extends DropZone {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDataViewContents: IModel = js.native
 }
 
 /* static members */

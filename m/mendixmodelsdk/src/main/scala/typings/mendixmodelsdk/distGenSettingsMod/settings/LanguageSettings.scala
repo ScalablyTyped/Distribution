@@ -21,8 +21,11 @@ class LanguageSettings protected () extends ProjectSettingsPart {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var defaultLanguageCode: String = js.native
-  val languages: IList[Language] = js.native
+  @JSName("model")
+  var model_FLanguageSettings: IModel = js.native
+  def defaultLanguageCode(): String = js.native
+  def defaultLanguageCode(newValue: String): js.Any = js.native
+  def languages(): IList[Language] = js.native
 }
 
 /* static members */

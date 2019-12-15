@@ -23,10 +23,10 @@ class GradientStop () extends js.Object {
   /** 
     * The color of the gradient stop.
     */
-  var color: Color | Null = js.native
+  var color: Color = js.native
   /** 
     * The ramp-point of the gradient stop as a value between `0` and `1`.
     */
-  var offset: Double | Null = js.native
+  var offset: Double = js.native
 }
 

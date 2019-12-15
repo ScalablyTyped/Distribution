@@ -21,7 +21,9 @@ class ConfigurationSettings protected () extends ProjectSettingsPart {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val configurations: IList[Configuration] = js.native
+  @JSName("model")
+  var model_FConfigurationSettings: IModel = js.native
+  def configurations(): IList[Configuration] = js.native
 }
 
 /* static members */

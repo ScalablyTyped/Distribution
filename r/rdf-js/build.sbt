@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rdf-js"
-version := "2.0-dt-20191206Z-d138ce"
+version := "2.0-dt-20191213Z-5968dc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

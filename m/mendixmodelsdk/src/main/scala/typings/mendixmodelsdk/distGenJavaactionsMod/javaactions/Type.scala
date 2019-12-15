@@ -29,12 +29,20 @@ abstract class Type protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsBasicParameterType: BasicParameterType | IBasicParameterType = js.native
-  val containerAsJavaAction: IJavaAction | JavaAction = js.native
-  val containerAsJavaActionParameter: IJavaActionParameter | JavaActionParameter = js.native
-  val containerAsListType: IListType | ListType = js.native
+  @JSName("containerAsBasicParameterType")
+  val containerAsBasicParameterType_FType: IBasicParameterType = js.native
+  @JSName("containerAsJavaActionParameter")
+  val containerAsJavaActionParameter_FType: IJavaActionParameter = js.native
+  @JSName("containerAsJavaAction")
+  val containerAsJavaAction_FType: IJavaAction = js.native
+  @JSName("containerAsListType")
+  val containerAsListType_FType: IListType = js.native
   @JSName("model")
-  var model_Type: IModel = js.native
+  var model_FType: IModel = js.native
+  def containerAsBasicParameterType(): BasicParameterType = js.native
+  def containerAsJavaAction(): JavaAction = js.native
+  def containerAsJavaActionParameter(): JavaActionParameter = js.native
+  def containerAsListType(): ListType = js.native
 }
 
 /* static members */

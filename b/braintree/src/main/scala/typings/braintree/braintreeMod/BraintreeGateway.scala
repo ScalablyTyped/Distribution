@@ -26,5 +26,7 @@ class BraintreeGateway protected () extends js.Object {
   var testing: TestingGateway = js.native
   var transaction: TransactionGateway = js.native
   var transactionLineItem: TransactionLineItemGateway = js.native
+  var webhookNotification: WebhookNotificationGateway = js.native
+  var webhookTesting: WebhookTestingGateway = js.native
 }
 

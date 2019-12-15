@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IType because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IListType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined parameter */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ListType")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IListType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, containerAsListType, id, isLoaded, model, structureTypeName, unit. Inlined parameter */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ListType")
 @js.native
 class ListType protected () extends Type {
   def this(
@@ -29,13 +29,21 @@ class ListType protected () extends Type {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FListType: IModel = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("parameter")
+  val parameter_FListType: IEntityType = js.native
   @JSName("containerAsBasicParameterType")
-  val containerAsBasicParameterType_ListType: BasicParameterType = js.native
+  def containerAsBasicParameterType_MListType(): BasicParameterType = js.native
   @JSName("containerAsJavaActionParameter")
-  val containerAsJavaActionParameter_ListType: JavaActionParameter = js.native
+  def containerAsJavaActionParameter_MListType(): JavaActionParameter = js.native
   @JSName("containerAsJavaAction")
-  val containerAsJavaAction_ListType: JavaAction = js.native
-  var parameter: EntityType | IEntityType = js.native
+  def containerAsJavaAction_MListType(): JavaAction = js.native
+  def parameter(): EntityType = js.native
+  def parameter(newValue: EntityType): js.Any = js.native
 }
 
 /* static members */

@@ -28,7 +28,9 @@ class NavigationList protected () extends ConditionallyVisibleWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val items: IList[NavigationListItem] = js.native
+  @JSName("model")
+  var model_FNavigationList: IModel = js.native
+  def items(): IList[NavigationListItem] = js.native
 }
 
 /* static members */
@@ -277,6 +279,15 @@ object NavigationList extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): NavigationList = js.native
+  /**
+    * Creates and returns a new NavigationList instance in the SDK and on the server.
+    * The new NavigationList will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): NavigationList = js.native
   /**
     * Creates and returns a new NavigationList instance in the SDK and on the server.
     * The new NavigationList will be automatically stored in the 'widgets' property

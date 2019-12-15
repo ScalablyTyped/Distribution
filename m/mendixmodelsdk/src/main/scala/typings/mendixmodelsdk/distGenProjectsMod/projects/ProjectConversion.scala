@@ -24,10 +24,12 @@ class ProjectConversion protected () extends ModelUnit {
     isPartial: Boolean,
     container: IProject
   ) = this()
-  val containerAsProject: IProject | Project = js.native
-  val markers: IList[OneTimeConversionMarker] = js.native
+  @JSName("containerAsProject")
+  val containerAsProject_FProjectConversion: IProject = js.native
   @JSName("model")
-  var model_ProjectConversion: IModel = js.native
+  var model_FProjectConversion: IModel = js.native
+  def containerAsProject(): Project = js.native
+  def markers(): IList[OneTimeConversionMarker] = js.native
 }
 
 /* static members */

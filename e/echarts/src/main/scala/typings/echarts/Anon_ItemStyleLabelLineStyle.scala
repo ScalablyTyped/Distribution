@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ItemStyleLabelLineStyle extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.emphasis.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-sankey.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.emphasis.label
+    * @see https://echarts.apache.org/en/option.html#series-sankey.emphasis.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.emphasis.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-sankey.emphasis.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacityShadowBlur] = js.undefined
 }

@@ -24,8 +24,23 @@ class SystemIdDataAttribute protected () extends DataMember {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var entity: IEntity | Null = js.native
-  val entityQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FSystemIdDataAttribute: IModel = js.native
+  /**
+    * In version 8.5.0: introduced
+    */
+  def description(): String = js.native
+  def description(newValue: String): js.Any = js.native
+  def entity(): IEntity | Null = js.native
+  def entity(newValue: IEntity): js.Any = js.native
+  def entityQualifiedName(): String | Null = js.native
+  @JSName("entity")
+  def entity_Any(): js.Any = js.native
+  /**
+    * In version 8.5.0: introduced
+    */
+  def summary(): String = js.native
+  def summary(newValue: String): js.Any = js.native
 }
 
 /* static members */

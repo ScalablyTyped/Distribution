@@ -23,9 +23,14 @@ class ShowMessageAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var blocking: Boolean = js.native
-  var template: TextTemplate = js.native
-  var `type`: ShowMessageType = js.native
+  @JSName("model")
+  var model_FShowMessageAction: IModel = js.native
+  def blocking(): Boolean = js.native
+  def blocking(newValue: Boolean): js.Any = js.native
+  def template(): TextTemplate = js.native
+  def template(newValue: TextTemplate): js.Any = js.native
+  def `type`(): ShowMessageType = js.native
+  def `type`(newValue: ShowMessageType): js.Any = js.native
 }
 
 /* static members */

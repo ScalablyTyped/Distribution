@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenTextsMod.texts.Text
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -23,9 +24,16 @@ abstract class LoginTextBox protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var label: Text | Null = js.native
-  var labelWidth: Double = js.native
-  var placeholder: Text = js.native
+  @JSName("model")
+  var model_FLoginTextBox: IModel = js.native
+  def label(): Text | Null = js.native
+  def label(newValue: Text): js.Any = js.native
+  def labelWidth(): Double = js.native
+  def labelWidth(newValue: Double): js.Any = js.native
+  @JSName("label")
+  def label_Any(): js.Any = js.native
+  def placeholder(): Text = js.native
+  def placeholder(newValue: Text): js.Any = js.native
 }
 
 /* static members */

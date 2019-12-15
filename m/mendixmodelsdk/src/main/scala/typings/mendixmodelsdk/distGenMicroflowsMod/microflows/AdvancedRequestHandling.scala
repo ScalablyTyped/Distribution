@@ -21,11 +21,14 @@ class AdvancedRequestHandling protected () extends RequestHandling {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FAdvancedRequestHandling: IModel = js.native
   /**
     * In version 6.7.0: introduced
     */
-  var nullValueOption: NullValueOption = js.native
-  val parameterMappings: IList[WebServiceOperationAdvancedParameterMapping] = js.native
+  def nullValueOption(): NullValueOption = js.native
+  def nullValueOption(newValue: NullValueOption): js.Any = js.native
+  def parameterMappings(): IList[WebServiceOperationAdvancedParameterMapping] = js.native
 }
 
 /* static members */

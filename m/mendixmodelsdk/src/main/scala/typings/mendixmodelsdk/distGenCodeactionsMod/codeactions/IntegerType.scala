@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IType because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IPrimitiveType because Already inherited
-- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IIntegerType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.IntegerType")
+- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IIntegerType because var conflicts: containerAsBasicParameterType, containerAsCodeAction, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.IntegerType")
 @js.native
 class IntegerType protected () extends PrimitiveType {
   def this(
@@ -29,6 +29,12 @@ class IntegerType protected () extends PrimitiveType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FIntegerType: IModel = js.native
+  @JSName("containerAsBasicParameterType")
+  def containerAsBasicParameterType_MIntegerType(): BasicParameterType = js.native
+  @JSName("containerAsCodeAction")
+  def containerAsCodeAction_MIntegerType(): CodeAction = js.native
 }
 
 /* static members */

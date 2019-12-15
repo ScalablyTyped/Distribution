@@ -21,10 +21,10 @@ abstract class Range protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsDatabaseRetrieveSource: DatabaseRetrieveSource = js.native
-  val containerAsImportMappingCall: ImportMappingCall = js.native
   @JSName("model")
-  var model_Range: IModel = js.native
+  var model_FRange: IModel = js.native
+  def containerAsDatabaseRetrieveSource(): DatabaseRetrieveSource = js.native
+  def containerAsImportMappingCall(): ImportMappingCall = js.native
 }
 
 /* static members */

@@ -16,12 +16,12 @@ trait Anon_ColorOpacityOrigin extends js.Object {
     * Gradient color and texture are also supported besides single
     * colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.areaStyle)
+    * > [see doc](https://echarts.apache.org/en/option.html#series-line.line.areaStyle)
     *
     *
     * @default
     * "#000"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait Anon_ColorOpacityOrigin extends js.Object {
     * drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.opacity
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -52,7 +52,7 @@ trait Anon_ColorOpacityOrigin extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.origin
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.origin
     */
   var origin: js.UndefOr[String] = js.undefined
   /**
@@ -62,31 +62,31 @@ trait Anon_ColorOpacityOrigin extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.areaStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-line.line.areaStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-line.areaStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
 }

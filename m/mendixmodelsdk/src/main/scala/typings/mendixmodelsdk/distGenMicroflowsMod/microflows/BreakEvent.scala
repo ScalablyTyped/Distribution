@@ -23,6 +23,8 @@ class BreakEvent protected () extends MicroflowObject {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FBreakEvent: IModel = js.native
 }
 
 /* static members */

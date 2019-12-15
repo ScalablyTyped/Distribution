@@ -15,7 +15,7 @@ trait DataObject extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.animation
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -25,14 +25,14 @@ trait DataObject extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-tree.tree.data)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -41,50 +41,50 @@ trait DataObject extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-tree.tree.data)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-tree.tree.data)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tree.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-tree.tree.data)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "linear"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -93,7 +93,7 @@ trait DataObject extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -104,47 +104,47 @@ trait DataObject extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   var children: js.UndefOr[js.Array[DataObject]] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * The style of the node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * The label of the node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.label
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * The name of the tree node, used to identify each node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.name
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * The value of the node, displayed in the tooltip.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.data.value
+    * @see https://echarts.apache.org/en/option.html#series-tree.data.value
     */
   var value: js.UndefOr[Double] = js.undefined
 }

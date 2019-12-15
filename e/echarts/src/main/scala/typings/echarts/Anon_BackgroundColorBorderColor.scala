@@ -8,7 +8,7 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
   /**
     *
     * > **Notice：**series.tooltip only works when
-    * > [tooltip.trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * > [tooltip.trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * > is `'item'`.
     *
     * The background color of tooltip's floating layer.
@@ -16,13 +16,13 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * @default
     * "rgba(50,50,50,0.7)"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.backgroundColor
     */
   var backgroundColor: js.UndefOr[String] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
-    * > [tooltip.trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * > [tooltip.trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * > is `'item'`.
     *
     * The border color of tooltip's floating layer.
@@ -30,25 +30,25 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * @default
     * '#333'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
-    * > [tooltip.trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * > [tooltip.trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * > is `'item'`.
     *
     * The border width of tooltip's floating layer.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
-    * > [tooltip.trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * > [tooltip.trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * > is `'item'`.
     *
     * Extra CSS style for floating layer.
@@ -60,13 +60,13 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     * ```
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.extraCssText
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.extraCssText
     */
   var extraCssText: js.UndefOr[String] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
-    * > [tooltip.trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * > [tooltip.trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * > is `'item'`.
     *
     * The content formatter of tooltip's floating layer which supports
@@ -77,7 +77,7 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     * The template variables are `{a}`, `{b}`, `{c}`, `{d}` and
     * `{e}`, which stands for series name, data name and data value
     * and ect. When
-    * [trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * [trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * is set to be `'axis'`, there may be data from multiple series.
     * In this time, series index can be refered as `{a0}`, `{a1}`,
     * or `{a2}`.
@@ -110,22 +110,22 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * The format of callback function:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.tooltip)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.tooltip)
     *
     * The first parameter `params` is the data that the formatter
     * needs. Its format is shown as follows:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.tooltip)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.tooltip)
     *
     * When
-    * [trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * [trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * is `'axis'`, or when tooltip is triggered by
-    * [axisPointer](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis.axisPointer)
+    * [axisPointer](https://echarts.apache.org/en/option.html#xAxis.axisPointer)
     * , `params` is the data array of multiple series.
     * The content of each item of the array is the same as above.
     * Besides,
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.tooltip)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.tooltip)
     *
     * **Note:** Using array to present all the parameters in ECharts
     * 2.x is not supported anymore.
@@ -141,16 +141,16 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * Example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.tooltip)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.tooltip)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.formatter
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.formatter
     */
   var formatter: js.UndefOr[js.Function | String] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
-    * > [tooltip.trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * > [tooltip.trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * > is `'item'`.
     *
     * The floating layer of tooltip space around content.
@@ -161,18 +161,18 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * Examples:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.tooltip)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.tooltip)
     *
     *
     * @default
     * 5
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.padding
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.padding
     */
   var padding: js.UndefOr[Double] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
-    * > [tooltip.trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * > [tooltip.trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * > is `'item'`.
     *
     * The position of the tooltip's floating layer, which would
@@ -187,13 +187,13 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * Example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.tooltip)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.tooltip)
     *
     * + `Function`
     *
     * Callback function in the following form:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.tooltip)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.tooltip)
     *
     * **Parameters:**
     * point: Mouse position.
@@ -214,61 +214,61 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.tooltip)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.tooltip)
     *
     * Or:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.tooltip)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.tooltip)
     *
     * + `'inside'`
     *
     * Center position of the graphic element where the mouse is
     * in, which is only valid when
-    * [trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * [trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * is `'item'`.
     *
     * + `'top'`
     *
     * Top position of the graphic element where the mouse is in,
     * which is only valid when
-    * [trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * [trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * is `'item'`.
     *
     * + `'left'`
     *
     * Left position of the graphic element where the mouse is in,
     * which is only valid when
-    * [trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * [trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * is `'item'`.
     *
     * + `'right'`
     *
     * Right position of the graphic element where the mouse is
     * in, which is only valid when
-    * [trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * [trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * is `'item'`.
     *
     * + `'bottom'`
     *
     * Bottom position of the graphic element where the mouse is
     * in, which is only valid when
-    * [trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * [trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * is `'item'`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.position
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.position
     */
   var position: js.UndefOr[js.Array[_] | String] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
-    * > [tooltip.trigger](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.trigger)
+    * > [tooltip.trigger](https://echarts.apache.org/en/option.html#tooltip.trigger)
     * > is `'item'`.
     *
     * The text syle of tooltip's floating layer.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip.textStyle
     */
   var textStyle: js.UndefOr[Anon_ColorFontFamily] = js.undefined
 }

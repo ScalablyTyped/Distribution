@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic
 
-Typings are for version 5.4.12
+Typings are for version 5.4.13
 
 ## Library description:
 A tool for creating and developing Ionic Framework mobile apps.

@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "react-apollo"
-version := "3.1.3-9f4e1e"
+version := "3.1.3-151eb3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-cache" % "1.3.2-f1876f",
-  "org.scalablytyped" %%% "apollo-client" % "2.6.4-2d947d",
+  "org.scalablytyped" %%% "apollo-cache" % "1.3.4-84e345",
+  "org.scalablytyped" %%% "apollo-client" % "2.6.8-a83e1e",
   "org.scalablytyped" %%% "apollo-link" % "1.2.13-3e9d24",
   "org.scalablytyped" %%% "apollo-utilities" % "1.3.2-18a762",
-  "org.scalablytyped" %%% "apollo__react-common" % "3.1.3-c25bbf",
-  "org.scalablytyped" %%% "apollo__react-components" % "3.1.3-71a324",
-  "org.scalablytyped" %%% "apollo__react-hoc" % "3.1.3-c647ed",
-  "org.scalablytyped" %%% "apollo__react-hooks" % "3.1.3-269b1e",
+  "org.scalablytyped" %%% "apollo__react-common" % "3.1.3-c7fc53",
+  "org.scalablytyped" %%% "apollo__react-components" % "3.1.3-405203",
+  "org.scalablytyped" %%% "apollo__react-hoc" % "3.1.3-6c38f7",
+  "org.scalablytyped" %%% "apollo__react-hooks" % "3.1.3-6f85ee",
   "org.scalablytyped" %%% "apollo__react-ssr" % "3.1.3-e0e445",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
   "org.scalablytyped" %%% "graphql" % "14.5.8-92eff2",

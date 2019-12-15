@@ -8,21 +8,21 @@ trait Anon_ColorConstantSpeed extends js.Object {
   /**
     * The color of special effect symbol, which defaults to be
     * same with
-    * [lineStyle.color](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.lineStyle.color)
+    * [lineStyle.color](https://echarts.apache.org/en/option.html#series-lines.lineStyle.color)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.color
+    * @see https://echarts.apache.org/en/option.html#series-lines.effect.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
     * If symbol movement of special effect has a constant speed,
     * which unit is pixel per second.
-    * [period](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.period)
+    * [period](https://echarts.apache.org/en/option.html#series-lines.effect.period)
     * will be ignored if `constantSpeed` is larger than 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.constantSpeed
+    * @see https://echarts.apache.org/en/option.html#series-lines.effect.constantSpeed
     */
   var constantSpeed: js.UndefOr[Double] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     * Can be number or callback function.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.delay
+    * @see https://echarts.apache.org/en/option.html#series-lines.effect.delay
     */
   var delay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.loop
+    * @see https://echarts.apache.org/en/option.html#series-lines.effect.loop
     */
   var loop: js.UndefOr[Boolean] = js.undefined
   /**
@@ -48,14 +48,14 @@ trait Anon_ColorConstantSpeed extends js.Object {
     *
     * @default
     * 4
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.period
+    * @see https://echarts.apache.org/en/option.html#series-lines.effect.period
     */
   var period: js.UndefOr[Double] = js.undefined
   /**
     * Whether to show special effect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.show
+    * @see https://echarts.apache.org/en/option.html#series-lines.effect.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -77,7 +77,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.lines.effect)
+    * [see doc](https://echarts.apache.org/en/option.html#series-lines.lines.effect)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -92,7 +92,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.lines.effect)
+    * [see doc](https://echarts.apache.org/en/option.html#series-lines.lines.effect)
     *
     * The above example uses a custom path of plane shape.
     *
@@ -106,7 +106,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     *
     * @default
     * "circle"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.symbol
+    * @see https://echarts.apache.org/en/option.html#series-lines.effect.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
@@ -120,7 +120,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     *
     * @default
     * 3
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-lines.effect.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
@@ -131,7 +131,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     *
     * @default
     * 0.2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.trailLength
+    * @see https://echarts.apache.org/en/option.html#series-lines.effect.trailLength
     */
   var trailLength: js.UndefOr[Double] = js.undefined
 }

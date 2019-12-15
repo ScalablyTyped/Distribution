@@ -28,11 +28,11 @@ class Style protected () extends js.Object {
   /** 
     * Specifies an array containing the dash and gap lengths of the stroke.
     */
-  var dashArray: js.Array[Double] | Null = js.native
+  var dashArray: js.Array[Double] = js.native
   /** 
     * The dash offset of the stroke.
     */
-  var dashOffset: Double | Null = js.native
+  var dashOffset: Double = js.native
   /** 
     * The fill color.
     */
@@ -41,28 +41,28 @@ class Style protected () extends js.Object {
     * The fill-rule with which the shape gets filled. Please note that only
     * modern browsers support fill-rules other than `'nonzero'`.
     */
-  var fillRule: String | Null = js.native
+  var fillRule: String = js.native
   /** 
     * The font-family to be used in text content.
     */
-  var fontFamily: String | Null = js.native
+  var fontFamily: String = js.native
   /** 
     * The font size of text content, as a number in pixels, or as a string with
     * optional units `'px'`, `'pt'` and `'em'`.
     */
-  var fontSize: Double | String | Null = js.native
+  var fontSize: Double | String = js.native
   /** 
     * The font-weight to be used in text content.
     */
-  var fontWeight: String | Double | Null = js.native
+  var fontWeight: String | Double = js.native
   /** 
     * The justification of text paragraphs.
     */
-  var justification: String | Null = js.native
+  var justification: String = js.native
   /** 
     * The text leading of text content.
     */
-  var leading: Double | String | Null = js.native
+  var leading: Double | String = js.native
   /** 
     * The miter limit of the stroke. When two line segments meet at a sharp
     * angle and miter joins have been specified for {@link #strokeJoin}, it is
@@ -70,7 +70,7 @@ class Style protected () extends js.Object {
     * the path. The miterLimit imposes a limit on the ratio of the miter length
     * to the {@link #strokeWidth}.
     */
-  var miterLimit: Double | Null = js.native
+  var miterLimit: Double = js.native
   /** 
     * The color the item is highlighted with when selected. If the item does
     * not specify its own color, the color defined by its layer is used instead.
@@ -79,7 +79,7 @@ class Style protected () extends js.Object {
   /** 
     * The shadow's blur radius.
     */
-  var shadowBlur: Double | Null = js.native
+  var shadowBlur: Double = js.native
   /** 
     * The shadow color.
     */
@@ -87,12 +87,12 @@ class Style protected () extends js.Object {
   /** 
     * The shadow's offset.
     */
-  var shadowOffset: Point | Null = js.native
+  var shadowOffset: Point = js.native
   /** 
     * The shape to be used at the beginning and end of open {@link Path} items,
     * when they have a stroke.
     */
-  var strokeCap: String | Null = js.native
+  var strokeCap: String = js.native
   /** 
     * The color of the stroke.
     */
@@ -101,17 +101,17 @@ class Style protected () extends js.Object {
     * The shape to be used at the segments and corners of {@link Path} items
     * when they have a stroke.
     */
-  var strokeJoin: String | Null = js.native
+  var strokeJoin: String = js.native
   /** 
     * Specifies whether the stroke is to be drawn taking the current affine
     * transformation into account (the default behavior), or whether it should
     * appear as a non-scaling stroke.
     */
-  var strokeScaling: Boolean | Null = js.native
+  var strokeScaling: Boolean = js.native
   /** 
     * The width of the stroke.
     */
-  var strokeWidth: Double | Null = js.native
+  var strokeWidth: Double = js.native
   /** 
     * The view that this style belongs to.
     */

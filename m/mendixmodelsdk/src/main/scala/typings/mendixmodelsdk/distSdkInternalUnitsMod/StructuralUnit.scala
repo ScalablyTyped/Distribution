@@ -19,6 +19,6 @@ abstract class StructuralUnit protected ()
     container: IStructuralUnit
   ) = this()
   @JSName("unit")
-  val unit_StructuralUnit: this.type = js.native
+  def unit_MStructuralUnit(): this.type = js.native
 }
 

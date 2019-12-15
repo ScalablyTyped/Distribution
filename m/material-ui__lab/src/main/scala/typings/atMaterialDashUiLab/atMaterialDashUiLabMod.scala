@@ -2,6 +2,7 @@ package typings.atMaterialDashUiLab
 
 import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiLab.autocompleteAutocompleteMod.AutocompleteProps
+import typings.atMaterialDashUiLab.avatarGroupAvatarGroupMod.AvatarGroupProps
 import typings.atMaterialDashUiLab.ratingRatingMod.RatingProps
 import typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionProps
 import typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconProps
@@ -33,6 +34,7 @@ object atMaterialDashUiLabMod extends js.Object {
   val ToggleButton: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendButtonBase<ToggleButtonTypeMap> */ js.Any = js.native
   val createFilterOptions: CreateFilterOptions = js.native
   def Autocomplete(props: AutocompleteProps): Element = js.native
+  def AvatarGroup(props: AvatarGroupProps): Element | Null = js.native
   def SpeedDial(props: SpeedDialProps): Element = js.native
   def SpeedDialAction(props: SpeedDialActionProps): Element = js.native
   def SpeedDialIcon(props: SpeedDialIconProps): Element = js.native

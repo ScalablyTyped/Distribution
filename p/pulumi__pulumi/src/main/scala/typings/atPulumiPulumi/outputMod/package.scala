@@ -9,7 +9,7 @@ package object outputMod {
 
   type Input[T] = T | js.Promise[T] | OutputInstance[T]
   type Inputs = Record[String, Input[js.Any]]
-  type Lifted[T] = (LiftedObject[String | T, NonFunctionPropertyNames[String | T]]) | LiftedArray[js.Any]
+  type Lifted[T] = js.Object | (LiftedObject[String | T, NonFunctionPropertyNames[String | T]]) | LiftedArray[js.Any]
   type LiftedObject[T, K /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: T[P] extends @pulumi/pulumi.@pulumi/pulumi/output.OutputInstance<infer T1>? @pulumi/pulumi.@pulumi/pulumi/output.Output<any> : T[P] extends std.Promise<infer T2>? @pulumi/pulumi.@pulumi/pulumi/output.Output<any> : @pulumi/pulumi.@pulumi/pulumi/output.Output<T[P]>}
     */ typings.atPulumiPulumi.atPulumiPulumiStrings.LiftedObject with js.Any

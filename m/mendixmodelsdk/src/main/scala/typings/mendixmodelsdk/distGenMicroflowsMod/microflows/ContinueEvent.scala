@@ -23,6 +23,8 @@ class ContinueEvent protected () extends MicroflowObject {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FContinueEvent: IModel = js.native
 }
 
 /* static members */

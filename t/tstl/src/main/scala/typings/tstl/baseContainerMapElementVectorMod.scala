@@ -69,6 +69,21 @@ object baseContainerMapElementVectorMod extends js.Object {
         */
       /* CompleteClass */
       override var second: T = js.native
+      /**
+        * @inheritDoc
+        */
+      @JSName("first")
+      def first_MIterator(): Key = js.native
+      /**
+        * @inheritDoc
+        */
+      @JSName("second")
+      def second_MIterator(): T = js.native
+      /**
+        * @inheritDoc
+        */
+      @JSName("second")
+      def second_MIterator(`val`: T): js.Any = js.native
     }
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -100,6 +115,21 @@ object baseContainerMapElementVectorMod extends js.Object {
         */
       /* CompleteClass */
       override var second: T = js.native
+      /**
+        * @inheritDoc
+        */
+      @JSName("first")
+      def first_MReverseIterator(): Key = js.native
+      /**
+        * @inheritDoc
+        */
+      @JSName("second")
+      def second_MReverseIterator(): T = js.native
+      /**
+        * @inheritDoc
+        */
+      @JSName("second")
+      def second_MReverseIterator(`val`: T): js.Any = js.native
     }
     
   }

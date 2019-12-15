@@ -21,8 +21,13 @@ class RoleBasedHomePage protected () extends HomePageBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var userRole: IUserRole | Null = js.native
-  val userRoleQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FRoleBasedHomePage: IModel = js.native
+  def userRole(): IUserRole | Null = js.native
+  def userRole(newValue: IUserRole): js.Any = js.native
+  def userRoleQualifiedName(): String | Null = js.native
+  @JSName("userRole")
+  def userRole_Any(): js.Any = js.native
 }
 
 /* static members */

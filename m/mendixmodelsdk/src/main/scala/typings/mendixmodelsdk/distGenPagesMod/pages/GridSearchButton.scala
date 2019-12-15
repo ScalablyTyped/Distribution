@@ -23,6 +23,8 @@ class GridSearchButton protected () extends GridControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FGridSearchButton: IModel = js.native
 }
 
 /* static members */

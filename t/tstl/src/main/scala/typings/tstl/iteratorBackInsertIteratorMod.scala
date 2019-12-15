@@ -22,6 +22,11 @@ object iteratorBackInsertIteratorMod extends js.Object {
       * @hidden
       */
     var source_ : js.Any = js.native
+    /**
+      * @inheritDoc
+      */
+    @JSName("value")
+    def value_MBackInsertIterator(`val`: T): js.Any = js.native
   }
   
 }

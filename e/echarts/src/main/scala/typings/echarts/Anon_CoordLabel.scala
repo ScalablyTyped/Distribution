@@ -9,22 +9,22 @@ trait Anon_CoordLabel extends js.Object {
     * Coordinates of the starting point or ending point,
     * whose format depends on the coordinate of the series.
     * It can be `x`, and `y` for
-    * [rectangular coordinates](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [rectangular coordinates](https://echarts.apache.org/en/option.html#grid)
     * , or `radius`, and `angle` for
-    * [polar coordinates](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar coordinates](https://echarts.apache.org/en/option.html#polar)
     * .
     *
     * **Notice:** For axis with
-    * [axis.type](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAixs.type)
+    * [axis.type](https://echarts.apache.org/en/option.html#xAixs.type)
     * `'category'`:
     *
     * + If coord value is `number`, it represents index
     * of
-    * [axis.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis.data)
+    * [axis.data](https://echarts.apache.org/en/option.html#xAxis.data)
     * .
     * + If coord value is `string`, it represents concrete
     * value in
-    * [axis.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis.data)
+    * [axis.data](https://echarts.apache.org/en/option.html#xAxis.data)
     *
     *
     * Please notice that in this case `xAxis.data`
@@ -42,10 +42,10 @@ trait Anon_CoordLabel extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine.data.1)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markLine.data.1)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.coord
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.coord
     */
   var coord: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -53,7 +53,7 @@ trait Anon_CoordLabel extends js.Object {
     * `label` of starting point and ending point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.label
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.label
     */
   var label: js.UndefOr[Anon_Emphasis] = js.undefined
   /**
@@ -61,7 +61,7 @@ trait Anon_CoordLabel extends js.Object {
     * with `lineStyle` of starting point and ending point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessEmphasis] = js.undefined
   /**
@@ -91,7 +91,7 @@ trait Anon_CoordLabel extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine.data.1)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markLine.data.1)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -107,10 +107,10 @@ trait Anon_CoordLabel extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine.data.1)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markLine.data.1)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.symbol
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
@@ -118,7 +118,7 @@ trait Anon_CoordLabel extends js.Object {
     * `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -141,7 +141,7 @@ trait Anon_CoordLabel extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -151,7 +151,7 @@ trait Anon_CoordLabel extends js.Object {
     * and compulsively use tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -162,7 +162,7 @@ trait Anon_CoordLabel extends js.Object {
     * and height is`10`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
@@ -176,19 +176,19 @@ trait Anon_CoordLabel extends js.Object {
     * + `'average'` average value.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.type
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * Label value, which can be ignored.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.value
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.value
     */
   var value: js.UndefOr[Double] = js.undefined
   /**
     * Works only when
-    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-.markLine.data.type)
+    * [type](https://echarts.apache.org/en/option.html#series-.markLine.data.type)
     * is assigned.
     * It is used to state the dimension used to calculate
     * maximum value or minimum value.
@@ -197,12 +197,12 @@ trait Anon_CoordLabel extends js.Object {
     * for candlestick charts.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.valueDim
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.valueDim
     */
   var valueDim: js.UndefOr[String] = js.undefined
   /**
     * Works only when
-    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-.markLine.data.type)
+    * [type](https://echarts.apache.org/en/option.html#series-.markLine.data.type)
     * is assigned.
     * It is used to state the dimension used to calculate
     * maximum value or minimum value.
@@ -211,21 +211,21 @@ trait Anon_CoordLabel extends js.Object {
     * Dimension of the first numeric axis is used by default.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.valueIndex
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.valueIndex
     */
   var valueIndex: js.UndefOr[Double] = js.undefined
   /**
     * X position according to container, in pixel.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.x
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.x
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
     * Y position according to container, in pixel.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.y
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }

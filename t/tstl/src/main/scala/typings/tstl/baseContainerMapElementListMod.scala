@@ -74,6 +74,21 @@ object baseContainerMapElementListMod extends js.Object {
         */
       /* CompleteClass */
       override var second: T = js.native
+      /**
+        * @inheritDoc
+        */
+      @JSName("first")
+      def first_MIterator(): Key = js.native
+      /**
+        * @inheritDoc
+        */
+      @JSName("second")
+      def second_MIterator(): T = js.native
+      /**
+        * @inheritDoc
+        */
+      @JSName("second")
+      def second_MIterator(`val`: T): js.Any = js.native
     }
     
     @js.native
@@ -97,18 +112,19 @@ object baseContainerMapElementListMod extends js.Object {
         *
         * @return The first element.
         */
-      val first: Key = js.native
+      def first(): Key = js.native
       /**
         * Get the second, stored element.
         *
         * @return The second element.
         */
+      def second(): T = js.native
       /**
         * Set the second, stored element.
         *
         * @param val The value to set.
         */
-      var second: T = js.native
+      def second(`val`: T): js.Any = js.native
     }
     
   }

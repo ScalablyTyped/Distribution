@@ -13,7 +13,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.gauge.detail)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
@@ -21,7 +21,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   /**
@@ -30,21 +30,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
     * Border radius of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   /**
     * Border width of the text fregment.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -53,7 +53,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.color
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -64,7 +64,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * "sans-serif"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   /**
@@ -73,7 +73,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * 15
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.fontSize
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   /**
@@ -88,7 +88,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   /**
@@ -105,7 +105,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * "normal"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontWeight
     */
   var fontWeight: js.UndefOr[String] = js.undefined
   /**
@@ -120,7 +120,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.height
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
@@ -129,10 +129,10 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     * If `lineHeight` is not set in `rich`, `lineHeight` in parent
     * level will be used. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.gauge.detail)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   /**
@@ -145,7 +145,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * [0, '40%']
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.offsetCenter
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.offsetCenter
     */
   var offsetCenter: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -160,37 +160,37 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     * of the content, without `padding`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.padding
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.padding
     */
   var padding: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * "Rich text styles" can be defined in this `rich` property.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.gauge.detail)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
     *
     * For more details, see
-    * [Rich Text](https://ecomfe.github.io/echarts-doc/public/en/option.htmltutorial.html#Rich%20Text)
+    * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.rich
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich
     */
   var rich: js.UndefOr[
     /**
     * The text color. Defaults to use
-    * [the color of section](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.color)
+    * [the color of section](https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.color)
     * where the numerical value belongs to.
     *
     *
     * @todo check that the option is valid and should be here
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.rich.color
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.color
     */
   // color?: string;
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align]
   ] = js.undefined
@@ -198,7 +198,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     * Show blur of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -207,21 +207,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -230,7 +230,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.show
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -239,21 +239,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   /**
     * Storke line width of the text.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   /**
     * Shadow blue of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -262,21 +262,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @default
     * "transparent"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   /**
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -299,7 +299,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.width
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -322,18 +322,18 @@ object Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor {
     padding: js.Array[_] | Double = null,
     rich: /**
     * The text color. Defaults to use
-    * [the color of section](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.color)
+    * [the color of section](https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.color)
     * where the numerical value belongs to.
     *
     *
     * @todo check that the option is valid and should be here
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.rich.color
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.color
     */
   // color?: string;
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Anon_Align] = null,
     shadowBlur: Int | Double = null,

@@ -8,13 +8,13 @@ trait Anon_LengthShow extends js.Object {
   /**
     * The length of pointer which could be absolute value and also
     * the percentage relative to
-    * [radius](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.radius)
+    * [radius](https://echarts.apache.org/en/option.html#series-gauge.radius)
     * .
     *
     *
     * @default
     * '80%'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.pointer.length
+    * @see https://echarts.apache.org/en/option.html#series-gauge.pointer.length
     */
   var length: js.UndefOr[Double | String] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait Anon_LengthShow extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.pointer.show
+    * @see https://echarts.apache.org/en/option.html#series-gauge.pointer.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -32,7 +32,7 @@ trait Anon_LengthShow extends js.Object {
     *
     * @default
     * 8
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.pointer.width
+    * @see https://echarts.apache.org/en/option.html#series-gauge.pointer.width
     */
   var width: js.UndefOr[Double] = js.undefined
 }

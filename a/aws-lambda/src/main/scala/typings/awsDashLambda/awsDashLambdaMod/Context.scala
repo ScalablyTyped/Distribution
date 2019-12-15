@@ -17,7 +17,7 @@ trait Context extends js.Object {
   var invokedFunctionArn: String = js.native
   var logGroupName: String = js.native
   var logStreamName: String = js.native
-  var memoryLimitInMB: Double = js.native
+  var memoryLimitInMB: String = js.native
   // Functions for compatibility with earlier Node.js Runtime v0.10.42
   // For more details see http://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-using-old-runtime.html#nodejs-prog-model-oldruntime-context-methods
   def done(): Unit = js.native

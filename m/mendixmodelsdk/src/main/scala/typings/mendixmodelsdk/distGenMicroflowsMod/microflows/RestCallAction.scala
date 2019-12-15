@@ -26,50 +26,66 @@ class RestCallAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FRestCallAction: IModel = js.native
   /**
     * In version 7.0.2: introduced
     */
-  var errorResultHandlingType: ErrorResultHandlingType = js.native
-  var httpConfiguration: HttpConfiguration = js.native
+  def errorResultHandlingType(): ErrorResultHandlingType = js.native
+  def errorResultHandlingType(newValue: ErrorResultHandlingType): js.Any = js.native
+  def httpConfiguration(): HttpConfiguration = js.native
+  def httpConfiguration(newValue: HttpConfiguration): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  var proxyConfiguration: ProxyConfiguration | Null = js.native
-  var requestHandling: RequestHandling = js.native
+  def proxyConfiguration(): ProxyConfiguration | Null = js.native
+  def proxyConfiguration(newValue: ProxyConfiguration): js.Any = js.native
+  @JSName("proxyConfiguration")
+  def proxyConfiguration_Any(): js.Any = js.native
+  def requestHandling(): RequestHandling = js.native
+  def requestHandling(newValue: RequestHandling): js.Any = js.native
   /**
     * In version 6.9.0: introduced
     */
-  var requestHandlingType: RequestHandlingType = js.native
+  def requestHandlingType(): RequestHandlingType = js.native
+  def requestHandlingType(newValue: RequestHandlingType): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  var requestProxyType: RequestProxyType = js.native
-  var resultHandling: ResultHandling = js.native
+  def requestProxyType(): RequestProxyType = js.native
+  def requestProxyType(newValue: RequestProxyType): js.Any = js.native
+  def resultHandling(): ResultHandling = js.native
+  def resultHandling(newValue: ResultHandling): js.Any = js.native
   /**
     * In version 6.9.0: introduced
     */
-  var resultHandlingType: ResultHandlingType = js.native
+  def resultHandlingType(): ResultHandlingType = js.native
+  def resultHandlingType(newValue: ResultHandlingType): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     * In version 7.1.0: introduced
     */
-  var timeOut: Double = js.native
+  def timeOut(): Double = js.native
+  def timeOut(newValue: Double): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     *
     * In version 7.15.0: introduced
     */
-  var timeOutExpression: String = js.native
+  def timeOutExpression(): String = js.native
+  def timeOutExpression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.15.0: introduced
     */
-  var timeOutModel: Expression = js.native
+  def timeOutModel(): Expression = js.native
+  def timeOutModel(newValue: Expression): js.Any = js.native
   /**
     * In version 7.1.0: introduced
     */
-  var useRequestTimeOut: Boolean = js.native
+  def useRequestTimeOut(): Boolean = js.native
+  def useRequestTimeOut(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

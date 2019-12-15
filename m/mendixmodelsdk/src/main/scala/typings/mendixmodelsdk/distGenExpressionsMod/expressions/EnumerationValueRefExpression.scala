@@ -31,6 +31,7 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceCallActi
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceOperationParameterMapping
 import typings.mendixmodelsdk.distGenPagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.distGenPagesMod.pages.WidgetValidation
+import typings.mendixmodelsdk.distGenRestMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -54,8 +55,11 @@ class EnumerationValueRefExpression protected () extends Expression {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var value: IEnumerationValue = js.native
-  val valueQualifiedName: String = js.native
+  @JSName("model")
+  var model_FEnumerationValueRefExpression: IModel = js.native
+  def value(): IEnumerationValue = js.native
+  def value(newValue: IEnumerationValue): js.Any = js.native
+  def valueQualifiedName(): String = js.native
 }
 
 /* static members */
@@ -151,6 +155,15 @@ object EnumerationValueRefExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): EnumerationValueRefExpression = js.native
+  /**
+    * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
+    * The new EnumerationValueRefExpression will be automatically stored in the 'timeoutModel' property
+    * of the parent rest.ConsumedODataService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): EnumerationValueRefExpression = js.native
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
     * The new EnumerationValueRefExpression will be automatically stored in the 'initialValueModel' property

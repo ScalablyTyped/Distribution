@@ -27,6 +27,8 @@ class MenuBar protected () extends MenuWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FMenuBar: IModel = js.native
 }
 
 /* static members */
@@ -275,6 +277,15 @@ object MenuBar extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): MenuBar = js.native
+  /**
+    * Creates and returns a new MenuBar instance in the SDK and on the server.
+    * The new MenuBar will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): MenuBar = js.native
   /**
     * Creates and returns a new MenuBar instance in the SDK and on the server.
     * The new MenuBar will be automatically stored in the 'widgets' property

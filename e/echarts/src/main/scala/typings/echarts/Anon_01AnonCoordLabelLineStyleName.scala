@@ -9,14 +9,14 @@ trait Anon_01AnonCoordLabelLineStyleName extends js.Object {
     * Data of the starting point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.0
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.0
     */
   var `0`: js.UndefOr[Anon_CoordLabelLineStyleName] = js.undefined
   /**
     * Data of the ending point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1
     */
   var `1`: js.UndefOr[Anon_CoordLabelLineStyleName] = js.undefined
 }

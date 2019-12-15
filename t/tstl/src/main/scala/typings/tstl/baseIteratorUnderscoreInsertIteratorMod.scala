@@ -23,6 +23,13 @@ object baseIteratorUnderscoreInsertIteratorMod extends js.Object {
       */
     /* CompleteClass */
     override def next(): This = js.native
+    /**
+      * Set value.
+      *
+      * @param val The value to set.
+      */
+    @JSName("value")
+    def value_M_InsertIterator(`val`: T): js.Any = js.native
   }
   
 }

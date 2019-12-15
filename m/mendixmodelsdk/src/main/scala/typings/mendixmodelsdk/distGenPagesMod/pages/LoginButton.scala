@@ -28,7 +28,10 @@ class LoginButton protected () extends Button {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var validationMessageWidget: String = js.native
+  @JSName("model")
+  var model_FLoginButton: IModel = js.native
+  def validationMessageWidget(): String = js.native
+  def validationMessageWidget(newValue: String): js.Any = js.native
 }
 
 /* static members */
@@ -277,6 +280,15 @@ object LoginButton extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): LoginButton = js.native
+  /**
+    * Creates and returns a new LoginButton instance in the SDK and on the server.
+    * The new LoginButton will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): LoginButton = js.native
   /**
     * Creates and returns a new LoginButton instance in the SDK and on the server.
     * The new LoginButton will be automatically stored in the 'widgets' property

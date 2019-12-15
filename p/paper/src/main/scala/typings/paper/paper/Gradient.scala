@@ -13,11 +13,11 @@ class Gradient () extends js.Object {
   /** 
     * Specifies whether the gradient is radial or linear.
     */
-  var radial: Boolean | Null = js.native
+  var radial: Boolean = js.native
   /** 
     * The gradient stops on the gradient ramp.
     */
-  var stops: js.Array[GradientStop] | Null = js.native
+  var stops: js.Array[GradientStop] = js.native
   /** 
     * Checks whether the gradient is equal to the supplied gradient.
     * 

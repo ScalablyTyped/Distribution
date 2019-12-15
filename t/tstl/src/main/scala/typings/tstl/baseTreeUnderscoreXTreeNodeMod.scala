@@ -13,13 +13,13 @@ object baseTreeUnderscoreXTreeNodeMod extends js.Object {
   class _XTreeNode[T] protected () extends js.Object {
     def this(value: T, color: _Color) = this()
     var color: _Color = js.native
-    val grand: _XTreeNode[T] | Null = js.native
     var left: _XTreeNode[T] | Null = js.native
     var parent: _XTreeNode[T] | Null = js.native
     var right: _XTreeNode[T] | Null = js.native
-    val sibling: _XTreeNode[T] | Null = js.native
-    val uncle: _XTreeNode[T] | Null = js.native
     var value: T = js.native
+    def grand(): _XTreeNode[T] | Null = js.native
+    def sibling(): _XTreeNode[T] | Null = js.native
+    def uncle(): _XTreeNode[T] | Null = js.native
   }
   
 }

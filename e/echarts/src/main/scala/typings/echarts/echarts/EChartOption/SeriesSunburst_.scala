@@ -15,15 +15,15 @@ import scala.scalajs.js.annotation._
   * From the view of data structure, inner rings are the parent nodes
   * of outer rings.
   * Therefore, it can show the partial-overall relationship as
-  * [Pie](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie)
+  * [Pie](https://echarts.apache.org/en/option.html#series-pie)
   * charts, and also level relation as
-  * [Treemap](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+  * [Treemap](https://echarts.apache.org/en/option.html#series-treemap)
   * charts.
   *
   * **For example:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst)
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst)
+  * [see doc](https://echarts.apache.org/en/option.html#series-sunburst)
+  * [see doc](https://echarts.apache.org/en/option.html#series-sunburst)
   *
   * **Data mining**
   *
@@ -31,11 +31,11 @@ import scala.scalajs.js.annotation._
   * That means, when a user clicks a sector, it will be used as root
   * node, and there will be a circle in the center for return to parent
   * node. If data mining is not needed, it can be disabled by
-  * [series-sunburst.nodeClick](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.nodeClick)
+  * [series-sunburst.nodeClick](https://echarts.apache.org/en/option.html#series-treemap.nodeClick)
   * .
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst
+  * @see https://echarts.apache.org/en/option.html#series-sunburst
   */
 @JSName("SeriesSunburst")
 trait SeriesSunburst_ extends js.Object {
@@ -45,7 +45,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.animation
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -54,14 +54,14 @@ trait SeriesSunburst_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -70,50 +70,50 @@ trait SeriesSunburst_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst)
     *
     *
     * @default
     * 500
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -122,7 +122,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -133,7 +133,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -146,54 +146,54 @@ trait SeriesSunburst_ extends js.Object {
     *
     * **Example:**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst)
     *
     *
     * @default
     * ['50%', '50%']
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.center
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.center
     */
   var center: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * The data structure of
-    * [series-sunburst.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data)
+    * [series-sunburst.data](https://echarts.apache.org/en/option.html#series-sunburst.data)
     * is like tree. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.data
     */
   var data: js.UndefOr[js.Array[DataObject]] = js.undefined
   /**
     * Item style when mouse is hovering unrelated items. See
-    * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
+    * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.downplay
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.downplay
     */
   var downplay: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Item style when mouse is hovering. See
-    * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
+    * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
-    * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
+    * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlight
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.highlight
     */
   var highlight: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
@@ -209,7 +209,7 @@ trait SeriesSunburst_ extends js.Object {
     * and others downplayed.
     * If it is set to be `'none'`, then others will not be downplayed.**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst)
     *
     * The `highlightPolicy` value above is the default value `'descendant'`.
     * We use `dispatchAction` to highlight certain sector.
@@ -217,17 +217,17 @@ trait SeriesSunburst_ extends js.Object {
     * decided by `highlightPolicy` uses the style of `highlight`, and
     * others use `downplay`.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst)
     *
     * If `highlightPolicy` is set to be `'ancestor'`, then the result
     * looks like:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst)
     *
     *
     * @default
     * "descendant"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy
     */
   var highlightPolicy: js.UndefOr[String] = js.undefined
   /**
@@ -236,54 +236,54 @@ trait SeriesSunburst_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.id
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     * Style of Sunburst sectors.
     *
     * Style can be set in
-    * [series.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.itemStyle)
+    * [series.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.itemStyle)
     * for sectors of this series, or
-    * [series.levels.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.itemStyle)
+    * [series.levels.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.levels.itemStyle)
     * for the whole level, or
-    * [series.data.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.itemStyle)
+    * [series.data.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.data.itemStyle)
     * for single sector. If
-    * [series.data.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.itemStyle)
+    * [series.data.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.data.itemStyle)
     * is defined, it will cover the setting of
-    * [series.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.itemStyle)
+    * [series.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.itemStyle)
     * and
-    * [series.levels.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.itemStyle)
+    * [series.levels.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.levels.itemStyle)
     * .
     *
     * **Priority:
-    * [series.data.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.itemStyle)
+    * [series.data.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.data.itemStyle)
     * >
-    * [series.levels.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.itemStyle)
+    * [series.levels.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.levels.itemStyle)
     * >
-    * [series.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.itemStyle)
+    * [series.itemStyle](https://echarts.apache.org/en/option.html#series-sunburst.itemStyle)
     * .**
     *
     * In ECharts, _emphasis_ is for styles when mouse hovers.
     * For Sunburst charts, there are two extra states: _highlight_
     * for highlighting items that relates to the emphasized one, and
     * _downplay_ for others when emphasizing an item. See
-    * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
+    * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
     * **Priority:
-    * [series.data.label](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.label)
+    * [series.data.label](https://echarts.apache.org/en/option.html#series-sunburst.data.label)
     * >
-    * [series.levels.label](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.label)
+    * [series.levels.label](https://echarts.apache.org/en/option.html#series-sunburst.levels.label)
     * >
-    * [series.label](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.label)
+    * [series.label](https://echarts.apache.org/en/option.html#series-sunburst.label)
     * .**
     *
     * Text label of , to explain some data information about graphic
@@ -294,7 +294,7 @@ trait SeriesSunburst_ extends js.Object {
     * as `itemStyle` does.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.label
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
   /**
@@ -311,23 +311,23 @@ trait SeriesSunburst_ extends js.Object {
     * the most inside sector to be red, and text to be blue, we can
     * set the option like:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst)
     *
     *
     * @default
     * []
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.levels
     */
   var levels: js.UndefOr[Anon_Downplay] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.name
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -336,13 +336,13 @@ trait SeriesSunburst_ extends js.Object {
     * + `false`: nothing happens.
     * + `'rootToNode'`: use the clicked sector as root.
     * + `'link'`：if
-    * [link](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.link)
+    * [link](https://echarts.apache.org/en/option.html#series-sunburst.data.link)
     * is set, the page will redirect to it.
     *
     *
     * @default
     * "rootToNode"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.nodeClick
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.nodeClick
     */
   var nodeClick: js.UndefOr[Boolean | String] = js.undefined
   /**
@@ -360,36 +360,36 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @default
     * [0, '75%']
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.radius
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.radius
     */
   var radius: js.UndefOr[js.Array[_] | Double | String] = js.undefined
   /**
     * If there is no `name`, whether need to render it.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.renderLabelForZeroData
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.renderLabelForZeroData
     */
   var renderLabelForZeroData: js.UndefOr[Boolean] = js.undefined
   /**
     * Sorting method that sectors use based on
-    * [`value`](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.value)
+    * [`value`](https://echarts.apache.org/en/option.html#series-sunburst.data.value)
     * , which is the sum of children when not set.
     * The default value `'desc'` states for descending order, while
     * it can also be set to be `'asc'` for ascending order, or `null`
     * for not sorting, or callback function like:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sunburst)
+    * [see doc](https://echarts.apache.org/en/option.html#series-sunburst.sunburst)
     *
     *
     * @default
     * "desc"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.sort
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.sort
     */
   var sort: js.UndefOr[js.Function | String] = js.undefined
   /**
     * @default
     * "sunburst"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.type
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
@@ -404,7 +404,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.z
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -422,7 +422,7 @@ trait SeriesSunburst_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-sunburst.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

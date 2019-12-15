@@ -29,19 +29,40 @@ class LayoutCall protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val arguments: IList[LayoutCallArgument] = js.native
-  val containerAsLayout: ILayout | Layout = js.native
-  val containerAsPage: IPage | Page = js.native
-  val containerAsPageTemplate: IPageTemplate | PageTemplate = js.native
-  val containerAsWebLayoutContent: IWebLayoutContent | WebLayoutContent = js.native
+  @JSName("containerAsLayout")
+  val containerAsLayout_FLayoutCall: ILayout = js.native
+  @JSName("containerAsPageTemplate")
+  val containerAsPageTemplate_FLayoutCall: IPageTemplate = js.native
+  @JSName("containerAsPage")
+  val containerAsPage_FLayoutCall: IPage = js.native
+  @JSName("containerAsWebLayoutContent")
+  val containerAsWebLayoutContent_FLayoutCall: IWebLayoutContent = js.native
+  @JSName("layoutQualifiedName")
+  val layoutQualifiedName_FLayoutCall: String | Null = js.native
+  /**
+    * This property is required and cannot be set to null.
+    *
+    * In version 8.0.0: removed optional
+    * In version 7.17.0: added public
+    */
+  @JSName("layout")
+  val layout_FLayoutCall: ILayout | Null = js.native
+  @JSName("model")
+  var model_FLayoutCall: IModel = js.native
+  def arguments(): IList[LayoutCallArgument] = js.native
+  def containerAsLayout(): Layout = js.native
+  def containerAsPage(): Page = js.native
+  def containerAsPageTemplate(): PageTemplate = js.native
+  def containerAsWebLayoutContent(): WebLayoutContent = js.native
   /**
     * In version 8.0.0: removed optional
     * In version 7.17.0: added public
     */
-  var layout: ILayout | Null = js.native
-  val layoutQualifiedName: Null | String = js.native
-  @JSName("model")
-  var model_LayoutCall: IModel = js.native
+  def layout(): ILayout | Null = js.native
+  def layout(newValue: ILayout): js.Any = js.native
+  def layoutQualifiedName(): String | Null = js.native
+  @JSName("layout")
+  def layout_Any(): js.Any = js.native
 }
 
 /* static members */

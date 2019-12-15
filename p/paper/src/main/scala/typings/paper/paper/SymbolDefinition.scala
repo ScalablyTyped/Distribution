@@ -25,7 +25,7 @@ class SymbolDefinition protected () extends js.Object {
   /** 
     * The item used as the symbol's definition.
     */
-  var item: Item | Null = js.native
+  var item: Item = js.native
   /** 
     * The project that this symbol belongs to.
     */

@@ -37,23 +37,26 @@ abstract class MemberRef protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsAttributeWidget: AttributeWidget = js.native
-  val containerAsClientTemplateParameter: ClientTemplateParameter = js.native
-  val containerAsDataGridColumn: DataGridColumn = js.native
-  val containerAsDocumentTemplatesGridSortItem: GridSortItem = js.native
-  val containerAsGridColumn: GridColumn = js.native
-  val containerAsListViewSearch: ListViewSearch = js.native
-  val containerAsMemberWidget: MemberWidget = js.native
-  val containerAsPagesGridSortItem: typings.mendixmodelsdk.distGenPagesMod.pages.GridSortItem = js.native
-  val containerAsRangeSearchField: RangeSearchField = js.native
-  val containerAsSingleSearchField: SingleSearchField = js.native
-  val containerAsSortItem: SortItem = js.native
-  val containerAsStaticOrDynamicString: StaticOrDynamicString = js.native
-  val containerAsVariableRefExpression: VariableRefExpression = js.native
-  val containerAsWidgetValue: WidgetValue = js.native
-  var entityRef: IndirectEntityRef | Null = js.native
   @JSName("model")
-  var model_MemberRef: IModel = js.native
+  var model_FMemberRef: IModel = js.native
+  def containerAsAttributeWidget(): AttributeWidget = js.native
+  def containerAsClientTemplateParameter(): ClientTemplateParameter = js.native
+  def containerAsDataGridColumn(): DataGridColumn = js.native
+  def containerAsDocumentTemplatesGridSortItem(): GridSortItem = js.native
+  def containerAsGridColumn(): GridColumn = js.native
+  def containerAsListViewSearch(): ListViewSearch = js.native
+  def containerAsMemberWidget(): MemberWidget = js.native
+  def containerAsPagesGridSortItem(): typings.mendixmodelsdk.distGenPagesMod.pages.GridSortItem = js.native
+  def containerAsRangeSearchField(): RangeSearchField = js.native
+  def containerAsSingleSearchField(): SingleSearchField = js.native
+  def containerAsSortItem(): SortItem = js.native
+  def containerAsStaticOrDynamicString(): StaticOrDynamicString = js.native
+  def containerAsVariableRefExpression(): VariableRefExpression = js.native
+  def containerAsWidgetValue(): WidgetValue = js.native
+  def entityRef(): IndirectEntityRef | Null = js.native
+  def entityRef(newValue: IndirectEntityRef): js.Any = js.native
+  @JSName("entityRef")
+  def entityRef_Any(): js.Any = js.native
 }
 
 /* static members */

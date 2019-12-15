@@ -11,7 +11,7 @@ trait Anon_FillFont extends js.Object {
     *
     * @default
     * '#000'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.fill
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.fill
     */
   var fill: js.UndefOr[String] = js.undefined
   /**
@@ -22,17 +22,17 @@ trait Anon_FillFont extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem.return_text.style)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.return_text.style)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.font
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.font
     */
   var font: js.UndefOr[String] = js.undefined
   /**
     * Width of stroke.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.lineWidth
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.lineWidth
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -41,7 +41,7 @@ trait Anon_FillFont extends js.Object {
     *
     * @default
     * "undefined"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -50,7 +50,7 @@ trait Anon_FillFont extends js.Object {
     *
     * @default
     * "undefined"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.shadowColor
     */
   var shadowColor: js.UndefOr[Double] = js.undefined
   /**
@@ -59,7 +59,7 @@ trait Anon_FillFont extends js.Object {
     *
     * @default
     * "undefined"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
@@ -68,14 +68,14 @@ trait Anon_FillFont extends js.Object {
     *
     * @default
     * "undefined"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
     * Color of stroke.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.stroke
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.stroke
     */
   var stroke: js.UndefOr[String] = js.undefined
   /**
@@ -84,7 +84,7 @@ trait Anon_FillFont extends js.Object {
     *
     * @default
     * ''
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.text
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.text
     */
   var text: js.UndefOr[String] = js.undefined
   /**
@@ -93,16 +93,16 @@ trait Anon_FillFont extends js.Object {
     *
     * `'left'` means the left side of the text block is
     * specified by the
-    * [style.x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.x)
+    * [style.x](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.x)
     * , while `'right'` means the right side of the text
     * block is specified by
-    * [style.y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.y)
+    * [style.y](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.y)
     * .
     *
     *
     * @default
     * "left"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.textAlign
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.textAlign
     */
   var textAlign: js.UndefOr[String] = js.undefined
   /**
@@ -110,7 +110,7 @@ trait Anon_FillFont extends js.Object {
     * Optional values: `'top'`, `'middle'`, `'bottom'`.
     *
     * More attributes in `style` (for example,
-    * [rich text](https://ecomfe.github.io/echarts-doc/public/en/tutorial.html#Rich%20Text)
+    * [rich text](https://echarts.apache.org/en/tutorial.html#Rich%20Text)
     * ), see the `style` related attributes in
     * [zrender/graphic/Displayable](https://ecomfe.github.io/zrender-doc/public/api.html#zrenderdisplayable)
     * .
@@ -121,18 +121,18 @@ trait Anon_FillFont extends js.Object {
     * `echarts itemStyle`, etc.,
     * although they have the same meaning. For example:
     *
-    * + [itemStyle.color](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.label.color)
+    * + [itemStyle.color](https://echarts.apache.org/en/option.html#series-scatter.label.color)
     * => `style.fill`
-    * + [itemStyle.borderColor](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.label.color)
+    * + [itemStyle.borderColor](https://echarts.apache.org/en/option.html#series-scatter.label.color)
     * => `style.stroke`
-    * + [label.color](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.label.color)
+    * + [label.color](https://echarts.apache.org/en/option.html#series-scatter.label.color)
     * => `style.textFill`
-    * + [label.textBorderColor](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.label.textBorderColor)
+    * + [label.textBorderColor](https://echarts.apache.org/en/option.html#series-scatter.label.textBorderColor)
     * => `style.textStroke`
     * + ...
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.textVerticalAlign
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.textVerticalAlign
     */
   var textVerticalAlign: js.UndefOr[String] = js.undefined
   /**
@@ -140,7 +140,7 @@ trait Anon_FillFont extends js.Object {
     * in the coordinate system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.x
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.x
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
@@ -148,7 +148,7 @@ trait Anon_FillFont extends js.Object {
     * in the coordinate system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text.style.y
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }

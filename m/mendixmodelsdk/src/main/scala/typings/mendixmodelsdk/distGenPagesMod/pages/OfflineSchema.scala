@@ -27,13 +27,16 @@ class OfflineSchema protected () extends Element {
     container: AbstractElement
   ) = this()
   @JSName("model")
-  var model_OfflineSchema: IModel = js.native
-  var role: IUserRole | Null = js.native
-  val roleQualifiedName: String | Null = js.native
+  var model_FOfflineSchema: IModel = js.native
+  def role(): IUserRole | Null = js.native
+  def role(newValue: IUserRole): js.Any = js.native
+  def roleQualifiedName(): String | Null = js.native
+  @JSName("role")
+  def role_Any(): js.Any = js.native
   /**
     * In version 6.4.0: introduced
     */
-  val tables: IList[String] = js.native
+  def tables(): IList[String] = js.native
 }
 
 /* static members */

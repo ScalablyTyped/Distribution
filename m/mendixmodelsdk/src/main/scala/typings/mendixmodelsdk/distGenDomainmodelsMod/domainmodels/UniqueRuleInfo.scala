@@ -20,6 +20,8 @@ class UniqueRuleInfo protected () extends RuleInfo {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FUniqueRuleInfo: IModel = js.native
 }
 
 /* static members */

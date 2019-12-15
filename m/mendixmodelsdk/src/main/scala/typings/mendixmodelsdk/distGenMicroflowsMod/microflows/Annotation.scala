@@ -23,7 +23,10 @@ class Annotation protected () extends MicroflowObject {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: String = js.native
+  @JSName("model")
+  var model_FAnnotation: IModel = js.native
+  def caption(): String = js.native
+  def caption(newValue: String): js.Any = js.native
 }
 
 /* static members */

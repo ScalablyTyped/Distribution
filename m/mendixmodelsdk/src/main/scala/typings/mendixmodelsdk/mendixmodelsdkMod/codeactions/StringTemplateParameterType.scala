@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-  *
+  * In version 8.5.0: removed experimental
   * In version 8.4.0: introduced
   */
 @JSImport("mendixmodelsdk", "codeactions.StringTemplateParameterType")

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IParameterType because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IEntityTypeParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined typeParameter */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.EntityTypeParameterType")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IEntityTypeParameterType because var conflicts: containerAsJavaActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined typeParameter */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.EntityTypeParameterType")
 @js.native
 class EntityTypeParameterType protected () extends ParameterType {
   def this(
@@ -29,9 +29,16 @@ class EntityTypeParameterType protected () extends ParameterType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FEntityTypeParameterType: IModel = js.native
+  @JSName("typeParameter")
+  val typeParameter_FEntityTypeParameterType: ITypeParameter | Null = js.native
   @JSName("containerAsJavaActionParameter")
-  val containerAsJavaActionParameter_EntityTypeParameterType: JavaActionParameter = js.native
-  var typeParameter: ITypeParameter | Null | TypeParameter = js.native
+  def containerAsJavaActionParameter_MEntityTypeParameterType(): JavaActionParameter = js.native
+  def typeParameter(): TypeParameter | Null = js.native
+  def typeParameter(newValue: TypeParameter): js.Any = js.native
+  @JSName("typeParameter")
+  def typeParameter_Any(): js.Any = js.native
 }
 
 /* static members */

@@ -11,7 +11,7 @@ trait Anon_ItemStyleLabelNameValue extends js.Object {
     * merged together.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.data.1.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.data.1.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
@@ -20,7 +20,7 @@ trait Anon_ItemStyleLabelNameValue extends js.Object {
     * merged together.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.data.1.label
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.data.1.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
   /**
@@ -34,7 +34,7 @@ trait Anon_ItemStyleLabelNameValue extends js.Object {
     * value of the item, not necessary.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.data.1.value
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.data.1.value
     */
   var value: js.UndefOr[Double] = js.undefined
   /**
@@ -42,7 +42,7 @@ trait Anon_ItemStyleLabelNameValue extends js.Object {
     * number (like `5`), or percent value (like `'20%'`).
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.data.1.x
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.data.1.x
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
@@ -50,7 +50,7 @@ trait Anon_ItemStyleLabelNameValue extends js.Object {
     * number (like `5`), or percent value (like `'20%'`).
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.data.1.y
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.data.1.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }

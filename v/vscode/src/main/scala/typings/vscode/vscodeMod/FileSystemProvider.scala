@@ -54,6 +54,11 @@ trait FileSystemProvider extends js.Object {
   		 * An event to signal that a resource has been created, changed, or deleted. This
   		 * event should fire for resources that are being [watched](#FileSystemProvider.watch)
   		 * by clients of this provider.
+  		 *
+  		 * *Note:* It is important that the metadata of the file that changed provides an
+  		 * updated `mtime` that advanced from the previous value in the [stat](#FileStat) and a
+  		 * correct `size` value. Otherwise there may be optimizations in place that will not show
+  		 * the change in an editor for example.
   		 */
   def onDidChangeFile(listener: js.Function1[/* e */ js.Array[FileChangeEvent], _]): Disposable = js.native
   def onDidChangeFile(listener: js.Function1[/* e */ js.Array[FileChangeEvent], _], thisArgs: js.Any): Disposable = js.native

@@ -26,7 +26,10 @@ class JavaActionsSettings protected () extends ProjectSettingsPart {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var generatePostfixesForParameters: Boolean = js.native
+  @JSName("model")
+  var model_FJavaActionsSettings: IModel = js.native
+  def generatePostfixesForParameters(): Boolean = js.native
+  def generatePostfixesForParameters(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

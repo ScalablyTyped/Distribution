@@ -1,5 +1,6 @@
 package typings.ioredis.ioredisMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.ioredis.ioredisStrings.AFTER
 import typings.ioredis.ioredisStrings.BEFORE
 import typings.ioredis.ioredisStrings.COUNT
@@ -118,7 +119,10 @@ trait Pipeline extends js.Object {
   def hgetBuffer(key: KeyType, field: String): Pipeline = js.native
   def hgetBuffer(key: KeyType, field: String, callback: js.Function2[/* err */ Error, /* res */ Buffer, Unit]): Pipeline = js.native
   def hgetall(key: KeyType): Pipeline = js.native
-  def hgetall(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ js.Array[String], Unit]): Pipeline = js.native
+  def hgetall(
+    key: KeyType,
+    callback: js.Function2[/* err */ Error, /* res */ StringDictionary[String | Double], Unit]
+  ): Pipeline = js.native
   def hincrby(key: KeyType, field: String, increment: Double): Pipeline = js.native
   def hincrby(
     key: KeyType,

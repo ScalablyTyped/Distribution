@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IDataType because Already inherited
 - typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IEntityType because Already inherited
-- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IObjectType because var conflicts: entity, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ObjectType")
+- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IObjectType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, entity, entityQualifiedName, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ObjectType")
 @js.native
 class ObjectType protected () extends EntityType {
   def this(
@@ -45,6 +45,24 @@ class ObjectType protected () extends EntityType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FObjectType: IModel = js.native
+  @JSName("containerAsAppServiceActionParameter")
+  def containerAsAppServiceActionParameter_MObjectType(): AppServiceActionParameter = js.native
+  @JSName("containerAsAppServiceAction")
+  def containerAsAppServiceAction_MObjectType(): AppServiceAction = js.native
+  @JSName("containerAsConstant")
+  def containerAsConstant_MObjectType(): Constant = js.native
+  @JSName("containerAsDataSetParameter")
+  def containerAsDataSetParameter_MObjectType(): DataSetParameter = js.native
+  @JSName("containerAsDocumentTemplateParameter")
+  def containerAsDocumentTemplateParameter_MObjectType(): DocumentTemplateParameter = js.native
+  @JSName("containerAsImportMapping")
+  def containerAsImportMapping_MObjectType(): ImportMapping = js.native
+  @JSName("containerAsMicroflowBase")
+  def containerAsMicroflowBase_MObjectType(): MicroflowBase = js.native
+  @JSName("containerAsMicroflowParameterBase")
+  def containerAsMicroflowParameterBase_MObjectType(): MicroflowParameterBase = js.native
 }
 
 /* static members */

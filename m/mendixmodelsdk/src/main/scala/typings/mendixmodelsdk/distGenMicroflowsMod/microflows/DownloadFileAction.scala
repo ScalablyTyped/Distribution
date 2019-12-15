@@ -23,8 +23,12 @@ class DownloadFileAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var fileDocumentVariableName: String = js.native
-  var showFileInBrowser: Boolean = js.native
+  @JSName("model")
+  var model_FDownloadFileAction: IModel = js.native
+  def fileDocumentVariableName(): String = js.native
+  def fileDocumentVariableName(newValue: String): js.Any = js.native
+  def showFileInBrowser(): Boolean = js.native
+  def showFileInBrowser(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

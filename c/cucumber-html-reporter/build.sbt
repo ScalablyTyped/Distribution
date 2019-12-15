@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cucumber-html-reporter"
-version := "5.0.2-c4fb5c"
+version := "5.1.0-dcd257"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

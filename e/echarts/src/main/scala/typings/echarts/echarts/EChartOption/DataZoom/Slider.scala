@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom-slider
+  * @see https://echarts.apache.org/en/option.html#dataZoom-slider
   */
 trait Slider extends js.Object {
   var angleAxisIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined

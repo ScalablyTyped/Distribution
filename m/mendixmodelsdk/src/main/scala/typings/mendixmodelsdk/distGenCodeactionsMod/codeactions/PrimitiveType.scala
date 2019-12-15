@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenCodeactionsMod.codeactions
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenCodeactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IType because Already inherited
-- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IPrimitiveType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.PrimitiveType")
+- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IPrimitiveType because var conflicts: containerAsBasicParameterType, containerAsCodeAction, containerAsListType, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.PrimitiveType")
 @js.native
 abstract class PrimitiveType protected () extends Type {
   def this(
@@ -27,10 +28,12 @@ abstract class PrimitiveType protected () extends Type {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FPrimitiveType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  val containerAsBasicParameterType_PrimitiveType: BasicParameterType = js.native
+  def containerAsBasicParameterType_MPrimitiveType(): BasicParameterType = js.native
   @JSName("containerAsCodeAction")
-  val containerAsCodeAction_PrimitiveType: CodeAction = js.native
+  def containerAsCodeAction_MPrimitiveType(): CodeAction = js.native
 }
 
 /* static members */

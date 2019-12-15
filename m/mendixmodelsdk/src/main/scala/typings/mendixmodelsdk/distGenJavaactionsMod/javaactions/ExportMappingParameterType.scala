@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IParameterType because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IExportMappingParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ExportMappingParameterType")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IExportMappingParameterType because var conflicts: containerAsJavaActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ExportMappingParameterType")
 @js.native
 class ExportMappingParameterType protected () extends ParameterType {
   def this(
@@ -29,8 +29,10 @@ class ExportMappingParameterType protected () extends ParameterType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FExportMappingParameterType: IModel = js.native
   @JSName("containerAsJavaActionParameter")
-  val containerAsJavaActionParameter_ExportMappingParameterType: JavaActionParameter = js.native
+  def containerAsJavaActionParameter_MExportMappingParameterType(): JavaActionParameter = js.native
 }
 
 /* static members */

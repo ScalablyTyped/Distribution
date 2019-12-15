@@ -20,6 +20,8 @@ class Union protected () extends BinaryListOperation {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FUnion: IModel = js.native
 }
 
 /* static members */

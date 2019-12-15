@@ -23,8 +23,12 @@ class RollbackAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var refreshInClient: Boolean = js.native
-  var rollbackVariableName: String = js.native
+  @JSName("model")
+  var model_FRollbackAction: IModel = js.native
+  def refreshInClient(): Boolean = js.native
+  def refreshInClient(newValue: Boolean): js.Any = js.native
+  def rollbackVariableName(): String = js.native
+  def rollbackVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

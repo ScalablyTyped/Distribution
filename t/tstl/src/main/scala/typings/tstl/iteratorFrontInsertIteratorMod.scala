@@ -22,6 +22,11 @@ object iteratorFrontInsertIteratorMod extends js.Object {
       * @hidden
       */
     var source_ : js.Any = js.native
+    /**
+      * @inheritDoc
+      */
+    @JSName("value")
+    def value_MFrontInsertIterator(`val`: T): js.Any = js.native
   }
   
 }

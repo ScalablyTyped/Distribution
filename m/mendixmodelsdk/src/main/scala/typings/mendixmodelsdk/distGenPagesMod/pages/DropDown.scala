@@ -28,10 +28,13 @@ class DropDown protected () extends AttributeWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDropDown: IModel = js.native
   /**
     * In version 7.2.0: introduced
     */
-  var emptyOptionCaption: Text = js.native
+  def emptyOptionCaption(): Text = js.native
+  def emptyOptionCaption(newValue: Text): js.Any = js.native
 }
 
 /* static members */
@@ -280,6 +283,15 @@ object DropDown extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DropDown = js.native
+  /**
+    * Creates and returns a new DropDown instance in the SDK and on the server.
+    * The new DropDown will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DropDown = js.native
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
     * The new DropDown will be automatically stored in the 'widgets' property

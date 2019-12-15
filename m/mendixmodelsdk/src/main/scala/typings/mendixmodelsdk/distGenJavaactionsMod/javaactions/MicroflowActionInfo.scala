@@ -31,13 +31,28 @@ class MicroflowActionInfo protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: String = js.native
-  var category: String = js.native
-  val containerAsJavaAction: IJavaAction | JavaAction = js.native
-  var icon: IImage | Null = js.native
-  val iconQualifiedName: Null | String = js.native
+  @JSName("caption")
+  val caption_FMicroflowActionInfo: String = js.native
+  @JSName("category")
+  val category_FMicroflowActionInfo: String = js.native
+  @JSName("containerAsJavaAction")
+  val containerAsJavaAction_FMicroflowActionInfo: IJavaAction = js.native
+  @JSName("iconQualifiedName")
+  val iconQualifiedName_FMicroflowActionInfo: String | Null = js.native
+  @JSName("icon")
+  val icon_FMicroflowActionInfo: IImage | Null = js.native
   @JSName("model")
-  var model_MicroflowActionInfo: IModel = js.native
+  var model_FMicroflowActionInfo: IModel = js.native
+  def caption(): String = js.native
+  def caption(newValue: String): js.Any = js.native
+  def category(): String = js.native
+  def category(newValue: String): js.Any = js.native
+  def containerAsJavaAction(): JavaAction = js.native
+  def icon(): IImage | Null = js.native
+  def icon(newValue: IImage): js.Any = js.native
+  def iconQualifiedName(): String | Null = js.native
+  @JSName("icon")
+  def icon_Any(): js.Any = js.native
 }
 
 /* static members */

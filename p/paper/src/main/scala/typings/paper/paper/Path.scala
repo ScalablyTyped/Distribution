@@ -1,6 +1,5 @@
 package typings.paper.paper
 
-import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +42,7 @@ class Path () extends PathItem {
     * Specifies whether the path is closed. If it is closed, Paper.js connects
     * the first and last segments.
     */
-  var closed: Boolean | Null = js.native
+  var closed: Boolean = js.native
   /** 
     * The curves contained within the path.
     */
@@ -60,7 +59,7 @@ class Path () extends PathItem {
     * Specifies whether the path and all its segments are selected. Cannot be
     * `true` on an empty path.
     */
-  var fullySelected: Boolean | Null = js.native
+  var fullySelected: Boolean = js.native
   /** 
     * The last Curve contained within the path.
     */
@@ -76,7 +75,7 @@ class Path () extends PathItem {
   /** 
     * The segments contained within the path.
     */
-  var segments: js.Array[Segment] | Null = js.native
+  var segments: js.Array[Segment] = js.native
   /** 
     * Adds one or more segments to the end of the {@link #segments} array of
     * this path.
@@ -88,7 +87,7 @@ class Path () extends PathItem {
     * the same object, e.g. if the segment to be added already belongs to
     * another path.
     */
-  def add(segment: (Segment | Point | js.Array[Number])*): Segment | js.Array[Segment] = js.native
+  def add(segment: (Segment | Point | js.Array[Double])*): Segment | js.Array[Segment] = js.native
   /** 
     * Adds an array of segments (or types that can be converted to segments)
     * to the end of the {@link #segments} array.

@@ -13,11 +13,11 @@ trait DataObject extends js.Object {
     * Index of category which the data item belongs to.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.category
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.category
     */
   var category: js.UndefOr[Double] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType
@@ -26,28 +26,28 @@ trait DataObject extends js.Object {
     * If node are fixed when doing force directed layout.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.fixed
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.fixed
     */
   var fixed: js.UndefOr[Boolean] = js.undefined
   /**
     * The style of this node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * The label style of this node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.label
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * Name of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.name
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -69,7 +69,7 @@ trait DataObject extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph.data)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -84,17 +84,17 @@ trait DataObject extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.graph.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-graph.graph.data)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.symbol
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -117,7 +117,7 @@ trait DataObject extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -127,7 +127,7 @@ trait DataObject extends js.Object {
     * tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -138,35 +138,35 @@ trait DataObject extends js.Object {
     * is`10`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * Value of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.value
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.value
     */
   var value: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * `x` value of node position.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.x
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.x
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
     * `y` value of node position.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.y
+    * @see https://echarts.apache.org/en/option.html#series-graph.data.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }

@@ -13,6 +13,17 @@ class SnippetString () extends js.Object {
   		 */
   var value: String = js.native
   /**
+  		 * Builder-function that appends a choice (`${1|a,b,c}`) to
+  		 * the [`value`](#SnippetString.value) of this snippet string.
+  		 *
+  		 * @param values The values for choices - the array of strings
+  		 * @param number The number of this tabstop, defaults to an auto-increment
+  		 * value starting at 1.
+  		 * @return This snippet string.
+  		 */
+  def appendChoice(values: js.Array[String]): SnippetString = js.native
+  def appendChoice(values: js.Array[String], number: Double): SnippetString = js.native
+  /**
   		 * Builder-function that appends a placeholder (`${1:value}`) to
   		 * the [`value`](#SnippetString.value) of this snippet string.
   		 *

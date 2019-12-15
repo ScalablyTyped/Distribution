@@ -60,22 +60,22 @@ class Matrix () extends js.Object {
     * The value that affects the transformation along the x axis when scaling
     * or rotating, positioned at (0, 0) in the transformation matrix.
     */
-  var a: Double | Null = js.native
+  var a: Double = js.native
   /** 
     * The value that affects the transformation along the y axis when rotating
     * or skewing, positioned at (1, 0) in the transformation matrix.
     */
-  var b: Double | Null = js.native
+  var b: Double = js.native
   /** 
     * The value that affects the transformation along the x axis when rotating
     * or skewing, positioned at (0, 1) in the transformation matrix.
     */
-  var c: Double | Null = js.native
+  var c: Double = js.native
   /** 
     * The value that affects the transformation along the y axis when scaling
     * or rotating, positioned at (1, 1) in the transformation matrix.
     */
-  var d: Double | Null = js.native
+  var d: Double = js.native
   /** 
     * The rotation angle of the matrix, if it can be decomposed.
     * 
@@ -96,12 +96,12 @@ class Matrix () extends js.Object {
     * The distance by which to translate along the x axis, positioned at (2, 0)
     * in the transformation matrix.
     */
-  var tx: Double | Null = js.native
+  var tx: Double = js.native
   /** 
     * The distance by which to translate along the y axis, positioned at (2, 1)
     * in the transformation matrix.
     */
-  var ty: Double | Null = js.native
+  var ty: Double = js.native
   /** 
     * The matrix values as an array, in the same sequence as they are passed
     * to {@link #initialize}.
@@ -130,8 +130,8 @@ class Matrix () extends js.Object {
     * Attempts to apply the matrix to the content of item that it belongs to,
     * meaning its transformation is baked into the item's content or children.
     * 
-    * @param recursively - controls whether to apply transformations
-    * recursively on children
+    * @param recursively - controls whether to apply
+    *     transformations recursively on children
     * 
     * @return true if the matrix was applied
     */

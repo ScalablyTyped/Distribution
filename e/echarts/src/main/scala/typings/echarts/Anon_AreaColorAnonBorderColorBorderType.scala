@@ -9,7 +9,7 @@ trait Anon_AreaColorAnonBorderColorBorderType extends js.Object {
     * Color of the area.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.itemStyle.areaColor
+    * @see https://echarts.apache.org/en/option.html#series-map.data.itemStyle.areaColor
     */
   var areaColor: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
 }

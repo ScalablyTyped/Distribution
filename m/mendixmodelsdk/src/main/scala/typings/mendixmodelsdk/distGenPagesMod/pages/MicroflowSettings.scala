@@ -27,30 +27,43 @@ class MicroflowSettings protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var asynchronous: Boolean = js.native
-  var confirmationInfo: ConfirmationInfo | Null = js.native
-  val containerAsAssociationWidget: AssociationWidget = js.native
-  val containerAsAttributeWidget: AttributeWidget = js.native
-  val containerAsMicroflowClientAction: MicroflowClientAction = js.native
-  val containerAsMicroflowSource: MicroflowSource = js.native
-  val containerAsOnClickMicroflow: OnClickMicroflow = js.native
-  val containerAsReferenceSetSelector: ReferenceSetSelector = js.native
-  val containerAsSelectorMicroflowSource: SelectorMicroflowSource = js.native
-  var formValidations: FormValidations = js.native
-  var microflow: IMicroflow | Null = js.native
-  val microflowQualifiedName: String | Null = js.native
   @JSName("model")
-  var model_MicroflowSettings: IModel = js.native
+  var model_FMicroflowSettings: IModel = js.native
+  def asynchronous(): Boolean = js.native
+  def asynchronous(newValue: Boolean): js.Any = js.native
+  def confirmationInfo(): ConfirmationInfo | Null = js.native
+  def confirmationInfo(newValue: ConfirmationInfo): js.Any = js.native
+  @JSName("confirmationInfo")
+  def confirmationInfo_Any(): js.Any = js.native
+  def containerAsAssociationWidget(): AssociationWidget = js.native
+  def containerAsAttributeWidget(): AttributeWidget = js.native
+  def containerAsMicroflowClientAction(): MicroflowClientAction = js.native
+  def containerAsMicroflowSource(): MicroflowSource = js.native
+  def containerAsOnClickMicroflow(): OnClickMicroflow = js.native
+  def containerAsReferenceSetSelector(): ReferenceSetSelector = js.native
+  def containerAsSelectorMicroflowSource(): SelectorMicroflowSource = js.native
+  def formValidations(): FormValidations = js.native
+  def formValidations(newValue: FormValidations): js.Any = js.native
+  def microflow(): IMicroflow | Null = js.native
+  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflowQualifiedName(): String | Null = js.native
+  @JSName("microflow")
+  def microflow_Any(): js.Any = js.native
   /**
     * In version 7.19.0: introduced
     */
-  val parameterMappings: IList[MicroflowParameterMapping] = js.native
-  var progressBar: ProgressBarType = js.native
-  var progressMessage: Text | Null = js.native
+  def parameterMappings(): IList[MicroflowParameterMapping] = js.native
+  def progressBar(): ProgressBarType = js.native
+  def progressBar(newValue: ProgressBarType): js.Any = js.native
+  def progressMessage(): Text | Null = js.native
+  def progressMessage(newValue: Text): js.Any = js.native
+  @JSName("progressMessage")
+  def progressMessage_Any(): js.Any = js.native
   /**
     * In version 7.19.0: deleted
     */
-  var useAllPages: Boolean = js.native
+  def useAllPages(): Boolean = js.native
+  def useAllPages(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

@@ -22,13 +22,16 @@ class MsdEnumerationValue protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsMsdEnumeration: MsdEnumeration = js.native
-  var guid: String = js.native
-  var image: String = js.native
   @JSName("model")
-  var model_MsdEnumerationValue: IModel = js.native
-  var name: String = js.native
-  val translations: IList[MsdText] = js.native
+  var model_FMsdEnumerationValue: IModel = js.native
+  def containerAsMsdEnumeration(): MsdEnumeration = js.native
+  def guid(): String = js.native
+  def guid(newValue: String): js.Any = js.native
+  def image(): String = js.native
+  def image(newValue: String): js.Any = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  def translations(): IList[MsdText] = js.native
 }
 
 /* static members */

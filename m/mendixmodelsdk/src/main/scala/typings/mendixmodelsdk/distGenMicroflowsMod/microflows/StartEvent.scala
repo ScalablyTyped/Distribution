@@ -23,6 +23,8 @@ class StartEvent protected () extends MicroflowObject {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FStartEvent: IModel = js.native
 }
 
 /* static members */

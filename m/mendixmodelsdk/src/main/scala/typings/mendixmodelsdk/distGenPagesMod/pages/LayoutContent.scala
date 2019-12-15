@@ -28,9 +28,11 @@ abstract class LayoutContent protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsLayout: ILayout | Layout = js.native
+  @JSName("containerAsLayout")
+  val containerAsLayout_FLayoutContent: ILayout = js.native
   @JSName("model")
-  var model_LayoutContent: IModel = js.native
+  var model_FLayoutContent: IModel = js.native
+  def containerAsLayout(): Layout = js.native
 }
 
 /* static members */

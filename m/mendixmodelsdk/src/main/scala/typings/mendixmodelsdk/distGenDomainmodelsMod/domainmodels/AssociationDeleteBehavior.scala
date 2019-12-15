@@ -22,13 +22,21 @@ class AssociationDeleteBehavior protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var childDeleteBehavior: DeletingBehavior = js.native
-  var childErrorMessage: Text | Null = js.native
-  val containerAsAssociationBase: AssociationBase = js.native
   @JSName("model")
-  var model_AssociationDeleteBehavior: IModel = js.native
-  var parentDeleteBehavior: DeletingBehavior = js.native
-  var parentErrorMessage: Text | Null = js.native
+  var model_FAssociationDeleteBehavior: IModel = js.native
+  def childDeleteBehavior(): DeletingBehavior = js.native
+  def childDeleteBehavior(newValue: DeletingBehavior): js.Any = js.native
+  def childErrorMessage(): Text | Null = js.native
+  def childErrorMessage(newValue: Text): js.Any = js.native
+  @JSName("childErrorMessage")
+  def childErrorMessage_Any(): js.Any = js.native
+  def containerAsAssociationBase(): AssociationBase = js.native
+  def parentDeleteBehavior(): DeletingBehavior = js.native
+  def parentDeleteBehavior(newValue: DeletingBehavior): js.Any = js.native
+  def parentErrorMessage(): Text | Null = js.native
+  def parentErrorMessage(newValue: Text): js.Any = js.native
+  @JSName("parentErrorMessage")
+  def parentErrorMessage_Any(): js.Any = js.native
 }
 
 /* static members */

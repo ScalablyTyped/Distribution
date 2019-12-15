@@ -20,6 +20,8 @@ class Find protected () extends InspectAttribute {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FFind: IModel = js.native
 }
 
 /* static members */

@@ -35,8 +35,8 @@ package object EChartOption {
     * on touch screens.
     *
     * @todo describe
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom-inside
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom-slider
+    * @see https://echarts.apache.org/en/option.html#dataZoom-inside
+    * @see https://echarts.apache.org/en/option.html#dataZoom-slider
     */
   type DataZoom = Inside | Slider
   type Dataset = Dataset_

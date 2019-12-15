@@ -31,6 +31,7 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceCallActi
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceOperationParameterMapping
 import typings.mendixmodelsdk.distGenPagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.distGenPagesMod.pages.WidgetValidation
+import typings.mendixmodelsdk.distGenRestMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -54,8 +55,11 @@ class ConstantRefExpression protected () extends Expression {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var constant: IConstant = js.native
-  val constantQualifiedName: String = js.native
+  @JSName("model")
+  var model_FConstantRefExpression: IModel = js.native
+  def constant(): IConstant = js.native
+  def constant(newValue: IConstant): js.Any = js.native
+  def constantQualifiedName(): String = js.native
 }
 
 /* static members */
@@ -151,6 +155,15 @@ object ConstantRefExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): ConstantRefExpression = js.native
+  /**
+    * Creates and returns a new ConstantRefExpression instance in the SDK and on the server.
+    * The new ConstantRefExpression will be automatically stored in the 'timeoutModel' property
+    * of the parent rest.ConsumedODataService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): ConstantRefExpression = js.native
   /**
     * Creates and returns a new ConstantRefExpression instance in the SDK and on the server.
     * The new ConstantRefExpression will be automatically stored in the 'initialValueModel' property

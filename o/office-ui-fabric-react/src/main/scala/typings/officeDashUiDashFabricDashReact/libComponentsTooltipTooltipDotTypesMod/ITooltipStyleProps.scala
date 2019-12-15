@@ -11,9 +11,6 @@ trait ITooltipStyleProps extends js.Object {
     * @defaultvalue 16
     */
   var beakWidth: js.UndefOr[Double] = js.undefined
-  /**
-    * Accept custom classNames
-    */
   var className: js.UndefOr[String] = js.undefined
   /**
     * Delay before tooltip appears.
@@ -29,9 +26,6 @@ trait ITooltipStyleProps extends js.Object {
     * Maximum width of tooltip.
     */
   var maxWidth: js.UndefOr[String] = js.undefined
-  /**
-    * Accept theme prop.
-    */
   var theme: ITheme
 }
 

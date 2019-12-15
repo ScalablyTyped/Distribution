@@ -21,25 +21,25 @@ trait CartesianAxis_ extends js.Object {
   /**
     * Settings related to axis label.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.axisLabel
+    * @see https://echarts.apache.org/en/option.html#yAxis.axisLabel
     */
   var axisLabel: js.UndefOr[Label] = js.undefined
   /**
     * Settings related to axis line.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.axisLine
+    * @see https://echarts.apache.org/en/option.html#yAxis.axisLine
     */
   var axisLine: js.UndefOr[Line] = js.undefined
   /**
     * axisPointer settings on the axis.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.axisPointer
+    * @see https://echarts.apache.org/en/option.html#yAxis.axisPointer
     */
   var axisPointer: js.UndefOr[Pointer] = js.undefined
   /**
     * Settings related to axis tick.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.axisTick
+    * @see https://echarts.apache.org/en/option.html#yAxis.axisTick
     */
   var axisTick: js.UndefOr[Tick] = js.undefined
   /**
@@ -58,7 +58,7 @@ trait CartesianAxis_ extends js.Object {
     * @example
     * boundaryGap: ['20%', '20%']
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.boundaryGap
+    * @see https://echarts.apache.org/en/option.html#yAxis.boundaryGap
     */
   var boundaryGap: js.UndefOr[Boolean | (js.Array[String | Double])] = js.undefined
   /**
@@ -88,7 +88,7 @@ trait CartesianAxis_ extends js.Object {
     *      }
     *  }, 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.data
+    * @see https://echarts.apache.org/en/option.html#yAxis.data
     */
   var data: js.UndefOr[js.Array[String | Double | DataObject]] = js.undefined
   /**
@@ -115,7 +115,7 @@ trait CartesianAxis_ extends js.Object {
     * Timestamp should be passed for type: `'time'` axis.
     * Logged value should be passed for type: `'log'` axis.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.interval
+    * @see https://echarts.apache.org/en/option.html#yAxis.interval
     */
   var interval: js.UndefOr[Double] = js.undefined
   /**
@@ -129,7 +129,7 @@ trait CartesianAxis_ extends js.Object {
     * `'log'`.
     *
     * @default 10
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.logBase
+    * @see https://echarts.apache.org/en/option.html#yAxis.logBase
     */
   var logBase: js.UndefOr[Double] = js.undefined
   /**
@@ -174,7 +174,7 @@ trait CartesianAxis_ extends js.Object {
     *     maxInterval: 3600 * 1000 * 24
     * }
     * It is available only for axis of type `'value'` or `'time'`.
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.minInterval
+    * @see https://echarts.apache.org/en/option.html#yAxis.minInterval
     */
   var minInterval: js.UndefOr[js.Any] = js.undefined
   /**
@@ -202,7 +202,7 @@ trait CartesianAxis_ extends js.Object {
   /**
     * Text style of axis name.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.nameTextStyle
+    * @see https://echarts.apache.org/en/option.html#yAxis.nameTextStyle
     */
   var nameTextStyle: js.UndefOr[TextStyleWithRich] = js.undefined
   /**
@@ -210,7 +210,7 @@ trait CartesianAxis_ extends js.Object {
     * Useful when multiple axis of this type has same position value.
     *
     * @default 0
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.offset
+    * @see https://echarts.apache.org/en/option.html#yAxis.offset
     */
   var offset: js.UndefOr[Double] = js.undefined
   /**
@@ -223,7 +223,7 @@ trait CartesianAxis_ extends js.Object {
     * are set.
     *
     * @default false
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.scale
+    * @see https://echarts.apache.org/en/option.html#yAxis.scale
     */
   var scale: js.UndefOr[Boolean] = js.undefined
   /**
@@ -241,13 +241,13 @@ trait CartesianAxis_ extends js.Object {
   /**
     * Split area of axis in grid area, not shown by default.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.splitArea
+    * @see https://echarts.apache.org/en/option.html#yAxis.splitArea
     */
   var splitArea: js.UndefOr[SplitArea] = js.undefined
   /**
     * SplitLine of axis in grid area.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.splitLine
+    * @see https://echarts.apache.org/en/option.html#yAxis.splitLine
     */
   var splitLine: js.UndefOr[SplitLine] = js.undefined
   /**
@@ -257,7 +257,7 @@ trait CartesianAxis_ extends js.Object {
     * This is unavailable for category axis.
     *
     * @default 5
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.splitNumber
+    * @see https://echarts.apache.org/en/option.html#yAxis.splitNumber
     */
   var splitNumber: js.UndefOr[Double] = js.undefined
   /**
@@ -287,7 +287,7 @@ trait CartesianAxis_ extends js.Object {
     * with larger z values.
     * z has a lower priority to zlevel, and will not create new Canvas.
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.z
+    * @see https://echarts.apache.org/en/option.html#yAxis.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -303,7 +303,7 @@ trait CartesianAxis_ extends js.Object {
     * with smaller `zlevel`.
     *
     * @default 0
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.zlevel
+    * @see https://echarts.apache.org/en/option.html#yAxis.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

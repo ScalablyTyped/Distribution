@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IType because Already inherited
-- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IEnumerationType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.EnumerationType")
+- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IEnumerationType because var conflicts: containerAsBasicParameterType, containerAsCodeAction, containerAsListType, id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.EnumerationType")
 @js.native
 class EnumerationType protected () extends Type {
   def this(
@@ -29,12 +29,22 @@ class EnumerationType protected () extends Type {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("enumerationQualifiedName")
+  val enumerationQualifiedName_FEnumerationType: String = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("enumeration")
+  val enumeration_FEnumerationType: IEnumeration = js.native
+  @JSName("model")
+  var model_FEnumerationType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  val containerAsBasicParameterType_EnumerationType: BasicParameterType = js.native
+  def containerAsBasicParameterType_MEnumerationType(): BasicParameterType = js.native
   @JSName("containerAsCodeAction")
-  val containerAsCodeAction_EnumerationType: CodeAction = js.native
-  var enumeration: IEnumeration = js.native
-  val enumerationQualifiedName: String = js.native
+  def containerAsCodeAction_MEnumerationType(): CodeAction = js.native
+  def enumeration(): IEnumeration = js.native
+  def enumeration(newValue: IEnumeration): js.Any = js.native
+  def enumerationQualifiedName(): String = js.native
 }
 
 /* static members */

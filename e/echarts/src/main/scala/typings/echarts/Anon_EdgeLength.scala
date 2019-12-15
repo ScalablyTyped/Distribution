@@ -8,7 +8,7 @@ trait Anon_EdgeLength extends js.Object {
   /**
     * The distance between 2 nodes on edge.
     * This distance is also affected by
-    * [repulsion](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force.repulsion)
+    * [repulsion](https://echarts.apache.org/en/option.html#series-graph.force.repulsion)
     * .
     *
     * It can be an array to represent the range of edge length.
@@ -19,7 +19,7 @@ trait Anon_EdgeLength extends js.Object {
     *
     * @default
     * 30
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force.edgeLength
+    * @see https://echarts.apache.org/en/option.html#series-graph.force.edgeLength
     */
   var edgeLength: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait Anon_EdgeLength extends js.Object {
     *
     * @default
     * 0.1
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force.gravity
+    * @see https://echarts.apache.org/en/option.html#series-graph.force.gravity
     */
   var gravity: js.UndefOr[Double] = js.undefined
   /**
@@ -38,18 +38,18 @@ trait Anon_EdgeLength extends js.Object {
     * influence on the result of force-directed layout.
     *
     * It defaults not to do any layout and use
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.x)
+    * [x](https://echarts.apache.org/en/option.html#series-graph.data.x)
     * ,
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.y)
+    * [y](https://echarts.apache.org/en/option.html#series-graph.data.y)
     * provided in
-    * [node](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data)
+    * [node](https://echarts.apache.org/en/option.html#series-graph.data)
     * as the position of node.
     * If it doesn't exist, the position will be generated randomly.
     *
     * You can also use circular layout `'circular'`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force.initLayout
+    * @see https://echarts.apache.org/en/option.html#series-graph.force.initLayout
     */
   var initLayout: js.UndefOr[String] = js.undefined
   /**
@@ -63,7 +63,7 @@ trait Anon_EdgeLength extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force.layoutAnimation
+    * @see https://echarts.apache.org/en/option.html#series-graph.force.layoutAnimation
     */
   var layoutAnimation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -78,7 +78,7 @@ trait Anon_EdgeLength extends js.Object {
     *
     * @default
     * 50
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force.repulsion
+    * @see https://echarts.apache.org/en/option.html#series-graph.force.repulsion
     */
   var repulsion: js.UndefOr[js.Array[_] | Double] = js.undefined
 }

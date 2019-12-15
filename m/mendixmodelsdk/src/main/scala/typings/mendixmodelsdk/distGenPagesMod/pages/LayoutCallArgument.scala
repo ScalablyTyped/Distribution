@@ -22,26 +22,31 @@ class LayoutCallArgument protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsLayoutCall: LayoutCall = js.native
   @JSName("model")
-  var model_LayoutCallArgument: IModel = js.native
+  var model_FLayoutCallArgument: IModel = js.native
+  def containerAsLayoutCall(): LayoutCall = js.native
   /**
     * In version 6.8.0: introduced
     */
-  var parameter: ILayoutParameter = js.native
+  def parameter(): ILayoutParameter = js.native
+  def parameter(newValue: ILayoutParameter): js.Any = js.native
   /**
     * In version 6.8.0: deleted
     */
-  var parameterName: String = js.native
-  val parameterQualifiedName: String = js.native
+  def parameterName(): String = js.native
+  def parameterName(newValue: String): js.Any = js.native
+  def parameterQualifiedName(): String = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var widget: Widget | Null = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val widgets: IList[Widget] = js.native
+  def widgets(): IList[Widget] = js.native
 }
 
 /* static members */

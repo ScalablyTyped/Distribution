@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
@@ -22,7 +24,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.distGenPagesMod.pages.IFormBase because Already inherited
 - typings.mendixmodelsdk.distGenPagesMod.pages.ITemplateFormBase because Already inherited
-- typings.mendixmodelsdk.distGenPagesMod.pages.IPageTemplate because var conflicts: displayName, documentationUrl, id, isLoaded, model, structureTypeName, unit. Inlined `type`, layoutCall */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageTemplate")
+- typings.mendixmodelsdk.distGenPagesMod.pages.IPageTemplate because var conflicts: containerAsFolderBase, displayName, documentationUrl, id, isLoaded, model, structureTypeName, unit. Inlined `type`, layoutCall */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageTemplate")
 @js.native
 class PageTemplate protected () extends TemplateFormBase {
   def this(
@@ -33,25 +35,46 @@ class PageTemplate protected () extends TemplateFormBase {
     container: IFolderBase
   ) = this()
   /**
+    * This property is required and cannot be set to null.
+    *
+    * In version 7.17.0: added public
+    */
+  @JSName("layoutCall")
+  val layoutCall_FPageTemplate: ILayoutCall = js.native
+  @JSName("model")
+  var model_FPageTemplate: IModel = js.native
+  /**
+    * In version 7.17.0: added public
+    */
+  @JSName("type")
+  val type_FPageTemplate: PageTemplateType = js.native
+  /**
     * In version 8.0.0: introduced
     */
-  var appearance: Appearance = js.native
+  def appearance(): Appearance = js.native
+  def appearance(newValue: Appearance): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var `class`: String = js.native
+  def `class`(): String = js.native
+  def `class`(newValue: String): js.Any = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MPageTemplate(): FolderBase = js.native
   /**
     * In version 7.17.0: added public
     */
-  var layoutCall: ILayoutCall | LayoutCall = js.native
+  def layoutCall(): LayoutCall = js.native
+  def layoutCall(newValue: LayoutCall): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var style: String = js.native
+  def style(): String = js.native
+  def style(newValue: String): js.Any = js.native
   /**
     * In version 7.17.0: added public
     */
-  var `type`: PageTemplateType = js.native
+  def `type`(): PageTemplateType = js.native
+  def `type`(newValue: PageTemplateType): js.Any = js.native
 }
 
 /* static members */

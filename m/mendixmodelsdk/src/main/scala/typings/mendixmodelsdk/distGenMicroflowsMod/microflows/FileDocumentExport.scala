@@ -20,7 +20,10 @@ class FileDocumentExport protected () extends OutputMethod {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var targetDocumentVariableName: String = js.native
+  @JSName("model")
+  var model_FFileDocumentExport: IModel = js.native
+  def targetDocumentVariableName(): String = js.native
+  def targetDocumentVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

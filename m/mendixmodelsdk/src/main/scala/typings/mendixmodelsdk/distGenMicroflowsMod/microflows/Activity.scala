@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenMicroflowsMod.microflows
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -19,6 +20,8 @@ abstract class Activity protected () extends MicroflowObject {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FActivity: IModel = js.native
 }
 
 /* static members */

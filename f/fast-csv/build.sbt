@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-csv"
-version := "3.4.0-00574d"
+version := "3.5.0-55ed78"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

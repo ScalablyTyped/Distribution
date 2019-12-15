@@ -23,7 +23,10 @@ class DataGridAddButton protected () extends GridControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var pageSettings: PageSettings = js.native
+  @JSName("model")
+  var model_FDataGridAddButton: IModel = js.native
+  def pageSettings(): PageSettings = js.native
+  def pageSettings(newValue: PageSettings): js.Any = js.native
 }
 
 /* static members */

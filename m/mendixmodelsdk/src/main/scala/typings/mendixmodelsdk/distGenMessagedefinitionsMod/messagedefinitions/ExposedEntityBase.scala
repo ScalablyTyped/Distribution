@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenMessagedefinitionsMod.messagedefinitions
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IEntity
 import typings.mendixmodelsdk.distGenMessagedefinitionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -23,8 +24,11 @@ abstract class ExposedEntityBase protected () extends ExposedMember {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var entity: IEntity = js.native
-  val entityQualifiedName: String = js.native
+  @JSName("model")
+  var model_FExposedEntityBase: IModel = js.native
+  def entity(): IEntity = js.native
+  def entity(newValue: IEntity): js.Any = js.native
+  def entityQualifiedName(): String = js.native
 }
 
 /* static members */

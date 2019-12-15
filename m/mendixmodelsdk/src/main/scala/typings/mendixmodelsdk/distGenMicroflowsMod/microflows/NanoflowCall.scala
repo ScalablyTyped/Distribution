@@ -25,12 +25,15 @@ class NanoflowCall protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsNanoflowCallAction: NanoflowCallAction = js.native
   @JSName("model")
-  var model_NanoflowCall: IModel = js.native
-  var nanoflow: INanoflow | Null = js.native
-  val nanoflowQualifiedName: String | Null = js.native
-  val parameterMappings: IList[NanoflowCallParameterMapping] = js.native
+  var model_FNanoflowCall: IModel = js.native
+  def containerAsNanoflowCallAction(): NanoflowCallAction = js.native
+  def nanoflow(): INanoflow | Null = js.native
+  def nanoflow(newValue: INanoflow): js.Any = js.native
+  def nanoflowQualifiedName(): String | Null = js.native
+  @JSName("nanoflow")
+  def nanoflow_Any(): js.Any = js.native
+  def parameterMappings(): IList[NanoflowCallParameterMapping] = js.native
 }
 
 /* static members */

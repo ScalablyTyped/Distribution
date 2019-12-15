@@ -30,10 +30,14 @@ abstract class ModuleDocument protected () extends ModelUnit {
     isPartial: Boolean,
     container: IModule
   ) = this()
-  val containerAsFolderBase: FolderBase | IFolderBase = js.native
-  val containerAsModule: IModule | Module = js.native
+  @JSName("containerAsFolderBase")
+  val containerAsFolderBase_FModuleDocument: IFolderBase = js.native
+  @JSName("containerAsModule")
+  val containerAsModule_FModuleDocument: IModule = js.native
   @JSName("model")
-  var model_ModuleDocument: IModel = js.native
+  var model_FModuleDocument: IModel = js.native
+  def containerAsFolderBase(): FolderBase = js.native
+  def containerAsModule(): Module = js.native
 }
 
 /* static members */

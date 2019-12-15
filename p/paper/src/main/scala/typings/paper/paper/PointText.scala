@@ -29,6 +29,6 @@ class PointText protected () extends TextItem {
   /** 
     * The PointText's anchor point
     */
-  var point: Point | Null = js.native
+  var point: Point = js.native
 }
 

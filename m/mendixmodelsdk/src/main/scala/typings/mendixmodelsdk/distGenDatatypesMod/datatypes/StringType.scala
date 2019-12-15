@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IDataType because Already inherited
-- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IStringType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType")
+- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IStringType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType")
 @js.native
 class StringType protected () extends DataType {
   def this(
@@ -44,22 +44,24 @@ class StringType protected () extends DataType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FStringType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  val containerAsAppServiceActionParameter_StringType: AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MStringType(): AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  val containerAsAppServiceAction_StringType: AppServiceAction = js.native
+  def containerAsAppServiceAction_MStringType(): AppServiceAction = js.native
   @JSName("containerAsConstant")
-  val containerAsConstant_StringType: Constant = js.native
+  def containerAsConstant_MStringType(): Constant = js.native
   @JSName("containerAsDataSetParameter")
-  val containerAsDataSetParameter_StringType: DataSetParameter = js.native
+  def containerAsDataSetParameter_MStringType(): DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  val containerAsDocumentTemplateParameter_StringType: DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MStringType(): DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  val containerAsImportMapping_StringType: ImportMapping = js.native
+  def containerAsImportMapping_MStringType(): ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  val containerAsMicroflowBase_StringType: MicroflowBase = js.native
+  def containerAsMicroflowBase_MStringType(): MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  val containerAsMicroflowParameterBase_StringType: MicroflowParameterBase = js.native
+  def containerAsMicroflowParameterBase_MStringType(): MicroflowParameterBase = js.native
 }
 
 /* static members */

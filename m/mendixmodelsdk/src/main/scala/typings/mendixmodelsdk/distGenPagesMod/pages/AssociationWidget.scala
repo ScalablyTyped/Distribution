@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -19,16 +20,22 @@ abstract class AssociationWidget protected () extends MemberWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FAssociationWidget: IModel = js.native
   /**
     * In version 7.13.0: introduced
     */
-  var onChangeAction: ClientAction = js.native
+  def onChangeAction(): ClientAction = js.native
+  def onChangeAction(newValue: ClientAction): js.Any = js.native
   /**
     * In version 7.13.0: deleted
     */
-  var onChangeMicroflowSettings: MicroflowSettings = js.native
-  var selectPageSettings: PageSettings = js.native
-  var selectorSource: SelectorSource = js.native
+  def onChangeMicroflowSettings(): MicroflowSettings = js.native
+  def onChangeMicroflowSettings(newValue: MicroflowSettings): js.Any = js.native
+  def selectPageSettings(): PageSettings = js.native
+  def selectPageSettings(newValue: PageSettings): js.Any = js.native
+  def selectorSource(): SelectorSource = js.native
+  def selectorSource(newValue: SelectorSource): js.Any = js.native
 }
 
 /* static members */

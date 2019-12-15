@@ -18,12 +18,12 @@ class default protected () extends FieldFormatter {
   /* CompleteClass */
   override val formatterOptions: js.Any = js.native
   /* CompleteClass */
-  override var headers: js.Array[String] = js.native
-  /* CompleteClass */
   override var quoteField: js.Any = js.native
   /* CompleteClass */
   override var shouldQuote: js.Any = js.native
   /* CompleteClass */
   override def format(field: String, fieldIndex: Double, isHeader: Boolean): String = js.native
+  /* CompleteClass */
+  override def headers(headers: js.Array[String]): js.Any = js.native
 }
 

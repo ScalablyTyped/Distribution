@@ -23,11 +23,11 @@ class MsdEnumerationContainer protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsMsd: Msd = js.native
-  val containerAsVersionedService: VersionedService = js.native
-  val enumerations: IList[MsdEnumeration] = js.native
   @JSName("model")
-  var model_MsdEnumerationContainer: IModel = js.native
+  var model_FMsdEnumerationContainer: IModel = js.native
+  def containerAsMsd(): Msd = js.native
+  def containerAsVersionedService(): VersionedService = js.native
+  def enumerations(): IList[MsdEnumeration] = js.native
 }
 
 /* static members */

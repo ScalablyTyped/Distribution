@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-widgets
 
-Typings are for version 4.3
+Typings are for version 4.4
 
 ## Library description:
 An à la carte set of polished, extensible, and accessible inputs built for React

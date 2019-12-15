@@ -20,6 +20,8 @@ class ImageAccessRuleContainer protected () extends AccessRuleContainerBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FImageAccessRuleContainer: IModel = js.native
 }
 
 /* static members */

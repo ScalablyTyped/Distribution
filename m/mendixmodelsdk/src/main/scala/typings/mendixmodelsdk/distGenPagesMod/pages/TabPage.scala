@@ -26,21 +26,30 @@ class TabPage protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: Text = js.native
-  var conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
-  val containerAsTabContainer: TabContainer = js.native
   @JSName("model")
-  var model_TabPage: IModel = js.native
-  var name: String = js.native
-  var refreshOnShow: Boolean = js.native
+  var model_FTabPage: IModel = js.native
+  def caption(): Text = js.native
+  def caption(newValue: Text): js.Any = js.native
+  def conditionalVisibilitySettings(): ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
+  @JSName("conditionalVisibilitySettings")
+  def conditionalVisibilitySettings_Any(): js.Any = js.native
+  def containerAsTabContainer(): TabContainer = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  def refreshOnShow(): Boolean = js.native
+  def refreshOnShow(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var widget: Widget | Null = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val widgets: IList[Widget] = js.native
+  def widgets(): IList[Widget] = js.native
 }
 
 /* static members */

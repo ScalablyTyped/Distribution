@@ -20,6 +20,8 @@ class Subtract protected () extends BinaryListOperation {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FSubtract: IModel = js.native
 }
 
 /* static members */

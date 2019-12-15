@@ -19,6 +19,7 @@ trait Anon_Active extends js.Object {
   var elevation: js.UndefOr[Anon_DarkLightAnonLargeMediumNone] = js.undefined
   var focus: js.UndefOr[Anon_BorderAnonColorColorType] = js.undefined
   var font: js.UndefOr[Anon_Face] = js.undefined
+  var graph: js.UndefOr[Anon_Colors] = js.undefined
   var hover: js.UndefOr[Anon_BackgroundColorBackgroundType] = js.undefined
   var input: js.UndefOr[Anon_Padding] = js.undefined
   var opacity: js.UndefOr[Anon_Medium] = js.undefined
@@ -43,6 +44,7 @@ object Anon_Active {
     elevation: Anon_DarkLightAnonLargeMediumNone = null,
     focus: Anon_BorderAnonColorColorType = null,
     font: Anon_Face = null,
+    graph: Anon_Colors = null,
     hover: Anon_BackgroundColorBackgroundType = null,
     input: Anon_Padding = null,
     opacity: Anon_Medium = null,
@@ -64,6 +66,7 @@ object Anon_Active {
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (graph != null) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
     if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

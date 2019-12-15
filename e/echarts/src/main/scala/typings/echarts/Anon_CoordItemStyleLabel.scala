@@ -9,21 +9,21 @@ trait Anon_CoordItemStyleLabel extends js.Object {
     * Coordinates of the starting point or ending point, whose
     * format depends on the coordinate of the series.
     * It can be `x`, and `y` for
-    * [rectangular coordinates](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [rectangular coordinates](https://echarts.apache.org/en/option.html#grid)
     * , or `radius`, and `angle` for
-    * [polar coordinates](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar coordinates](https://echarts.apache.org/en/option.html#polar)
     * .
     *
     * **Notice:** For axis with
-    * [axis.type](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAixs.type)
+    * [axis.type](https://echarts.apache.org/en/option.html#xAixs.type)
     * `'category'`:
     *
     * + If coord value is `number`, it represents index of
-    * [axis.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis.data)
+    * [axis.data](https://echarts.apache.org/en/option.html#xAxis.data)
     * .
     * + If coord value is `string`, it represents concrete
     * value in
-    * [axis.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis.data)
+    * [axis.data](https://echarts.apache.org/en/option.html#xAxis.data)
     *
     *
     * Please notice that in this case `xAxis.data`
@@ -41,21 +41,21 @@ trait Anon_CoordItemStyleLabel extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markPoint.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint.data)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.coord
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.coord
     */
   var coord: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Mark point style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.label
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
   /**
@@ -64,7 +64,7 @@ trait Anon_CoordItemStyleLabel extends js.Object {
     *
     * @default
     * ''
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.name
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -86,7 +86,7 @@ trait Anon_CoordItemStyleLabel extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markPoint.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint.data)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -101,17 +101,17 @@ trait Anon_CoordItemStyleLabel extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markPoint.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint.data)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.symbol
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -133,7 +133,7 @@ trait Anon_CoordItemStyleLabel extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -143,7 +143,7 @@ trait Anon_CoordItemStyleLabel extends js.Object {
     * use tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -154,19 +154,19 @@ trait Anon_CoordItemStyleLabel extends js.Object {
     * height is`10`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * Label value, which can be ignored.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.value
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.value
     */
   var value: js.UndefOr[Double] = js.undefined
   /**
     * Works only when
-    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.type)
+    * [type](https://echarts.apache.org/en/option.html#series-map.markPoint.data.type)
     * is assigned.
     * It is used to state the dimension used to calculate maximum
     * value or minimum value.
@@ -175,33 +175,33 @@ trait Anon_CoordItemStyleLabel extends js.Object {
     * charts.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.valueDim
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.valueDim
     */
   var valueDim: js.UndefOr[String] = js.undefined
   /**
     * Available when using
-    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.type)
+    * [type](https://echarts.apache.org/en/option.html#series-map.markPoint.data.type)
     * it is used to assign maximum value and minimum value
     * in dimensions, it could be `0` (xAxis, radiusAxis), `1`
     * (yAxis, angleAxis), and use the first value axis dimension
     * by default.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.valueIndex
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.valueIndex
     */
   var valueIndex: js.UndefOr[Double] = js.undefined
   /**
     * X position according to container, in pixel.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.x
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.x
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
     * Y position according to container, in pixel.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.y
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }

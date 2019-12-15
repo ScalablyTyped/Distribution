@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflowParameterBase because Already inherited
-- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.INanoflowParameter because var conflicts: id, isLoaded, model, name, parameterType, structureTypeName, `type`, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NanoflowParameter")
+- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.INanoflowParameter because var conflicts: containerAsMicroflow, containerAsRule, id, isLoaded, model, name, parameterType, qualifiedName, structureTypeName, `type`, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NanoflowParameter")
 @js.native
 class NanoflowParameter protected () extends MicroflowParameterBase {
   def this(
@@ -29,6 +29,8 @@ class NanoflowParameter protected () extends MicroflowParameterBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FNanoflowParameter: IModel = js.native
 }
 
 /* static members */

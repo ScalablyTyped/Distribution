@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ItemStyleLabelAnonAreaColor extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_AreaColor] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis.label
+    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label
     */
   var label: js.UndefOr[Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
 }

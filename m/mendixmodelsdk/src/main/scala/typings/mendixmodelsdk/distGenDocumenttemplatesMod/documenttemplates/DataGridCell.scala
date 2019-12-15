@@ -24,10 +24,11 @@ class DataGridCell protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsDataGridColumn: DataGridColumn = js.native
   @JSName("model")
-  var model_DataGridCell: IModel = js.native
-  var style: Style = js.native
+  var model_FDataGridCell: IModel = js.native
+  def containerAsDataGridColumn(): DataGridColumn = js.native
+  def style(): Style = js.native
+  def style(newValue: Style): js.Any = js.native
 }
 
 /* static members */

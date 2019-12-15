@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IValueType because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.ICalculatedValue because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CalculatedValue")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.ICalculatedValue because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CalculatedValue")
 @js.native
 class CalculatedValue protected () extends ValueType {
   def this(
@@ -29,11 +29,17 @@ class CalculatedValue protected () extends ValueType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FCalculatedValue: IModel = js.native
   @JSName("containerAsAttribute")
-  val containerAsAttribute_CalculatedValue: Attribute = js.native
-  var microflow: IMicroflow | Null = js.native
-  val microflowQualifiedName: String | Null = js.native
-  var passEntity: Boolean = js.native
+  def containerAsAttribute_MCalculatedValue(): Attribute = js.native
+  def microflow(): IMicroflow | Null = js.native
+  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflowQualifiedName(): String | Null = js.native
+  @JSName("microflow")
+  def microflow_Any(): js.Any = js.native
+  def passEntity(): Boolean = js.native
+  def passEntity(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

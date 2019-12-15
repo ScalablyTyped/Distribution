@@ -34,41 +34,57 @@ class PublishedRestServiceOperation protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FPublishedRestServiceOperation: IModel = js.native
   /**
     * In version 7.14.0: introduced
     */
-  var commit: CommitEnum = js.native
-  val containerAsPublishedRestServiceResource: PublishedRestServiceResource = js.native
+  def commit(): CommitEnum = js.native
+  def commit(newValue: CommitEnum): js.Any = js.native
+  def containerAsPublishedRestServiceResource(): PublishedRestServiceResource = js.native
   /**
     * In version 7.15.0: introduced
     */
-  var deprecated: Boolean = js.native
-  var documentation: String = js.native
+  def deprecated(): Boolean = js.native
+  def deprecated(newValue: Boolean): js.Any = js.native
+  def documentation(): String = js.native
+  def documentation(newValue: String): js.Any = js.native
   /**
     * In version 7.14.0: introduced
     */
-  var exportMapping: IExportMapping | Null = js.native
-  val exportMappingQualifiedName: String | Null = js.native
-  var httpMethod: HttpMethod = js.native
+  def exportMapping(): IExportMapping | Null = js.native
+  def exportMapping(newValue: IExportMapping): js.Any = js.native
+  def exportMappingQualifiedName(): String | Null = js.native
+  @JSName("exportMapping")
+  def exportMapping_Any(): js.Any = js.native
+  def httpMethod(): HttpMethod = js.native
+  def httpMethod(newValue: HttpMethod): js.Any = js.native
   /**
     * In version 7.14.0: introduced
     */
-  var importMapping: IImportMapping | Null = js.native
-  val importMappingQualifiedName: String | Null = js.native
-  var microflow: IMicroflow | Null = js.native
-  val microflowQualifiedName: String | Null = js.native
-  @JSName("model")
-  var model_PublishedRestServiceOperation: IModel = js.native
+  def importMapping(): IImportMapping | Null = js.native
+  def importMapping(newValue: IImportMapping): js.Any = js.native
+  def importMappingQualifiedName(): String | Null = js.native
+  @JSName("importMapping")
+  def importMapping_Any(): js.Any = js.native
+  def microflow(): IMicroflow | Null = js.native
+  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflowQualifiedName(): String | Null = js.native
+  @JSName("microflow")
+  def microflow_Any(): js.Any = js.native
   /**
     * In version 7.17.0: introduced
     */
-  var objectHandlingBackup: ObjectHandlingBackupEnum = js.native
+  def objectHandlingBackup(): ObjectHandlingBackupEnum = js.native
+  def objectHandlingBackup(newValue: ObjectHandlingBackupEnum): js.Any = js.native
   /**
     * In version 7.17.0: introduced
     */
-  val parameters: IList[RestOperationParameter] = js.native
-  var path: String = js.native
-  var summary: String = js.native
+  def parameters(): IList[RestOperationParameter] = js.native
+  def path(): String = js.native
+  def path(newValue: String): js.Any = js.native
+  def summary(): String = js.native
+  def summary(newValue: String): js.Any = js.native
 }
 
 /* static members */

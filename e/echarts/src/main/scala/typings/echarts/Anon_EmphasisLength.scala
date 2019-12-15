@@ -9,25 +9,25 @@ trait Anon_EmphasisLength extends js.Object {
     * The style of visual guide line in emphasis status.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.emphasis.labelLine.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis.labelLine.emphasis
     */
   var emphasis: js.UndefOr[Anon_LineStyleShow] = js.undefined
   /**
     * The length of the first part from visual guide line.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.emphasis.labelLine.length
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis.labelLine.length
     */
   var length: js.UndefOr[Double] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.emphasis.labelLine.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis.labelLine.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
   /**
     * Whether to show visual guide line.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.emphasis.labelLine.show
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis.labelLine.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
 }

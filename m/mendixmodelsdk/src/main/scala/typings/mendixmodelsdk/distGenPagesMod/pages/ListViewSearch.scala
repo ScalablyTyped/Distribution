@@ -23,20 +23,20 @@ class ListViewSearch protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsListViewDatabaseSource: ListViewDatabaseSource = js.native
-  val containerAsListViewXPathSource: ListViewXPathSource = js.native
   @JSName("model")
-  var model_ListViewSearch: IModel = js.native
+  var model_FListViewSearch: IModel = js.native
+  def containerAsListViewDatabaseSource(): ListViewDatabaseSource = js.native
+  def containerAsListViewXPathSource(): ListViewXPathSource = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
-  val searchPaths: IList[String] = js.native
+  def searchPaths(): IList[String] = js.native
   /**
     * In version 7.11.0: introduced
     */
-  val searchRefs: IList[AttributeRef] = js.native
+  def searchRefs(): IList[AttributeRef] = js.native
 }
 
 /* static members */

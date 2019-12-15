@@ -24,15 +24,23 @@ class GridNewButton protected () extends GridControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var editLocation: NewButtonEditLocation = js.native
-  var entity: IEntity | Null = js.native
-  val entityQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FGridNewButton: IModel = js.native
+  def editLocation(): NewButtonEditLocation = js.native
+  def editLocation(newValue: NewButtonEditLocation): js.Any = js.native
+  def entity(): IEntity | Null = js.native
+  def entity(newValue: IEntity): js.Any = js.native
+  def entityQualifiedName(): String | Null = js.native
+  @JSName("entity")
+  def entity_Any(): js.Any = js.native
   /**
     * In version 6.2.0: deleted
     * In version 6.0.0: deprecated
     */
-  var isPersistent: Boolean = js.native
-  var pageSettings: PageSettings = js.native
+  def isPersistent(): Boolean = js.native
+  def isPersistent(newValue: Boolean): js.Any = js.native
+  def pageSettings(): PageSettings = js.native
+  def pageSettings(newValue: PageSettings): js.Any = js.native
 }
 
 /* static members */

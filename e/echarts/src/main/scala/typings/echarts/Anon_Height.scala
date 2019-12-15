@@ -9,7 +9,7 @@ trait Anon_Height extends js.Object {
     * The height of the shape of the element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect.shape.height
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.height
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
@@ -26,14 +26,14 @@ trait Anon_Height extends js.Object {
     * + `r`: `[1, 2, 3]` means `[1, 2, 3, 2]`
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect.shape.r
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.r
     */
   var r: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * The width of the shape of the element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect.shape.width
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.width
     */
   var width: js.UndefOr[Double] = js.undefined
   /**
@@ -41,7 +41,7 @@ trait Anon_Height extends js.Object {
     * in the coordinate system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect.shape.x
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.x
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
@@ -49,7 +49,7 @@ trait Anon_Height extends js.Object {
     * in the coordinate system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect.shape.y
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }

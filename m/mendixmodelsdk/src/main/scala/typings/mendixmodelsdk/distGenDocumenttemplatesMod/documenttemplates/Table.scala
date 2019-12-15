@@ -24,11 +24,16 @@ class Table protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var cellPadding: Double = js.native
-  var cellSpacing: Double = js.native
-  val columnWeights: IList[Double] = js.native
-  val rows: IList[TableRow] = js.native
-  var style: Style = js.native
+  @JSName("model")
+  var model_FTable: IModel = js.native
+  def cellPadding(): Double = js.native
+  def cellPadding(newValue: Double): js.Any = js.native
+  def cellSpacing(): Double = js.native
+  def cellSpacing(newValue: Double): js.Any = js.native
+  def columnWeights(): IList[Double] = js.native
+  def rows(): IList[TableRow] = js.native
+  def style(): Style = js.native
+  def style(newValue: Style): js.Any = js.native
 }
 
 /* static members */

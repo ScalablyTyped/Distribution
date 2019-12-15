@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__component"
-version := "0.1.0-eb98de"
+version := "0.1.1-d8a151"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

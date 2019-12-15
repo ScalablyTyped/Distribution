@@ -23,7 +23,10 @@ class Footer protected () extends DropZone {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var bottomMargin: Double = js.native
+  @JSName("model")
+  var model_FFooter: IModel = js.native
+  def bottomMargin(): Double = js.native
+  def bottomMargin(newValue: Double): js.Any = js.native
 }
 
 /* static members */

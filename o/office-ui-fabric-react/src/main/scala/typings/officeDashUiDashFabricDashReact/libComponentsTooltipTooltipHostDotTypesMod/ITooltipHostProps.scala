@@ -82,14 +82,13 @@ import scala.scalajs.js.annotation._
 
 trait ITooltipHostProps extends HTMLAttributes[HTMLDivElement | TooltipHostBase] {
   /**
-    * Additional properties to pass through for Callout, reference detail properties in ICalloutProps
+    * Additional properties to pass through for Callout.
     */
   var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
   /**
-    * Optionally a number of milliseconds to delay closing the tooltip, so that
-    * the user has time to hover over the tooltip and interact with it. Hovering
-    * over the tooltip will count as hovering over the host, so that the tooltip
-    * will stay open if the user is actively interacting with it.
+    * Number of milliseconds to delay closing the tooltip, so that the user has time to hover over
+    * the tooltip and interact with it. Hovering over the tooltip will count as hovering over the
+    * host, so that the tooltip will stay open if the user is actively interacting with it.
     */
   var closeDelay: js.UndefOr[Double] = js.undefined
   /**
@@ -98,25 +97,26 @@ trait ITooltipHostProps extends HTMLAttributes[HTMLDivElement | TooltipHostBase]
     */
   var componentRef: js.UndefOr[IRefObject[ITooltipHost]] = js.undefined
   /**
-    *  Content to be passed to the tooltip
+    * Content to display in the Tooltip.
     */
   var content: js.UndefOr[String | Element | js.Array[Element]] = js.undefined
   /**
-    * Length of delay
-    * @defaultvalue medium
+    * Length of delay before showing the tooltip on hover.
+    * @defaultvalue TooltipDelay.medium
     */
   var delay: js.UndefOr[TooltipDelay] = js.undefined
   /**
-    * Indicator of how the tooltip should be anchored to its targetElement.
+    * How the tooltip should be anchored to its `targetElement`.
+    * @defaultvalue DirectionalHint.topCenter
     */
   var directionalHint: js.UndefOr[DirectionalHint] = js.undefined
   /**
     * How the element should be positioned in RTL layouts.
-    * If not specified, a mirror of `directionalHint` will be used instead
+    * If not specified, a mirror of `directionalHint` will be used.
     */
   var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.undefined
   /**
-    * Optional class name to apply to tooltip host.
+    * Class name to apply to tooltip host.
     */
   var hostClassName: js.UndefOr[String] = js.undefined
   /**
@@ -124,13 +124,19 @@ trait ITooltipHostProps extends HTMLAttributes[HTMLDivElement | TooltipHostBase]
     */
   var onTooltipToggle: js.UndefOr[js.Function1[/* isTooltipVisible */ Boolean, Unit]] = js.undefined
   /**
-    * Only show if there is overflow. If set, the tooltip hosts observes  and only shows the tooltip if this element has overflow.
-    * It also uses the parent as target element for the tooltip.
+    * If this is unset (the default), the tooltip is always shown even if there's no overflow.
+    *
+    * If set, only show the tooltip if the specified element (`Self` or `Parent`) has overflow.
+    * When set to `Parent`, the parent element is also used as the tooltip's target element.
+    *
+    * Note that even with `Self` mode, the TooltipHost *does not* check whether any children have overflow.
     */
   var overflowMode: js.UndefOr[TooltipOverflowMode] = js.undefined
   /**
-    * Whether or not to mark the container as described by the tooltip.
-    * If not specified, the caller should mark as element as described by the tooltip id.
+    * Whether or not to mark the TooltipHost root element as described by the tooltip.
+    * If not specified, the caller should pass an `id` to the TooltipHost (to be passed through to
+    * the Tooltip) and mark the appropriate element as `aria-describedby` the `id`.
+    * @defaultvalue true
     */
   var setAriaDescribedBy: js.UndefOr[Boolean] = js.undefined
   /**
@@ -138,11 +144,11 @@ trait ITooltipHostProps extends HTMLAttributes[HTMLDivElement | TooltipHostBase]
     */
   var styles: js.UndefOr[IStyleFunctionOrObject[ITooltipHostStyleProps, ITooltipHostStyles]] = js.undefined
   /**
-    * Theme provided by High-Order Component.
+    * Theme provided by higher-order component.
     */
   var theme: js.UndefOr[ITheme] = js.undefined
   /**
-    * Additional properties to pass through for Tooltip, reference detail properties in ITooltipProps
+    * Additional properties to pass through for Tooltip.
     */
   var tooltipProps: js.UndefOr[ITooltipProps] = js.undefined
 }

@@ -30,6 +30,7 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceCallActi
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceOperationParameterMapping
 import typings.mendixmodelsdk.distGenPagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.distGenPagesMod.pages.WidgetValidation
+import typings.mendixmodelsdk.distGenRestMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.Element
@@ -59,41 +60,42 @@ abstract class Expression protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsAppServiceCallParameterMapping: AppServiceCallParameterMapping = js.native
-  val containerAsBasicCodeActionParameterValue: BasicCodeActionParameterValue = js.native
-  val containerAsBasicJavaActionParameterValue: BasicJavaActionParameterValue = js.native
-  val containerAsBinaryExpression: BinaryExpression = js.native
-  val containerAsBinaryRequestHandling: BinaryRequestHandling = js.native
-  val containerAsChangeListAction: ChangeListAction = js.native
-  val containerAsChangeVariableAction: ChangeVariableAction = js.native
-  val containerAsConditionalSettings: ConditionalSettings = js.native
-  val containerAsCreateVariableAction: CreateVariableAction = js.native
-  val containerAsCustomRange: CustomRange = js.native
-  val containerAsDocumentTemplateParameterMapping: DocumentTemplateParameterMapping = js.native
-  val containerAsEndEvent: EndEvent = js.native
-  val containerAsExpressionSplitCondition: ExpressionSplitCondition = js.native
-  val containerAsFormDataPart: FormDataPart = js.native
-  val containerAsFunctionCallExpression: FunctionCallExpression = js.native
-  val containerAsGenerateDocumentAction: GenerateDocumentAction = js.native
-  val containerAsHttpConfiguration: HttpConfiguration = js.native
-  val containerAsHttpHeaderEntry: HttpHeaderEntry = js.native
-  val containerAsIfExpression: IfExpression = js.native
-  val containerAsInspectAttribute: InspectAttribute = js.native
-  val containerAsLogMessageAction: LogMessageAction = js.native
-  val containerAsMemberChange: MemberChange = js.native
-  val containerAsMicroflowCallParameterMapping: MicroflowCallParameterMapping = js.native
-  val containerAsNanoflowCallParameterMapping: NanoflowCallParameterMapping = js.native
-  val containerAsParenthesisExpression: ParenthesisExpression = js.native
-  val containerAsProxyConfiguration: ProxyConfiguration = js.native
-  val containerAsRestCallAction: RestCallAction = js.native
-  val containerAsRuleCallParameterMapping: RuleCallParameterMapping = js.native
-  val containerAsTemplateArgument: TemplateArgument = js.native
-  val containerAsUnaryExpression: UnaryExpression = js.native
-  val containerAsWebServiceCallAction: WebServiceCallAction = js.native
-  val containerAsWebServiceOperationParameterMapping: WebServiceOperationParameterMapping = js.native
-  val containerAsWidgetValidation: WidgetValidation = js.native
   @JSName("model")
-  var model_Expression: IModel = js.native
+  var model_FExpression: IModel = js.native
+  def containerAsAppServiceCallParameterMapping(): AppServiceCallParameterMapping = js.native
+  def containerAsBasicCodeActionParameterValue(): BasicCodeActionParameterValue = js.native
+  def containerAsBasicJavaActionParameterValue(): BasicJavaActionParameterValue = js.native
+  def containerAsBinaryExpression(): BinaryExpression = js.native
+  def containerAsBinaryRequestHandling(): BinaryRequestHandling = js.native
+  def containerAsChangeListAction(): ChangeListAction = js.native
+  def containerAsChangeVariableAction(): ChangeVariableAction = js.native
+  def containerAsConditionalSettings(): ConditionalSettings = js.native
+  def containerAsConsumedODataService(): ConsumedODataService = js.native
+  def containerAsCreateVariableAction(): CreateVariableAction = js.native
+  def containerAsCustomRange(): CustomRange = js.native
+  def containerAsDocumentTemplateParameterMapping(): DocumentTemplateParameterMapping = js.native
+  def containerAsEndEvent(): EndEvent = js.native
+  def containerAsExpressionSplitCondition(): ExpressionSplitCondition = js.native
+  def containerAsFormDataPart(): FormDataPart = js.native
+  def containerAsFunctionCallExpression(): FunctionCallExpression = js.native
+  def containerAsGenerateDocumentAction(): GenerateDocumentAction = js.native
+  def containerAsHttpConfiguration(): HttpConfiguration = js.native
+  def containerAsHttpHeaderEntry(): HttpHeaderEntry = js.native
+  def containerAsIfExpression(): IfExpression = js.native
+  def containerAsInspectAttribute(): InspectAttribute = js.native
+  def containerAsLogMessageAction(): LogMessageAction = js.native
+  def containerAsMemberChange(): MemberChange = js.native
+  def containerAsMicroflowCallParameterMapping(): MicroflowCallParameterMapping = js.native
+  def containerAsNanoflowCallParameterMapping(): NanoflowCallParameterMapping = js.native
+  def containerAsParenthesisExpression(): ParenthesisExpression = js.native
+  def containerAsProxyConfiguration(): ProxyConfiguration = js.native
+  def containerAsRestCallAction(): RestCallAction = js.native
+  def containerAsRuleCallParameterMapping(): RuleCallParameterMapping = js.native
+  def containerAsTemplateArgument(): TemplateArgument = js.native
+  def containerAsUnaryExpression(): UnaryExpression = js.native
+  def containerAsWebServiceCallAction(): WebServiceCallAction = js.native
+  def containerAsWebServiceOperationParameterMapping(): WebServiceOperationParameterMapping = js.native
+  def containerAsWidgetValidation(): WidgetValidation = js.native
 }
 
 /* static members */

@@ -24,13 +24,17 @@ class DesignPropertyValue protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var booleanValue: Boolean = js.native
-  val containerAsAppearance: Appearance = js.native
-  var key: String = js.native
   @JSName("model")
-  var model_DesignPropertyValue: IModel = js.native
-  var stringValue: String = js.native
-  var `type`: DesignPropertyValueType = js.native
+  var model_FDesignPropertyValue: IModel = js.native
+  def booleanValue(): Boolean = js.native
+  def booleanValue(newValue: Boolean): js.Any = js.native
+  def containerAsAppearance(): Appearance = js.native
+  def key(): String = js.native
+  def key(newValue: String): js.Any = js.native
+  def stringValue(): String = js.native
+  def stringValue(newValue: String): js.Any = js.native
+  def `type`(): DesignPropertyValueType = js.native
+  def `type`(newValue: DesignPropertyValueType): js.Any = js.native
 }
 
 /* static members */

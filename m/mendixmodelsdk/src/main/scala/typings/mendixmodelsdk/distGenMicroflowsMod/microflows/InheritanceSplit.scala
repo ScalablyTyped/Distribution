@@ -23,9 +23,14 @@ class InheritanceSplit protected () extends MicroflowObject {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: String = js.native
-  var documentation: String = js.native
-  var splitVariableName: String = js.native
+  @JSName("model")
+  var model_FInheritanceSplit: IModel = js.native
+  def caption(): String = js.native
+  def caption(newValue: String): js.Any = js.native
+  def documentation(): String = js.native
+  def documentation(newValue: String): js.Any = js.native
+  def splitVariableName(): String = js.native
+  def splitVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

@@ -23,6 +23,8 @@ class ExclusiveMerge protected () extends MicroflowObject {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FExclusiveMerge: IModel = js.native
 }
 
 /* static members */

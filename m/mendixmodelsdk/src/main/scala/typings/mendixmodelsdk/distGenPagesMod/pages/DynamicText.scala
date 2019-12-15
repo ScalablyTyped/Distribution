@@ -27,12 +27,17 @@ class DynamicText protected () extends ConditionallyVisibleWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var content: ClientTemplate = js.native
+  @JSName("model")
+  var model_FDynamicText: IModel = js.native
+  def content(): ClientTemplate = js.native
+  def content(newValue: ClientTemplate): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var nativeTextStyle: NativeTextStyle = js.native
-  var renderMode: TextRenderMode = js.native
+  def nativeTextStyle(): NativeTextStyle = js.native
+  def nativeTextStyle(newValue: NativeTextStyle): js.Any = js.native
+  def renderMode(): TextRenderMode = js.native
+  def renderMode(newValue: TextRenderMode): js.Any = js.native
 }
 
 /* static members */
@@ -281,6 +286,15 @@ object DynamicText extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DynamicText = js.native
+  /**
+    * Creates and returns a new DynamicText instance in the SDK and on the server.
+    * The new DynamicText will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DynamicText = js.native
   /**
     * Creates and returns a new DynamicText instance in the SDK and on the server.
     * The new DynamicText will be automatically stored in the 'widgets' property

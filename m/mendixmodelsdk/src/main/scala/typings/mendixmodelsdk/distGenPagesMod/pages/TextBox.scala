@@ -27,13 +27,19 @@ class TextBox protected () extends TextWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var formattingInfo: FormattingInfo = js.native
-  var inputMask: String = js.native
-  var isPasswordBox: Boolean = js.native
+  @JSName("model")
+  var model_FTextBox: IModel = js.native
+  def formattingInfo(): FormattingInfo = js.native
+  def formattingInfo(newValue: FormattingInfo): js.Any = js.native
+  def inputMask(): String = js.native
+  def inputMask(newValue: String): js.Any = js.native
+  def isPasswordBox(): Boolean = js.native
+  def isPasswordBox(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var keyboardType: KeyboardType = js.native
+  def keyboardType(): KeyboardType = js.native
+  def keyboardType(newValue: KeyboardType): js.Any = js.native
 }
 
 /* static members */
@@ -282,6 +288,15 @@ object TextBox extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): TextBox = js.native
+  /**
+    * Creates and returns a new TextBox instance in the SDK and on the server.
+    * The new TextBox will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TextBox = js.native
   /**
     * Creates and returns a new TextBox instance in the SDK and on the server.
     * The new TextBox will be automatically stored in the 'widgets' property

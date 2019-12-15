@@ -22,15 +22,15 @@ abstract class Template protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val arguments: IList[TemplateArgument] = js.native
-  val containerAsCustomRequestHandling: CustomRequestHandling = js.native
-  val containerAsHttpConfiguration: HttpConfiguration = js.native
-  val containerAsLogMessageAction: LogMessageAction = js.native
-  val containerAsShowMessageAction: ShowMessageAction = js.native
-  val containerAsStringTemplateParameterValue: StringTemplateParameterValue = js.native
-  val containerAsValidationFeedbackAction: ValidationFeedbackAction = js.native
   @JSName("model")
-  var model_Template: IModel = js.native
+  var model_FTemplate: IModel = js.native
+  def arguments(): IList[TemplateArgument] = js.native
+  def containerAsCustomRequestHandling(): CustomRequestHandling = js.native
+  def containerAsHttpConfiguration(): HttpConfiguration = js.native
+  def containerAsLogMessageAction(): LogMessageAction = js.native
+  def containerAsShowMessageAction(): ShowMessageAction = js.native
+  def containerAsStringTemplateParameterValue(): StringTemplateParameterValue = js.native
+  def containerAsValidationFeedbackAction(): ValidationFeedbackAction = js.native
 }
 
 /* static members */

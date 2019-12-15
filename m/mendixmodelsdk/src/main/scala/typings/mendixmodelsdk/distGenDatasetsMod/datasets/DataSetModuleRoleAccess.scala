@@ -23,12 +23,15 @@ class DataSetModuleRoleAccess protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsDataSetAccess: DataSetAccess = js.native
   @JSName("model")
-  var model_DataSetModuleRoleAccess: IModel = js.native
-  var moduleRole: IModuleRole | Null = js.native
-  val moduleRoleQualifiedName: String | Null = js.native
-  val parameterAccessList: IList[DataSetParameterAccess] = js.native
+  var model_FDataSetModuleRoleAccess: IModel = js.native
+  def containerAsDataSetAccess(): DataSetAccess = js.native
+  def moduleRole(): IModuleRole | Null = js.native
+  def moduleRole(newValue: IModuleRole): js.Any = js.native
+  def moduleRoleQualifiedName(): String | Null = js.native
+  @JSName("moduleRole")
+  def moduleRole_Any(): js.Any = js.native
+  def parameterAccessList(): IList[DataSetParameterAccess] = js.native
 }
 
 /* static members */

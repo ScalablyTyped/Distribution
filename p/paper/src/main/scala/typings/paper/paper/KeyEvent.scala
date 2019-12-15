@@ -18,15 +18,15 @@ class KeyEvent () extends Event {
     * taking into account the current key-modifiers (e.g. shift, control,
     * caps-lock, etc.)
     */
-  var character: String | Null = js.native
+  var character: String = js.native
   /** 
     * The key that caused this key event, either as a lower-case character or
     * special key descriptor.
     */
-  var key: String | Null = js.native
+  var key: String = js.native
   /** 
     * The type of mouse event.
     */
-  var `type`: String | Null = js.native
+  var `type`: String = js.native
 }
 

@@ -27,13 +27,16 @@ class ODataNavigationProperty protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var association: IAssociationBase = js.native
-  val associationQualifiedName: String = js.native
-  val containerAsODataEntity: ODataEntity = js.native
   @JSName("model")
-  var model_ODataNavigationProperty: IModel = js.native
-  var name: String = js.native
-  var thisSideIsParent: Boolean = js.native
+  var model_FODataNavigationProperty: IModel = js.native
+  def association(): IAssociationBase = js.native
+  def association(newValue: IAssociationBase): js.Any = js.native
+  def associationQualifiedName(): String = js.native
+  def containerAsODataEntity(): ODataEntity = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  def thisSideIsParent(): Boolean = js.native
+  def thisSideIsParent(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

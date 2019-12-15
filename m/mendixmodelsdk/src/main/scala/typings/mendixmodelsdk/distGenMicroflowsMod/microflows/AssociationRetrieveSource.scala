@@ -21,9 +21,15 @@ class AssociationRetrieveSource protected () extends RetrieveSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var association: IAssociationBase | Null = js.native
-  val associationQualifiedName: String | Null = js.native
-  var startVariableName: String = js.native
+  @JSName("model")
+  var model_FAssociationRetrieveSource: IModel = js.native
+  def association(): IAssociationBase | Null = js.native
+  def association(newValue: IAssociationBase): js.Any = js.native
+  def associationQualifiedName(): String | Null = js.native
+  @JSName("association")
+  def association_Any(): js.Any = js.native
+  def startVariableName(): String = js.native
+  def startVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

@@ -33,6 +33,7 @@ object distSrcProviderMod extends js.Object {
     def get(identifier: String): js.Promise[
         /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any
       ] = js.native
+    def getComponent(): Component[T] | Null = js.native
     def getImmediate(): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any = js.native
     def getImmediate(options: Anon_False): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any = js.native
     /**

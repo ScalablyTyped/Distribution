@@ -26,23 +26,25 @@ class ClientTemplate protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsButton: Button = js.native
-  val containerAsControlBarButton: ControlBarButton = js.native
-  val containerAsCustomWidget: CustomWidget = js.native
-  val containerAsDataGrid: DataGrid = js.native
-  val containerAsDynamicText: DynamicText = js.native
-  val containerAsGroupBox: GroupBox = js.native
-  val containerAsInputWidget: InputWidget = js.native
-  val containerAsWidgetObject: WidgetObject = js.native
-  val containerAsWidgetValue: WidgetValue = js.native
+  @JSName("model")
+  var model_FClientTemplate: IModel = js.native
+  def containerAsButton(): Button = js.native
+  def containerAsControlBarButton(): ControlBarButton = js.native
+  def containerAsCustomWidget(): CustomWidget = js.native
+  def containerAsDataGrid(): DataGrid = js.native
+  def containerAsDynamicText(): DynamicText = js.native
+  def containerAsGroupBox(): GroupBox = js.native
+  def containerAsInputWidget(): InputWidget = js.native
+  def containerAsWidgetObject(): WidgetObject = js.native
+  def containerAsWidgetValue(): WidgetValue = js.native
   /**
     * In version 8.3.0: introduced
     */
-  var fallback: Text = js.native
-  @JSName("model")
-  var model_ClientTemplate: IModel = js.native
-  val parameters: IList[ClientTemplateParameter] = js.native
-  var template: Text = js.native
+  def fallback(): Text = js.native
+  def fallback(newValue: Text): js.Any = js.native
+  def parameters(): IList[ClientTemplateParameter] = js.native
+  def template(): Text = js.native
+  def template(newValue: Text): js.Any = js.native
 }
 
 /* static members */

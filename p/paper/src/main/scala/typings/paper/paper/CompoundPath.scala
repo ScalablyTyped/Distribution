@@ -47,7 +47,7 @@ class CompoundPath protected () extends PathItem {
     * 
     * @see Path#closed
     */
-  var closed: Boolean | Null = js.native
+  var closed: Boolean = js.native
   /** 
     * All the curves contained within the compound-path, from all its child
     * {@link Path} items.

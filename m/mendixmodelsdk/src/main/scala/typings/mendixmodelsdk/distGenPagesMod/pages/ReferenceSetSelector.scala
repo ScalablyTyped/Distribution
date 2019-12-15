@@ -30,37 +30,43 @@ class ReferenceSetSelector protected () extends ColumnGrid {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FReferenceSetSelector: IModel = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyEntityPath.
     *
     * In version 7.11.0: deleted
     */
-  val constrainedBy: IList[String] = js.native
+  def constrainedBy(): IList[String] = js.native
   /**
     * In version 7.11.0: introduced
     */
-  val constrainedByRefs: IList[EntityRef] = js.native
+  def constrainedByRefs(): IList[EntityRef] = js.native
   /**
     * In version 7.13.0: introduced
     */
-  var onChangeAction: ClientAction = js.native
+  def onChangeAction(): ClientAction = js.native
+  def onChangeAction(newValue: ClientAction): js.Any = js.native
   /**
     * In version 7.13.0: deleted
     */
-  var onChangeMicroflowSettings: MicroflowSettings = js.native
+  def onChangeMicroflowSettings(): MicroflowSettings = js.native
+  def onChangeMicroflowSettings(newValue: MicroflowSettings): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var removeAllFromContext: Boolean = js.native
+  def removeAllFromContext(): Boolean = js.native
+  def removeAllFromContext(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  val removeFromContextEntities: IList[IEntity] = js.native
-  val removeFromContextEntitiesQualifiedNames: js.Array[String] = js.native
+  def removeFromContextEntities(): IList[IEntity] = js.native
+  def removeFromContextEntitiesQualifiedNames(): js.Array[String] = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
-  var xPathConstraint: String = js.native
+  def xPathConstraint(): String = js.native
+  def xPathConstraint(newValue: String): js.Any = js.native
 }
 
 /* static members */
@@ -309,6 +315,15 @@ object ReferenceSetSelector extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ReferenceSetSelector = js.native
+  /**
+    * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
+    * The new ReferenceSetSelector will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReferenceSetSelector = js.native
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
     * The new ReferenceSetSelector will be automatically stored in the 'widgets' property

@@ -22,11 +22,11 @@ class SortItemList protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsDatabaseRetrieveSource: DatabaseRetrieveSource = js.native
-  val containerAsSort: Sort = js.native
-  val items: IList[SortItem] = js.native
   @JSName("model")
-  var model_SortItemList: IModel = js.native
+  var model_FSortItemList: IModel = js.native
+  def containerAsDatabaseRetrieveSource(): DatabaseRetrieveSource = js.native
+  def containerAsSort(): Sort = js.native
+  def items(): IList[SortItem] = js.native
 }
 
 /* static members */

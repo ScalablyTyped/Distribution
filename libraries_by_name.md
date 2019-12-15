@@ -79,6 +79,7 @@
 | [ajv-keywords](./a/ajv-keywords) | Custom JSON-Schema keywords for Ajv validator | JSON-Schema, ajv, keywords |
 | [ajv-merge-patch](./a/ajv-merge-patch) | $merge and $patch keywords for Ajv JSON-Schema val | JSON, schema, validator, validation, jsonschema, json-schema, json-schema-validator, json-schema-validation, $merge, $patch, keyword |
 | [ajv-pack](./a/ajv-pack) | Produces a compact module exporting JSON-schema va | Ajv, JSON-Schema |
+| [akamai-edgeworkers](./a/akamai-edgeworkers) | - | - |
 | [akumina-core](./a/akumina-core) | Adjusted Cache.Get return type Started SiteContex | - |
 | [ale-url-parser](./a/ale-url-parser) | Fast url parser | - |
 | [alertify](./a/alertify) | An unobtrusive customizable JavaScript notificatio | - |
@@ -1362,6 +1363,7 @@
 | [datadog-metrics](./d/datadog-metrics) | Buffered metrics reporting via the DataDog HTTP AP | datadog, metrics, stats |
 | [datadog-statsd-metrics-co](./d/datadog-statsd-metrics-collector) | Collect, rollup, and batch Datadog statsd metrics | datadog, statsd, collector, batch |
 | [datadog-tracer](./d/datadog-tracer) | - | - |
+| [datadog-winston](./d/datadog-winston) | Ship winston logs to datadog without breaking a sw | - |
 | [dataloader](./d/dataloader) | A data loading utility to reduce requests to a bac | - |
 | [datastore-level](./d/datastore-level) | Datastore implementation with level(updown) backen | interface, key-value, ipfs, datastore, leveldb, levelup, leveldown |
 | [datatables_dot_net](./d/datatables_dot_net) | DataTables for jQuery | filter, sort, DataTables, jQuery, table, DataTables |
@@ -1442,7 +1444,6 @@
 | [denodeify](./d/denodeify) | Tool to turn functions with Node-style callback AP | - |
 | [denque](./d/denque) | The fastest javascript implementation of a double- | data-structure, data-structures, queue, double, end, ended, deque, denque, double-ended-queue |
 | [deoxxa-content-type](./d/deoxxa-content-type) | - | - |
-| [depcheck](./d/depcheck) | Check dependencies in your node module | check, unused, package, packages, depcheck, dependency, dependencies, devDependencies |
 | [depd](./d/depd) | Deprecate all the things | deprecate, deprecated |
 | [dependency-tree](./d/dependency-tree) | Get the dependency tree of a module | dependency, tree, graph, module, ast, requirejs, AMD, commonjs, es6, sass, stylus, less, typescript |
 | [deployjava](./d/deployjava) | - | - |
@@ -5005,7 +5006,6 @@
 | [numjs](./n/numjs) | Like NumPy, in JavaScript | ndarray, array, multi, multidimensional, dimension, higher, image, volume, webgl, tensor, matrix, linear, algebra, science, numerical, computing, stride, shape, numpy |
 | [nunjucks](./n/nunjucks) | A powerful templating engine with inheritance, asy | template, templating |
 | [nunjucks-date](./n/nunjucks-date) | Plugin for nunjucks of momentjs format date | nunjucks, date |
-| [nuxtjs__auth](./n/nuxtjs__auth) | Authentication module for Nuxt.js | - |
 | [nvd3](./n/nvd3) | A reusable charting library written in d3.js | nvd3, d3, chart, graph |
 | [nw_dot_gui](./n/nw_dot_gui) | - | - |
 | [nw_dot_js](./n/nw_dot_js) | - | - |
@@ -5059,7 +5059,6 @@
 | [oibackoff](./o/oibackoff) | Incremental backoff flow-control for any : fn(func | function, backoff, incremental, exponentail, linear, control flow, flow |
 | [oidc-token-manager](./o/oidc-token-manager) | Library to manage tokens obtained via OpenID Conne | - |
 | [oja](./o/oja) | Lightweight pub/sub module with event backlog, tim | stream, flow, pub, sub, pub-sub, event, eventemitter, emitter |
-| [okta__okta-vue](./o/okta__okta-vue) | Vue support for Okta | oauth2 |
 | [ol](./o/ol) | OpenLayers mapping library | map, mapping, ol |
 | [omelette](./o/omelette) | Omelette.js Simple Autocompletion Helper for Node | autocompletion, complete, bash completion, zsh completion |
 | [omggif](./o/omggif) | omggif is a JavaScript implementation of a GIF 89a | gif, gif89a, gif87a, plask |
@@ -7018,7 +7017,6 @@
 | [split-on-first](./s/split-on-first) | Split a string on the first occurance of a given s | split, string, first, occurrence, separator, delimiter, text |
 | [split2](./s/split2) | split a Text Stream into a Line Stream, using Stre | - |
 | [split_dot_js](./s/split_dot_js) | 2kb unopinionated utility for resizeable split vie | css, split, flexbox, tiny, split-layout |
-| [splitpanes](./s/splitpanes) | A Vue JS reliable, simple and touch-ready panes sp | split panes, panes resizer, vue, vuejs, ui |
 | [splunk-bunyan-logger](./s/splunk-bunyan-logger) | Splunk HTTP Event Collector Stream for Bunyan | splunk, HTTP, event, collector, logging, stream, bunyan |
 | [splunk-logging](./s/splunk-logging) | Splunk HTTP Event Collector logging interface | splunk, HTTP, event, collector, logging, stream |
 | [spotify-api](./s/spotify-api) | API for the new "Spotify Web API" | spotify, web, api, rest |
@@ -7131,7 +7129,6 @@
 | [storybook__router](./s/storybook__router) | Core Storybook Router | storybook |
 | [storybook__theming](./s/storybook__theming) | Core Storybook Components | storybook |
 | [storybook__ui](./s/storybook__ui) | Core Storybook UI | storybook |
-| [storybook__vue](./s/storybook__vue) | Storybook for Vue: Develop Vue Component in isolat | storybook |
 | [strange](./s/strange) | Range aka interval object. Supports exclusive and  | range, ranges, interval, interval-tree, bst, integer, integers, sort, bounds, math |
 | [stream-array](./s/stream-array) | Pipe an Array through Node.js streams | array, readable, stream, pipe |
 | [stream-buffers](./s/stream-buffers) | Buffer-backed Streams for reading and writing. | memory streams, streams, buffer streams |
@@ -7359,7 +7356,6 @@
 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [testing-library__react-ho](./t/testing-library__react-hooks) | Simple and complete React hooks testing utilities  | testing, react, hooks, unit, integration |
 | [testing-library__user-eve](./t/testing-library__user-event) | Simulate user events for react-testing-library | react-testing-library, dom-testing-library, react, testing |
-| [testing-library__vue](./t/testing-library__vue) | Simple and complete Vue DOM testing utilities that | vue.js, vue.js testing, vue, vue testing, vue.js 2, vue.js 2 testing, vue 2, vue 2 testing |
 | [testingbot-api](./t/testingbot-api) | A wrapper around TestingBot's REST API | - |
 | [tether](./t/tether) | A client-side library to make absolutely positione | - |
 | [tether-drop](./t/tether-drop) | Client-side library for creating dropdowns | - |
@@ -7606,7 +7602,6 @@
 | [ungap__global-this](./u/ungap__global-this) | A cross engine globalThis. | global, this |
 | [ungap__url-search-params](./u/ungap__url-search-params) | The URLSearchParams polyfill. | URLSearchParams, polyfill, ungap |
 | [ungap__weakmap](./u/ungap__weakmap) | An essential WeakMap polyfill for legacy browsers. | WeakMap, polyfill, legacy, ungap |
-| [uni-app](./u/uni-app) | - | - |
 | [unidecode](./u/unidecode) | ASCII transliterations of Unicode text | unidecode, unicode, utf8 |
 | [unimodules__core](./u/unimodules__core) | Universal modules core | unimodules |
 | [unimodules__react-native-](./u/unimodules__react-native-adapter) | The adapter to use universal modules with the Reac | react-native, unimodules, adapter |
@@ -7697,7 +7692,6 @@
 | [uuidjs](./u/uuidjs) | RFC-compliant UUID Generator for JavaScript | library, uuid, guid, rfc, 4122, universally, globally, unique, identifier |
 | [uuidv4](./u/uuidv4) | uuid creates UUIDs. | guid, uuid |
 | [uws](./u/uws) | - | - |
-| [v-chart-plugin](./v/v-chart-plugin) | This plugin is designed to allow Vue.js developers | vue, d3, graphs, charts, data, data visualization, vue.js, d3.js, plugin |
 | [v8-profiler](./v/v8-profiler) | node bindings for the v8 profiler | profiler, inspector |
 | [v8flags](./v/v8flags) | Get available v8 flags. | v8 flags, harmony flags |
 | [valdr](./v/valdr) | A model centric approach to AngularJS form validat | angularjs, validation, valdr |
@@ -7782,33 +7776,7 @@
 | [vscode-uri](./v/vscode-uri) | The URI implementation that is used by VS Code and | - |
 | [vso-node-api](./v/vso-node-api) | Node client for Visual Studio Online/TFS REST APIs | - |
 | [vssln-parser](./v/vssln-parser) | Parses Visual Studio Solution (sln) files and retu | - |
-| [vue](./v/vue) | Reactive, component-oriented view layer for modern | vue |
-| [vue-chartkick](./v/vue-chartkick) | Create beautiful JavaScript charts with one line o | - |
-| [vue-class-component](./v/vue-class-component) | ES201X/TypeScript class decorator for Vue componen | vue, class, babel, typescript |
-| [vue-clickaway](./v/vue-clickaway) | Reusable clickaway directive for reusable Vue.js c | click, clickaway, reusable, vue, vue-directive, vuejs |
-| [vue-color](./v/vue-color) | Color of Vue Components | color, vuejs |
-| [vue-datetime](./v/vue-datetime) | Mobile friendly datetime picker for Vue. Supports  | datetime, datetime-picker, picker, date, vue |
-| [vue-i18n](./v/vue-i18n) | Internationalization plugin for Vue.js | i18n, internationalization, plugin, vue, vue.js |
-| [vue-loader](./v/vue-loader) | Vue single-file component loader for Webpack | - |
-| [vue-ls](./v/vue-ls) | Vue plugin for work with LocalStorage from Vue con | storage, localstorage, local-storage, vue-localstorage, vuejs-localstorage, vue-local-storage, vuejs-local-storage, memorystroage, sessionstorage, session-storage, vue-sessionstorage, vuejs-sessionstorage, vue-session-storage, vuejs-session-storage, memory-stroage, vue-ls, vue, vuejs, vue-plugin, watch, es6-modules |
-| [vue-markdown](./v/vue-markdown) | A Powerful and Highspeed Markdown Parser for Vue | vue, markdown, vue-markdown |
-| [vue-moment](./v/vue-moment) | Handy Moment.js filters for your Vue.js project | vue, custom, date, time, filter, moment, moment.js |
-| [vue-resource](./v/vue-resource) | The HTTP client for Vue.js | vue, xhr, http, ajax |
-| [vue-router](./v/vue-router) | Official router for Vue.js 2 | vue, router, routing |
-| [vue-rx](./v/vue-rx) | RxJS bindings for Vue | vue, rx, rxjs |
-| [vue-scrollto](./v/vue-scrollto) | Adds a directive that listens for click events and | vue, vuejs, directive, scroll, scrollto, scroll to |
-| [vue-select](./v/vue-select) | Everything you wish the HTML  element could do, wr | - |
-| [vue-server-renderer](./v/vue-server-renderer) | server renderer for Vue 2.0 | vue, server, ssr |
-| [vue-splitpane](./v/vue-splitpane) | vue split-pane component | - |
-| [vue-tel-input](./v/vue-tel-input) | International Telephone Input with Vue | vue, telephone, phone, vue-tel-input, phone input, telephone input |
-| [vue-template-compiler](./v/vue-template-compiler) | template compiler for Vue 2.0 | vue, compiler |
-| [vue-the-mask](./v/vue-the-mask) | Tiny (2KB) and dependency free mask input for Vue. | vue, mask |
-| [vue2-datepicker](./v/vue2-datepicker) | A Datepicker Component For Vue2 | vue, datepicker |
-| [vue2-editor](./v/vue2-editor) | HTML editor using Vue.js 2, and Quill.js, an open  | vue, vue-component, quill, html editor, text editor |
-| [vue2-hammer](./v/vue2-hammer) | Hammer.js wrapper for Vue 2.x to support some touc | vue2-hammer |
 | [vue__component-compiler-u](./v/vue__component-compiler-utils) | Lower level utilities for compiling Vue single fil | vue, sfc, component, compiler |
-| [vuex](./v/vuex) | state management for Vue.js | - |
-| [vuex-i18n](./v/vuex-i18n) | Easy localization for vue-components using vuex as | localization, translation, vuex, vue, i18n |
 | [w2ui](./w/w2ui) | JavaScript UI library. Includes grid, layout, tool | JavaScript, JS, UI, grid, layout, tree, popup |
 | [w3c-css-typed-object-mode](./w/w3c-css-typed-object-model-level-1) | - | - |
 | [w3c-gamepad](./w/w3c-gamepad) | - | - |

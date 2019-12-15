@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 trait Anon_EdgeLabel extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis.edgeLabel
+    * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.edgeLabel
     */
   var edgeLabel: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis.label
+    * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
 }

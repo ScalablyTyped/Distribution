@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -22,7 +23,10 @@ abstract class MenuWidget protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var menuSource: MenuSource = js.native
+  @JSName("model")
+  var model_FMenuWidget: IModel = js.native
+  def menuSource(): MenuSource = js.native
+  def menuSource(newValue: MenuSource): js.Any = js.native
 }
 
 /* static members */

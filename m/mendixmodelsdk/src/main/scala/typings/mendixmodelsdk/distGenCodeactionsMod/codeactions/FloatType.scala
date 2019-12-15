@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IType because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IPrimitiveType because Already inherited
-- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IFloatType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.FloatType")
+- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IFloatType because var conflicts: containerAsBasicParameterType, containerAsCodeAction, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.FloatType")
 @js.native
 class FloatType protected () extends PrimitiveType {
   def this(
@@ -29,6 +29,12 @@ class FloatType protected () extends PrimitiveType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FFloatType: IModel = js.native
+  @JSName("containerAsBasicParameterType")
+  def containerAsBasicParameterType_MFloatType(): BasicParameterType = js.native
+  @JSName("containerAsCodeAction")
+  def containerAsCodeAction_MFloatType(): CodeAction = js.native
 }
 
 /* static members */

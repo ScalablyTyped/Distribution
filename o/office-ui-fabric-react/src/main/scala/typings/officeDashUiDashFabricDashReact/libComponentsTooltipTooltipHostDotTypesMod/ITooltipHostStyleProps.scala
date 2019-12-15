@@ -6,13 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITooltipHostStyleProps extends js.Object {
-  /**
-    * Accept optional classNames for the host wrapper
-    */
   var className: js.UndefOr[String] = js.undefined
-  /**
-    * Accept theme prop.
-    */
   var theme: ITheme
 }
 

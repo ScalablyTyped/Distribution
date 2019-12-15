@@ -9,14 +9,14 @@ trait Anon_01AnonCoordItemStyleLabelName extends js.Object {
     * Specify the left-top point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markArea.data.0
+    * @see https://echarts.apache.org/en/option.html#series-map.markArea.data.0
     */
   var `0`: js.UndefOr[Anon_CoordItemStyleLabelName] = js.undefined
   /**
     * Specify the right-bottom point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markArea.data.1
+    * @see https://echarts.apache.org/en/option.html#series-map.markArea.data.1
     */
   var `1`: js.UndefOr[Anon_CoordItemStyleLabelName] = js.undefined
 }

@@ -19,7 +19,7 @@ trait Anon_ColorOpacityShadowBlurShadowColor extends js.Object {
     * ```
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.color
     */
   var color: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -28,7 +28,7 @@ trait Anon_ColorOpacityShadowBlurShadowColor extends js.Object {
     * be drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.opacity
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -38,31 +38,31 @@ trait Anon_ColorOpacityShadowBlurShadowColor extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.gauge.axisLine.lineStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.axisLine.lineStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -71,7 +71,7 @@ trait Anon_ColorOpacityShadowBlurShadowColor extends js.Object {
     *
     * @default
     * 30
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.width
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.width
     */
   var width: js.UndefOr[Double] = js.undefined
 }

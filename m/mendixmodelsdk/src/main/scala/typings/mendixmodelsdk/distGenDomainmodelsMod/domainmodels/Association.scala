@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAssociationBase because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAssociation because var conflicts: id, isLoaded, model, name, owner, parent, remoteSourceDocument, structureTypeName, `type`, unit. Inlined child */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Association")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAssociation because var conflicts: containerAsDomainModel, id, isLoaded, model, name, owner, parent, qualifiedName, remoteSourceDocument, remoteSourceDocumentQualifiedName, structureTypeName, `type`, unit. Inlined child */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Association")
 @js.native
 class Association protected () extends AssociationBase {
   def this(
@@ -30,11 +30,21 @@ class Association protected () extends AssociationBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var child: Entity | IEntity = js.native
-  var childConnection: IPoint = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("child")
+  val child_FAssociation: IEntity = js.native
+  @JSName("model")
+  var model_FAssociation: IModel = js.native
+  def child(): Entity = js.native
+  def child(newValue: Entity): js.Any = js.native
+  def childConnection(): IPoint = js.native
+  def childConnection(newValue: IPoint): js.Any = js.native
   @JSName("containerAsDomainModel")
-  val containerAsDomainModel_Association: DomainModel = js.native
-  var parentConnection: IPoint = js.native
+  def containerAsDomainModel_MAssociation(): DomainModel = js.native
+  def parentConnection(): IPoint = js.native
+  def parentConnection(newValue: IPoint): js.Any = js.native
 }
 
 /* static members */

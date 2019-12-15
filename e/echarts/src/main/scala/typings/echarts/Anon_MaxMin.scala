@@ -9,14 +9,14 @@ trait Anon_MaxMin extends js.Object {
     * Maximum scaling
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.scaleLimit.max
+    * @see https://echarts.apache.org/en/option.html#series-map.scaleLimit.max
     */
   var max: js.UndefOr[Double] = js.undefined
   /**
     * Minimum scaling
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.scaleLimit.min
+    * @see https://echarts.apache.org/en/option.html#series-map.scaleLimit.min
     */
   var min: js.UndefOr[Double] = js.undefined
 }

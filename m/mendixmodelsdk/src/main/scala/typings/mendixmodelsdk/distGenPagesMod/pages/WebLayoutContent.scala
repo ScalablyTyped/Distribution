@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenPagesMod.pages.ILayoutContent because Already inherited
-- typings.mendixmodelsdk.distGenPagesMod.pages.IWebLayoutContent because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined layoutType, layoutCall */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WebLayoutContent")
+- typings.mendixmodelsdk.distGenPagesMod.pages.IWebLayoutContent because var conflicts: containerAsLayout, id, isLoaded, model, structureTypeName, unit. Inlined layoutType, layoutCall */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WebLayoutContent")
 @js.native
 class WebLayoutContent protected () extends LayoutContent {
   def this(
@@ -29,11 +29,21 @@ class WebLayoutContent protected () extends LayoutContent {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("layoutCall")
+  val layoutCall_FWebLayoutContent: ILayoutCall | Null = js.native
+  @JSName("layoutType")
+  val layoutType_FWebLayoutContent: LayoutType = js.native
+  @JSName("model")
+  var model_FWebLayoutContent: IModel = js.native
   @JSName("containerAsLayout")
-  val containerAsLayout_WebLayoutContent: Layout = js.native
-  var layoutCall: ILayoutCall | LayoutCall | Null = js.native
-  var layoutType: LayoutType = js.native
-  val widgets: IList[Widget] = js.native
+  def containerAsLayout_MWebLayoutContent(): Layout = js.native
+  def layoutCall(): LayoutCall | Null = js.native
+  def layoutCall(newValue: LayoutCall): js.Any = js.native
+  @JSName("layoutCall")
+  def layoutCall_Any(): js.Any = js.native
+  def layoutType(): LayoutType = js.native
+  def layoutType(newValue: LayoutType): js.Any = js.native
+  def widgets(): IList[Widget] = js.native
 }
 
 /* static members */

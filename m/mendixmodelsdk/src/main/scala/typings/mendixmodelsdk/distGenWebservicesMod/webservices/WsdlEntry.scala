@@ -21,13 +21,17 @@ class WsdlEntry protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsWsdlDescription: WsdlDescription = js.native
-  var contents: String = js.native
-  var localizedContentsFormat: String = js.native
-  var localizedLocationFormat: String = js.native
-  var location: String = js.native
   @JSName("model")
-  var model_WsdlEntry: IModel = js.native
+  var model_FWsdlEntry: IModel = js.native
+  def containerAsWsdlDescription(): WsdlDescription = js.native
+  def contents(): String = js.native
+  def contents(newValue: String): js.Any = js.native
+  def localizedContentsFormat(): String = js.native
+  def localizedContentsFormat(newValue: String): js.Any = js.native
+  def localizedLocationFormat(): String = js.native
+  def localizedLocationFormat(newValue: String): js.Any = js.native
+  def location(): String = js.native
+  def location(newValue: String): js.Any = js.native
 }
 
 /* static members */

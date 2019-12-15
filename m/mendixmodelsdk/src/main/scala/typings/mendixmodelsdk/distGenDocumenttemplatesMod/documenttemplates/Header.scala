@@ -23,7 +23,10 @@ class Header protected () extends DropZone {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var topMargin: Double = js.native
+  @JSName("model")
+  var model_FHeader: IModel = js.native
+  def topMargin(): Double = js.native
+  def topMargin(newValue: Double): js.Any = js.native
 }
 
 /* static members */

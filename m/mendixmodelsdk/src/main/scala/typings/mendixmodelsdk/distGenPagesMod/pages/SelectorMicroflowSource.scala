@@ -20,7 +20,10 @@ class SelectorMicroflowSource protected () extends SelectorSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var dataSourceMicroflowSettings: MicroflowSettings = js.native
+  @JSName("model")
+  var model_FSelectorMicroflowSource: IModel = js.native
+  def dataSourceMicroflowSettings(): MicroflowSettings = js.native
+  def dataSourceMicroflowSettings(newValue: MicroflowSettings): js.Any = js.native
 }
 
 /* static members */

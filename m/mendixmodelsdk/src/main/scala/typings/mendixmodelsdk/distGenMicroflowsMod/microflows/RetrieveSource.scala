@@ -21,9 +21,9 @@ abstract class RetrieveSource protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsRetrieveAction: RetrieveAction = js.native
   @JSName("model")
-  var model_RetrieveSource: IModel = js.native
+  var model_FRetrieveSource: IModel = js.native
+  def containerAsRetrieveAction(): RetrieveAction = js.native
 }
 
 /* static members */

@@ -24,12 +24,12 @@ import scala.scalajs.js.annotation._
   * This kind of chart is usually used in infographic.
   *
   * Pictorial bar chart can only be used in
-  * [rectangular coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+  * [rectangular coordinate](https://echarts.apache.org/en/option.html#grid)
   * with at least 1 category axis.
   *
   * **Example:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar)
+  * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar)
   *
   * **Layout**
   *
@@ -40,29 +40,29 @@ import scala.scalajs.js.annotation._
   * graphic elements.
   * Each pictorial graphic element is positioned with respect to its
   * `reference bar` according to the setting of
-  * [symbolPosition](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolPosition)
+  * [symbolPosition](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolPosition)
   * 、
-  * [symbolOffset](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolOffset)
+  * [symbolOffset](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolOffset)
   * .
   *
   * See the example below:
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar)
+  * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar)
   *
-  * [symbolSize](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolSize)
+  * [symbolSize](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolSize)
   * is used to specify the size of graphic elements.
   *
   * See the example below:
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar)
+  * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar)
   *
   * **Graphic types**
   *
-  * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+  * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
   * can be
   *
   * Graphic elements can be set as 'repeat' or not by
-  * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+  * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
   * .
   *
   * + If set as `false` (default), a single graphic element is used to
@@ -72,28 +72,28 @@ import scala.scalajs.js.annotation._
   *
   * See the example below:
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar)
+  * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar)
   *
   * Each graphic element can be basic shape (like `'circle'`, `'rect'`,
   * ...), or
   * [SVG PathData](http://www.w3.org/TR/SVG/paths.html#PathData)
   * , or image. See
-  * [symbolType](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolType)
+  * [symbolType](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolType)
   * .
   *
   * See the example below:
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar)
+  * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar)
   *
-  * [symbolClip](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolClip)
+  * [symbolClip](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolClip)
   * can be used to clip graphic elements。
   *
   * See the example below:
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar)
+  * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar
+  * @see https://echarts.apache.org/en/option.html#series-pictorialBar
   */
 @JSName("SeriesPictorialBar")
 trait SeriesPictorialBar_ extends js.Object {
@@ -103,43 +103,43 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.animation
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -148,7 +148,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[Anon_AnimationDelay] = js.undefined
   /**
@@ -159,7 +159,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -175,7 +175,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @default
     * '20%'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.barCategoryGap
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.barCategoryGap
     */
   var barCategoryGap: js.UndefOr[String] = js.undefined
   /**
@@ -193,12 +193,12 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
     * @default
     * -100%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.barGap
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.barGap
     */
   var barGap: js.UndefOr[String] = js.undefined
   /**
@@ -211,7 +211,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * in the coordinate system.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.barMaxWidth
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.barMaxWidth
     */
   var barMaxWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -220,7 +220,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * would be affected when the value of some data item is too small.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.barMinHeight
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.barMinHeight
     */
   var barMinHeight: js.UndefOr[Double] = js.undefined
   /**
@@ -233,7 +233,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * in the coordinate system.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.barWidth
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.barWidth
     */
   var barWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -243,15 +243,15 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * Use a two-dimensional rectangular coordinate (also known as Cartesian
     * coordinate), with
-    * [xAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.xAxisIndex)
+    * [xAxisIndex](https://echarts.apache.org/en/option.html#series-pictorialBar.xAxisIndex)
     * and
-    * [yAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.yAxisIndex)
+    * [yAxisIndex](https://echarts.apache.org/en/option.html#series-pictorialBar.yAxisIndex)
     * to assign the corresponding axis component.
     *
     *
     * @default
     * "cartesian2d"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.coordinateSystem
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.undefined
   /**
@@ -261,65 +261,65 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @default
     * "pointer"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.cursor
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.cursor
     */
   var cursor: js.UndefOr[String] = js.undefined
   /**
     * Data array of series, which can be in the following forms:
     *
     * Notice, if no `data` specified in series, and there is
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * in option, series will use the first
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * as its datasource. If `data` has been specified,
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * will not used.
     *
     * `series.datasetIndex` can be used to specify other
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * .
     *
     * Basically, data is represented by a two-dimension array, like
     * the example below, where each colum is named as a "dimension".
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * + In
-    * [cartesian (grid)](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [cartesian (grid)](https://echarts.apache.org/en/option.html#grid)
     * , "dimX" and "dimY" correspond to
-    * [xAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [xAxis](https://echarts.apache.org/en/option.html#xAxis)
     * and
-    * [yAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [yAxis](https://echarts.apache.org/en/option.html#yAxis)
     * repectively.
     * + In
-    * [polar](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar](https://echarts.apache.org/en/option.html#polar)
     * "dimX" and "dimY" correspond to
-    * [radiusAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#radiusAxis)
+    * [radiusAxis](https://echarts.apache.org/en/option.html#radiusAxis)
     * 和
-    * [angleAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#anbleAxis)
+    * [angleAxis](https://echarts.apache.org/en/option.html#anbleAxis)
     * repectively.
     * + Other dimensions are optional, which can be used in other place.
     * For example:
-    * + [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * + [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * can map one or more dimensions to viusal (color, symbol size
     * ...).
-    * + [series.symbolSize](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.symbolSize)
+    * + [series.symbolSize](https://echarts.apache.org/en/option.html#series.symbolSize)
     * can be set as a callback function, where symbol size can be calculated
     * by values of a certain dimension.
     * + Values in other dimensions can be shown by
-    * [tooltip.formatter](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.formatter)
+    * [tooltip.formatter](https://echarts.apache.org/en/option.html#tooltip.formatter)
     * or
-    * [series.label.formatter](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.label.formatter)
+    * [series.label.formatter](https://echarts.apache.org/en/option.html#series.label.formatter)
     * .
     *
     * Especially, when there is one and only one category axis (axis.type
     * is `'category'`), data can be simply be represented by a one-dimension
     * array, like:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * **Relationship between "value" and
-    * [axis.type](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis.type)
+    * [axis.type](https://echarts.apache.org/en/option.html#xAxis.type)
     * **
     *
     * + When a dimension corresponds to a value axis (axis.type
@@ -335,10 +335,10 @@ trait SeriesPictorialBar_ extends js.Object {
     * (based on `0`), the string value of the axis.data.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * There is an example of double category axes:
-    * [Github Punchcard](https://ecomfe.github.io/echarts-examples/public/editor.html?c=scatter-punchCard)
+    * [Github Punchcard](https://echarts.apache.org/examples/en/editor.html?c=scatter-punchCard)
     * .
     *
     * + When a dimension corresponds to a time axis (type is `'time'`),
@@ -382,7 +382,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * When needing to customize a data item, it can be set as an object,
     * where property `value` reprensent real value. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * **Empty value:**
     *
@@ -394,7 +394,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * and scatter chart do not display graphic elements for empty values.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.data
     */
   var data: js.UndefOr[
     js.Array[
@@ -406,10 +406,10 @@ trait SeriesPictorialBar_ extends js.Object {
     * or `dataset.source`.
     *
     * Notice: if
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * is used, we can provide dimension names in the first column/row
     * of
-    * [dataset.source](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset.source)
+    * [dataset.source](https://echarts.apache.org/en/option.html#dataset.source)
     * , and not need to specify `dimensions` here.
     * But if `dimensions` is specified here, echarts will not retrieve
     * dimension names from the first row/column of `dataset.source`
@@ -417,8 +417,8 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * Each data item of `dimensions` can be:
     *
@@ -436,7 +436,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * + `ordinal`, discrete value, which represents string generally.
     * + `time`, time value, see
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.data)
+    * [data](https://echarts.apache.org/en/option.html#series.data)
     * to check the format of time value.
     * + displayName: `string`, generally used in tooltip for dimension
     * display. If not specified, use `name` by default.
@@ -446,68 +446,68 @@ trait SeriesPictorialBar_ extends js.Object {
     * Otherwise, `tooltip` will displayed only value horizontally.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.dimensions
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.dimensions
     */
   var dimensions: js.UndefOr[js.Array[_]] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * Attributes of encode are different according to the type of coordinate
     * systtems. For
-    * [cartesian2d](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [cartesian2d](https://echarts.apache.org/en/option.html#grid)
     * , `x` and `y` can be defined. For
-    * [polar](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar](https://echarts.apache.org/en/option.html#polar)
     * , `radius` and `angle` can be defined. For
-    * [geo](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geo](https://echarts.apache.org/en/option.html#geo)
     * , `lng` and `lat` can be defined.
     * Attribute `tooltip` and `itemName` (data item name in tooltip)
     * are always able to be defined.
     *
     * When
-    * [dimensions](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.dimensions)
+    * [dimensions](https://echarts.apache.org/en/option.html#series.dimensions)
     * is used to defined name for a certain dimension, `encode` can
     * refer the name directly. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * Specially, in \[custom series(~series-custom), some property
     * in `encode`, corresponding to axis, can be set as null to make
     * the series not controlled by the axis, that is, the series data
     * will not be count in the extent of the axis, and the
-    * [dataZoom](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom)
+    * [dataZoom](https://echarts.apache.org/en/option.html#dataZoom)
     * on the axis will not filter the series.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.encode
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.encode
     */
   var encode: js.UndefOr[js.Object] = js.undefined
   /**
     * Whether to enable hover animation.
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.hoverAnimation)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.hoverAnimation)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.hoverAnimation)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.hoverAnimation
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation
     */
   var hoverAnimation: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdBoolean
@@ -518,7 +518,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.id
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -526,7 +526,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * like being hovered by mouse, or highlighted via legend connect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
@@ -538,18 +538,18 @@ trait SeriesPictorialBar_ extends js.Object {
     * as `itemStyle` does.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.label
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
   /**
     * Whether to enable highlighting chart when
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * is being hovered.
     *
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.legendHoverLink
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.legendHoverLink
     */
   var legendHoverLink: js.UndefOr[Boolean] = js.undefined
   /**
@@ -557,32 +557,32 @@ trait SeriesPictorialBar_ extends js.Object {
     * For example, mark a time interval.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.markArea
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markArea
     */
   var markArea: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.markLine
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markLine
     */
   var markLine: js.UndefOr[Anon_AnimationAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.markPoint
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markPoint
     */
   var markPoint: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.name
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -591,7 +591,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.silent
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
@@ -613,7 +613,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * Icons can be set to arbitrary vector path via `'path://'` in
     * ECharts.
@@ -627,29 +627,29 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * Example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbol)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.symbol)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.symbol)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbol)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
     * @default
     * "circle"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbol
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
@@ -667,7 +667,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * Rule:
     *
     * + If
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * is not used:
     *
     * `symbolBoundingData` is the same as the size of reference bar
@@ -681,17 +681,17 @@ trait SeriesPictorialBar_ extends js.Object {
     * * 50% = 12`.
     *
     * + If
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * is used:
     *
     * `symbolBoundingData` is the extreme value of the coordinate system.
     * `symbolBoundingData` defines a bounding area, where repeated
     * graphic elements layout according to
-    * [symbolMargin](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolMargin)
+    * [symbolMargin](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolMargin)
     * and
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * and
-    * [symbolSize](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolSize)
+    * [symbolSize](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolSize)
     *
     *
     * Both these settings determine the gap size of the repeated graphic
@@ -700,7 +700,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * `symbolBoundingData` is usually used in these cases:
     *
     * + When
-    * [symbolCilp](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolClip)
+    * [symbolCilp](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolClip)
     * is used:
     *
     * And a series is used to display "amont value", while another
@@ -710,10 +710,10 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * + When
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * is used:
     *
     * `symbolBoundingData` can be use to ensure the gaps of the elements
@@ -723,30 +723,30 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * `symbolBoundingData` can also be an array, such as `[-40, 60]`,
     * which specifies both negative and positive symbolBoundingData.
     *
     * Check this example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolBoundingData)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolBoundingData)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.symbolBoundingData)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolBoundingData)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolBoundingData
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolBoundingData
     */
   var symbolBoundingData: js.UndefOr[Double] = js.undefined
   /**
@@ -764,51 +764,51 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * Notice, in the example above,
     *
     * + The same
-    * [symbolBoundingData](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.pictorialBar.symbolBoundingData)
+    * [symbolBoundingData](https://echarts.apache.org/en/option.html#series.pictorialBar.symbolBoundingData)
     * is used in "background series" and "current value seires", which
     * makes their graphic elements are the same size.
     * + A bigger
-    * [z](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.pictorialBar.z)
+    * [z](https://echarts.apache.org/en/option.html#series.pictorialBar.z)
     * is set on "current value series", which makes it is over "background
     * series".
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolClip)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolClip)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.symbolClip)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolClip)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolClip
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolClip
     */
   var symbolClip: js.UndefOr[Boolean] = js.undefined
   /**
     * Specify margin of both sides of a graphic element.
     * ("both sides" means the two sides in the direction of its value
     * axis). It works only when
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * is used.
     *
     * Absolute value can be used (like `20`), or percent value can
     * be used (like `'-30%'`), which is based on its
-    * [symbolSize](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolSize)
+    * [symbolSize](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolSize)
     * .
     *
     * `symbolMargin` can be positive value or negative value, which
     * enables overlap of graphic elements when
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * is used.
     *
     * A `"!"` can be appended on the end of the value, like `"30%!"`
@@ -819,38 +819,38 @@ trait SeriesPictorialBar_ extends js.Object {
     * Notice:
     *
     * + When
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * is `true`/`'fixed'`: The given `symbolMargin` is just a reference
     * value.
     * The final gap of graphic elements will be calculated according
     * to
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * , `symbolMargin` and
-    * [symbolBoundingData](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolBoundingData)
+    * [symbolBoundingData](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolBoundingData)
     * .
     * + When
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * is set as a number: `symbolMargin` does not work any more.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolMargin)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolMargin)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.symbolMargin)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolMargin)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolMargin
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolMargin
     */
   var symbolMargin: js.UndefOr[Double | String] = js.undefined
   /**
@@ -861,7 +861,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * A absolute value can be set (like `10`), or a percent value can
     * be set (like `'120%'`、`['55%', 23]`), which is based on its
-    * [symbolSize](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolSize)
+    * [symbolSize](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolSize)
     * .
     *
     * For example, `[0, '-50%']` means the graphic element will be
@@ -869,31 +869,31 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolOffset)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolOffset)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.symbolOffset)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolOffset)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Image can be used as the pattern of graphic elements.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * `symbolPatternSize` specifies the size of pattern image.
     * For example, if `symbolPatternSize` is `400`, the pattern image
@@ -901,25 +901,25 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolPatternSize)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolPatternSize)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.symbolPatternSize)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolPatternSize)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
     * @default
     * 400
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolPatternSize
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolPatternSize
     */
   var symbolPatternSize: js.UndefOr[Double] = js.undefined
   /**
@@ -935,25 +935,25 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolPosition)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolPosition)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.symbolPosition)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolPosition)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
     * @default
     * "start"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolPosition
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolPosition
     */
   var symbolPosition: js.UndefOr[String] = js.undefined
   /**
@@ -964,7 +964,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * + `true`: Repeat, that is, a group of repeated graphic elements
     * represent a data item.
     * The repeat times is calculated according to
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data)
+    * [data](https://echarts.apache.org/en/option.html#series-pictorialBar.data)
     * .
     * + a number: Repeat, that is a group of repeated graphic elements
     * represent a data item.
@@ -972,76 +972,76 @@ trait SeriesPictorialBar_ extends js.Object {
     * + `'fixed'`: Repeat, that is a group of repeated graphic elements
     * represent a data item.
     * The repeat times is calcuated according to
-    * [symbolBoundingData](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolBoundingData)
+    * [symbolBoundingData](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolBoundingData)
     * , that is, the repeat times has nothing to do with
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data)
+    * [data](https://echarts.apache.org/en/option.html#series-pictorialBar.data)
     *
     *
     * The setting is useful when graphic elements are used as background.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.symbolRepeat)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolRepeat)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat
     */
   var symbolRepeat: js.UndefOr[Boolean | Double | String] = js.undefined
   /**
     * When
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * is used, `symbolRepeatDirection` specifies the render order of
     * the repeatd graphic elements.
     * The setting is useful in these cases below:
     *
     * + If
-    * [symbolMargin](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolMargin)
+    * [symbolMargin](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolMargin)
     * is set as a negative value, repeated elements will overlap with
     * each other.
     * `symbolRepeatDirection` can be used to specify the order of overlap.
     *
     * + If
-    * [animationDelay](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.animationDelay)
+    * [animationDelay](https://echarts.apache.org/en/option.html#series-pictorialBar.animationDelay)
     * or
-    * [animationDelayUpdate](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.animationDelayUpdate)
+    * [animationDelayUpdate](https://echarts.apache.org/en/option.html#series-pictorialBar.animationDelayUpdate)
     * is used, `symbolRepeatDirection` specifies the order of index.
     *
     * Optional values can be `'start'` and `'end'`.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeatDirection)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeatDirection)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.symbolRepeatDirection)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolRepeatDirection)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
     * @default
     * "start"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeatDirection
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeatDirection
     */
   var symbolRepeatDirection: js.UndefOr[String] = js.undefined
   /**
@@ -1051,20 +1051,20 @@ trait SeriesPictorialBar_ extends js.Object {
     * element, but just rotating by its center.
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRotate)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRotate)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.symbolRotate)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolRotate)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -1080,22 +1080,22 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * When percent value is used, final size of the graphic element
     * is calculated based on its
-    * [reference bar](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar)
+    * [reference bar](https://echarts.apache.org/en/option.html#series-pictorialBar)
     * .
     *
     * For example, there is a reference bar based on x axis (that is,
     * it is a vertical bar), and
-    * [symbolSize](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolSize)
+    * [symbolSize](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolSize)
     * is set as `['30%', '50%']`, the final size of its graphic elements
     * is:
     *
     * + width: `<width of reference bar> * 30%`。
     * + height:
     * + If
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * is used: `<height of reference bar> * 50%`.
     * + If
-    * [symbolRepeat](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolRepeat)
+    * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
     * is not used: `<height of reference bar> * 50%`.
     *
     * Analogously, the case that based on y axis can be obtained by
@@ -1103,56 +1103,56 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     * This attribute can be set at the
-    * [root level of a series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolSize)
+    * [root level of a series](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolSize)
     * , where all data items in the series will be affected by this
     * attribute. And this attribute can also be set at
-    * [each data item](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data.symbolSize)
+    * [each data item](https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolSize)
     * in
-    * [series-pictorialBar.data](https://ecomfe.github.io/echarts-doc/public/en/option.htmlseries-pictorialBar.data)
+    * [series-pictorialBar.data](https://echarts.apache.org/en/option.htmlseries-pictorialBar.data)
     * , where only the data item is affected by this attribute.
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.pictorialBar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar)
     *
     *
     * @default
     * ['100%', '100%']
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "pictorialBar"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.type
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * Index of
-    * [x axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [x axis](https://echarts.apache.org/en/option.html#xAxis)
     * to combine with, which is useful for multiple x axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.xAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.xAxisIndex
     */
   var xAxisIndex: js.UndefOr[Double] = js.undefined
   /**
     * Index of
-    * [y axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [y axis](https://echarts.apache.org/en/option.html#yAxis)
     * to combine with, which is useful for multiple y axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.yAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.yAxisIndex
     */
   var yAxisIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -1167,7 +1167,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.z
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -1185,7 +1185,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

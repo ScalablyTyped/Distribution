@@ -10,7 +10,7 @@ trait Anon_Cx extends js.Object {
     * system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_circle.shape.cx
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.shape.cx
     */
   var cx: js.UndefOr[Double] = js.undefined
   /**
@@ -18,14 +18,14 @@ trait Anon_Cx extends js.Object {
     * system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_circle.shape.cy
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.shape.cy
     */
   var cy: js.UndefOr[Double] = js.undefined
   /**
     * Outside radius.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_circle.shape.r
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.shape.r
     */
   var r: js.UndefOr[Double] = js.undefined
 }

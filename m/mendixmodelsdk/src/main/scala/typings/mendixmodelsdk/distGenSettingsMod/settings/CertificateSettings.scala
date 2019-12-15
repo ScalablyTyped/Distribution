@@ -21,7 +21,9 @@ class CertificateSettings protected () extends ProjectSettingsPart {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val certificates: IList[Certificate] = js.native
+  @JSName("model")
+  var model_FCertificateSettings: IModel = js.native
+  def certificates(): IList[Certificate] = js.native
 }
 
 /* static members */

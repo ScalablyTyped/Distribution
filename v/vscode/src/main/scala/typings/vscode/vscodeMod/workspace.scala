@@ -17,8 +17,14 @@ object workspace extends js.Object {
   val onDidChangeTextDocument: Event[TextDocumentChangeEvent] = js.native
   val onDidChangeWorkspaceFolders: Event[WorkspaceFoldersChangeEvent] = js.native
   val onDidCloseTextDocument: Event[TextDocument] = js.native
+  val onDidCreateFiles: Event[FileCreateEvent] = js.native
+  val onDidDeleteFiles: Event[FileDeleteEvent] = js.native
   val onDidOpenTextDocument: Event[TextDocument] = js.native
+  val onDidRenameFiles: Event[FileRenameEvent] = js.native
   val onDidSaveTextDocument: Event[TextDocument] = js.native
+  val onWillCreateFiles: Event[FileWillCreateEvent] = js.native
+  val onWillDeleteFiles: Event[FileWillDeleteEvent] = js.native
+  val onWillRenameFiles: Event[FileWillRenameEvent] = js.native
   val onWillSaveTextDocument: Event[TextDocumentWillSaveEvent] = js.native
   val rootPath: js.UndefOr[String] = js.native
   val textDocuments: js.Array[TextDocument] = js.native

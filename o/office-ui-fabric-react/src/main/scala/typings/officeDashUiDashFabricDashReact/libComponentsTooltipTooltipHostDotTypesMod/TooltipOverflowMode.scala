@@ -17,7 +17,10 @@ object TooltipOverflowMode extends js.Object {
   @js.native
   sealed trait Parent extends TooltipOverflowMode
   
-  /** Only show tooltip if tooltip host's content is overflowing */
+  /**
+    * Only show tooltip if tooltip host's content is overflowing.
+    * Note that this does not check the children for overflow, only the TooltipHost root.
+    */
   @js.native
   sealed trait Self extends TooltipOverflowMode
   

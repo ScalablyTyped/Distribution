@@ -20,32 +20,32 @@ class HitResult () extends js.Object {
   /** 
     * The item that was hit.
     */
-  var item: Item | Null = js.native
+  var item: Item = js.native
   /** 
     * If the HitResult has a type of 'curve' or 'stroke', this property gives
     * more information about the exact position that was hit on the path.
     */
-  var location: CurveLocation | Null = js.native
+  var location: CurveLocation = js.native
   /** 
     * If the HitResult has a {@link HitResult#type} of `'bounds'`, this
     * property describes which corner of the bounding rectangle was hit.
     */
-  var name: String | Null = js.native
+  var name: String = js.native
   /** 
     * Describes the actual coordinates of the segment, handle or bounding box
     * corner that was hit.
     */
-  var point: Point | Null = js.native
+  var point: Point = js.native
   /** 
     * If the HitResult has a type of 'stroke', 'segment', 'handle-in' or
     * 'handle-out', this property refers to the segment that was hit or that
     * is closest to the hitResult.location on the curve.
     */
-  var segment: Segment | Null = js.native
+  var segment: Segment = js.native
   /** 
     * Describes the type of the hit result. For example, if you hit a segment
     * point, the type would be `'segment'`.
     */
-  var `type`: String | Null = js.native
+  var `type`: String = js.native
 }
 

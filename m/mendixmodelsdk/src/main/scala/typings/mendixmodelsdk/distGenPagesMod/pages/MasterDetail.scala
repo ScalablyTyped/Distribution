@@ -26,14 +26,18 @@ class MasterDetail protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FMasterDetail: IModel = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var detail: MasterDetailDetailRegion = js.native
+  def detail(): MasterDetailDetailRegion = js.native
+  def detail(newValue: MasterDetailDetailRegion): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var master: MasterDetailMasterRegion = js.native
+  def master(): MasterDetailMasterRegion = js.native
+  def master(newValue: MasterDetailMasterRegion): js.Any = js.native
 }
 
 /* static members */

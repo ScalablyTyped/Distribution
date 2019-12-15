@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IGeneralizationBase because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IGeneralization because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined generalization, generalizationQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Generalization")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IGeneralization because var conflicts: containerAsEntity, id, isLoaded, model, structureTypeName, unit. Inlined generalization, generalizationQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Generalization")
 @js.native
 class Generalization protected () extends GeneralizationBase {
   def this(
@@ -25,10 +25,20 @@ class Generalization protected () extends GeneralizationBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("generalizationQualifiedName")
+  val generalizationQualifiedName_FGeneralization: String = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("generalization")
+  val generalization_FGeneralization: IEntity = js.native
+  @JSName("model")
+  var model_FGeneralization: IModel = js.native
   @JSName("containerAsEntity")
-  val containerAsEntity_Generalization: Entity = js.native
-  var generalization: IEntity = js.native
-  val generalizationQualifiedName: String = js.native
+  def containerAsEntity_MGeneralization(): Entity = js.native
+  def generalization(): IEntity = js.native
+  def generalization(newValue: IEntity): js.Any = js.native
+  def generalizationQualifiedName(): String = js.native
 }
 
 /* static members */

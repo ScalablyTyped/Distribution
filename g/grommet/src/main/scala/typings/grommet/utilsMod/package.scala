@@ -8,6 +8,7 @@ package object utilsMod {
   import typings.grommet.Anon_ColorContain
   import typings.grommet.Anon_ColorSideSizeStyleBoxStyleType
   import typings.grommet.Anon_Dark
+  import typings.grommet.Anon_DarkLightArray
   import typings.react.reactMod.ComponentType
   import typings.react.reactMod.KeyboardEvent
   import typings.react.reactMod.ReactNode
@@ -86,6 +87,7 @@ package object utilsMod {
     - java.lang.String
   */
   type GapType = _GapType | String
+  type GraphColorsType = js.Array[String] | Anon_DarkLightArray
   type GridAreaType = String
   type KeyboardType = js.Function1[/* event */ KeyboardEvent[HTMLElement], Unit]
   /* Rewritten from type alias, can be one of: 

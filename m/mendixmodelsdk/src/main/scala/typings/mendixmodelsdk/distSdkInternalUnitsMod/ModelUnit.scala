@@ -22,8 +22,10 @@ abstract class ModelUnit protected () extends AbstractElement {
     container: IStructuralUnit
   ) = this()
   @JSName("container")
-  val container_ModelUnit: StructuralUnit = js.native
+  val container_FModelUnit: StructuralUnit = js.native
+  @JSName("isLoaded")
+  def isLoaded_MModelUnit(): Boolean = js.native
   @JSName("unit")
-  val unit_ModelUnit: this.type = js.native
+  def unit_MModelUnit(): this.type = js.native
 }
 

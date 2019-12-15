@@ -21,8 +21,13 @@ class InheritanceCase protected () extends CaseValue {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var value: IEntity | Null = js.native
-  val valueQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FInheritanceCase: IModel = js.native
+  def value(): IEntity | Null = js.native
+  def value(newValue: IEntity): js.Any = js.native
+  def valueQualifiedName(): String | Null = js.native
+  @JSName("value")
+  def value_Any(): js.Any = js.native
 }
 
 /* static members */

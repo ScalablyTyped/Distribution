@@ -12,7 +12,7 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur extends js.Obj
     *
     * @default
     * "rgba(255,255,255,0.7)"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
@@ -22,7 +22,7 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur extends js.Obj
     *
     * @default
     * "solid"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.borderType
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.borderType
     */
   var borderType: js.UndefOr[String] = js.undefined
   /**
@@ -32,7 +32,7 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur extends js.Obj
     *
     * @default
     * 1
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -47,12 +47,12 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur extends js.Obj
     * Gradient color and texture are also supported besides
     * single colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.breadcrumb.emphasis.itemStyle)
+    * > [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.breadcrumb.emphasis.itemStyle)
     *
     *
     * @default
     * "rgba(0,0,0,0.7)"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -61,7 +61,7 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur extends js.Obj
     * not be drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.opacity
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -71,12 +71,12 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur extends js.Obj
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap.breadcrumb.emphasis.itemStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap.breadcrumb.emphasis.itemStyle)
     *
     *
     * @default
     * 3
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -85,25 +85,25 @@ trait Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur extends js.Obj
     *
     * @default
     * "rgba(150,150,150,1)"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle.textStyle
     */
   var textStyle: js.UndefOr[
     Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightHeight

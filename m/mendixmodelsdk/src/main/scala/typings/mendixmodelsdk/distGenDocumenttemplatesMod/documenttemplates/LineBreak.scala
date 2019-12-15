@@ -23,6 +23,8 @@ class LineBreak protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FLineBreak: IModel = js.native
 }
 
 /* static members */

@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation._
 
 package object themeDashUiMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.atStyledDashSystemCss.atStyledDashSystemCssMod.ResponsiveStyleValue
   import typings.atStyledDashSystemCss.atStyledDashSystemCssMod.SystemStyleObject
   import typings.react.reactMod.ComponentClass
   import typings.react.reactMod.ComponentState
   import typings.std.Exclude
   import typings.std.Pick
-  import typings.std.Record
   import typings.themeDashUi.Anon_As
 
   type ObjectOrArray[T] = js.Array[T] | (StringDictionary[
@@ -20,8 +18,5 @@ package object themeDashUiMod {
   ])
   type Omit[T, K] = Pick[T, Exclude[String, K]]
   type SxComponent[T /* <: SxProps */] = ComponentClass[T with Anon_As, ComponentState]
-  type SxStyleProp = SystemStyleObject with (Record[
-    String, 
-    SystemStyleObject | (ResponsiveStyleValue[Double | String]) | (Record[String, SystemStyleObject | (ResponsiveStyleValue[Double | String])])
-  ])
+  type SxStyleProp = SystemStyleObject
 }

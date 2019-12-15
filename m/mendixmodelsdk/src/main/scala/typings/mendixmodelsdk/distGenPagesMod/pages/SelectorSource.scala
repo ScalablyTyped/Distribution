@@ -21,9 +21,9 @@ abstract class SelectorSource protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsAssociationWidget: AssociationWidget = js.native
   @JSName("model")
-  var model_SelectorSource: IModel = js.native
+  var model_FSelectorSource: IModel = js.native
+  def containerAsAssociationWidget(): AssociationWidget = js.native
 }
 
 /* static members */

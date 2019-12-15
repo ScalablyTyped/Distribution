@@ -23,8 +23,12 @@ class RetrieveAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var outputVariableName: String = js.native
-  var retrieveSource: RetrieveSource = js.native
+  @JSName("model")
+  var model_FRetrieveAction: IModel = js.native
+  def outputVariableName(): String = js.native
+  def outputVariableName(newValue: String): js.Any = js.native
+  def retrieveSource(): RetrieveSource = js.native
+  def retrieveSource(newValue: RetrieveSource): js.Any = js.native
 }
 
 /* static members */

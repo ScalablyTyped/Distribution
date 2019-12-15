@@ -21,14 +21,21 @@ class MemberAccess protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var accessRights: MemberAccessRights = js.native
-  var association: IAssociationBase | Null = js.native
-  val associationQualifiedName: String | Null = js.native
-  var attribute: IAttribute | Null = js.native
-  val attributeQualifiedName: String | Null = js.native
-  val containerAsAccessRule: AccessRule = js.native
   @JSName("model")
-  var model_MemberAccess: IModel = js.native
+  var model_FMemberAccess: IModel = js.native
+  def accessRights(): MemberAccessRights = js.native
+  def accessRights(newValue: MemberAccessRights): js.Any = js.native
+  def association(): IAssociationBase | Null = js.native
+  def association(newValue: IAssociationBase): js.Any = js.native
+  def associationQualifiedName(): String | Null = js.native
+  @JSName("association")
+  def association_Any(): js.Any = js.native
+  def attribute(): IAttribute | Null = js.native
+  def attribute(newValue: IAttribute): js.Any = js.native
+  def attributeQualifiedName(): String | Null = js.native
+  @JSName("attribute")
+  def attribute_Any(): js.Any = js.native
+  def containerAsAccessRule(): AccessRule = js.native
 }
 
 /* static members */

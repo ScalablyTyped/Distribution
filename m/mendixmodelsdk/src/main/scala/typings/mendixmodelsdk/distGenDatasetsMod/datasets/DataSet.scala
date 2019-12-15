@@ -1,7 +1,9 @@
 package typings.mendixmodelsdk.distGenDatasetsMod.datasets
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenDatasetsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -20,7 +22,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.distGenDatasetsMod.datasets.IDataSet because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined parameters */ @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSet")
+- typings.mendixmodelsdk.distGenDatasetsMod.datasets.IDataSet because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined parameters */ @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSet")
 @js.native
 class DataSet protected () extends Document {
   def this(
@@ -30,9 +32,17 @@ class DataSet protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  var dataSetAccess: DataSetAccess = js.native
-  val parameters: IList[DataSetParameter | IDataSetParameter] = js.native
-  var source: DataSetSource = js.native
+  @JSName("model")
+  var model_FDataSet: IModel = js.native
+  @JSName("parameters")
+  val parameters_FDataSet: IList[IDataSetParameter] = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MDataSet(): FolderBase = js.native
+  def dataSetAccess(): DataSetAccess = js.native
+  def dataSetAccess(newValue: DataSetAccess): js.Any = js.native
+  def parameters(): IList[DataSetParameter] = js.native
+  def source(): DataSetSource = js.native
+  def source(newValue: DataSetSource): js.Any = js.native
 }
 
 /* static members */

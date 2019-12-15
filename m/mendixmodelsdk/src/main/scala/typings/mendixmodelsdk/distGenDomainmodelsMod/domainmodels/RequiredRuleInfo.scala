@@ -20,6 +20,8 @@ class RequiredRuleInfo protected () extends RuleInfo {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FRequiredRuleInfo: IModel = js.native
 }
 
 /* static members */

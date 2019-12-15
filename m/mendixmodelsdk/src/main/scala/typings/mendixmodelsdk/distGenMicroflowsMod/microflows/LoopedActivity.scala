@@ -23,11 +23,18 @@ class LoopedActivity protected () extends Activity {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var documentation: String = js.native
-  var errorHandlingType: ErrorHandlingType = js.native
-  var iteratedListVariableName: String = js.native
-  var loopVariableName: String = js.native
-  var objectCollection: MicroflowObjectCollection = js.native
+  @JSName("model")
+  var model_FLoopedActivity: IModel = js.native
+  def documentation(): String = js.native
+  def documentation(newValue: String): js.Any = js.native
+  def errorHandlingType(): ErrorHandlingType = js.native
+  def errorHandlingType(newValue: ErrorHandlingType): js.Any = js.native
+  def iteratedListVariableName(): String = js.native
+  def iteratedListVariableName(newValue: String): js.Any = js.native
+  def loopVariableName(): String = js.native
+  def loopVariableName(newValue: String): js.Any = js.native
+  def objectCollection(): MicroflowObjectCollection = js.native
+  def objectCollection(newValue: MicroflowObjectCollection): js.Any = js.native
 }
 
 /* static members */

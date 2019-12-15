@@ -25,9 +25,11 @@ class OfflineSchemaFetchInstruction protected () extends Element {
     container: AbstractElement
   ) = this()
   @JSName("model")
-  var model_OfflineSchemaFetchInstruction: IModel = js.native
-  var tableName: String = js.native
-  var xPath: String = js.native
+  var model_FOfflineSchemaFetchInstruction: IModel = js.native
+  def tableName(): String = js.native
+  def tableName(newValue: String): js.Any = js.native
+  def xPath(): String = js.native
+  def xPath(newValue: String): js.Any = js.native
 }
 
 /* static members */

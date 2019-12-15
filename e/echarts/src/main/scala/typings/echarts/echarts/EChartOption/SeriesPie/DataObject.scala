@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait DataObject extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
@@ -21,14 +21,14 @@ trait DataObject extends js.Object {
     * like being hovered by mouse, or highlighted via legend connect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * The label configuration of a single sector.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.label
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.label
     */
   var label: js.UndefOr[
     Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
@@ -37,35 +37,35 @@ trait DataObject extends js.Object {
     * The style of visual guide line.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.labelLine
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.labelLine
     */
   var labelLine: js.UndefOr[Anon_EmphasisLengthLength2LineStyle] = js.undefined
   /**
     * The name of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.name
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * Whether the data item is selected.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.selected
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.selected
     */
   var selected: js.UndefOr[Boolean] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * Data value.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.value
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.value
     */
   var value: js.UndefOr[Double] = js.undefined
 }

@@ -25,14 +25,21 @@ class JavaActionCallAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var javaAction: IJavaAction | Null = js.native
-  val javaActionQualifiedName: String | Null = js.native
-  var outputVariableName: String = js.native
-  val parameterMappings: IList[JavaActionParameterMapping] = js.native
+  @JSName("model")
+  var model_FJavaActionCallAction: IModel = js.native
+  def javaAction(): IJavaAction | Null = js.native
+  def javaAction(newValue: IJavaAction): js.Any = js.native
+  def javaActionQualifiedName(): String | Null = js.native
+  @JSName("javaAction")
+  def javaAction_Any(): js.Any = js.native
+  def outputVariableName(): String = js.native
+  def outputVariableName(newValue: String): js.Any = js.native
+  def parameterMappings(): IList[JavaActionParameterMapping] = js.native
   /**
     * In version 7.13.0: introduced
     */
-  var useReturnVariable: Boolean = js.native
+  def useReturnVariable(): Boolean = js.native
+  def useReturnVariable(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

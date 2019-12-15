@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-chain
 
-Typings are for version 6.0.0
+Typings are for version 6.2.0
 
 ## Library description:
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads]][npm-url] [![Build Status][travis-image]][travis-url]

@@ -17,78 +17,78 @@ import scala.scalajs.js.annotation._
   *
   * echarts manages the creation, deletion, animation and interaction
   * with other components (like
-  * [dataZoom](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom)
+  * [dataZoom](https://echarts.apache.org/en/option.html#dataZoom)
   * 、
-  * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+  * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
   * ), which frees developers from handle those issue themselves.
   *
   * **For example, a "x-range" chart is made by custom sereis:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom)
+  * [see doc](https://echarts.apache.org/en/option.html#series-custom)
   *
   * **
-  * [More samples of custom series](https://ecomfe.github.io/echarts-examples/public/index.html#chart-type-custom)
+  * [More samples of custom series](https://echarts.apache.org/examples/en/index.html#chart-type-custom)
   * **
   *
   * **
-  * [A tutotial of custom series](https://ecomfe.github.io/echarts-doc/public/en/tutorial.html#Custom%20Series)
+  * [A tutotial of custom series](https://echarts.apache.org/en/tutorial.html#Custom%20Series)
   * **
   *
   * **Customize the render logic (in renderItem method)**
   *
   * `custom series` requires developers to write a render logic by themselves.
   * This render logic is called
-  * [renderItem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem)
+  * [renderItem](https://echarts.apache.org/en/option.html#series-custom.renderItem)
   * .
   *
   * For example:
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom)
+  * [see doc](https://echarts.apache.org/en/option.html#series-custom)
   *
-  * [renderItem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem)
+  * [renderItem](https://echarts.apache.org/en/option.html#series-custom.renderItem)
   * will be called on each data item.
   *
-  * [renderItem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem)
+  * [renderItem](https://echarts.apache.org/en/option.html#series-custom.renderItem)
   * provides two parameters:
   *
-  * + [params](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.params)
+  * + [params](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.params)
   * : provides info about the current series and data and coordinate
   * system.
-  * + [api](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api)
+  * + [api](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api)
   * : includes some methods.
   *
-  * [renderItem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem)
+  * [renderItem](https://echarts.apache.org/en/option.html#series-custom.renderItem)
   * method should returns graphic elements definitions.See
-  * [renderItem.return](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return)
+  * [renderItem.return](https://echarts.apache.org/en/option.html#series-custom.renderItem.return)
   * .
   *
   * Generally, the main process of
-  * [renderItem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem)
+  * [renderItem](https://echarts.apache.org/en/option.html#series-custom.renderItem)
   * is that retrieve value from data and convert them to graphic elements
   * on the current coordinate system. Two methods in
-  * [renderItem.arguments.api](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api)
+  * [renderItem.arguments.api](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api)
   * are always used in this procedure:
   *
-  * + [api.value(...)](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.value)
+  * + [api.value(...)](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.value)
   * is used to retrieve value from data.
   * For example, `api.value(0)`
   * retrieve the value of the first dimension in the current data item.
-  * + [api.coord(...)](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.coord)
+  * + [api.coord(...)](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.coord)
   * is used to convert data to coordinate.
   * For example, `var point = api.coord([api.value(0),
   * api.value(1)])`
   * converet the data to the point on the current coordinate system.
   *
   * Sometimes
-  * [api.size(...)](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.size)
+  * [api.size(...)](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.size)
   * method is needed, which calculates the size on the coordinate system
   * by a given data range.
   *
   * Moreover,
-  * [api.style(...)](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.style)
+  * [api.style(...)](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.style)
   * method can be used to set style.
   * It provides not only the style settings specified in
-  * [series.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.itemStyle)
+  * [series.itemStyle](https://echarts.apache.org/en/option.html#series-custom.itemStyle)
   * , but also the result of visual mapping.
   * This method can also be called like `api.style({fill:
   * 'green', stroke: 'yellow'})` to override those style settings.
@@ -96,7 +96,7 @@ import scala.scalajs.js.annotation._
   * **Dimension mapping (by encode and dimension option)**
   *
   * In most cases,
-  * [series.encode](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.encode)
+  * [series.encode](https://echarts.apache.org/en/option.html#series-custom.encode)
   * is needed to be specified when using `custom series` serise, which
   * indicate the mapping of dimensions, and then echarts can render appropriate
   * axis by the extent of those data.
@@ -105,20 +105,20 @@ import scala.scalajs.js.annotation._
   * and `encode.label`
   * can also be specified to define the content of default `tooltip`
   * and `label`.
-  * [series.dimensions](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.dimensions)
+  * [series.dimensions](https://echarts.apache.org/en/option.html#series-custom.dimensions)
   * can also be specified to defined names of each dimensions, which
   * will be displayed in tooltip.
   *
   * For example:
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom)
+  * [see doc](https://echarts.apache.org/en/option.html#series-custom)
   *
   * **Controlled by dataZoom**
   *
   * When use `custom series` with
-  * [dataZoom](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom)
+  * [dataZoom](https://echarts.apache.org/en/option.html#dataZoom)
   * ,
-  * [dataZoom.filterMode](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom.filterMode)
+  * [dataZoom.filterMode](https://echarts.apache.org/en/option.html#dataZoom.filterMode)
   * usually be set as `'weakFilter'`, which prevent `dataItem` from being
   * filtered when only part of its dimensions are out of the current
   * data window.
@@ -128,19 +128,19 @@ import scala.scalajs.js.annotation._
   * + `dataIndex` is the index of a `dataItem` in the original data.
   * + `dataIndexInside` is the index of a `dataItem` in the current data
   * window (see
-  * [dataZoom](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom)
+  * [dataZoom](https://echarts.apache.org/en/option.html#dataZoom)
   * .
   *
-  * [renderItem.arguments.api](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api)
+  * [renderItem.arguments.api](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api)
   * uses `dataIndexInside` as the input parameter but not `dataIndex`,
   * because conversion from `dataIndex` to `dataIndexInside` is time-consuming.
   *
   * **Event listener**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom)
+  * [see doc](https://echarts.apache.org/en/option.html#series-custom)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom
+  * @see https://echarts.apache.org/en/option.html#series-custom
   */
 @JSName("SeriesCustom")
 trait SeriesCustom_ extends js.Object {
@@ -150,7 +150,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.animation
+    * @see https://echarts.apache.org/en/option.html#series-custom.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -159,14 +159,14 @@ trait SeriesCustom_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-custom.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -175,50 +175,50 @@ trait SeriesCustom_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-custom.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-custom.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-custom.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-custom.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -227,7 +227,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-custom.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -238,17 +238,17 @@ trait SeriesCustom_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-custom.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
     * Index of
-    * [calendar coordinates](https://ecomfe.github.io/echarts-doc/public/en/option.html#calendar)
+    * [calendar coordinates](https://echarts.apache.org/en/option.html#calendar)
     * to combine with, which is useful for multiple calendar coordinates
     * in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.calendarIndex
+    * @see https://echarts.apache.org/en/option.html#series-custom.calendarIndex
     */
   var calendarIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -262,21 +262,21 @@ trait SeriesCustom_ extends js.Object {
     *
     * Use a two-dimensional rectangular coordinate (also known as Cartesian
     * coordinate), with
-    * [xAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.xAxisIndex)
+    * [xAxisIndex](https://echarts.apache.org/en/option.html#series-custom.xAxisIndex)
     * and
-    * [yAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.yAxisIndex)
+    * [yAxisIndex](https://echarts.apache.org/en/option.html#series-custom.yAxisIndex)
     * to assign the corresponding axis component.
     *
     * + `'polar'`
     *
     * Use polar coordinates, with
-    * [polarIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.polarIndex)
+    * [polarIndex](https://echarts.apache.org/en/option.html#series-custom.polarIndex)
     * to assign the corresponding polar coordinate component.
     *
     * + `'geo'`
     *
     * Use geographic coordinate, with
-    * [geoIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.geoIndex)
+    * [geoIndex](https://echarts.apache.org/en/option.html#series-custom.geoIndex)
     * to assign the corresponding geographic coordinate components.
     *
     * + `'none'`
@@ -286,65 +286,65 @@ trait SeriesCustom_ extends js.Object {
     *
     * @default
     * "cartesian2d"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.coordinateSystem
+    * @see https://echarts.apache.org/en/option.html#series-custom.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.undefined
   /**
     * Data array of series, which can be in the following forms:
     *
     * Notice, if no `data` specified in series, and there is
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * in option, series will use the first
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * as its datasource. If `data` has been specified,
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * will not used.
     *
     * `series.datasetIndex` can be used to specify other
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * .
     *
     * Basically, data is represented by a two-dimension array, like
     * the example below, where each colum is named as a "dimension".
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     * + In
-    * [cartesian (grid)](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [cartesian (grid)](https://echarts.apache.org/en/option.html#grid)
     * , "dimX" and "dimY" correspond to
-    * [xAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [xAxis](https://echarts.apache.org/en/option.html#xAxis)
     * and
-    * [yAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [yAxis](https://echarts.apache.org/en/option.html#yAxis)
     * repectively.
     * + In
-    * [polar](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar](https://echarts.apache.org/en/option.html#polar)
     * "dimX" and "dimY" correspond to
-    * [radiusAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#radiusAxis)
+    * [radiusAxis](https://echarts.apache.org/en/option.html#radiusAxis)
     * 和
-    * [angleAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#anbleAxis)
+    * [angleAxis](https://echarts.apache.org/en/option.html#anbleAxis)
     * repectively.
     * + Other dimensions are optional, which can be used in other place.
     * For example:
-    * + [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * + [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * can map one or more dimensions to viusal (color, symbol size
     * ...).
-    * + [series.symbolSize](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.symbolSize)
+    * + [series.symbolSize](https://echarts.apache.org/en/option.html#series.symbolSize)
     * can be set as a callback function, where symbol size can be calculated
     * by values of a certain dimension.
     * + Values in other dimensions can be shown by
-    * [tooltip.formatter](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.formatter)
+    * [tooltip.formatter](https://echarts.apache.org/en/option.html#tooltip.formatter)
     * or
-    * [series.label.formatter](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.label.formatter)
+    * [series.label.formatter](https://echarts.apache.org/en/option.html#series.label.formatter)
     * .
     *
     * Especially, when there is one and only one category axis (axis.type
     * is `'category'`), data can be simply be represented by a one-dimension
     * array, like:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     * **Relationship between "value" and
-    * [axis.type](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis.type)
+    * [axis.type](https://echarts.apache.org/en/option.html#xAxis.type)
     * **
     *
     * + When a dimension corresponds to a value axis (axis.type
@@ -360,10 +360,10 @@ trait SeriesCustom_ extends js.Object {
     * (based on `0`), the string value of the axis.data.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     * There is an example of double category axes:
-    * [Github Punchcard](https://ecomfe.github.io/echarts-examples/public/editor.html?c=scatter-punchCard)
+    * [Github Punchcard](https://echarts.apache.org/examples/en/editor.html?c=scatter-punchCard)
     * .
     *
     * + When a dimension corresponds to a time axis (type is `'time'`),
@@ -407,7 +407,7 @@ trait SeriesCustom_ extends js.Object {
     * When needing to customize a data item, it can be set as an object,
     * where property `value` reprensent real value. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     * **Empty value:**
     *
@@ -419,7 +419,7 @@ trait SeriesCustom_ extends js.Object {
     * and scatter chart do not display graphic elements for empty values.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.data
+    * @see https://echarts.apache.org/en/option.html#series-custom.data
     */
   var data: js.UndefOr[
     js.Array[
@@ -428,14 +428,14 @@ trait SeriesCustom_ extends js.Object {
   ] = js.undefined
   /**
     * If
-    * [series.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.data)
+    * [series.data](https://echarts.apache.org/en/option.html#series.data)
     * is not specified, and
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * exists, the series will use `dataset`.
     * `datasetIndex` specifies which dataset will be used.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.datasetIndex
+    * @see https://echarts.apache.org/en/option.html#series-custom.datasetIndex
     */
   var datasetIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -443,10 +443,10 @@ trait SeriesCustom_ extends js.Object {
     * or `dataset.source`.
     *
     * Notice: if
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * is used, we can provide dimension names in the first column/row
     * of
-    * [dataset.source](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset.source)
+    * [dataset.source](https://echarts.apache.org/en/option.html#dataset.source)
     * , and not need to specify `dimensions` here.
     * But if `dimensions` is specified here, echarts will not retrieve
     * dimension names from the first row/column of `dataset.source`
@@ -454,8 +454,8 @@ trait SeriesCustom_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     * Each data item of `dimensions` can be:
     *
@@ -473,7 +473,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * + `ordinal`, discrete value, which represents string generally.
     * + `time`, time value, see
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.data)
+    * [data](https://echarts.apache.org/en/option.html#series.data)
     * to check the format of time value.
     * + displayName: `string`, generally used in tooltip for dimension
     * display. If not specified, use `name` by default.
@@ -483,58 +483,58 @@ trait SeriesCustom_ extends js.Object {
     * Otherwise, `tooltip` will displayed only value horizontally.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.dimensions
+    * @see https://echarts.apache.org/en/option.html#series-custom.dimensions
     */
   var dimensions: js.UndefOr[js.Array[_]] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-custom.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColorBorderType] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     * Attributes of encode are different according to the type of coordinate
     * systtems. For
-    * [cartesian2d](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [cartesian2d](https://echarts.apache.org/en/option.html#grid)
     * , `x` and `y` can be defined. For
-    * [polar](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar](https://echarts.apache.org/en/option.html#polar)
     * , `radius` and `angle` can be defined. For
-    * [geo](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geo](https://echarts.apache.org/en/option.html#geo)
     * , `lng` and `lat` can be defined.
     * Attribute `tooltip` and `itemName` (data item name in tooltip)
     * are always able to be defined.
     *
     * When
-    * [dimensions](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.dimensions)
+    * [dimensions](https://echarts.apache.org/en/option.html#series.dimensions)
     * is used to defined name for a certain dimension, `encode` can
     * refer the name directly. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     * Specially, in \[custom series(~series-custom), some property
     * in `encode`, corresponding to axis, can be set as null to make
     * the series not controlled by the axis, that is, the series data
     * will not be count in the extent of the axis, and the
-    * [dataZoom](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataZoom)
+    * [dataZoom](https://echarts.apache.org/en/option.html#dataZoom)
     * on the axis will not filter the series.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.encode
+    * @see https://echarts.apache.org/en/option.html#series-custom.encode
     */
   var encode: js.UndefOr[js.Object] = js.undefined
   /**
     * Index of
-    * [geographic coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
     * to combine with, which is useful for multiple geographic axes
     * in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.geoIndex
+    * @see https://echarts.apache.org/en/option.html#series-custom.geoIndex
     */
   var geoIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -543,7 +543,7 @@ trait SeriesCustom_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.id
+    * @see https://echarts.apache.org/en/option.html#series-custom.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -551,107 +551,107 @@ trait SeriesCustom_ extends js.Object {
     * like being hovered by mouse, or highlighted via legend connect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-custom.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * Whether to enable highlighting chart when
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * is being hovered.
     *
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.legendHoverLink
+    * @see https://echarts.apache.org/en/option.html#series-custom.legendHoverLink
     */
   var legendHoverLink: js.UndefOr[Boolean] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.name
+    * @see https://echarts.apache.org/en/option.html#series-custom.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * Index of
-    * [polar coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar coordinate](https://echarts.apache.org/en/option.html#polar)
     * to combine with, which is useful for multiple polar axes in one
     * chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.polarIndex
+    * @see https://echarts.apache.org/en/option.html#series-custom.polarIndex
     */
   var polarIndex: js.UndefOr[Double] = js.undefined
   /**
     * `custom series` requires developers to write a render logic by
     * themselves. This render logic is called
-    * [renderItem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem)
+    * [renderItem](https://echarts.apache.org/en/option.html#series-custom.renderItem)
     * .
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom)
     *
-    * [renderItem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem)
+    * [renderItem](https://echarts.apache.org/en/option.html#series-custom.renderItem)
     * will be called on each data item.
     *
-    * [renderItem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem)
+    * [renderItem](https://echarts.apache.org/en/option.html#series-custom.renderItem)
     * provides two parameters:
     *
-    * + [params](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.params)
+    * + [params](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.params)
     * : provides info about the current series and data and coordinate
     * system.
-    * + [api](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api)
+    * + [api](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api)
     * : includes some methods.
     *
-    * [renderItem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem)
+    * [renderItem](https://echarts.apache.org/en/option.html#series-custom.renderItem)
     * method should returns graphic elements definitions.See
-    * [renderItem.return](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return)
+    * [renderItem.return](https://echarts.apache.org/en/option.html#series-custom.renderItem.return)
     * .
     *
     * Generally, the main process of
-    * [renderItem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem)
+    * [renderItem](https://echarts.apache.org/en/option.html#series-custom.renderItem)
     * is that retrieve value from data and convert them to graphic
     * elements on the current coordinate system. Two methods in
-    * [renderItem.arguments.api](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api)
+    * [renderItem.arguments.api](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api)
     * are always used in this procedure:
     *
-    * + [api.value(...)](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.value)
+    * + [api.value(...)](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.value)
     * is used to retrieve value from data.
     * For example, `api.value(0)`
     * retrieve the value of the first dimension in the current data
     * item.
-    * + [api.coord(...)](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.coord)
+    * + [api.coord(...)](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.coord)
     * is used to convert data to coordinate.
     * For example, `var point = api.coord([api.value(0),
     * api.value(1)])`
     * converet the data to the point on the current coordinate system.
     *
     * Sometimes
-    * [api.size(...)](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.size)
+    * [api.size(...)](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.size)
     * method is needed, which calculates the size on the coordinate
     * system by a given data range.
     *
     * Moreover,
-    * [api.style(...)](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api.style)
+    * [api.style(...)](https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.style)
     * method can be used to set style.
     * It provides not only the style settings specified in
-    * [series.itemStyle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.itemStyle)
+    * [series.itemStyle](https://echarts.apache.org/en/option.html#series-custom.itemStyle)
     * , but also the result of visual mapping.
     * This method can also be called like `api.style({fill:
     * 'green', stroke: 'yellow'})` to override those style settings.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem
     */
   var renderItem: js.UndefOr[Anon_Arguments] = js.undefined
   /**
     * When
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * is used, `seriesLayoutBy` specifies whether the column or the
     * row of `dataset` is mapped to the series, namely, the series
     * is "layout" on columns or rows. Optional values:
@@ -662,13 +662,13 @@ trait SeriesCustom_ extends js.Object {
     * In this case, each row represents a dimension.
     *
     * Check this
-    * [example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=dataset-series-layout-by)
+    * [example](https://echarts.apache.org/examples/en/editor.html?c=dataset-series-layout-by)
     * .
     *
     *
     * @default
     * "column"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.seriesLayoutBy
+    * @see https://echarts.apache.org/en/option.html#series-custom.seriesLayoutBy
     */
   var seriesLayoutBy: js.UndefOr[String] = js.undefined
   /**
@@ -677,38 +677,38 @@ trait SeriesCustom_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.silent
+    * @see https://echarts.apache.org/en/option.html#series-custom.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-custom.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "custom"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.type
+    * @see https://echarts.apache.org/en/option.html#series-custom.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * Index of
-    * [x axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [x axis](https://echarts.apache.org/en/option.html#xAxis)
     * to combine with, which is useful for multiple x axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.xAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-custom.xAxisIndex
     */
   var xAxisIndex: js.UndefOr[Double] = js.undefined
   /**
     * Index of
-    * [y axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [y axis](https://echarts.apache.org/en/option.html#yAxis)
     * to combine with, which is useful for multiple y axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.yAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-custom.yAxisIndex
     */
   var yAxisIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -723,7 +723,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.z
+    * @see https://echarts.apache.org/en/option.html#series-custom.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -741,7 +741,7 @@ trait SeriesCustom_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-custom.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

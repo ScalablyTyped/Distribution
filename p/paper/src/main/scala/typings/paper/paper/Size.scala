@@ -39,11 +39,11 @@ class Size protected () extends js.Object {
   /** 
     * The height of the size
     */
-  var height: Double | Null = js.native
+  var height: Double = js.native
   /** 
     * The width of the size
     */
-  var width: Double | Null = js.native
+  var width: Double = js.native
   /** 
     * Returns a new size with the absolute values of the specified
     * {@link #width} and {@link #height} values. The object itself is not

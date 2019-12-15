@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_LineStyleShow extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.labelLine.emphasis.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.labelLine.emphasis.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
   /**
@@ -14,7 +14,7 @@ trait Anon_LineStyleShow extends js.Object {
     * status.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.labelLine.emphasis.show
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.labelLine.emphasis.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
 }

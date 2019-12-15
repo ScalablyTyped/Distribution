@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenDomainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IModule
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Module
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalUnitsMod.IAbstractUnit because Already inherited
 - typings.mendixmodelsdk.distSdkInternalUnitsMod.IModelUnit because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IDomainModel because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined entities, associations, crossAssociations */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DomainModel")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IDomainModel because var conflicts: containerAsFolderBase, containerAsModule, id, isLoaded, model, structureTypeName, unit. Inlined entities, associations, crossAssociations */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DomainModel")
 @js.native
 class DomainModel protected () extends ModuleDocument {
   def this(
@@ -29,13 +30,22 @@ class DomainModel protected () extends ModuleDocument {
     isPartial: Boolean,
     container: IModule
   ) = this()
-  val annotations: IList[Annotation] = js.native
-  val associations: IList[Association | IAssociation] = js.native
+  @JSName("associations")
+  val associations_FDomainModel: IList[IAssociation] = js.native
+  @JSName("crossAssociations")
+  val crossAssociations_FDomainModel: IList[ICrossAssociation] = js.native
+  @JSName("entities")
+  val entities_FDomainModel: IList[IEntity] = js.native
+  @JSName("model")
+  var model_FDomainModel: IModel = js.native
+  def annotations(): IList[Annotation] = js.native
+  def associations(): IList[Association] = js.native
   @JSName("containerAsModule")
-  val containerAsModule_DomainModel: Module = js.native
-  val crossAssociations: IList[CrossAssociation | ICrossAssociation] = js.native
-  var documentation: String = js.native
-  val entities: IList[Entity | IEntity] = js.native
+  def containerAsModule_MDomainModel(): Module = js.native
+  def crossAssociations(): IList[CrossAssociation] = js.native
+  def documentation(): String = js.native
+  def documentation(newValue: String): js.Any = js.native
+  def entities(): IList[Entity] = js.native
 }
 
 /* static members */

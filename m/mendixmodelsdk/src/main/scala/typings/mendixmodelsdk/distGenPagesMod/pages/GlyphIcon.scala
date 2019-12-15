@@ -23,7 +23,10 @@ class GlyphIcon protected () extends Icon {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var code: Double = js.native
+  @JSName("model")
+  var model_FGlyphIcon: IModel = js.native
+  def code(): Double = js.native
+  def code(newValue: Double): js.Any = js.native
 }
 
 /* static members */

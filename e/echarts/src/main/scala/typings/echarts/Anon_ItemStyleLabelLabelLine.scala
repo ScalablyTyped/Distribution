@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ItemStyleLabelLabelLine extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.emphasis.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-funnel.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.emphasis.label
+    * @see https://echarts.apache.org/en/option.html#series-funnel.emphasis.label
     */
   var label: js.UndefOr[
     Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize
   ] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.emphasis.labelLine
+    * @see https://echarts.apache.org/en/option.html#series-funnel.emphasis.labelLine
     */
   var labelLine: js.UndefOr[Anon_EmphasisLength] = js.undefined
 }

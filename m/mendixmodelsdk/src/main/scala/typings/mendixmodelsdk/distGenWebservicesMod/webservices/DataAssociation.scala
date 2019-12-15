@@ -22,13 +22,32 @@ class DataAssociation protected () extends DataEntityBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var association: IAssociationBase | Null = js.native
-  var associationByContract: MsdAssociation | Null = js.native
-  val associationQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FDataAssociation: IModel = js.native
+  def association(): IAssociationBase | Null = js.native
+  def association(newValue: IAssociationBase): js.Any = js.native
+  def associationByContract(): MsdAssociation | Null = js.native
+  def associationByContract(newValue: MsdAssociation): js.Any = js.native
+  @JSName("associationByContract")
+  def associationByContract_Any(): js.Any = js.native
+  def associationQualifiedName(): String | Null = js.native
+  @JSName("association")
+  def association_Any(): js.Any = js.native
+  /**
+    * In version 8.5.0: introduced
+    */
+  def description(): String = js.native
+  def description(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var exposedAssociationName: String = js.native
+  def exposedAssociationName(): String = js.native
+  def exposedAssociationName(newValue: String): js.Any = js.native
+  /**
+    * In version 8.5.0: introduced
+    */
+  def summary(): String = js.native
+  def summary(newValue: String): js.Any = js.native
 }
 
 /* static members */

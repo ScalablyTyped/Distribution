@@ -20,6 +20,8 @@ class Head protected () extends ListOperation {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FHead: IModel = js.native
 }
 
 /* static members */

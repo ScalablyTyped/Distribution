@@ -37,6 +37,9 @@ object atFirebaseInstallationsStrings {
   sealed trait `not-registered` extends ErrorCode
   
   @js.native
+  sealed trait `platform-logger` extends js.Object
+  
+  @js.native
   sealed trait `request-failed` extends ErrorCode
   
   @scala.inline
@@ -59,6 +62,8 @@ object atFirebaseInstallationsStrings {
   def `missing-app-config-values`: `missing-app-config-values` = "missing-app-config-values".asInstanceOf[`missing-app-config-values`]
   @scala.inline
   def `not-registered`: `not-registered` = "not-registered".asInstanceOf[`not-registered`]
+  @scala.inline
+  def `platform-logger`: `platform-logger` = "platform-logger".asInstanceOf[`platform-logger`]
   @scala.inline
   def `request-failed`: `request-failed` = "request-failed".asInstanceOf[`request-failed`]
 }

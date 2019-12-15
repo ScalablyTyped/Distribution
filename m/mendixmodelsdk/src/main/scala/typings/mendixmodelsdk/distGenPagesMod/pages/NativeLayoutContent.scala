@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenPagesMod.pages.ILayoutContent because Already inherited
-- typings.mendixmodelsdk.distGenPagesMod.pages.INativeLayoutContent because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NativeLayoutContent")
+- typings.mendixmodelsdk.distGenPagesMod.pages.INativeLayoutContent because var conflicts: containerAsLayout, id, isLoaded, model, structureTypeName, unit. Inlined layoutType */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NativeLayoutContent")
 @js.native
 class NativeLayoutContent protected () extends LayoutContent {
   def this(
@@ -29,14 +29,39 @@ class NativeLayoutContent protected () extends LayoutContent {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  /**
+    * In version 8.5.0: introduced
+    */
+  @JSName("layoutType")
+  val layoutType_FNativeLayoutContent: NativeLayoutType = js.native
+  @JSName("model")
+  var model_FNativeLayoutContent: IModel = js.native
   @JSName("containerAsLayout")
-  val containerAsLayout_NativeLayoutContent: Layout = js.native
-  var rightHeaderPlaceholder: Placeholder | Null = js.native
+  def containerAsLayout_MNativeLayoutContent(): Layout = js.native
+  /**
+    * In version 8.5.0: introduced
+    */
+  def layoutType(): NativeLayoutType = js.native
+  def layoutType(newValue: NativeLayoutType): js.Any = js.native
+  def rightHeaderPlaceholder(): Placeholder | Null = js.native
+  def rightHeaderPlaceholder(newValue: Placeholder): js.Any = js.native
+  @JSName("rightHeaderPlaceholder")
+  def rightHeaderPlaceholder_Any(): js.Any = js.native
   /**
     * In version 8.2.0: introduced
     */
-  var showBottomBar: Boolean = js.native
-  val widgets: IList[Widget] = js.native
+  def showBottomBar(): Boolean = js.native
+  def showBottomBar(newValue: Boolean): js.Any = js.native
+  /**
+    * In version 8.5.0: introduced
+    */
+  def sidebar(): Boolean = js.native
+  def sidebar(newValue: Boolean): js.Any = js.native
+  /**
+    * In version 8.5.0: introduced
+    */
+  def sidebarWidgets(): IList[Widget] = js.native
+  def widgets(): IList[Widget] = js.native
 }
 
 /* static members */

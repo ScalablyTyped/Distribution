@@ -26,8 +26,11 @@ class ExposedAttribute protected () extends ExposedMember {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var attribute: IAttribute = js.native
-  val attributeQualifiedName: String = js.native
+  @JSName("model")
+  var model_FExposedAttribute: IModel = js.native
+  def attribute(): IAttribute = js.native
+  def attribute(newValue: IAttribute): js.Any = js.native
+  def attributeQualifiedName(): String = js.native
 }
 
 /* static members */

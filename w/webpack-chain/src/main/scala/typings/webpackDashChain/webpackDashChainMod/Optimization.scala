@@ -16,7 +16,7 @@ class Optimization ()
   def flagIncludedChunks(value: Boolean): this.type = js.native
   def mergeDuplicateChunks(value: Boolean): this.type = js.native
   def minimize(value: Boolean): this.type = js.native
-  def minimizer(name: String): Plugin[this.type] = js.native
+  def minimizer(name: String): Plugin[this.type, typings.webpack.webpackMod.Plugin] = js.native
   def namedChunks(value: Boolean): this.type = js.native
   def namedModules(value: Boolean): this.type = js.native
   def noEmitOnErrors(value: Boolean): this.type = js.native

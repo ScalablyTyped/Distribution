@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 trait IDrawerChildProps extends IProps {
   var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
   var getOpenCount: js.UndefOr[js.Function0[Double]] = js.undefined
+  var switchScrollingEffect: js.UndefOr[js.Function1[/* close */ js.UndefOr[Boolean], Unit]] = js.undefined
 }
 
 object IDrawerChildProps {
@@ -41,6 +42,7 @@ object IDrawerChildProps {
     placement: IPlacement = null,
     prefixCls: String = null,
     showMask: js.UndefOr[Boolean] = js.undefined,
+    switchScrollingEffect: /* close */ js.UndefOr[Boolean] => Unit = null,
     width: String | Double = null
   ): IDrawerChildProps = {
     val __obj = js.Dynamic.literal()
@@ -64,6 +66,7 @@ object IDrawerChildProps {
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(showMask)) __obj.updateDynamic("showMask")(showMask.asInstanceOf[js.Any])
+    if (switchScrollingEffect != null) __obj.updateDynamic("switchScrollingEffect")(js.Any.fromFunction1(switchScrollingEffect))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDrawerChildProps]
   }

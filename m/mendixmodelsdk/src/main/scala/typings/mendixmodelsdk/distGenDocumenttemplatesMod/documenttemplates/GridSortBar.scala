@@ -25,10 +25,10 @@ class GridSortBar protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsGrid: Grid = js.native
   @JSName("model")
-  var model_GridSortBar: IModel = js.native
-  val sortItems: IList[GridSortItem] = js.native
+  var model_FGridSortBar: IModel = js.native
+  def containerAsGrid(): Grid = js.native
+  def sortItems(): IList[GridSortItem] = js.native
 }
 
 /* static members */

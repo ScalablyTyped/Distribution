@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -23,7 +25,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.distGenPagesMod.pages.IFormBase because Already inherited
 - typings.mendixmodelsdk.distGenPagesMod.pages.ITemplateFormBase because Already inherited
-- typings.mendixmodelsdk.distGenPagesMod.pages.IBuildingBlock because var conflicts: displayName, documentationUrl, id, isLoaded, model, structureTypeName, unit. Inlined platform */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BuildingBlock")
+- typings.mendixmodelsdk.distGenPagesMod.pages.IBuildingBlock because var conflicts: containerAsFolderBase, displayName, documentationUrl, id, isLoaded, model, structureTypeName, unit. Inlined platform */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BuildingBlock")
 @js.native
 class BuildingBlock protected () extends TemplateFormBase {
   def this(
@@ -33,19 +35,33 @@ class BuildingBlock protected () extends TemplateFormBase {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  @JSName("model")
+  var model_FBuildingBlock: IModel = js.native
   /**
     * In version 8.4.0: added public
     * In version 8.3.0: introduced
     */
-  var platform: SnippetType = js.native
+  @JSName("platform")
+  val platform_FBuildingBlock: SnippetType = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MBuildingBlock(): FolderBase = js.native
+  /**
+    * In version 8.4.0: added public
+    * In version 8.3.0: introduced
+    */
+  def platform(): SnippetType = js.native
+  def platform(newValue: SnippetType): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var widget: Widget | Null = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val widgets: IList[Widget] = js.native
+  def widgets(): IList[Widget] = js.native
 }
 
 /* static members */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode
 
-Typings are for version 1.40
+Typings are for version 1.41
 
 ## Library description:
 The vscode NPM module provides VS Code extension authors tools to write extensions. It provides the vscode.d.ts node module (all accessible API for extensions) as well as commands for compiling and testing extensions.

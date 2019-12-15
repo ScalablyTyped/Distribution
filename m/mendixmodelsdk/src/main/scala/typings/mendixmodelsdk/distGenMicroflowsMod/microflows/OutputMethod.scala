@@ -21,9 +21,9 @@ abstract class OutputMethod protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsExportXmlAction: ExportXmlAction = js.native
   @JSName("model")
-  var model_OutputMethod: IModel = js.native
+  var model_FOutputMethod: IModel = js.native
+  def containerAsExportXmlAction(): ExportXmlAction = js.native
 }
 
 /* static members */

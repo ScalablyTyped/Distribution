@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -23,25 +24,36 @@ abstract class SplitPane protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var animatedResize: Boolean = js.native
+  @JSName("model")
+  var model_FSplitPane: IModel = js.native
+  def animatedResize(): Boolean = js.native
+  def animatedResize(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var firstWidget: Widget | Null = js.native
+  def firstWidget(): Widget | Null = js.native
+  def firstWidget(newValue: Widget): js.Any = js.native
+  @JSName("firstWidget")
+  def firstWidget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val firstWidgets: IList[Widget] = js.native
-  var height: Double = js.native
-  var position: Double = js.native
+  def firstWidgets(): IList[Widget] = js.native
+  def height(): Double = js.native
+  def height(newValue: Double): js.Any = js.native
+  def position(): Double = js.native
+  def position(newValue: Double): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var secondWidget: Widget | Null = js.native
+  def secondWidget(): Widget | Null = js.native
+  def secondWidget(newValue: Widget): js.Any = js.native
+  @JSName("secondWidget")
+  def secondWidget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val secondWidgets: IList[Widget] = js.native
+  def secondWidgets(): IList[Widget] = js.native
 }
 
 /* static members */

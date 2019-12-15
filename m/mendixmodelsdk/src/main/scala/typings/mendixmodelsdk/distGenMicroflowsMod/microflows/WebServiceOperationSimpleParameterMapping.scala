@@ -20,10 +20,13 @@ class WebServiceOperationSimpleParameterMapping protected () extends WebServiceO
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FWebServiceOperationSimpleParameterMapping: IModel = js.native
   /**
     * The value of this property is conceptually of type mappings.ElementPath.
     */
-  var parameterPath: String = js.native
+  def parameterPath(): String = js.native
+  def parameterPath(newValue: String): js.Any = js.native
 }
 
 /* static members */

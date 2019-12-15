@@ -25,8 +25,13 @@ class ExportMappingJavaActionParameterValue protected () extends JavaActionParam
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var exportMapping: IExportMapping | Null = js.native
-  val exportMappingQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FExportMappingJavaActionParameterValue: IModel = js.native
+  def exportMapping(): IExportMapping | Null = js.native
+  def exportMapping(newValue: IExportMapping): js.Any = js.native
+  def exportMappingQualifiedName(): String | Null = js.native
+  @JSName("exportMapping")
+  def exportMapping_Any(): js.Any = js.native
 }
 
 /* static members */

@@ -24,8 +24,13 @@ class ImportMappingParameterValue protected () extends ExpressionBasedCodeAction
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var importMapping: IImportMapping | Null = js.native
-  val importMappingQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FImportMappingParameterValue: IModel = js.native
+  def importMapping(): IImportMapping | Null = js.native
+  def importMapping(newValue: IImportMapping): js.Any = js.native
+  def importMappingQualifiedName(): String | Null = js.native
+  @JSName("importMapping")
+  def importMapping_Any(): js.Any = js.native
 }
 
 /* static members */

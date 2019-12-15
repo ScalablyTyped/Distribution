@@ -24,8 +24,12 @@ class ShowPageAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var pageSettings: PageSettings = js.native
-  var passedObjectVariableName: String = js.native
+  @JSName("model")
+  var model_FShowPageAction: IModel = js.native
+  def pageSettings(): PageSettings = js.native
+  def pageSettings(newValue: PageSettings): js.Any = js.native
+  def passedObjectVariableName(): String = js.native
+  def passedObjectVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

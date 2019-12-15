@@ -24,8 +24,13 @@ class EntityTypeCodeActionParameterValue protected () extends ExpressionBasedCod
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var entity: IEntity | Null = js.native
-  val entityQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FEntityTypeCodeActionParameterValue: IModel = js.native
+  def entity(): IEntity | Null = js.native
+  def entity(newValue: IEntity): js.Any = js.native
+  def entityQualifiedName(): String | Null = js.native
+  @JSName("entity")
+  def entity_Any(): js.Any = js.native
 }
 
 /* static members */

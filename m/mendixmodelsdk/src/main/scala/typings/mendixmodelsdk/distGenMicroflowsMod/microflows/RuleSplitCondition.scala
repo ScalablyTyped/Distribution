@@ -20,7 +20,10 @@ class RuleSplitCondition protected () extends SplitCondition {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var ruleCall: RuleCall = js.native
+  @JSName("model")
+  var model_FRuleSplitCondition: IModel = js.native
+  def ruleCall(): RuleCall = js.native
+  def ruleCall(newValue: RuleCall): js.Any = js.native
 }
 
 /* static members */

@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenWebservicesMod.webservices
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IEntity
 import typings.mendixmodelsdk.distGenWebservicesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
@@ -21,10 +22,16 @@ abstract class DataEntityBase protected () extends DataMember {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val childMembers: IList[DataMember] = js.native
-  var entity: IEntity | Null = js.native
-  val entityQualifiedName: String | Null = js.native
-  var exposedItemName: String = js.native
+  @JSName("model")
+  var model_FDataEntityBase: IModel = js.native
+  def childMembers(): IList[DataMember] = js.native
+  def entity(): IEntity | Null = js.native
+  def entity(newValue: IEntity): js.Any = js.native
+  def entityQualifiedName(): String | Null = js.native
+  @JSName("entity")
+  def entity_Any(): js.Any = js.native
+  def exposedItemName(): String = js.native
+  def exposedItemName(newValue: String): js.Any = js.native
 }
 
 /* static members */

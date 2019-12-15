@@ -26,57 +26,78 @@ class GenerateDocumentAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var documentTemplate: IDocumentTemplate | Null = js.native
-  val documentTemplateQualifiedName: String | Null = js.native
-  var documentType: TargetDocumentType = js.native
-  var fileVariableName: String = js.native
-  var languageSetting: LanguageSettingType = js.native
-  var languageVariableName: String = js.native
+  @JSName("model")
+  var model_FGenerateDocumentAction: IModel = js.native
+  def documentTemplate(): IDocumentTemplate | Null = js.native
+  def documentTemplate(newValue: IDocumentTemplate): js.Any = js.native
+  def documentTemplateQualifiedName(): String | Null = js.native
+  @JSName("documentTemplate")
+  def documentTemplate_Any(): js.Any = js.native
+  def documentType(): TargetDocumentType = js.native
+  def documentType(newValue: TargetDocumentType): js.Any = js.native
+  def fileVariableName(): String = js.native
+  def fileVariableName(newValue: String): js.Any = js.native
+  def languageSetting(): LanguageSettingType = js.native
+  def languageSetting(newValue: LanguageSettingType): js.Any = js.native
+  def languageVariableName(): String = js.native
+  def languageVariableName(newValue: String): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var marginBottomInInch: String = js.native
+  def marginBottomInInch(): String = js.native
+  def marginBottomInInch(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var marginBottomInInchModel: Expression = js.native
+  def marginBottomInInchModel(): Expression = js.native
+  def marginBottomInInchModel(newValue: Expression): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var marginLeftInInch: String = js.native
+  def marginLeftInInch(): String = js.native
+  def marginLeftInInch(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var marginLeftInInchModel: Expression = js.native
+  def marginLeftInInchModel(): Expression = js.native
+  def marginLeftInInchModel(newValue: Expression): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var marginRightInInch: String = js.native
+  def marginRightInInch(): String = js.native
+  def marginRightInInch(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var marginRightInInchModel: Expression = js.native
+  def marginRightInInchModel(): Expression = js.native
+  def marginRightInInchModel(newValue: Expression): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var marginTopInInch: String = js.native
+  def marginTopInInch(): String = js.native
+  def marginTopInInch(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var marginTopInInchModel: Expression = js.native
-  var overrideBottomMargin: Boolean = js.native
-  var overrideLeftMargin: Boolean = js.native
-  var overrideRightMargin: Boolean = js.native
-  var overrideTopMargin: Boolean = js.native
-  val parameterMappings: IList[DocumentTemplateParameterMapping] = js.native
+  def marginTopInInchModel(): Expression = js.native
+  def marginTopInInchModel(newValue: Expression): js.Any = js.native
+  def overrideBottomMargin(): Boolean = js.native
+  def overrideBottomMargin(newValue: Boolean): js.Any = js.native
+  def overrideLeftMargin(): Boolean = js.native
+  def overrideLeftMargin(newValue: Boolean): js.Any = js.native
+  def overrideRightMargin(): Boolean = js.native
+  def overrideRightMargin(newValue: Boolean): js.Any = js.native
+  def overrideTopMargin(): Boolean = js.native
+  def overrideTopMargin(newValue: Boolean): js.Any = js.native
+  def parameterMappings(): IList[DocumentTemplateParameterMapping] = js.native
 }
 
 /* static members */

@@ -1,7 +1,9 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
@@ -19,7 +21,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.distGenPagesMod.pages.IFormBase because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormBase")
+- typings.mendixmodelsdk.distGenPagesMod.pages.IFormBase because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormBase")
 @js.native
 abstract class FormBase protected () extends Document {
   def this(
@@ -29,8 +31,14 @@ abstract class FormBase protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  var canvasHeight: Double = js.native
-  var canvasWidth: Double = js.native
+  @JSName("model")
+  var model_FFormBase: IModel = js.native
+  def canvasHeight(): Double = js.native
+  def canvasHeight(newValue: Double): js.Any = js.native
+  def canvasWidth(): Double = js.native
+  def canvasWidth(newValue: Double): js.Any = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MFormBase(): FolderBase = js.native
 }
 
 /* static members */

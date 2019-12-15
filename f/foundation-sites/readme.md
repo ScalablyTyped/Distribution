@@ -1,7 +1,7 @@
 
 # Scala.js typings for foundation-sites
 
-Typings are for version 6.6.0
+Typings are for version 6.6.1
 
 ## Library description:
 The most advanced responsive front-end framework in the world.

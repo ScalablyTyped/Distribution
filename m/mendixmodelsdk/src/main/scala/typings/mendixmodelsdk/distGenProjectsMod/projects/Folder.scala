@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenProjectsMod.projects
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenProjectsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.distSdkInternalUnitsMod.IAbstractUnit because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase because Already inherited
-- typings.mendixmodelsdk.distGenProjectsMod.projects.IFolder because var conflicts: documents, folders, id, isLoaded, model, structureTypeName, unit. Inlined name */ @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Folder")
+- typings.mendixmodelsdk.distGenProjectsMod.projects.IFolder because var conflicts: containerAsFolderBase, containerAsProject, documents, folders, id, isLoaded, model, structureTypeName, unit. Inlined name */ @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Folder")
 @js.native
 class Folder protected () extends FolderBase {
   def this(
@@ -23,9 +24,14 @@ class Folder protected () extends FolderBase {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  @JSName("model")
+  var model_FFolder: IModel = js.native
+  @JSName("name")
+  var name_FFolder: String = js.native
   @JSName("containerAsFolderBase")
-  val containerAsFolderBase_Folder: FolderBase = js.native
-  var name: String = js.native
+  def containerAsFolderBase_MFolder(): FolderBase = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
 }
 
 /* static members */

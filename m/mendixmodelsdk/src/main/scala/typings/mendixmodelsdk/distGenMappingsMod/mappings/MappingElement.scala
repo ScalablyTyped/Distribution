@@ -21,37 +21,46 @@ abstract class MappingElement protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsMappingDocument: MappingDocument = js.native
-  val containerAsObjectMappingElement: ObjectMappingElement = js.native
-  var documentation: String = js.native
-  var elementType: ElementType = js.native
+  @JSName("model")
+  var model_FMappingElement: IModel = js.native
+  def containerAsMappingDocument(): MappingDocument = js.native
+  def containerAsObjectMappingElement(): ObjectMappingElement = js.native
+  def documentation(): String = js.native
+  def documentation(newValue: String): js.Any = js.native
+  def elementType(): ElementType = js.native
+  def elementType(newValue: ElementType): js.Any = js.native
   /**
     * In version 6.6.0: introduced
     */
-  var exposedName: String = js.native
+  def exposedName(): String = js.native
+  def exposedName(newValue: String): js.Any = js.native
   /**
     * The value of this property is conceptually of type mappings.ElementPath.
     *
     * In version 7.6.0: introduced
     */
-  var jsonPath: String = js.native
-  var maxOccurs: Double = js.native
-  var minOccurs: Double = js.native
-  @JSName("model")
-  var model_MappingElement: IModel = js.native
-  var nillable: Boolean = js.native
+  def jsonPath(): String = js.native
+  def jsonPath(newValue: String): js.Any = js.native
+  def maxOccurs(): Double = js.native
+  def maxOccurs(newValue: Double): js.Any = js.native
+  def minOccurs(): Double = js.native
+  def minOccurs(newValue: Double): js.Any = js.native
+  def nillable(): Boolean = js.native
+  def nillable(newValue: Boolean): js.Any = js.native
   /**
     * The value of this property is conceptually of type mappings.ElementPath.
     *
     * In version 7.6.0: deleted
     */
-  var path: String = js.native
+  def path(): String = js.native
+  def path(newValue: String): js.Any = js.native
   /**
     * The value of this property is conceptually of type mappings.ElementPath.
     *
     * In version 7.6.0: introduced
     */
-  var xmlPath: String = js.native
+  def xmlPath(): String = js.native
+  def xmlPath(newValue: String): js.Any = js.native
 }
 
 /* static members */

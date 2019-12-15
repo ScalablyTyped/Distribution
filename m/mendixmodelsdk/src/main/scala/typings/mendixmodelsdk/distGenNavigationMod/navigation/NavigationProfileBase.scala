@@ -29,19 +29,15 @@ abstract class NavigationProfileBase protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsNavigationDocument: INavigationDocument | NavigationDocument = js.native
+  @JSName("containerAsNavigationDocument")
+  val containerAsNavigationDocument_FNavigationProfileBase: INavigationDocument = js.native
   @JSName("model")
-  var model_NavigationProfileBase: IModel = js.native
+  var model_FNavigationProfileBase: IModel = js.native
   /**
     * In version 7.2.0: introduced
     */
-  var name: String = js.native
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.22.0: introduced
-    */
-  val offlineEntityConfigs: IList[OfflineEntityConfig] | Null = js.native
+  @JSName("name")
+  val name_FNavigationProfileBase: String = js.native
   /**
     * Returns the qualified name of this element, or
     * null if this element is not a part of the model,
@@ -50,6 +46,20 @@ abstract class NavigationProfileBase protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
+  def containerAsNavigationDocument(): NavigationDocument = js.native
+  /**
+    * In version 7.2.0: introduced
+    */
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  /**
+    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 7.22.0: introduced
+    */
+  def offlineEntityConfigs(): IList[OfflineEntityConfig] | Null = js.native
+  @JSName("qualifiedName")
+  def qualifiedName_MNavigationProfileBase(): String | Null = js.native
 }
 
 /* static members */

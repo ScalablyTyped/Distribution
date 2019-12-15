@@ -30,6 +30,7 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceCallActi
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceOperationParameterMapping
 import typings.mendixmodelsdk.distGenPagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.distGenPagesMod.pages.WidgetValidation
+import typings.mendixmodelsdk.distGenRestMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -53,15 +54,20 @@ class BinaryExpression protected () extends Expression {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FBinaryExpression: IModel = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var left: Expression = js.native
-  var operator: BinaryOperator = js.native
+  def left(): Expression = js.native
+  def left(newValue: Expression): js.Any = js.native
+  def operator(): BinaryOperator = js.native
+  def operator(newValue: BinaryOperator): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var right: Expression = js.native
+  def right(): Expression = js.native
+  def right(newValue: Expression): js.Any = js.native
 }
 
 /* static members */
@@ -157,6 +163,15 @@ object BinaryExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): BinaryExpression = js.native
+  /**
+    * Creates and returns a new BinaryExpression instance in the SDK and on the server.
+    * The new BinaryExpression will be automatically stored in the 'timeoutModel' property
+    * of the parent rest.ConsumedODataService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): BinaryExpression = js.native
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
     * The new BinaryExpression will be automatically stored in the 'initialValueModel' property

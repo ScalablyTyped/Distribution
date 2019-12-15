@@ -1,5 +1,7 @@
 package typings.mendixmodelsdk.distGenWebservicesMod.webservices
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenWebservicesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -19,7 +21,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.distGenWebservicesMod.webservices.IPublishedServiceBase because Already inherited
-- typings.mendixmodelsdk.distGenWebservicesMod.webservices.IPublishedAppService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedAppService")
+- typings.mendixmodelsdk.distGenWebservicesMod.webservices.IPublishedAppService because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedAppService")
 @js.native
 class PublishedAppService protected () extends PublishedServiceBase {
   def this(
@@ -29,6 +31,10 @@ class PublishedAppService protected () extends PublishedServiceBase {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  @JSName("model")
+  var model_FPublishedAppService: IModel = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MPublishedAppService(): FolderBase = js.native
 }
 
 /* static members */

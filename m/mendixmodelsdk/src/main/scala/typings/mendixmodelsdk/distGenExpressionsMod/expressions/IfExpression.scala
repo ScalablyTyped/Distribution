@@ -30,6 +30,7 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceCallActi
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceOperationParameterMapping
 import typings.mendixmodelsdk.distGenPagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.distGenPagesMod.pages.WidgetValidation
+import typings.mendixmodelsdk.distGenRestMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -53,18 +54,23 @@ class IfExpression protected () extends Expression {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FIfExpression: IModel = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var condition: Expression = js.native
+  def condition(): Expression = js.native
+  def condition(newValue: Expression): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var ifFalse: Expression = js.native
+  def ifFalse(): Expression = js.native
+  def ifFalse(newValue: Expression): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var ifTrue: Expression = js.native
+  def ifTrue(): Expression = js.native
+  def ifTrue(newValue: Expression): js.Any = js.native
 }
 
 /* static members */
@@ -160,6 +166,15 @@ object IfExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): IfExpression = js.native
+  /**
+    * Creates and returns a new IfExpression instance in the SDK and on the server.
+    * The new IfExpression will be automatically stored in the 'timeoutModel' property
+    * of the parent rest.ConsumedODataService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): IfExpression = js.native
   /**
     * Creates and returns a new IfExpression instance in the SDK and on the server.
     * The new IfExpression will be automatically stored in the 'initialValueModel' property

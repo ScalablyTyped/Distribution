@@ -1,6 +1,5 @@
 package typings.paper.paper
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,17 +18,17 @@ import scala.scalajs.js.annotation._
 @JSGlobal("paper.Tool")
 @js.native
 class Tool () extends js.Object {
-  var fixedDistance: Double | Null = js.native
+  var fixedDistance: Double = js.native
   /** 
     * The maximum distance the mouse has to drag before firing the onMouseDrag
     * event, since the last onMouseDrag event.
     */
-  var maxDistance: Double | Null = js.native
+  var maxDistance: Double = js.native
   /** 
     * The minimum distance the mouse has to drag before firing the onMouseDrag
     * event, since the last onMouseDrag event.
     */
-  var minDistance: Double | Null = js.native
+  var minDistance: Double = js.native
   /** 
     * The function to be called when the user presses a key on the keyboard.
     * The function receives a {@link KeyEvent} object which contains
@@ -146,11 +145,4 @@ class Tool () extends js.Object {
     */
   def responds(`type`: String): Boolean = js.native
 }
-
-/** 
-  * The reference to the active tool.
-  */
-@JSGlobal("paper.tool")
-@js.native
-object tool extends TopLevel[Tool | Null]
 

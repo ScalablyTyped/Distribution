@@ -28,6 +28,7 @@ import typings.ionic.ionicStrings.yarn_
 import typings.ionic.libBuildMod.BuildCLI
 import typings.ionic.libBuildMod.BuildRunnerDeps
 import typings.ionic.libBuildMod.PkgManagerBuildCLI
+import typings.node.NodeJS.ProcessEnv
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -67,6 +68,10 @@ object libBuildMod extends js.Object {
       * Build the arguments for starting this Build CLI. Called by `this.run()`.
       */
     /* protected */ def buildArgs(options: T): js.Promise[js.Array[String]] = js.native
+    /**
+      * Build the environment variables for this Build CLI. Called by `this.run()`.
+      */
+    /* protected */ def buildEnvVars(options: T): js.Promise[ProcessEnv] = js.native
     /* protected */ def promptToInstall(): js.Promise[Boolean] = js.native
     /* protected */ def resolveProgram(): js.Promise[String] = js.native
     def resolveScript(): js.Promise[js.UndefOr[String]] = js.native

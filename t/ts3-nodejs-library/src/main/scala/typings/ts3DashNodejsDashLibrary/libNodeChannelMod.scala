@@ -4,6 +4,7 @@ import typings.node.Buffer
 import typings.std.Partial
 import typings.ts3DashNodejsDashLibrary.libNodeAbstractMod.Abstract
 import typings.ts3DashNodejsDashLibrary.libNodeClientMod.TeamSpeakClient
+import typings.ts3DashNodejsDashLibrary.libTeamSpeakMod.TeamSpeak
 import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ChannelEdit
 import typings.ts3DashNodejsDashLibrary.libTypesQueryResponseMod.QueryResponseTypes
@@ -11,7 +12,6 @@ import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelInfo
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.PermList
-import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryMod.TeamSpeak
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

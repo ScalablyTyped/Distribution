@@ -20,6 +20,8 @@ class HomePage protected () extends HomePageBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FHomePage: IModel = js.native
 }
 
 /* static members */

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Emphasis extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.label.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.label.emphasis
     */
   var emphasis: js.UndefOr[Anon_Formatter] = js.undefined
   /**
@@ -49,10 +49,10 @@ trait Anon_Emphasis extends js.Object {
     * where `params` is the single dataset needed by
     * formatter, which is formed as:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine.data.1.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.markLine.data.1.label)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.label.formatter
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.label.formatter
     */
   var formatter: js.UndefOr[js.Function | String] = js.undefined
   /**
@@ -65,7 +65,7 @@ trait Anon_Emphasis extends js.Object {
     *
     * @default
     * "end"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.label.position
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.label.position
     */
   var position: js.UndefOr[String] = js.undefined
   /**
@@ -74,7 +74,7 @@ trait Anon_Emphasis extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.1.label.show
+    * @see https://echarts.apache.org/en/option.html#series-scatter.markLine.data.1.label.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
 }

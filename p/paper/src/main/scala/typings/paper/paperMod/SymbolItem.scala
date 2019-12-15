@@ -1,13 +1,10 @@
 package typings.paper.paperMod
 
+import typings.paper.paper.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** 
-  * A symbol item represents an instance of a symbol which has been
-  * placed in a Paper.js project.
-  */
 @JSImport("paper", "SymbolItem")
 @js.native
 class SymbolItem protected ()
@@ -21,7 +18,7 @@ class SymbolItem protected ()
     * @param point - the center point of the placed symbol
     */
   def this(definition: typings.paper.paper.SymbolDefinition) = this()
-  def this(definition: typings.paper.paper.Item, point: typings.paper.paper.Point) = this()
-  def this(definition: typings.paper.paper.SymbolDefinition, point: typings.paper.paper.Point) = this()
+  def this(definition: typings.paper.paper.Item, point: Point) = this()
+  def this(definition: typings.paper.paper.SymbolDefinition, point: Point) = this()
 }
 

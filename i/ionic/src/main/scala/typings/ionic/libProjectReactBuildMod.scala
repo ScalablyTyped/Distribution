@@ -9,7 +9,6 @@ import typings.ionic.libBuildMod.BuildRunner
 import typings.ionic.libBuildMod.BuildRunnerDeps
 import typings.ionic.libProjectReactBuildMod.ReactBuildRunnerDeps
 import typings.ionic.libProjectReactMod.ReactProject
-import typings.node.NodeJS.ProcessEnv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +27,6 @@ object libProjectReactBuildMod extends js.Object {
     val program_ReactBuildCLI: `react-scripts` = js.native
     @JSName("script")
     val script_ReactBuildCLI: `ionic:build` = js.native
-    /* protected */ def buildEnvVars(options: ReactBuildOptions): js.Promise[ProcessEnv] = js.native
   }
   
   @js.native

@@ -25,13 +25,13 @@ class GridSortBar protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsDropDownSearchField: DropDownSearchField = js.native
-  val containerAsSelectorDatabaseSource: SelectorDatabaseSource = js.native
-  val containerAsSelectorXPathSource: SelectorXPathSource = js.native
-  val containerAsSortableEntityPathSource: SortableEntityPathSource = js.native
   @JSName("model")
-  var model_GridSortBar: IModel = js.native
-  val sortItems: IList[GridSortItem] = js.native
+  var model_FGridSortBar: IModel = js.native
+  def containerAsDropDownSearchField(): DropDownSearchField = js.native
+  def containerAsSelectorDatabaseSource(): SelectorDatabaseSource = js.native
+  def containerAsSelectorXPathSource(): SelectorXPathSource = js.native
+  def containerAsSortableEntityPathSource(): SortableEntityPathSource = js.native
+  def sortItems(): IList[GridSortItem] = js.native
 }
 
 /* static members */

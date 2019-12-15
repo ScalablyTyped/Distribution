@@ -21,16 +21,20 @@ class ExpressionSplitCondition protected () extends SplitCondition {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FExpressionSplitCondition: IModel = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var expression: String = js.native
+  def expression(): String = js.native
+  def expression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var expressionModel: Expression = js.native
+  def expressionModel(): Expression = js.native
+  def expressionModel(newValue: Expression): js.Any = js.native
 }
 
 /* static members */

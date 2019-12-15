@@ -18,10 +18,10 @@ import scala.scalajs.js.annotation._
   *
   * **sample:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel)
+  * [see doc](https://echarts.apache.org/en/option.html#series-funnel)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel
+  * @see https://echarts.apache.org/en/option.html#series-funnel
   */
 @JSName("SeriesFunnel")
 trait SeriesFunnel_ extends js.Object {
@@ -31,7 +31,7 @@ trait SeriesFunnel_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.animation
+    * @see https://echarts.apache.org/en/option.html#series-funnel.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -40,14 +40,14 @@ trait SeriesFunnel_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.funnel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-funnel.funnel)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-funnel.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -56,50 +56,50 @@ trait SeriesFunnel_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.funnel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-funnel.funnel)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-funnel.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.funnel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-funnel.funnel)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-funnel.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.funnel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-funnel.funnel)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-funnel.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-funnel.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -108,7 +108,7 @@ trait SeriesFunnel_ extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-funnel.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -119,7 +119,7 @@ trait SeriesFunnel_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-funnel.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -131,7 +131,7 @@ trait SeriesFunnel_ extends js.Object {
     * ```
     *
     * Or, if need extra dimensions for components like
-    * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * to map to graphic attributes like color, it can also be in the
     * form of array. For example:
     *
@@ -142,36 +142,36 @@ trait SeriesFunnel_ extends js.Object {
     *
     * In this case, we can assgin the second value in each arrary item
     * to
-    * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * component.
     *
     * More likely, we need to assign name to each data item, in which
     * case each item should be an object:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.funnel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-funnel.funnel)
     *
     * Each data item can be further custerized:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.funnel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-funnel.funnel)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data
+    * @see https://echarts.apache.org/en/option.html#series-funnel.data
     */
   var data: js.UndefOr[js.Array[js.Array[Double] | DataObject | Double]] = js.undefined
   /**
     * If
-    * [series.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.data)
+    * [series.data](https://echarts.apache.org/en/option.html#series.data)
     * is not specified, and
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * exists, the series will use `dataset`.
     * `datasetIndex` specifies which dataset will be used.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.datasetIndex
+    * @see https://echarts.apache.org/en/option.html#series-funnel.datasetIndex
     */
   var datasetIndex: js.UndefOr[Double] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-funnel.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleLabelLabelLine] = js.undefined
   /**
@@ -181,14 +181,14 @@ trait SeriesFunnel_ extends js.Object {
     *
     * @default
     * "center"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.funnelAlign
+    * @see https://echarts.apache.org/en/option.html#series-funnel.funnelAlign
     */
   var funnelAlign: js.UndefOr[String] = js.undefined
   /**
     * Gap between each trapezoid.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.gap
+    * @see https://echarts.apache.org/en/option.html#series-funnel.gap
     */
   var gap: js.UndefOr[Double] = js.undefined
   /**
@@ -197,7 +197,7 @@ trait SeriesFunnel_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.id
+    * @see https://echarts.apache.org/en/option.html#series-funnel.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -205,7 +205,7 @@ trait SeriesFunnel_ extends js.Object {
     * like being hovered by mouse, or highlighted via legend connect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-funnel.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
@@ -217,27 +217,27 @@ trait SeriesFunnel_ extends js.Object {
     * as `itemStyle` does.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.label
+    * @see https://echarts.apache.org/en/option.html#series-funnel.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
     * The visual guide line style of label. When
-    * [label position](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.label.position)
+    * [label position](https://echarts.apache.org/en/option.html#series-funnel.label.position)
     * is set as `'left'`or`'right'`, the visual guide line will show.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.labelLine
+    * @see https://echarts.apache.org/en/option.html#series-funnel.labelLine
     */
   var labelLine: js.UndefOr[Anon_EmphasisLength] = js.undefined
   /**
     * Whether to enable highlighting chart when
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * is being hovered.
     *
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.legendHoverLink
+    * @see https://echarts.apache.org/en/option.html#series-funnel.legendHoverLink
     */
   var legendHoverLink: js.UndefOr[Boolean] = js.undefined
   /**
@@ -245,7 +245,7 @@ trait SeriesFunnel_ extends js.Object {
     * For example, mark a time interval.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.markArea
+    * @see https://echarts.apache.org/en/option.html#series-funnel.markArea
     */
   var markArea: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
@@ -254,7 +254,7 @@ trait SeriesFunnel_ extends js.Object {
     * Use a line in the chart to illustrate.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.markLine
+    * @see https://echarts.apache.org/en/option.html#series-funnel.markLine
     */
   var markLine: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
@@ -263,7 +263,7 @@ trait SeriesFunnel_ extends js.Object {
     * Mark point in a chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.markPoint
+    * @see https://echarts.apache.org/en/option.html#series-funnel.markPoint
     */
   var markPoint: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
@@ -274,38 +274,38 @@ trait SeriesFunnel_ extends js.Object {
     *
     * @default
     * 100
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.max
+    * @see https://echarts.apache.org/en/option.html#series-funnel.max
     */
   var max: js.UndefOr[Double] = js.undefined
   /**
     * The mapped width from maximum data value
-    * [max](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.max)
+    * [max](https://echarts.apache.org/en/option.html#series-funnel.max)
     * .
     *
     * It can be absolute pixel and also the percentage of
-    * [layout width](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.width)
+    * [layout width](https://echarts.apache.org/en/option.html#series-funnel.width)
     * .
     *
     *
     * @default
     * '100%'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.maxSize
+    * @see https://echarts.apache.org/en/option.html#series-funnel.maxSize
     */
   var maxSize: js.UndefOr[String] = js.undefined
   /**
     * The specified minimum value.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.min
+    * @see https://echarts.apache.org/en/option.html#series-funnel.min
     */
   var min: js.UndefOr[Double] = js.undefined
   /**
     * The mapped width from minimum data value
-    * [min](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.min)
+    * [min](https://echarts.apache.org/en/option.html#series-funnel.min)
     * .
     *
     * It can be absolute pixel and also the percentage of
-    * [layout width](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.width)
+    * [layout width](https://echarts.apache.org/en/option.html#series-funnel.width)
     *
     * If you don't want the graph of minimum value to be a triangle,
     * you can set up this property larger than 0.
@@ -313,23 +313,23 @@ trait SeriesFunnel_ extends js.Object {
     *
     * @default
     * '0%'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.minSize
+    * @see https://echarts.apache.org/en/option.html#series-funnel.minSize
     */
   var minSize: js.UndefOr[String] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.name
+    * @see https://echarts.apache.org/en/option.html#series-funnel.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * When
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * is used, `seriesLayoutBy` specifies whether the column or the
     * row of `dataset` is mapped to the series, namely, the series
     * is "layout" on columns or rows. Optional values:
@@ -340,13 +340,13 @@ trait SeriesFunnel_ extends js.Object {
     * In this case, each row represents a dimension.
     *
     * Check this
-    * [example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=dataset-series-layout-by)
+    * [example](https://echarts.apache.org/examples/en/editor.html?c=dataset-series-layout-by)
     * .
     *
     *
     * @default
     * "column"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.seriesLayoutBy
+    * @see https://echarts.apache.org/en/option.html#series-funnel.seriesLayoutBy
     */
   var seriesLayoutBy: js.UndefOr[String] = js.undefined
   /**
@@ -357,20 +357,20 @@ trait SeriesFunnel_ extends js.Object {
     *
     * @default
     * "descending"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.sort
+    * @see https://echarts.apache.org/en/option.html#series-funnel.sort
     */
   var sort: js.UndefOr[String] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-funnel.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "funnel"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.type
+    * @see https://echarts.apache.org/en/option.html#series-funnel.type
     */
   var `type`: js.UndefOr[String] = js.undefined
 }

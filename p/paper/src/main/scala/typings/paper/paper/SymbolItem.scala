@@ -25,6 +25,6 @@ class SymbolItem protected () extends Item {
   /** 
     * The symbol definition that the placed symbol refers to.
     */
-  var definition: SymbolDefinition | Null = js.native
+  var definition: SymbolDefinition = js.native
 }
 

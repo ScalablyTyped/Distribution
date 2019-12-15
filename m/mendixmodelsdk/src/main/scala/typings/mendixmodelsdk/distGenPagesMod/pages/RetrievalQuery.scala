@@ -27,37 +27,46 @@ class RetrievalQuery protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val allowedUserRoles: IList[IUserRole] = js.native
-  val allowedUserRolesQualifiedNames: js.Array[String] = js.native
-  /**
-    * In version 7.21.0: introduced
-    */
-  var entityPath: String = js.native
-  /**
-    * In version 7.21.0: introduced
-    */
-  var microflow: IMicroflow | Null = js.native
-  val microflowQualifiedName: String | Null = js.native
   @JSName("model")
-  var model_RetrievalQuery: IModel = js.native
+  var model_FRetrievalQuery: IModel = js.native
+  def allowedUserRoles(): IList[IUserRole] = js.native
+  def allowedUserRolesQualifiedNames(): js.Array[String] = js.native
+  /**
+    * In version 7.21.0: introduced
+    */
+  def entityPath(): String = js.native
+  def entityPath(newValue: String): js.Any = js.native
+  /**
+    * In version 7.21.0: introduced
+    */
+  def microflow(): IMicroflow | Null = js.native
+  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflowQualifiedName(): String | Null = js.native
+  @JSName("microflow")
+  def microflow_Any(): js.Any = js.native
   /**
     * In version 7.14.0: introduced
     */
-  var pageName: String = js.native
-  var queryId: String = js.native
+  def pageName(): String = js.native
+  def pageName(newValue: String): js.Any = js.native
+  def queryId(): String = js.native
+  def queryId(newValue: String): js.Any = js.native
   /**
     * In version 8.4.0: deleted
     */
-  var schemaId: String = js.native
+  def schemaId(): String = js.native
+  def schemaId(newValue: String): js.Any = js.native
   /**
     * In version 8.4.0: introduced
     */
-  val usedAssociations: IList[String] = js.native
+  def usedAssociations(): IList[String] = js.native
   /**
     * In version 8.4.0: introduced
     */
-  var widgetName: String = js.native
-  var xPath: String = js.native
+  def widgetName(): String = js.native
+  def widgetName(newValue: String): js.Any = js.native
+  def xPath(): String = js.native
+  def xPath(newValue: String): js.Any = js.native
 }
 
 /* static members */

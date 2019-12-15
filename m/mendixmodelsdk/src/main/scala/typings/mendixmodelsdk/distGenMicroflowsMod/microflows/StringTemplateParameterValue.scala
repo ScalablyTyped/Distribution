@@ -10,8 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-  *
+  * In version 8.5.0: removed experimental
   * In version 8.4.0: introduced
   */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.StringTemplateParameterValue")
@@ -25,7 +24,10 @@ class StringTemplateParameterValue protected () extends CodeActionParameterValue
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var template: StringTemplate = js.native
+  @JSName("model")
+  var model_FStringTemplateParameterValue: IModel = js.native
+  def template(): StringTemplate = js.native
+  def template(newValue: StringTemplate): js.Any = js.native
 }
 
 /* static members */

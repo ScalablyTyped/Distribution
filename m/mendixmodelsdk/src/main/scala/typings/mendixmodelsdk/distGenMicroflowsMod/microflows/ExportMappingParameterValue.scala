@@ -24,8 +24,13 @@ class ExportMappingParameterValue protected () extends ExpressionBasedCodeAction
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var exportMapping: IExportMapping | Null = js.native
-  val exportMappingQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FExportMappingParameterValue: IModel = js.native
+  def exportMapping(): IExportMapping | Null = js.native
+  def exportMapping(newValue: IExportMapping): js.Any = js.native
+  def exportMappingQualifiedName(): String | Null = js.native
+  @JSName("exportMapping")
+  def exportMapping_Any(): js.Any = js.native
 }
 
 /* static members */

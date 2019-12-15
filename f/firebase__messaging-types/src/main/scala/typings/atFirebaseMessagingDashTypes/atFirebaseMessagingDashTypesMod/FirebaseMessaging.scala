@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FirebaseMessaging protected () extends js.Object {
   def deleteToken(token: String): js.Promise[Boolean] = js.native
-  def getToken(): js.Promise[String | Null] = js.native
+  def getToken(): js.Promise[String] = js.native
   def onMessage(nextOrObserver: NextFn[_]): Unsubscribe = js.native
   def onMessage(nextOrObserver: NextFn[_], error: ErrorFn): Unsubscribe = js.native
   def onMessage(nextOrObserver: NextFn[_], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native

@@ -16,6 +16,7 @@ trait FormFieldProps extends js.Object {
   var label: js.UndefOr[String | ReactNode] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var name: js.UndefOr[String] = js.undefined
+  var options: js.UndefOr[js.Array[String]] = js.undefined
   var pad: js.UndefOr[Boolean] = js.undefined
   // Although Placeholder is not a prop within FormField we Omit the HTML placeholder attribute and replaced with following.
   var placeholder: js.UndefOr[PlaceHolderType] = js.undefined
@@ -33,6 +34,7 @@ object FormFieldProps {
     label: String | ReactNode = null,
     margin: MarginType = null,
     name: String = null,
+    options: js.Array[String] = null,
     pad: js.UndefOr[Boolean] = js.undefined,
     placeholder: PlaceHolderType = null,
     required: js.UndefOr[Boolean] = js.undefined,
@@ -46,6 +48,7 @@ object FormFieldProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (!js.isUndefined(pad)) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])

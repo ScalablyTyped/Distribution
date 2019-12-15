@@ -27,13 +27,13 @@ abstract class Icon protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsBottomBarItem: BottomBarItem = js.native
-  val containerAsButton: Button = js.native
-  val containerAsControlBarButton: ControlBarButton = js.native
-  val containerAsMenuItem: MenuItem = js.native
-  val containerAsWidgetValue: WidgetValue = js.native
   @JSName("model")
-  var model_Icon: IModel = js.native
+  var model_FIcon: IModel = js.native
+  def containerAsBottomBarItem(): BottomBarItem = js.native
+  def containerAsButton(): Button = js.native
+  def containerAsControlBarButton(): ControlBarButton = js.native
+  def containerAsMenuItem(): MenuItem = js.native
+  def containerAsWidgetValue(): WidgetValue = js.native
 }
 
 /* static members */

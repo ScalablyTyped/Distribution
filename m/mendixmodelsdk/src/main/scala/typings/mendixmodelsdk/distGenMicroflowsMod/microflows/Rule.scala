@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.distGenMicroflowsMod.microflows
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
@@ -20,7 +22,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflowBase because Already inherited
 - typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IServerSideMicroflow because Already inherited
-- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IRule because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Rule")
+- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IRule because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Rule")
 @js.native
 class Rule protected () extends ServerSideMicroflow {
   def this(
@@ -30,6 +32,10 @@ class Rule protected () extends ServerSideMicroflow {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  @JSName("model")
+  var model_FRule: IModel = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MRule(): FolderBase = js.native
 }
 
 /* static members */

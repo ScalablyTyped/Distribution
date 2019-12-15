@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -19,7 +20,10 @@ abstract class SortableEntityPathSource protected () extends EntityPathSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var sortBar: GridSortBar = js.native
+  @JSName("model")
+  var model_FSortableEntityPathSource: IModel = js.native
+  def sortBar(): GridSortBar = js.native
+  def sortBar(newValue: GridSortBar): js.Any = js.native
 }
 
 /* static members */

@@ -24,13 +24,17 @@ class PasswordPolicySettings protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsProjectSecurity: ProjectSecurity = js.native
-  var minimumLength: Double = js.native
   @JSName("model")
-  var model_PasswordPolicySettings: IModel = js.native
-  var requireDigit: Boolean = js.native
-  var requireMixedCase: Boolean = js.native
-  var requireSymbol: Boolean = js.native
+  var model_FPasswordPolicySettings: IModel = js.native
+  def containerAsProjectSecurity(): ProjectSecurity = js.native
+  def minimumLength(): Double = js.native
+  def minimumLength(newValue: Double): js.Any = js.native
+  def requireDigit(): Boolean = js.native
+  def requireDigit(newValue: Boolean): js.Any = js.native
+  def requireMixedCase(): Boolean = js.native
+  def requireMixedCase(newValue: Boolean): js.Any = js.native
+  def requireSymbol(): Boolean = js.native
+  def requireSymbol(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

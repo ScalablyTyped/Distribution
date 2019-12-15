@@ -52,24 +52,42 @@ class CustomWidget protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FCustomWidget: IModel = js.native
   /**
     * In version 8.1.0: introduced
     */
-  var conditionalEditabilitySettings: ConditionalEditabilitySettings | Null = js.native
+  def conditionalEditabilitySettings(): ConditionalEditabilitySettings | Null = js.native
+  def conditionalEditabilitySettings(newValue: ConditionalEditabilitySettings): js.Any = js.native
+  @JSName("conditionalEditabilitySettings")
+  def conditionalEditabilitySettings_Any(): js.Any = js.native
   /**
     * In version 8.1.0: introduced
     */
-  var conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings(): ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
+  @JSName("conditionalVisibilitySettings")
+  def conditionalVisibilitySettings_Any(): js.Any = js.native
   /**
     * In version 8.1.0: introduced
     */
-  var editable: EditableEnum = js.native
+  def editable(): EditableEnum = js.native
+  def editable(newValue: EditableEnum): js.Any = js.native
   /**
     * In version 8.1.0: introduced
     */
-  var labelTemplate: ClientTemplate | Null = js.native
-  var `object`: WidgetObject | Null = js.native
-  var `type`: CustomWidgetType | Null = js.native
+  def labelTemplate(): ClientTemplate | Null = js.native
+  def labelTemplate(newValue: ClientTemplate): js.Any = js.native
+  @JSName("labelTemplate")
+  def labelTemplate_Any(): js.Any = js.native
+  def `object`(): WidgetObject | Null = js.native
+  def `object`(newValue: WidgetObject): js.Any = js.native
+  @JSName("object")
+  def object_Any(): js.Any = js.native
+  def `type`(): CustomWidgetType | Null = js.native
+  def `type`(newValue: CustomWidgetType): js.Any = js.native
+  @JSName("type")
+  def type_Any(): js.Any = js.native
 }
 
 /* static members */
@@ -318,6 +336,15 @@ object CustomWidget extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): CustomWidget = js.native
+  /**
+    * Creates and returns a new CustomWidget instance in the SDK and on the server.
+    * The new CustomWidget will be automatically stored in the 'sidebarWidgets' property
+    * of the parent pages.NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): CustomWidget = js.native
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property

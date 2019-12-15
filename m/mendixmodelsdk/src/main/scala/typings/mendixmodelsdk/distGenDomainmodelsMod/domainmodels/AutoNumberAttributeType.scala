@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAttributeType because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.INumericAttributeTypeBase because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IIntegerAttributeTypeBase because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAutoNumberAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AutoNumberAttributeType")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAutoNumberAttributeType because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AutoNumberAttributeType")
 @js.native
 class AutoNumberAttributeType protected () extends IntegerAttributeTypeBase {
   def this(
@@ -27,6 +27,10 @@ class AutoNumberAttributeType protected () extends IntegerAttributeTypeBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FAutoNumberAttributeType: IModel = js.native
+  @JSName("containerAsAttribute")
+  def containerAsAttribute_MAutoNumberAttributeType(): Attribute = js.native
 }
 
 /* static members */

@@ -25,12 +25,15 @@ class Annotation protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var caption: String = js.native
-  val containerAsDomainModel: DomainModel = js.native
-  var location: IPoint = js.native
   @JSName("model")
-  var model_Annotation: IModel = js.native
-  var width: Double = js.native
+  var model_FAnnotation: IModel = js.native
+  def caption(): String = js.native
+  def caption(newValue: String): js.Any = js.native
+  def containerAsDomainModel(): DomainModel = js.native
+  def location(): IPoint = js.native
+  def location(newValue: IPoint): js.Any = js.native
+  def width(): Double = js.native
+  def width(newValue: Double): js.Any = js.native
 }
 
 /* static members */

@@ -2,6 +2,7 @@ package typings.mendixmodelsdk.distGenDatatypesMod.datatypes
 
 import typings.mendixmodelsdk.distGenAppservicesMod.appservices.AppServiceAction
 import typings.mendixmodelsdk.distGenAppservicesMod.appservices.AppServiceActionParameter
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenConstantsMod.constants.Constant
 import typings.mendixmodelsdk.distGenDatasetsMod.datasets.DataSetParameter
 import typings.mendixmodelsdk.distGenDatatypesMod.StructureVersionInfo
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IDataType because Already inherited
-- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EntityType")
+- typings.mendixmodelsdk.distGenDatatypesMod.datatypes.IEntityType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EntityType")
 @js.native
 abstract class EntityType protected () extends DataType {
   def this(
@@ -36,24 +37,34 @@ abstract class EntityType protected () extends DataType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("entityQualifiedName")
+  val entityQualifiedName_FEntityType: String = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("entity")
+  val entity_FEntityType: IEntity = js.native
+  @JSName("model")
+  var model_FEntityType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  val containerAsAppServiceActionParameter_EntityType: AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MEntityType(): AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  val containerAsAppServiceAction_EntityType: AppServiceAction = js.native
+  def containerAsAppServiceAction_MEntityType(): AppServiceAction = js.native
   @JSName("containerAsConstant")
-  val containerAsConstant_EntityType: Constant = js.native
+  def containerAsConstant_MEntityType(): Constant = js.native
   @JSName("containerAsDataSetParameter")
-  val containerAsDataSetParameter_EntityType: DataSetParameter = js.native
+  def containerAsDataSetParameter_MEntityType(): DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  val containerAsDocumentTemplateParameter_EntityType: DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MEntityType(): DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  val containerAsImportMapping_EntityType: ImportMapping = js.native
+  def containerAsImportMapping_MEntityType(): ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  val containerAsMicroflowBase_EntityType: MicroflowBase = js.native
+  def containerAsMicroflowBase_MEntityType(): MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  val containerAsMicroflowParameterBase_EntityType: MicroflowParameterBase = js.native
-  var entity: IEntity = js.native
-  val entityQualifiedName: String = js.native
+  def containerAsMicroflowParameterBase_MEntityType(): MicroflowParameterBase = js.native
+  def entity(): IEntity = js.native
+  def entity(newValue: IEntity): js.Any = js.native
+  def entityQualifiedName(): String = js.native
 }
 
 /* static members */

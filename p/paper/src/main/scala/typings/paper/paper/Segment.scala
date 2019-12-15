@@ -47,12 +47,12 @@ class Segment () extends js.Object {
     * The handle point relative to the anchor point of the segment that
     * describes the in tangent of the segment.
     */
-  var handleIn: Point | Null = js.native
+  var handleIn: Point = js.native
   /** 
     * The handle point relative to the anchor point of the segment that
     * describes the out tangent of the segment.
     */
-  var handleOut: Point | Null = js.native
+  var handleOut: Point = js.native
   /** 
     * The index of the segment in the {@link Path#segments} array that the
     * segment belongs to.
@@ -75,7 +75,7 @@ class Segment () extends js.Object {
   /** 
     * The anchor point of the segment.
     */
-  var point: Point | Null = js.native
+  var point: Point = js.native
   /** 
     * The previous segment in the {@link Path#segments} array that the
     * segment belongs to. If the segments belongs to a closed path, the last
@@ -85,7 +85,7 @@ class Segment () extends js.Object {
   /** 
     * Specifies whether the segment is selected.
     */
-  var selected: Boolean | Null = js.native
+  var selected: Boolean = js.native
   /** 
     * Clears the segment's handles by setting their coordinates to zero,
     * turning the segment into a corner.

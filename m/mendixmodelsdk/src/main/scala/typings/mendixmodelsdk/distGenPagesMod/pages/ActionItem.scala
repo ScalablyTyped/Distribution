@@ -21,11 +21,12 @@ abstract class ActionItem protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var action: ClientAction = js.native
-  val containerAsDropDownButton: DropDownButton = js.native
-  val containerAsNavigationList: NavigationList = js.native
   @JSName("model")
-  var model_ActionItem: IModel = js.native
+  var model_FActionItem: IModel = js.native
+  def action(): ClientAction = js.native
+  def action(newValue: ClientAction): js.Any = js.native
+  def containerAsDropDownButton(): DropDownButton = js.native
+  def containerAsNavigationList(): NavigationList = js.native
 }
 
 /* static members */

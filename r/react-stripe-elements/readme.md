@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-stripe-elements
 
-Typings are for version 1.3
+Typings are for version 6.0
 
 ## Library description:
 React components for Stripe.js and Stripe Elements

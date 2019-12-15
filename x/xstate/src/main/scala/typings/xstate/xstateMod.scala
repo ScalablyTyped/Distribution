@@ -132,6 +132,15 @@ object xstateMod extends js.Object {
   def createMachine[TContext, TEvent /* <: EventObject */, TState /* <: Typestate[TContext] */](config: MachineConfig[TContext, _, TEvent], options: Partial[MachineOptions[TContext, TEvent]]): StateMachine[TContext, _, TEvent, TState] = js.native
   def doneInvoke(id: String): DoneEvent = js.native
   def doneInvoke(id: String, data: js.Any): DoneEvent = js.native
+  @JSName("forwardTo")
+  def forwardTo_to[TContext, TEvent /* <: EventObject */](
+    target: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<xstate.xstate/lib/types.SendActionOptions<TContext, TEvent>>['to'] */ js.Any
+  ): SendAction[TContext, TEvent] = js.native
+  @JSName("forwardTo")
+  def forwardTo_to[TContext, TEvent /* <: EventObject */](
+    target: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<xstate.xstate/lib/types.SendActionOptions<TContext, TEvent>>['to'] */ js.Any,
+    options: SendActionOptions[TContext, TEvent]
+  ): SendAction[TContext, TEvent] = js.native
   def interpret[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](machine: StateMachine[TContext, TStateSchema, TEvent, Typestate[TContext]]): typings.xstate.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent] = js.native
   def interpret[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
     machine: StateMachine[TContext, TStateSchema, TEvent, Typestate[TContext]],
@@ -251,6 +260,8 @@ object xstateMod extends js.Object {
     var done_Original: js.Function2[/* id */ String, /* data */ js.UndefOr[js.Any], DoneEventObject] = js.native
     @JSName("escalate")
     var escalate_Original: Fn_ErrorData = js.native
+    @JSName("forwardTo")
+    var forwardTo_Original: Fn_Options = js.native
     @JSName("log")
     var log_Original: Fn_Expr = js.native
     @JSName("raise")
@@ -279,6 +290,15 @@ object xstateMod extends js.Object {
     def done(id: String, data: js.Any): DoneEventObject = js.native
     def escalate[TContext, TEvent /* <: EventObject */](errorData: js.Any): SendAction[TContext, TEvent] = js.native
     def escalate[TContext, TEvent /* <: EventObject */](errorData: js.Any, options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent] = js.native
+    @JSName("forwardTo")
+    def forwardTo_to[TContext, TEvent /* <: EventObject */](
+      target: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<xstate.xstate/lib/types.SendActionOptions<TContext, TEvent>>['to'] */ js.Any
+    ): SendAction[TContext, TEvent] = js.native
+    @JSName("forwardTo")
+    def forwardTo_to[TContext, TEvent /* <: EventObject */](
+      target: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<xstate.xstate/lib/types.SendActionOptions<TContext, TEvent>>['to'] */ js.Any,
+      options: SendActionOptions[TContext, TEvent]
+    ): SendAction[TContext, TEvent] = js.native
     def log[TContext, TEvent /* <: EventObject */](): LogAction[TContext, TEvent] = js.native
     def log[TContext, TEvent /* <: EventObject */](expr: String): LogAction[TContext, TEvent] = js.native
     def log[TContext, TEvent /* <: EventObject */](expr: String, label: String): LogAction[TContext, TEvent] = js.native

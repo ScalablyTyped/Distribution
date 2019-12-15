@@ -24,9 +24,7 @@ abstract class Element protected () extends AbstractElement {
   ) = this()
   var _deepCopyElement: js.Any = js.native
   @JSName("container")
-  val container_Element: AbstractElement = js.native
-  @JSName("unit")
-  val unit_Element: ModelUnit = js.native
+  val container_FElement: AbstractElement = js.native
   /**
     * Creates a deep copy of this element and its children.
     */
@@ -39,5 +37,13 @@ abstract class Element protected () extends AbstractElement {
     * Detaches this element from the model, so that it can be attached in a different place.
     */
   def detach(): this.type = js.native
+  /**
+    * Checks whether all attributes are available ATM
+    *  -  if false, a load is required to access these properties.
+    */
+  @JSName("isLoaded")
+  def isLoaded_MElement(): Boolean = js.native
+  @JSName("unit")
+  def unit_MElement(): ModelUnit = js.native
 }
 

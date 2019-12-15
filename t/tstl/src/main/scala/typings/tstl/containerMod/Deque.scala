@@ -108,18 +108,6 @@ object Deque extends js.Object {
       ]
     ]
   ] = js.native
-  /**
-    * @hidden
-    */
-  val MAGNIFIER: js.Any = js.native
-  /**
-    * @hidden
-    */
-  val MIN_CAPACITY: js.Any = js.native
-  /**
-    * @hidden
-    */
-  val ROW_SIZE: js.Any = js.native
   val ReverseIterator: Instantiable0[
     ArrayReverseIterator[
       js.Object, 
@@ -177,6 +165,18 @@ object Deque extends js.Object {
       ]
     ]
   ] = js.native
+  /**
+    * @hidden
+    */
+  /* private */ def MAGNIFIER(): js.Any = js.native
+  /**
+    * @hidden
+    */
+  /* private */ def MIN_CAPACITY(): js.Any = js.native
+  /**
+    * @hidden
+    */
+  /* private */ def ROW_SIZE(): js.Any = js.native
 }
 
 /* static members */
@@ -202,18 +202,6 @@ object deque extends js.Object {
       ]
     ]
   ] = js.native
-  /**
-    * @hidden
-    */
-  val MAGNIFIER: js.Any = js.native
-  /**
-    * @hidden
-    */
-  val MIN_CAPACITY: js.Any = js.native
-  /**
-    * @hidden
-    */
-  val ROW_SIZE: js.Any = js.native
   val ReverseIterator: Instantiable0[
     ArrayReverseIterator[
       js.Object, 
@@ -271,5 +259,17 @@ object deque extends js.Object {
       ]
     ]
   ] = js.native
+  /**
+    * @hidden
+    */
+  /* private */ def MAGNIFIER(): js.Any = js.native
+  /**
+    * @hidden
+    */
+  /* private */ def MIN_CAPACITY(): js.Any = js.native
+  /**
+    * @hidden
+    */
+  /* private */ def ROW_SIZE(): js.Any = js.native
 }
 

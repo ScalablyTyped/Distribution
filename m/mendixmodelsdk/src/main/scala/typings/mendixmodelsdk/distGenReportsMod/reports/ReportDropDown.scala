@@ -48,8 +48,13 @@ class ReportDropDown protected () extends ReportParameter {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var attribute: IAttribute | Null = js.native
-  val attributeQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FReportDropDown: IModel = js.native
+  def attribute(): IAttribute | Null = js.native
+  def attribute(newValue: IAttribute): js.Any = js.native
+  def attributeQualifiedName(): String | Null = js.native
+  @JSName("attribute")
+  def attribute_Any(): js.Any = js.native
 }
 
 /* static members */
@@ -298,6 +303,15 @@ object ReportDropDown extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ReportDropDown = js.native
+  /**
+    * Creates and returns a new ReportDropDown instance in the SDK and on the server.
+    * The new ReportDropDown will be automatically stored in the 'sidebarWidgets' property
+    * of the parent pages.NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReportDropDown = js.native
   /**
     * Creates and returns a new ReportDropDown instance in the SDK and on the server.
     * The new ReportDropDown will be automatically stored in the 'widgets' property

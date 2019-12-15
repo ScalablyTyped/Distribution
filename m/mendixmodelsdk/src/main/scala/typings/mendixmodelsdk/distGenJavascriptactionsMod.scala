@@ -11,6 +11,7 @@ import typings.mendixmodelsdk.distGenJavascriptactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenJavascriptactionsMod.javascriptactions.JavaScriptAction
 import typings.mendixmodelsdk.distGenJavascriptactionsMod.javascriptactions.JavaScriptActionParameter
 import typings.mendixmodelsdk.distGenJavascriptactionsMod.javascriptactions.NanoflowJavaScriptActionParameterType
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -72,7 +73,7 @@ object distGenJavascriptactionsMod extends js.Object {
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
     - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.ICodeAction because Already inherited
-    - typings.mendixmodelsdk.distGenJavascriptactionsMod.javascriptactions.IJavaScriptAction because var conflicts: actionReturnType, id, isLoaded, model, modelerActionInfo, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.distGenJavascriptactionsMod.javascriptactions.IJavaScriptAction because var conflicts: actionParameters, actionReturnType, actionTypeParameters, containerAsFolderBase, id, isLoaded, model, modelerActionInfo, structureTypeName, unit. Inlined  */ @js.native
     class JavaScriptAction protected () extends CodeAction {
       def this(
         model: AbstractModel,
@@ -81,6 +82,10 @@ object distGenJavascriptactionsMod extends js.Object {
         isPartial: Boolean,
         container: IFolderBase
       ) = this()
+      @JSName("model")
+      var model_FJavaScriptAction: IModel = js.native
+      @JSName("containerAsFolderBase")
+      def containerAsFolderBase_MJavaScriptAction(): FolderBase = js.native
     }
     
     /**
@@ -93,7 +98,7 @@ object distGenJavascriptactionsMod extends js.Object {
     - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
     - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.ICodeActionParameter because Already inherited
-    - typings.mendixmodelsdk.distGenJavascriptactionsMod.javascriptactions.IJavaScriptActionParameter because var conflicts: actionParameterType, description, id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.distGenJavascriptactionsMod.javascriptactions.IJavaScriptActionParameter because var conflicts: actionParameterType, containerAsCodeAction, containerAsJavaAction, description, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @js.native
     class JavaScriptActionParameter protected () extends CodeActionParameter {
       def this(
         model: AbstractModel,
@@ -103,8 +108,10 @@ object distGenJavascriptactionsMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
+      @JSName("model")
+      var model_FJavaScriptActionParameter: IModel = js.native
       @JSName("containerAsCodeAction")
-      val containerAsCodeAction_JavaScriptActionParameter: CodeAction = js.native
+      def containerAsCodeAction_MJavaScriptActionParameter(): CodeAction = js.native
     }
     
     /**
@@ -115,7 +122,7 @@ object distGenJavascriptactionsMod extends js.Object {
     - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
     - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IParameterType because Already inherited
-    - typings.mendixmodelsdk.distGenJavascriptactionsMod.javascriptactions.INanoflowJavaScriptActionParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.distGenJavascriptactionsMod.javascriptactions.INanoflowJavaScriptActionParameterType because var conflicts: containerAsCodeActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
     class NanoflowJavaScriptActionParameterType protected () extends ParameterType {
       def this(
         model: AbstractModel,
@@ -125,8 +132,10 @@ object distGenJavascriptactionsMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
+      @JSName("model")
+      var model_FNanoflowJavaScriptActionParameterType: IModel = js.native
       @JSName("containerAsCodeActionParameter")
-      val containerAsCodeActionParameter_NanoflowJavaScriptActionParameterType: CodeActionParameter = js.native
+      def containerAsCodeActionParameter_MNanoflowJavaScriptActionParameterType(): CodeActionParameter = js.native
     }
     
     /* static members */

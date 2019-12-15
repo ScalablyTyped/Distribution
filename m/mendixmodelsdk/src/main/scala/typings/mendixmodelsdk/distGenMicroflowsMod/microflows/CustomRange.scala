@@ -21,26 +21,32 @@ class CustomRange protected () extends Range {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FCustomRange: IModel = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var limitExpression: String = js.native
+  def limitExpression(): String = js.native
+  def limitExpression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var limitExpressionModel: Expression = js.native
+  def limitExpressionModel(): Expression = js.native
+  def limitExpressionModel(newValue: Expression): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  var offsetExpression: String = js.native
+  def offsetExpression(): String = js.native
+  def offsetExpression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var offsetExpressionModel: Expression = js.native
+  def offsetExpressionModel(): Expression = js.native
+  def offsetExpressionModel(newValue: Expression): js.Any = js.native
 }
 
 /* static members */

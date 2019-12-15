@@ -14,13 +14,14 @@ import scala.scalajs.js.annotation._
 class Api () extends js.Object {
   def this(window: Window) = this()
   /** PreformanceObserver constructor function. */
-  var PerformanceObserver: js.Any = js.native
-  var document: Document = js.native
-  var localStorage: Storage = js.native
-  var navigator: Navigator = js.native
-  var onFirstInputDelay: js.UndefOr[js.Function] = js.native
-  var performance: js.Any = js.native
-  var windowLocation: js.Any = js.native
+  val PerformanceObserver: js.Any = js.native
+  val document: Document = js.native
+  val localStorage: js.UndefOr[Storage] = js.native
+  val navigator: Navigator = js.native
+  val onFirstInputDelay: js.UndefOr[js.Function] = js.native
+  val performance: js.Any = js.native
+  val window: js.UndefOr[Window] = js.native
+  val windowLocation: js.Any = js.native
   def getEntriesByName(name: String): js.Array[PerformanceEntry] = js.native
   def getEntriesByType(`type`: EntryType): js.Array[PerformanceEntry] = js.native
   def getTimeOrigin(): Double = js.native

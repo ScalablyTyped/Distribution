@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
   * one on the left and another on the right. offset can be used
   * to avoid overlap when you need to put more than two y axis.
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis
+  * @see https://echarts.apache.org/en/option.html#yAxis
   */
 trait YAxis extends CartesianAxis {
   /**
@@ -48,7 +48,7 @@ trait YAxis extends CartesianAxis {
     * + 'log' Log axis, suitable for log data.
     *
     * @default 'value'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis.type
+    * @see https://echarts.apache.org/en/option.html#yAxis.type
     */
   var `type`: js.UndefOr[Type] = js.undefined
 }

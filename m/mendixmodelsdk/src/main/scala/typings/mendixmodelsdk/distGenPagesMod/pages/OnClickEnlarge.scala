@@ -23,6 +23,8 @@ class OnClickEnlarge protected () extends OnClickBehavior {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FOnClickEnlarge: IModel = js.native
 }
 
 /* static members */

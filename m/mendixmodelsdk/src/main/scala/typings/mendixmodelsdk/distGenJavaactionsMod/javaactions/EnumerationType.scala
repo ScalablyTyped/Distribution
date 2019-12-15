@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IType because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IEnumerationType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.EnumerationType")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IEnumerationType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, containerAsListType, id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.EnumerationType")
 @js.native
 class EnumerationType protected () extends Type {
   def this(
@@ -30,14 +30,24 @@ class EnumerationType protected () extends Type {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("enumerationQualifiedName")
+  val enumerationQualifiedName_FEnumerationType: String = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("enumeration")
+  val enumeration_FEnumerationType: IEnumeration = js.native
+  @JSName("model")
+  var model_FEnumerationType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  val containerAsBasicParameterType_EnumerationType: BasicParameterType = js.native
+  def containerAsBasicParameterType_MEnumerationType(): BasicParameterType = js.native
   @JSName("containerAsJavaActionParameter")
-  val containerAsJavaActionParameter_EnumerationType: JavaActionParameter = js.native
+  def containerAsJavaActionParameter_MEnumerationType(): JavaActionParameter = js.native
   @JSName("containerAsJavaAction")
-  val containerAsJavaAction_EnumerationType: JavaAction = js.native
-  var enumeration: IEnumeration = js.native
-  val enumerationQualifiedName: String = js.native
+  def containerAsJavaAction_MEnumerationType(): JavaAction = js.native
+  def enumeration(): IEnumeration = js.native
+  def enumeration(newValue: IEnumeration): js.Any = js.native
+  def enumerationQualifiedName(): String = js.native
 }
 
 /* static members */

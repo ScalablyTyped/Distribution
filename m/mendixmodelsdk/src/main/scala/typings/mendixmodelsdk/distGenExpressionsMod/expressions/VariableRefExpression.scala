@@ -31,6 +31,7 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceCallActi
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceOperationParameterMapping
 import typings.mendixmodelsdk.distGenPagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.distGenPagesMod.pages.WidgetValidation
+import typings.mendixmodelsdk.distGenRestMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -54,14 +55,20 @@ class VariableRefExpression protected () extends Expression {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FVariableRefExpression: IModel = js.native
   /**
     * In version 7.11.0: introduced
     */
-  var member: MemberRef | Null = js.native
+  def member(): MemberRef | Null = js.native
+  def member(newValue: MemberRef): js.Any = js.native
+  @JSName("member")
+  def member_Any(): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  var variable: VariableRef = js.native
+  def variable(): VariableRef = js.native
+  def variable(newValue: VariableRef): js.Any = js.native
 }
 
 /* static members */
@@ -157,6 +164,15 @@ object VariableRefExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): VariableRefExpression = js.native
+  /**
+    * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
+    * The new VariableRefExpression will be automatically stored in the 'timeoutModel' property
+    * of the parent rest.ConsumedODataService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): VariableRefExpression = js.native
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
     * The new VariableRefExpression will be automatically stored in the 'initialValueModel' property

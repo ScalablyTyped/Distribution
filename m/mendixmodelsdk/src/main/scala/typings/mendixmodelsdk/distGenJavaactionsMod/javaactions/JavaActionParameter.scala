@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.ICodeActionParameter because Already inherited
-- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IJavaActionParameter because var conflicts: actionParameterType, description, id, isLoaded, model, name, structureTypeName, unit. Inlined `type`, javaType, parameterType */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.JavaActionParameter")
+- typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IJavaActionParameter because var conflicts: actionParameterType, containerAsCodeAction, containerAsJavaAction, description, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined `type`, javaType, parameterType */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.JavaActionParameter")
 @js.native
 class JavaActionParameter protected () extends CodeActionParameter {
   def this(
@@ -28,26 +28,54 @@ class JavaActionParameter protected () extends CodeActionParameter {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  @JSName("containerAsCodeAction")
-  val containerAsCodeAction_JavaActionParameter: CodeAction = js.native
-  @JSName("containerAsJavaAction")
-  val containerAsJavaAction_JavaActionParameter: JavaAction = js.native
   /**
+    * This property is required and cannot be set to null.
+    *
     * In version 6.7.0: deleted
     * In version 6.6.0: introduced
     */
-  var javaType: IType | Type = js.native
+  @JSName("javaType")
+  val javaType_FJavaActionParameter: IType = js.native
+  @JSName("model")
+  var model_FJavaActionParameter: IModel = js.native
   /**
+    * This property is required and cannot be set to null.
+    *
     * In version 7.21.0: deleted
     * In version 6.7.0: introduced
     */
-  var parameterType: IParameterType | ParameterType = js.native
+  @JSName("parameterType")
+  val parameterType_FJavaActionParameter: IParameterType = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 6.6.0: deleted
     */
-  var `type`: Null | String = js.native
+  @JSName("type")
+  val type_FJavaActionParameter: String | Null = js.native
+  @JSName("containerAsCodeAction")
+  def containerAsCodeAction_MJavaActionParameter(): CodeAction = js.native
+  @JSName("containerAsJavaAction")
+  def containerAsJavaAction_MJavaActionParameter(): JavaAction = js.native
+  /**
+    * In version 6.7.0: deleted
+    * In version 6.6.0: introduced
+    */
+  def javaType(): Type = js.native
+  def javaType(newValue: Type): js.Any = js.native
+  /**
+    * In version 7.21.0: deleted
+    * In version 6.7.0: introduced
+    */
+  def parameterType(): ParameterType = js.native
+  def parameterType(newValue: ParameterType): js.Any = js.native
+  /**
+    * The value of this property is conceptually of type dataTypes.LegacyDataType.
+    *
+    * In version 6.6.0: deleted
+    */
+  def `type`(): String = js.native
+  def `type`(newValue: String): js.Any = js.native
 }
 
 /* static members */

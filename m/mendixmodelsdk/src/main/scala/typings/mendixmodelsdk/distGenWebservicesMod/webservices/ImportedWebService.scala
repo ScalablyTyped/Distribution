@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.distGenWebservicesMod.webservices
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenWebservicesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -19,7 +21,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.distGenWebservicesMod.webservices.IImportedWebService because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.ImportedWebService")
+- typings.mendixmodelsdk.distGenWebservicesMod.webservices.IImportedWebService because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.ImportedWebService")
 @js.native
 class ImportedWebService protected () extends Document {
   def this(
@@ -29,12 +31,21 @@ class ImportedWebService protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  @JSName("model")
+  var model_FImportedWebService: IModel = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MImportedWebService(): FolderBase = js.native
   /**
     * In version 6.4.1: introduced
     */
-  var useMtom: Boolean = js.native
-  var wsdlDescription: WsdlDescription | Null = js.native
-  var wsdlUrl: String = js.native
+  def useMtom(): Boolean = js.native
+  def useMtom(newValue: Boolean): js.Any = js.native
+  def wsdlDescription(): WsdlDescription | Null = js.native
+  def wsdlDescription(newValue: WsdlDescription): js.Any = js.native
+  @JSName("wsdlDescription")
+  def wsdlDescription_Any(): js.Any = js.native
+  def wsdlUrl(): String = js.native
+  def wsdlUrl(newValue: String): js.Any = js.native
 }
 
 /* static members */

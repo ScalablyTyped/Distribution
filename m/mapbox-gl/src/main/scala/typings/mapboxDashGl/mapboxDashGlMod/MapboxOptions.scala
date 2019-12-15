@@ -12,6 +12,12 @@ import scala.scalajs.js.annotation._
 
 trait MapboxOptions extends js.Object {
   /**
+    * If specified, map will use this token instead of the one defined in mapboxgl.accessToken.
+    * 
+    * @default null
+    */
+  var accessToken: js.UndefOr[String] = js.undefined
+  /**
     * If true, the gl context will be created with MSA antialiasing, which can be useful for antialiasing custom layers.
     * This is false by default as a performance optimization.
     */
@@ -174,6 +180,7 @@ object MapboxOptions {
   @scala.inline
   def apply(
     container: String | Element,
+    accessToken: String = null,
     antialias: js.UndefOr[Boolean] = js.undefined,
     attributionControl: js.UndefOr[Boolean] = js.undefined,
     bearing: Int | Double = null,
@@ -216,6 +223,7 @@ object MapboxOptions {
     zoom: Int | Double = null
   ): MapboxOptions = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
     if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.asInstanceOf[js.Any])
     if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl.asInstanceOf[js.Any])
     if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])

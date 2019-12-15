@@ -23,8 +23,13 @@ class MicroflowParameterValue protected () extends ExpressionBasedCodeActionPara
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var microflow: IMicroflow | Null = js.native
-  val microflowQualifiedName: String | Null = js.native
+  @JSName("model")
+  var model_FMicroflowParameterValue: IModel = js.native
+  def microflow(): IMicroflow | Null = js.native
+  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflowQualifiedName(): String | Null = js.native
+  @JSName("microflow")
+  def microflow_Any(): js.Any = js.native
 }
 
 /* static members */

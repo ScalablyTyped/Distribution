@@ -21,11 +21,14 @@ class SnippetCall protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsSnippetCallWidget: SnippetCallWidget = js.native
   @JSName("model")
-  var model_SnippetCall: IModel = js.native
-  var snippet: ISnippet | Null = js.native
-  val snippetQualifiedName: String | Null = js.native
+  var model_FSnippetCall: IModel = js.native
+  def containerAsSnippetCallWidget(): SnippetCallWidget = js.native
+  def snippet(): ISnippet | Null = js.native
+  def snippet(newValue: ISnippet): js.Any = js.native
+  def snippetQualifiedName(): String | Null = js.native
+  @JSName("snippet")
+  def snippet_Any(): js.Any = js.native
 }
 
 /* static members */

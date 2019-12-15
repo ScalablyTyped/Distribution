@@ -1,8 +1,10 @@
 package typings.mendixmodelsdk.distGenMicroflowsMod.microflows
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IMicroflowActionInfo
 import typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.MicroflowActionInfo
 import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenSecurityMod.security.IModuleRole
 import typings.mendixmodelsdk.distGenTextsMod.texts.Text
@@ -25,7 +27,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflowBase because Already inherited
 - typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IServerSideMicroflow because Already inherited
-- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflow because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined allowedModuleRoles, allowedModuleRolesQualifiedNames, microflowActionInfo */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Microflow")
+- typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflow because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined allowedModuleRoles, allowedModuleRolesQualifiedNames, microflowActionInfo */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Microflow")
 @js.native
 class Microflow protected () extends ServerSideMicroflow {
   def this(
@@ -35,19 +37,43 @@ class Microflow protected () extends ServerSideMicroflow {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
-  var allowConcurrentExecution: Boolean = js.native
+  @JSName("allowedModuleRolesQualifiedNames")
+  val allowedModuleRolesQualifiedNames_FMicroflow: js.Array[String] = js.native
   /**
     * In version 7.23.0: added public
     */
-  val allowedModuleRoles: IList[IModuleRole] = js.native
-  val allowedModuleRolesQualifiedNames: js.Array[String] = js.native
-  var concurrencyErrorMessage: Text = js.native
-  var concurrencyErrorMicroflow: IMicroflow | Null = js.native
-  val concurrencyErrorMicroflowQualifiedName: String | Null = js.native
+  @JSName("allowedModuleRoles")
+  val allowedModuleRoles_FMicroflow: IList[IModuleRole] = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var microflowActionInfo: IMicroflowActionInfo | MicroflowActionInfo | Null = js.native
+  @JSName("microflowActionInfo")
+  val microflowActionInfo_FMicroflow: IMicroflowActionInfo | Null = js.native
+  @JSName("model")
+  var model_FMicroflow: IModel = js.native
+  def allowConcurrentExecution(): Boolean = js.native
+  def allowConcurrentExecution(newValue: Boolean): js.Any = js.native
+  /**
+    * In version 7.23.0: added public
+    */
+  def allowedModuleRoles(): IList[IModuleRole] = js.native
+  def allowedModuleRolesQualifiedNames(): js.Array[String] = js.native
+  def concurrencyErrorMessage(): Text = js.native
+  def concurrencyErrorMessage(newValue: Text): js.Any = js.native
+  def concurrencyErrorMicroflow(): IMicroflow | Null = js.native
+  def concurrencyErrorMicroflow(newValue: IMicroflow): js.Any = js.native
+  def concurrencyErrorMicroflowQualifiedName(): String | Null = js.native
+  @JSName("concurrencyErrorMicroflow")
+  def concurrencyErrorMicroflow_Any(): js.Any = js.native
+  @JSName("containerAsFolderBase")
+  def containerAsFolderBase_MMicroflow(): FolderBase = js.native
+  /**
+    * In version 8.0.0: introduced
+    */
+  def microflowActionInfo(): MicroflowActionInfo | Null = js.native
+  def microflowActionInfo(newValue: MicroflowActionInfo): js.Any = js.native
+  @JSName("microflowActionInfo")
+  def microflowActionInfo_Any(): js.Any = js.native
 }
 
 /* static members */

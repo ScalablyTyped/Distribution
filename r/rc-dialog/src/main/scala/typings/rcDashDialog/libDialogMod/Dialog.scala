@@ -22,6 +22,7 @@ trait Dialog
   var openTime: js.Any = js.native
   var sentinelEnd: js.Any = js.native
   var sentinelStart: js.Any = js.native
+  var switchScrollingEffect: js.Any = js.native
   var timeoutId: js.Any = js.native
   var titleId: js.Any = js.native
   var wrap: js.Any = js.native
@@ -44,7 +45,6 @@ trait Dialog
   def onKeyDown(e: KeyboardEvent[HTMLDivElement]): Unit = js.native
   def onMaskClick(e: typings.react.reactMod.MouseEvent[HTMLDivElement, MouseEvent]): Unit = js.native
   def saveRef(name: String): js.Function1[/* node */ js.Any, Unit] = js.native
-  def switchScrollingEffect(): Unit = js.native
   def tryFocus(): Unit = js.native
 }
 

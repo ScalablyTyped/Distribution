@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAttributeType because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.INumericAttributeTypeBase because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IIntegerAttributeTypeBase because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.ILongAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.LongAttributeType")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.ILongAttributeType because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.LongAttributeType")
 @js.native
 class LongAttributeType protected () extends IntegerAttributeTypeBase {
   def this(
@@ -27,6 +27,10 @@ class LongAttributeType protected () extends IntegerAttributeTypeBase {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FLongAttributeType: IModel = js.native
+  @JSName("containerAsAttribute")
+  def containerAsAttribute_MLongAttributeType(): Attribute = js.native
 }
 
 /* static members */

@@ -27,12 +27,14 @@ class ODataAttribute protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var attribute: IAttribute = js.native
-  val attributeQualifiedName: String = js.native
-  val containerAsODataEntity: ODataEntity = js.native
   @JSName("model")
-  var model_ODataAttribute: IModel = js.native
-  var name: String = js.native
+  var model_FODataAttribute: IModel = js.native
+  def attribute(): IAttribute = js.native
+  def attribute(newValue: IAttribute): js.Any = js.native
+  def attributeQualifiedName(): String = js.native
+  def containerAsODataEntity(): ODataEntity = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
 }
 
 /* static members */

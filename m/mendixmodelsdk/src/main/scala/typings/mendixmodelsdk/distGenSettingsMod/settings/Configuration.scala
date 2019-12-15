@@ -25,29 +25,44 @@ class Configuration protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var adminPortNumber: Double = js.native
-  var adminPortOnlyLocal: Boolean = js.native
-  var applicationRootUrl: String = js.native
-  val constantValues: IList[ConstantValue] = js.native
-  val containerAsConfigurationSettings: ConfigurationSettings = js.native
-  val customSettings: IList[CustomSetting] = js.native
-  var databaseName: String = js.native
-  var databasePassword: String = js.native
-  var databaseType: DatabaseType = js.native
-  var databaseUrl: String = js.native
-  var databaseUseIntegratedSecurity: Boolean = js.native
-  var databaseUserName: String = js.native
+  @JSName("model")
+  var model_FConfiguration: IModel = js.native
+  def adminPortNumber(): Double = js.native
+  def adminPortNumber(newValue: Double): js.Any = js.native
+  def adminPortOnlyLocal(): Boolean = js.native
+  def adminPortOnlyLocal(newValue: Boolean): js.Any = js.native
+  def applicationRootUrl(): String = js.native
+  def applicationRootUrl(newValue: String): js.Any = js.native
+  def constantValues(): IList[ConstantValue] = js.native
+  def containerAsConfigurationSettings(): ConfigurationSettings = js.native
+  def customSettings(): IList[CustomSetting] = js.native
+  def databaseName(): String = js.native
+  def databaseName(newValue: String): js.Any = js.native
+  def databasePassword(): String = js.native
+  def databasePassword(newValue: String): js.Any = js.native
+  def databaseType(): DatabaseType = js.native
+  def databaseType(newValue: DatabaseType): js.Any = js.native
+  def databaseUrl(): String = js.native
+  def databaseUrl(newValue: String): js.Any = js.native
+  def databaseUseIntegratedSecurity(): Boolean = js.native
+  def databaseUseIntegratedSecurity(newValue: Boolean): js.Any = js.native
+  def databaseUserName(): String = js.native
+  def databaseUserName(newValue: String): js.Any = js.native
   /**
     * In version 7.21.0: deleted
     */
-  var emulateCloudSecurity: Boolean = js.native
-  var extraJvmParameters: String = js.native
-  var maxJavaHeapSize: Double = js.native
-  @JSName("model")
-  var model_Configuration: IModel = js.native
-  var name: String = js.native
-  var runtimePortNumber: Double = js.native
-  var runtimePortOnlyLocal: Boolean = js.native
+  def emulateCloudSecurity(): Boolean = js.native
+  def emulateCloudSecurity(newValue: Boolean): js.Any = js.native
+  def extraJvmParameters(): String = js.native
+  def extraJvmParameters(newValue: String): js.Any = js.native
+  def maxJavaHeapSize(): Double = js.native
+  def maxJavaHeapSize(newValue: Double): js.Any = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  def runtimePortNumber(): Double = js.native
+  def runtimePortNumber(newValue: Double): js.Any = js.native
+  def runtimePortOnlyLocal(): Boolean = js.native
+  def runtimePortOnlyLocal(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

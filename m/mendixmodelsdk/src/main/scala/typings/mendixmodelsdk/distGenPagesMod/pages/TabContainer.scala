@@ -28,8 +28,13 @@ class TabContainer protected () extends ConditionallyVisibleWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var defaultPage: TabPage | Null = js.native
-  val tabPages: IList[TabPage] = js.native
+  @JSName("model")
+  var model_FTabContainer: IModel = js.native
+  def defaultPage(): TabPage | Null = js.native
+  def defaultPage(newValue: TabPage): js.Any = js.native
+  @JSName("defaultPage")
+  def defaultPage_Any(): js.Any = js.native
+  def tabPages(): IList[TabPage] = js.native
 }
 
 /* static members */
@@ -278,6 +283,15 @@ object TabContainer extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): TabContainer = js.native
+  /**
+    * Creates and returns a new TabContainer instance in the SDK and on the server.
+    * The new TabContainer will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TabContainer = js.native
   /**
     * Creates and returns a new TabContainer instance in the SDK and on the server.
     * The new TabContainer will be automatically stored in the 'widgets' property

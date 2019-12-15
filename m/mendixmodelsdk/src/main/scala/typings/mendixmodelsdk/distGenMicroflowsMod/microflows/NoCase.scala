@@ -20,6 +20,8 @@ class NoCase protected () extends CaseValue {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FNoCase: IModel = js.native
 }
 
 /* static members */

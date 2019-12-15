@@ -24,11 +24,15 @@ class Certificate protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsCertificateSettings: CertificateSettings = js.native
-  var data: String | Null = js.native
   @JSName("model")
-  var model_Certificate: IModel = js.native
-  var `type`: CertificateType = js.native
+  var model_FCertificate: IModel = js.native
+  def containerAsCertificateSettings(): CertificateSettings = js.native
+  def data(): String | Null = js.native
+  def data(newValue: String): js.Any = js.native
+  @JSName("data")
+  def data_Any(): js.Any = js.native
+  def `type`(): CertificateType = js.native
+  def `type`(newValue: CertificateType): js.Any = js.native
 }
 
 /* static members */

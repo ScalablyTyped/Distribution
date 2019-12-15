@@ -17,12 +17,12 @@ trait Anon_ColorCurvenessEmphasisOpacity extends js.Object {
     * Gradient color and texture are also supported besides
     * single colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.markLine.lineStyle)
+    * > [see doc](https://echarts.apache.org/en/option.html#series-line.line.markLine.lineStyle)
     *
     *
     * @default
     * "#000"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.lineStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.color
     */
   var color: js.UndefOr[Color] = js.undefined
   /**
@@ -30,11 +30,11 @@ trait Anon_ColorCurvenessEmphasisOpacity extends js.Object {
     * The larger the value, the greater the curvature.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.lineStyle.curveness
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.curveness
     */
   var curveness: js.UndefOr[Double] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.lineStyle.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.emphasis
     */
   var emphasis: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
   /**
@@ -43,7 +43,7 @@ trait Anon_ColorCurvenessEmphasisOpacity extends js.Object {
     * be drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.lineStyle.opacity
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -53,31 +53,31 @@ trait Anon_ColorCurvenessEmphasisOpacity extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.markLine.lineStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-line.line.markLine.lineStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.lineStyle.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.lineStyle.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.lineStyle.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.lineStyle.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
@@ -92,14 +92,14 @@ trait Anon_ColorCurvenessEmphasisOpacity extends js.Object {
     *
     * @default
     * "solid"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.lineStyle.type
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * line width.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.lineStyle.width
+    * @see https://echarts.apache.org/en/option.html#series-line.markLine.lineStyle.width
     */
   var width: js.UndefOr[Double] = js.undefined
 }

@@ -22,14 +22,19 @@ class DatabaseConstraint protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var attribute: IAttribute | Null = js.native
-  val attributeQualifiedName: String | Null = js.native
-  val containerAsDatabaseSourceBase: DatabaseSourceBase = js.native
-  val containerAsSelectorDatabaseSource: SelectorDatabaseSource = js.native
   @JSName("model")
-  var model_DatabaseConstraint: IModel = js.native
-  var operator: DatabaseConstraintOperator = js.native
-  var value: String = js.native
+  var model_FDatabaseConstraint: IModel = js.native
+  def attribute(): IAttribute | Null = js.native
+  def attribute(newValue: IAttribute): js.Any = js.native
+  def attributeQualifiedName(): String | Null = js.native
+  @JSName("attribute")
+  def attribute_Any(): js.Any = js.native
+  def containerAsDatabaseSourceBase(): DatabaseSourceBase = js.native
+  def containerAsSelectorDatabaseSource(): SelectorDatabaseSource = js.native
+  def operator(): DatabaseConstraintOperator = js.native
+  def operator(newValue: DatabaseConstraintOperator): js.Any = js.native
+  def value(): String = js.native
+  def value(newValue: String): js.Any = js.native
 }
 
 /* static members */

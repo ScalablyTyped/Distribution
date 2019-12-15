@@ -82,8 +82,8 @@ import scala.scalajs.js.annotation._
 
 trait ITooltipProps extends HTMLAttributes[HTMLDivElement | TooltipBase] {
   /**
-    * Properties to pass through for Callout, reference detail properties in ICalloutProps
-    * @defaultvalue isBeakVisible: true, beakWidth: 16, gapSpace: 0, setInitialFocus: true, doNotLayer: false
+    * Properties to pass through for Callout.
+    * @defaultvalue `{ isBeakVisible: true, beakWidth: 16, gapSpace: 0, setInitialFocus: true, doNotLayer: false }`
     */
   var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
   /**
@@ -92,16 +92,16 @@ trait ITooltipProps extends HTMLAttributes[HTMLDivElement | TooltipBase] {
     */
   var componentRef: js.UndefOr[IRefObject[ITooltip]] = js.undefined
   /**
-    *  Content to be passed to the tooltip
+    * Content to be passed to the tooltip
     */
   var content: js.UndefOr[String | Element | js.Array[Element]] = js.undefined
   /**
-    * Length of delay. Can be set to zero if you do not want a delay.
-    * @defaultvalue medium
+    * Length of delay. Set to `TooltipDelay.zero` if you do not want a delay.
+    * @defaultvalue TooltipDelay.medium
     */
   var delay: js.UndefOr[TooltipDelay] = js.undefined
   /**
-    * Indicator of how the tooltip should be anchored to its targetElement.
+    * How the tooltip should be anchored to its `targetElement`.
     * @defaultvalue DirectionalHint.topCenter
     */
   var directionalHint: js.UndefOr[DirectionalHint] = js.undefined
@@ -116,7 +116,7 @@ trait ITooltipProps extends HTMLAttributes[HTMLDivElement | TooltipBase] {
     */
   var maxWidth: js.UndefOr[String | Null] = js.undefined
   /**
-    *  Render function to populate content area
+    * Render function to populate tooltip content.
     */
   var onRenderContent: js.UndefOr[IRenderFunction[ITooltipProps]] = js.undefined
   /**
@@ -128,7 +128,7 @@ trait ITooltipProps extends HTMLAttributes[HTMLDivElement | TooltipBase] {
     */
   var targetElement: js.UndefOr[HTMLElement] = js.undefined
   /**
-    * Theme to apply to the component.
+    * Theme provided by higher-order component.
     */
   var theme: js.UndefOr[ITheme] = js.undefined
 }

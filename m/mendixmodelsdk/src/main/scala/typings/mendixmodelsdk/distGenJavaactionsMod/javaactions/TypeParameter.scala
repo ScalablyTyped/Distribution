@@ -32,10 +32,12 @@ class TypeParameter protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsJavaAction: IJavaAction | JavaAction = js.native
+  @JSName("containerAsJavaAction")
+  val containerAsJavaAction_FTypeParameter: IJavaAction = js.native
   @JSName("model")
-  var model_TypeParameter: IModel = js.native
-  var name: String = js.native
+  var model_FTypeParameter: IModel = js.native
+  @JSName("name")
+  val name_FTypeParameter: String = js.native
   /**
     * Returns the qualified name of this element, or
     * null if this element is not a part of the model,
@@ -44,6 +46,11 @@ class TypeParameter protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
+  def containerAsJavaAction(): JavaAction = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  @JSName("qualifiedName")
+  def qualifiedName_MTypeParameter(): String | Null = js.native
 }
 
 /* static members */

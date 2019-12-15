@@ -30,6 +30,11 @@ trait DropdownListProps
     */
   var busy: js.UndefOr[Boolean] = js.undefined
   /**
+    * An optional ReactNode to override the spinner gif element when the busy property
+    * is set to true.
+    */
+  var busySpinner: js.UndefOr[ReactNode] = js.undefined
+  /**
     * Use in conjunction with the filter prop. Filter the list without regard for case. This
     * only applies to non function values for filter
     * @default false
@@ -193,6 +198,7 @@ object DropdownListProps {
     allowCreate: Boolean | onFilter = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     busy: js.UndefOr[Boolean] = js.undefined,
+    busySpinner: ReactNode = null,
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     containerClassName: String = null,
@@ -237,6 +243,7 @@ object DropdownListProps {
     if (allowCreate != null) __obj.updateDynamic("allowCreate")(allowCreate.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
     if (!js.isUndefined(busy)) __obj.updateDynamic("busy")(busy.asInstanceOf[js.Any])
+    if (busySpinner != null) __obj.updateDynamic("busySpinner")(busySpinner.asInstanceOf[js.Any])
     if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])

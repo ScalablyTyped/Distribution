@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenMessagedefinitionsMod.messagedefinitions
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMappingsMod.mappings.Element
 import typings.mendixmodelsdk.distGenMessagedefinitionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -23,15 +24,20 @@ abstract class ExposedMember protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FExposedMember: IModel = js.native
   /**
     * In version 7.15.0: introduced
     */
-  var documentation: String = js.native
+  def documentation(): String = js.native
+  def documentation(newValue: String): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  var example: String = js.native
-  var originalName: String = js.native
+  def example(): String = js.native
+  def example(newValue: String): js.Any = js.native
+  def originalName(): String = js.native
+  def originalName(newValue: String): js.Any = js.native
 }
 
 /* static members */

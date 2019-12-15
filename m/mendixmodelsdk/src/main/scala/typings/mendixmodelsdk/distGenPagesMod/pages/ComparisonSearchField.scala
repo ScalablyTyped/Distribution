@@ -23,6 +23,8 @@ class ComparisonSearchField protected () extends SingleSearchField {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FComparisonSearchField: IModel = js.native
 }
 
 /* static members */

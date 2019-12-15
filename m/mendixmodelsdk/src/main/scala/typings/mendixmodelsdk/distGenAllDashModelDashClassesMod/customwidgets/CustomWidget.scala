@@ -297,6 +297,15 @@ object CustomWidget extends js.Object {
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.CustomWidget = js.native
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
+    * The new CustomWidget will be automatically stored in the 'sidebarWidgets' property
+    * of the parent pages.NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.CustomWidget = js.native
+  /**
+    * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * The new CustomWidget will be automatically stored in the 'widgets' property
     * of the parent pages.NativeLayoutContent element passed as argument.
     *

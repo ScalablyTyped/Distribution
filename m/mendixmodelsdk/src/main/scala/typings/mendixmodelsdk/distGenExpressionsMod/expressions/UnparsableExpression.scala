@@ -30,6 +30,7 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceCallActi
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceOperationParameterMapping
 import typings.mendixmodelsdk.distGenPagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.distGenPagesMod.pages.WidgetValidation
+import typings.mendixmodelsdk.distGenRestMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -53,7 +54,10 @@ class UnparsableExpression protected () extends Expression {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var expression: String = js.native
+  @JSName("model")
+  var model_FUnparsableExpression: IModel = js.native
+  def expression(): String = js.native
+  def expression(newValue: String): js.Any = js.native
 }
 
 /* static members */
@@ -149,6 +153,15 @@ object UnparsableExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): UnparsableExpression = js.native
+  /**
+    * Creates and returns a new UnparsableExpression instance in the SDK and on the server.
+    * The new UnparsableExpression will be automatically stored in the 'timeoutModel' property
+    * of the parent rest.ConsumedODataService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): UnparsableExpression = js.native
   /**
     * Creates and returns a new UnparsableExpression instance in the SDK and on the server.
     * The new UnparsableExpression will be automatically stored in the 'initialValueModel' property

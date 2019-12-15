@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 trait Anon_AreaStyle extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.emphasis.areaStyle
+    * @see https://echarts.apache.org/en/option.html#series-radar.emphasis.areaStyle
     */
   var areaStyle: js.UndefOr[Anon_ColorOpacity] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.emphasis.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-radar.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.emphasis.label
+    * @see https://echarts.apache.org/en/option.html#series-radar.emphasis.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.emphasis.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-radar.emphasis.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
 }

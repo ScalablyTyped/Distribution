@@ -162,6 +162,10 @@ object libLinearListCollectionMod extends js.Object {
         */
       var source_ptr_ : js.Any = js.native
       def equals(obj: typings.tstl.containerListMod.List.Iterator[T]): Boolean = js.native
+      /**
+        * @inheritDoc
+        */
+      def value(`val`: T): js.Any = js.native
     }
     
     /**
@@ -177,7 +181,12 @@ object libLinearListCollectionMod extends js.Object {
               typings.tstl.containerListMod.List.Iterator[T], 
               typings.tstl.containerListMod.List.ReverseIterator[T], 
               T
-            ]
+            ] {
+      /**
+        * @inheritDoc
+        */
+      def value(`val`: T): js.Any = js.native
+    }
     
     val Event: Instantiable3[
         /* type */ String, 

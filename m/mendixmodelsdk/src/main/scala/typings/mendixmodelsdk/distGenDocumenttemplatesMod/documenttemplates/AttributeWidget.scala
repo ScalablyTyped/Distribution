@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.AttributeRef
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -20,16 +21,22 @@ abstract class AttributeWidget protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FAttributeWidget: IModel = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
-  var attributePath: String = js.native
+  def attributePath(): String = js.native
+  def attributePath(newValue: String): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
-  var attributeRef: AttributeRef | Null = js.native
+  def attributeRef(): AttributeRef | Null = js.native
+  def attributeRef(newValue: AttributeRef): js.Any = js.native
+  @JSName("attributeRef")
+  def attributeRef_Any(): js.Any = js.native
 }
 
 /* static members */

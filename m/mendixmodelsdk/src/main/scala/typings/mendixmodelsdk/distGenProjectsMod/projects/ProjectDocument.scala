@@ -26,9 +26,11 @@ abstract class ProjectDocument protected () extends ModelUnit {
     isPartial: Boolean,
     container: IProject
   ) = this()
-  val containerAsProject: IProject | Project = js.native
+  @JSName("containerAsProject")
+  val containerAsProject_FProjectDocument: IProject = js.native
   @JSName("model")
-  var model_ProjectDocument: IModel = js.native
+  var model_FProjectDocument: IModel = js.native
+  def containerAsProject(): Project = js.native
 }
 
 /* static members */

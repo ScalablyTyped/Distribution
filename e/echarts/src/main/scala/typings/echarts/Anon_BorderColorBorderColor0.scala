@@ -17,12 +17,12 @@ trait Anon_BorderColorBorderColor0 extends js.Object {
     * Gradient color and texture are also supported besides
     * single colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick.data.emphasis.itemStyle)
+    * > [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick.data.emphasis.itemStyle)
     *
     *
     * @default
     * "#c23531"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis.itemStyle.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis.itemStyle.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
@@ -37,12 +37,12 @@ trait Anon_BorderColorBorderColor0 extends js.Object {
     * Gradient color and texture are also supported besides
     * single colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick.data.emphasis.itemStyle)
+    * > [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick.data.emphasis.itemStyle)
     *
     *
     * @default
     * #314656
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis.itemStyle.borderColor0
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis.itemStyle.borderColor0
     */
   var borderColor0: js.UndefOr[String] = js.undefined
   /**
@@ -52,7 +52,7 @@ trait Anon_BorderColorBorderColor0 extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis.itemStyle.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis.itemStyle.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -67,12 +67,12 @@ trait Anon_BorderColorBorderColor0 extends js.Object {
     * Gradient color and texture are also supported besides
     * single colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick.data.emphasis.itemStyle)
+    * > [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick.data.emphasis.itemStyle)
     *
     *
     * @default
     * "#c23531"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis.itemStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis.itemStyle.color
     */
   var color: js.UndefOr[String] = js.undefined
   /**
@@ -87,12 +87,12 @@ trait Anon_BorderColorBorderColor0 extends js.Object {
     * Gradient color and texture are also supported besides
     * single colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick.data.emphasis.itemStyle)
+    * > [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick.data.emphasis.itemStyle)
     *
     *
     * @default
     * #314656
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis.itemStyle.color0
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis.itemStyle.color0
     */
   var color0: js.UndefOr[String] = js.undefined
   /**
@@ -101,7 +101,7 @@ trait Anon_BorderColorBorderColor0 extends js.Object {
     * not be drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis.itemStyle.opacity
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis.itemStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -111,31 +111,31 @@ trait Anon_BorderColorBorderColor0 extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick.data.emphasis.itemStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick.data.emphasis.itemStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis.itemStyle.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis.itemStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis.itemStyle.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis.itemStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis.itemStyle.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis.itemStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis.itemStyle.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.data.emphasis.itemStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
 }

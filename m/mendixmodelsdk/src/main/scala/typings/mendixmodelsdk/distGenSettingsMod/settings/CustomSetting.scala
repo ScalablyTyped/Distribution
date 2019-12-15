@@ -21,11 +21,13 @@ class CustomSetting protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsConfiguration: Configuration = js.native
   @JSName("model")
-  var model_CustomSetting: IModel = js.native
-  var name: String = js.native
-  var value: String = js.native
+  var model_FCustomSetting: IModel = js.native
+  def containerAsConfiguration(): Configuration = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  def value(): String = js.native
+  def value(newValue: String): js.Any = js.native
 }
 
 /* static members */

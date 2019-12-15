@@ -29,12 +29,20 @@ abstract class FolderBase protected () extends StructuralUnit {
     isPartial: Boolean,
     container: IProject
   ) = this()
-  val containerAsFolderBase: FolderBase | IFolderBase = js.native
-  val containerAsProject: IProject | Project = js.native
-  val documents: IList[IDocument] = js.native
-  val folders: IList[IFolder] = js.native
+  @JSName("containerAsFolderBase")
+  val containerAsFolderBase_FFolderBase: IFolderBase = js.native
+  @JSName("containerAsProject")
+  val containerAsProject_FFolderBase: IProject = js.native
+  @JSName("documents")
+  var documents_FFolderBase: IList[IDocument] = js.native
+  @JSName("folders")
+  var folders_FFolderBase: IList[IFolder] = js.native
   @JSName("model")
-  var model_FolderBase: IModel = js.native
+  var model_FFolderBase: IModel = js.native
+  def containerAsFolderBase(): FolderBase = js.native
+  def containerAsProject(): Project = js.native
+  def documents(): IList[IDocument] = js.native
+  def folders(): IList[IFolder] = js.native
 }
 
 /* static members */

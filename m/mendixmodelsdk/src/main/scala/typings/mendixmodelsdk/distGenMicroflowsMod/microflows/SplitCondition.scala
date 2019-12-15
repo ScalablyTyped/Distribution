@@ -21,9 +21,9 @@ abstract class SplitCondition protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsExclusiveSplit: ExclusiveSplit = js.native
   @JSName("model")
-  var model_SplitCondition: IModel = js.native
+  var model_FSplitCondition: IModel = js.native
+  def containerAsExclusiveSplit(): ExclusiveSplit = js.native
 }
 
 /* static members */

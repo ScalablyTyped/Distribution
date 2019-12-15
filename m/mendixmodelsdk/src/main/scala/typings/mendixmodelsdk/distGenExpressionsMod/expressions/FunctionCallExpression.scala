@@ -30,6 +30,7 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceCallActi
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.WebServiceOperationParameterMapping
 import typings.mendixmodelsdk.distGenPagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.distGenPagesMod.pages.WidgetValidation
+import typings.mendixmodelsdk.distGenRestMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -54,11 +55,14 @@ class FunctionCallExpression protected () extends Expression {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FFunctionCallExpression: IModel = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  val arguments: IList[Expression] = js.native
-  var functionName: String = js.native
+  def arguments(): IList[Expression] = js.native
+  def functionName(): String = js.native
+  def functionName(newValue: String): js.Any = js.native
 }
 
 /* static members */
@@ -154,6 +158,15 @@ object FunctionCallExpression extends js.Object {
     *  7.9.0 and higher
     */
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): FunctionCallExpression = js.native
+  /**
+    * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
+    * The new FunctionCallExpression will be automatically stored in the 'timeoutModel' property
+    * of the parent rest.ConsumedODataService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): FunctionCallExpression = js.native
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'initialValueModel' property

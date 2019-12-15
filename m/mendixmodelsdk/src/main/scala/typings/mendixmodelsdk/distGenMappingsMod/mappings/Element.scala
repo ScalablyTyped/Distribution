@@ -30,30 +30,44 @@ abstract class Element protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val children: IList[Element] = js.native
-  val containerAsElement: Element = js.native
-  val containerAsEntityMessageDefinition: EntityMessageDefinition = js.native
-  val containerAsJsonStructure: JsonStructure = js.native
-  var elementType: ElementType = js.native
-  var errorMessage: String = js.native
+  def children(): IList[Element] = js.native
+  def containerAsElement(): Element = js.native
+  def containerAsEntityMessageDefinition(): EntityMessageDefinition = js.native
+  def containerAsJsonStructure(): JsonStructure = js.native
+  def elementType(): ElementType = js.native
+  def elementType(newValue: ElementType): js.Any = js.native
+  def errorMessage(): String = js.native
+  def errorMessage(newValue: String): js.Any = js.native
   /**
     * In version 7.6.0: introduced
     */
-  var exposedItemName: String = js.native
-  var exposedName: String = js.native
-  var fractionDigits: Double = js.native
-  var isDefaultType: Boolean = js.native
-  var maxLength: Double = js.native
-  var maxOccurs: Double = js.native
-  var minOccurs: Double = js.native
-  var nillable: Boolean = js.native
+  def exposedItemName(): String = js.native
+  def exposedItemName(newValue: String): js.Any = js.native
+  def exposedName(): String = js.native
+  def exposedName(newValue: String): js.Any = js.native
+  def fractionDigits(): Double = js.native
+  def fractionDigits(newValue: Double): js.Any = js.native
+  def isDefaultType(): Boolean = js.native
+  def isDefaultType(newValue: Boolean): js.Any = js.native
+  def maxLength(): Double = js.native
+  def maxLength(newValue: Double): js.Any = js.native
+  def maxOccurs(): Double = js.native
+  def maxOccurs(newValue: Double): js.Any = js.native
+  def minOccurs(): Double = js.native
+  def minOccurs(newValue: Double): js.Any = js.native
+  def nillable(): Boolean = js.native
+  def nillable(newValue: Boolean): js.Any = js.native
   /**
     * The value of this property is conceptually of type mappings.ElementPath.
     */
-  var path: String = js.native
-  var primitiveType: XmlPrimitiveType = js.native
-  var totalDigits: Double = js.native
-  var warningMessage: String = js.native
+  def path(): String = js.native
+  def path(newValue: String): js.Any = js.native
+  def primitiveType(): XmlPrimitiveType = js.native
+  def primitiveType(newValue: XmlPrimitiveType): js.Any = js.native
+  def totalDigits(): Double = js.native
+  def totalDigits(newValue: Double): js.Any = js.native
+  def warningMessage(): String = js.native
+  def warningMessage(newValue: String): js.Any = js.native
 }
 
 /* static members */

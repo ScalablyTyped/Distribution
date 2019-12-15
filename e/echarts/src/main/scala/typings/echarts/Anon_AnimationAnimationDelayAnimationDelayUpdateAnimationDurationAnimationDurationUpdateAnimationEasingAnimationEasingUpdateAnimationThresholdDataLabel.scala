@@ -11,7 +11,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.animation
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -21,14 +21,14 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markLine)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -37,50 +37,50 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markLine)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markLine)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markLine)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -89,7 +89,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -100,7 +100,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -112,37 +112,37 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * and ending point.
     *
     * 1. Assign coordinate according to container with
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.0.x)
+    * [x](https://echarts.apache.org/en/option.html#series-map.markLine.data.0.x)
     * ,
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.0.y)
+    * [y](https://echarts.apache.org/en/option.html#series-map.markLine.data.0.y)
     * attribute, in which pixel values and percentage are supported.
     *
     * 2. Assign coordinate position with
-    * [coord](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.0.coord)
+    * [coord](https://echarts.apache.org/en/option.html#series-map.markLine.data.0.coord)
     * attribute, in which `'min'`, `'max'`, `'average'` are supported
     * for each dimension.
     *
     * When multiple attributes exist, priority is as the above
     * order.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markLine)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.data
     */
   var data: js.UndefOr[Anon_01AnonCoordLabelLineStyleName] = js.undefined
   /**
     * Mark line text.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.label
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.label
     */
   var label: js.UndefOr[Anon_Emphasis] = js.undefined
   /**
     * Mark line style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurveness] = js.undefined
   /**
@@ -152,7 +152,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.precision
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.precision
     */
   var precision: js.UndefOr[Double] = js.undefined
   /**
@@ -161,18 +161,18 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * mouse events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.silent
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
     * Symbol type at the two ends of the mark line.
     * It can be an array for two ends, or assigned seperately.
     * See
-    * [data.symbol](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.0.symbol)
+    * [data.symbol](https://echarts.apache.org/en/option.html#series-map.markLine.data.0.symbol)
     * for more format information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.symbol
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.symbol
     */
   var symbol: js.UndefOr[js.Array[_] | String] = js.undefined
   /**
@@ -183,7 +183,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * as normal `symbolSize`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-map.markLine.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
 }

@@ -54,89 +54,89 @@ class Rectangle protected () extends js.Object {
     * The bottom coordinate of the rectangle. Note that this doesn't move the
     * whole rectangle: the top won't move.
     */
-  var bottom: Double | Null = js.native
+  var bottom: Double = js.native
   /** 
     * The bottom-center point of the rectangle.
     */
-  var bottomCenter: Point | Null = js.native
+  var bottomCenter: Point = js.native
   /** 
     * The bottom-left point of the rectangle.
     */
-  var bottomLeft: Point | Null = js.native
+  var bottomLeft: Point = js.native
   /** 
     * The bottom-right point of the rectangle.
     */
-  var bottomRight: Point | Null = js.native
+  var bottomRight: Point = js.native
   /** 
     * The center point of the rectangle.
     */
-  var center: Point | Null = js.native
+  var center: Point = js.native
   /** 
     * The height of the rectangle.
     */
-  var height: Double | Null = js.native
+  var height: Double = js.native
   /** 
     * The position of the left hand side of the rectangle. Note that this
     * doesn't move the whole rectangle; the right hand side stays where it was.
     */
-  var left: Double | Null = js.native
+  var left: Double = js.native
   /** 
     * The left-center point of the rectangle.
     */
-  var leftCenter: Point | Null = js.native
+  var leftCenter: Point = js.native
   /** 
     * The top-left point of the rectangle
     */
-  var point: Point | Null = js.native
+  var point: Point = js.native
   /** 
     * The position of the right hand side of the rectangle. Note that this
     * doesn't move the whole rectangle; the left hand side stays where it was.
     */
-  var right: Double | Null = js.native
+  var right: Double = js.native
   /** 
     * The right-center point of the rectangle.
     */
-  var rightCenter: Point | Null = js.native
+  var rightCenter: Point = js.native
   /** 
     * Specifies whether an item's bounds are to appear as selected.
     * 
     * Paper.js draws the bounds of items with selected bounds on top of
     * your project. This is very useful when debugging.
     */
-  var selected: Boolean | Null = js.native
+  var selected: Boolean = js.native
   /** 
     * The size of the rectangle
     */
-  var size: Size | Null = js.native
+  var size: Size = js.native
   /** 
     * The top coordinate of the rectangle. Note that this doesn't move the
     * whole rectangle: the bottom won't move.
     */
-  var top: Double | Null = js.native
+  var top: Double = js.native
   /** 
     * The top-center point of the rectangle.
     */
-  var topCenter: Point | Null = js.native
+  var topCenter: Point = js.native
   /** 
     * The top-left point of the rectangle.
     */
-  var topLeft: Point | Null = js.native
+  var topLeft: Point = js.native
   /** 
     * The top-right point of the rectangle.
     */
-  var topRight: Point | Null = js.native
+  var topRight: Point = js.native
   /** 
     * The width of the rectangle.
     */
-  var width: Double | Null = js.native
+  var width: Double = js.native
   /** 
     * The x position of the rectangle.
     */
-  var x: Double | Null = js.native
+  var x: Double = js.native
   /** 
     * The y position of the rectangle.
     */
-  var y: Double | Null = js.native
+  var y: Double = js.native
   /** 
     * Tests if the specified point is inside the boundary of the rectangle.
     * 

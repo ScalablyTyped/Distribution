@@ -30,7 +30,6 @@ object distSdkInternalPropertiesAbstractPropertyMod extends js.Object {
     var name: String = js.native
     var observableValue: P = js.native
     var parent: Structure = js.native
-    val versionInfo: PropertyVersionInfo = js.native
     def deepCopyInto(
       clone: Structure,
       idMap: IMap[Structure],
@@ -40,6 +39,7 @@ object distSdkInternalPropertiesAbstractPropertyMod extends js.Object {
     def get(): T = js.native
     def reportAvailabilityIssues(): Unit = js.native
     def updateWithRawValue(value: js.Any): Unit = js.native
+    def versionInfo(): PropertyVersionInfo = js.native
   }
   
 }

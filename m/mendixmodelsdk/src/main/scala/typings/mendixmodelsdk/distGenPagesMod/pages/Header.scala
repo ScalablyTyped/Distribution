@@ -28,22 +28,30 @@ class Header protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FHeader: IModel = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var leftWidget: Widget | Null = js.native
+  def leftWidget(): Widget | Null = js.native
+  def leftWidget(newValue: Widget): js.Any = js.native
+  @JSName("leftWidget")
+  def leftWidget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val leftWidgets: IList[Widget] = js.native
+  def leftWidgets(): IList[Widget] = js.native
   /**
     * In version 7.15.0: deleted
     */
-  var rightWidget: Widget | Null = js.native
+  def rightWidget(): Widget | Null = js.native
+  def rightWidget(newValue: Widget): js.Any = js.native
+  @JSName("rightWidget")
+  def rightWidget_Any(): js.Any = js.native
   /**
     * In version 7.15.0: introduced
     */
-  val rightWidgets: IList[Widget] = js.native
+  def rightWidgets(): IList[Widget] = js.native
 }
 
 /* static members */
@@ -292,6 +300,15 @@ object Header extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): Header = js.native
+  /**
+    * Creates and returns a new Header instance in the SDK and on the server.
+    * The new Header will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): Header = js.native
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
     * The new Header will be automatically stored in the 'widgets' property

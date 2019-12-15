@@ -23,34 +23,40 @@ class SelectorXPathSource protected () extends SelectorSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FSelectorXPathSource: IModel = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var applyContext: Boolean = js.native
+  def applyContext(): Boolean = js.native
+  def applyContext(newValue: Boolean): js.Any = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyEntityPath.
     *
     * In version 7.11.0: deleted
     */
-  val constrainedBy: IList[String] = js.native
+  def constrainedBy(): IList[String] = js.native
   /**
     * In version 7.11.0: introduced
     */
-  val constrainedByRefs: IList[EntityRef] = js.native
+  def constrainedByRefs(): IList[EntityRef] = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var removeAllFromContext: Boolean = js.native
+  def removeAllFromContext(): Boolean = js.native
+  def removeAllFromContext(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  val removeFromContextEntities: IList[IEntity] = js.native
-  val removeFromContextEntitiesQualifiedNames: js.Array[String] = js.native
-  var sortBar: GridSortBar = js.native
+  def removeFromContextEntities(): IList[IEntity] = js.native
+  def removeFromContextEntitiesQualifiedNames(): js.Array[String] = js.native
+  def sortBar(): GridSortBar = js.native
+  def sortBar(newValue: GridSortBar): js.Any = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
-  var xPathConstraint: String = js.native
+  def xPathConstraint(): String = js.native
+  def xPathConstraint(newValue: String): js.Any = js.native
 }
 
 /* static members */

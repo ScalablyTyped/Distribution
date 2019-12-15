@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait PluginClass
-  extends Instantiable1[/* opts (repeated) */ js.Any, typings.webpack.webpackMod.Plugin]
+trait PluginClass[PluginType /* <: typings.tapable.tapableMod.Tapable.Plugin */]
+  extends Instantiable1[/* opts (repeated) */ js.Any, PluginType]
 

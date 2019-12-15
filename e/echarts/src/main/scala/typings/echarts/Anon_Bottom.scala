@@ -16,11 +16,11 @@ trait Anon_Bottom extends js.Object {
     * Adaptive by default.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.bottom
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.bottom
     */
   var bottom: js.UndefOr[Double | String] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlur] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait Anon_Bottom extends js.Object {
     *
     * @default
     * 25
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.emptyItemWidth
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emptyItemWidth
     */
   var emptyItemWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait Anon_Bottom extends js.Object {
     *
     * @default
     * 22
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.height
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.height
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
@@ -47,7 +47,7 @@ trait Anon_Bottom extends js.Object {
     * like being hovered by mouse, or highlighted via legend connect.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur] = js.undefined
   /**
@@ -65,7 +65,7 @@ trait Anon_Bottom extends js.Object {
     *
     * @default
     * "center"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.left
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.left
     */
   var left: js.UndefOr[Double | String] = js.undefined
   /**
@@ -81,7 +81,7 @@ trait Anon_Bottom extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.right
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.right
     */
   var right: js.UndefOr[Double | String] = js.undefined
   /**
@@ -90,7 +90,7 @@ trait Anon_Bottom extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.show
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -107,7 +107,7 @@ trait Anon_Bottom extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb.top
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.top
     */
   var top: js.UndefOr[Double | String] = js.undefined
 }

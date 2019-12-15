@@ -20,6 +20,8 @@ class Intersect protected () extends BinaryListOperation {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FIntersect: IModel = js.native
 }
 
 /* static members */

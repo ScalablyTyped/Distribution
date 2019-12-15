@@ -24,9 +24,14 @@ class DynamicLabel protected () extends AttributeWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var formattingInfo: FormattingInfo = js.native
-  var renderXHTML: Boolean = js.native
-  var style: Style = js.native
+  @JSName("model")
+  var model_FDynamicLabel: IModel = js.native
+  def formattingInfo(): FormattingInfo = js.native
+  def formattingInfo(newValue: FormattingInfo): js.Any = js.native
+  def renderXHTML(): Boolean = js.native
+  def renderXHTML(newValue: Boolean): js.Any = js.native
+  def style(): Style = js.native
+  def style(newValue: Style): js.Any = js.native
 }
 
 /* static members */

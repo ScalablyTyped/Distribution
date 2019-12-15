@@ -17,6 +17,8 @@ object debug extends js.Object {
   val onDidStartDebugSession: Event[DebugSession] = js.native
   val onDidTerminateDebugSession: Event[DebugSession] = js.native
   def addBreakpoints(breakpoints: js.Array[Breakpoint]): Unit = js.native
+  def asDebugSourceUri(source: DebugProtocolSource): Uri = js.native
+  def asDebugSourceUri(source: DebugProtocolSource, session: DebugSession): Uri = js.native
   def registerDebugAdapterDescriptorFactory(debugType: String, factory: DebugAdapterDescriptorFactory): Disposable = js.native
   def registerDebugAdapterTrackerFactory(debugType: String, factory: DebugAdapterTrackerFactory): Disposable = js.native
   def registerDebugConfigurationProvider(debugType: String, provider: DebugConfigurationProvider): Disposable = js.native

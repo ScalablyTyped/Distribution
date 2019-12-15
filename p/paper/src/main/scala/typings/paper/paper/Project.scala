@@ -1,6 +1,5 @@
 package typings.paper.paper
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLCanvasElement
 import typings.std.SVGElement
 import scala.scalajs.js
@@ -52,7 +51,7 @@ class Project protected () extends js.Object {
     * The currently active path style. All selected items and newly
     * created items will be styled with this style.
     */
-  var currentStyle: Style | Null = js.native
+  var currentStyle: Style = js.native
   /** 
     * The index of the project in the {@link PaperScope#projects} list.
     */
@@ -341,11 +340,4 @@ class Project protected () extends js.Object {
     */
   def selectAll(): Unit = js.native
 }
-
-/** 
-  * The currently active project.
-  */
-@JSGlobal("paper.project")
-@js.native
-object project extends TopLevel[Project | Null]
 

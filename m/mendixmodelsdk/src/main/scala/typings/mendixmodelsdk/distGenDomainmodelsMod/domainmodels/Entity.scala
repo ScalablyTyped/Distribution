@@ -34,25 +34,25 @@ class Entity protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val accessRules: IList[AccessRule] = js.native
-  val attributes: IList[Attribute | IAttribute] = js.native
-  val containerAsDomainModel: DomainModel | IDomainModel = js.native
-  var dataStorageGuid: String = js.native
-  var documentation: String = js.native
-  val eventHandlers: IList[EventHandler] = js.native
-  var generalization: GeneralizationBase | IGeneralizationBase = js.native
-  var image: IImage | Null = js.native
-  val imageQualifiedName: String | Null = js.native
-  val indexes: IList[Index] = js.native
+  @JSName("attributes")
+  val attributes_FEntity: IList[IAttribute] = js.native
+  @JSName("containerAsDomainModel")
+  val containerAsDomainModel_FEntity: IDomainModel = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("generalization")
+  val generalization_FEntity: IGeneralizationBase = js.native
   /**
     * In version 8.2.0: added public
     * In version 7.17.0: introduced
     */
-  var isRemote: Boolean = js.native
-  var location: IPoint = js.native
+  @JSName("isRemote")
+  val isRemote_FEntity: Boolean = js.native
   @JSName("model")
-  var model_Entity: IModel = js.native
-  var name: String = js.native
+  var model_FEntity: IModel = js.native
+  @JSName("name")
+  val name_FEntity: String = js.native
   /**
     * Returns the qualified name of this element, or
     * null if this element is not a part of the model,
@@ -61,18 +61,59 @@ class Entity protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
-  /**
-    * In version 7.17.0: introduced
-    */
-  var remoteSource: String = js.native
+  @JSName("remoteSourceDocumentQualifiedName")
+  val remoteSourceDocumentQualifiedName_FEntity: String | Null = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 8.2.0: introduced
     */
-  var remoteSourceDocument: IRemoteEntitySourceDocument | Null = js.native
-  val remoteSourceDocumentQualifiedName: Null | String = js.native
-  val validationRules: IList[ValidationRule] = js.native
+  @JSName("remoteSourceDocument")
+  val remoteSourceDocument_FEntity: IRemoteEntitySourceDocument | Null = js.native
+  def accessRules(): IList[AccessRule] = js.native
+  def attributes(): IList[Attribute] = js.native
+  def containerAsDomainModel(): DomainModel = js.native
+  def dataStorageGuid(): String = js.native
+  def dataStorageGuid(newValue: String): js.Any = js.native
+  def documentation(): String = js.native
+  def documentation(newValue: String): js.Any = js.native
+  def eventHandlers(): IList[EventHandler] = js.native
+  def generalization(): GeneralizationBase = js.native
+  def generalization(newValue: GeneralizationBase): js.Any = js.native
+  def image(): IImage | Null = js.native
+  def image(newValue: IImage): js.Any = js.native
+  def imageQualifiedName(): String | Null = js.native
+  @JSName("image")
+  def image_Any(): js.Any = js.native
+  def indexes(): IList[Index] = js.native
+  /**
+    * In version 8.2.0: added public
+    * In version 7.17.0: introduced
+    */
+  def isRemote(): Boolean = js.native
+  def isRemote(newValue: Boolean): js.Any = js.native
+  def location(): IPoint = js.native
+  def location(newValue: IPoint): js.Any = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  @JSName("qualifiedName")
+  def qualifiedName_MEntity(): String | Null = js.native
+  /**
+    * In version 7.17.0: introduced
+    */
+  def remoteSource(): String = js.native
+  def remoteSource(newValue: String): js.Any = js.native
+  /**
+    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 8.2.0: introduced
+    */
+  def remoteSourceDocument(): IRemoteEntitySourceDocument | Null = js.native
+  def remoteSourceDocument(newValue: IRemoteEntitySourceDocument): js.Any = js.native
+  def remoteSourceDocumentQualifiedName(): String | Null = js.native
+  @JSName("remoteSourceDocument")
+  def remoteSourceDocument_Any(): js.Any = js.native
+  def validationRules(): IList[ValidationRule] = js.native
 }
 
 /* static members */

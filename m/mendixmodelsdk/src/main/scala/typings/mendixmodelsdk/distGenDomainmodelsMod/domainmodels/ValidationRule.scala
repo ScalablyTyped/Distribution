@@ -25,13 +25,16 @@ class ValidationRule protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var attribute: IAttribute = js.native
-  val attributeQualifiedName: String = js.native
-  val containerAsEntity: Entity = js.native
-  var errorMessage: Text = js.native
   @JSName("model")
-  var model_ValidationRule: IModel = js.native
-  var ruleInfo: RuleInfo = js.native
+  var model_FValidationRule: IModel = js.native
+  def attribute(): IAttribute = js.native
+  def attribute(newValue: IAttribute): js.Any = js.native
+  def attributeQualifiedName(): String = js.native
+  def containerAsEntity(): Entity = js.native
+  def errorMessage(): Text = js.native
+  def errorMessage(newValue: Text): js.Any = js.native
+  def ruleInfo(): RuleInfo = js.native
+  def ruleInfo(newValue: RuleInfo): js.Any = js.native
 }
 
 /* static members */

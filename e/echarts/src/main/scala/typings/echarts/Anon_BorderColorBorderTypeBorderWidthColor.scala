@@ -11,7 +11,7 @@ trait Anon_BorderColorBorderTypeBorderWidthColor extends js.Object {
     *
     * @default
     * "#000"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-scatter.itemStyle.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   /**
@@ -21,19 +21,19 @@ trait Anon_BorderColorBorderTypeBorderWidthColor extends js.Object {
     *
     * @default
     * "solid"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.borderType
+    * @see https://echarts.apache.org/en/option.html#series-scatter.itemStyle.borderType
     */
   var borderType: js.UndefOr[String] = js.undefined
   /**
     * border width. No border when it is set to be 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-scatter.itemStyle.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
     * color. Color is taken from
-    * [option.color Palette](https://ecomfe.github.io/echarts-doc/public/en/option.html#color)
+    * [option.color Palette](https://echarts.apache.org/en/option.html#color)
     * by default.
     *
     * > Color can be represented in RGB, for example `'rgb(128,
@@ -44,7 +44,7 @@ trait Anon_BorderColorBorderTypeBorderWidthColor extends js.Object {
     * Gradient color and texture are also supported besides single
     * colors.
     * >
-    * > [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.itemStyle)
+    * > [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.itemStyle)
     *
     * Supports callback functions, in the form of:
     *
@@ -57,7 +57,7 @@ trait Anon_BorderColorBorderTypeBorderWidthColor extends js.Object {
     * `value`, and etc. of data item.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-scatter.itemStyle.color
     */
   var color: js.UndefOr[String | js.Function] = js.undefined
   /**
@@ -66,7 +66,7 @@ trait Anon_BorderColorBorderTypeBorderWidthColor extends js.Object {
     * drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.opacity
+    * @see https://echarts.apache.org/en/option.html#series-scatter.itemStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -76,31 +76,31 @@ trait Anon_BorderColorBorderTypeBorderWidthColor extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.itemStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-scatter.scatter.itemStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-scatter.itemStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-scatter.itemStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-scatter.itemStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-scatter.itemStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
 }

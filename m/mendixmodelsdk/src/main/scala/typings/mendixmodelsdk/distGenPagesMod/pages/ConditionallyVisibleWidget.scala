@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -19,7 +20,12 @@ abstract class ConditionallyVisibleWidget protected () extends Widget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
+  @JSName("model")
+  var model_FConditionallyVisibleWidget: IModel = js.native
+  def conditionalVisibilitySettings(): ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
+  @JSName("conditionalVisibilitySettings")
+  def conditionalVisibilitySettings_Any(): js.Any = js.native
 }
 
 /* static members */

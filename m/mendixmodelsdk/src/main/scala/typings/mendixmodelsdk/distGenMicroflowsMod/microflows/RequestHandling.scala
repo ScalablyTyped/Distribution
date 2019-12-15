@@ -21,11 +21,11 @@ abstract class RequestHandling protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsExportXmlAction: ExportXmlAction = js.native
-  val containerAsRestCallAction: RestCallAction = js.native
-  val containerAsWebServiceCallAction: WebServiceCallAction = js.native
   @JSName("model")
-  var model_RequestHandling: IModel = js.native
+  var model_FRequestHandling: IModel = js.native
+  def containerAsExportXmlAction(): ExportXmlAction = js.native
+  def containerAsRestCallAction(): RestCallAction = js.native
+  def containerAsWebServiceCallAction(): WebServiceCallAction = js.native
 }
 
 /* static members */

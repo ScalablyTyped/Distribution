@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.atFirebaseComponent.atFirebaseComponentStrings.PUBLIC
   - typings.atFirebaseComponent.atFirebaseComponentStrings.PRIVATE
+  - typings.atFirebaseComponent.atFirebaseComponentStrings.VERSION
 */
 trait ComponentType extends js.Object
 
@@ -15,6 +16,8 @@ object ComponentType {
   def PRIVATE: typings.atFirebaseComponent.atFirebaseComponentStrings.PRIVATE = this.cast("PRIVATE")
   @scala.inline
   def PUBLIC: typings.atFirebaseComponent.atFirebaseComponentStrings.PUBLIC = this.cast("PUBLIC")
+  @scala.inline
+  def VERSION: typings.atFirebaseComponent.atFirebaseComponentStrings.VERSION = this.cast("VERSION")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

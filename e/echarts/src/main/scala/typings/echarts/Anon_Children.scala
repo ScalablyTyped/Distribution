@@ -10,20 +10,20 @@ trait Anon_Children extends js.Object {
     * element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.children
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.children
     */
   var children: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * In
-    * [custom series](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom)
+    * [custom series](https://echarts.apache.org/en/option.html#series-custom)
     * , when `diffChildrenByName` is set as `true`, for each
-    * [group](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * returned from
-    * [renderItem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem)
+    * [renderItem](https://echarts.apache.org/en/option.html#series-custom.renderItem)
     * , "diff" will be performed to its
-    * [children](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.children)
+    * [children](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.children)
     * according to the
-    * [name](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.name)
+    * [name](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.name)
     * attribute of each graphic elements.
     * Here "diff" means that map the coming graphic elements
     * to the existing graphic elements when repainting according
@@ -34,7 +34,7 @@ trait Anon_Children extends js.Object {
     * do not use it for large data amount.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.diffChildrenByName
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.diffChildrenByName
     */
   var diffChildrenByName: js.UndefOr[Boolean] = js.undefined
   /**
@@ -46,7 +46,7 @@ trait Anon_Children extends js.Object {
     * to its parent using `top: 'middle'`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.height
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.height
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
@@ -56,7 +56,7 @@ trait Anon_Children extends js.Object {
     *
     * @default
     * "undefined"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.id
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -64,51 +64,51 @@ trait Anon_Children extends js.Object {
     * nor listen events).
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.ignore
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.ignore
     */
   var ignore: js.UndefOr[Boolean] = js.undefined
   /**
     * User defined data, can be visited in event listeners.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.custom.renderItem.return_group)
+    * [see doc](https://echarts.apache.org/en/option.html#series-custom.custom.renderItem.return_group)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.info
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.info
     */
   var info: js.UndefOr[js.Any] = js.undefined
   /**
     * Whether the element is visible.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.invisible
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.invisible
     */
   var invisible: js.UndefOr[Boolean] = js.undefined
   /**
     * See
-    * [diffChildrenByName](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.diffChildrenByName)
+    * [diffChildrenByName](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.diffChildrenByName)
     * 。
     *
     *
     * @default
     * "undefined"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.name
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * `2D transform` can be applied to graphic elements, including:
     *
-    * + [position](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.position)
+    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
     * : `[horizontal translate offset, vertical translate offset]`,
     * `[0, 0]` by default.
     * Positive value means translate towards right or bottom.
-    * + [rotation](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.rotation)
+    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
     * : Rotation in radian, `0` by default.
     * Positive when anticlockwise.
-    * + [scale](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.scale)
+    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
     * : `[horizontal scale factor, vertical scale factor]`,
     * `[1, 1]` by default.
     *
-    * [origin](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.origin)
+    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
     * specifies the origin point of rotation and scaling, `[0,
     * 0]` by default.
     *
@@ -117,11 +117,11 @@ trait Anon_Children extends js.Object {
     * + The coordinates specified in the transform attribute
     * above are relative to the `[0, 0]` of the parent element
     * (that is,
-    * [group](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * or the root canvas). Thus we are able to
-    * [group](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * multiple elements, and
-    * [groups](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * can be nested.
     * + The order that the transform attributes are applied
     * to a single graphic element is: Firstly, `rotation`,
@@ -130,24 +130,24 @@ trait Anon_Children extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.origin
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.origin
     */
   var origin: js.UndefOr[Double] = js.undefined
   /**
     * `2D transform` can be applied to graphic elements, including:
     *
-    * + [position](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.position)
+    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
     * : `[horizontal translate offset, vertical translate offset]`,
     * `[0, 0]` by default.
     * Positive value means translate towards right or bottom.
-    * + [rotation](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.rotation)
+    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
     * : Rotation in radian, `0` by default.
     * Positive when anticlockwise.
-    * + [scale](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.scale)
+    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
     * : `[horizontal scale factor, vertical scale factor]`,
     * `[1, 1]` by default.
     *
-    * [origin](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.origin)
+    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
     * specifies the origin point of rotation and scaling, `[0,
     * 0]` by default.
     *
@@ -156,11 +156,11 @@ trait Anon_Children extends js.Object {
     * + The coordinates specified in the transform attribute
     * above are relative to the `[0, 0]` of the parent element
     * (that is,
-    * [group](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * or the root canvas). Thus we are able to
-    * [group](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * multiple elements, and
-    * [groups](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * can be nested.
     * + The order that the transform attributes are applied
     * to a single graphic element is: Firstly, `rotation`,
@@ -169,24 +169,24 @@ trait Anon_Children extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.position
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.position
     */
   var position: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * `2D transform` can be applied to graphic elements, including:
     *
-    * + [position](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.position)
+    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
     * : `[horizontal translate offset, vertical translate offset]`,
     * `[0, 0]` by default.
     * Positive value means translate towards right or bottom.
-    * + [rotation](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.rotation)
+    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
     * : Rotation in radian, `0` by default.
     * Positive when anticlockwise.
-    * + [scale](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.scale)
+    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
     * : `[horizontal scale factor, vertical scale factor]`,
     * `[1, 1]` by default.
     *
-    * [origin](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.origin)
+    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
     * specifies the origin point of rotation and scaling, `[0,
     * 0]` by default.
     *
@@ -195,35 +195,35 @@ trait Anon_Children extends js.Object {
     * + The coordinates specified in the transform attribute
     * above are relative to the `[0, 0]` of the parent element
     * (that is,
-    * [group](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * or the root canvas). Thus we are able to
-    * [group](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * multiple elements, and
-    * [groups](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * can be nested.
     * + The order that the transform attributes are applied
     * to a single graphic element is: Firstly, `rotation`,
     * then, `scale`, finally, `position`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.rotation
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.rotation
     */
   var rotation: js.UndefOr[Double] = js.undefined
   /**
     * `2D transform` can be applied to graphic elements, including:
     *
-    * + [position](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.position)
+    * + [position](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position)
     * : `[horizontal translate offset, vertical translate offset]`,
     * `[0, 0]` by default.
     * Positive value means translate towards right or bottom.
-    * + [rotation](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.rotation)
+    * + [rotation](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.rotation)
     * : Rotation in radian, `0` by default.
     * Positive when anticlockwise.
-    * + [scale](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.scale)
+    * + [scale](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale)
     * : `[horizontal scale factor, vertical scale factor]`,
     * `[1, 1]` by default.
     *
-    * [origin](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.origin)
+    * [origin](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.origin)
     * specifies the origin point of rotation and scaling, `[0,
     * 0]` by default.
     *
@@ -232,11 +232,11 @@ trait Anon_Children extends js.Object {
     * + The coordinates specified in the transform attribute
     * above are relative to the `[0, 0]` of the parent element
     * (that is,
-    * [group](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * or the root canvas). Thus we are able to
-    * [group](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * multiple elements, and
-    * [groups](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [groups](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * can be nested.
     * + The order that the transform attributes are applied
     * to a single graphic element is: Firstly, `rotation`,
@@ -245,24 +245,24 @@ trait Anon_Children extends js.Object {
     *
     * @default
     * [1, 1]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.scale
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.scale
     */
   var scale: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Whether response to mouse events / touch events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.silent
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
     * Empahsis style of the graphic element, whose structure
     * is the same as
-    * [style](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon.style)
+    * [style](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.style)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.styleEmphasis
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.styleEmphasis
     */
   var styleEmphasis: js.UndefOr[js.Object] = js.undefined
   /**
@@ -271,35 +271,35 @@ trait Anon_Children extends js.Object {
     *
     * Optional values:
     *
-    * [image](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_image)
+    * [image](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image)
     * ,
-    * [text](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_text)
+    * [text](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text)
     * ,
-    * [circle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_circle)
+    * [circle](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle)
     * ,
-    * [sector](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_sector)
+    * [sector](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_sector)
     * ,
-    * [ring](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_ring)
+    * [ring](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring)
     * ,
-    * [polygon](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polygon)
+    * [polygon](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon)
     * ,
-    * [polyline](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_polyline)
+    * [polyline](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline)
     * ,
-    * [rect](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect)
+    * [rect](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect)
     * ,
-    * [line](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_line)
+    * [line](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line)
     * ,
-    * [bezierCurve](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_bezierCurve)
+    * [bezierCurve](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve)
     * ,
-    * [arc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_arc)
+    * [arc](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc)
     * ,
-    * [group](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group)
+    * [group](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group)
     * ,
     *
     *
     * @default
     * "group"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.type
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
@@ -311,7 +311,7 @@ trait Anon_Children extends js.Object {
     * to its parent using `left: 'center'`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.width
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.width
     */
   var width: js.UndefOr[Double] = js.undefined
   /**
@@ -320,7 +320,7 @@ trait Anon_Children extends js.Object {
     *
     * @default
     * "undefined"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_group.z2
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.z2
     */
   var z2: js.UndefOr[Double] = js.undefined
 }

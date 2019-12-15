@@ -55,10 +55,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object mobxMod extends js.Object {
   @js.native
-  class FlowCancellationError ()
-    extends typings.mobx.libInternalMod.FlowCancellationError
-  
-  @js.native
   class ObservableMap[K, V] ()
     extends typings.mobx.libInternalMod.ObservableMap[K, V] {
     def this(initialData: IObservableMapInitialValues[K, V]) = this()
@@ -104,6 +100,8 @@ object mobxMod extends js.Object {
   val observable: IObservableFactory with IObservableFactories with Anon_Enhancer = js.native
   def _allowStateChanges[T](allowStateChanges: Boolean, func: js.Function0[T]): T = js.native
   def _allowStateChangesInsideComputed[T](func: js.Function0[T]): T = js.native
+  def _allowStateReadsEnd(prev: Boolean): Unit = js.native
+  def _allowStateReadsStart(allowStateReads: Boolean): Boolean = js.native
   def _endAction(runInfo: IActionRunInfo): Unit = js.native
   def _getAdministration(thing: js.Any): js.Any = js.native
   def _getAdministration(thing: js.Any, property: String): js.Any = js.native
@@ -353,6 +351,12 @@ object mobxMod extends js.Object {
   def when(predicate: js.Function0[Boolean], effect: Lambda): IReactionDisposer = js.native
   def when(predicate: js.Function0[Boolean], effect: Lambda, opts: IWhenOptions): IReactionDisposer = js.native
   def when(predicate: js.Function0[Boolean], opts: IWhenOptions): js.Promise[Unit] with Anon_Cancel = js.native
+  @js.native
+  object FlowCancellationError extends js.Object {
+    var prototype: js.Any = js.native
+    def apply(): Unit = js.native
+  }
+  
   @js.native
   object IDerivationState extends js.Object {
     /* -1 */ val NOT_TRACKING: typings.mobx.libCoreDerivationMod.IDerivationState.NOT_TRACKING with Double = js.native

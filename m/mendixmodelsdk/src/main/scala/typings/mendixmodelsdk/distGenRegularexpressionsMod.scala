@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenRegularexpressionsMod.StructureVersionInfo
@@ -43,7 +45,7 @@ object distGenRegularexpressionsMod extends js.Object {
     - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
-    - typings.mendixmodelsdk.distGenRegularexpressionsMod.regularexpressions.IRegularExpression because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.distGenRegularexpressionsMod.regularexpressions.IRegularExpression because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @js.native
     class RegularExpression protected () extends Document {
       def this(
         model: AbstractModel,
@@ -52,7 +54,12 @@ object distGenRegularexpressionsMod extends js.Object {
         isPartial: Boolean,
         container: IFolderBase
       ) = this()
-      var regEx: String = js.native
+      @JSName("model")
+      var model_FRegularExpression: IModel = js.native
+      @JSName("containerAsFolderBase")
+      def containerAsFolderBase_MRegularExpression(): FolderBase = js.native
+      def regEx(): String = js.native
+      def regEx(newValue: String): js.Any = js.native
     }
     
     /* static members */

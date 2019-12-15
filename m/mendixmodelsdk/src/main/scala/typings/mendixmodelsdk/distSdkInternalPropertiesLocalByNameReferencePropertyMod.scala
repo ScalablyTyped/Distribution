@@ -39,12 +39,12 @@ object distSdkInternalPropertiesLocalByNameReferencePropertyMod extends js.Objec
     ) = this()
     @JSName("parent")
     var parent_LocalByNameReferenceProperty: AbstractElement = js.native
-    val targetType: String = js.native
     def deepCopyInto(clone: Structure): Unit = js.native
     def deepCopyInto(clone: Structure, idMap: IMap[Structure]): Unit = js.native
     def localName(): String | Null = js.native
     def set(): Unit = js.native
     def set(newValue: T): Unit = js.native
+    def targetType(): String = js.native
     def updateWithRawValue(value: String): Unit = js.native
   }
   

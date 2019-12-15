@@ -25,6 +25,8 @@ class EntityElement protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FEntityElement: IModel = js.native
 }
 
 /* static members */

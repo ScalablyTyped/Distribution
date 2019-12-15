@@ -9,7 +9,7 @@ trait Anon_LineStyleShowAnonColorOpacityShadowBlurShadowColor extends js.Object 
     * The style of the axis line of gauge chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlurShadowColor] = js.undefined
   /**
@@ -18,7 +18,7 @@ trait Anon_LineStyleShowAnonColorOpacityShadowBlurShadowColor extends js.Object 
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.show
+    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
 }

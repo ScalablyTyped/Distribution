@@ -10,7 +10,7 @@ trait Anon_Label extends js.Object {
     * `label` of starting point and ending point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.label
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.label
     */
   var label: js.UndefOr[Anon_Emphasis] = js.undefined
   /**
@@ -18,7 +18,7 @@ trait Anon_Label extends js.Object {
     * with `lineStyle` of starting point and ending point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessEmphasis] = js.undefined
   /**
@@ -48,7 +48,7 @@ trait Anon_Label extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markLine.data.1)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markLine.data.1)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -64,10 +64,10 @@ trait Anon_Label extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markLine.data.1)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markLine.data.1)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.symbol
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
@@ -75,7 +75,7 @@ trait Anon_Label extends js.Object {
     * `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -98,7 +98,7 @@ trait Anon_Label extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -108,7 +108,7 @@ trait Anon_Label extends js.Object {
     * and compulsively use tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -119,28 +119,28 @@ trait Anon_Label extends js.Object {
     * and height is`10`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * Label value, which can be ignored.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.value
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.value
     */
   var value: js.UndefOr[Double] = js.undefined
   /**
     * X position according to container, in pixel.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.x
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.x
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
     * Y position according to container, in pixel.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.y
+    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }

@@ -24,21 +24,29 @@ class PublishedRestResource protected () extends PublishedResource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FPublishedRestResource: IModel = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var description: String = js.native
+  def description(): String = js.native
+  def description(newValue: String): js.Any = js.native
   /**
     * In version 7.19.0: introduced
     */
-  var exposedName: String = js.native
-  var pageSize: Double = js.native
-  var path: String = js.native
+  def exposedName(): String = js.native
+  def exposedName(newValue: String): js.Any = js.native
+  def pageSize(): Double = js.native
+  def pageSize(newValue: Double): js.Any = js.native
+  def path(): String = js.native
+  def path(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var summary: String = js.native
-  var usePaging: Boolean = js.native
+  def summary(): String = js.native
+  def summary(newValue: String): js.Any = js.native
+  def usePaging(): Boolean = js.native
+  def usePaging(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

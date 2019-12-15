@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenSecurityMod.security
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflow
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IProject
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Project
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalUnitsMod.IAbstractUnit because Already inherited
 - typings.mendixmodelsdk.distSdkInternalUnitsMod.IModelUnit because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IProjectDocument because Already inherited
-- typings.mendixmodelsdk.distGenSecurityMod.security.IProjectSecurity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined userRoles */ @JSImport("mendixmodelsdk/dist/gen/security", "security.ProjectSecurity")
+- typings.mendixmodelsdk.distGenSecurityMod.security.IProjectSecurity because var conflicts: containerAsProject, id, isLoaded, model, structureTypeName, unit. Inlined userRoles */ @JSImport("mendixmodelsdk/dist/gen/security", "security.ProjectSecurity")
 @js.native
 class ProjectSecurity protected () extends ProjectDocument {
   def this(
@@ -30,32 +31,50 @@ class ProjectSecurity protected () extends ProjectDocument {
     isPartial: Boolean,
     container: IProject
   ) = this()
-  var adminPassword: String = js.native
-  var adminUserName: String = js.native
-  var adminUserRoleName: String = js.native
-  var checkSecurity: Boolean = js.native
+  @JSName("model")
+  var model_FProjectSecurity: IModel = js.native
+  @JSName("userRoles")
+  val userRoles_FProjectSecurity: IList[IUserRole] = js.native
+  def adminPassword(): String = js.native
+  def adminPassword(newValue: String): js.Any = js.native
+  def adminUserName(): String = js.native
+  def adminUserName(newValue: String): js.Any = js.native
+  def adminUserRoleName(): String = js.native
+  def adminUserRoleName(newValue: String): js.Any = js.native
+  def checkSecurity(): Boolean = js.native
+  def checkSecurity(newValue: Boolean): js.Any = js.native
   @JSName("containerAsProject")
-  val containerAsProject_ProjectSecurity: Project = js.native
-  val demoUsers: IList[DemoUser] = js.native
-  var enableDemoUsers: Boolean = js.native
-  var enableGuestAccess: Boolean = js.native
+  def containerAsProject_MProjectSecurity(): Project = js.native
+  def demoUsers(): IList[DemoUser] = js.native
+  def enableDemoUsers(): Boolean = js.native
+  def enableDemoUsers(newValue: Boolean): js.Any = js.native
+  def enableGuestAccess(): Boolean = js.native
+  def enableGuestAccess(newValue: Boolean): js.Any = js.native
   /**
     * In version 6.0.0: deprecated
     */
-  var fileDocumentAccess: FileDocumentAccessRuleContainer = js.native
-  var guestUserRoleName: String = js.native
+  def fileDocumentAccess(): FileDocumentAccessRuleContainer = js.native
+  def fileDocumentAccess(newValue: FileDocumentAccessRuleContainer): js.Any = js.native
+  def guestUserRoleName(): String = js.native
+  def guestUserRoleName(newValue: String): js.Any = js.native
   /**
     * In version 6.0.0: deprecated
     */
-  var imageAccess: ImageAccessRuleContainer = js.native
-  var passwordPolicySettings: PasswordPolicySettings = js.native
-  var securityLevel: SecurityLevel = js.native
+  def imageAccess(): ImageAccessRuleContainer = js.native
+  def imageAccess(newValue: ImageAccessRuleContainer): js.Any = js.native
+  def passwordPolicySettings(): PasswordPolicySettings = js.native
+  def passwordPolicySettings(newValue: PasswordPolicySettings): js.Any = js.native
+  def securityLevel(): SecurityLevel = js.native
+  def securityLevel(newValue: SecurityLevel): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var signInMicroflow: IMicroflow | Null = js.native
-  val signInMicroflowQualifiedName: String | Null = js.native
-  val userRoles: IList[IUserRole | UserRole] = js.native
+  def signInMicroflow(): IMicroflow | Null = js.native
+  def signInMicroflow(newValue: IMicroflow): js.Any = js.native
+  def signInMicroflowQualifiedName(): String | Null = js.native
+  @JSName("signInMicroflow")
+  def signInMicroflow_Any(): js.Any = js.native
+  def userRoles(): IList[UserRole] = js.native
 }
 
 /* static members */

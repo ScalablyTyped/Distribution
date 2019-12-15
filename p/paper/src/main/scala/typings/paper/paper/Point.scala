@@ -42,18 +42,18 @@ class Point protected () extends js.Object {
   /** 
     * The vector's angle in degrees, measured from the x-axis to the vector.
     */
-  var angle: Double | Null = js.native
+  var angle: Double = js.native
   /** 
     * The vector's angle in radians, measured from the x-axis to the vector.
     */
-  var angleInRadians: Double | Null = js.native
+  var angleInRadians: Double = js.native
   /** 
     * The length of the vector that is represented by this point's coordinates.
     * Each point can be interpreted as a vector that points from the origin (`x
     * = 0`, `y = 0`) to the point's location. Setting the length changes the
     * location but keeps the vector's angle.
     */
-  var length: Double | Null = js.native
+  var length: Double = js.native
   /** 
     * The quadrant of the {@link #angle} of the point.
     * 
@@ -76,15 +76,15 @@ class Point protected () extends js.Object {
     * Paper.js renders selected points on top of your project. This is very
     * useful when debugging.
     */
-  var selected: Boolean | Null = js.native
+  var selected: Boolean = js.native
   /** 
     * The x coordinate of the point
     */
-  var x: Double | Null = js.native
+  var x: Double = js.native
   /** 
     * The y coordinate of the point
     */
-  var y: Double | Null = js.native
+  var y: Double = js.native
   /** 
     * Returns a new point with the absolute values of the specified {@link #x}
     * and {@link #y} values. The object itself is not modified!

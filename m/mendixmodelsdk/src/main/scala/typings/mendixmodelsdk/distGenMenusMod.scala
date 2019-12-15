@@ -10,6 +10,7 @@ import typings.mendixmodelsdk.distGenNavigationMod.navigation.NavigationProfile
 import typings.mendixmodelsdk.distGenPagesMod.pages.ClientAction
 import typings.mendixmodelsdk.distGenPagesMod.pages.Icon
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
+import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenTextsMod.texts.Text
@@ -55,7 +56,7 @@ object distGenMenusMod extends js.Object {
     - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
-    - typings.mendixmodelsdk.distGenMenusMod.menus.IMenuDocument because var conflicts: id, isLoaded, model, name, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.distGenMenusMod.menus.IMenuDocument because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @js.native
     class MenuDocument protected () extends Document {
       def this(
         model: AbstractModel,
@@ -64,7 +65,12 @@ object distGenMenusMod extends js.Object {
         isPartial: Boolean,
         container: IFolderBase
       ) = this()
-      var itemCollection: MenuItemCollection = js.native
+      @JSName("model")
+      var model_FMenuDocument: IModel = js.native
+      @JSName("containerAsFolderBase")
+      def containerAsFolderBase_MMenuDocument(): FolderBase = js.native
+      def itemCollection(): MenuItemCollection = js.native
+      def itemCollection(newValue: MenuItemCollection): js.Any = js.native
     }
     
     /**
@@ -80,9 +86,16 @@ object distGenMenusMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
-      var action: ClientAction = js.native
-      var caption: Text = js.native
-      var icon: Icon | Null = js.native
+      @JSName("model")
+      var model_FMenuItem: IModel = js.native
+      def action(): ClientAction = js.native
+      def action(newValue: ClientAction): js.Any = js.native
+      def caption(): Text = js.native
+      def caption(newValue: Text): js.Any = js.native
+      def icon(): Icon | Null = js.native
+      def icon(newValue: Icon): js.Any = js.native
+      @JSName("icon")
+      def icon_Any(): js.Any = js.native
     }
     
     @js.native
@@ -95,6 +108,8 @@ object distGenMenusMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
+      @JSName("model")
+      var model_FMenuItemCollection: IModel = js.native
     }
     
     @js.native
@@ -107,12 +122,12 @@ object distGenMenusMod extends js.Object {
         unit: ModelUnit,
         container: AbstractElement
       ) = this()
-      val containerAsMenuDocument: MenuDocument = js.native
-      val containerAsMenuItemContainer: MenuItemContainer = js.native
-      val containerAsNavigationProfile: NavigationProfile = js.native
-      val items: IList[MenuItem] = js.native
       @JSName("model")
-      var model_MenuItemContainer: IModel = js.native
+      var model_FMenuItemContainer: IModel = js.native
+      def containerAsMenuDocument(): MenuDocument = js.native
+      def containerAsMenuItemContainer(): MenuItemContainer = js.native
+      def containerAsNavigationProfile(): NavigationProfile = js.native
+      def items(): IList[MenuItem] = js.native
     }
     
     /* static members */

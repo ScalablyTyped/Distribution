@@ -26,13 +26,19 @@ class RoleBasedNativeHomePage protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsNativeNavigationProfile: NativeNavigationProfile = js.native
   @JSName("model")
-  var model_RoleBasedNativeHomePage: IModel = js.native
-  var page: IPage | Null = js.native
-  val pageQualifiedName: String | Null = js.native
-  var userRole: IUserRole | Null = js.native
-  val userRoleQualifiedName: String | Null = js.native
+  var model_FRoleBasedNativeHomePage: IModel = js.native
+  def containerAsNativeNavigationProfile(): NativeNavigationProfile = js.native
+  def page(): IPage | Null = js.native
+  def page(newValue: IPage): js.Any = js.native
+  def pageQualifiedName(): String | Null = js.native
+  @JSName("page")
+  def page_Any(): js.Any = js.native
+  def userRole(): IUserRole | Null = js.native
+  def userRole(newValue: IUserRole): js.Any = js.native
+  def userRoleQualifiedName(): String | Null = js.native
+  @JSName("userRole")
+  def userRole_Any(): js.Any = js.native
 }
 
 /* static members */

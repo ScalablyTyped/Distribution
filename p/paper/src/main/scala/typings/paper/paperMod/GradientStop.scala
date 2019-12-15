@@ -1,12 +1,10 @@
 package typings.paper.paperMod
 
+import typings.paper.paper.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** 
-  * The GradientStop object.
-  */
 @JSImport("paper", "GradientStop")
 @js.native
 /** 
@@ -19,7 +17,7 @@ import scala.scalajs.js.annotation._
   */
 class GradientStop ()
   extends typings.paper.paper.GradientStop {
-  def this(color: typings.paper.paper.Color) = this()
-  def this(color: typings.paper.paper.Color, offset: Double) = this()
+  def this(color: Color) = this()
+  def this(color: Color, offset: Double) = this()
 }
 

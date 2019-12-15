@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   *
   * **Example:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+  * [see doc](https://echarts.apache.org/en/option.html#series-treemap)
   *
   * **Visual Mapping:**
   *
@@ -31,19 +31,19 @@ import scala.scalajs.js.annotation._
   * channel, like colors, lightness of colors and etc.
   *
   * About visual encoding, see details in
-  * [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+  * [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
   * .
   *
   * **Drill Down:**
   *
   * The feature `drill down` means: when clicking a tree node, this node
   * will be set as root and its children will be shown. When
-  * [leafDepth](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.leafDepth)
+  * [leafDepth](https://echarts.apache.org/en/option.html#series-treemap.leafDepth)
   * is set, this feature is enabled.
   *
   * **An example about drill down:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+  * [see doc](https://echarts.apache.org/en/option.html#series-treemap)
   *
   * Notice: There are some difference in treemap configuration between
   * ECharts3 and ECharts2.
@@ -58,7 +58,7 @@ import scala.scalajs.js.annotation._
   *
   * + The configuration item `root` is not avaliable temporarily.User
   * can zoom treemap to see some tiny or deep descendants, or using
-  * [leafDepth](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.leafDepth)
+  * [leafDepth](https://echarts.apache.org/en/option.html#series-treemap.leafDepth)
   * to enable the feature of "drill down".
   *
   * + The configuration item `label` is moved outside the `itemStyle/itemStyle.emphasis`,
@@ -68,11 +68,11 @@ import scala.scalajs.js.annotation._
   * and `itemStyle.childBorderColor`
   * are not supported anymore (because in this way only 2 levels can
   * be defined).
-  * [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+  * [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
   * is used to define all levels now.
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap
+  * @see https://echarts.apache.org/en/option.html#series-treemap
   */
 @JSName("SeriesTreemap")
 trait SeriesTreemap_ extends js.Object {
@@ -82,38 +82,38 @@ trait SeriesTreemap_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-treemap.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap)
     *
     *
     * @default
     * 1500
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-treemap.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "quinticInOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-treemap.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -128,14 +128,14 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.bottom
+    * @see https://echarts.apache.org/en/option.html#series-treemap.bottom
     */
   var bottom: js.UndefOr[Double | String] = js.undefined
   /**
     * breadcrumb, showing the path of the current node.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb
+    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb
     */
   var breadcrumb: js.UndefOr[Anon_Bottom] = js.undefined
   /**
@@ -148,27 +148,27 @@ trait SeriesTreemap_ extends js.Object {
     * is larger than this threshold.
     *
     * About visual encoding, see details in
-    * [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * .
     *
     * > Tps: In treemap, `childrenVisibleMin` attribute could appear
     * in more than one places:
     * >
     * > + It could appear in
-    * > [sereis-treemap](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+    * > [sereis-treemap](https://echarts.apache.org/en/option.html#series-treemap)
     * > , indicating the unified setting of the series.
     * >
     * > + It could appear in each array element of
-    * > [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * > [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * > , indicating the unified setting of each level of the tree.
     * >
     * > + It could appear in each node of
-    * > [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * > [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * > , indicating the particular setting of each node.
     * >
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.childrenVisibleMin
+    * @see https://echarts.apache.org/en/option.html#series-treemap.childrenVisibleMin
     */
   var childrenVisibleMin: js.UndefOr[Double] = js.undefined
   /**
@@ -178,45 +178,45 @@ trait SeriesTreemap_ extends js.Object {
     * For example, `colorAlpha` can be `[0.3, 1]`.
     *
     * About visual encoding, see details in
-    * [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * .
     *
     * > Tps: In treemap, `colorAlpha` attribute could appear in more
     * than one places:
     * >
     * > + It could appear in
-    * > [sereis-treemap](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+    * > [sereis-treemap](https://echarts.apache.org/en/option.html#series-treemap)
     * > , indicating the unified setting of the series.
     * >
     * > + It could appear in each array element of
-    * > [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * > [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * > , indicating the unified setting of each level of the tree.
     * >
     * > + It could appear in each node of
-    * > [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * > [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * > , indicating the particular setting of each node.
     * >
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.colorAlpha
+    * @see https://echarts.apache.org/en/option.html#series-treemap.colorAlpha
     */
   var colorAlpha: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Specify the rule according to which each node obtain color from
-    * [color list](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.color)
+    * [color list](https://echarts.apache.org/en/option.html#series-treemap.levels.color)
     * . Optional values:
     *
     * + `'value'`:
     *
     * Map
-    * [series-treemap.data.value](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.value)
+    * [series-treemap.data.value](https://echarts.apache.org/en/option.html#series-treemap.data.value)
     * to color.
     *
     * In this way, the color of each node indicate its value.
     *
-    * [visualDimension](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.visualDimension)
+    * [visualDimension](https://echarts.apache.org/en/option.html#series-treemap.levels.visualDimension)
     * can be used to specify which dimension of
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * [data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * is used to perform visual mapping.
     *
     * + `'index'`:
@@ -224,7 +224,7 @@ trait SeriesTreemap_ extends js.Object {
     * Map the `index` (ordinal number) of nodes to color.
     * Namely, in a level, the first node is mapped to the first color
     * of
-    * [color list](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.color)
+    * [color list](https://echarts.apache.org/en/option.html#series-treemap.levels.color)
     * , and the second node gets the second color.
     *
     * In this way, adjacent nodes are distinguished by color.
@@ -232,39 +232,39 @@ trait SeriesTreemap_ extends js.Object {
     * + `'id'`:
     *
     * Map
-    * [series-treemap.data.id](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.id)
+    * [series-treemap.data.id](https://echarts.apache.org/en/option.html#series-treemap.data.id)
     * to color.
     *
     * Since `id` is used to identify node, if user call `setOption`
     * to modify the tree, each node will remain the original color
     * before and after `setOption` called. See this
-    * [example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=treemap-obama&edit=1&reset=1)
+    * [example](https://echarts.apache.org/examples/en/editor.html?c=treemap-obama&edit=1&reset=1)
     * .
     *
     * About visual encoding, see details in
-    * [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * .
     *
     * > Tps: In treemap, `colorMappingBy` attribute could appear in
     * more than one places:
     * >
     * > + It could appear in
-    * > [sereis-treemap](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+    * > [sereis-treemap](https://echarts.apache.org/en/option.html#series-treemap)
     * > , indicating the unified setting of the series.
     * >
     * > + It could appear in each array element of
-    * > [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * > [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * > , indicating the unified setting of each level of the tree.
     * >
     * > + It could appear in each node of
-    * > [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * > [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * > , indicating the particular setting of each node.
     * >
     *
     *
     * @default
     * "index"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.colorMappingBy
+    * @see https://echarts.apache.org/en/option.html#series-treemap.colorMappingBy
     */
   var colorMappingBy: js.UndefOr[String] = js.undefined
   /**
@@ -274,38 +274,38 @@ trait SeriesTreemap_ extends js.Object {
     * For example, `colorSaturation` can be `[0.3, 1]`.
     *
     * About visual encoding, see details in
-    * [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * .
     *
     * > Tps: In treemap, `colorSaturation` attribute could appear in
     * more than one places:
     * >
     * > + It could appear in
-    * > [sereis-treemap](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+    * > [sereis-treemap](https://echarts.apache.org/en/option.html#series-treemap)
     * > , indicating the unified setting of the series.
     * >
     * > + It could appear in each array element of
-    * > [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * > [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * > , indicating the unified setting of each level of the tree.
     * >
     * > + It could appear in each node of
-    * > [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * > [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * > , indicating the particular setting of each node.
     * >
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.colorSaturation
+    * @see https://echarts.apache.org/en/option.html#series-treemap.colorSaturation
     */
   var colorSaturation: js.UndefOr[Double] = js.undefined
   /**
     * the the data format of
-    * [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * is a forest. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data
     */
   var data: js.UndefOr[js.Array[DataObject]] = js.undefined
   /**
@@ -314,11 +314,11 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @default
     * '▶'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.drillDownIcon
+    * @see https://echarts.apache.org/en/option.html#series-treemap.drillDownIcon
     */
   var drillDownIcon: js.UndefOr[String] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-treemap.emphasis
     */
   var emphasis: js.UndefOr[Anon_ItemStyleLabelUpperLabel] = js.undefined
   /**
@@ -327,7 +327,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @default
     * 80%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.height
+    * @see https://echarts.apache.org/en/option.html#series-treemap.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
@@ -336,7 +336,7 @@ trait SeriesTreemap_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.id
+    * @see https://echarts.apache.org/en/option.html#series-treemap.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -345,20 +345,20 @@ trait SeriesTreemap_ extends js.Object {
     * than one places:
     * >
     * > + It could appear in
-    * > [sereis-treemap](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+    * > [sereis-treemap](https://echarts.apache.org/en/option.html#series-treemap)
     * > , indicating the unified setting of the series.
     * >
     * > + It could appear in each array element of
-    * > [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * > [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * > , indicating the unified setting of each level of the tree.
     * >
     * > + It could appear in each node of
-    * > [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * > [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * > , indicating the particular setting of each node.
     * >
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-treemap.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderColorSaturation] = js.undefined
   /**
@@ -368,20 +368,20 @@ trait SeriesTreemap_ extends js.Object {
     * one places:
     * >
     * > + It could appear in
-    * > [sereis-treemap](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+    * > [sereis-treemap](https://echarts.apache.org/en/option.html#series-treemap)
     * > , indicating the unified setting of the series.
     * >
     * > + It could appear in each array element of
-    * > [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * > [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * > , indicating the unified setting of each level of the tree.
     * >
     * > + It could appear in each node of
-    * > [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * > [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * > , indicating the particular setting of each node.
     * >
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.label
+    * @see https://echarts.apache.org/en/option.html#series-treemap.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis] = js.undefined
   /**
@@ -398,10 +398,10 @@ trait SeriesTreemap_ extends js.Object {
     *
     * **An example about drill down:**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.leafDepth
+    * @see https://echarts.apache.org/en/option.html#series-treemap.leafDepth
     */
   var leafDepth: js.UndefOr[Double] = js.undefined
   /**
@@ -417,7 +417,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @default
     * "center"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.left
+    * @see https://echarts.apache.org/en/option.html#series-treemap.left
     */
   var left: js.UndefOr[Double | String] = js.undefined
   /**
@@ -438,7 +438,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap)
     *
     * **The Rules about Visual Mapping**
     *
@@ -449,7 +449,7 @@ trait SeriesTreemap_ extends js.Object {
     * of rectangular" and so on on each level.
     *
     * See
-    * [example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=treemap-disk&edit=1&reset=1)
+    * [example](https://echarts.apache.org/examples/en/editor.html?c=treemap-disk&edit=1&reset=1)
     *
     * The top level is divided into several parts by colors "red",
     * "green", "blue", and etc
@@ -481,16 +481,16 @@ trait SeriesTreemap_ extends js.Object {
     * See the example below: every `value` field is set as an Array,
     * in which each item in the array represents a dimension respectively.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap)
     *
     * `treemap` will map the first dimension (the first item of the
     * array) to "area".
     * If we want to express more information, we could map another
     * dimension (specified by
-    * [series-treemap.visualDimension](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.viusalDimension)
+    * [series-treemap.visualDimension](https://echarts.apache.org/en/option.html#series-treemap.viusalDimension)
     * ) to another visual types, such as `colorSaturation` and so on.
     * See the
-    * [example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=treemap-obama&edit=1&reset=1)
+    * [example](https://echarts.apache.org/examples/en/editor.html?c=treemap-obama&edit=1&reset=1)
     * and select the legend 'Growth'.
     *
     * **How to avoid confusion by setting border/gap of node**
@@ -500,7 +500,7 @@ trait SeriesTreemap_ extends js.Object {
     * the same time.
     *
     * See the
-    * [example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=doc-example/treemap-borderColor&edit=1&reset=1)
+    * [example](https://echarts.apache.org/examples/en/editor.html?c=doc-example/treemap-borderColor&edit=1&reset=1)
     *
     * Noticed that the child rectangles in the red area are in the
     * deeper level than rectangles that are saparated by white gap.
@@ -509,23 +509,23 @@ trait SeriesTreemap_ extends js.Object {
     *
     * **Explanation about borderWidth, gapWidth, borderColor**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap)
     *
     *
     * @default
     * []
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels
+    * @see https://echarts.apache.org/en/option.html#series-treemap.levels
     */
   var levels: js.UndefOr[Anon_ChildrenVisibleMin] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.name
+    * @see https://echarts.apache.org/en/option.html#series-treemap.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -534,13 +534,13 @@ trait SeriesTreemap_ extends js.Object {
     * + `false`: Do nothing after clicked.
     * + `'zoomToNode'`: Zoom to clicked node.
     * + `'link'`: If there is
-    * [link](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.link)
+    * [link](https://echarts.apache.org/en/option.html#series-treemap.data.link)
     * in node data, do hyperlink jump after clicked.
     *
     *
     * @default
     * "zoomToNode"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.nodeClick
+    * @see https://echarts.apache.org/en/option.html#series-treemap.nodeClick
     */
   var nodeClick: js.UndefOr[Boolean | String] = js.undefined
   /**
@@ -555,7 +555,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.right
+    * @see https://echarts.apache.org/en/option.html#series-treemap.right
     */
   var right: js.UndefOr[Double | String] = js.undefined
   /**
@@ -570,7 +570,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.roam
+    * @see https://echarts.apache.org/en/option.html#series-treemap.roam
     */
   var roam: js.UndefOr[Boolean | String] = js.undefined
   /**
@@ -579,7 +579,7 @@ trait SeriesTreemap_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.silent
+    * @see https://echarts.apache.org/en/option.html#series-treemap.silent
     */
   var silent: js.UndefOr[Anon_ChildrenLink] = js.undefined
   /**
@@ -590,14 +590,14 @@ trait SeriesTreemap_ extends js.Object {
     * * (1 + Math.sqrt(5))`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.squareRatio
+    * @see https://echarts.apache.org/en/option.html#series-treemap.squareRatio
     */
   var squareRatio: js.UndefOr[Double] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
@@ -613,59 +613,59 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @default
     * "middle"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.top
+    * @see https://echarts.apache.org/en/option.html#series-treemap.top
     */
   var top: js.UndefOr[Double | String] = js.undefined
   /**
     * @default
     * "treemap"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.type
+    * @see https://echarts.apache.org/en/option.html#series-treemap.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * `upperLabel` is used to specify whether show label when the node
     * has children. When
-    * [upperLabel.show](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.upperLabel.show)
+    * [upperLabel.show](https://echarts.apache.org/en/option.html#series-treemap.upperLabel.show)
     * is set as `true`, the feature that "show parent label" is enabled.
     *
     * The same as
-    * [series-treemap.label](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.label)
+    * [series-treemap.label](https://echarts.apache.org/en/option.html#series-treemap.label)
     * , the option `upperLabel` can be placed at the root of
-    * [series-treemap](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+    * [series-treemap](https://echarts.apache.org/en/option.html#series-treemap)
     * directly, or in
-    * [series-treemap.level](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.level)
+    * [series-treemap.level](https://echarts.apache.org/en/option.html#series-treemap.level)
     * , or in each item of
-    * [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * .
     *
     * Specifically,
-    * [series-treemap.label](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.label)
+    * [series-treemap.label](https://echarts.apache.org/en/option.html#series-treemap.label)
     * specifies the style when a node is a leaf, while `upperLabel`
     * specifies the style when a node has children, in which case the
     * label is displayed in the inner top of the node.
     *
     * See:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.treemap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-treemap.treemap)
     *
     * > Tps: In treemap, `label` attribute could appear in more than
     * one places:
     * >
     * > + It could appear in
-    * > [sereis-treemap](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+    * > [sereis-treemap](https://echarts.apache.org/en/option.html#series-treemap)
     * > , indicating the unified setting of the series.
     * >
     * > + It could appear in each array element of
-    * > [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * > [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * > , indicating the unified setting of each level of the tree.
     * >
     * > + It could appear in each node of
-    * > [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * > [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * > , indicating the particular setting of each node.
     * >
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.upperLabel
+    * @see https://echarts.apache.org/en/option.html#series-treemap.upperLabel
     */
   var upperLabel: js.UndefOr[
     Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily
@@ -681,63 +681,63 @@ trait SeriesTreemap_ extends js.Object {
     * threshold.
     *
     * About visual encoding, see details in
-    * [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * .
     *
     * > Tps: In treemap, `visibleMin` attribute could appear in more
     * than one places:
     * >
     * > + It could appear in
-    * > [sereis-treemap](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+    * > [sereis-treemap](https://echarts.apache.org/en/option.html#series-treemap)
     * > , indicating the unified setting of the series.
     * >
     * > + It could appear in each array element of
-    * > [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * > [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * > , indicating the unified setting of each level of the tree.
     * >
     * > + It could appear in each node of
-    * > [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * > [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * > , indicating the particular setting of each node.
     * >
     *
     *
     * @default
     * 10
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.visibleMin
+    * @see https://echarts.apache.org/en/option.html#series-treemap.visibleMin
     */
   var visibleMin: js.UndefOr[Double] = js.undefined
   /**
     * `treemap` is able to map any dimensions of data to visual.
     *
     * The value of
-    * [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * can be an array.
     * And each item of the array represents a "dimension".
     * `visualDimension` specifies the dimension on which visual mapping
     * will be performed.
     *
     * About visual encoding, see details in
-    * [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * .
     *
     * > Tps: In treemap, `visualDimension` attribute could appear in
     * more than one places:
     * >
     * > + It could appear in
-    * > [sereis-treemap](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap)
+    * > [sereis-treemap](https://echarts.apache.org/en/option.html#series-treemap)
     * > , indicating the unified setting of the series.
     * >
     * > + It could appear in each array element of
-    * > [series-treemap.levels](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels)
+    * > [series-treemap.levels](https://echarts.apache.org/en/option.html#series-treemap.levels)
     * > , indicating the unified setting of each level of the tree.
     * >
     * > + It could appear in each node of
-    * > [series-treemap.data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data)
+    * > [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
     * > , indicating the particular setting of each node.
     * >
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.visualDimension
+    * @see https://echarts.apache.org/en/option.html#series-treemap.visualDimension
     */
   var visualDimension: js.UndefOr[Double] = js.undefined
   /**
@@ -745,12 +745,12 @@ trait SeriesTreemap_ extends js.Object {
     * Auto-statistics by default.
     *
     * When
-    * [colorMappingBy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.colorMappingBy)
+    * [colorMappingBy](https://echarts.apache.org/en/option.html#series-treemap.levels.colorMappingBy)
     * is set to `'value'`, you are able to specify extent manually
     * for visual mapping by specifying `visualMin` or `visualMax`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.visualMax
+    * @see https://echarts.apache.org/en/option.html#series-treemap.visualMax
     */
   var visualMax: js.UndefOr[Double] = js.undefined
   /**
@@ -758,12 +758,12 @@ trait SeriesTreemap_ extends js.Object {
     * Auto-statistics by default.
     *
     * When
-    * [colorMappingBy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.colorMappingBy)
+    * [colorMappingBy](https://echarts.apache.org/en/option.html#series-treemap.levels.colorMappingBy)
     * is set to `'value'`, you are able to specify extent manually
     * for visual mapping by specifying `visualMin` or `visualMax`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.visualMin
+    * @see https://echarts.apache.org/en/option.html#series-treemap.visualMin
     */
   var visualMin: js.UndefOr[Double] = js.undefined
   /**
@@ -772,7 +772,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @default
     * 80%
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.width
+    * @see https://echarts.apache.org/en/option.html#series-treemap.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
   /**
@@ -787,7 +787,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.z
+    * @see https://echarts.apache.org/en/option.html#series-treemap.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -805,20 +805,20 @@ trait SeriesTreemap_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-treemap.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
   /**
     * The treemap will be auto zoomed to a appropriate ratio when a
     * node is clicked (when
-    * [nodeClick](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.nodeClick)
+    * [nodeClick](https://echarts.apache.org/en/option.html#series-treemap.nodeClick)
     * is set as `'zoomToNode'` and no drill down happens).
     * This configuration item indicates the ratio.
     *
     *
     * @default
     * 0.32*0.32
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.zoomToNodeRatio
+    * @see https://echarts.apache.org/en/option.html#series-treemap.zoomToNodeRatio
     */
   var zoomToNodeRatio: js.UndefOr[Double] = js.undefined
 }

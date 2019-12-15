@@ -38,6 +38,8 @@ abstract class Structure protected () extends IStructure {
   override var unit: IAbstractUnit = js.native
   /* CompleteClass */
   override def allProperties(): js.Array[AbstractProperty[_, _]] = js.native
+  @JSName("container")
+  def container_MStructure(): IContainer | Null = js.native
   /**
     * Deletes a model from the model.
     * This will automatically remove the item from its model parent,
@@ -45,11 +47,15 @@ abstract class Structure protected () extends IStructure {
     */
   def delete(): Unit = js.native
   /* protected */ def getContainerAs[T /* <: IContainer */](containerType: js.Any): T = js.native
+  @JSName("isLoaded")
+  def isLoaded_MStructure(): Boolean = js.native
   /**
     * Returns all properties when this structure is loaded, otherwise just the public properties.
     */
   /* CompleteClass */
   override def loadedProperties(): js.Array[AbstractProperty[_, _]] = js.native
+  @JSName("model")
+  def model_MStructure(): IAbstractModel = js.native
   /* CompleteClass */
   override def publicProperties(): js.Array[AbstractProperty[_, _]] = js.native
   /**
@@ -76,5 +82,7 @@ abstract class Structure protected () extends IStructure {
     */
   /* CompleteClass */
   override def traversePublicParts(visit: js.Function1[/* structure */ this.type, Unit]): Unit = js.native
+  @JSName("unit")
+  def unit_MStructure(): IAbstractUnit = js.native
 }
 

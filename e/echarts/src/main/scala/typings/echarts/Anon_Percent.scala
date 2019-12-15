@@ -13,35 +13,35 @@ trait Anon_Percent extends js.Object {
     *
     * @default
     * 1
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_line.shape.percent
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.shape.percent
     */
   var percent: js.UndefOr[Double] = js.undefined
   /**
     * x value of the start point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_line.shape.x1
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.shape.x1
     */
   var x1: js.UndefOr[Double] = js.undefined
   /**
     * x value of the end point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_line.shape.x2
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.shape.x2
     */
   var x2: js.UndefOr[Double] = js.undefined
   /**
     * y value of the start point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_line.shape.y1
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.shape.y1
     */
   var y1: js.UndefOr[Double] = js.undefined
   /**
     * y value of the end point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_line.shape.y2
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.shape.y2
     */
   var y2: js.UndefOr[Double] = js.undefined
 }

@@ -24,13 +24,17 @@ class PageVariable protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsMicroflowParameterMapping: MicroflowParameterMapping = js.native
-  val containerAsNanoflowParameterMapping: NanoflowParameterMapping = js.native
   @JSName("model")
-  var model_PageVariable: IModel = js.native
-  var useAllPages: Boolean = js.native
-  var widget: Widget | Null = js.native
-  val widgetLocalName: String | Null = js.native
+  var model_FPageVariable: IModel = js.native
+  def containerAsMicroflowParameterMapping(): MicroflowParameterMapping = js.native
+  def containerAsNanoflowParameterMapping(): NanoflowParameterMapping = js.native
+  def useAllPages(): Boolean = js.native
+  def useAllPages(newValue: Boolean): js.Any = js.native
+  def widget(): Widget | Null = js.native
+  def widget(newValue: Widget): js.Any = js.native
+  def widgetLocalName(): String | Null = js.native
+  @JSName("widget")
+  def widget_Any(): js.Any = js.native
 }
 
 /* static members */

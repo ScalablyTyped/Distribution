@@ -17,13 +17,13 @@ import scala.scalajs.js.annotation._
   *
   * Heat map mainly use colors to represent values, which must be used
   * along with
-  * [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+  * [visualMap](https://echarts.apache.org/en/option.html#visualMap)
   * component.
   *
   * It can be used in either
-  * [rectangular coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+  * [rectangular coordinate](https://echarts.apache.org/en/option.html#grid)
   * or
-  * [geographic coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+  * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
   *
   * But the behaviour on them are quite different.
   * Rectangular coordinate must have two catagories to use it.
@@ -33,36 +33,36 @@ import scala.scalajs.js.annotation._
   *
   * **rectangular coordinate:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap)
+  * [see doc](https://echarts.apache.org/en/option.html#series-heatmap)
   *
   * **geographic coordinate:**
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap)
+  * [see doc](https://echarts.apache.org/en/option.html#series-heatmap)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap
+  * @see https://echarts.apache.org/en/option.html#series-heatmap
   */
 @JSName("SeriesHeatmap")
 trait SeriesHeatmap_ extends js.Object {
   /**
     * Blur size of each data point. It is valid with
-    * [coordinateSystem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem)
+    * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
     * of 'geo' value.
     *
     *
     * @default
     * 20
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.blurSize
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.blurSize
     */
   var blurSize: js.UndefOr[Double] = js.undefined
   /**
     * Index of
-    * [calendar coordinates](https://ecomfe.github.io/echarts-doc/public/en/option.html#calendar)
+    * [calendar coordinates](https://echarts.apache.org/en/option.html#calendar)
     * to combine with, which is useful for multiple calendar coordinates
     * in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.calendarIndex
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.calendarIndex
     */
   var calendarIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -72,79 +72,79 @@ trait SeriesHeatmap_ extends js.Object {
     *
     * Use a two-dimensional rectangular coordinate (also known as Cartesian
     * coordinate), with
-    * [xAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.xAxisIndex)
+    * [xAxisIndex](https://echarts.apache.org/en/option.html#series-heatmap.xAxisIndex)
     * and
-    * [yAxisIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.yAxisIndex)
+    * [yAxisIndex](https://echarts.apache.org/en/option.html#series-heatmap.yAxisIndex)
     * to assign the corresponding axis component.
     *
     * + `'geo'`
     *
     * Use geographic coordinate, with
-    * [geoIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.geoIndex)
+    * [geoIndex](https://echarts.apache.org/en/option.html#series-heatmap.geoIndex)
     * to assign the corresponding geographic coordinate components.
     *
     *
     * @default
     * "cartesian2d"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem
     */
   var coordinateSystem: js.UndefOr[String] = js.undefined
   /**
     * Data array of series, which can be in the following forms:
     *
     * Notice, if no `data` specified in series, and there is
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * in option, series will use the first
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * as its datasource. If `data` has been specified,
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * will not used.
     *
     * `series.datasetIndex` can be used to specify other
-    * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
+    * [dataset](https://echarts.apache.org/en/option.html#dataset)
     * .
     *
     * Basically, data is represented by a two-dimension array, like
     * the example below, where each colum is named as a "dimension".
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.heatmap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-heatmap.heatmap)
     *
     * + In
-    * [cartesian (grid)](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
+    * [cartesian (grid)](https://echarts.apache.org/en/option.html#grid)
     * , "dimX" and "dimY" correspond to
-    * [xAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [xAxis](https://echarts.apache.org/en/option.html#xAxis)
     * and
-    * [yAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [yAxis](https://echarts.apache.org/en/option.html#yAxis)
     * repectively.
     * + In
-    * [polar](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
+    * [polar](https://echarts.apache.org/en/option.html#polar)
     * "dimX" and "dimY" correspond to
-    * [radiusAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#radiusAxis)
+    * [radiusAxis](https://echarts.apache.org/en/option.html#radiusAxis)
     * 和
-    * [angleAxis](https://ecomfe.github.io/echarts-doc/public/en/option.html#anbleAxis)
+    * [angleAxis](https://echarts.apache.org/en/option.html#anbleAxis)
     * repectively.
     * + Other dimensions are optional, which can be used in other place.
     * For example:
-    * + [visualMap](https://ecomfe.github.io/echarts-doc/public/en/option.html#visualMap)
+    * + [visualMap](https://echarts.apache.org/en/option.html#visualMap)
     * can map one or more dimensions to viusal (color, symbol size
     * ...).
-    * + [series.symbolSize](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.symbolSize)
+    * + [series.symbolSize](https://echarts.apache.org/en/option.html#series.symbolSize)
     * can be set as a callback function, where symbol size can be calculated
     * by values of a certain dimension.
     * + Values in other dimensions can be shown by
-    * [tooltip.formatter](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.formatter)
+    * [tooltip.formatter](https://echarts.apache.org/en/option.html#tooltip.formatter)
     * or
-    * [series.label.formatter](https://ecomfe.github.io/echarts-doc/public/en/option.html#series.label.formatter)
+    * [series.label.formatter](https://echarts.apache.org/en/option.html#series.label.formatter)
     * .
     *
     * Especially, when there is one and only one category axis (axis.type
     * is `'category'`), data can be simply be represented by a one-dimension
     * array, like:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.heatmap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-heatmap.heatmap)
     *
     * **Relationship between "value" and
-    * [axis.type](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis.type)
+    * [axis.type](https://echarts.apache.org/en/option.html#xAxis.type)
     * **
     *
     * + When a dimension corresponds to a value axis (axis.type
@@ -160,10 +160,10 @@ trait SeriesHeatmap_ extends js.Object {
     * (based on `0`), the string value of the axis.data.
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.heatmap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-heatmap.heatmap)
     *
     * There is an example of double category axes:
-    * [Github Punchcard](https://ecomfe.github.io/echarts-examples/public/editor.html?c=scatter-punchCard)
+    * [Github Punchcard](https://echarts.apache.org/examples/en/editor.html?c=scatter-punchCard)
     * .
     *
     * + When a dimension corresponds to a time axis (type is `'time'`),
@@ -207,7 +207,7 @@ trait SeriesHeatmap_ extends js.Object {
     * When needing to customize a data item, it can be set as an object,
     * where property `value` reprensent real value. For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.heatmap)
+    * [see doc](https://echarts.apache.org/en/option.html#series-heatmap.heatmap)
     *
     * **Empty value:**
     *
@@ -219,7 +219,7 @@ trait SeriesHeatmap_ extends js.Object {
     * and scatter chart do not display graphic elements for empty values.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.data
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.data
     */
   var data: js.UndefOr[
     js.Array[
@@ -227,19 +227,19 @@ trait SeriesHeatmap_ extends js.Object {
     ]
   ] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType
   ] = js.undefined
   /**
     * Index of
-    * [geographic coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
+    * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
     * to combine with, which is useful for multiple geographic axes
     * in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.geoIndex
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.geoIndex
     */
   var geoIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -248,25 +248,25 @@ trait SeriesHeatmap_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.id
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     * Work for
-    * [coordinateSystem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem)
+    * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
     * : 'cartesian2d'.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * Work for
-    * [coordinateSystem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem)
+    * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
     * : 'cartesian2d'.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.label
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
@@ -274,7 +274,7 @@ trait SeriesHeatmap_ extends js.Object {
     * For example, mark a time interval.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.markArea
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.markArea
     */
   var markArea: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
@@ -283,7 +283,7 @@ trait SeriesHeatmap_ extends js.Object {
     * Use a line in the chart to illustrate.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.markLine
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.markLine
     */
   var markLine: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
@@ -292,40 +292,40 @@ trait SeriesHeatmap_ extends js.Object {
     * Mark point in a chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.markPoint
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.markPoint
     */
   var markPoint: js.UndefOr[
     Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
   ] = js.undefined
   /**
     * Maximum opacity. It is valid with
-    * [coordinateSystem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem)
+    * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
     * of 'geo' value.
     *
     *
     * @default
     * 1
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.maxOpacity
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.maxOpacity
     */
   var maxOpacity: js.UndefOr[Double] = js.undefined
   /**
     * Minimum opacity. It is valid with
-    * [coordinateSystem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem)
+    * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
     * of 'geo' value.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.minOpacity
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.minOpacity
     */
   var minOpacity: js.UndefOr[Double] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.name
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -334,38 +334,38 @@ trait SeriesHeatmap_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.silent
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "heatmap"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.type
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
     * Index of
-    * [x axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#xAxis)
+    * [x axis](https://echarts.apache.org/en/option.html#xAxis)
     * to combine with, which is useful for multiple x axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.xAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.xAxisIndex
     */
   var xAxisIndex: js.UndefOr[Double] = js.undefined
   /**
     * Index of
-    * [y axis](https://ecomfe.github.io/echarts-doc/public/en/option.html#yAxis)
+    * [y axis](https://echarts.apache.org/en/option.html#yAxis)
     * to combine with, which is useful for multiple y axes in one chart.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.yAxisIndex
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.yAxisIndex
     */
   var yAxisIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -380,7 +380,7 @@ trait SeriesHeatmap_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.z
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -398,7 +398,7 @@ trait SeriesHeatmap_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-heatmap.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

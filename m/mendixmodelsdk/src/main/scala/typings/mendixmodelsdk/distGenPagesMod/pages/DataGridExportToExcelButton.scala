@@ -23,8 +23,12 @@ class DataGridExportToExcelButton protected () extends GridControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var maxNumberOfRows: Double = js.native
-  var useExcelDateType: Boolean = js.native
+  @JSName("model")
+  var model_FDataGridExportToExcelButton: IModel = js.native
+  def maxNumberOfRows(): Double = js.native
+  def maxNumberOfRows(newValue: Double): js.Any = js.native
+  def useExcelDateType(): Boolean = js.native
+  def useExcelDateType(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

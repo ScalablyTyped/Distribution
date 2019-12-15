@@ -18,7 +18,6 @@
 | 14725 | [tslib](./t/tslib) | Runtime library for TypeScript helper functions
 | 14126 | [mkdirp](./m/mkdirp) | Recursively mkdir, like mkdir -p
 | 12955 | [axios](./a/axios) | Promise based HTTP client for the browser and node
-| 12768 | [vue](./v/vue) | Reactive, component-oriented view layer for modern
 | 12143 | [glob](./g/glob) | a little globber
 | 12106 | [colors](./c/colors) | get colors in your node.js console
 | 11542 | [yargs](./y/yargs) | yargs the modern, pirate-themed, successor to opti
@@ -102,7 +101,6 @@
 | 3388 | [qs](./q/qs) | A querystring parser that supports nesting and arr
 | 3363 | [meow](./m/meow) | CLI app helper
 | 3323 | [extend](./e/extend) | Port of jQuery.extend for node.js and the browser
-| 3308 | [vue-router](./v/vue-router) | Official router for Vue.js 2
 | 3253 | [joi](./j/joi) | Object schema validation
 | 3152 | [styled-components](./s/styled-components) | Visual primitives for the component age. Use the b
 | 3144 | [node-uuid](./n/node-uuid) | Rigorous implementation of RFC4122 (v1 and v4) UUI
@@ -160,7 +158,6 @@
 | 1835 | [raf](./r/raf) | requestAnimationFrame polyfill for node and the br
 | 1829 | [tmp](./t/tmp) | Temporary file and directory creator
 | 1803 | [query-string](./q/query-string) | Parse and stringify URL query strings
-| 1801 | [vuex](./v/vuex) | state management for Vue.js
 | 1790 | [highlight_dot_js](./h/highlight_dot_js) | Syntax highlighting with language autodetection.
 | 1782 | [md5](./m/md5) | js function for hashing messages with MD5
 | 1777 | [gulp-uglify](./g/gulp-uglify) | Minify files with UglifyJS.
@@ -201,7 +198,6 @@
 | 1465 | [figlet](./f/figlet) | Creates ASCII Art from text. A full implementation
 | 1442 | [event-stream](./e/event-stream) | construct pipes of streams of events
 | 1435 | [sequelize](./s/sequelize) | Multi dialect ORM for Node.JS
-| 1432 | [vue-template-compiler](./v/vue-template-compiler) | template compiler for Vue 2.0
 | 1408 | [gulp-concat](./g/gulp-concat) | Concatenates files
 | 1407 | [optimize-css-assets-webpa](./o/optimize-css-assets-webpack-plugin) | A Webpack plugin to optimize \ minimize CSS assets
 | 1392 | [sw-precache-webpack-plugi](./s/sw-precache-webpack-plugin) | Webpack plugin for using service workers
@@ -268,7 +264,6 @@
 | 1020 | [nunjucks](./n/nunjucks) | A powerful templating engine with inheritance, asy
 | 1018 | [babelify](./b/babelify) | Babel browserify transform
 | 1013 | [terser-webpack-plugin](./t/terser-webpack-plugin) | Terser plugin for webpack
-| 1009 | [vue-loader](./v/vue-loader) | Vue single-file component loader for Webpack
 | 1008 | [amqplib](./a/amqplib) | An AMQP 0-9-1 (e.g., RabbitMQ) library and client.
 | 1007 | [backbone](./b/backbone) | Give your JS App some Backbone with Models, Views,
 | 1005 | [lodash_dot_isequal](./l/lodash_dot_isequal) | The Lodash method _.isEqual exported as a module.
@@ -680,7 +675,6 @@
 | 346 | [fortawesome__react-fontaw](./f/fortawesome__react-fontawesome) | Official React component for Font Awesome 5
 | 346 | [karma-jasmine](./k/karma-jasmine) | A Karma plugin - adapter for Jasmine testing frame
 | 346 | [xml2json](./x/xml2json) | Converts xml to json and vice-versa, using node-ex
-| 345 | [vue-class-component](./v/vue-class-component) | ES201X/TypeScript class decorator for Vue componen
 | 344 | [class-validator](./c/class-validator) | Class-based validation with Typescript / ES6 / ES5
 | 344 | [fast-glob](./f/fast-glob) | Is a faster node-glob alternative
 | 344 | [lodash_dot_isobject](./l/lodash_dot_isobject) | The modern build of lodash’s _.isObject as a modul
@@ -751,12 +745,10 @@
 | 311 | [ua-parser-js](./u/ua-parser-js) | Lightweight JavaScript-based user-agent string par
 | 310 | [ansi-escapes](./a/ansi-escapes) | ANSI escape codes for manipulating the terminal
 | 308 | [performance-now](./p/performance-now) | Implements performance.now (based on process.hrtim
-| 308 | [vue-resource](./v/vue-resource) | The HTTP client for Vue.js
 | 307 | [blueimp-md5](./b/blueimp-md5) | JavaScript MD5 implementation. Compatible with ser
 | 307 | [class-transformer](./c/class-transformer) | Proper decorator-based transformation / serializat
 | 307 | [ignore](./i/ignore) | Ignore is a manager and filter for .gitignore rule
 | 306 | [reactstrap](./r/reactstrap) | React Bootstrap 4 components
-| 306 | [vue-i18n](./v/vue-i18n) | Internationalization plugin for Vue.js
 | 305 | [react-jss](./r/react-jss) | JSS integration with React
 | 305 | [schema-utils](./s/schema-utils) | webpack Validation Utils
 | 305 | [statuses](./s/statuses) | HTTP status utility
@@ -953,7 +945,6 @@
 | 230 | [util_dot_promisify](./u/util_dot_promisify) | Polyfill/shim for util.promisify in node versions 
 | 229 | [kue](./k/kue) | Feature rich priority job queue backed by redis
 | 229 | [vary](./v/vary) | Manipulate the HTTP Vary header
-| 229 | [vue-server-renderer](./v/vue-server-renderer) | server renderer for Vue 2.0
 | 228 | [memoizee](./m/memoizee) | Memoize/cache function results
 | 228 | [omit_dot_js](./o/omit_dot_js) | Utility function to create a shallow copy of an ob
 | 228 | [portscanner](./p/portscanner) | Asynchronous port scanner for Node.js
@@ -2014,7 +2005,6 @@
 | 74 | [pusher-js](./p/pusher-js) | Pusher JavaScript library for browsers, React Nati
 | 74 | [title-case](./t/title-case) | Title case a string
 | 74 | [ttf2woff2](./t/ttf2woff2) | Convert TTF files to WOFF2 ones.
-| 74 | [vue-clickaway](./v/vue-clickaway) | Reusable clickaway directive for reusable Vue.js c
 | 73 | [async-lock](./a/async-lock) | Lock on asynchronous code
 | 73 | [binary-search](./b/binary-search) | tiny binary search function with comparators
 | 73 | [console-stamp](./c/console-stamp) | Patch NodeJS console methods in order to add times
@@ -2321,10 +2311,8 @@
 | 58 | [stdout-stream](./s/stdout-stream) | Non-blocking stdout stream
 | 58 | [swagger-jsdoc](./s/swagger-jsdoc) | Generates swagger doc based on JSDoc
 | 58 | [validatorjs](./v/validatorjs) | Validation library inspired by Laravel's Validator
-| 58 | [vue-moment](./v/vue-moment) | Handy Moment.js filters for your Vue.js project
 | 58 | [xml-escape](./x/xml-escape) | Escape XML
 | 57 | [comment-json](./c/comment-json) | Parse and stringify JSON file with comments
-| 57 | [depcheck](./d/depcheck) | Check dependencies in your node module
 | 57 | [dot-prop-immutable](./d/dot-prop-immutable) | Immutable version of dot-prop with some extensions
 | 57 | [ed25519](./e/ed25519) | An Ed25519 implementation for node.js
 | 57 | [eol](./e/eol) | Newline character converter
@@ -2687,7 +2675,6 @@
 | 44 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
 | 44 | [typesafe-actions](./t/typesafe-actions) | Typesafe Action Creators for Redux / Flux Architec
 | 44 | [viewerjs](./v/viewerjs) | JavaScript image viewer.
-| 44 | [vue-the-mask](./v/vue-the-mask) | Tiny (2KB) and dependency free mask input for Vue.
 | 43 | [aggregate-error](./a/aggregate-error) | Create an error from multiple errors
 | 43 | [auth0-lock](./a/auth0-lock) | Auth0 Lock
 | 43 | [aws-serverless-express](./a/aws-serverless-express) | This library enables you to utilize AWS Lambda and
@@ -2809,7 +2796,6 @@
 | 40 | [socketio-wildcard](./s/socketio-wildcard) | socket.io with a wildcard event
 | 40 | [svg4everybody](./s/svg4everybody) | Use external SVG spritemaps in any browser
 | 40 | [trim-newlines](./t/trim-newlines) | Trim newlines from the start and/or end of a strin
-| 40 | [vue-color](./v/vue-color) | Color of Vue Components
 | 40 | [wcwidth](./w/wcwidth) | Port of C's wcwidth() and wcswidth()
 | 40 | [webpack-subresource-integ](./w/webpack-subresource-integrity) | Webpack plugin for enabling Subresource Integrity
 | 39 | [bootstrap-slider](./b/bootstrap-slider) | Slider view component for Twitter Bootstrap.
@@ -2909,7 +2895,6 @@
 | 37 | [selectize](./s/selectize) | Selectize is a jQuery-based custom  UI control. Us
 | 37 | [solidity-parser-antlr](./s/solidity-parser-antlr) | A Solidity parser built from a robust ANTLR 4 gram
 | 37 | [typography](./t/typography) | Opinionated toolkit for building websites with bea
-| 37 | [vuex-i18n](./v/vuex-i18n) | Easy localization for vue-components using vuex as
 | 37 | [wait-on](./w/wait-on) | wait-on is a cross platform command line utility a
 | 37 | [wake_on_lan](./w/wake_on_lan) | generate and send Wake-on-LAN magic packets
 | 37 | [weak](./w/weak) | Make weak references to JavaScript Objects.
@@ -3317,8 +3302,6 @@
 | 27 | [umd](./u/umd) | Universal Module Definition for use in automated b
 | 27 | [vega-util](./v/vega-util) | JavaScript utilities for Vega.
 | 27 | [victor](./v/victor) | A JavaScript 2D vector class with methods for comm
-| 27 | [vue-scrollto](./v/vue-scrollto) | Adds a directive that listens for click events and
-| 27 | [vue-select](./v/vue-select) | Everything you wish the HTML  element could do, wr
 | 27 | [wiring-pi](./w/wiring-pi) | Bindings to wiringPi
 | 26 | [apicache](./a/apicache) | An ultra-simplified API response caching middlewar
 | 26 | [applicationinsights-js](./a/applicationinsights-js) | Microsoft Application Insights JavaScript SDK
@@ -3467,8 +3450,6 @@
 | 24 | [trust__webcrypto](./t/trust__webcrypto) | WebCrypto API for Node.js
 | 24 | [uuid-1345](./u/uuid-1345) | Generate UUIDs of versions 1, 3, 4, and 5.
 | 24 | [vlq](./v/vlq) | Generate, and decode, base64 VLQ mappings for sour
-| 24 | [vue-ls](./v/vue-ls) | Vue plugin for work with LocalStorage from Vue con
-| 24 | [vue-markdown](./v/vue-markdown) | A Powerful and Highspeed Markdown Parser for Vue
 | 23 | [bloomfilter](./b/bloomfilter) | Fast bloom filter in JavaScript.
 | 23 | [blueprintjs__datetime](./b/blueprintjs__datetime) | Components for interacting with dates and times
 | 23 | [braft-editor](./b/braft-editor) | Rich Text Editor Based On Draft.js
@@ -3702,7 +3683,6 @@
 | 20 | [stream-shift](./s/stream-shift) | Returns the next buffer/object in a stream's reada
 | 20 | [timsort](./t/timsort) | TimSort: Fast Sorting for Node.js
 | 20 | [uifabric__utilities](./u/uifabric__utilities) | Office UI Fabric utilities for building React comp
-| 20 | [vue-splitpane](./v/vue-splitpane) | vue split-pane component
 | 20 | [web3-eth-accounts](./w/web3-eth-accounts) | Web3 module to generate Ethereum accounts and sign
 | 20 | [webpack-cleanup-plugin](./w/webpack-cleanup-plugin) | Plugin for webpack to cleanup extraneous files fro
 | 20 | [winston-mail](./w/winston-mail) | A mail transport for winston
@@ -4231,7 +4211,6 @@
 | 13 | [transducers-js](./t/transducers-js) | A Transducers implementation for JavaScript
 | 13 | [two_dot_js](./t/two_dot_js) | A renderer agnostic two-dimensional drawing api fo
 | 13 | [vivus](./v/vivus) | JavaScript library to make drawing animation on SV
-| 13 | [vue2-editor](./v/vue2-editor) | HTML editor using Vue.js 2, and Quill.js, an open 
 | 13 | [websql](./w/websql) | WebSQL Database API, implemented for Node using sq
 | 13 | [xmpp__jid](./x/xmpp__jid) | XMPP identifiers (JID) for JavaScript
 | 13 | [youtube-player](./y/youtube-player) | YouTube IFrame Player API abstraction.
@@ -4461,7 +4440,6 @@
 | 11 | [ungap__weakmap](./u/ungap__weakmap) | An essential WeakMap polyfill for legacy browsers.
 | 11 | [vega-expression](./v/vega-expression) | Vega expression parser and code generator.
 | 11 | [vkbeautify](./v/vkbeautify) | Pretty prints and minifies XML/JSON/SQL/CSS
-| 11 | [vue-datetime](./v/vue-datetime) | Mobile friendly datetime picker for Vue. Supports 
 | 11 | [w3c-keyname](./w/w3c-keyname) | Get a KeyboardEvent.key-style string from an event
 | 11 | [webpack-fail-plugin](./w/webpack-fail-plugin) | Webpack plugin that makes the process return an er
 | 11 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities.
@@ -4693,7 +4671,6 @@
 | 9 | [shrink-ray](./s/shrink-ray) | Node.js compression middleware with brotli and zop
 | 9 | [simple-mock](./s/simple-mock) | Super simple stubs and spies with 1-step sandbox r
 | 9 | [storybook__client-api](./s/storybook__client-api) | Storybook Client API
-| 9 | [storybook__vue](./s/storybook__vue) | Storybook for Vue: Develop Vue Component in isolat
 | 9 | [super-error](./s/super-error) | Easily subclass errors
 | 9 | [tablesorter](./t/tablesorter) | tablesorter (FORK) is a jQuery plugin for turning 
 | 9 | [timezone-support](./t/timezone-support) | Lightweight time zone support for your application
@@ -4844,7 +4821,6 @@
 | 8 | [utif](./u/utif) | Fast and advanced TIFF decoder
 | 8 | [vali-date](./v/vali-date) | Validate a date
 | 8 | [vega-typings](./v/vega-typings) | Typings for Vega.
-| 8 | [vue2-datepicker](./v/vue2-datepicker) | A Datepicker Component For Vue2
 | 8 | [wait-for-expect](./w/wait-for-expect) | Wait for expectation to be true, useful for integr
 | 8 | [wnumb](./w/wnumb) | wNumb - JavaScript Number & Money formatting
 | 8 | [yargs-interactive](./y/yargs-interactive) | Build interactive command line tools without worri
@@ -5010,7 +4986,6 @@
 | 7 | [use-it__event-listener](./u/use-it__event-listener) | A custom React Hook that provides a useEventListen
 | 7 | [vertx3-eventbus-client](./v/vertx3-eventbus-client) | Vert.x 3 Event Bus Client as NPM
 | 7 | [vexflow](./v/vexflow) | A JavaScript library for rendering music notation 
-| 7 | [vue-rx](./v/vue-rx) | RxJS bindings for Vue
 | 7 | [wcag-contrast](./w/wcag-contrast) | evaluate the wcag color contrast score for two col
 | 7 | [webgme](./w/webgme) | Web-based Generic Modeling Environment
 | 7 | [when-dom-ready](./w/when-dom-ready) | $(document).ready() for the 21st century
@@ -5311,7 +5286,6 @@
 | 5 | [node-zopfli-es](./n/node-zopfli-es) | Bindings for Zopfli compressing lib. Compress gzip
 | 5 | [notifyjs](./n/notifyjs) | A handy wrapper for the Web Notifications API
 | 5 | [npm-list-author-packages](./n/npm-list-author-packages) | List an author's packages.
-| 5 | [nuxtjs__auth](./n/nuxtjs__auth) | Authentication module for Nuxt.js
 | 5 | [overlayscrollbars](./o/overlayscrollbars) | A javascript scrollbar plugin which hides native s
 | 5 | [p-log](./p/p-log) | Log the value/error of a promise
 | 5 | [p-one](./p/p-one) | Test whether some promise passes a testing functio
@@ -5608,7 +5582,6 @@
 | 4 | [utm](./u/utm) | Bidirectional UTM-WGS84 converter
 | 4 | [vectorious](./v/vectorious) | A high performance linear algebra library.
 | 4 | [vitalsigns](./v/vitalsigns) | Powerful and customizable application health monit
-| 4 | [vue2-hammer](./v/vue2-hammer) | Hammer.js wrapper for Vue 2.x to support some touc
 | 4 | [weak-napi](./w/weak-napi) | Make weak references to JavaScript Objects.
 | 4 | [webdriver](./w/webdriver) | A Node.js bindings implementation for the W3C WebD
 | 4 | [webpack-dotenv-plugin](./w/webpack-dotenv-plugin) | Use dotenv with webpack.
@@ -5917,7 +5890,6 @@
 | 3 | [use-sidecar](./u/use-sidecar) | Sidecar code splitting utils
 | 3 | [vanilla-modal](./v/vanilla-modal) | A dependency-free CSS-driven plain JavaScript moda
 | 3 | [vfile-message](./v/vfile-message) | Create a virtual message
-| 3 | [vue-tel-input](./v/vue-tel-input) | International Telephone Input with Vue
 | 3 | [wait-for-localhost](./w/wait-for-localhost) | Wait for localhost to be ready
 | 3 | [web3-providers-ipc](./w/web3-providers-ipc) | Module to handle web3 RPC connections over IPC soc
 | 3 | [webpack-blocks__typescrip](./w/webpack-blocks__typescript) | Webpack block for Typescript.
@@ -6308,7 +6280,6 @@
 | 2 | [vanilla-tilt](./v/vanilla-tilt) | A smooth 3D tilt javascript library forked from Ti
 | 2 | [vault-auth-aws](./v/vault-auth-aws) | js module that get token from vault HashiCorp serv
 | 2 | [vssln-parser](./v/vssln-parser) | Parses Visual Studio Solution (sln) files and retu
-| 2 | [vue-chartkick](./v/vue-chartkick) | Create beautiful JavaScript charts with one line o
 | 2 | [wait-promise](./w/wait-promise) | Make a promise, waiting for a specified amount of 
 | 2 | [webix](./w/webix) | Webix UI
 | 2 | [webpack-blocks__sass](./w/webpack-blocks__sass) | Webpack block for SASS.
@@ -6840,7 +6811,6 @@
 | 1 | [snazzy-info-window](./s/snazzy-info-window) | Customizable info windows using the Google Maps Ja
 | 1 | [solid__react](./s/solid__react) | Efficiently build Solid apps and components with R
 | 1 | [spatialite](./s/spatialite) | SpatiaLite for node
-| 1 | [splitpanes](./s/splitpanes) | A Vue JS reliable, simple and touch-ready panes sp
 | 1 | [squirrelly](./s/squirrelly) | Simple and powerful template engine that supports 
 | 1 | [ssh-key-decrypt](./s/ssh-key-decrypt) | Decrypt encrypted ssh private keys
 | 1 | [stardust-ui__react-compon](./s/stardust-ui__react-component-event-listener) | React components for binding events on the global 
@@ -7063,6 +7033,7 @@
 | 0 | [d3pie](./d/d3pie) | A highly configurable, re-usable library built on 
 | 0 | [data-driven](./d/data-driven) | data driven testing for mocha
 | 0 | [datadog-statsd-metrics-co](./d/datadog-statsd-metrics-collector) | Collect, rollup, and batch Datadog statsd metrics
+| 0 | [datadog-winston](./d/datadog-winston) | Ship winston logs to datadog without breaking a sw
 | 0 | [date_dot_format_dot_js](./d/date_dot_format_dot_js) | This package is no longer supported and has been d
 | 0 | [debessmann](./d/debessmann) | SDK for sending events to debessmann
 | 0 | [decode-entities](./d/decode-entities) | Decodes every html entity possible
@@ -7373,7 +7344,6 @@
 | 0 | [octokit__request-error](./o/octokit__request-error) | Error class for Octokit request errors
 | 0 | [ofe](./o/ofe) | Overwrite OnFatalError to produce heapdump
 | 0 | [office-js](./o/office-js) | Utility for office cloud services.
-| 0 | [okta__okta-vue](./o/okta__okta-vue) | Vue support for Okta
 | 0 | [on-wake-up](./o/on-wake-up) | Small module that calls a function when your compu
 | 0 | [onfleet__node-onfleet](./o/onfleet__node-onfleet) | Official client library for accessing the Onfleet 
 | 0 | [onionoo](./o/onionoo) | Node.js client library for the Tor Onionoo API
@@ -7598,7 +7568,6 @@
 | 0 | [tdweb](./t/tdweb) | Javascript interface for TDLib (telegram library)
 | 0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0 | [testing-library__user-eve](./t/testing-library__user-event) | Simulate user events for react-testing-library
-| 0 | [testing-library__vue](./t/testing-library__vue) | Simple and complete Vue DOM testing utilities that
 | 0 | [then-eos](./t/then-eos) | Promise-based end-of-stream.
 | 0 | [three-tds-loader](./t/three-tds-loader) | NodeJS wrapper for Three.js' TDSLoader function
 | 0 | [timelinejs](./t/timelinejs) | A Storytelling Timeline built in JavaScript.
@@ -7631,7 +7600,6 @@
 | 0 | [use-set-interval](./u/use-set-interval) | A React Hook (using useEffect) which uses window.s
 | 0 | [use-set-timeout](./u/use-set-timeout) | A React Hook (using useEffect) which uses window.s
 | 0 | [use-subscription](./u/use-subscription) | Reusable hooks
-| 0 | [v-chart-plugin](./v/v-chart-plugin) | This plugin is designed to allow Vue.js developers
 | 0 | [valdr](./v/valdr) | A model centric approach to AngularJS form validat
 | 0 | [valerie](./v/valerie) | Simple JS object validator
 | 0 | [valiant](./v/valiant) | JavaScript interval arithmetic library

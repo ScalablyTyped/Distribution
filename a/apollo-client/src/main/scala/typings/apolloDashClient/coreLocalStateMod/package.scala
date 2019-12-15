@@ -9,12 +9,11 @@ package object coreLocalStateMod {
   import typings.apolloDashClient.Anon_Field
 
   type FragmentMatcher = js.Function3[/* rootValue */ js.Any, /* typeCondition */ String, /* context */ js.Any, Boolean]
-  type Resolver = js.Function5[
-    /* fieldName */ String, 
-    /* rootValue */ js.Any, 
-    /* args */ js.Any, 
-    /* context */ js.Any, 
-    /* info */ Anon_Field, 
+  type Resolver = js.Function4[
+    /* rootValue */ js.UndefOr[js.Any], 
+    /* args */ js.UndefOr[js.Any], 
+    /* context */ js.UndefOr[js.Any], 
+    /* info */ js.UndefOr[Anon_Field], 
     js.Any
   ]
   type VariableMap = StringDictionary[js.Any]

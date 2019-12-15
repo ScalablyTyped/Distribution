@@ -20,7 +20,10 @@ class StringTemplate protected () extends Template {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var text: String = js.native
+  @JSName("model")
+  var model_FStringTemplate: IModel = js.native
+  def text(): String = js.native
+  def text(newValue: String): js.Any = js.native
 }
 
 /* static members */

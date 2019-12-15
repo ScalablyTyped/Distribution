@@ -26,31 +26,36 @@ abstract class ConditionalSettings protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var attribute: IAttribute | Null = js.native
-  val attributeQualifiedName: String | Null = js.native
-  val conditions: IList[Condition] = js.native
-  val containerAsConditionallyEditableWidget: ConditionallyEditableWidget = js.native
-  val containerAsConditionallyVisibleWidget: ConditionallyVisibleWidget = js.native
-  val containerAsControlBarButton: ControlBarButton = js.native
-  val containerAsCustomWidget: CustomWidget = js.native
-  val containerAsLayoutGridRow: LayoutGridRow = js.native
-  val containerAsNavigationListItem: NavigationListItem = js.native
-  val containerAsTabPage: TabPage = js.native
-  val containerAsTableRow: TableRow = js.native
+  @JSName("model")
+  var model_FConditionalSettings: IModel = js.native
+  def attribute(): IAttribute | Null = js.native
+  def attribute(newValue: IAttribute): js.Any = js.native
+  def attributeQualifiedName(): String | Null = js.native
+  @JSName("attribute")
+  def attribute_Any(): js.Any = js.native
+  def conditions(): IList[Condition] = js.native
+  def containerAsConditionallyEditableWidget(): ConditionallyEditableWidget = js.native
+  def containerAsConditionallyVisibleWidget(): ConditionallyVisibleWidget = js.native
+  def containerAsControlBarButton(): ControlBarButton = js.native
+  def containerAsCustomWidget(): CustomWidget = js.native
+  def containerAsLayoutGridRow(): LayoutGridRow = js.native
+  def containerAsNavigationListItem(): NavigationListItem = js.native
+  def containerAsTabPage(): TabPage = js.native
+  def containerAsTableRow(): TableRow = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     *
     * In version 7.0.1: introduced
     */
-  var expression: String = js.native
+  def expression(): String = js.native
+  def expression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  var expressionModel: Expression = js.native
-  @JSName("model")
-  var model_ConditionalSettings: IModel = js.native
+  def expressionModel(): Expression = js.native
+  def expressionModel(newValue: Expression): js.Any = js.native
 }
 
 /* static members */

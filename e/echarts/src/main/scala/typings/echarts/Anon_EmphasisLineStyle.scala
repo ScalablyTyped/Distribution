@@ -6,39 +6,39 @@ import scala.scalajs.js.annotation._
 
 trait Anon_EmphasisLineStyle extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-sankey.links.emphasis
     */
   var emphasis: js.UndefOr[Anon_LineStyleAnonColorCurvenessOpacityShadowBlur] = js.undefined
   /**
     * The line stlye of edge.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-sankey.links.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacityShadowBlur] = js.undefined
   /**
     * The
-    * [name of source node](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.name)
+    * [name of source node](https://echarts.apache.org/en/option.html#series-graph.data.name)
     * of edge
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.source
+    * @see https://echarts.apache.org/en/option.html#series-sankey.links.source
     */
   var source: js.UndefOr[String] = js.undefined
   /**
     * The
-    * [name of target node](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.name)
+    * [name of target node](https://echarts.apache.org/en/option.html#series-graph.data.name)
     * of edge
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.target
+    * @see https://echarts.apache.org/en/option.html#series-sankey.links.target
     */
   var target: js.UndefOr[String] = js.undefined
   /**
     * The value of edge, which decides the width of edge.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links.value
+    * @see https://echarts.apache.org/en/option.html#series-sankey.links.value
     */
   var value: js.UndefOr[Double] = js.undefined
 }

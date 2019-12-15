@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IParameterType because Already inherited
-- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IBasicParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined `type` */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.BasicParameterType")
+- typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.IBasicParameterType because var conflicts: containerAsCodeActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined `type` */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.BasicParameterType")
 @js.native
 class BasicParameterType protected () extends ParameterType {
   def this(
@@ -28,9 +28,17 @@ class BasicParameterType protected () extends ParameterType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FBasicParameterType: IModel = js.native
+  /**
+    * This property is required and cannot be set to null.
+    */
+  @JSName("type")
+  val type_FBasicParameterType: IType = js.native
   @JSName("containerAsCodeActionParameter")
-  val containerAsCodeActionParameter_BasicParameterType: CodeActionParameter = js.native
-  var `type`: IType | Type = js.native
+  def containerAsCodeActionParameter_MBasicParameterType(): CodeActionParameter = js.native
+  def `type`(): Type = js.native
+  def `type`(newValue: Type): js.Any = js.native
 }
 
 /* static members */

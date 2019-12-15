@@ -21,10 +21,11 @@ class MsdVersion protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsMsd: Msd = js.native
   @JSName("model")
-  var model_MsdVersion: IModel = js.native
-  var version: Double = js.native
+  var model_FMsdVersion: IModel = js.native
+  def containerAsMsd(): Msd = js.native
+  def version(): Double = js.native
+  def version(newValue: Double): js.Any = js.native
 }
 
 /* static members */

@@ -17,27 +17,27 @@ class TextItem () extends Item {
   /** 
     * The text contents of the text item.
     */
-  var content: String | Null = js.native
+  var content: String = js.native
   /** 
     * The font-family to be used in text content.
     */
-  var fontFamily: String | Null = js.native
+  var fontFamily: String = js.native
   /** 
     * The font size of text content, as a number in pixels, or as a string with
     * optional units `'px'`, `'pt'` and `'em'`.
     */
-  var fontSize: Double | String | Null = js.native
+  var fontSize: Double | String = js.native
   /** 
     * The font-weight to be used in text content.
     */
-  var fontWeight: String | Double | Null = js.native
+  var fontWeight: String | Double = js.native
   /** 
     * The justification of text paragraphs.
     */
-  var justification: String | Null = js.native
+  var justification: String = js.native
   /** 
     * The text leading of text content.
     */
-  var leading: Double | String | Null = js.native
+  var leading: Double | String = js.native
 }
 

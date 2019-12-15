@@ -21,9 +21,9 @@ abstract class RuleInfo protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsValidationRule: ValidationRule = js.native
   @JSName("model")
-  var model_RuleInfo: IModel = js.native
+  var model_FRuleInfo: IModel = js.native
+  def containerAsValidationRule(): ValidationRule = js.native
 }
 
 /* static members */

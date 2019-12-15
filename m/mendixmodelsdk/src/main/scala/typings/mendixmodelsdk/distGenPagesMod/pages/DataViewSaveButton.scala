@@ -25,10 +25,13 @@ class DataViewSaveButton protected () extends DataViewControlBarButton {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FDataViewSaveButton: IModel = js.native
   /**
     * In version 6.6.0: introduced
     */
-  var syncAutomatically: Boolean = js.native
+  def syncAutomatically(): Boolean = js.native
+  def syncAutomatically(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

@@ -26,11 +26,13 @@ abstract class MicroflowObject protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsMicroflowObjectCollection: MicroflowObjectCollection = js.native
   @JSName("model")
-  var model_MicroflowObject: IModel = js.native
-  var relativeMiddlePoint: IPoint = js.native
-  var size: ISize = js.native
+  var model_FMicroflowObject: IModel = js.native
+  def containerAsMicroflowObjectCollection(): MicroflowObjectCollection = js.native
+  def relativeMiddlePoint(): IPoint = js.native
+  def relativeMiddlePoint(newValue: IPoint): js.Any = js.native
+  def size(): ISize = js.native
+  def size(newValue: ISize): js.Any = js.native
 }
 
 /* static members */

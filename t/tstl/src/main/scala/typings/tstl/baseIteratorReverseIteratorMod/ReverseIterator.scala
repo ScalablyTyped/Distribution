@@ -20,10 +20,6 @@ abstract class ReverseIterator[T /* <: Elem */, Source /* <: IContainer[T, Sourc
     */
   var base_ : Base = js.native
   /**
-    * @inheritDoc
-    */
-  val value: T = js.native
-  /**
     * @hidden
     */
   /* protected */ def _Create_neighbor(base: Base): This = js.native
@@ -46,5 +42,9 @@ abstract class ReverseIterator[T /* <: Elem */, Source /* <: IContainer[T, Sourc
     */
   /* CompleteClass */
   override def source(): Source = js.native
+  /**
+    * @inheritDoc
+    */
+  def value(): T = js.native
 }
 

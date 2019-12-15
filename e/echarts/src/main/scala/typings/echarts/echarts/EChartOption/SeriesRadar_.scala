@@ -16,15 +16,15 @@ import scala.scalajs.js.annotation._
   *
   * Radar chart is mainly used to show multi-variable data, such as the
   * analysis of a football player's varied attributes. It relies
-  * [radar](https://ecomfe.github.io/echarts-doc/public/en/option.html#radar)
+  * [radar](https://echarts.apache.org/en/option.html#radar)
   * component.
   *
   * Here is the example of AQI data which is presented in radar chart.
   *
-  * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar)
+  * [see doc](https://echarts.apache.org/en/option.html#series-radar)
   *
   *
-  * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar
+  * @see https://echarts.apache.org/en/option.html#series-radar
   */
 @JSName("SeriesRadar")
 trait SeriesRadar_ extends js.Object {
@@ -34,7 +34,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.animation
+    * @see https://echarts.apache.org/en/option.html#series-radar.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -43,14 +43,14 @@ trait SeriesRadar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-radar.radar)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-radar.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -59,50 +59,50 @@ trait SeriesRadar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-radar.radar)
     *
     * See
-    * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.animationDelayUpdate
+    * @see https://echarts.apache.org/en/option.html#series-radar.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-radar.radar)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-radar.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-radar.radar)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-radar.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
-    * [easing effect example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=line-easing)
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
     * .
     *
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-radar.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -111,7 +111,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-radar.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -122,33 +122,33 @@ trait SeriesRadar_ extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-radar.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
     * Area filling style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.areaStyle
+    * @see https://echarts.apache.org/en/option.html#series-radar.areaStyle
     */
   var areaStyle: js.UndefOr[Anon_ColorOpacity] = js.undefined
   /**
     * The data in radar chart is multi-variable (dimension).
     * Here is an example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-radar.radar)
     *
     * Among them, `value` item array contains data that is corresponding
     * to
-    * [radar.indicator](https://ecomfe.github.io/echarts-doc/public/en/option.html#radar.indicator)
+    * [radar.indicator](https://echarts.apache.org/en/option.html#radar.indicator)
     * .
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data
+    * @see https://echarts.apache.org/en/option.html#series-radar.data
     */
   var data: js.UndefOr[js.Array[DataObject]] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-radar.emphasis
     */
   var emphasis: js.UndefOr[Anon_AreaStyle] = js.undefined
   /**
@@ -157,14 +157,14 @@ trait SeriesRadar_ extends js.Object {
     * or API.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.id
+    * @see https://echarts.apache.org/en/option.html#series-radar.id
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     * Item style of the inflection point of the lines.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-radar.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
@@ -176,34 +176,34 @@ trait SeriesRadar_ extends js.Object {
     * as `itemStyle` does.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.label
+    * @see https://echarts.apache.org/en/option.html#series-radar.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
   /**
     * Line style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-radar.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
   /**
     * Series name used for displaying in
-    * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
+    * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
     * and filtering with
-    * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
+    * [legend](https://echarts.apache.org/en/option.html#legend)
     * , or updaing data and configuration with `setOption`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.name
+    * @see https://echarts.apache.org/en/option.html#series-radar.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     * Index of
-    * [radar](https://ecomfe.github.io/echarts-doc/public/en/option.html#radar)
+    * [radar](https://echarts.apache.org/en/option.html#radar)
     * component that radar chart uses.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radarIndex
+    * @see https://echarts.apache.org/en/option.html#series-radar.radarIndex
     */
   var radarIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -212,7 +212,7 @@ trait SeriesRadar_ extends js.Object {
     * events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.silent
+    * @see https://echarts.apache.org/en/option.html#series-radar.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
@@ -234,7 +234,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-radar.radar)
     *
     * Icons can be set to arbitrary vector path via `'path://'` in
     * ECharts.
@@ -248,19 +248,19 @@ trait SeriesRadar_ extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.radar)
+    * [see doc](https://echarts.apache.org/en/option.html#series-radar.radar)
     *
     *
     * @default
     * "circle"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.symbol
+    * @see https://echarts.apache.org/en/option.html#series-radar.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-radar.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -281,7 +281,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-radar.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -291,7 +291,7 @@ trait SeriesRadar_ extends js.Object {
     * angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-radar.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -310,27 +310,27 @@ trait SeriesRadar_ extends js.Object {
     * ```
     *
     * The first parameter `value` is the value in
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data)
+    * [data](https://echarts.apache.org/en/option.html#series-radar.data)
     * , and the second parameter `params` is the rest parameters of
     * data item.
     *
     *
     * @default
     * 4
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-radar.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.tooltip
+    * @see https://echarts.apache.org/en/option.html#series-radar.tooltip
     */
   var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "radar"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.type
+    * @see https://echarts.apache.org/en/option.html#series-radar.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   /**
@@ -345,7 +345,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @default
     * 2
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.z
+    * @see https://echarts.apache.org/en/option.html#series-radar.z
     */
   var z: js.UndefOr[Double] = js.undefined
   /**
@@ -363,7 +363,7 @@ trait SeriesRadar_ extends js.Object {
     * smaller `zlevel`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.zlevel
+    * @see https://echarts.apache.org/en/option.html#series-radar.zlevel
     */
   var zlevel: js.UndefOr[Double] = js.undefined
 }

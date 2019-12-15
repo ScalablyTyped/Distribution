@@ -21,6 +21,8 @@ class ReferenceSetSource protected () extends GridBaseSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FReferenceSetSource: IModel = js.native
 }
 
 /* static members */

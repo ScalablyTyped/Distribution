@@ -26,6 +26,8 @@ class SyncClientAction protected () extends ClientAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FSyncClientAction: IModel = js.native
 }
 
 /* static members */

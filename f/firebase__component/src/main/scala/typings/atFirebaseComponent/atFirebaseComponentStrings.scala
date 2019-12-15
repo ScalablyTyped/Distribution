@@ -21,6 +21,9 @@ object atFirebaseComponentStrings {
   sealed trait PUBLIC extends ComponentType
   
   @js.native
+  sealed trait VERSION extends ComponentType
+  
+  @js.native
   sealed trait `[DEFAULT]` extends js.Object
   
   @js.native
@@ -46,6 +49,8 @@ object atFirebaseComponentStrings {
   def PRIVATE: PRIVATE = "PRIVATE".asInstanceOf[PRIVATE]
   @scala.inline
   def PUBLIC: PUBLIC = "PUBLIC".asInstanceOf[PUBLIC]
+  @scala.inline
+  def VERSION: VERSION = "VERSION".asInstanceOf[VERSION]
   @scala.inline
   def `[DEFAULT]`: `[DEFAULT]` = "[DEFAULT]".asInstanceOf[`[DEFAULT]`]
   @scala.inline

@@ -26,6 +26,8 @@ class BackButton protected () extends Button {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FBackButton: IModel = js.native
 }
 
 /* static members */

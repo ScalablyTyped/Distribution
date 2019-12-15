@@ -21,7 +21,7 @@ object registerMap extends js.Object {
     *     [http://geojson.org/](http://geojson.org/) for more format information.
     * @param {object} [specialAreas] Zoomed part of a specific area in the map
     *     for better visual effect.
-    *     See [USA Population Estimates example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=map-usa).
+    *     See [USA Population Estimates example](https://echarts.apache.org/examples/en/editor.html?c=map-usa).
     */
   def apply(mapName: String, geoJson: js.Object): Unit = js.native
   def apply(mapName: String, geoJson: js.Object, specialAreas: js.Object): Unit = js.native

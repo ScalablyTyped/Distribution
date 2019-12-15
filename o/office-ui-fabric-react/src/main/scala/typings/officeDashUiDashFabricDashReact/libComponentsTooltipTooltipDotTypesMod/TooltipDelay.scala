@@ -14,9 +14,11 @@ sealed trait TooltipDelay extends js.Object
 @JSImport("office-ui-fabric-react/lib/components/Tooltip/Tooltip.types", "TooltipDelay")
 @js.native
 object TooltipDelay extends js.Object {
+  /** 500 ms delay before showing the tooltip */
   @js.native
   sealed trait long extends TooltipDelay
   
+  /** 300 ms delay before showng the tooltip */
   @js.native
   sealed trait medium extends TooltipDelay
   

@@ -22,11 +22,18 @@ class AppServiceCallAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var appServiceAction: IAppServiceAction | Null = js.native
-  val appServiceActionQualifiedName: String | Null = js.native
-  var outputVariableName: String = js.native
-  val parameterMappings: IList[AppServiceCallParameterMapping] = js.native
-  var useVariable: Boolean = js.native
+  @JSName("model")
+  var model_FAppServiceCallAction: IModel = js.native
+  def appServiceAction(): IAppServiceAction | Null = js.native
+  def appServiceAction(newValue: IAppServiceAction): js.Any = js.native
+  def appServiceActionQualifiedName(): String | Null = js.native
+  @JSName("appServiceAction")
+  def appServiceAction_Any(): js.Any = js.native
+  def outputVariableName(): String = js.native
+  def outputVariableName(newValue: String): js.Any = js.native
+  def parameterMappings(): IList[AppServiceCallParameterMapping] = js.native
+  def useVariable(): Boolean = js.native
+  def useVariable(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

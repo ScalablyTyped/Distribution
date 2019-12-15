@@ -27,10 +27,13 @@ class CheckBox protected () extends AttributeWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FCheckBox: IModel = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var labelPosition: LabelPosition = js.native
+  def labelPosition(): LabelPosition = js.native
+  def labelPosition(newValue: LabelPosition): js.Any = js.native
 }
 
 /* static members */
@@ -279,6 +282,15 @@ object CheckBox extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): CheckBox = js.native
+  /**
+    * Creates and returns a new CheckBox instance in the SDK and on the server.
+    * The new CheckBox will be automatically stored in the 'sidebarWidgets' property
+    * of the parent NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): CheckBox = js.native
   /**
     * Creates and returns a new CheckBox instance in the SDK and on the server.
     * The new CheckBox will be automatically stored in the 'widgets' property

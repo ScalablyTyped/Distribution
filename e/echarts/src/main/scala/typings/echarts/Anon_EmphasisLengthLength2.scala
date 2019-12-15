@@ -15,32 +15,32 @@ trait Anon_EmphasisLengthLength2
     * The style of visual guide line in emphasis status.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.emphasis
+    * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.emphasis
     */
   var emphasis: js.UndefOr[Anon_LineStyleShow] = js.undefined
   /**
     * The length of the first segment of visual guide line.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.length
+    * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.length
     */
   var length: js.UndefOr[Double] = js.undefined
   /**
     * The length of the second segment of visual guide line.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.length2
+    * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.length2
     */
   var length2: js.UndefOr[Double] = js.undefined
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.lineStyle
     */
   var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
   /**
     * Whether to show the visual guide ine.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.show
+    * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   /**
@@ -49,7 +49,7 @@ trait Anon_EmphasisLengthLength2
     * values from 0 to 1 which indicating the smoothness.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.smooth
+    * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.smooth
     */
   var smooth: js.UndefOr[Boolean | Double] = js.undefined
 }

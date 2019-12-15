@@ -23,8 +23,14 @@ class ListOperationAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var operation: ListOperation | Null = js.native
-  var outputVariableName: String = js.native
+  @JSName("model")
+  var model_FListOperationAction: IModel = js.native
+  def operation(): ListOperation | Null = js.native
+  def operation(newValue: ListOperation): js.Any = js.native
+  @JSName("operation")
+  def operation_Any(): js.Any = js.native
+  def outputVariableName(): String = js.native
+  def outputVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */

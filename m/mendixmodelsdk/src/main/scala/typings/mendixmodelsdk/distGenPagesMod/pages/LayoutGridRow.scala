@@ -22,35 +22,44 @@ class LayoutGridRow protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FLayoutGridRow: IModel = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var appearance: Appearance = js.native
+  def appearance(): Appearance = js.native
+  def appearance(newValue: Appearance): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var `class`: String = js.native
-  val columns: IList[LayoutGridColumn] = js.native
-  var conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
-  val containerAsLayoutGrid: LayoutGrid = js.native
+  def `class`(): String = js.native
+  def `class`(newValue: String): js.Any = js.native
+  def columns(): IList[LayoutGridColumn] = js.native
+  def conditionalVisibilitySettings(): ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
+  @JSName("conditionalVisibilitySettings")
+  def conditionalVisibilitySettings_Any(): js.Any = js.native
+  def containerAsLayoutGrid(): LayoutGrid = js.native
   /**
     * In version 8.3.0: introduced
     */
-  var horizontalAlignment: LayoutGridAlignment = js.native
-  @JSName("model")
-  var model_LayoutGridRow: IModel = js.native
+  def horizontalAlignment(): LayoutGridAlignment = js.native
+  def horizontalAlignment(newValue: LayoutGridAlignment): js.Any = js.native
   /**
     * In version 8.3.0: introduced
     */
-  var spacingBetweenColumns: Boolean = js.native
+  def spacingBetweenColumns(): Boolean = js.native
+  def spacingBetweenColumns(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var style: String = js.native
+  def style(): String = js.native
+  def style(newValue: String): js.Any = js.native
   /**
     * In version 8.3.0: introduced
     */
-  var verticalAlignment: LayoutGridAlignment = js.native
+  def verticalAlignment(): LayoutGridAlignment = js.native
+  def verticalAlignment(newValue: LayoutGridAlignment): js.Any = js.native
 }
 
 /* static members */

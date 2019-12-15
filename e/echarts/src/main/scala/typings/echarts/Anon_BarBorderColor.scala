@@ -17,7 +17,7 @@ trait Anon_BarBorderColor
     *
     * @default
     * '#000'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.itemStyle.barBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.barBorderColor
     */
   var barBorderColor: js.UndefOr[String] = js.undefined
   /**
@@ -28,28 +28,28 @@ trait Anon_BarBorderColor
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.bar.itemStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-bar.bar.itemStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.itemStyle.barBorderRadius
+    * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.barBorderRadius
     */
   var barBorderRadius: js.UndefOr[js.Array[_] | Double] = js.undefined
   /**
     * The bodrder width of bar. defaults to have no border.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.itemStyle.barBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.barBorderWidth
     */
   var barBorderWidth: js.UndefOr[Double] = js.undefined
   /**
     * Bar color. defaults to acquire colors from global palette
-    * [option.color](https://ecomfe.github.io/echarts-doc/public/en/option.html#color)
+    * [option.color](https://echarts.apache.org/en/option.html#color)
     * .
     *
     *
     * @default
     * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.itemStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.color
     */
   var color: js.UndefOr[String | Anon_ColorStops | Anon_ColorStopsGlobal] = js.undefined
   /**
@@ -58,7 +58,7 @@ trait Anon_BarBorderColor
     * drawn when set to 0.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.itemStyle.opacity
+    * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.opacity
     */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -68,31 +68,31 @@ trait Anon_BarBorderColor
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.bar.itemStyle)
+    * [see doc](https://echarts.apache.org/en/option.html#series-bar.bar.itemStyle)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.itemStyle.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.itemStyle.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.itemStyle.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.itemStyle.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-bar.itemStyle.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
 }

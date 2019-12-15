@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Body extends js.Object {
-  var body: js.UndefOr[String | Anon_ColorDark] = js.undefined
+  var body: js.UndefOr[String | Anon_ColorDark | js.Array[String]] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var dark: js.UndefOr[String] = js.undefined
   var footer: js.UndefOr[String | Anon_ColorDark] = js.undefined
@@ -16,7 +16,7 @@ trait Anon_Body extends js.Object {
 object Anon_Body {
   @scala.inline
   def apply(
-    body: String | Anon_ColorDark = null,
+    body: String | Anon_ColorDark | js.Array[String] = null,
     color: String = null,
     dark: String = null,
     footer: String | Anon_ColorDark = null,

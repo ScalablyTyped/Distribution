@@ -1058,25 +1058,23 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   @scala.inline
   def Tooltip: ComponentType[TooltipProps] = typings.officeDashUiDashFabricDashReact.libTooltipMod.Tooltip.asInstanceOf[typings.react.reactMod.ComponentType[TooltipProps]]
   @scala.inline
-  def TooltipAbsolutePositionExample: ComponentType[js.Any] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotAbsoluteDotPositionDotExampleMod.TooltipAbsolutePositionExample].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
+  def TooltipAbsolutePositionExample: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotAbsolutePositionDotExampleMod.TooltipAbsolutePositionExample.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
   def TooltipBase: ComponentType[TooltipBaseProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libTooltipMod.TooltipBase].asInstanceOf[typings.react.reactMod.ComponentType[TooltipBaseProps]]
   @scala.inline
-  def TooltipBasicExample: ComponentType[js.Any] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotBasicDotExampleMod.TooltipBasicExample].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
+  def TooltipBasicExample: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotBasicDotExampleMod.TooltipBasicExample.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def TooltipCustomExample: ComponentType[js.Any] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotCustomDotExampleMod.TooltipCustomExample].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
+  def TooltipCustomExample: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotCustomDotExampleMod.TooltipCustomExample.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def TooltipDisplayExample: ComponentType[js.Any] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotDisplayDotExampleMod.TooltipDisplayExample].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
+  def TooltipDisplayExample: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotDisplayDotExampleMod.TooltipDisplayExample.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
   def TooltipHost: ComponentType[TooltipHostProps] = typings.officeDashUiDashFabricDashReact.libTooltipMod.TooltipHost.asInstanceOf[typings.react.reactMod.ComponentType[TooltipHostProps]]
   @scala.inline
   def TooltipHostBase: ComponentType[TooltipHostBaseProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libTooltipMod.TooltipHostBase].asInstanceOf[typings.react.reactMod.ComponentType[TooltipHostBaseProps]]
   @scala.inline
-  def TooltipInteractiveExample: ComponentType[js.Any] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotInteractiveDotExampleMod.TooltipInteractiveExample].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
+  def TooltipInteractiveExample: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotInteractiveDotExampleMod.TooltipInteractiveExample.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def TooltipNoScrollExample: ComponentType[js.Object] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotNoScrollDotExampleMod.TooltipNoScrollExample].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
-  @scala.inline
-  def TooltipOverflowExample: ComponentType[js.Object] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotOverflowDotExampleMod.TooltipOverflowExample].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  def TooltipOverflowExample: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.libComponentsTooltipExamplesTooltipDotOverflowDotExampleMod.TooltipOverflowExample.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
   def UnknownPersonaExample: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.libComponentsPersonaExamplesPersonaDotUnknownPersonaDotExampleMod.UnknownPersonaExample.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline

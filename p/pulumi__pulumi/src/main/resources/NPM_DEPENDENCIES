@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pulumi/pulumi" : "1.7.0"
+      "@pulumi/pulumi" : "1.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@pulumi/pulumi" : "1.7.0"
+      "@pulumi/pulumi" : "1.7.1"
     }
   ],
   "compile-devDependencies" : [

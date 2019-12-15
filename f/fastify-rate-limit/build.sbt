@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "fastify-rate-limit"
-version := "2.0-dt-20190128Z-3e902e"
+version := "2.0-dt-20190128Z-9921e0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ioredis" % "4.14-dt-20191206Z-d23259",
+  "org.scalablytyped" %%% "ioredis" % "4.14-dt-20191213Z-599f66",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

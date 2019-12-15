@@ -17,8 +17,8 @@ object distSdkInternalModelDashEventsModelEventReceiverMod extends js.Object {
     var errorHandler: js.Any = js.native
     var eventEmitter: js.Any = js.native
     var eventSource: ^  | Null = js.native
-    val isRunning: Boolean = js.native
     var workingCopyId: js.Any = js.native
+    def isRunning(): Boolean = js.native
     def onNewModelEvent(callback: js.Function1[/* modelEvent */ IModelEvent, Unit]): Unit = js.native
     def start(lastEventId: Double): Unit = js.native
     def stop(): Unit = js.native

@@ -21,22 +21,28 @@ class TableRow protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FTableRow: IModel = js.native
   /**
     * In version 8.0.0: introduced
     */
-  var appearance: Appearance = js.native
+  def appearance(): Appearance = js.native
+  def appearance(newValue: Appearance): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var `class`: String = js.native
-  var conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
-  val containerAsTable: Table = js.native
-  @JSName("model")
-  var model_TableRow: IModel = js.native
+  def `class`(): String = js.native
+  def `class`(newValue: String): js.Any = js.native
+  def conditionalVisibilitySettings(): ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
+  @JSName("conditionalVisibilitySettings")
+  def conditionalVisibilitySettings_Any(): js.Any = js.native
+  def containerAsTable(): Table = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var style: String = js.native
+  def style(): String = js.native
+  def style(newValue: String): js.Any = js.native
 }
 
 /* static members */

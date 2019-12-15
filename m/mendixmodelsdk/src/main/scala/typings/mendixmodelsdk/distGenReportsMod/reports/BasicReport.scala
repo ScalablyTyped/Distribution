@@ -48,12 +48,18 @@ class BasicReport protected () extends ReportWidget {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val aggregates: IList[BasicReportAggregate] = js.native
-  val columns: IList[BasicReportColumn] = js.native
-  var isPagingEnabled: Boolean = js.native
-  var pageSize: Double = js.native
-  var showExportButton: Boolean = js.native
-  var zoomInfo: ReportZoomInfo = js.native
+  @JSName("model")
+  var model_FBasicReport: IModel = js.native
+  def aggregates(): IList[BasicReportAggregate] = js.native
+  def columns(): IList[BasicReportColumn] = js.native
+  def isPagingEnabled(): Boolean = js.native
+  def isPagingEnabled(newValue: Boolean): js.Any = js.native
+  def pageSize(): Double = js.native
+  def pageSize(newValue: Double): js.Any = js.native
+  def showExportButton(): Boolean = js.native
+  def showExportButton(newValue: Boolean): js.Any = js.native
+  def zoomInfo(): ReportZoomInfo = js.native
+  def zoomInfo(newValue: ReportZoomInfo): js.Any = js.native
 }
 
 /* static members */
@@ -302,6 +308,15 @@ object BasicReport extends js.Object {
     *  7.23.0 to 7.23.0
     */
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): BasicReport = js.native
+  /**
+    * Creates and returns a new BasicReport instance in the SDK and on the server.
+    * The new BasicReport will be automatically stored in the 'sidebarWidgets' property
+    * of the parent pages.NativeLayoutContent element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.5.0 and higher
+    */
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): BasicReport = js.native
   /**
     * Creates and returns a new BasicReport instance in the SDK and on the server.
     * The new BasicReport will be automatically stored in the 'widgets' property

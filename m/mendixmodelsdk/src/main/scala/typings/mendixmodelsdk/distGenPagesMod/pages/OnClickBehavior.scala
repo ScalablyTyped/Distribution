@@ -24,9 +24,9 @@ abstract class OnClickBehavior protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsDynamicImageViewer: DynamicImageViewer = js.native
   @JSName("model")
-  var model_OnClickBehavior: IModel = js.native
+  var model_FOnClickBehavior: IModel = js.native
+  def containerAsDynamicImageViewer(): DynamicImageViewer = js.native
 }
 
 /* static members */

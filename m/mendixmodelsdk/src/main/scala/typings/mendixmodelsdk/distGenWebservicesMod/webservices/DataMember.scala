@@ -24,18 +24,25 @@ abstract class DataMember protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsDataEntityBase: DataEntityBase = js.native
-  val containerAsPublishedParameter: PublishedParameter = js.native
-  val containerAsPublishedResource: PublishedResource = js.native
-  var exposedName: String = js.native
-  var isKey: Boolean = js.native
-  var isLockedByContract: Boolean = js.native
-  var isNillable: Boolean = js.native
-  var isNillableByContract: Boolean = js.native
-  var isOptional: Boolean = js.native
-  var isOptionalByContract: Boolean = js.native
   @JSName("model")
-  var model_DataMember: IModel = js.native
+  var model_FDataMember: IModel = js.native
+  def containerAsDataEntityBase(): DataEntityBase = js.native
+  def containerAsPublishedParameter(): PublishedParameter = js.native
+  def containerAsPublishedResource(): PublishedResource = js.native
+  def exposedName(): String = js.native
+  def exposedName(newValue: String): js.Any = js.native
+  def isKey(): Boolean = js.native
+  def isKey(newValue: Boolean): js.Any = js.native
+  def isLockedByContract(): Boolean = js.native
+  def isLockedByContract(newValue: Boolean): js.Any = js.native
+  def isNillable(): Boolean = js.native
+  def isNillable(newValue: Boolean): js.Any = js.native
+  def isNillableByContract(): Boolean = js.native
+  def isNillableByContract(newValue: Boolean): js.Any = js.native
+  def isOptional(): Boolean = js.native
+  def isOptional(newValue: Boolean): js.Any = js.native
+  def isOptionalByContract(): Boolean = js.native
+  def isOptionalByContract(newValue: Boolean): js.Any = js.native
 }
 
 /* static members */

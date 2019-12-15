@@ -79,6 +79,16 @@ object baseIteratorArrayIteratorBaseMod extends js.Object {
       */
     /* CompleteClass */
     override def source(): SourceT = js.native
+    /**
+      * @inheritDoc
+      */
+    @JSName("value")
+    def value_MArrayIteratorBase(): T = js.native
+    /**
+      * @inheritDoc
+      */
+    @JSName("value")
+    def value_MArrayIteratorBase(`val`: T): js.Any = js.native
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
@@ -106,6 +116,10 @@ object baseIteratorArrayIteratorBaseMod extends js.Object {
       * @return The index.
       */
     def index(): Double = js.native
+    /**
+      * @inheritDoc
+      */
+    def value(`val`: T): js.Any = js.native
   }
   
 }

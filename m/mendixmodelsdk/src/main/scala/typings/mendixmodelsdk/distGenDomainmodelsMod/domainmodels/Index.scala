@@ -25,11 +25,12 @@ class Index protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val attributes: IList[IndexedAttribute] = js.native
-  val containerAsEntity: Entity = js.native
-  var dataStorageGuid: String = js.native
   @JSName("model")
-  var model_Index: IModel = js.native
+  var model_FIndex: IModel = js.native
+  def attributes(): IList[IndexedAttribute] = js.native
+  def containerAsEntity(): Entity = js.native
+  def dataStorageGuid(): String = js.native
+  def dataStorageGuid(newValue: String): js.Any = js.native
 }
 
 /* static members */

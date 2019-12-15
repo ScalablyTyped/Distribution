@@ -31,11 +31,12 @@ class ModuleRole protected ()
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsModuleSecurity: IModuleSecurity | ModuleSecurity = js.native
-  var description: String = js.native
+  @JSName("containerAsModuleSecurity")
+  val containerAsModuleSecurity_FModuleRole: IModuleSecurity = js.native
   @JSName("model")
-  var model_ModuleRole: IModel = js.native
-  var name: String = js.native
+  var model_FModuleRole: IModel = js.native
+  @JSName("name")
+  val name_FModuleRole: String = js.native
   /**
     * Returns the qualified name of this element, or
     * null if this element is not a part of the model,
@@ -44,6 +45,13 @@ class ModuleRole protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
+  def containerAsModuleSecurity(): ModuleSecurity = js.native
+  def description(): String = js.native
+  def description(newValue: String): js.Any = js.native
+  def name(): String = js.native
+  def name(newValue: String): js.Any = js.native
+  @JSName("qualifiedName")
+  def qualifiedName_MModuleRole(): String | Null = js.native
 }
 
 /* static members */

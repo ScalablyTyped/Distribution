@@ -11,14 +11,14 @@ trait Anon_Fill extends js.Object {
     *
     * @default
     * '#000'
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_bezierCurve.style.fill
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.fill
     */
   var fill: js.UndefOr[String] = js.undefined
   /**
     * Width of stroke.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_bezierCurve.style.lineWidth
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.lineWidth
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait Anon_Fill extends js.Object {
     *
     * @default
     * "undefined"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /**
@@ -36,7 +36,7 @@ trait Anon_Fill extends js.Object {
     *
     * @default
     * "undefined"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowColor
     */
   var shadowColor: js.UndefOr[Double] = js.undefined
   /**
@@ -45,7 +45,7 @@ trait Anon_Fill extends js.Object {
     *
     * @default
     * "undefined"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /**
@@ -54,14 +54,14 @@ trait Anon_Fill extends js.Object {
     *
     * @default
     * "undefined"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   /**
     * Color of stroke.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_bezierCurve.style.stroke
+    * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.stroke
     */
   var stroke: js.UndefOr[String] = js.undefined
 }

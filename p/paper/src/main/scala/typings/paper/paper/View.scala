@@ -1,6 +1,5 @@
 package typings.paper.paper
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +22,7 @@ class View () extends js.Object {
     * Note that this is `true` by default, except for Node.js, where manual
     * updates make more sense.
     */
-  var autoUpdate: Boolean | Null = js.native
+  var autoUpdate: Boolean = js.native
   /** 
     * The bounds of the currently visible area in project coordinates.
     */
@@ -31,7 +30,7 @@ class View () extends js.Object {
   /** 
     * The center of the visible area in project coordinates.
     */
-  var center: Point | Null = js.native
+  var center: Point = js.native
   /** 
     * The underlying native element.
     */
@@ -40,7 +39,7 @@ class View () extends js.Object {
     * The view's transformation matrix, defining the view onto the project's
     * contents (position, zoom level, rotation, etc).
     */
-  var matrix: Matrix | Null = js.native
+  var matrix: Matrix = js.native
   /** 
     * The function to be called when the mouse clicks on the view. The function
     * receives a {@link MouseEvent} object which contains information about the
@@ -163,14 +162,14 @@ class View () extends js.Object {
     * The current rotation angle of the view, as described by its
     * {@link #matrix}.
     */
-  var rotation: Double | Null = js.native
+  var rotation: Double = js.native
   /** 
     * The current scale factor of the view, as described by its
     * {@link #matrix}.
     * 
     * @see #zoom
     */
-  var scaling: Point | Null = js.native
+  var scaling: Point = js.native
   /** 
     * The size of the visible area in project coordinates.
     */
@@ -179,13 +178,13 @@ class View () extends js.Object {
     * The size of the view. Changing the view's size will resize it's
     * underlying element.
     */
-  var viewSize: Size | Null = js.native
+  var viewSize: Size = js.native
   /** 
     * The view's zoom factor by which the project coordinates are magnified.
     * 
     * @see #scaling
     */
-  var zoom: Double | Null = js.native
+  var zoom: Double = js.native
   /** 
     * Emit an event on the view.
     * 
@@ -404,11 +403,4 @@ class View () extends js.Object {
     */
   def viewToProject(point: Point): Point = js.native
 }
-
-/** 
-  * The reference to the active project's view.
-  */
-@JSGlobal("paper.view")
-@js.native
-object view extends TopLevel[View]
 

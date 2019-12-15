@@ -20,10 +20,16 @@ class DataSetNumericConstraint protected () extends DataSetParameterConstraint {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var applyBegin: Boolean = js.native
-  var applyEnd: Boolean = js.native
-  var begin: String = js.native
-  var end: String = js.native
+  @JSName("model")
+  var model_FDataSetNumericConstraint: IModel = js.native
+  def applyBegin(): Boolean = js.native
+  def applyBegin(newValue: Boolean): js.Any = js.native
+  def applyEnd(): Boolean = js.native
+  def applyEnd(newValue: Boolean): js.Any = js.native
+  def begin(): String = js.native
+  def begin(newValue: String): js.Any = js.native
+  def end(): String = js.native
+  def end(newValue: String): js.Any = js.native
 }
 
 /* static members */

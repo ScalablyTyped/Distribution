@@ -23,23 +23,28 @@ class GridXPathSource protected () extends GridBaseSource {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  @JSName("model")
+  var model_FGridXPathSource: IModel = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var applyContext: Boolean = js.native
+  def applyContext(): Boolean = js.native
+  def applyContext(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  var removeAllFromContext: Boolean = js.native
+  def removeAllFromContext(): Boolean = js.native
+  def removeAllFromContext(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  val removeFromContextIds: IList[IEntity] = js.native
-  val removeFromContextIdsQualifiedNames: js.Array[String] = js.native
+  def removeFromContextIds(): IList[IEntity] = js.native
+  def removeFromContextIdsQualifiedNames(): js.Array[String] = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
-  var xPathConstraint: String = js.native
+  def xPathConstraint(): String = js.native
+  def xPathConstraint(newValue: String): js.Any = js.native
 }
 
 /* static members */

@@ -22,11 +22,11 @@ class MsdDomainModel protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val associations: IList[MsdAssociation] = js.native
-  val containerAsMsd: Msd = js.native
-  val entities: IList[MsdEntity] = js.native
   @JSName("model")
-  var model_MsdDomainModel: IModel = js.native
+  var model_FMsdDomainModel: IModel = js.native
+  def associations(): IList[MsdAssociation] = js.native
+  def containerAsMsd(): Msd = js.native
+  def entities(): IList[MsdEntity] = js.native
 }
 
 /* static members */

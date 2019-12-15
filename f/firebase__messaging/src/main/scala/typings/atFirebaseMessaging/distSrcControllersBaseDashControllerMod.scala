@@ -9,7 +9,6 @@ import typings.atFirebaseMessaging.distSrcModelsSubscriptionDashManagerMod.Subsc
 import typings.atFirebaseMessaging.distSrcModelsTokenDashDetailsDashModelMod.TokenDetailsModel
 import typings.atFirebaseMessaging.distSrcModelsVapidDashDetailsDashModelMod.VapidDetailsModel
 import typings.atFirebaseMessagingDashTypes.atFirebaseMessagingDashTypesMod.FirebaseMessaging
-import typings.std.NotificationPermission
 import typings.std.PushSubscription
 import typings.std.ServiceWorkerRegistration
 import typings.std.Uint8Array
@@ -37,6 +36,10 @@ object distSrcControllersBaseDashControllerMod extends js.Object {
     var deleteTokenFromDB: js.Any = js.native
     var getNewToken: js.Any = js.native
     /**
+      * Returns the current Notification Permission state.
+      */
+    var getNotificationPermission: js.Any = js.native
+    /**
       * manageExistingToken is triggered if there's an existing FCM token in the
       * database and it can take 3 different actions:
       * 1) Retrieve the existing FCM token from the database.
@@ -46,6 +49,10 @@ object distSrcControllersBaseDashControllerMod extends js.Object {
       * the token, and to check if the token is still valid on FCM-side.
       */
     var manageExistingToken: js.Any = js.native
+    /**
+      * Requests notification permission from the user.
+      */
+    var requestNotificationPermission: js.Any = js.native
     val services: FirebaseInternalServices = js.native
     val subscriptionManager: js.Any = js.native
     val tokenDetailsModel: js.Any = js.native
@@ -56,10 +63,6 @@ object distSrcControllersBaseDashControllerMod extends js.Object {
       * It closes any currently open indexdb database connections.
       */
     def delete(): js.Promise[Unit] = js.native
-    /**
-      * Returns the current Notification Permission state.
-      */
-    def getNotificationPermission_(): NotificationPermission = js.native
     def getPublicVapidKey_(): js.Promise[Uint8Array] = js.native
     /**
       * Gets a PushSubscription for the current user.

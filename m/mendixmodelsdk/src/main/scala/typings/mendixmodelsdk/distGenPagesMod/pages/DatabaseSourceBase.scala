@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
+import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -20,7 +21,9 @@ abstract class DatabaseSourceBase protected () extends SortableEntityPathSource 
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val databaseConstraints: IList[DatabaseConstraint] = js.native
+  @JSName("model")
+  var model_FDatabaseSourceBase: IModel = js.native
+  def databaseConstraints(): IList[DatabaseConstraint] = js.native
 }
 
 /* static members */

@@ -22,11 +22,11 @@ class MicroflowObjectCollection protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsLoopedActivity: LoopedActivity = js.native
-  val containerAsMicroflowBase: MicroflowBase = js.native
   @JSName("model")
-  var model_MicroflowObjectCollection: IModel = js.native
-  val objects: IList[MicroflowObject] = js.native
+  var model_FMicroflowObjectCollection: IModel = js.native
+  def containerAsLoopedActivity(): LoopedActivity = js.native
+  def containerAsMicroflowBase(): MicroflowBase = js.native
+  def objects(): IList[MicroflowObject] = js.native
 }
 
 /* static members */

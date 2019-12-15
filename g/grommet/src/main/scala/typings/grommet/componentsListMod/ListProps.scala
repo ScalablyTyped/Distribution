@@ -3,6 +3,7 @@ package typings.grommet.componentsListMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.grommet.Anon_BackgroundBorder
 import typings.grommet.Anon_DarkLight
+import typings.grommet.Anon_Index
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.GridAreaType
@@ -24,7 +25,12 @@ trait ListProps extends js.Object {
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var itemProps: js.UndefOr[StringDictionary[Anon_BackgroundBorder]] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
-  var onClickItem: js.UndefOr[js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
+  var onClickItem: js.UndefOr[
+    js.Function1[
+      (/* event */ Anon_Index) | (/* event */ MouseEvent[Element, NativeMouseEvent]), 
+      Unit
+    ]
+  ] = js.undefined
   var onMore: js.UndefOr[js.Function0[Unit]] = js.undefined
   var pad: js.UndefOr[PadType] = js.undefined
   var primaryKey: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
@@ -44,7 +50,7 @@ object ListProps {
     gridArea: GridAreaType = null,
     itemProps: StringDictionary[Anon_BackgroundBorder] = null,
     margin: MarginType = null,
-    onClickItem: /* event */ MouseEvent[Element, NativeMouseEvent] => Unit = null,
+    onClickItem: (/* event */ Anon_Index) | (/* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
     onMore: () => Unit = null,
     pad: PadType = null,
     primaryKey: String | (js.Function1[/* repeated */ js.Any, _]) = null,

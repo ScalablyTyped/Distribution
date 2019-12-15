@@ -24,9 +24,15 @@ class CreateListAction protected () extends MicroflowAction {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  var entity: IEntity | Null = js.native
-  val entityQualifiedName: String | Null = js.native
-  var outputVariableName: String = js.native
+  @JSName("model")
+  var model_FCreateListAction: IModel = js.native
+  def entity(): IEntity | Null = js.native
+  def entity(newValue: IEntity): js.Any = js.native
+  def entityQualifiedName(): String | Null = js.native
+  @JSName("entity")
+  def entity_Any(): js.Any = js.native
+  def outputVariableName(): String = js.native
+  def outputVariableName(newValue: String): js.Any = js.native
 }
 
 /* static members */
