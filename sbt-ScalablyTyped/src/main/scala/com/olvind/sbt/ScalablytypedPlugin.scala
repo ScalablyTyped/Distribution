@@ -4472,6 +4472,7 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val `material-ui-datatables` = "org.scalablytyped" % "material-ui-datatables_sjs0.6_2.12" % "0.18-dt-20180803Z-edb438"
         val `material-ui-pagination` = "org.scalablytyped" % "material-ui-pagination_sjs0.6_2.12" % "1.0-dt-20190322Z-d9e711"
         val `material-ui__core` = "org.scalablytyped" % "material-ui__core_sjs0.6_2.12" % "3.9.3-723a6c"
+        val `material-ui__icons` = "org.scalablytyped" % "material-ui__icons_sjs0.6_2.12" % "4.5.1-1932a9"
         val `material-ui__lab` = "org.scalablytyped" % "material-ui__lab_sjs0.6_2.12" % "4.0.0-alpha.36-19599b"
         val material__animation = "org.scalablytyped" % "material__animation_sjs0.6_2.12" % "0.35-dt-20190717Z-adf419"
         val `material__auto-init` = "org.scalablytyped" % "material__auto-init_sjs0.6_2.12" % "0.35-dt-20190213Z-8a9374"

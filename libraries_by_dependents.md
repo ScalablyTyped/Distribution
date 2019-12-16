@@ -432,6 +432,7 @@
 | 572 | [cli-spinner](./c/cli-spinner) | A simple spinner
 | 570 | [react-dnd](./r/react-dnd) | Drag and Drop for React
 | 569 | [watchify](./w/watchify) | watch mode for browserify builds
+| 568 | [material-ui__icons](./m/material-ui__icons) | Material Design Svg Icons converted to Material-UI
 | 568 | [text-table](./t/text-table) | borderless text tables with alignment
 | 566 | [object-path](./o/object-path) | Access deep object properties using a path
 | 565 | [detect-port](./d/detect-port) | Node.js implementation of port detector
