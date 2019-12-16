@@ -369,6 +369,7 @@
 | [assets-webpack-plugin](./a/assets-webpack-plugin) | Emits a json file with assets paths | webpack, plugin, generate, assets, hashes |
 | [ast-types](./a/ast-types) | Esprima-compatible implementation of the Mozilla J | ast, abstract syntax tree, hierarchy, mozilla, spidermonkey, parser api, esprima, types, type system, type checking, dynamic types, parsing, transformation, syntax |
 | [astring](./a/astring) | JavaScript code generator from an ESTree-compliant | ast, codegen, code generator, estree, astravel |
+| [asymmetrik__leaflet-d3](./a/asymmetrik__leaflet-d3) | Custom d3 layers for leaflet | - |
 | [async](./a/async) | Higher-order functions and common patterns for asy | async, callback, module, utility |
 | [async-busboy](./a/async-busboy) | Promise based multipart form parser | koa, multipart, form, file-upload |
 | [async-cache](./a/async-cache) | Cache your async lookups and don't fetch the same  | async, cache, lru |
@@ -4430,7 +4431,6 @@
 | [material-ui-datatables](./m/material-ui-datatables) | An another React Data tables component. | react, react-component, material design, material-ui, datatables |
 | [material-ui-pagination](./m/material-ui-pagination) | An easy to use and customizable pagination compone | pagination, material-ui |
 | [material-ui__core](./m/material-ui__core) | React components that implement Google's Material  | react, react-component, material design, material-ui |
-| [material-ui__icons](./m/material-ui__icons) | Material Design Svg Icons converted to Material-UI | react, react-component, material design, material-ui, icons |
 | [material-ui__lab](./m/material-ui__lab) | Material-UI Lab - Incubator for Material-UI React  | react, react-component, material design, material-ui, lab |
 | [material__animation](./m/material__animation) | Animation Variables and Mixins used by Material Co | material components, material design, animation |
 | [material__auto-init](./m/material__auto-init) | Declarative, easy-to-use auto-initialization for M | - |

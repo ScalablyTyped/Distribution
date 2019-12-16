@@ -1,14 +1,12 @@
 organization := "org.scalablytyped"
-name := "semantic-ui-react"
-version := "0.88.2-f427f7"
+name := "asymmetrik__leaflet-d3"
+version := "4.4.0-247966"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191209Z-f85fa6",
-  "org.scalablytyped" %%% "stardust-ui__react-component-ref" % "0.38.0-f3ee0c",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-f488cd",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20191203Z-ca609b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

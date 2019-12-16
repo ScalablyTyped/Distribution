@@ -432,7 +432,6 @@
 | 572 | [cli-spinner](./c/cli-spinner) | A simple spinner
 | 570 | [react-dnd](./r/react-dnd) | Drag and Drop for React
 | 569 | [watchify](./w/watchify) | watch mode for browserify builds
-| 568 | [material-ui__icons](./m/material-ui__icons) | Material Design Svg Icons converted to Material-UI
 | 568 | [text-table](./t/text-table) | borderless text tables with alignment
 | 566 | [object-path](./o/object-path) | Access deep object properties using a path
 | 565 | [detect-port](./d/detect-port) | Node.js implementation of port detector
@@ -6326,6 +6325,7 @@
 | 1 | [argon2-browser](./a/argon2-browser) | Argon2 library compiled for browser runtime
 | 1 | [aspnet-identity-pw](./a/aspnet-identity-pw) | Utility for hashing and validating passwords using
 | 1 | [assert-options](./a/assert-options) | Generic options parameter handling
+| 1 | [asymmetrik__leaflet-d3](./a/asymmetrik__leaflet-d3) | Custom d3 layers for leaflet
 | 1 | [asyncblock-generators](./a/asyncblock-generators) | asyncblock without the fibers
 | 1 | [atlaskit__tree](./a/atlaskit__tree) | A React Component for displaying expandable and so
 | 1 | [atom-mocha-test-runner](./a/atom-mocha-test-runner) | Run your Atom package tests using Mocha

@@ -20,9 +20,6 @@ trait semanticDashUiDashReactProps {
   def AccordionContentProps: typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionContentMod.AccordionContentProps.type = typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionContentMod.AccordionContentProps
   type AccordionContentProps = typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionContentMod.AccordionContentProps
   @scala.inline
-  def AccordionDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionMod.AccordionProps.type = typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionMod.AccordionProps
-  type AccordionDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionMod.AccordionProps
-  @scala.inline
   def AccordionPanelProps: typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionPanelMod.AccordionPanelProps.type = typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionPanelMod.AccordionPanelProps
   type AccordionPanelProps = typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionPanelMod.AccordionPanelProps
   @scala.inline
@@ -34,9 +31,6 @@ trait semanticDashUiDashReactProps {
   @scala.inline
   def BreadcrumbProps: typings.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbProps.type = typings.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbProps
   type BreadcrumbProps = typings.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbProps
-  @scala.inline
-  def BreadcrumbDefaultProps: typings.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbProps.type = typings.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbProps
-  type BreadcrumbDefaultProps = typings.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbProps
   @scala.inline
   def BreadcrumbDividerProps: typings.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbDividerMod.BreadcrumbDividerProps.type = typings.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbDividerMod.BreadcrumbDividerProps
   type BreadcrumbDividerProps = typings.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbDividerMod.BreadcrumbDividerProps
@@ -62,9 +56,6 @@ trait semanticDashUiDashReactProps {
   def CardContentProps: typings.semanticDashUiDashReact.distCommonjsViewsCardCardContentMod.CardContentProps.type = typings.semanticDashUiDashReact.distCommonjsViewsCardCardContentMod.CardContentProps
   type CardContentProps = typings.semanticDashUiDashReact.distCommonjsViewsCardCardContentMod.CardContentProps
   @scala.inline
-  def CardDefaultProps: typings.semanticDashUiDashReact.distCommonjsViewsCardCardMod.CardProps.type = typings.semanticDashUiDashReact.distCommonjsViewsCardCardMod.CardProps
-  type CardDefaultProps = typings.semanticDashUiDashReact.distCommonjsViewsCardCardMod.CardProps
-  @scala.inline
   def CardDescriptionProps: typings.semanticDashUiDashReact.distCommonjsViewsCardCardDescriptionMod.CardDescriptionProps.type = typings.semanticDashUiDashReact.distCommonjsViewsCardCardDescriptionMod.CardDescriptionProps
   type CardDescriptionProps = typings.semanticDashUiDashReact.distCommonjsViewsCardCardDescriptionMod.CardDescriptionProps
   @scala.inline
@@ -79,9 +70,6 @@ trait semanticDashUiDashReactProps {
   @scala.inline
   def CheckboxProps: typings.semanticDashUiDashReact.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps.type = typings.semanticDashUiDashReact.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps
   type CheckboxProps = typings.semanticDashUiDashReact.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps
-  @scala.inline
-  def CheckboxDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps.type = typings.semanticDashUiDashReact.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps
-  type CheckboxDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps
   @scala.inline
   def CommentProps: typings.semanticDashUiDashReact.distCommonjsViewsCommentCommentMod.CommentProps.type = typings.semanticDashUiDashReact.distCommonjsViewsCommentCommentMod.CommentProps
   type CommentProps = typings.semanticDashUiDashReact.distCommonjsViewsCommentCommentMod.CommentProps
@@ -113,9 +101,6 @@ trait semanticDashUiDashReactProps {
   def ConfirmProps: typings.semanticDashUiDashReact.distCommonjsAddonsConfirmConfirmMod.ConfirmProps.type = typings.semanticDashUiDashReact.distCommonjsAddonsConfirmConfirmMod.ConfirmProps
   type ConfirmProps = typings.semanticDashUiDashReact.distCommonjsAddonsConfirmConfirmMod.ConfirmProps
   @scala.inline
-  def ConfirmDefaultProps: typings.semanticDashUiDashReact.distCommonjsAddonsConfirmConfirmMod.ConfirmProps.type = typings.semanticDashUiDashReact.distCommonjsAddonsConfirmConfirmMod.ConfirmProps
-  type ConfirmDefaultProps = typings.semanticDashUiDashReact.distCommonjsAddonsConfirmConfirmMod.ConfirmProps
-  @scala.inline
   def ContainerProps: typings.semanticDashUiDashReact.distCommonjsElementsContainerContainerMod.ContainerProps.type = typings.semanticDashUiDashReact.distCommonjsElementsContainerContainerMod.ContainerProps
   type ContainerProps = typings.semanticDashUiDashReact.distCommonjsElementsContainerContainerMod.ContainerProps
   @scala.inline
@@ -134,9 +119,6 @@ trait semanticDashUiDashReactProps {
   def DropdownProps: typings.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMod.DropdownProps.type = typings.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMod.DropdownProps
   type DropdownProps = typings.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMod.DropdownProps
   @scala.inline
-  def DropdownDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMod.DropdownProps.type = typings.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMod.DropdownProps
-  type DropdownDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMod.DropdownProps
-  @scala.inline
   def DropdownDividerProps: typings.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownDividerMod.DropdownDividerProps.type = typings.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownDividerMod.DropdownDividerProps
   type DropdownDividerProps = typings.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownDividerMod.DropdownDividerProps
   @scala.inline
@@ -154,9 +136,6 @@ trait semanticDashUiDashReactProps {
   @scala.inline
   def EmbedProps: typings.semanticDashUiDashReact.distCommonjsModulesEmbedEmbedMod.EmbedProps.type = typings.semanticDashUiDashReact.distCommonjsModulesEmbedEmbedMod.EmbedProps
   type EmbedProps = typings.semanticDashUiDashReact.distCommonjsModulesEmbedEmbedMod.EmbedProps
-  @scala.inline
-  def EmbedDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesEmbedEmbedMod.EmbedProps.type = typings.semanticDashUiDashReact.distCommonjsModulesEmbedEmbedMod.EmbedProps
-  type EmbedDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesEmbedEmbedMod.EmbedProps
   @scala.inline
   def FeedProps: typings.semanticDashUiDashReact.distCommonjsViewsFeedFeedMod.FeedProps.type = typings.semanticDashUiDashReact.distCommonjsViewsFeedFeedMod.FeedProps
   type FeedProps = typings.semanticDashUiDashReact.distCommonjsViewsFeedFeedMod.FeedProps
@@ -284,9 +263,6 @@ trait semanticDashUiDashReactProps {
   def LabelProps: typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelMod.LabelProps.type = typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelMod.LabelProps
   type LabelProps = typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelMod.LabelProps
   @scala.inline
-  def LabelDefaultProps: typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelMod.LabelProps.type = typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelMod.LabelProps
-  type LabelDefaultProps = typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelMod.LabelProps
-  @scala.inline
   def LabelDetailProps: typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps.type = typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps
   type LabelDetailProps = typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps
   @scala.inline
@@ -320,9 +296,6 @@ trait semanticDashUiDashReactProps {
   def MenuProps: typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuMod.MenuProps.type = typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuMod.MenuProps
   type MenuProps = typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuMod.MenuProps
   @scala.inline
-  def MenuDefaultProps: typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuMod.MenuProps.type = typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuMod.MenuProps
-  type MenuDefaultProps = typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuMod.MenuProps
-  @scala.inline
   def MenuHeaderProps: typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuHeaderMod.MenuHeaderProps.type = typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuHeaderMod.MenuHeaderProps
   type MenuHeaderProps = typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuHeaderMod.MenuHeaderProps
   @scala.inline
@@ -337,9 +310,6 @@ trait semanticDashUiDashReactProps {
   @scala.inline
   def MessageContentProps: typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageContentMod.MessageContentProps.type = typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageContentMod.MessageContentProps
   type MessageContentProps = typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageContentMod.MessageContentProps
-  @scala.inline
-  def MessageDefaultProps: typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageMod.MessageProps.type = typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageMod.MessageProps
-  type MessageDefaultProps = typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageMod.MessageProps
   @scala.inline
   def MessageHeaderProps: typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageHeaderMod.MessageHeaderProps.type = typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageHeaderMod.MessageHeaderProps
   type MessageHeaderProps = typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageHeaderMod.MessageHeaderProps
@@ -358,9 +328,6 @@ trait semanticDashUiDashReactProps {
   @scala.inline
   def ModalContentProps: typings.semanticDashUiDashReact.distCommonjsModulesModalModalContentMod.ModalContentProps.type = typings.semanticDashUiDashReact.distCommonjsModulesModalModalContentMod.ModalContentProps
   type ModalContentProps = typings.semanticDashUiDashReact.distCommonjsModulesModalModalContentMod.ModalContentProps
-  @scala.inline
-  def ModalDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesModalModalMod.ModalProps.type = typings.semanticDashUiDashReact.distCommonjsModulesModalModalMod.ModalProps
-  type ModalDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesModalModalMod.ModalProps
   @scala.inline
   def ModalDescriptionProps: typings.semanticDashUiDashReact.distCommonjsModulesModalModalDescriptionMod.ModalDescriptionProps.type = typings.semanticDashUiDashReact.distCommonjsModulesModalModalDescriptionMod.ModalDescriptionProps
   type ModalDescriptionProps = typings.semanticDashUiDashReact.distCommonjsModulesModalModalDescriptionMod.ModalDescriptionProps
@@ -398,9 +365,6 @@ trait semanticDashUiDashReactProps {
   def PopupContentProps: typings.semanticDashUiDashReact.distCommonjsModulesPopupPopupContentMod.PopupContentProps.type = typings.semanticDashUiDashReact.distCommonjsModulesPopupPopupContentMod.PopupContentProps
   type PopupContentProps = typings.semanticDashUiDashReact.distCommonjsModulesPopupPopupContentMod.PopupContentProps
   @scala.inline
-  def PopupDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesPopupPopupMod.PopupProps.type = typings.semanticDashUiDashReact.distCommonjsModulesPopupPopupMod.PopupProps
-  type PopupDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesPopupPopupMod.PopupProps
-  @scala.inline
   def PopupHeaderProps: typings.semanticDashUiDashReact.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps.type = typings.semanticDashUiDashReact.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps
   type PopupHeaderProps = typings.semanticDashUiDashReact.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps
   @scala.inline
@@ -413,9 +377,6 @@ trait semanticDashUiDashReactProps {
   def ProgressProps: typings.semanticDashUiDashReact.distCommonjsModulesProgressProgressMod.ProgressProps.type = typings.semanticDashUiDashReact.distCommonjsModulesProgressProgressMod.ProgressProps
   type ProgressProps = typings.semanticDashUiDashReact.distCommonjsModulesProgressProgressMod.ProgressProps
   @scala.inline
-  def ProgressDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesProgressProgressMod.ProgressProps.type = typings.semanticDashUiDashReact.distCommonjsModulesProgressProgressMod.ProgressProps
-  type ProgressDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesProgressProgressMod.ProgressProps
-  @scala.inline
   def RadioProps: typings.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps.type = typings.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps
   type RadioProps = typings.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps
   @scala.inline
@@ -424,9 +385,6 @@ trait semanticDashUiDashReactProps {
   @scala.inline
   def RatingProps: typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingMod.RatingProps.type = typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingMod.RatingProps
   type RatingProps = typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingMod.RatingProps
-  @scala.inline
-  def RatingDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingMod.RatingProps.type = typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingMod.RatingProps
-  type RatingDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingMod.RatingProps
   @scala.inline
   def RatingIconProps: typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps.type = typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps
   type RatingIconProps = typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps
@@ -452,9 +410,6 @@ trait semanticDashUiDashReactProps {
   def SearchCategoryLayoutProps: typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryLayoutMod.SearchCategoryLayoutProps.type = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryLayoutMod.SearchCategoryLayoutProps
   type SearchCategoryLayoutProps = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryLayoutMod.SearchCategoryLayoutProps
   @scala.inline
-  def SearchDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchMod.SearchProps.type = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchMod.SearchProps
-  type SearchDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchMod.SearchProps
-  @scala.inline
   def SearchResultProps: typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchResultMod.SearchResultProps.type = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchResultMod.SearchResultProps
   type SearchResultProps = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchResultMod.SearchResultProps
   @scala.inline
@@ -475,9 +430,6 @@ trait semanticDashUiDashReactProps {
   @scala.inline
   def SidebarProps: typings.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarMod.SidebarProps.type = typings.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarMod.SidebarProps
   type SidebarProps = typings.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarMod.SidebarProps
-  @scala.inline
-  def SidebarDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarMod.SidebarProps.type = typings.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarMod.SidebarProps
-  type SidebarDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarMod.SidebarProps
   @scala.inline
   def SidebarPushableProps: typings.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarPushableMod.SidebarPushableProps.type = typings.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarPushableMod.SidebarPushableProps
   type SidebarPushableProps = typings.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarPushableMod.SidebarPushableProps
@@ -503,9 +455,6 @@ trait semanticDashUiDashReactProps {
   def StepContentProps: typings.semanticDashUiDashReact.distCommonjsElementsStepStepContentMod.StepContentProps.type = typings.semanticDashUiDashReact.distCommonjsElementsStepStepContentMod.StepContentProps
   type StepContentProps = typings.semanticDashUiDashReact.distCommonjsElementsStepStepContentMod.StepContentProps
   @scala.inline
-  def StepDefaultProps: typings.semanticDashUiDashReact.distCommonjsElementsStepStepMod.StepProps.type = typings.semanticDashUiDashReact.distCommonjsElementsStepStepMod.StepProps
-  type StepDefaultProps = typings.semanticDashUiDashReact.distCommonjsElementsStepStepMod.StepProps
-  @scala.inline
   def StepDescriptionProps: typings.semanticDashUiDashReact.distCommonjsElementsStepStepDescriptionMod.StepDescriptionProps.type = typings.semanticDashUiDashReact.distCommonjsElementsStepStepDescriptionMod.StepDescriptionProps
   type StepDescriptionProps = typings.semanticDashUiDashReact.distCommonjsElementsStepStepDescriptionMod.StepDescriptionProps
   @scala.inline
@@ -518,14 +467,8 @@ trait semanticDashUiDashReactProps {
   def StickyProps: typings.semanticDashUiDashReact.distCommonjsModulesStickyStickyMod.StickyProps.type = typings.semanticDashUiDashReact.distCommonjsModulesStickyStickyMod.StickyProps
   type StickyProps = typings.semanticDashUiDashReact.distCommonjsModulesStickyStickyMod.StickyProps
   @scala.inline
-  def StickyDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesStickyStickyMod.StickyProps.type = typings.semanticDashUiDashReact.distCommonjsModulesStickyStickyMod.StickyProps
-  type StickyDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesStickyStickyMod.StickyProps
-  @scala.inline
   def TabProps: typings.semanticDashUiDashReact.distCommonjsModulesTabTabMod.TabProps.type = typings.semanticDashUiDashReact.distCommonjsModulesTabTabMod.TabProps
   type TabProps = typings.semanticDashUiDashReact.distCommonjsModulesTabTabMod.TabProps
-  @scala.inline
-  def TabDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesTabTabMod.TabProps.type = typings.semanticDashUiDashReact.distCommonjsModulesTabTabMod.TabProps
-  type TabDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesTabTabMod.TabProps
   @scala.inline
   def TabPaneProps: typings.semanticDashUiDashReact.distCommonjsModulesTabTabPaneMod.TabPaneProps.type = typings.semanticDashUiDashReact.distCommonjsModulesTabTabPaneMod.TabPaneProps
   type TabPaneProps = typings.semanticDashUiDashReact.distCommonjsModulesTabTabPaneMod.TabPaneProps
@@ -557,22 +500,13 @@ trait semanticDashUiDashReactProps {
   def TransitionProps: typings.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionMod.TransitionProps.type = typings.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionMod.TransitionProps
   type TransitionProps = typings.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionMod.TransitionProps
   @scala.inline
-  def TransitionDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionMod.TransitionProps.type = typings.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionMod.TransitionProps
-  type TransitionDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionMod.TransitionProps
-  @scala.inline
   def TransitionGroupProps: typings.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupProps.type = typings.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupProps
   type TransitionGroupProps = typings.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupProps
   @scala.inline
   def TransitionablePortalProps: typings.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps.type = typings.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps
   type TransitionablePortalProps = typings.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps
   @scala.inline
-  def TransitionablePortalDefaultProps: typings.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps.type = typings.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps
-  type TransitionablePortalDefaultProps = typings.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps
-  @scala.inline
   def VisibilityProps: typings.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps.type = typings.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps
   type VisibilityProps = typings.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps
-  @scala.inline
-  def VisibilityDefaultProps: typings.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps.type = typings.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps
-  type VisibilityDefaultProps = typings.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps
 }
 

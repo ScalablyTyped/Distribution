@@ -324,7 +324,6 @@
 | 0.8310803234478932 | [upath](./u/upath) | A proxy to path, replacing \ with / for all result
 | 0.8310192472813409 | [create-hmac](./c/create-hmac) | node style hmacs in the browser
 | 0.8310079249268434 | [repeat-string](./r/repeat-string) | Repeat the given string n times. Fastest implement
-| 0.8307783796111038 | [material-ui__icons](./m/material-ui__icons) | Material Design Svg Icons converted to Material-UI
 | 0.8304287836473252 | [destroy](./d/destroy) | destroy a stream if possible
 | 0.8303072037718553 | [object_dot_omit](./o/object_dot_omit) | Return a copy of an object excluding the given key
 | 0.8302524977647108 | [camel-case](./c/camel-case) | Camel case a string
@@ -4716,6 +4715,7 @@
 | 0.5781627725666517 | [react-native-app-intro-sl](./r/react-native-app-intro-slider) | Simple and configurable app introduction slider fo
 | 0.5778831800880784 | [persona](./p/persona) | The official web client library for the Persona AP
 | 0.5777964257616502 | [level-sublevel](./l/level-sublevel) | partition levelup databases
+| 0.5776259937320549 | [asymmetrik__leaflet-d3](./a/asymmetrik__leaflet-d3) | Custom d3 layers for leaflet
 | 0.5775409043803122 | [node-cache](./n/node-cache) | Simple and fast NodeJS internal caching. Node inte
 | 0.5774945912260026 | [ionic__utils-object](./i/ionic__utils-object) | Object utils
 | 0.5774692970630677 | [cordova-plugin-splashscre](./c/cordova-plugin-splashscreen) | Cordova Splashscreen Plugin
